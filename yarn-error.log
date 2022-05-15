@@ -1,0 +1,85 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\cmder\bin;C:\cmder\vendor\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\pscale;C:\Program Files\JetBrains\Toolbox\apps\IDEA-U\ch-0\213.5744.223\bin\;C:\Ruby30-x64\bin;C:\Users\Felix\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\cmder
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.13.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\development\theme-development\package.json: Unexpected token } in JSON at position 1159
+      at JSON.parse (<anonymous>)
+      at C:\PROGRA~1\nvm\v16.13.2\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\PROGRA~1\nvm\v16.13.2\node_modules\yarn\lib\cli.js:310:30)
+      at C:\PROGRA~1\nvm\v16.13.2\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "flex",
+    "version": "0.1.3",
+    "license": "MIT",
+    "scripts": {
+      "dev": "npm-run-all --parallel next:dev contentlayer:dev",
+      "next:dev": "SET NEXT_PUBLIC_PORT=3000&& rimraf .next && next --port 3000",
+      "contentlayer:dev": "contentlayer dev",
+      "db:local": "npm-run-all --parallel db:dev db:shadow",
+      "db:dev": "pscale connect flext dev --port 3309",
+      "db:shadow": "pscale connect flext shadow --port 3310",
+      "build": "rimraf .next && next build",
+      "build:start": "next build --profile && next start",
+      "postbuild": "node ./scripts/generate-sitemap.mjs",
+      "start": "next start",
+      "export": "next build && next export"
+    },
+    "engines": {
+      "node": ">=12.0.0"
+    },
+    "dependencies": {
+      "@headlessui/react": "^1.6.0",
+      "@heroicons/react": "^1.0.6",
+      "@svgr/webpack": "^6.2.1",
+      "date-fns": "^2.28.0",
+      "fast-deep-equal": "^3.1.3",
+      "next": "^12.1.6",
+      "next-seo": "^5.4.0",
+      "next-themes": "0.1.1",
+      "react": "^18.1.0",
+      "react-dom": "^18.1.0",
+      "react-icons": "^4.3.1",
+      "react-query": "^3.38.0",
+      "react-use": "^17.3.2",
+      "relative-indexing-method-polyfill": "^1.0.1",
+    },
+    "devDependencies": {
+      "@tailwindcss/aspect-ratio": "^0.4.0",
+      "@tailwindcss/forms": "^0.5.0",
+      "@tailwindcss/typography": "^0.5.2",
+      "@types/chrome": "^0.0.181",
+      "@types/node": "^17.0.27",
+      "@types/react": "^18.0.7",
+      "@types/react-dom": "^18.0.0",
+      "@types/tailwindcss": "^3.0.10",
+      "autoprefixer": "^10.4.5",
+      "clsx": "^1.1.1",
+      "fx-style": "^1.6.16",
+      "npm-run-all": "^4.1.5",
+      "postcss": "^8.4.12",
+      "sass": "^1.50.1",
+      "tailwindcss": "^3.0.24",
+      "typescript": "^4.6.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
