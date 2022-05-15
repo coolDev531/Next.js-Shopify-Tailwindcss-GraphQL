@@ -5,6 +5,7 @@ module.exports = {
   swcMinify: true,
   reactStrictMode: true,
   strictMode: true,
+
   images: {
     domains: [
       "assets.vercel.com",

@@ -1,5 +1,5 @@
-import { ContextProviders } from "_client/stores/_context-providers";
-import { LoadInitialData } from "_client/stores/_load-initial-data";
+import { ContextProviders } from "components/stores/_context-providers";
+import { LoadInitialData } from "components/stores/_load-initial-data";
 
 import { ThemeProvider } from "next-themes";
 import { AppProps } from "next/app";
@@ -16,6 +16,7 @@ const App: FC<AppProps> = ({ pageProps, Component }) => {
     <ContextProviders>
       <LoadInitialData>
         <ThemeProvider attribute="class">
+          <div className="bg-red-400">header</div>
           <Component {...pageProps} />
         </ThemeProvider>
       </LoadInitialData>

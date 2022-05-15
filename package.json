@@ -5,14 +5,14 @@
   "scripts": {
     "dev": "npm-run-all --parallel next:dev",
     "next:dev": "SET NEXT_PUBLIC_PORT=3000&& rimraf .next && next --port 3000",
-    "build": "rimraf .next && next build",
+    "build": "next build --distDir build",
     "build:start": "next build --profile && next start",
     "start": "next start",
-    "export": "next build && next export",
+    "export": "next build && next export -o .export",
     "shopify": "shopify-ftp"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=14.0.0"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.1",
@@ -28,10 +28,10 @@
     "react-icons": "^4.3.1",
     "react-query": "^3.39.0",
     "react-use": "^17.3.2",
-    "relative-indexing-method-polyfill": "^1.0.1"
+    "relative-indexing-method-polyfill": "^1.0.1",
+    "vercel": "^24.2.3"
   },
   "devDependencies": {
-    "shopify-ftp2": "^2.0.4",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.1",
     "@tailwindcss/typography": "^0.5.2",
@@ -46,6 +46,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.13",
     "sass": "^1.51.0",
+    "shopify-ftp2": "^2.0.4",
     "tailwindcss": "^3.0.24",
     "typescript": "^4.6.4"
   }
