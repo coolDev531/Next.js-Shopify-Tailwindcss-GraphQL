@@ -1,9 +1,7 @@
-const { withContentlayer } = require("next-contentlayer");
-
 /**
  * @type {import('next').NextConfig}
  */
-module.exports = withContentlayer({
+module.exports = {
   swcMinify: true,
   reactStrictMode: true,
   strictMode: true,
@@ -55,4 +53,4 @@ module.exports = withContentlayer({
     ...this.env,
     NEXT_PUBLIC_APP_VERSION: require("./package.json").version,
   },
-});
+};

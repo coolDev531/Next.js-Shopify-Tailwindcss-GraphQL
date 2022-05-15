@@ -3,17 +3,13 @@
   "version": "0.1.3",
   "license": "MIT",
   "scripts": {
-    "dev": "npm-run-all --parallel next:dev contentlayer:dev",
+    "dev": "npm-run-all --parallel next:dev",
     "next:dev": "SET NEXT_PUBLIC_PORT=3000&& rimraf .next && next --port 3000",
-    "contentlayer:dev": "contentlayer dev",
-    "db:local": "npm-run-all --parallel db:dev db:shadow",
-    "db:dev": "pscale connect flext dev --port 3309",
-    "db:shadow": "pscale connect flext shadow --port 3310",
     "build": "rimraf .next && next build",
     "build:start": "next build --profile && next start",
-    "postbuild": "node ./scripts/generate-sitemap.mjs",
     "start": "next start",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "shopify": "shopify-ftp"
   },
   "engines": {
     "node": ">=12.0.0"
@@ -35,6 +31,7 @@
     "relative-indexing-method-polyfill": "^1.0.1"
   },
   "devDependencies": {
+    "shopify-ftp2": "^2.0.4",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.1",
     "@tailwindcss/typography": "^0.5.2",
