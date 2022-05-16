@@ -7,9 +7,6 @@ import * as trpcNext from "@trpc/server/adapters/next";
  */
 
 export const createContext = async (ctx?: trpcNext.CreateNextContextOptions) => {
-  if (!ctx) {
-    return;
-  }
   const { req, res } = ctx;
   return {
     req,
