@@ -17,7 +17,8 @@ export const getStaticProps = async (context: GetStaticPropsContext<{ filter: st
   const ssg = createSSGHelpers({
     router: apiRoutes,
     transformer,
-    ctx: await createContext(),
+    // @ts-ignore
+    ctx: { req: {}, res: {} },
   });
 
   const data = await ssg.fetchQuery("fetch.github");

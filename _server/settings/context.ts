@@ -6,8 +6,7 @@ import * as trpcNext from "@trpc/server/adapters/next";
  * This is useful for testing when we don't want to mock Next.js' request/response
  */
 
-export const createContext = async (ctx?: trpcNext.CreateNextContextOptions) => {
-  const { req, res } = ctx;
+export const createContext = async ({ req, res }: trpcNext.CreateNextContextOptions) => {
   return {
     req,
     res,
