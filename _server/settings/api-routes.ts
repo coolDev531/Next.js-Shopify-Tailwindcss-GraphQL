@@ -3,6 +3,8 @@ import { fetchRouter } from "_server/fetch";
 import { Context } from "_server/settings/context";
 import superjson from "superjson";
 
+export const transformer = superjson;
+
 export const apiRoutes = trpc
   .router<Context>()
   /**
