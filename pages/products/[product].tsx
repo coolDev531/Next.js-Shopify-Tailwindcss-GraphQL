@@ -1,11 +1,17 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
-import { GetStaticPropsContext, InferGetStaticPropsType } from "next";
+import { getAllProducts } from "_server/shopify/get-all-products";
+import { GetStaticPaths, GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType } from "next";
 import { FC, useEffect, useState } from "react";
 
-type IndexProps = {};
+type HandleProps = {};
 
-export const Index: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) => {
+import { useRouter } from "next/router";
+
+export const Product: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) => {
+  const router = useRouter();
+  const { product } = router.query;
+  console.log(product);
   const [global, setGlobal] = useState(props.global);
   const [sections, setSections] = useState(props.sections);
 
@@ -32,11 +38,25 @@ export const Index: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props)
   );
 };
 
-export default Index;
+export default Product;
 
-export const getStaticProps = async (
-  context: GetStaticPropsContext<{ global: any; sections: any[] }>
-) => {
+export const getStaticPaths: GetStaticPaths = async (context) => {
+  const products = await getAllProducts(
+    process.env.SHOPIFY_API_STORE,
+    process.env.SHOPIFY_API_ACCESS_TOKEN
+  );
+
+  const paths = products.map((product) => ({
+    params: { product: `${product.handle}` },
+  }));
+
+  console.log(paths);
+  return { paths, fallback: false };
+};
+
+export const getStaticProps: GetStaticProps<{ global: any; sections: any[] }> = async ({
+  params,
+}) => {
   const ssg = createSSGHelpers({
     router: apiRoutes,
     transformer,
@@ -44,7 +64,12 @@ export const getStaticProps = async (
     ctx: { req: {}, res: {} },
   });
 
-  const data = await ssg.fetchQuery("fetch.shopify-content", "/");
+  console.log(params);
+
+  const data = await ssg.fetchQuery(
+    "fetch.shopify-content",
+    `/products/${params.product}` as string
+  );
 
   // console.log('state', ssr.dehydrate());
   return {
@@ -52,6 +77,5 @@ export const getStaticProps = async (
       trpcState: ssg.dehydrate(),
       ...data,
     },
-    revalidate: 60,
   };
 };

@@ -1097,7 +1097,7 @@
     "@graphql-tools/utils" "^8.1.1"
     tslib "~2.3.0"
 
-"@graphql-codegen/typescript-operations@^2.3.5":
+"@graphql-codegen/typescript-operations@^2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-operations/-/typescript-operations-2.4.0.tgz#07f371bcda31ecb8edc4c742442014b21c11d53b"
   integrity sha512-vJ15FLyWchuO2Xkp6uz7jJOdChiay7P9KJKFDILx/JTwjinU1fFa7iOvyeTvslqiUPxgsXthR5izdY+E5IyLkQ==
@@ -1108,7 +1108,7 @@
     auto-bind "~4.0.0"
     tslib "~2.4.0"
 
-"@graphql-codegen/typescript@^2.4.11", "@graphql-codegen/typescript@^2.4.8":
+"@graphql-codegen/typescript@^2.4.11":
   version "2.4.11"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript/-/typescript-2.4.11.tgz#b9d8bddaeb79ff4a85e1d0f9c774afba7423177c"
   integrity sha512-K3oDLPJRH9Wgpg9TOvb7L+xrJZ8HxkIzV2umqGn54c+8DQjvnRFBIYRO0THgUBMnEauE2sEy6RZkGHGfgQUruA==
@@ -1669,14 +1669,14 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
-"@trpc/client@^9.23.0":
+"@trpc/client@^9.23.3":
   version "9.23.3"
   resolved "https://registry.yarnpkg.com/@trpc/client/-/client-9.23.3.tgz#613a43635bdd55da9e4f26f5134930f5224bc938"
   integrity sha512-hfS8cqOP0yY5PUQYRo2YdnLu+0epvPczwf8C2E/Oc1QUYURVbAlE+R4mIQX3cQXjn0C/y+QdhnYs/SEi/B8BAw==
   dependencies:
     "@babel/runtime" "^7.9.0"
 
-"@trpc/next@^9.23.0":
+"@trpc/next@^9.23.3":
   version "9.23.3"
   resolved "https://registry.yarnpkg.com/@trpc/next/-/next-9.23.3.tgz#611ef98af3c13f4cf511f86d3fc1d0601cc6b5c0"
   integrity sha512-t+idkeGEwZcNzv76BunyoHIPtjleFyn7cRFWf66IH5iyy6x5RqhVAR/8G/LSImPocs7By+7RQ9hCoy1VCDiZDg==
@@ -1684,14 +1684,14 @@
     "@babel/runtime" "^7.9.0"
     react-ssr-prepass "^1.5.0"
 
-"@trpc/react@^9.23.0":
+"@trpc/react@^9.23.3":
   version "9.23.3"
   resolved "https://registry.yarnpkg.com/@trpc/react/-/react-9.23.3.tgz#5ec02c3af14f4ce59a1325955b84828000fcba5f"
   integrity sha512-UGkVxA1vEdZSHWHs+Ki2KPT4es+9t8BdqRaFGToOcILPfUutGbpdT77AkXprT2fdLeRfb3X5RUrAo9T3Ua8fCw==
   dependencies:
     "@babel/runtime" "^7.9.0"
 
-"@trpc/server@^9.23.0":
+"@trpc/server@^9.23.3":
   version "9.23.3"
   resolved "https://registry.yarnpkg.com/@trpc/server/-/server-9.23.3.tgz#3be57b2c347252d583cd409dcb5aefd54eae93dc"
   integrity sha512-J8TWw/Y5TFp6QGfdry224TgfnkqXETpxAwYZS+dwf3uYCQG49sdl9RUgrf5V2IxVnQA5OXQtjDHJUSzHM7okwQ==
@@ -4240,7 +4240,7 @@ graphql-ws@^5.4.1:
   resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.8.2.tgz#800184b1addb20b3010dc06cb70877703a5fff20"
   integrity sha512-hYo8kTGzxePFJtMGC7Y4cbypwifMphIJJ7n4TDcVUAfviRwQBnmZAbfZlC+XFwWDUaR7raEDQPxWctpccmE0JQ==
 
-graphql@^16.3.0:
+graphql@^16.5.0:
   version "16.5.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.5.0.tgz#41b5c1182eaac7f3d47164fb247f61e4dfb69c85"
   integrity sha512-qbHgh8Ix+j/qY+a/ZcJnFQ+j8ezakqPiHwPiZhV/3PgGlgf96QMBB5/f2rkiC9sgLoy/xvT6TSiaf2nTHJh5iA==
@@ -8082,7 +8082,7 @@ yocto-queue@^0.1.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
-zod@^3.14.4:
+zod@^3.16.0:
   version "3.16.0"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.16.0.tgz#edfdbf77fcc9a5af13a2630a44bdda5b90e759b7"
   integrity sha512-szrIkryADbTM+xBt2a1KoS2CJQXec4f9xG78bj5MJeEH/XqmmHpnO+fG3IE115AKBJak+2HrbxLZkc9mhdbDKA==
