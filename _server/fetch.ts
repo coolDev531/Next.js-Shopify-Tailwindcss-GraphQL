@@ -7,6 +7,7 @@ export const fetchRouter = createRouter().query("shopify-theme-settings", {
     const data = await axios({ url: "https://liquix-theme-dev.myshopify.com", method: "Get" });
 
     const document = new JSDOM(data.data);
-    return JSON.parse(document.window.document.querySelector("[data-global]"));
+    console.log(document.window.document.query);
+    return JSON.parse(document.window.document.querySelector("[data-global]").textContent);
   },
 });
