@@ -8,8 +8,8 @@
 <body>
   {% include "global-content" %}
   {{ content_for_layout }}
-  {% if request.design_mode %}
 
+  {% if request.design_mode %}
     <iframe id="theme-editor" style="width: 100%; height: 100%; overflow: hidden;"
             src="http://localhost:3000{{ request.path }}"
             frameborder="0"></iframe>
