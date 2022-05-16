@@ -1,0 +1,18 @@
+{%- capture  blocks -%}
+  [
+  {%- for block in section.blocks -%}
+    {
+    "block": {{ block.type | json }},
+    "settings": {{ block.settings | json }}
+    }{%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}
+  ]
+{%- endcapture -%}
+
+<script type="application/json" data-section>
+{
+  "id": {{ section.id | json }},
+  "settings": {{ section.settings | json }},
+  "blocks": {{ blocks }}
+}
+</script>
