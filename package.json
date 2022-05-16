@@ -9,7 +9,9 @@
     "build:start": "rimraf .next && next build --profile && next start",
     "start": "next start",
     "export": "next build && next export -o .export",
-    "shopify": "shopify-ftp"
+    "shopify": "shopify-ftp",
+    "codegen": "graphql-codegen --config .graphql.yml"
+
   },
   "engines": {
     "node": ">=14.0.0"
@@ -37,9 +39,13 @@
     "shopify-typed-node-api": "^2.0.17",
     "superjson": "^1.9.1",
     "vercel": "^24.2.3",
-    "zod": "^3.14.4"
+    "zod": "^3.14.4",    "graphql": "^16.3.0"
+
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/typescript": "^2.4.8",
+    "@graphql-codegen/typescript-operations": "^2.3.5",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.1",
     "@tailwindcss/typography": "^0.5.2",
