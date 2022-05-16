@@ -21,7 +21,7 @@ export const getStaticProps = async (context: GetStaticPropsContext<{ filter: st
     ctx: { req: {}, res: {} },
   });
 
-  const data = await ssg.fetchQuery("fetch.github");
+  const data = await ssg.fetchQuery("fetch.shopify-theme-settings");
 
   // console.log('state', ssr.dehydrate());
   return {

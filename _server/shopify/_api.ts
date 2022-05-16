@@ -10,12 +10,7 @@ export const ShopifyGraphql = new Shopify.Clients.Graphql(
   process.env.SHOPIFY_API_ACCESS_TOKEN as string
 );
 
-export const ShopifyOldRest = new Shopify.Clients.Rest(
-  process.env.SHOPIFY_API_STORE_OLD as string,
-  process.env.SHOPIFY_API_ACCESS_TOKEN_OLD as string
-);
-
-export const ShopifyOldGraphql = new Shopify.Clients.Graphql(
-  process.env.SHOPIFY_API_STORE_OLD as string,
-  process.env.SHOPIFY_API_ACCESS_TOKEN_OLD as string
+const ShopifyStorefrontClient = new Shopify.Clients.Storefront(
+  process.env.SHOPIFY_API_STORE as string,
+  process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN as string
 );

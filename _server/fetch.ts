@@ -1,10 +1,12 @@
-import { Github } from "_server/_types";
 import { createRouter } from "_server/settings/create-router";
+import axios from "axios";
+import { JSDOM } from "jsdom";
 
-export const fetchRouter = createRouter().query("github", {
+export const fetchRouter = createRouter().query("shopify-theme-settings", {
   resolve: async ({}) => {
-    return (
-      await fetch("https://api.github.com/repos/FelixTellmann/flext.dev")
-    ).json() as Promise<Github>;
+    const data = await axios({ url: "https://liquix-theme-dev.myshopify.com", method: "Get" });
+
+    const document = new JSDOM(data.data);
+    return JSON.parse(document.window.document.querySelector("[data-global]"));
   },
 });
