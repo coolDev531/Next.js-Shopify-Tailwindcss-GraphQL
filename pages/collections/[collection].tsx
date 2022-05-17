@@ -1,14 +1,14 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
-import { getAllProducts } from "_server/shopify/get-all-products";
+import { getAllCollections } from "_server/shopify/get-all-collections";
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType } from "next";
 import { FC, useEffect, useState } from "react";
 
 import { useRouter } from "next/router";
 
-export const Product: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) => {
+export const Collection: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) => {
   const router = useRouter();
-  const { product } = router.query;
+  const { collection } = router.query;
 
   const [global, setGlobal] = useState(props.global);
   const [sections, setSections] = useState(props.sections);
@@ -36,16 +36,16 @@ export const Product: FC<InferGetStaticPropsType<typeof getStaticProps>> = (prop
   );
 };
 
-export default Product;
+export default Collection;
 
 export const getStaticPaths: GetStaticPaths = async (context) => {
-  const products = await getAllProducts(
+  const collections = await getAllCollections(
     process.env.SHOPIFY_API_STORE,
     process.env.SHOPIFY_API_ACCESS_TOKEN
   );
 
-  const paths = products.map((product) => ({
-    params: { product: `${product.handle}` },
+  const paths = collections.map((collection) => ({
+    params: { collection: `${collection.handle}` },
   }));
 
   return { paths, fallback: false };
@@ -63,7 +63,7 @@ export const getStaticProps: GetStaticProps<{ global: any; sections: any[] }> = 
 
   const data = await ssg.fetchQuery(
     "fetch.shopify-content",
-    `/products/${params.product}` as string
+    `/collections/${params.collection}` as string
   );
 
   // console.log('state', ssr.dehydrate());
