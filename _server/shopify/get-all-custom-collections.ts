@@ -14,10 +14,14 @@ export const getAllCustomCollections = async (
   for (let i = 0; i < 5000; i++) {
     const { body, headers } = await ShopifyRest.get<CustomCollection.Get>({
       path: "custom_collections",
-      query: {
-        page_info,
-        limit: "250",
-      },
+      query: page_info
+        ? {
+            page_info,
+            limit: "250",
+          }
+        : {
+            limit: "250",
+          },
       tries: 10,
     });
 
