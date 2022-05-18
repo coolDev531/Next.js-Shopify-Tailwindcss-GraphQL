@@ -4,6 +4,7 @@ import { IncomingHttpHeaders } from "http";
 import getRawBody from "raw-body";
 
 import type { NextApiRequest, NextApiResponse } from "next";
+import { _Product } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
 
 export const Webhooks = async (
   req: NextApiRequest & { rawbody: Buffer },
@@ -35,6 +36,13 @@ export const Webhooks = async (
     switch (topic) {
       case "themes/update": {
         console.log("themes update");
+        res.status(200).send("success");
+        break;
+      }
+      case "products/update": {
+        const product = body as _Product;
+        console.log(product);
+        await res.unstable_revalidate(`/products/${product.handle}`);
         res.status(200).send("success");
         break;
       }
