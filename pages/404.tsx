@@ -1,5 +1,4 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
-import { generateSections } from "_server/scripts/generate-sections";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
 import { GetStaticPropsContext, InferGetStaticPropsType } from "next";
 import { FC, useEffect, useState } from "react";
@@ -38,8 +37,6 @@ export default Index;
 export const getStaticProps = async (
   context: GetStaticPropsContext<{ global: any; sections: any[] }>
 ) => {
-  generateSections();
-
   const ssg = createSSGHelpers({
     router: apiRoutes,
     transformer,
@@ -47,7 +44,7 @@ export const getStaticProps = async (
     ctx: { req: {}, res: {} },
   });
 
-  const data = await ssg.fetchQuery("fetch.shopify-content", "/");
+  const data = await ssg.fetchQuery("fetch.shopify-content", "/404");
 
   // console.log('state', ssr.dehydrate());
   return {
