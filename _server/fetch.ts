@@ -1,4 +1,4 @@
-import { JSONParse } from "_client/utils/json-parse";
+import { JSONParse } from "utils/json-parse";
 import { createRouter } from "_server/settings/create-router";
 import axios from "axios";
 import { JSDOM } from "jsdom";

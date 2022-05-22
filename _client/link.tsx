@@ -1,4 +1,4 @@
-import { isExternalUrl } from "_client/utils/is-external-url";
+import { isExternalUrl } from "utils/is-external-url";
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
 import { AnchorHTMLAttributes, FC } from "react";
 

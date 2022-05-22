@@ -1,34 +1,36 @@
-export type collectionTypes = {
+export type CollectionSection = {
   blocks: [] | collectionBlocks[];
   id: string;
   settings: {
-    /** Type: checkbox */
+    /** Input type: checkbox */
     brand_page: boolean;
-    /** Type: text */
+    /** Input type: text */
     cool: undefined | string;
-    /** Type: checkbox */
+    /** Input type: checkbox */
     enable_sort_by: boolean;
-    /** Type: checkbox */
+    /** Input type: checkbox */
     "enable_tag_filte-rs": boolean;
-    /** Type: checkbox */
+    /** Input type: checkbox */
     enable_type_filters: boolean;
-    /** Type: checkbox */
+    /** Input type: checkbox */
     enable_vendor_filters: boolean;
-    /** Type: select */
+    /** Input type: select */
     grid_items_per_row: string;
-    /** Type: checkbox */
+    /** Input type: checkbox */
     grid_remove_spacing: boolean;
-    /** Type: select */
+    /** Input type: select */
     layout_mode: string;
-    /** Type: select */
+    /** Input type: select */
     number_of_rows: string;
-    /** Type: radio */
+    /** Input type: radio */
     pagination_mode: string;
-    /** Type: checkbox */
+    /** Input type: product */
+    product: undefined | string;
+    /** Input type: checkbox */
     show_quick_shop: boolean;
-    /** Type: checkbox */
+    /** Input type: checkbox */
     show_vendor: boolean;
-    /** Type: checkbox */
+    /** Input type: checkbox */
     slider_banner: boolean;
   };
   type: "Collection";
@@ -38,38 +40,38 @@ type collectionBlocks =
   | {
       type: "brand_content_block";
       settings?: {
-        /** Type: textarea */
+        /** Input type: textarea */
         content: undefined | string;
-        /** Type: text */
+        /** Input type: text */
         cta1_text: undefined | string;
-        /** Type: url */
+        /** Input type: url */
         cta1_url: undefined | string;
-        /** Type: text */
+        /** Input type: text */
         cta2_text: undefined | string;
-        /** Type: url */
+        /** Input type: url */
         cta2_url: undefined | string;
-        /** Type: text */
+        /** Input type: text */
         handle: undefined | string;
-        /** Type: textarea */
+        /** Input type: textarea */
         heading: undefined | string;
-        /** Type: checkbox */
+        /** Input type: checkbox */
         horizontal_break: boolean;
-        /** Type: image_picker */
+        /** Input type: image_picker */
         image: undefined | string;
-        /** Type: radio */
+        /** Input type: radio */
         image_position: string;
       };
     }
   | {
       type: "image";
       settings?: {
-        /** Type: image_picker */
+        /** Input type: image_picker */
         image: undefined | string;
-        /** Type: image_picker */
+        /** Input type: image_picker */
         image_hover: undefined | string;
-        /** Type: collection */
+        /** Input type: collection */
         link: undefined | string;
-        /** Type: text */
+        /** Input type: text */
         title: undefined | string;
       };
-    };
+    }; 

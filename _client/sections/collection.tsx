@@ -1,12 +1,12 @@
 import { FC } from "react";
-import { collection } from "_models";
+import { CollectionSection } from "types/Collection";
 
 type CollectionProps = {
-  collection: typeof collection;
+  collection: CollectionSection;
 };
 
 export const Collection: FC<CollectionProps> = ({ collection }) => {
-  return <>{collection}</>;
+  return <>{collection.settings.product}</>;
 };
 
 export default Collection;

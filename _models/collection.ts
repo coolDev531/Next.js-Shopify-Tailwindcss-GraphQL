@@ -1,8 +1,13 @@
-import { ShopifySection } from "_models/_shopify";
+import { ShopifySection } from "types/shopify";
 
 export const collection: ShopifySection = {
   name: "Collection",
   settings: [
+    {
+      type: "product",
+      id: "product",
+      label: "Product",
+    },
     {
       type: "select",
       id: "layout_mode",

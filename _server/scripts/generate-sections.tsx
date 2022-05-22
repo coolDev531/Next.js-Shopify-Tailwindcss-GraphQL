@@ -1,6 +1,8 @@
 import * as Sections from "_models";
-import { ShopifySection, ShopifySettingsInput } from "_models/_shopify";
+
 import * as fs from "fs";
+import { capitalize } from "utils/capitalize";
+import { ShopifySection, ShopifySettingsInput } from "types/shopify";
 
 export const generateSections = () => {
   for (const section in Sections) {
@@ -13,7 +15,6 @@ ${JSON.stringify(Sections[section], undefined, 2)}
 
     fs.writeFileSync(`_shopify-theme/sections/${section}.liquid`, content);
   }
-  generateSectionsTypes();
 };
 
 function getSettingsType(setting: ShopifySettingsInput) {
@@ -73,7 +74,7 @@ export const generateSectionsTypes = () => {
   for (const key in Sections) {
     const section = Sections[key] as ShopifySection;
 
-    const typeContent = `export type ${key}Types = {
+    const typeContent = `export type ${capitalize(key)}Section = {
   blocks: []${section.blocks?.length ? ` | ${key}Blocks[]` : ""};
   id: string;
   settings: {
@@ -85,7 +86,7 @@ export const generateSectionsTypes = () => {
       .sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0))
       .map(
         (setting) =>
-          `/** Type: ${setting.type} */\n    ` +
+          `/** Input type: ${setting.type} */\n    ` +
           `${/[^\w_]/gi.test(setting.id) ? `"${setting.id}"` : `${setting.id}`}: ${getSettingsType(
             setting
           )};`
@@ -111,7 +112,7 @@ ${section.blocks
           .sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0))
           .map(
             (setting) =>
-              `/** Type: ${setting.type} */\n        ` +
+              `/** Input type: ${setting.type} */\n        ` +
               `${
                 /[^\w_]/gi.test(setting.id) ? `"${setting.id}"` : `${setting.id}`
               }: ${getSettingsType(setting)};`
@@ -122,9 +123,9 @@ ${section.blocks
   })
   .join("\n")};`
     : ""
-}
+} 
 `;
 
-    fs.writeFileSync(`_models/.${key}Types.ts`, typeContent);
+    fs.writeFileSync(`@types/${key}.d.ts`, typeContent);
   }
 };

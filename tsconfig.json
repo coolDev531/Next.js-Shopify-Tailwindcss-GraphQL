@@ -7,7 +7,7 @@
       "@graphql/*": [
         "./graphql/*"
       ],
-      "@types/*": [
+      "types/*": [
         "./@types/*"
       ]
     },
