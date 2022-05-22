@@ -4,8 +4,8 @@ export type CollectionSection = {
   settings: {
     /** Input type: checkbox */
     brand_page: boolean;
-    /** Input type: text */
-    cool: undefined | string;
+    /** Input type: richtext */
+    cool: undefined | `<p${string}</p>`;
     /** Input type: checkbox */
     enable_sort_by: boolean;
     /** Input type: checkbox */
@@ -15,15 +15,15 @@ export type CollectionSection = {
     /** Input type: checkbox */
     enable_vendor_filters: boolean;
     /** Input type: select */
-    grid_items_per_row: string;
+    grid_items_per_row: "2" | "3" | "4" | "5" | "6";
     /** Input type: checkbox */
     grid_remove_spacing: boolean;
     /** Input type: select */
-    layout_mode: string;
+    layout_mode: "collage" | "grid";
     /** Input type: select */
-    number_of_rows: string;
+    number_of_rows: "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8";
     /** Input type: radio */
-    pagination_mode: string;
+    pagination_mode: "pagination" | "infinite_scrolling";
     /** Input type: product */
     product: undefined | string;
     /** Input type: checkbox */
@@ -59,7 +59,7 @@ type collectionBlocks =
         /** Input type: image_picker */
         image: undefined | string;
         /** Input type: radio */
-        image_position: string;
+        image_position: "disable" | "left" | "right";
       };
     }
   | {
@@ -74,4 +74,4 @@ type collectionBlocks =
         /** Input type: text */
         title: undefined | string;
       };
-    }; 
+    };

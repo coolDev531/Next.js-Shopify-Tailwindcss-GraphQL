@@ -35,11 +35,11 @@ function getSettingsType(setting: ShopifySettingsInput) {
     case "number":
       return "undefined | number";
     case "radio":
-      return "string";
+      return setting.options.map(({ value }) => `"${value}"`).join(" | ");
     case "range":
       return "number";
     case "select":
-      return "string";
+      return setting.options.map(({ value }) => `"${value}"`).join(" | ");
     case "text":
       return "undefined | string";
     case "textarea":
@@ -71,11 +71,11 @@ function getSettingsType(setting: ShopifySettingsInput) {
     case "product_list":
       return "undefined | string";
     case "richtext":
-      return "undefined | string";
+      return "undefined | `<p${string}</p>`";
     case "url":
       return "undefined | string";
     case "video_url":
-      return "undefined | string";
+      return `undefined | ("youtube" | "vimeo")[]`;
   }
 }
 
@@ -132,7 +132,7 @@ ${section.blocks
   })
   .join("\n")};`
     : ""
-} 
+}
 `;
 
     fs.writeFileSync(`@types/${key}.d.ts`, typeContent);

@@ -41,7 +41,7 @@ export const collection: ShopifySection = {
       default: "pagination",
     },
     {
-      type: "text",
+      type: "richtext",
       id: "cool",
       label: "Cool",
     },

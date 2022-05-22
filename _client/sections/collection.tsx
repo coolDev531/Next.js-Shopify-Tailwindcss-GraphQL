@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { CollectionSection } from "types/Collection";
+import { CollectionSection } from "types/collection";
 
 type CollectionProps = {
   collection: CollectionSection;

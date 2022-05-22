@@ -50,7 +50,6 @@ export const SEO = {
 const App: FC<AppProps> = ({ pageProps, Component }) => {
   const router = useRouter();
 
-  console.log(pageProps.global);
   return (
     <ContextProviders>
       <LoadInitialData>
