@@ -1,12 +1,21 @@
 import * as Sections from "_models";
-
 import * as fs from "fs";
 import { capitalize } from "utils/capitalize";
 import { ShopifySection, ShopifySettingsInput } from "types/shopify";
 
 export const generateSections = () => {
+  const shopifyThemeString = fs.readFileSync("_shopify-theme/layout/theme.liquid", {
+    encoding: "utf-8",
+  });
+
   for (const section in Sections) {
-    const content = `{% include "section-content", type: "${Sections[section].name}" %}
+    let sectionType = "section-content";
+    const regexp = new RegExp(`\\{%\\s+section\\s+["']${section}["']`, "gi");
+    if (regexp.test(shopifyThemeString)) {
+      sectionType = "section-global-content";
+    }
+
+    const content = `{% include "${sectionType}", type: "${Sections[section].name}" %}
 
 {% schema %}
 ${JSON.stringify(Sections[section], undefined, 2)}
