@@ -181,9 +181,7 @@ type ShopifyVideo_url = {
   placeholder?: string;
 };
 
-type ShopifySettingsInput =
-  | ShopifyHeader
-  | ShopifyParagraph
+export type ShopifySettingsInput =
   | ShopifyCheckbox
   | ShopifyNumber
   | ShopifyRadio
@@ -211,19 +209,19 @@ type ShopifySettingsInput =
 
 type ShopifySectionDefault = {
   blocks?: ShopifySectionBlock[];
-  settings?: ShopifySettingsInput[];
+  settings?: (ShopifySettingsInput | ShopifyHeader | ShopifyParagraph)[];
 };
 type ShopifySectionPreset = {
   name: string;
   blocks?: ShopifySectionBlock[];
-  settings?: ShopifySettingsInput[];
+  settings?: (ShopifySettingsInput | ShopifyHeader | ShopifyParagraph)[];
 };
 
 type ShopifySectionBlock = {
   name: string;
   type: string;
   limit?: number;
-  settings?: ShopifySettingsInput[];
+  settings?: (ShopifySettingsInput | ShopifyHeader | ShopifyParagraph)[];
 };
 
 export type ShopifySection = {
@@ -234,7 +232,7 @@ export type ShopifySection = {
   limit?: number;
   max_blocks?: number;
   presets?: ShopifySectionPreset[];
-  settings?: ShopifySettingsInput[];
+  settings?: (ShopifySettingsInput | ShopifyHeader | ShopifyParagraph)[];
   tag?: "article" | "aside" | "div" | "footer" | "header" | "section";
   templates?:
     | "404"
@@ -276,6 +274,6 @@ export type ShopifySettings = (
     ))
   | {
       name: string;
-      settings: ShopifySettingsInput[];
+      settings: (ShopifySettingsInput | ShopifyHeader | ShopifyParagraph)[];
     }
 )[];

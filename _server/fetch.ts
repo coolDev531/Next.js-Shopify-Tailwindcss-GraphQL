@@ -36,6 +36,6 @@ export const fetchRouter = createRouter().query("shopify-content", {
       }
       console.log(err.message);
     }
-    return {};
+    return { global: null, sections: null };
   },
 });

@@ -36,8 +36,13 @@ export const collection: ShopifySection = {
       default: "pagination",
     },
     {
+      type: "text",
+      id: "cool",
+      label: "Cool",
+    },
+    {
       type: "checkbox",
-      id: "enable_tag_filters",
+      id: "enable_tag_filte-rs",
       label: "Enable filtering by product tag",
       default: true,
     },

@@ -2,7 +2,7 @@
   [
   {%- for block in section.blocks -%}
     {
-    "block": {{ block.type | json }},
+    "type": {{ block.type | json }},
     "settings": {{ block.settings | json }}
     }{%- unless forloop.last -%},{%- endunless -%}
   {%- endfor -%}
