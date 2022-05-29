@@ -1,8 +1,8 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
-import { generateSections } from "_server/scripts/generate-sections";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
 import { GetStaticPropsContext, InferGetStaticPropsType } from "next";
 import { FC, useEffect, useState } from "react";
+import { Sections } from "types/sections";
 
 type IndexProps = {};
 
@@ -27,7 +27,7 @@ export const Index: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props)
   return (
     <>
       {sections?.map((section) => (
-        <div key={section.id}>{section.id}</div>
+        <div key={section.id}>{section.type}</div>
       ))}
     </>
   );
@@ -38,8 +38,6 @@ export default Index;
 export const getStaticProps = async (
   context: GetStaticPropsContext<{ global: any; sections: any[] }>
 ) => {
-  generateSections();
-
   const ssg = createSSGHelpers({
     router: apiRoutes,
     transformer,

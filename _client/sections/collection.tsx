@@ -1,12 +1,12 @@
 import { FC } from "react";
-import { CollectionSection } from "types/collection";
+import { HeroSection } from "types/hero";
 
 type CollectionProps = {
-  collection: CollectionSection;
+  collection: HeroSection;
 };
 
 export const Collection: FC<CollectionProps> = ({ collection }) => {
-  return <>{collection.settings.product}</>;
+  return <>{collection.settings}</>;
 };
 
 export default Collection;

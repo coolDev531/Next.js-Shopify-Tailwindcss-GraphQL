@@ -1,7 +1,8 @@
-import * as Sections from "_models";
+import * as Sections from "_sections";
 import * as fs from "fs";
 import { capitalize } from "utils/capitalize";
 import { ShopifySection, ShopifySettingsInput } from "types/shopify";
+import { toKebabCase } from "utils/to-kebab-case";
 
 export const generateSections = () => {
   const shopifyThemeString = fs.readFileSync("_shopify-theme/layout/theme.liquid", {
@@ -11,18 +12,38 @@ export const generateSections = () => {
   for (const section in Sections) {
     let sectionType = "section-content";
     const regexp = new RegExp(`\\{%\\s+section\\s+["']${section}["']`, "gi");
+
     if (regexp.test(shopifyThemeString)) {
       sectionType = "section-global-content";
     }
 
     const content = `{% include "${sectionType}", type: "${Sections[section].name}" %}
-
+{% include "section_${toKebabCase(section)}" %}
+ 
 {% schema %}
 ${JSON.stringify(Sections[section], undefined, 2)}
-{% endschema %}
+{% endschema %} 
 `;
 
-    fs.writeFileSync(`_shopify-theme/sections/${section}.liquid`, content);
+    if (!fs.existsSync(`_shopify-theme/snippets/section_${toKebabCase(section)}.liquid`)) {
+      fs.writeFileSync(
+        `_shopify-theme/snippets/section_${toKebabCase(section)}.liquid`,
+        toKebabCase(section)
+      );
+    }
+
+    if (!fs.existsSync(`_shopify-theme/sections/${toKebabCase(section)}.liquid`)) {
+      fs.writeFileSync(`_shopify-theme/sections/${toKebabCase(section)}.liquid`, content);
+      continue;
+    }
+
+    const contentVerification = fs.readFileSync(
+      `_shopify-theme/sections/${toKebabCase(section)}.liquid`,
+      { encoding: "utf-8" }
+    );
+    if (contentVerification !== content) {
+      fs.writeFileSync(`_shopify-theme/sections/${toKebabCase(section)}.liquid`, content);
+    }
   }
 };
 
@@ -80,9 +101,10 @@ function getSettingsType(setting: ShopifySettingsInput) {
 }
 
 export const generateSectionsTypes = () => {
+  let indexContent = "";
+  let sectionUnionType = "export type Sections =";
   for (const key in Sections) {
     const section = Sections[key] as ShopifySection;
-
     const typeContent = `export type ${capitalize(key)}Section = {
   blocks: []${section.blocks?.length ? ` | ${key}Blocks[]` : ""};
   id: string;
@@ -127,14 +149,48 @@ ${section.blocks
               }: ${getSettingsType(setting)};`
           )
           .join("\n        ")}
-      };
+      }; 
     }`;
   })
   .join("\n")};`
     : ""
 }
 `;
+    const filename = toKebabCase(section.name);
 
-    fs.writeFileSync(`@types/${key}.d.ts`, typeContent);
+    indexContent += `import { ${capitalize(key)}Section } from "types/sections/${filename}";\n`;
+    sectionUnionType += `\n  | ${capitalize(key)}Section`;
+
+    if (!fs.existsSync(`@types/sections/${filename}.ts`)) {
+      fs.writeFileSync(`@types/sections/${filename}.ts`, typeContent);
+      continue;
+    }
+
+    const contentVerification = fs.readFileSync(`@types/sections/${filename}.ts`, {
+      encoding: "utf-8",
+    });
+
+    if (contentVerification !== typeContent) {
+      fs.writeFileSync(`@types/sections/${filename}.ts`, typeContent);
+    }
+  }
+
+  if (!indexContent) return;
+
+  indexContent += "\n";
+  indexContent += sectionUnionType;
+  indexContent += ";\n";
+
+  if (!fs.existsSync(`@types/sections/index.ts`)) {
+    fs.writeFileSync(`@types/sections/index.ts`, indexContent);
+    return;
+  }
+
+  const indexContentVerification = fs.readFileSync(`@types/sections/index.ts`, {
+    encoding: "utf-8",
+  });
+
+  if (indexContentVerification !== indexContent) {
+    fs.writeFileSync(`@types/sections/index.ts`, indexContent);
   }
 };

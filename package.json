@@ -3,9 +3,9 @@
   "version": "0.1.3",
   "license": "MIT",
   "scripts": {
-    "dev": "npm-run-all --parallel next:dev watch:models",
+    "dev": "npm-run-all --parallel next:dev watch:sections",
     "next:dev": "SET NEXT_PUBLIC_PORT=3000&& rimraf .next && next --port 3000",
-    "watch:models": "node scripts/watch-scripts.js",
+    "watch:sections": "SET NEXT_PUBLIC_PORT=3000&& node scripts/watch-scripts.js",
     "build": "rimraf .next && next build",
     "build:start": "rimraf .next && next build --profile && next start",
     "start": "next start",
