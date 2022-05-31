@@ -1,13 +1,13 @@
 import { getAllBlogs } from "_server/shopify/get-all-blogs";
 import Shopify from "shopify-typed-node-api";
-import { Article, Blog, Metafield, Order, Page } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
+import { _Article, Article, Blog, Metafield, Order, Page } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
 
 export const getAllArticles = async (shop: string, accessToken: string, reducer = (p) => p) => {
   const ShopifyRest = new Shopify.Clients.Rest(shop, `${accessToken}`);
 
   const blogs = await getAllBlogs(shop, accessToken);
   let page_info = null;
-  let articles = [];
+  let articles: (_Article & { blog: string })[] = [];
 
   for (let j = 0; j < blogs.length; j++) {
     for (let i = 0; i < 5000; i++) {
@@ -24,7 +24,10 @@ export const getAllArticles = async (shop: string, accessToken: string, reducer 
         tries: 10,
       });
 
-      articles = [...articles, ...reducer(body.articles)];
+      articles = [
+        ...articles.map((a) => ({ ...a, blog: blogs[j].handle })),
+        ...reducer(body.articles.map((a) => ({ ...a, blog: blogs[j].handle }))),
+      ];
 
       // console.log(headers.raw());
       const link = headers.get("link");
@@ -41,6 +44,5 @@ export const getAllArticles = async (shop: string, accessToken: string, reducer 
     }
   }
 
-  console.log({ articles });
   return articles;
 };

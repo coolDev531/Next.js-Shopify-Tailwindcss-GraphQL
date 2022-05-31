@@ -1,4 +1,5 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
+import { renderSection } from "_client/sections/_render-section";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
 import { GetStaticPropsContext, InferGetStaticPropsType } from "next";
 import { FC, useEffect, useState } from "react";
@@ -24,13 +25,7 @@ export const Index: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props)
     };
   }, []);
 
-  return (
-    <>
-      {sections?.map((section) => (
-        <div key={section.id}>{section.type}</div>
-      ))}
-    </>
-  );
+  return <>{sections.map((section) => renderSection(section))}</>;
 };
 
 export default Index;

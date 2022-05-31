@@ -1,4 +1,5 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
+import { renderSection } from "_client/sections/_render-section";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
 import { getAllProducts } from "_server/shopify/get-all-products";
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType } from "next";
@@ -27,13 +28,7 @@ export const Product: FC<InferGetStaticPropsType<typeof getStaticProps>> = (prop
     };
   }, []);
 
-  return (
-    <>
-      {sections?.map((section) => (
-        <div key={section.id}>{section.id}</div>
-      ))}
-    </>
-  );
+  return <>{sections.map((section) => renderSection(section))}</>;
 };
 
 export default Product;

@@ -8,9 +8,8 @@
   {%- endfor -%}
   ]
 {%- endcapture -%}
-<div>{{ section.id }}</div>
 
-<script type="application/json" data-section>
+<script type="application/json" data-section id="{{ section.id }}">
 {
   "id": {{ section.id | json }},
   "type": {{ type | json }},
@@ -19,3 +18,10 @@
   "global": false
 }
 </script>
+
+{% for setting in section.settings %}
+  <script>
+      console.log({{ section.settings[setting].url | json }});
+  </script>
+{% endfor %}
+

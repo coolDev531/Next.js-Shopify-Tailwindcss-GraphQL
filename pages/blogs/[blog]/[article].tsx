@@ -1,17 +1,19 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
+import { renderSection } from "_client/sections/_render-section";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
 import { getAllArticles } from "_server/shopify/get-all-articles";
-import { GetStaticPaths, GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType } from "next";
-import { FC, useEffect, useState } from "react";
+import { GetStaticPaths, InferGetStaticPropsType } from "next";
 
 import { useRouter } from "next/router";
+import { FC, useEffect, useState } from "react";
 
 export const Article: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) => {
   const router = useRouter();
   const { article } = router.query;
 
+  console.log(article);
   const [global, setGlobal] = useState(props.global);
-  const [sections, setSections] = useState(props.sections);
+  const [sections, setSections] = useState(props.sections ?? []);
 
   useEffect(() => {
     const handleMessages = (e) => {
@@ -27,13 +29,7 @@ export const Article: FC<InferGetStaticPropsType<typeof getStaticProps>> = (prop
     };
   }, []);
 
-  return (
-    <>
-      {sections?.map((section) => (
-        <div key={section.id}>{section.id}</div>
-      ))}
-    </>
-  );
+  return <>{sections.map((section) => renderSection(section))}</>;
 };
 
 export default Article;
@@ -47,15 +43,13 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
   console.log(articles);
 
   const paths = articles.map((article) => ({
-    params: { article: `${article.handle}`, blog: "news" },
+    params: { article: `${article.handle}`, blog: `${article.blog}` },
   }));
 
   return { paths, fallback: false };
 };
 
-export const getStaticProps: GetStaticProps<{ global: any; sections: any[] }> = async ({
-  params,
-}) => {
+export const getStaticProps = async ({ params }) => {
   const ssg = createSSGHelpers({
     router: apiRoutes,
     transformer,
@@ -66,7 +60,7 @@ export const getStaticProps: GetStaticProps<{ global: any; sections: any[] }> = 
   console.log({ params });
   const data = await ssg.fetchQuery(
     "fetch.shopify-content",
-    `/blogs/${params.blog}/${params.article}` as string
+    `/blogs/${params.blog}/${params.article}`
   );
 
   // console.log('state', ssr.dehydrate());

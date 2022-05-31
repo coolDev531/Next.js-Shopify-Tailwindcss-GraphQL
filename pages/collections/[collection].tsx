@@ -27,13 +27,7 @@ export const Collection: FC<InferGetStaticPropsType<typeof getStaticProps>> = (p
     };
   }, []);
 
-  return (
-    <>
-      {sections?.map((section) => (
-        <div key={section.id}>{section.id}</div>
-      ))}
-    </>
-  );
+  return <>{sections.map((section) => renderSection(section))}</>;
 };
 
 export default Collection;

@@ -11,6 +11,7 @@ module.exports = {
       "assets.vercel.com",
       "avatars1.githubusercontent.com",
       "avatars.githubusercontent.com",
+      "cdn.shopify.com",
     ],
   },
   webpack: (config, { isServer, dev }) => {

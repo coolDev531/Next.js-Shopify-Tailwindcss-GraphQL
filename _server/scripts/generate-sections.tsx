@@ -10,11 +10,11 @@ export const generateSections = () => {
   });
 
   for (const section in Sections) {
-    let sectionType = "section-content";
+    let sectionType = "_section-content";
     const regexp = new RegExp(`\\{%\\s+section\\s+["']${section}["']`, "gi");
 
     if (regexp.test(shopifyThemeString)) {
-      sectionType = "section-global-content";
+      sectionType = "_section-global-content";
     }
 
     const content = `{% include "${sectionType}", type: "${Sections[section].name}" %}
