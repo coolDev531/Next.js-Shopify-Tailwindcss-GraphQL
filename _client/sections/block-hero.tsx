@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FC } from "react";
 import { HeroSection } from "types/sections/hero";
 
-export const BlockHero: FC<HeroSection> = ({ id, settings, blocks, type }) => (
+export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => (
   <section className="hero">
     <div className="mx-auto grid max-w-7xl grid-cols-2 px-8 py-32">
       <section className="max-w-lg px-4">

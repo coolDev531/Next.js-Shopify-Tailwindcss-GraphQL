@@ -2,6 +2,7 @@ import BlockHeading from "_client/sections/block-heading";
 import { BlockHero } from "_client/sections/block-hero";
 import { BlockImageText } from "_client/sections/block-image-text";
 import { StatsGraph } from "_client/sections/stats-graph";
+import { Story } from "_client/sections/story";
 import { Fragment } from "react";
 import { Sections } from "types/sections";
 
@@ -46,7 +47,7 @@ export const renderSection = (section: Sections) => {
     case "story":
       return (
         <Fragment key={section.id}>
-          <div>Section to be developed: {section.type}</div>
+          <Story {...section} />
         </Fragment>
       );
     case "template-404":
