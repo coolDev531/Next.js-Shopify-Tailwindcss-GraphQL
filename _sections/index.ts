@@ -11,4 +11,3 @@ export * from "_sections/template-page";
 export * from "_sections/template-password";
 export * from "_sections/template-product";
 export * from "_sections/template-search";
-export * from "_sections/test";

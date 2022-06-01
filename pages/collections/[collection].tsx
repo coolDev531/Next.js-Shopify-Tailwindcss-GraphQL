@@ -1,4 +1,5 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
+import { renderSection } from "_client/sections/_render-section";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
 import { getAllCollections } from "_server/shopify/get-all-collections";
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType } from "next";
