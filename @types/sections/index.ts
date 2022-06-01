@@ -36,3 +36,5 @@ export type Sections =
   | TemplatePasswordSection
   | TemplateProductSection
   | TemplateSearchSection;
+
+export type { FooterSection, HeaderSection, HeadingSection, HeroSection, ImageTextSection, InfoCardsSection, StatsGraphSection, StorySection, Template_404Section, TemplateArticleSection, TemplateBlogSection, TemplateCartSection, TemplateCollectionSection, TemplateListCollectionsSection, TemplatePageSection, TemplatePasswordSection, TemplateProductSection, TemplateSearchSection };

@@ -174,6 +174,7 @@ function getImports(section: ShopifySection) {
 export const generateSectionsTypes = () => {
   let indexContent = "";
   let sectionUnionType = "export type Sections =";
+  const indexExports = [];
   for (const key in Sections) {
     const section = Sections[key] as ShopifySection;
     const filename = toKebabCase(section.name);
@@ -231,6 +232,7 @@ ${section.blocks
     indexContent += `import { ${capitalize(key)}Section } from "types/sections/${filename}";\n`;
     sectionUnionType += `\n  | ${capitalize(key)}Section`;
 
+    indexExports.push(`${capitalize(key)}Section`);
     if (!fs.existsSync(`@types/sections/${filename}.ts`)) {
       fs.writeFileSync(`@types/sections/${filename}.ts`, typeContent);
       continue;
@@ -250,6 +252,7 @@ ${section.blocks
   indexContent += "\n";
   indexContent += sectionUnionType;
   indexContent += ";\n";
+  indexContent += `\nexport type { ${indexExports.join(", ")} };\n`;
 
   if (!fs.existsSync(`@types/sections/index.ts`)) {
     fs.writeFileSync(`@types/sections/index.ts`, indexContent);
