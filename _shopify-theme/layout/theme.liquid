@@ -20,6 +20,14 @@
 
     <script>
       const themeEditor = document.getElementById("theme-editor");
+
+
+      fetch('http://localhost:3000{{ request.path }}').then((e) => {
+        console.log(e);
+      }).catch(err => {
+          themeEditor.setAttribute('src','https://theme-development.vercel.app{{ request.path }}')
+      });
+
       const handleEvents = (e) => {
         console.log(e.type);
         console.log(e);

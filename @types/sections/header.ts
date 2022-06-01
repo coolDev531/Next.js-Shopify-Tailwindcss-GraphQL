@@ -6,9 +6,9 @@ export type HeaderSection = {
   id: string;
   settings: {
     /** Input type: image_picker */
-    logo: undefined | _Image;
+    logo?: _Image;
     /** Input type: link_list */
-    menu: undefined | _LinkList;
+    menu?: _LinkList;
   };
   type: "Header";
 };

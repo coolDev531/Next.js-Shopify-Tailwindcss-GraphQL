@@ -57,7 +57,7 @@ export const getStaticProps: GetStaticProps<{ global: any; sections: any[] }> = 
   });
 
   const data = await ssg.fetchQuery("fetch.shopify-content", `/pages/${params.page}` as string);
-
+  console.log(data);
   // console.log('state', ssr.dehydrate());
   return {
     props: {

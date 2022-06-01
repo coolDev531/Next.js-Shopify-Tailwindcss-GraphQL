@@ -1,11 +1,11 @@
 import Shopify from "shopify-typed-node-api";
-import { Metafield, Order, Page } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
+import { _Page, Metafield, Order, Page } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
 
 export const getAllPages = async (shop: string, accessToken: string, reducer = (p) => p) => {
   const ShopifyRest = new Shopify.Clients.Rest(shop, `${accessToken}`);
 
   let page_info = null;
-  let metafields = [];
+  let pages: _Page[] = [];
 
   for (let i = 0; i < 5000; i++) {
     const { body, headers } = await ShopifyRest.get<Page.Get>({
@@ -21,7 +21,7 @@ export const getAllPages = async (shop: string, accessToken: string, reducer = (
       tries: 10,
     });
 
-    metafields = [...metafields, ...reducer(body.pages)];
+    pages = [...pages, ...reducer(body.pages)];
 
     // console.log(headers.raw());
     const link = headers.get("link");
@@ -37,5 +37,5 @@ export const getAllPages = async (shop: string, accessToken: string, reducer = (
     }
   }
 
-  return metafields;
+  return pages;
 };

@@ -50,55 +50,55 @@ ${JSON.stringify(Sections[section], undefined, 2)}
 function getSettingsType(setting: ShopifySettingsInput) {
   switch (setting.type) {
     case "article":
-      return "undefined | _Article";
+      return "?: _Article";
     case "checkbox":
-      return "boolean";
+      return ": boolean";
     case "number":
-      return "undefined | number";
+      return "?: number";
     case "radio":
       return setting.options.map(({ value }) => `"${value}"`).join(" | ");
     case "range":
-      return "number";
+      return ": number";
     case "select":
       return setting.options.map(({ value }) => `"${value}"`).join(" | ");
     case "text":
-      return "undefined | string";
+      return "?: string";
     case "textarea":
-      return "undefined | string";
+      return "?: string";
     case "blog":
-      return "undefined | _Blog";
+      return "?: _Blog";
     case "collection":
-      return "undefined | _Collection";
+      return "?: _Collection";
     case "collection_list":
-      return "undefined | _Collection[]";
+      return "?: _Collection[]";
     case "color":
-      return "undefined | _Color";
+      return "?: _Color";
     case "color_background":
-      return "undefined | string";
+      return "?: string";
     case "font_picker":
-      return "_Font";
+      return ": _Font";
     case "html":
-      return "undefined | string";
+      return "?: string";
     case "image_picker":
-      return "undefined | _Image";
+      return "?: _Image";
     case "link_list":
-      return "undefined | _LinkList";
+      return "?: _LinkList";
     case "liquid":
-      return "undefined | string";
+      return "?: string";
     case "page":
-      return "undefined | _Page";
+      return "?: _Page";
     case "product":
-      return "undefined | _Product";
+      return "?: _Product";
     case "product_list":
-      return "undefined | _Product[]";
+      return "?: _Product[]";
     case "richtext":
-      return "undefined | `<p${string}</p>`";
+      return "?: `<p${string}</p>`";
     case "url":
-      return "undefined | string";
+      return "?: string";
     case "video_url":
-      return `undefined | ("youtube" | "vimeo")[]`;
+      return `?: ("youtube" | "vimeo")[]`;
     case "font":
-      return "undefined | string";
+      return "?: string";
   }
 }
 
@@ -184,7 +184,7 @@ export const generateSectionsTypes = () => {
       .map(
         (setting) =>
           `/** Input type: ${setting.type} */\n    ` +
-          `${/[^\w_]/gi.test(setting.id) ? `"${setting.id}"` : `${setting.id}`}: ${getSettingsType(
+          `${/[^\w_]/gi.test(setting.id) ? `"${setting.id}"` : `${setting.id}`}${getSettingsType(
             setting
           )};`
       )

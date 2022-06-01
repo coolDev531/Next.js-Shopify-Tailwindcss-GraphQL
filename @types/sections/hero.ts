@@ -5,17 +5,17 @@ export type HeroSection = {
   id: string;
   settings: {
     /** Input type: collection */
-    collection: undefined | _Collection;
+    collection?: _Collection;
     /** Input type: image_picker */
-    image: undefined | _Image;
+    image?: _Image;
     /** Input type: richtext */
-    list: undefined | `<p${string}</p>`;
+    list?: `<p${string}</p>`;
     /** Input type: richtext */
-    paragraph: undefined | `<p${string}</p>`;
+    paragraph?: `<p${string}</p>`;
     /** Input type: text */
-    pre_title: undefined | string;
+    pre_title?: string;
     /** Input type: text */
-    title: undefined | string;
+    title?: string;
   };
   type: "Hero";
 };

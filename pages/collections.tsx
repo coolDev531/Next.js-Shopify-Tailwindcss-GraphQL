@@ -39,7 +39,7 @@ export const getStaticProps = async (
     ctx: { req: {}, res: {} },
   });
 
-  const data = await ssg.fetchQuery("fetch.shopify-content", "/collection");
+  const data = await ssg.fetchQuery("fetch.shopify-content", "/collections");
 
   // console.log('state', ssr.dehydrate());
   return {

@@ -15,17 +15,19 @@ export function Hero({ id, settings, blocks, type }: HeroSection) {
             <footer dangerouslySetInnerHTML={{ __html: settings.list }} />
           </section>
           <section className="px-4">
-            <figure className="aspect-w-8 aspect-h-5 relative">
-              <Image
-                objectFit="cover"
-                objectPosition="50% 60%"
-                layout="fill"
-                // width={settings.image.width}
-                // height={settings.image.height}
-                src={`https:${settings.image.src}`}
-                alt={settings.image.alt}
-              />
-            </figure>
+            {settings.image && (
+              <figure className="aspect-w-8 aspect-h-5 relative">
+                <Image
+                  objectFit="cover"
+                  objectPosition="50% 60%"
+                  layout="fill"
+                  // width={settings.image.width}
+                  // height={settings.image.height}
+                  src={`https:${settings.image.src}`}
+                  alt={settings.image.alt}
+                />
+              </figure>
+            )}
           </section>
         </div>
       </div>
