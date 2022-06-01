@@ -6,5 +6,3 @@ export type FooterSection = {
   };
   type: "Footer";
 };
-
-

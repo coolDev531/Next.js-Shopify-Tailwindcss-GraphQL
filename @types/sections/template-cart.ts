@@ -6,5 +6,3 @@ export type TemplateCartSection = {
   };
   type: "Template cart";
 };
-
-

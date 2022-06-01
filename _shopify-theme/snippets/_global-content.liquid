@@ -20,7 +20,7 @@
   "content": {{ page.content | json }},
   "handle": {{ page.handle | json }},
   "id": {{ page.id | json }},
-  "published_at": "{{ page.published_at }}",
+  "published_at": "{{ page.published_at | date: "%Y-%m-%dT%H:%M:%S%z" }}",
   "template_suffix": {{ page.template_suffix | json }},
   "title": {{ page.title | json }},
   "url": {{ page.url | json }}
@@ -41,55 +41,8 @@
 {%- capture linklistsObject -%}
   [
   {%- for linklist in linklists -%}
-    {
-    "handle": {{ linklist.handle | json }},
-    "levels": {{ linklist.levels | json }},
-    "links": [
-    {% for link in linklist.links  %}
-      {
-        "active": {{ link.active | json }},
-        "child_active": {{ link.child_active |json }},
-        "current": {{ link.current |json }},
-        "child_current": {{ link.child_current |json }},
-        "levels": {{ link.levels |json }},
-        "links": [
-        {% for sub_link in link.links  %}
-          {
-          "active": {{ sub_link.active | json }},
-          "child_active": {{ sub_link.child_active |json }},
-          "current": {{ sub_link.current |json }},
-          "child_current": {{ sub_link.child_current |json }},
-          "levels": {{ sub_link.levels |json }},
-          "links": [
-          {% for sub_sub_link in sub_link.links  %}
-            {
-            "active": {{ sub_sub_link.active | json }},
-            "child_active": {{ sub_sub_link.child_active |json }},
-            "current": {{ sub_sub_link.current |json }},
-            "child_current": {{ sub_sub_link.child_current |json }},
-            "levels": {{ sub_sub_link.levels |json }},
-            "links": {{ sub_sub_link.links |json }},
-            "object": {{ sub_sub_link.object |json }},
-            "title": {{ sub_sub_link.title |json }},
-            "type": {{ sub_sub_link.type |json }},
-            "url": {{ sub_sub_link.url |json }}
-            }{%- unless forloop.last -%},{%- endunless -%}
-          {% endfor %}],
-          "object": {{ sub_link.object |json }},
-          "title": {{ sub_link.title |json }},
-          "type": {{ sub_link.type |json }},
-          "url": {{ sub_link.url |json }}
-          }{%- unless forloop.last -%},{%- endunless -%}
-        {% endfor %}],
-        "object": {{ link.object |json }},
-        "title": {{ link.title |json }},
-        "type": {{ link.type |json }},
-        "url": {{ link.url |json }}
-      }{%- unless forloop.last -%},{%- endunless -%}
-    {% endfor %}],
-    "title": {{ linklist.title | json }}
-    }{%- unless forloop.last -%},{%- endunless -%}
-  {% endfor %}
+    {% include '_map_linklist', input_linklist: linklist %}{%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}
   ]
 {%- endcapture -%}
 
@@ -137,7 +90,7 @@
 {%- endcapture -%}
 <script type="application/json" data-global>
   {
-    "settings": {{ settings | json }},
+    "settings": {% include '_map_settings_types', input_settings: settings %},
     "shop": {{ shopObject }},
     "request": {{ requestObject }},
     "linklists": {{ linklistsObject }},

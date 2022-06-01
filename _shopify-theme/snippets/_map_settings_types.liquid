@@ -1,0 +1,164 @@
+{%- if input_settings -%}
+  {
+  {%- for id in input_settings -%}
+    {%- assign value = input_settings[id] -%}
+    {%- if value.src != blank -%}
+      "{{ id }}": {
+      "alt": {{ value.alt | json }},
+      "aspect_ratio": {{ value.aspect_ratio | json }},
+      "height": {{ value.height | json }},
+      "id": {{ value.id | json }},
+      "media_type": {{ value.media_type | json }},
+      "preview_image": {{ value.preview_image | json }},
+      "src": {{ value.src | json }},
+      "variants": {{ value.variants | json }},
+      "width": {{ value.width | json }}
+      }{%- unless forloop.last -%},{%- endunless -%}
+    {%- elsif value.url contains "/collections/" -%}
+      "{{ id }}": {
+      "all_products_count": {{ value.all_products_count | json }},
+      "all_tags": {{ value.all_tags | json }},
+      "all_types": {{ value.all_types | json }},
+      "all_vendors": {{ value.all_vendors | json }},
+      "default_sort_by": {{ value.default_sort_by | json }},
+      "description": {{ value.description | json }},
+      "featured_image": {{ value.featured_image | json }},
+      "filters": {{ value.filters | json }},
+      "handle": {{ value.handle | json }},
+      "id": {{ value.id | json }},
+      "image": {{ value.image | json }},
+      "products": {{ value.products | json }},
+      "products_count": {{ value.products_count | json }},
+      "published_at": "{{ value.published_at | date: "%Y-%m-%dT%H:%M:%S%z" }}",
+      "template_suffix": {{ value.template_suffix | json }},
+      "title": {{ value.title | json }},
+      "tags": {{ value.tags | json }},
+      "url": {{ value.url | json }}
+      }{%- unless forloop.last -%},{%- endunless -%}
+    {%- elsif value.url contains "/products/" -%}
+      "{{ id }}":{
+      "available": {{ value.available | json }},
+      "collections": {{ value.collections | json }},
+      "compare_at_price": {{ value.compare_at_price | json }},
+      "compare_at_price_max": {{ value.compare_at_price_max | json }},
+      "compare_at_price_min": {{ value.compare_at_price_min | json }},
+      "compare_at_price_varies": {{ value.compare_at_price_varies | json }},
+      "content": {{ value.content | json }},
+      "created_at": "{{ value.created_at | date: "%Y-%m-%dT%H:%M:%S%z" }}",
+      "description": {{ value.description | json }},
+      "featured_image": {{ value.featured_image | json }},
+      "featured_media": {{ value.featured_media | json }},
+      "handle": {{ value.handle | json }},
+      "id": {{ value.id | json }},
+      "images": {{ value.images | json }},
+      "media": {{ value.media | json }},
+      "options": {{ value.options | json }},
+      "price": {{ value.price | json }},
+      "price_max": {{ value.price_max | json }},
+      "price_min": {{ value.price_min | json }},
+      "price_varies": {{ value.price_varies | json }},
+      "published_at": "{{ value.published_at | date: "%Y-%m-%dT%H:%M:%S%z" }}",
+      "tags": {{ value.tags | json }},
+      "template_suffix": {{ value.template_suffix | json }},
+      "title": {{ value.title | json }},
+      "type": {{ value.type | json }},
+      "url": {{ value.url | json }},
+      "variants": {{ value.variants | json }},
+      "vendor": {{ value.vendor | json }}
+      }{%- unless forloop.last -%},{%- endunless -%}
+    {%- elsif value.url contains "/blogs/" and value.articles_count != blank -%}
+      "{{ id }}": {
+      "all_tags": {{ value.all_tags | json }},
+      "articles": {{ value.articles | json }},
+      "articles_count": {{ value.articles_count | json }},
+      "comments_enabled": {{ value.comments_enabled | json }},
+      "handle": {{ value.handle | json }},
+      "id": {{ value.id | json }},
+      "moderated": {{ value.moderated | json }},
+      "tags": {{ value.tags | json }},
+      "title": {{ value.title | json }},
+      "url": {{ value.url | json }}
+      }{%- unless forloop.last -%},{%- endunless -%}
+    {%- elsif value.url contains "/blogs/" and value.author -%}
+      "{{ id }}": {
+      "author": {{ value.author | json }},
+      "comments": {{ value.comments | json }},
+      "comments_count": {{ value.comments_count | json }},
+      "comments_enabled": {{ value.comments_enabled | json }},
+      "comment_post_url": {{ value.comment_post_url | json }},
+      "content": {{ value.content | json }},
+      "created_at": "{{ value.created_at | date: "%Y-%m-%dT%H:%M:%S%z" }}",
+      "excerpt": {{ value.excerpt | json }},
+      "excerpt_or_content": {{ value.excerpt_or_content | json }},
+      "handle": {{ value.handle | json }},
+      "id": {{ value.id | json }},
+      "image": {{ value.image | json }},
+      "moderated": {{ value.moderated | json }},
+      "published_at": "{{ value.published_at | date: "%Y-%m-%dT%H:%M:%S%z" }}",
+      "tags": {{ value.tags | json }},
+      "title": {{ value.title | json }},
+      "updated_at": "{{ value.updated_at | date: "%Y-%m-%dT%H:%M:%S%z" }}",
+      "url": {{ value.url | json }},
+      "user": {
+      "account_owner": {{ value.user.account_owner | json }},
+      "bio": {{ value.user.bio | json }},
+      "email": {{ value.user.email | json }},
+      "first_name": {{ value.user.first_name | json }},
+      "homepage": {{ value.user.homepage | json }},
+      "image": {{ value.user.image | json }},
+      "last_name": {{ value.user.last_name | json }}
+      }
+      }{%- unless forloop.last -%},{%- endunless -%}
+    {%- elsif value.url contains "/pages/" -%}
+      "{{ id }}": {
+      "author": {{ value.author | json }},
+      "content": {{ value.content | json }},
+      "handle": {{ value.handle | json }},
+      "id": {{ value.id | json }},
+      "published_at": "{{ value.published_at | date: "%Y-%m-%dT%H:%M:%S%z" }}",
+      "template_suffix": {{ value.template_suffix | json }},
+      "title": {{ value.title | json }},
+      "url": {{ value.url | json }}
+      }{%- unless forloop.last -%},{%- endunless -%}
+    {%- elsif value.levels -%}
+      "{{ id }}": {% include '_map_linklist', input_linklist: value %}{%- unless forloop.last -%},{%- endunless -%}
+    {%- elsif value.family -%}
+      "{{ id }}": {
+      "baseline_ratio": {{ value.baseline_ratio | json }},
+      "fallback_families": {{ value.fallback_families | json }},
+      "family": {{ value.family | json }},
+      "style": {{ value.style | json }},
+      "system": {{ value.system | json }},
+      "weight": {{ value.weight | json }},
+      "variants": [
+      {%- for font_variant in value.variants -%}
+        {
+        "baseline_ratio": {{ font_variant.baseline_ratio | json }},
+        "fallback_families": {{ font_variant.fallback_families | json }},
+        "family": {{ font_variant.family | json }},
+        "style": {{ font_variant.style | json }},
+        "system": {{ font_variant.system | json }},
+        "weight": {{ font_variant.weight | json }}
+        }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+      ]
+      }{%- unless forloop.last -%},{%- endunless -%}
+    {%- elsif value.alpha -%}
+      "{{ id }}": {
+      "hex": {{ value | json }},
+      "alpha": {{ value.alpha | json }},
+      "blue": {{ value.blue | json }},
+      "green": {{ value.green | json }},
+      "hue": {{ value.hue | json }},
+      "lightness": {{ value.lightness | json }},
+      "red": {{ value.red | json }},
+      "saturation": {{ value.saturation | json }}
+      }{%- unless forloop.last -%},{%- endunless -%}
+    {%- else -%}
+      "{{ id }}": {{ value | json }}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endif -%}
+  {%- endfor -%}
+  }
+{%- else -%}
+  {}
+{%- endif -%}

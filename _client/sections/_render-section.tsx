@@ -82,5 +82,11 @@ export const renderSection = (section: Sections) => {
           <div>Section to be developed: {section.type}</div>
         </Fragment>
       );
+    case "Test":
+      return (
+        <Fragment key={section.id}>
+          <div>Section to be developed: {section.type}</div>
+        </Fragment>
+      );
   }
 };

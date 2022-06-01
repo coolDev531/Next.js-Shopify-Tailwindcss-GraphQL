@@ -6,5 +6,3 @@ export type Template_404Section = {
   };
   type: "Template 404";
 };
-
-

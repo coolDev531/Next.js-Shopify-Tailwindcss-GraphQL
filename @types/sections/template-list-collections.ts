@@ -6,5 +6,3 @@ export type TemplateListCollectionsSection = {
   };
   type: "Template list collections";
 };
-
-

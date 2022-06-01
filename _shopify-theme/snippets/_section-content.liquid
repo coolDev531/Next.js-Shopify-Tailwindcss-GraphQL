@@ -3,7 +3,7 @@
   {%- for block in section.blocks -%}
     {
     "type": {{ block.type | json }},
-    "settings": {{ block.settings | json }}
+    "settings":{% include '_map_settings_types', input_settings: block.settings %}
     }{%- unless forloop.last -%},{%- endunless -%}
   {%- endfor -%}
   ]
@@ -13,15 +13,10 @@
 {
   "id": {{ section.id | json }},
   "type": {{ type | json }},
-  "settings": {{ section.settings | json }},
+  "settings": {% include '_map_settings_types', input_settings: section.settings %},
   "blocks": {{ blocks }},
   "global": false
 }
 </script>
 
-{% for setting in section.settings %}
-  <script>
-      console.log({{ section.settings[setting].url | json }});
-  </script>
-{% endfor %}
 

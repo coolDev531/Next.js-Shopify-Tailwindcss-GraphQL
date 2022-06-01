@@ -1,7 +1,7 @@
 import * as Sections from "_sections";
 import * as fs from "fs";
-import { capitalize } from "utils/capitalize";
 import { ShopifySection, ShopifySettingsInput } from "types/shopify";
+import { capitalize } from "utils/capitalize";
 import { toKebabCase } from "utils/to-kebab-case";
 
 export const generateSections = () => {
@@ -50,7 +50,7 @@ ${JSON.stringify(Sections[section], undefined, 2)}
 function getSettingsType(setting: ShopifySettingsInput) {
   switch (setting.type) {
     case "article":
-      return "undefined | string";
+      return "undefined | _Article";
     case "checkbox":
       return "boolean";
     case "number":
@@ -66,38 +66,104 @@ function getSettingsType(setting: ShopifySettingsInput) {
     case "textarea":
       return "undefined | string";
     case "blog":
-      return "undefined | string";
+      return "undefined | _Blog";
     case "collection":
-      return "undefined | string";
+      return "undefined | _Collection";
     case "collection_list":
-      return "undefined | string";
+      return "undefined | _Collection[]";
     case "color":
-      return "undefined | string";
+      return "undefined | _Color";
     case "color_background":
       return "undefined | string";
     case "font_picker":
-      return "string";
+      return "_Font";
     case "html":
       return "undefined | string";
     case "image_picker":
-      return "undefined | string";
+      return "undefined | _Image";
     case "link_list":
-      return "undefined | string";
+      return "undefined | _LinkList";
     case "liquid":
       return "undefined | string";
     case "page":
-      return "undefined | string";
+      return "undefined | _Page";
     case "product":
-      return "undefined | string";
+      return "undefined | _Product";
     case "product_list":
-      return "undefined | string";
+      return "undefined | _Product[]";
     case "richtext":
       return "undefined | `<p${string}</p>`";
     case "url":
       return "undefined | string";
     case "video_url":
       return `undefined | ("youtube" | "vimeo")[]`;
+    case "font":
+      return "undefined | string";
   }
+}
+
+function getImports(section: ShopifySection) {
+  const localTypes = [];
+  const apiTypes = [];
+
+  section.settings.forEach((setting) => {
+    if (setting.type === "article") {
+      if (apiTypes.includes("_Article")) return;
+      apiTypes.push("_Article");
+    }
+    if (setting.type === "blog") {
+      if (apiTypes.includes("_Blog")) return;
+      apiTypes.push("_Blog");
+    }
+    if (setting.type === "collection") {
+      if (apiTypes.includes("_Collection")) return;
+      apiTypes.push("_Collection");
+    }
+    if (setting.type === "collection_list") {
+      if (apiTypes.includes("_Collection")) return;
+      apiTypes.push("_Collection");
+    }
+    if (setting.type === "color") {
+      if (localTypes.includes("_Color")) return;
+      localTypes.push("_Color");
+    }
+    if (setting.type === "image_picker") {
+      if (apiTypes.includes("_Image")) return;
+      apiTypes.push("_Image");
+    }
+    if (setting.type === "font_picker") {
+      if (localTypes.includes("_Font")) return;
+      localTypes.push("_Font");
+    }
+    if (setting.type === "link_list") {
+      if (localTypes.includes("_LinkList")) return;
+      localTypes.push("_LinkList");
+    }
+    if (setting.type === "page") {
+      if (apiTypes.includes("_Page")) return;
+      apiTypes.push("_Page");
+    }
+    if (setting.type === "product") {
+      if (apiTypes.includes("_Product")) return;
+      apiTypes.push("_Product");
+    }
+    if (setting.type === "product_list") {
+      if (apiTypes.includes("_Product")) return;
+      apiTypes.push("_Product");
+    }
+  });
+
+  if (localTypes.length || apiTypes.length) {
+    return `${
+      (localTypes.length ? `import { ${localTypes.join(", ")} } from "types/shopify";\n` : "") +
+      (apiTypes.length
+        ? `import { ${apiTypes.join(
+            ", "
+          )} } from "shopify-typed-node-api/dist/clients/rest/dataTypes";\n`
+        : "")
+    }\n`;
+  }
+  return ``;
 }
 
 export const generateSectionsTypes = () => {
@@ -105,7 +171,7 @@ export const generateSectionsTypes = () => {
   let sectionUnionType = "export type Sections =";
   for (const key in Sections) {
     const section = Sections[key] as ShopifySection;
-    const typeContent = `export type ${capitalize(key)}Section = {
+    const typeContent = `${getImports(section)}export type ${capitalize(key)}Section = {
   blocks: []${section.blocks?.length ? ` | ${key}Blocks[]` : ""};
   id: string;
   settings: {
@@ -125,11 +191,9 @@ export const generateSectionsTypes = () => {
       .join("\n    ")}
   };
   type: "${section.name}";
-};
-
-${
-  section.blocks?.length
-    ? `type ${key}Blocks =
+};${
+      section.blocks?.length
+        ? `\ntype ${key}Blocks =
 ${section.blocks
   .map((block) => {
     return `  | {
@@ -149,13 +213,14 @@ ${section.blocks
               }: ${getSettingsType(setting)};`
           )
           .join("\n        ")}
-      }; 
+      };
     }`;
   })
   .join("\n")};`
-    : ""
-}
+        : ""
+    }
 `;
+
     const filename = toKebabCase(section.name);
 
     indexContent += `import { ${capitalize(key)}Section } from "types/sections/${filename}";\n`;

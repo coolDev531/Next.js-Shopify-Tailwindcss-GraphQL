@@ -112,6 +112,13 @@ type ShopifyFont_picker = {
   type: "font_picker";
   info?: string;
 };
+type ShopifyFont = {
+  id: string;
+  label: string;
+  type: "font";
+  default?: string;
+  info?: string;
+};
 type ShopifyHtml = {
   id: string;
   label: string;
@@ -196,6 +203,7 @@ export type ShopifySettingsInput =
   | ShopifyColor
   | ShopifyColor_background
   | ShopifyFont_picker
+  | ShopifyFont
   | ShopifyHtml
   | ShopifyImage_picker
   | ShopifyLink_list
@@ -277,3 +285,8 @@ export type ShopifySettings = (
       settings: (ShopifySettingsInput | ShopifyHeader | ShopifyParagraph)[];
     }
 )[];
+
+export type _Color = {};
+
+export type _LinkList = {};
+export type _Font = {};

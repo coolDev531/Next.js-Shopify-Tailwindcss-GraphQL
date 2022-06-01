@@ -6,5 +6,3 @@ export type TemplatePageSection = {
   };
   type: "Template page";
 };
-
-

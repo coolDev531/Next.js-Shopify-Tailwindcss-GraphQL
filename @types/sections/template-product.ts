@@ -6,5 +6,3 @@ export type TemplateProductSection = {
   };
   type: "Template Product";
 };
-
-

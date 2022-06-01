@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "template-article",
+      "settings": {
+      }
+    },
+    "16540104123512b9a3": {
+      "type": "hero",
+      "settings": {
+        "pre_title": "About the project",
+        "title": "Kids Living",
+        "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad esse nam nulla quisquam velit! Illum laudantium rem repellendus suscipit tempora? Animi consequuntur eum fugit inventore itaque labore officiis, quasi rem!<\/p>",
+        "list": "<p>Services<\/p><p>- Web development<\/p><p>- Custom Features<\/p><p>- Something else <\/p>",
+        "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+        "collection": "frontpage"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16540104123512b9a3"
+  ]
+}

@@ -6,5 +6,3 @@ export type TemplatePasswordSection = {
   };
   type: "Template password";
 };
-
-

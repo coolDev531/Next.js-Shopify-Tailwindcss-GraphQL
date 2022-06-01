@@ -6,5 +6,3 @@ export type TemplateArticleSection = {
   };
   type: "Template article";
 };
-
-

@@ -11,6 +11,7 @@ import { TemplatePageSection } from "types/sections/template-page";
 import { TemplatePasswordSection } from "types/sections/template-password";
 import { TemplateProductSection } from "types/sections/template-product";
 import { TemplateSearchSection } from "types/sections/template-search";
+import { TestSection } from "types/sections/test";
 
 export type Sections =
   | FooterSection
@@ -25,4 +26,5 @@ export type Sections =
   | TemplatePageSection
   | TemplatePasswordSection
   | TemplateProductSection
-  | TemplateSearchSection;
+  | TemplateSearchSection
+  | TestSection;
