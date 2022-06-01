@@ -8,6 +8,12 @@ import { Sections } from "types/sections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {
+    case "info-cards":
+      return (
+        <Fragment key={section.id}>
+          <div>Section to be developed: {section.type}</div>
+        </Fragment>
+      );
     case "footer":
       return (
         <Fragment key={section.id}>

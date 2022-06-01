@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { StatsGraphSection } from "types/sections/stats-graph";
 
 export function StatsGraph({ id, settings, blocks, type }: StatsGraphSection) {

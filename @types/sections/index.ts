@@ -3,6 +3,7 @@ import { HeaderSection } from "types/sections/header";
 import { HeadingSection } from "types/sections/heading";
 import { HeroSection } from "types/sections/hero";
 import { ImageTextSection } from "types/sections/image-text";
+import { InfoCardsSection } from "types/sections/info-cards";
 import { StatsGraphSection } from "types/sections/stats-graph";
 import { StorySection } from "types/sections/story";
 import { Template_404Section } from "types/sections/template-404";
@@ -22,6 +23,7 @@ export type Sections =
   | HeadingSection
   | HeroSection
   | ImageTextSection
+  | InfoCardsSection
   | StatsGraphSection
   | StorySection
   | Template_404Section
