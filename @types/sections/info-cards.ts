@@ -1,5 +1,3 @@
-import { _Image } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
-
 export type InfoCardsSection = {
   blocks: infoCardsBlocks[];
   id: string;
@@ -15,10 +13,10 @@ type infoCardsBlocks =
   | {
       id: string;      
       settings: {
-        /** Input type: image_picker */
-        icon?: _Image;
         /** Input type: richtext */
         paragraph?: `<p${string}</p>`;
+        /** Input type: html */
+        svg?: string;
         /** Input type: text */
         title?: string;
       };

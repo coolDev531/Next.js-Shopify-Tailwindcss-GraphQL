@@ -1,6 +1,8 @@
 import BlockHeading from "_client/sections/block-heading";
 import { BlockHero } from "_client/sections/block-hero";
 import { BlockImageText } from "_client/sections/block-image-text";
+import { InfoCards } from "_client/sections/info-cards";
+import { LogoBanner } from "_client/sections/logo-banner";
 import { StatsGraph } from "_client/sections/stats-graph";
 import { Story } from "_client/sections/story";
 import { Fragment } from "react";
@@ -8,10 +10,16 @@ import { Sections } from "types/sections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {
+    case "logo-banner":
+      return (
+        <Fragment key={section.id}>
+          <LogoBanner {...section} />
+        </Fragment>
+      );
     case "info-cards":
       return (
         <Fragment key={section.id}>
-          <div>Section to be developed: {section.type}</div>
+          <InfoCards {...section} />
         </Fragment>
       );
     case "footer":

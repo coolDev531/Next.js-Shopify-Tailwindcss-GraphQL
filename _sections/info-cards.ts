@@ -39,10 +39,9 @@ export const infoCards: ShopifySection = {
           label: "Description",
         },
         {
-          type: "image_picker",
-          id: "icon",
-          label: "Icon",
-          info: ".svg / .png - with transparent background",
+          type: "html",
+          id: "svg",
+          label: "SVG code",
         },
       ],
     },

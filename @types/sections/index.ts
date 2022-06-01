@@ -4,6 +4,7 @@ import { HeadingSection } from "types/sections/heading";
 import { HeroSection } from "types/sections/hero";
 import { ImageTextSection } from "types/sections/image-text";
 import { InfoCardsSection } from "types/sections/info-cards";
+import { LogoBannerSection } from "types/sections/logo-banner";
 import { StatsGraphSection } from "types/sections/stats-graph";
 import { StorySection } from "types/sections/story";
 import { Template_404Section } from "types/sections/template-404";
@@ -24,6 +25,7 @@ export type Sections =
   | HeroSection
   | ImageTextSection
   | InfoCardsSection
+  | LogoBannerSection
   | StatsGraphSection
   | StorySection
   | Template_404Section
@@ -37,4 +39,4 @@ export type Sections =
   | TemplateProductSection
   | TemplateSearchSection;
 
-export type { FooterSection, HeaderSection, HeadingSection, HeroSection, ImageTextSection, InfoCardsSection, StatsGraphSection, StorySection, Template_404Section, TemplateArticleSection, TemplateBlogSection, TemplateCartSection, TemplateCollectionSection, TemplateListCollectionsSection, TemplatePageSection, TemplatePasswordSection, TemplateProductSection, TemplateSearchSection };
+export type { FooterSection, HeaderSection, HeadingSection, HeroSection, ImageTextSection, InfoCardsSection, LogoBannerSection, StatsGraphSection, StorySection, Template_404Section, TemplateArticleSection, TemplateBlogSection, TemplateCartSection, TemplateCollectionSection, TemplateListCollectionsSection, TemplatePageSection, TemplatePasswordSection, TemplateProductSection, TemplateSearchSection };

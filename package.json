@@ -65,6 +65,7 @@
     "postcss": "^8.4.13",
     "sass": "^1.51.0",
     "shopify-ftp2": "^2.0.4",
+    "tailwind-children": "^0.5.0",
     "tailwindcss": "^3.0.24",
     "typescript": "^4.6.4"
   }
