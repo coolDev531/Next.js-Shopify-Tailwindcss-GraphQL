@@ -1,8 +1,7 @@
 export type TemplateCollectionSection = {
-  blocks: [];
-  id: string;
+    id: string;
   settings: {
     
   };
-  type: "Collection";
+  type: "collection"; 
 };

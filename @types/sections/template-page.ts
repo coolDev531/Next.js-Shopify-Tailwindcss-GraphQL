@@ -1,8 +1,7 @@
 export type TemplatePageSection = {
-  blocks: [];
-  id: string;
+    id: string;
   settings: {
     
   };
-  type: "Template page";
+  type: "template-page"; 
 };

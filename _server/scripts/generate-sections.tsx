@@ -17,7 +17,7 @@ export const generateSections = () => {
       sectionType = "_section-global-content";
     }
 
-    const content = `{% include "${sectionType}", type: "${Sections[section].name}" %}
+    const content = `{% include "${sectionType}", type: "${toKebabCase(section)}" %}
 {% include "section_${toKebabCase(section)}" %}
  
 {% schema %}
@@ -28,7 +28,7 @@ ${JSON.stringify(Sections[section], undefined, 2)}
     if (!fs.existsSync(`_shopify-theme/snippets/section_${toKebabCase(section)}.liquid`)) {
       fs.writeFileSync(
         `_shopify-theme/snippets/section_${toKebabCase(section)}.liquid`,
-        toKebabCase(section)
+        `<div></div>`
       );
     }
 
@@ -56,11 +56,11 @@ function getSettingsType(setting: ShopifySettingsInput) {
     case "number":
       return "?: number";
     case "radio":
-      return setting.options.map(({ value }) => `"${value}"`).join(" | ");
+      return `: ${setting.options.map(({ value }) => `"${value}"`).join(" | ")}`;
     case "range":
       return ": number";
     case "select":
-      return setting.options.map(({ value }) => `"${value}"`).join(" | ");
+      return `: ${setting.options.map(({ value }) => `"${value}"`).join(" | ")}`;
     case "text":
       return "?: string";
     case "textarea":
@@ -106,7 +106,7 @@ function getImports(section: ShopifySection) {
   const localTypes = [];
   const apiTypes = [];
 
-  section.settings.forEach((setting) => {
+  const analyseSetting = (setting) => {
     if (setting.type === "article") {
       if (apiTypes.includes("_Article")) return;
       apiTypes.push("_Article");
@@ -151,6 +151,11 @@ function getImports(section: ShopifySection) {
       if (apiTypes.includes("_Product")) return;
       apiTypes.push("_Product");
     }
+  };
+
+  section.settings.forEach(analyseSetting);
+  section.blocks?.forEach((block) => {
+    block.settings?.forEach(analyseSetting);
   });
 
   if (localTypes.length || apiTypes.length) {
@@ -171,9 +176,10 @@ export const generateSectionsTypes = () => {
   let sectionUnionType = "export type Sections =";
   for (const key in Sections) {
     const section = Sections[key] as ShopifySection;
+    const filename = toKebabCase(section.name);
+
     const typeContent = `${getImports(section)}export type ${capitalize(key)}Section = {
-  blocks: []${section.blocks?.length ? ` | ${key}Blocks[]` : ""};
-  id: string;
+  ${section.blocks?.length ? `blocks: ${key}Blocks[];\n` : ""}  id: string;
   settings: {
     ${(
       section.settings?.filter(
@@ -190,15 +196,15 @@ export const generateSectionsTypes = () => {
       )
       .join("\n    ")}
   };
-  type: "${section.name}";
+  type: "${filename}"; 
 };${
       section.blocks?.length
         ? `\ntype ${key}Blocks =
 ${section.blocks
   .map((block) => {
     return `  | {
-      type: "${block.type}";
-      settings?: {
+      id: string;      
+      settings: {
         ${(
           block.settings?.filter(
             (s) => s.type !== "header" && s.type !== "paragraph"
@@ -210,18 +216,17 @@ ${section.blocks
               `/** Input type: ${setting.type} */\n        ` +
               `${
                 /[^\w_]/gi.test(setting.id) ? `"${setting.id}"` : `${setting.id}`
-              }: ${getSettingsType(setting)};`
+              }${getSettingsType(setting)};`
           )
           .join("\n        ")}
       };
+      type: "${block.type}";
     }`;
   })
   .join("\n")};`
         : ""
     }
 `;
-
-    const filename = toKebabCase(section.name);
 
     indexContent += `import { ${capitalize(key)}Section } from "types/sections/${filename}";\n`;
     sectionUnionType += `\n  | ${capitalize(key)}Section`;

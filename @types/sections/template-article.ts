@@ -1,8 +1,7 @@
 export type TemplateArticleSection = {
-  blocks: [];
-  id: string;
+    id: string;
   settings: {
     
   };
-  type: "Template article";
+  type: "template-article"; 
 };

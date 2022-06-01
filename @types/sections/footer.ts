@@ -1,8 +1,7 @@
 export type FooterSection = {
-  blocks: [];
-  id: string;
+    id: string;
   settings: {
     
   };
-  type: "Footer";
+  type: "footer"; 
 };

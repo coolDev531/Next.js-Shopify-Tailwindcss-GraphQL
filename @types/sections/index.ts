@@ -1,6 +1,10 @@
 import { FooterSection } from "types/sections/footer";
 import { HeaderSection } from "types/sections/header";
+import { HeadingSection } from "types/sections/heading";
 import { HeroSection } from "types/sections/hero";
+import { ImageTextSection } from "types/sections/image-text";
+import { StatsGraphSection } from "types/sections/stats-graph";
+import { StorySection } from "types/sections/story";
 import { Template_404Section } from "types/sections/template-404";
 import { TemplateArticleSection } from "types/sections/template-article";
 import { TemplateBlogSection } from "types/sections/template-blog";
@@ -15,7 +19,11 @@ import { TemplateSearchSection } from "types/sections/template-search";
 export type Sections =
   | FooterSection
   | HeaderSection
+  | HeadingSection
   | HeroSection
+  | ImageTextSection
+  | StatsGraphSection
+  | StorySection
   | Template_404Section
   | TemplateArticleSection
   | TemplateBlogSection

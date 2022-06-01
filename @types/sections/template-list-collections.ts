@@ -1,8 +1,7 @@
 export type TemplateListCollectionsSection = {
-  blocks: [];
-  id: string;
+    id: string;
   settings: {
     
   };
-  type: "Template list collections";
+  type: "template-list-collections"; 
 };

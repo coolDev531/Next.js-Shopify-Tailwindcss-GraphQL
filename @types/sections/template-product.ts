@@ -1,8 +1,7 @@
 export type TemplateProductSection = {
-  blocks: [];
-  id: string;
+    id: string;
   settings: {
     
   };
-  type: "Template Product";
+  type: "template-product"; 
 };

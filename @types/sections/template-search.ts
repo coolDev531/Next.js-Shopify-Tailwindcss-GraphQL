@@ -1,8 +1,7 @@
 export type TemplateSearchSection = {
-  blocks: [];
-  id: string;
+    id: string;
   settings: {
     
   };
-  type: "Template search";
+  type: "template-search"; 
 };

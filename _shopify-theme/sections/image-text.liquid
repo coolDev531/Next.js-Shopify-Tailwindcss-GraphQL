@@ -1,9 +1,9 @@
-{% include "_section-content", type: "hero" %}
-{% include "section_hero" %}
+{% include "_section-content", type: "image-text" %}
+{% include "section_image-text" %}
  
 {% schema %}
 {
-  "name": "Hero",
+  "name": "Image text",
   "settings": [
     {
       "type": "header",
@@ -25,24 +25,34 @@
       "label": "Paragraph"
     },
     {
-      "type": "richtext",
-      "id": "list",
-      "label": "List"
-    },
-    {
       "type": "image_picker",
       "id": "image",
       "label": "Image"
     },
     {
-      "type": "collection",
-      "id": "collection",
-      "label": "Collection"
+      "type": "header",
+      "content": "Settings"
+    },
+    {
+      "type": "radio",
+      "id": "position",
+      "label": "Image Position",
+      "default": "right",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Hero"
+      "name": "Image text"
     }
   ]
 }

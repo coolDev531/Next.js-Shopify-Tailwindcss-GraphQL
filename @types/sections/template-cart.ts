@@ -1,8 +1,7 @@
 export type TemplateCartSection = {
-  blocks: [];
-  id: string;
+    id: string;
   settings: {
     
   };
-  type: "Template cart";
+  type: "template-cart"; 
 };

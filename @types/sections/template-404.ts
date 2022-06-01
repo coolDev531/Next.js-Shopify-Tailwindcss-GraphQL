@@ -1,8 +1,7 @@
 export type Template_404Section = {
-  blocks: [];
-  id: string;
+    id: string;
   settings: {
     
   };
-  type: "Template 404";
+  type: "template-404"; 
 };

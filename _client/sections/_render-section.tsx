@@ -1,82 +1,109 @@
-import { Hero } from "_client/sections/hero";
+import BlockHeading from "_client/sections/block-heading";
+import { BlockHero } from "_client/sections/block-hero";
+import { BlockImageText } from "_client/sections/block-image-text";
+import { StatsGraph } from "_client/sections/stats-graph";
 import { Fragment } from "react";
 import { Sections } from "types/sections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {
-    case "Footer":
+    case "footer":
       return (
         <Fragment key={section.id}>
           <div>Section to be developed: {section.type}</div>
         </Fragment>
       );
-    case "Header":
+    case "header":
       return (
         <Fragment key={section.id}>
           <div>Section to be developed: {section.type}</div>
         </Fragment>
       );
-    case "Hero":
+    case "heading":
       return (
         <Fragment key={section.id}>
-          <Hero {...section} />
+          <BlockHeading {...section} />
         </Fragment>
       );
-    case "Template 404":
+    case "hero":
       return (
         <Fragment key={section.id}>
-          <div>Section to be developed: {section.type}</div>
+          <BlockHero {...section} />
         </Fragment>
       );
-    case "Template article":
+    case "image-text":
       return (
         <Fragment key={section.id}>
-          <div>Section to be developed: {section.type}</div>
+          <BlockImageText {...section} />
         </Fragment>
       );
-    case "Template blog":
+    case "stats-graph":
       return (
         <Fragment key={section.id}>
-          <div>Section to be developed: {section.type}</div>
+          <StatsGraph {...section} />
         </Fragment>
       );
-    case "Template cart":
-      return (
-        <Fragment key={section.id}>
-          <div>Section to be developed: {section.type}</div>
-        </Fragment>
-      );
-    case "Collection":
+    case "story":
       return (
         <Fragment key={section.id}>
           <div>Section to be developed: {section.type}</div>
         </Fragment>
       );
-    case "Template list collections":
+    case "template-404":
       return (
         <Fragment key={section.id}>
           <div>Section to be developed: {section.type}</div>
         </Fragment>
       );
-    case "Template page":
+    case "template-article":
       return (
         <Fragment key={section.id}>
           <div>Section to be developed: {section.type}</div>
         </Fragment>
       );
-    case "Template password":
+    case "template-blog":
       return (
         <Fragment key={section.id}>
           <div>Section to be developed: {section.type}</div>
         </Fragment>
       );
-    case "Template Product":
+    case "template-cart":
       return (
         <Fragment key={section.id}>
           <div>Section to be developed: {section.type}</div>
         </Fragment>
       );
-    case "Template search":
+    case "collection":
+      return (
+        <Fragment key={section.id}>
+          <div>Section to be developed: {section.type}</div>
+        </Fragment>
+      );
+    case "template-list-collections":
+      return (
+        <Fragment key={section.id}>
+          <div>Section to be developed: {section.type}</div>
+        </Fragment>
+      );
+    case "template-page":
+      return (
+        <Fragment key={section.id}>
+          <div>Section to be developed: {section.type}</div>
+        </Fragment>
+      );
+    case "template-password":
+      return (
+        <Fragment key={section.id}>
+          <div>Section to be developed: {section.type}</div>
+        </Fragment>
+      );
+    case "template-product":
+      return (
+        <Fragment key={section.id}>
+          <div>Section to be developed: {section.type}</div>
+        </Fragment>
+      );
+    case "template-search":
       return (
         <Fragment key={section.id}>
           <div>Section to be developed: {section.type}</div>

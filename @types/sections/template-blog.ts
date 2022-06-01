@@ -1,8 +1,7 @@
 export type TemplateBlogSection = {
-  blocks: [];
-  id: string;
+    id: string;
   settings: {
     
   };
-  type: "Template blog";
+  type: "template-blog"; 
 };

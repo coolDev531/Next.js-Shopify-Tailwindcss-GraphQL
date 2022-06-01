@@ -1,8 +1,7 @@
 export type TemplatePasswordSection = {
-  blocks: [];
-  id: string;
+    id: string;
   settings: {
     
   };
-  type: "Template password";
+  type: "template-password"; 
 };
