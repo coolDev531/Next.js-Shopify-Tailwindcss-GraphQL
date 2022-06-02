@@ -4,45 +4,47 @@ import { ShopifySection, ShopifySettingsInput } from "types/shopify";
 import { capitalize } from "utils/capitalize";
 import { toKebabCase } from "utils/to-kebab-case";
 
+const sectionToLiquid = (section, key, shopifyThemeString) => {
+  let sectionType = "_section-content";
+  const regexp = new RegExp(`\\{%\\s+section\\s+["']${key}["']`, "gi");
+
+  if (regexp.test(shopifyThemeString)) {
+    sectionType = "_section-global-content";
+  }
+
+  return `{% include "${sectionType}", type: "${toKebabCase(key)}" %}
+{% include "section_${toKebabCase(key)}" %}
+  
+{% schema %}
+${JSON.stringify(section, undefined, 2)}
+{% endschema %} 
+`;
+};
+
 export const generateSections = () => {
   const shopifyThemeString = fs.readFileSync("_shopify-theme/layout/theme.liquid", {
     encoding: "utf-8",
   });
 
-  for (const section in Sections) {
-    let sectionType = "_section-content";
-    const regexp = new RegExp(`\\{%\\s+section\\s+["']${section}["']`, "gi");
+  for (const key in Sections) {
+    const section = Sections[key];
+    const content = sectionToLiquid(section, key, shopifyThemeString);
 
-    if (regexp.test(shopifyThemeString)) {
-      sectionType = "_section-global-content";
+    if (!fs.existsSync(`_shopify-theme/snippets/section_${toKebabCase(key)}.liquid`)) {
+      fs.writeFileSync(`_shopify-theme/snippets/section_${toKebabCase(key)}.liquid`, `<div></div>`);
     }
 
-    const content = `{% include "${sectionType}", type: "${toKebabCase(section)}" %}
-{% include "section_${toKebabCase(section)}" %}
- 
-{% schema %}
-${JSON.stringify(Sections[section], undefined, 2)}
-{% endschema %} 
-`;
-
-    if (!fs.existsSync(`_shopify-theme/snippets/section_${toKebabCase(section)}.liquid`)) {
-      fs.writeFileSync(
-        `_shopify-theme/snippets/section_${toKebabCase(section)}.liquid`,
-        `<div></div>`
-      );
-    }
-
-    if (!fs.existsSync(`_shopify-theme/sections/${toKebabCase(section)}.liquid`)) {
-      fs.writeFileSync(`_shopify-theme/sections/${toKebabCase(section)}.liquid`, content);
+    if (!fs.existsSync(`_shopify-theme/sections/${toKebabCase(key)}.liquid`)) {
+      fs.writeFileSync(`_shopify-theme/sections/${toKebabCase(key)}.liquid`, content);
       continue;
     }
 
     const contentVerification = fs.readFileSync(
-      `_shopify-theme/sections/${toKebabCase(section)}.liquid`,
+      `_shopify-theme/sections/${toKebabCase(key)}.liquid`,
       { encoding: "utf-8" }
     );
     if (contentVerification !== content) {
-      fs.writeFileSync(`_shopify-theme/sections/${toKebabCase(section)}.liquid`, content);
+      fs.writeFileSync(`_shopify-theme/sections/${toKebabCase(key)}.liquid`, content);
     }
   }
 };
@@ -102,61 +104,64 @@ function getSettingsType(setting: ShopifySettingsInput) {
   }
 }
 
-function getImports(section: ShopifySection) {
+const getImports = (sections: { [T: string]: ShopifySection }) => {
   const localTypes = [];
   const apiTypes = [];
 
-  const analyseSetting = (setting) => {
-    if (setting.type === "article") {
-      if (apiTypes.includes("_Article")) return;
-      apiTypes.push("_Article");
-    }
-    if (setting.type === "blog") {
-      if (apiTypes.includes("_Blog")) return;
-      apiTypes.push("_Blog");
-    }
-    if (setting.type === "collection") {
-      if (apiTypes.includes("_Collection")) return;
-      apiTypes.push("_Collection");
-    }
-    if (setting.type === "collection_list") {
-      if (apiTypes.includes("_Collection")) return;
-      apiTypes.push("_Collection");
-    }
-    if (setting.type === "color") {
-      if (localTypes.includes("_Color")) return;
-      localTypes.push("_Color");
-    }
-    if (setting.type === "image_picker") {
-      if (apiTypes.includes("_Image")) return;
-      apiTypes.push("_Image");
-    }
-    if (setting.type === "font_picker") {
-      if (localTypes.includes("_Font")) return;
-      localTypes.push("_Font");
-    }
-    if (setting.type === "link_list") {
-      if (localTypes.includes("_LinkList")) return;
-      localTypes.push("_LinkList");
-    }
-    if (setting.type === "page") {
-      if (apiTypes.includes("_Page")) return;
-      apiTypes.push("_Page");
-    }
-    if (setting.type === "product") {
-      if (apiTypes.includes("_Product")) return;
-      apiTypes.push("_Product");
-    }
-    if (setting.type === "product_list") {
-      if (apiTypes.includes("_Product")) return;
-      apiTypes.push("_Product");
-    }
-  };
+  for (const key in sections) {
+    const section = sections[key];
+    const analyseSetting = (setting) => {
+      if (setting.type === "article") {
+        if (apiTypes.includes("_Article")) return;
+        apiTypes.push("_Article");
+      }
+      if (setting.type === "blog") {
+        if (apiTypes.includes("_Blog")) return;
+        apiTypes.push("_Blog");
+      }
+      if (setting.type === "collection") {
+        if (apiTypes.includes("_Collection")) return;
+        apiTypes.push("_Collection");
+      }
+      if (setting.type === "collection_list") {
+        if (apiTypes.includes("_Collection")) return;
+        apiTypes.push("_Collection");
+      }
+      if (setting.type === "color") {
+        if (localTypes.includes("_Color")) return;
+        localTypes.push("_Color");
+      }
+      if (setting.type === "image_picker") {
+        if (apiTypes.includes("_Image")) return;
+        apiTypes.push("_Image");
+      }
+      if (setting.type === "font_picker") {
+        if (localTypes.includes("_Font")) return;
+        localTypes.push("_Font");
+      }
+      if (setting.type === "link_list") {
+        if (localTypes.includes("_LinkList")) return;
+        localTypes.push("_LinkList");
+      }
+      if (setting.type === "page") {
+        if (apiTypes.includes("_Page")) return;
+        apiTypes.push("_Page");
+      }
+      if (setting.type === "product") {
+        if (apiTypes.includes("_Product")) return;
+        apiTypes.push("_Product");
+      }
+      if (setting.type === "product_list") {
+        if (apiTypes.includes("_Product")) return;
+        apiTypes.push("_Product");
+      }
+    };
 
-  section.settings.forEach(analyseSetting);
-  section.blocks?.forEach((block) => {
-    block.settings?.forEach(analyseSetting);
-  });
+    section.settings.forEach(analyseSetting);
+    section.blocks?.forEach((block) => {
+      block.settings?.forEach(analyseSetting);
+    });
+  }
 
   if (localTypes.length || apiTypes.length) {
     return `${
@@ -169,101 +174,137 @@ function getImports(section: ShopifySection) {
     }\n`;
   }
   return ``;
-}
+};
 
-export const generateSectionsTypes = () => {
-  let indexContent = "";
-  let sectionUnionType = "export type Sections =";
-  const indexExports = [];
-  for (const key in Sections) {
-    const section = Sections[key] as ShopifySection;
-    const filename = toKebabCase(section.name);
+const sectionToTypes = (section, key) => {
+  const filename = toKebabCase(section.name);
+  const arr = [];
+  const settings: ShopifySettingsInput[] = section.settings
+    ?.filter((s) => s.type !== "header" && s.type !== "paragraph")
+    .sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0));
 
-    const typeContent = `${getImports(section)}export type ${capitalize(key)}Section = {
-  ${section.blocks?.length ? `blocks: ${key}Blocks[];\n` : ""}  id: string;
-  settings: {
-    ${(
-      section.settings?.filter(
-        (s) => s.type !== "header" && s.type !== "paragraph"
-      ) as ShopifySettingsInput[]
-    )
-      .sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0))
-      .map(
-        (setting) =>
-          `/** Input type: ${setting.type} */\n    ` +
-          `${/[^\w_]/gi.test(setting.id) ? `"${setting.id}"` : `${setting.id}`}${getSettingsType(
-            setting
-          )};`
-      )
-      .join("\n    ")}
-  };
-  type: "${filename}"; 
-};${
-      section.blocks?.length
-        ? `\ntype ${key}Blocks =
-${section.blocks
-  .map((block) => {
-    return `  | {
-      id: string;      
-      settings: {
-        ${(
-          block.settings?.filter(
-            (s) => s.type !== "header" && s.type !== "paragraph"
-          ) as ShopifySettingsInput[]
+  arr.push(`export type ${capitalize(key)}Section = {`);
+  if (section.blocks?.length) {
+    arr.push(`  blocks: ${key}Blocks[];`);
+  }
+  arr.push(`  id: string;`);
+  if (settings?.length) {
+    arr.push(`  settings: {`);
+    arr.push(
+      settings
+        .map(
+          (setting) =>
+            `    /** Input type: ${setting.type} */\n    ` +
+            `${/[^\w_]/gi.test(setting.id) ? `"${setting.id}"` : `${setting.id}`}${getSettingsType(
+              setting
+            )};`
         )
-          .sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0))
-          .map(
-            (setting) =>
-              `/** Input type: ${setting.type} */\n        ` +
-              `${
-                /[^\w_]/gi.test(setting.id) ? `"${setting.id}"` : `${setting.id}`
-              }${getSettingsType(setting)};`
-          )
-          .join("\n        ")}
-      };
-      type: "${block.type}";
-    }`;
-  })
-  .join("\n")};`
-        : ""
-    }
-`;
+        .sort((a, b) => (a.includes("?") && b.includes("?") ? 0 : a.includes("?") ? 1 : -1))
+        .join("\n")
+    );
+    arr.push(`  };`);
+  }
+  arr.push(`  type: "${filename}";`);
+  arr.push(`};`);
 
-    indexContent += `import { ${capitalize(key)}Section } from "types/sections/${filename}";\n`;
-    sectionUnionType += `\n  | ${capitalize(key)}Section`;
+  if (section.blocks?.length && section.blocks.length === 1) {
+    arr.push("");
+    arr.push(`type ${key}Blocks = {`);
 
-    indexExports.push(`${capitalize(key)}Section`);
-    if (!fs.existsSync(`@types/sections/${filename}.ts`)) {
-      fs.writeFileSync(`@types/sections/${filename}.ts`, typeContent);
-      continue;
-    }
+    section.blocks.forEach((block) => {
+      const blockSettings: ShopifySettingsInput[] = block.settings
+        ?.filter((s) => s.type !== "header" && s.type !== "paragraph")
+        .sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0));
 
-    const contentVerification = fs.readFileSync(`@types/sections/${filename}.ts`, {
-      encoding: "utf-8",
+      arr.push("  id: string;");
+
+      if (blockSettings?.length) {
+        arr.push(`  settings: {`);
+        arr.push(
+          blockSettings
+            .map(
+              (setting) =>
+                `    /** Input type: ${setting.type} */\n    ` +
+                `${
+                  /[^\w_]/gi.test(setting.id) ? `"${setting.id}"` : `${setting.id}`
+                }${getSettingsType(setting)};`
+            )
+            .sort((a, b) => (a.includes("?") && b.includes("?") ? 0 : a.includes("?") ? 1 : -1))
+            .join("\n")
+        );
+        arr.push(`  };`);
+      }
+
+      arr.push(`  type: "${block.type}";`);
+      arr.push(`};`);
     });
-
-    if (contentVerification !== typeContent) {
-      fs.writeFileSync(`@types/sections/${filename}.ts`, typeContent);
-    }
   }
 
-  if (!indexContent) return;
+  if (section.blocks?.length && section.blocks.length > 1) {
+    arr.push("");
+    arr.push(`type ${key}Blocks =`);
 
-  indexContent += "\n";
-  indexContent += sectionUnionType;
-  indexContent += ";\n";
-  indexContent += `\nexport type { ${indexExports.join(", ")} };\n`;
+    section.blocks.forEach((block, i) => {
+      const blockSettings: ShopifySettingsInput[] = block.settings
+        ?.filter((s) => s.type !== "header" && s.type !== "paragraph")
+        .sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0));
 
-  if (!fs.existsSync(`@types/sections/index.ts`)) {
-    fs.writeFileSync(`@types/sections/index.ts`, indexContent);
+      arr.push("  | {");
+      arr.push("      id: string;");
+
+      if (blockSettings?.length) {
+        arr.push(`      settings: {`);
+        arr.push(
+          blockSettings
+            .map(
+              (setting) =>
+                `        /** Input type: ${setting.type} */\n        ` +
+                `${
+                  /[^\w_]/gi.test(setting.id) ? `"${setting.id}"` : `${setting.id}`
+                }${getSettingsType(setting)};`
+            )
+            .sort((a, b) => (a.includes("?") && b.includes("?") ? 0 : a.includes("?") ? 1 : -1))
+            .join("\n")
+        );
+        arr.push(`      };`);
+      }
+
+      arr.push(`      type: "${block.type}";`);
+      if (section.blocks.length - 1 === i) {
+        arr.push(`    };`);
+      } else {
+        arr.push(`    }`);
+      }
+    });
+  }
+  arr.push("");
+  return arr.join("\n");
+};
+
+export const generateSectionsTypes = () => {
+  const imports = getImports(Sections);
+  let sectionUnionType = "export type Sections =";
+  let typeContent = "";
+  for (const key in Sections) {
+    const section = Sections[key] as ShopifySection;
+
+    typeContent += `${sectionToTypes(section, key)}\n`;
+    sectionUnionType += `\n  | ${capitalize(key)}Section`;
+  }
+
+  if (!typeContent) return;
+
+  const finalContent = `${imports + typeContent + sectionUnionType};\n`;
+  if (!fs.existsSync(`@types/sections.ts`)) {
+    fs.writeFileSync(`@types/sections.ts`, finalContent);
     return;
   }
 
-  const indexContentVerification = fs.readFileSync(`@types/sections/index.ts`, {
+  const indexContentVerification = fs.readFileSync(`@types/sections.ts`, {
     encoding: "utf-8",
   });
 
-  if (indexContentVerification !== indexContent) {
-    fs.writeFileSync(`@types/sections/index.ts`, indexContent);
+  if (indexContentVerification !== finalContent) {
+    fs.writeFileSync(`@types/sections.ts`, finalContent);
   }
 };

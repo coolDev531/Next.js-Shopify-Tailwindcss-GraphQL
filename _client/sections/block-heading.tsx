@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { FC } from "react";
-import { HeadingSection } from "types/sections/heading";
+import { HeadingSection } from "types/sections";
 
 export const BlockHeading: FC<HeadingSection> = ({ id, settings }) => {
   return (

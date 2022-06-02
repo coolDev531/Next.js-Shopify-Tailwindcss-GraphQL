@@ -286,7 +286,7 @@ export type ShopifySettings = (
     }
 )[];
 
+/* TODO complete manual types*/
 export type _Color = {};
-
 export type _LinkList = {};
 export type _Font = {};

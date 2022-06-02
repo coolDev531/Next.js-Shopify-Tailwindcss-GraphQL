@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
-import { HeroSection } from "types/sections/hero";
+import { HeroSection } from "types/sections";
 
 export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => (
   <section className="hero">

@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 import { FC } from "react";
-import { ImageTextSection } from "types/sections/image-text";
+import { ImageTextSection } from "types/sections";
 
 export const BlockImageText: FC<ImageTextSection> = ({ id, settings, type }) => {
   return (

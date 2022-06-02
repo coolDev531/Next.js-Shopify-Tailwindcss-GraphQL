@@ -1,12 +1,7 @@
 import { FC } from "react";
 import { StatsGraphSection } from "types/sections";
 
-export const StatsGraph: FC<StatsGraphSection> = ({
-  id,
-  settings,
-  blocks,
-  type,
-}: StatsGraphSection) => (
+export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGraphSection) => (
   <section className="stats-graph">
     <div className="mx-auto flex max-w-7xl gap-4 px-8 py-16">
       {blocks.map((block) => {
