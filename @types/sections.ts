@@ -22,6 +22,14 @@ export type HeadingSection = {
   settings: {
     /** Input type: select */
     position: "left" | "center" | "right";
+    /** Input type: text */
+    cta1?: string;
+    /** Input type: url */
+    cta1_link?: string;
+    /** Input type: text */
+    cta2?: string;
+    /** Input type: url */
+    cta2_link?: string;
     /** Input type: richtext */
     paragraph?: `<p${string}</p>`;
     /** Input type: text */
@@ -154,6 +162,14 @@ type storyBlocks =
       settings: {
         /** Input type: select */
         position: "left" | "center" | "right";
+        /** Input type: text */
+        cta1?: string;
+        /** Input type: url */
+        cta1_link?: string;
+        /** Input type: text */
+        cta2?: string;
+        /** Input type: url */
+        cta2_link?: string;
         /** Input type: richtext */
         paragraph?: `<p${string}</p>`;
         /** Input type: text */
@@ -180,10 +196,61 @@ type storyBlocks =
       type: "image-text";
     };
 
-export type Template_404Section = {
+export type TabsImageCardSection = {
+  blocks: tabsImageCardBlocks[];
   id: string;
-  type: "template-404";
+  type: "tabs-image-card";
 };
+
+type tabsImageCardBlocks =
+  | {
+      id: string;
+      settings: {
+        /** Input type: select */
+        position: "left" | "center" | "right";
+        /** Input type: text */
+        cta1?: string;
+        /** Input type: url */
+        cta1_link?: string;
+        /** Input type: text */
+        cta2?: string;
+        /** Input type: url */
+        cta2_link?: string;
+        /** Input type: richtext */
+        paragraph?: `<p${string}</p>`;
+        /** Input type: text */
+        pre_title?: string;
+        /** Input type: text */
+        title?: string;
+      };
+      type: "heading";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: text */
+        cta1?: string;
+        /** Input type: url */
+        cta1_link?: string;
+        /** Input type: text */
+        cta2?: string;
+        /** Input type: url */
+        cta2_link?: string;
+        /** Input type: image_picker */
+        image?: _Image;
+        /** Input type: url */
+        image_link?: string;
+        /** Input type: richtext */
+        paragraph?: `<p${string}</p>`;
+        /** Input type: html */
+        tab_svg?: string;
+        /** Input type: text */
+        tab_title?: string;
+        /** Input type: text */
+        title?: string;
+      };
+      type: "tab";
+    };
 
 export type TemplateArticleSection = {
   id: string;
@@ -230,6 +297,11 @@ export type TemplateSearchSection = {
   type: "template-search";
 };
 
+export type Template_404Section = {
+  id: string;
+  type: "template-404";
+};
+
 export type Sections =
   | FooterSection
   | HeaderSection
@@ -240,7 +312,7 @@ export type Sections =
   | LogoBannerSection
   | StatsGraphSection
   | StorySection
-  | Template_404Section
+  | TabsImageCardSection
   | TemplateArticleSection
   | TemplateBlogSection
   | TemplateCartSection
@@ -249,4 +321,5 @@ export type Sections =
   | TemplatePageSection
   | TemplatePasswordSection
   | TemplateProductSection
-  | TemplateSearchSection;
+  | TemplateSearchSection
+  | Template_404Section;

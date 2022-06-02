@@ -12,6 +12,7 @@ module.exports = {
       "avatars1.githubusercontent.com",
       "avatars.githubusercontent.com",
       "cdn.shopify.com",
+      "burst.shopifycdn.com",
     ],
   },
   webpack: (config, { isServer, dev }) => {

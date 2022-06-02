@@ -31,6 +31,7 @@
       const handleEvents = (e) => {
         console.log(e.type);
         console.log(e);
+        console.log(e.detail);
         setTimeout(() => {
           const global = JSON.parse(document.querySelector("[data-global]").textContent);
           const sections = [];
@@ -44,6 +45,7 @@
               topic: e.type,
               global,
               sections,
+              detail: e.detail
             },
             "*",
           );

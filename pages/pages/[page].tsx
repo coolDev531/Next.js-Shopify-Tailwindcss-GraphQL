@@ -1,4 +1,5 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
+import { useShopifyData } from "_client/hooks/use-shopify-data";
 import { renderSection } from "_client/sections/_render-section";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
 import { getAllPages } from "_server/shopify/get-all-pages";
@@ -11,22 +12,7 @@ export const Page: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) 
   const router = useRouter();
   const { page } = router.query;
 
-  const [global, setGlobal] = useState(props.global);
-  const [sections, setSections] = useState(props.sections);
-
-  useEffect(() => {
-    const handleMessages = (e) => {
-      if (e?.data?.source === "theme-editor") {
-        console.log(e);
-        setSections(e.data.sections);
-        setGlobal(e.data.global);
-      }
-    };
-    window.addEventListener("message", handleMessages);
-    return () => {
-      window.removeEventListener("message", handleMessages);
-    };
-  }, []);
+  const { sections, global } = useShopifyData<typeof props.global, typeof props.sections>(props);
 
   return <>{sections.map((section) => renderSection(section))}</>;
 };
@@ -46,9 +32,7 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
   return { paths, fallback: false };
 };
 
-export const getStaticProps: GetStaticProps<{ global: any; sections: any[] }> = async ({
-  params,
-}) => {
+export const getStaticProps = async ({ params }) => {
   const ssg = createSSGHelpers({
     router: apiRoutes,
     transformer,

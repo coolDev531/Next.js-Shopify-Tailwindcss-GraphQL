@@ -1,9 +1,9 @@
-{% include "_section-content", type: "story" %}
-{% include "section_story" %}
+{% include "_section-content", type: "tabs-image-card" %}
+{% include "section_tabs-image-card" %}
   
 {% schema %}
 {
-  "name": "Story",
+  "name": "Tabs image card",
   "settings": [],
   "blocks": [
     {
@@ -81,20 +81,30 @@
             }
           ]
         }
-      ]
+      ],
+      "limit": 1
     },
     {
-      "type": "image-text",
-      "name": "Image text",
+      "type": "tab",
+      "name": "Tab",
       "settings": [
         {
           "type": "header",
-          "content": "Content"
+          "content": "Tab Selector"
         },
         {
           "type": "text",
-          "id": "pre_title",
-          "label": "Pre header"
+          "id": "tab_title",
+          "label": "Title"
+        },
+        {
+          "type": "html",
+          "id": "tab_svg",
+          "label": "SVG Icon"
+        },
+        {
+          "type": "header",
+          "content": "Content"
         },
         {
           "type": "text",
@@ -107,36 +117,54 @@
           "label": "Paragraph"
         },
         {
+          "type": "header",
+          "content": "Primary Button"
+        },
+        {
+          "type": "text",
+          "id": "cta1",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "cta1_link",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Secondary Button"
+        },
+        {
+          "type": "text",
+          "id": "cta2",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "cta2_link",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
           "type": "image_picker",
           "id": "image",
           "label": "Image"
         },
         {
-          "type": "header",
-          "content": "Settings"
-        },
-        {
-          "type": "radio",
-          "id": "position",
-          "label": "Image Position",
-          "default": "right",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            },
-            {
-              "value": "right",
-              "label": "Right"
-            }
-          ]
+          "type": "url",
+          "id": "image_link",
+          "label": "Link"
         }
-      ]
+      ],
+      "limit": 6
     }
   ],
   "presets": [
     {
-      "name": "Story"
+      "name": "Tabs image card"
     }
   ]
 }
