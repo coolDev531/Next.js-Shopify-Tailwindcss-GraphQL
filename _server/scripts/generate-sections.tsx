@@ -199,7 +199,21 @@ const sectionToTypes = (section, key) => {
               setting
             )};`
         )
-        .sort((a, b) => (a.includes("?") && b.includes("?") ? 0 : a.includes("?") ? 1 : -1))
+        .sort((a, b) => {
+          const aX = a.split("\n")[1];
+          const bX = b.split("\n")[1];
+          if (aX.includes("?") && !bX.includes("?")) {
+            return 1;
+          } else if (!aX.includes("?") && bX.includes("?")) {
+            return -1;
+          } else if (aX > bX) {
+            return 1;
+          } else if (aX < bX) {
+            return -1;
+          } else {
+            return 0;
+          }
+        })
         .join("\n")
     );
     arr.push(`  };`);
@@ -229,7 +243,21 @@ const sectionToTypes = (section, key) => {
                   /[^\w_]/gi.test(setting.id) ? `"${setting.id}"` : `${setting.id}`
                 }${getSettingsType(setting)};`
             )
-            .sort((a, b) => (a.includes("?") && b.includes("?") ? 0 : a.includes("?") ? 1 : -1))
+            .sort((a, b) => {
+              const aX = a.split("\n")[1];
+              const bX = b.split("\n")[1];
+              if (aX.includes("?") && !bX.includes("?")) {
+                return 1;
+              } else if (!aX.includes("?") && bX.includes("?")) {
+                return -1;
+              } else if (aX > bX) {
+                return 1;
+              } else if (aX < bX) {
+                return -1;
+              } else {
+                return 0;
+              }
+            })
             .join("\n")
         );
         arr.push(`  };`);
@@ -263,7 +291,21 @@ const sectionToTypes = (section, key) => {
                   /[^\w_]/gi.test(setting.id) ? `"${setting.id}"` : `${setting.id}`
                 }${getSettingsType(setting)};`
             )
-            .sort((a, b) => (a.includes("?") && b.includes("?") ? 0 : a.includes("?") ? 1 : -1))
+            .sort((a, b) => {
+              const aX = a.split("\n")[1];
+              const bX = b.split("\n")[1];
+              if (aX.includes("?") && !bX.includes("?")) {
+                return 1;
+              } else if (!aX.includes("?") && bX.includes("?")) {
+                return -1;
+              } else if (aX > bX) {
+                return 1;
+              } else if (aX < bX) {
+                return -1;
+              } else {
+                return 0;
+              }
+            })
             .join("\n")
         );
         arr.push(`      };`);

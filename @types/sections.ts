@@ -1,5 +1,5 @@
-import { _LinkList } from "types/shopify";
-import { _Image, _Collection } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
+import { _LinkList, _Color } from "types/shopify";
+import { _Image, _Collection, _Product } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
 
 export type BlockquoteSection = {
   id: string;
@@ -72,6 +72,35 @@ export type HeroSection = {
     title?: string;
   };
   type: "hero";
+};
+
+export type ImageGallerySection = {
+  blocks: imageGalleryBlocks[];
+  id: string;
+  type: "image-gallery";
+};
+
+type imageGalleryBlocks = {
+  id: string;
+  settings: {
+    /** Input type: range */
+    columns: number;
+    /** Input type: checkbox */
+    hover_effect: boolean;
+    /** Input type: color_background */
+    color_overlay?: string;
+    /** Input type: color */
+    color_text?: _Color;
+    /** Input type: image_picker */
+    image?: _Image;
+    /** Input type: richtext */
+    paragraph?: `<p${string}</p>`;
+    /** Input type: product */
+    product?: _Product;
+    /** Input type: text */
+    title?: string;
+  };
+  type: "image";
 };
 
 export type ImageTextSection = {
@@ -181,17 +210,17 @@ type specListBlocks =
       id: string;
       settings: {
         /** Input type: select */
-        icon6: "test" | "test2";
-        /** Input type: select */
-        icon5: "test" | "test2";
-        /** Input type: select */
-        icon4: "test" | "test2";
-        /** Input type: select */
-        icon3: "test" | "test2";
+        icon1: "test" | "test2";
         /** Input type: select */
         icon2: "test" | "test2";
         /** Input type: select */
-        icon1: "test" | "test2";
+        icon3: "test" | "test2";
+        /** Input type: select */
+        icon4: "test" | "test2";
+        /** Input type: select */
+        icon5: "test" | "test2";
+        /** Input type: select */
+        icon6: "test" | "test2";
         /** Input type: text */
         text1?: string;
         /** Input type: text */
@@ -383,6 +412,7 @@ export type Sections =
   | HeaderSection
   | HeadingSection
   | HeroSection
+  | ImageGallerySection
   | ImageTextSection
   | InfoCardsSection
   | LogoBannerSection

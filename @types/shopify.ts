@@ -1,3 +1,5 @@
+import { _Blog, _Collection, _Page, _Product } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
+
 type ShopifyHeader = {
   content: string;
   type: "header";
@@ -287,6 +289,45 @@ export type ShopifySettings = (
 )[];
 
 /* TODO complete manual types*/
-export type _Color = {};
-export type _LinkList = {};
-export type _Font = {};
+export type _Color = {
+  alpha: number;
+  blue: number;
+  green: number;
+  hex: string;
+  hue: number;
+  lightness: number;
+  red: number;
+  saturation: number;
+};
+
+export type _LinkList = {
+  handle: string;
+  levels: number;
+  links: Links[];
+  title: string;
+};
+
+export type _Font = {
+  baseline_ratio: number;
+  fallback_families: string;
+  family: string;
+  style: string;
+  variants: Omit<_Font, "variants">[];
+  weight: string;
+  system?: any;
+};
+
+type Links = {
+  active: boolean;
+  child_active: boolean;
+  child_current: boolean;
+  current: boolean;
+  levels: number;
+  title: string;
+  type: string;
+  url: string;
+  links?: Links[];
+  object?: _Product | _Collection | _Page | _Blog | null;
+};
+
+export type _LinkLists = _LinkList[];
