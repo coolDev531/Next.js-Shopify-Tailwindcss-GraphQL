@@ -16,6 +16,25 @@ export type BlockquoteSection = {
   type: "blockquote";
 };
 
+export type FeatureListSection = {
+  blocks: featureListBlocks[];
+  id: string;
+  type: "feature-list";
+};
+
+type featureListBlocks = {
+  id: string;
+  settings: {
+    /** Input type: select */
+    icon: "ColorSwatchIcon" | "CloudIcon";
+    /** Input type: richtext */
+    paragraph?: `<p${string}</p>`;
+    /** Input type: text */
+    title?: string;
+  };
+  type: "feature";
+};
+
 export type FooterSection = {
   id: string;
   type: "footer";
@@ -210,17 +229,17 @@ type specListBlocks =
       id: string;
       settings: {
         /** Input type: select */
-        icon1: "test" | "test2";
+        icon1: "ColorSwatchIcon" | "CloudIcon";
         /** Input type: select */
-        icon2: "test" | "test2";
+        icon2: "ColorSwatchIcon" | "CloudIcon";
         /** Input type: select */
-        icon3: "test" | "test2";
+        icon3: "ColorSwatchIcon" | "CloudIcon";
         /** Input type: select */
-        icon4: "test" | "test2";
+        icon4: "ColorSwatchIcon" | "CloudIcon";
         /** Input type: select */
-        icon5: "test" | "test2";
+        icon5: "ColorSwatchIcon" | "CloudIcon";
         /** Input type: select */
-        icon6: "test" | "test2";
+        icon6: "ColorSwatchIcon" | "CloudIcon";
         /** Input type: text */
         text1?: string;
         /** Input type: text */
@@ -408,6 +427,7 @@ export type Template_404Section = {
 
 export type Sections =
   | BlockquoteSection
+  | FeatureListSection
   | FooterSection
   | HeaderSection
   | HeadingSection

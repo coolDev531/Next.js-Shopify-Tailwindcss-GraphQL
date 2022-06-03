@@ -10,6 +10,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, blocks, type }) => {
           case "image": {
             return (
               <figure
+                key={block.id}
                 className="group relative h-[240px] overflow-hidden rounded shadow-2xl"
                 style={{ gridColumn: `span ${block.settings.columns}` }}
               >

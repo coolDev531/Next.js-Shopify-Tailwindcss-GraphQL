@@ -1,0 +1,49 @@
+{% include "_section-content", type: "feature-list" %}
+{% include "section_feature-list" %}
+  
+{% schema %}
+{
+  "name": "Feature list",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Item",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {
+              "label": "ColorSwatchIcon",
+              "value": "ColorSwatchIcon",
+              "group": "Line Icons"
+            },
+            {
+              "label": "CloudIcon",
+              "value": "CloudIcon",
+              "group": "Line Icons"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "paragraph",
+          "label": "Paragraph"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feature list"
+    }
+  ]
+}
+{% endschema %} 
