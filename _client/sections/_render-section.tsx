@@ -1,8 +1,10 @@
+import { BlockBlockquote } from "_client/sections/block-blockquote";
 import BlockHeading from "_client/sections/block-heading";
 import { BlockHero } from "_client/sections/block-hero";
 import { BlockImageText } from "_client/sections/block-image-text";
 import { InfoCards } from "_client/sections/info-cards";
 import { LogoBanner } from "_client/sections/logo-banner";
+import { SpecList } from "_client/sections/spec-list";
 import { StatsGraph } from "_client/sections/stats-graph";
 import { Story } from "_client/sections/story";
 import { TabsImageCard } from "_client/sections/tabs-image-card";
@@ -10,6 +12,18 @@ import { Sections } from "types/sections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {
+    case "blockquote":
+      return (
+        <section key={section.id} className={section.type} id={section.id}>
+          <BlockBlockquote {...section} />
+        </section>
+      );
+    case "spec-list":
+      return (
+        <section key={section.id} className={section.type} id={section.id}>
+          <SpecList {...section} />
+        </section>
+      );
     case "tabs-image-card":
       return (
         <section key={section.id} className={section.type} id={section.id}>

@@ -1,6 +1,21 @@
 import { _LinkList } from "types/shopify";
 import { _Image, _Collection } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
 
+export type BlockquoteSection = {
+  id: string;
+  settings: {
+    /** Input type: checkbox */
+    quotation_marks: boolean;
+    /** Input type: text */
+    author?: string;
+    /** Input type: text */
+    job_title?: string;
+    /** Input type: textarea */
+    quote?: string;
+  };
+  type: "blockquote";
+};
+
 export type FooterSection = {
   id: string;
   type: "footer";
@@ -131,6 +146,66 @@ type logoBannerBlocks =
         url?: string;
       };
       type: "image";
+    };
+
+export type SpecListSection = {
+  blocks: specListBlocks[];
+  id: string;
+  type: "spec-list";
+};
+
+type specListBlocks =
+  | {
+      id: string;
+      settings: {
+        /** Input type: select */
+        position: "left" | "center" | "right";
+        /** Input type: text */
+        cta1?: string;
+        /** Input type: url */
+        cta1_link?: string;
+        /** Input type: text */
+        cta2?: string;
+        /** Input type: url */
+        cta2_link?: string;
+        /** Input type: richtext */
+        paragraph?: `<p${string}</p>`;
+        /** Input type: text */
+        pre_title?: string;
+        /** Input type: text */
+        title?: string;
+      };
+      type: "heading";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: select */
+        icon6: "test" | "test2";
+        /** Input type: select */
+        icon5: "test" | "test2";
+        /** Input type: select */
+        icon4: "test" | "test2";
+        /** Input type: select */
+        icon3: "test" | "test2";
+        /** Input type: select */
+        icon2: "test" | "test2";
+        /** Input type: select */
+        icon1: "test" | "test2";
+        /** Input type: text */
+        text1?: string;
+        /** Input type: text */
+        text2?: string;
+        /** Input type: text */
+        text3?: string;
+        /** Input type: text */
+        text4?: string;
+        /** Input type: text */
+        text5?: string;
+        /** Input type: text */
+        text6?: string;
+      };
+      type: "list";
     };
 
 export type StatsGraphSection = {
@@ -303,6 +378,7 @@ export type Template_404Section = {
 };
 
 export type Sections =
+  | BlockquoteSection
   | FooterSection
   | HeaderSection
   | HeadingSection
@@ -310,6 +386,7 @@ export type Sections =
   | ImageTextSection
   | InfoCardsSection
   | LogoBannerSection
+  | SpecListSection
   | StatsGraphSection
   | StorySection
   | TabsImageCardSection

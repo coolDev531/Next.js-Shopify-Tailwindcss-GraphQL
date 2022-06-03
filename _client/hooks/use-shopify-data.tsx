@@ -16,11 +16,10 @@ export const useShopifyData = <G, S>(props: {
         setSections(e.data.sections);
         setGlobal(e.data.global);
         if (e.data.topic === "shopify:section:select") {
-          document
-            .getElementById(e.data.detail.sectionId)
-            .scrollIntoView({ behavior: "smooth", block: "start" });
-
-          // scrollTo(200, document.getElementById(e.data.detail.sectionId).scrollTop);
+          const sectionElement = document.getElementById(e.data.detail.sectionId);
+          if (sectionElement) {
+            sectionElement.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
         }
       }
     };

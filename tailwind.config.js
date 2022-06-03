@@ -442,15 +442,24 @@ module.exports = {
       addVariant("fw", ["&:focus-within"]);
       addVariant("h", ["&:hover"]);
       addVariant("d", [".dark &"]);
-      addVariant("a", ["&:active"]);
+      addVariant("ac", ["&:active"]);
       addVariant("b", ["&::before"]);
-      addVariant("af", ["&::before"]);
+      addVariant("a", ["&::after"]);
       addVariant("not-prose", [":not(.prose &)&"]);
       addVariant("hfaa", ["&:hover", "&:focus", "&:active, &.active"]);
       addVariant("group-hfa", [".group:hover &", ".group:focus &", ".group:active &"]);
       addUtilities({
         ".shape-geometric-precision": {
           "shape-rendering": "geometricPrecision",
+        },
+        ".open-quote": {
+          content: "open-quote",
+        },
+        ".close-quote": {
+          content: "close-quote",
+        },
+        ".leading-0": {
+          "line-height": "0",
         },
       });
     }),

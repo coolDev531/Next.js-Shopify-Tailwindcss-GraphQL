@@ -42,10 +42,10 @@ type ShopifyRange = {
   info?: string;
   unit?: string;
 };
-type ShopifySelect = {
+export type ShopifySelect = {
   id: string;
   label: string;
-  options: { label: string; value: string }[];
+  options: { label: string; value: string; group?: string }[];
   type: "select";
   default?: string;
   info?: string;
