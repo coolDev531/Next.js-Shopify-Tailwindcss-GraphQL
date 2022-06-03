@@ -2,6 +2,7 @@ import { BlockBlockquote } from "_client/sections/block-blockquote";
 import BlockHeading from "_client/sections/block-heading";
 import { BlockHero } from "_client/sections/block-hero";
 import { BlockImageText } from "_client/sections/block-image-text";
+import { FeatureCarousel } from "_client/sections/feature-carousel";
 import { FeatureList } from "_client/sections/feature-list";
 import { ImageGallery } from "_client/sections/image-gallery";
 import { InfoCards } from "_client/sections/info-cards";
@@ -14,6 +15,12 @@ import { Sections } from "types/sections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {
+    case "feature-carousel":
+      return (
+        <section key={section.id} className={section.type} id={section.id}>
+          <FeatureCarousel {...section} />
+        </section>
+      );
     case "feature-list":
       return (
         <section key={section.id} className={section.type} id={section.id}>

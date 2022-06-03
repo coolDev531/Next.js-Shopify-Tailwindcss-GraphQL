@@ -16,6 +16,50 @@ export type BlockquoteSection = {
   type: "blockquote";
 };
 
+export type FeatureCarouselSection = {
+  blocks: featureCarouselBlocks[];
+  id: string;
+  type: "feature-carousel";
+};
+
+type featureCarouselBlocks =
+  | {
+      id: string;
+      settings: {
+        /** Input type: select */
+        position: "left" | "center" | "right";
+        /** Input type: text */
+        cta1?: string;
+        /** Input type: url */
+        cta1_link?: string;
+        /** Input type: text */
+        cta2?: string;
+        /** Input type: url */
+        cta2_link?: string;
+        /** Input type: richtext */
+        paragraph?: `<p${string}</p>`;
+        /** Input type: text */
+        pre_title?: string;
+        /** Input type: text */
+        title?: string;
+      };
+      type: "heading";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: image_picker */
+        image?: _Image;
+        /** Input type: url */
+        link?: string;
+        /** Input type: textarea */
+        paragraph?: string;
+        /** Input type: text */
+        title?: string;
+      };
+      type: "feature";
+    };
+
 export type FeatureListSection = {
   blocks: featureListBlocks[];
   id: string;
@@ -427,6 +471,7 @@ export type Template_404Section = {
 
 export type Sections =
   | BlockquoteSection
+  | FeatureCarouselSection
   | FeatureListSection
   | FooterSection
   | HeaderSection
