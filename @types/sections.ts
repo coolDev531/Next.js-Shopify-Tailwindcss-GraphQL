@@ -137,6 +137,46 @@ export type HeroSection = {
   type: "hero";
 };
 
+export type ImageCarouselSection = {
+  blocks: imageCarouselBlocks[];
+  id: string;
+  type: "image-carousel";
+};
+
+type imageCarouselBlocks =
+  | {
+      id: string;
+      settings: {
+        /** Input type: select */
+        position: "left" | "center" | "right";
+        /** Input type: text */
+        cta1?: string;
+        /** Input type: url */
+        cta1_link?: string;
+        /** Input type: text */
+        cta2?: string;
+        /** Input type: url */
+        cta2_link?: string;
+        /** Input type: richtext */
+        paragraph?: `<p${string}</p>`;
+        /** Input type: text */
+        pre_title?: string;
+        /** Input type: text */
+        title?: string;
+      };
+      type: "heading";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: image_picker */
+        image?: _Image;
+        /** Input type: url */
+        link?: string;
+      };
+      type: "image";
+    };
+
 export type ImageGallerySection = {
   blocks: imageGalleryBlocks[];
   id: string;
@@ -477,6 +517,7 @@ export type Sections =
   | HeaderSection
   | HeadingSection
   | HeroSection
+  | ImageCarouselSection
   | ImageGallerySection
   | ImageTextSection
   | InfoCardsSection

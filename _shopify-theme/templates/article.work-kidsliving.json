@@ -458,6 +458,51 @@
       ],
       "settings": {
       }
+    },
+    "165426875321fe7fc5": {
+      "type": "feature-list",
+      "blocks": {
+        "7d9184d1-b917-43ab-a84e-dbce8b2d3989": {
+          "type": "feature",
+          "settings": {
+            "icon": "ColorSwatchIcon",
+            "title": "dsadasd",
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
+          }
+        },
+        "335efa5a-6e14-4f5f-9f46-3faad15cb6a8": {
+          "type": "feature",
+          "settings": {
+            "icon": "ColorSwatchIcon",
+            "title": "asd",
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
+          }
+        },
+        "976c1d3a-29d8-43f3-8c94-e23b9461c461": {
+          "type": "feature",
+          "settings": {
+            "icon": "CloudIcon",
+            "title": "qwdasasdasd",
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
+          }
+        },
+        "bf211802-1d16-4343-b21c-1a6d7af721c0": {
+          "type": "feature",
+          "settings": {
+            "icon": "ColorSwatchIcon",
+            "title": "asdasda",
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7d9184d1-b917-43ab-a84e-dbce8b2d3989",
+        "335efa5a-6e14-4f5f-9f46-3faad15cb6a8",
+        "976c1d3a-29d8-43f3-8c94-e23b9461c461",
+        "bf211802-1d16-4343-b21c-1a6d7af721c0"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -470,6 +515,7 @@
     "16541733016b2d4288",
     "16542555547186860a",
     "1654259533f54af287",
-    "16542613555478f86d"
+    "16542613555478f86d",
+    "165426875321fe7fc5"
   ]
 }

@@ -5,6 +5,7 @@ export * from "_sections/footer";
 export * from "_sections/header";
 export * from "_sections/heading";
 export * from "_sections/hero";
+export * from "_sections/image-carousel";
 export * from "_sections/image-gallery";
 export * from "_sections/image-text";
 export * from "_sections/info-cards";

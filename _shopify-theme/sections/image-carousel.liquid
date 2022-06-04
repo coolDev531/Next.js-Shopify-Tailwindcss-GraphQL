@@ -1,0 +1,109 @@
+{% include "_section-content", type: "image-carousel" %}
+{% include "section_image-carousel" %}
+
+{% schema %}
+{
+  "name": "Image carousel",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "text",
+          "id": "pre_title",
+          "label": "Pre header"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "paragraph",
+          "label": "Paragraph"
+        },
+        {
+          "type": "header",
+          "content": "Primary Button"
+        },
+        {
+          "type": "text",
+          "id": "cta1",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "cta1_link",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Secondary Button"
+        },
+        {
+          "type": "text",
+          "id": "cta2",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "cta2_link",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Settings"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "label": "Position",
+          "default": "center",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image carousel"
+    }
+  ]
+}
+{% endschema %}
