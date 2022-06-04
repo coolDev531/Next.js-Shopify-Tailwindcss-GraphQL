@@ -7,7 +7,6 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, type }) =>
   const imageCount = blocks.filter(({ type }) => type === "image").length;
   const container = useRef<HTMLDivElement>(null);
 
-  console.log(container.current.clientWidth);
   return (
     <>
       {blocks.map((block) => {
