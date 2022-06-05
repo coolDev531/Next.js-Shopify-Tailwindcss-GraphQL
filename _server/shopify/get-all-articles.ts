@@ -25,7 +25,7 @@ export const getAllArticles = async (shop: string, accessToken: string, reducer 
       });
 
       articles = [
-        ...articles.map((a) => ({ ...a, blog: blogs[j].handle })),
+        ...articles.map((a) => ({ ...a })),
         ...reducer(body.articles.map((a) => ({ ...a, blog: blogs[j].handle }))),
       ];
 
