@@ -4,9 +4,46 @@
       "type": "template-404",
       "settings": {
       }
+    },
+    "1654426811d987d0cd": {
+      "type": "tabs-faq",
+      "blocks": {
+        "b949d205-ceab-4c2d-a82d-4867eb73227a": {
+          "type": "category",
+          "settings": {
+            "title": "General",
+            "faq_items": [
+              "i-have-a-lot-of-projects-how-does-your-project-management-work",
+              "what-type-of-projects-do-you-handle",
+              "why-migrate-to-shopify",
+              "whats-the-difference-between-fast-and-express-turnaround"
+            ]
+          }
+        },
+        "28d70a76-7738-475d-8cb1-f11dc2213349": {
+          "type": "category",
+          "settings": {
+            "title": "Shopify",
+            "faq_items": [
+              "why-migrate-to-shopify",
+              "whats-the-difference-between-fast-and-express-turnaround",
+              "what-type-of-projects-do-you-handle",
+              "i-have-a-lot-of-projects-how-does-your-project-management-work"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "b949d205-ceab-4c2d-a82d-4867eb73227a",
+        "28d70a76-7738-475d-8cb1-f11dc2213349"
+      ],
+      "settings": {
+        "title": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1654426811d987d0cd"
   ]
 }

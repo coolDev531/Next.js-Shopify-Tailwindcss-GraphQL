@@ -4,9 +4,76 @@
       "type": "template-product",
       "settings": {
       }
+    },
+    "1654424131fb27794e": {
+      "type": "tabs-process-step",
+      "blocks": {
+        "16544241313b2fcafc-0": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 1 - Start",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
+            "title": "Incremental adoption",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+          }
+        },
+        "16544241313b2fcafc-1": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 2 - Move on",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
+            "title": "Incremental adoption",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+          }
+        },
+        "16544241313b2fcafc-2": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 3 - another one",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
+            "title": "Incremental adoption",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+          }
+        },
+        "16544241313b2fcafc-3": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 4 - Almost done",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
+            "title": "Incremental adoption",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+          }
+        },
+        "16544241313b2fcafc-4": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 1 - The end",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
+            "title": "Incremental adoption",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16544241313b2fcafc-0",
+        "16544241313b2fcafc-1",
+        "16544241313b2fcafc-2",
+        "16544241313b2fcafc-3",
+        "16544241313b2fcafc-4"
+      ],
+      "settings": {
+        "pre_title": "Developer experience to love",
+        "title": "Develop with an open, thought‑out API",
+        "paragraph": "<p>One of our main goals is to provide the best possible developer experience. Radix Primitives provides a fully-typed API. All components share a similar API, creating a consistent and predictable experience.<\/p>",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1654424131fb27794e"
   ]
 }

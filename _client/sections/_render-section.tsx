@@ -2,6 +2,7 @@ import { BlockBlockquote } from "_client/sections/block-blockquote";
 import BlockHeading from "_client/sections/block-heading";
 import { BlockHero } from "_client/sections/block-hero";
 import { BlockImageText } from "_client/sections/block-image-text";
+import { TabsFaq } from "_client/sections/tabs-faq";
 import { FeatureCarousel } from "_client/sections/feature-carousel";
 import { FeatureList } from "_client/sections/feature-list";
 import { ImageCarousel } from "_client/sections/image-carousel";
@@ -17,10 +18,10 @@ import { Sections } from "types/sections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {
-    case "faq":
+    case "tabs-faq":
       return (
         <section key={section.id} className={section.type} id={section.id}>
-          <div>Section to be developed: {section.type}</div>
+          <TabsFaq {...section} />
         </section>
       );
     case "tabs-process-step":

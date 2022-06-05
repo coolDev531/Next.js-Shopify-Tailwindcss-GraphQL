@@ -90,9 +90,9 @@ function getSettingsType(setting: ShopifySettingsInput) {
     case "page":
       return "?: _Page";
     case "product":
-      return "?: _Product";
+      return "?: _Product & { content: string; description: string }";
     case "product_list":
-      return "?: _Product[]";
+      return "?: (_Product & { content: string; description: string })[]";
     case "richtext":
       return "?: `<p${string}</p>`";
     case "url":

@@ -16,11 +16,6 @@ export type BlockquoteSection = {
   type: "blockquote";
 };
 
-export type FaqSection = {
-  id: string;
-  type: "faq";
-};
-
 export type FeatureCarouselSection = {
   blocks: FeatureCarouselBlocks[];
   id: string;
@@ -204,7 +199,7 @@ export type ImageGalleryBlocks = {
     /** Input type: richtext */
     paragraph?: `<p${string}</p>`;
     /** Input type: product */
-    product?: _Product;
+    product?: _Product & { content: string; description: string };
     /** Input type: text */
     title?: string;
   };
@@ -408,6 +403,27 @@ export type StoryBlocks =
       type: "image-text";
     };
 
+export type TabsFaqSection = {
+  blocks: TabsFaqBlocks[];
+  id: string;
+  settings: {
+    /** Input type: text */
+    title?: string;
+  };
+  type: "tabs-faq";
+};
+
+export type TabsFaqBlocks = {
+  id: string;
+  settings: {
+    /** Input type: product_list */
+    faq_items?: (_Product & { content: string; description: string })[];
+    /** Input type: text */
+    title?: string;
+  };
+  type: "category";
+};
+
 export type TabsImageCardSection = {
   blocks: TabsImageCardBlocks[];
   id: string;
@@ -553,7 +569,6 @@ export type Template_404Section = {
 
 export type Sections =
   | BlockquoteSection
-  | FaqSection
   | FeatureCarouselSection
   | FeatureListSection
   | FooterSection
@@ -568,6 +583,7 @@ export type Sections =
   | SpecListSection
   | StatsGraphSection
   | StorySection
+  | TabsFaqSection
   | TabsImageCardSection
   | TabsProcessStepSection
   | TemplateArticleSection

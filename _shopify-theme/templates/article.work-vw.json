@@ -10,10 +10,10 @@
       "type": "hero",
       "settings": {
         "pre_title": "Portfolio of Work",
-        "title": "Hydrobiz",
-        "paragraph": "<p>Hydrobiz is a Cape Town based company that supplies professional horticulture equipment and consumables. They represent many high quality local and internal brands like Jiffy, Legro, Bato, Quest and much more.<\/p>",
-        "list": "<p>What we did (services):<br\/>•\tStore Migrations & Web Development<br\/>•\tCustom Features Development <br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/hydrobiz.jpg",
+        "title": "vw",
+        "paragraph": "<p>VW Mossel Bay parts service offers high quality Genuine Volkswagen Parts. They pride themselves in consistency from years of excellent service. With a combination of hard work, dedication, and innovation, they always make sure to make their customers their number one priority.<\/p>",
+        "list": "<p>What we did (services):<br\/>•\tWeb Development<br\/>•\tCustom Features Development <br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
+        "image": "shopify:\/\/shop_images\/vw.jpg",
         "collection": "frontpage"
       }
     },
@@ -23,21 +23,21 @@
         "8457496c-859c-46a2-8653-4953e4e81a20": {
           "type": "stat",
           "settings": {
-            "stat": "450+",
+            "stat": "4000+",
             "descriptions": "Products & Variants"
           }
         },
         "b206c8f8-78d7-4074-bae7-a25fdfa286ce": {
           "type": "stat",
           "settings": {
-            "stat": "127+",
+            "stat": "241+",
             "descriptions": "Collections"
           }
         },
         "daf38169-f867-497d-b358-3af89c50830e": {
           "type": "stat",
           "settings": {
-            "stat": "10+",
+            "stat": "100+",
             "descriptions": "Brands"
           }
         }
@@ -208,10 +208,10 @@
         "2353a22b-85ba-4a79-9a1c-23bbf71d60d7": {
           "type": "tab",
           "settings": {
-            "tab_title": "Custom logo banner",
+            "tab_title": "Custom filter & search function",
             "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
-            "title": "Custom logo banner",
-            "paragraph": "<p>This custom built helped showcase their top brands on their home banner page.<\/p>",
+            "title": "Custom filter & search function",
+            "paragraph": "<p>This custom filter function helps search for products based on the model, year, and trim of vehicle.<\/p>",
             "cta1": "asdasd",
             "cta1_link": "#",
             "cta2": "",
@@ -223,10 +223,10 @@
         "5580bf76-a72e-4bfe-8d9d-a63518f96cc5": {
           "type": "tab",
           "settings": {
-            "tab_title": "Custom navigation",
+            "tab_title": "Product content set-up",
             "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
-            "title": "Custom navigation",
-            "paragraph": "<p>This custom build helped organize a large amount of product categories in user friendly manner, while highlighting their top brands. We also added a sticky functionality that holds the menu in place while you scroll around it.  <\/p>",
+            "title": "Product content set-up",
+            "paragraph": "<p>This helped all products have a uniform content set and that linked to the filter function on the website. <\/p>",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
@@ -237,11 +237,12 @@
         },
         "d507e67a-14b7-473e-a024-ccb8262d029c": {
           "type": "tab",
+          "disabled": true,
           "settings": {
-            "tab_title": "Animated icons",
+            "tab_title": "Google rating integration",
             "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
-            "title": "Animated icons",
-            "paragraph": "<p>we incorporated animated icons into their home page.<\/p>",
+            "title": "Google rating integration",
+            "paragraph": "<p>This integration helps increase the overall trust of visitors to the store by showcasing their live google ratings<\/p>",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",

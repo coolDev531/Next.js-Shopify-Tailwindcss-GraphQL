@@ -1,5 +1,4 @@
 export * from "_sections/blockquote";
-export * from "_sections/faq";
 export * from "_sections/feature-carousel";
 export * from "_sections/feature-list";
 export * from "_sections/footer";
@@ -14,6 +13,7 @@ export * from "_sections/logo-banner";
 export * from "_sections/spec-list";
 export * from "_sections/stats-graph";
 export * from "_sections/story";
+export * from "_sections/tabs-faq";
 export * from "_sections/tabs-image-card";
 export * from "_sections/tabs-process-step";
 export * from "_sections/templates";
