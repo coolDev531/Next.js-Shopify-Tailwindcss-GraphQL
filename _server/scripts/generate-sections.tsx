@@ -70,9 +70,9 @@ function getSettingsType(setting: ShopifySettingsInput) {
     case "blog":
       return "?: _Blog";
     case "collection":
-      return "?: _Collection";
+      return "?: (_Collection & { products: (_Product & { content: string; description: string })[] })";
     case "collection_list":
-      return "?: _Collection[]";
+      return "?: (_Collection & { products: (_Product & { content: string; description: string })[] })[]";
     case "color":
       return "?: _Color";
     case "color_background":

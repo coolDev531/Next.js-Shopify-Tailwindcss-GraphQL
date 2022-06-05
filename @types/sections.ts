@@ -122,7 +122,9 @@ export type HeroSection = {
   id: string;
   settings: {
     /** Input type: collection */
-    collection?: _Collection;
+    collection?: _Collection & {
+      products: (_Product & { content: string; description: string })[];
+    };
     /** Input type: image_picker */
     image?: _Image;
     /** Input type: richtext */
@@ -416,8 +418,8 @@ export type TabsFaqSection = {
 export type TabsFaqBlocks = {
   id: string;
   settings: {
-    /** Input type: product_list */
-    faq_items?: (_Product & { content: string; description: string })[];
+    /** Input type: collection */
+    faq_items?: _Collection & { products: (_Product & { content: string; description: string })[] };
     /** Input type: text */
     title?: string;
   };

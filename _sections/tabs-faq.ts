@@ -21,7 +21,7 @@ export const tabsFaq: ShopifySection<TabsFaqSection> = {
           label: "Title",
         },
         {
-          type: "product_list",
+          type: "collection",
           id: "faq_items",
           label: "Questions",
         },

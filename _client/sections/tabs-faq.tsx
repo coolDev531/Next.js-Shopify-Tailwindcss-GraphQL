@@ -46,7 +46,7 @@ export const TabsFaq: FC<TabsFaqSection> = ({ id, settings, blocks, type }) => {
                   key={`content-${block.id}`}
                   className={clsx("grid grid-cols-2 gap-8", activateTab !== block.id && "hidden")}
                 >
-                  {block.settings.faq_items.map((product) => {
+                  {block.settings.faq_items.products.map((product) => {
                     return (
                       <section key={`content-${block.id}-block-${product.id}`}>
                         <header>
