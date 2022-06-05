@@ -12,10 +12,23 @@ import { SpecList } from "_client/sections/spec-list";
 import { StatsGraph } from "_client/sections/stats-graph";
 import { Story } from "_client/sections/story";
 import { TabsImageCard } from "_client/sections/tabs-image-card";
+import { TabsProcessStep } from "_client/sections/tabs-process-step";
 import { Sections } from "types/sections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {
+    case "faq":
+      return (
+        <section key={section.id} className={section.type} id={section.id}>
+          <div>Section to be developed: {section.type}</div>
+        </section>
+      );
+    case "tabs-process-step":
+      return (
+        <section key={section.id} className={section.type} id={section.id}>
+          <TabsProcessStep {...section} />
+        </section>
+      );
     case "image-carousel":
       return (
         <section key={section.id} className={section.type} id={section.id}>

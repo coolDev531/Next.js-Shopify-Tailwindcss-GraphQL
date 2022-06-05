@@ -10,10 +10,10 @@
       "type": "hero",
       "settings": {
         "pre_title": "Portfolio of Work",
-        "title": "KidsLiving",
-        "paragraph": "<p>Est. 2008 in Cape Town, now a leading South African baby and kids store, offering an extensive range of imported and locally manufactured high-end products. We have worked with Kids Living since 2017 as their ecommerce success partners, covering all aspects from inventory management, digital marketing, web development to complete custom API solutions.<\/p>",
-        "list": "<p>What we did (services):<br\/>•\tWeb Development<br\/>•\tCustom Features Development <br\/>•\tCustom App Integrations<br\/>•\tMonthly SEO & Site maintenance support <br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+        "title": "Matsidiso",
+        "paragraph": "<p>Inspired by the beautiful diversity of Pan-African cultures. Featuring Vibrant colours and textures that melt into designs in a modern way. Run by a wonderful husband and wife team. We have worked with Matsidiso to refine their sites design and got onboard for custom development and helped them to take their store into international markets.<\/p>",
+        "list": "<p>What we did (services):<br\/>•\tCustom app development<br\/>•\tInternationalization<br\/>•\tCustom design<br\/><br\/><\/p>",
+        "image": "shopify:\/\/shop_images\/matsidiso.jpg",
         "collection": "frontpage"
       }
     },

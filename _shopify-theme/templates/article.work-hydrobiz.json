@@ -10,10 +10,10 @@
       "type": "hero",
       "settings": {
         "pre_title": "Portfolio of Work",
-        "title": "KidsLiving",
-        "paragraph": "<p>Est. 2008 in Cape Town, now a leading South African baby and kids store, offering an extensive range of imported and locally manufactured high-end products. We have worked with Kids Living since 2017 as their ecommerce success partners, covering all aspects from inventory management, digital marketing, web development to complete custom API solutions.<\/p>",
-        "list": "<p>What we did (services):<br\/>•\tWeb Development<br\/>•\tCustom Features Development <br\/>•\tCustom App Integrations<br\/>•\tMonthly SEO & Site maintenance support <br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+        "title": "Hydrobiz",
+        "paragraph": "<p>Hydrobiz is a Cape Town based company that supplies professional horticulture equipment and consumables. They represent many high quality local and internal brands like Jiffy, Legro, Bato, Quest and much more.<\/p>",
+        "list": "<p>What we did (services):<br\/>•\tStore Migrations & Web Development<br\/>•\tCustom Features Development <br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
+        "image": "shopify:\/\/shop_images\/hydrobiz.jpg",
         "collection": "frontpage"
       }
     },
@@ -23,21 +23,21 @@
         "8457496c-859c-46a2-8653-4953e4e81a20": {
           "type": "stat",
           "settings": {
-            "stat": "4000+",
+            "stat": "450+",
             "descriptions": "Products & Variants"
           }
         },
         "b206c8f8-78d7-4074-bae7-a25fdfa286ce": {
           "type": "stat",
           "settings": {
-            "stat": "241+",
+            "stat": "127+",
             "descriptions": "Collections"
           }
         },
         "daf38169-f867-497d-b358-3af89c50830e": {
           "type": "stat",
           "settings": {
-            "stat": "100+",
+            "stat": "10+",
             "descriptions": "Brands"
           }
         }

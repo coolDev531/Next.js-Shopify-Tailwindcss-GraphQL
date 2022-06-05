@@ -16,13 +16,18 @@ export type BlockquoteSection = {
   type: "blockquote";
 };
 
+export type FaqSection = {
+  id: string;
+  type: "faq";
+};
+
 export type FeatureCarouselSection = {
-  blocks: featureCarouselBlocks[];
+  blocks: FeatureCarouselBlocks[];
   id: string;
   type: "feature-carousel";
 };
 
-type featureCarouselBlocks =
+export type FeatureCarouselBlocks =
   | {
       id: string;
       settings: {
@@ -61,12 +66,12 @@ type featureCarouselBlocks =
     };
 
 export type FeatureListSection = {
-  blocks: featureListBlocks[];
+  blocks: FeatureListBlocks[];
   id: string;
   type: "feature-list";
 };
 
-type featureListBlocks = {
+export type FeatureListBlocks = {
   id: string;
   settings: {
     /** Input type: select */
@@ -138,12 +143,12 @@ export type HeroSection = {
 };
 
 export type ImageCarouselSection = {
-  blocks: imageCarouselBlocks[];
+  blocks: ImageCarouselBlocks[];
   id: string;
   type: "image-carousel";
 };
 
-type imageCarouselBlocks =
+export type ImageCarouselBlocks =
   | {
       id: string;
       settings: {
@@ -178,12 +183,12 @@ type imageCarouselBlocks =
     };
 
 export type ImageGallerySection = {
-  blocks: imageGalleryBlocks[];
+  blocks: ImageGalleryBlocks[];
   id: string;
   type: "image-gallery";
 };
 
-type imageGalleryBlocks = {
+export type ImageGalleryBlocks = {
   id: string;
   settings: {
     /** Input type: range */
@@ -224,7 +229,7 @@ export type ImageTextSection = {
 };
 
 export type InfoCardsSection = {
-  blocks: infoCardsBlocks[];
+  blocks: InfoCardsBlocks[];
   id: string;
   settings: {
     /** Input type: text */
@@ -235,7 +240,7 @@ export type InfoCardsSection = {
   type: "info-cards";
 };
 
-type infoCardsBlocks = {
+export type InfoCardsBlocks = {
   id: string;
   settings: {
     /** Input type: richtext */
@@ -249,7 +254,7 @@ type infoCardsBlocks = {
 };
 
 export type LogoBannerSection = {
-  blocks: logoBannerBlocks[];
+  blocks: LogoBannerBlocks[];
   id: string;
   settings: {
     /** Input type: range */
@@ -258,7 +263,7 @@ export type LogoBannerSection = {
   type: "logo-banner";
 };
 
-type logoBannerBlocks =
+export type LogoBannerBlocks =
   | {
       id: string;
       settings: {
@@ -281,12 +286,12 @@ type logoBannerBlocks =
     };
 
 export type SpecListSection = {
-  blocks: specListBlocks[];
+  blocks: SpecListBlocks[];
   id: string;
   type: "spec-list";
 };
 
-type specListBlocks =
+export type SpecListBlocks =
   | {
       id: string;
       settings: {
@@ -341,12 +346,12 @@ type specListBlocks =
     };
 
 export type StatsGraphSection = {
-  blocks: statsGraphBlocks[];
+  blocks: StatsGraphBlocks[];
   id: string;
   type: "stats-graph";
 };
 
-type statsGraphBlocks = {
+export type StatsGraphBlocks = {
   id: string;
   settings: {
     /** Input type: text */
@@ -358,12 +363,12 @@ type statsGraphBlocks = {
 };
 
 export type StorySection = {
-  blocks: storyBlocks[];
+  blocks: StoryBlocks[];
   id: string;
   type: "story";
 };
 
-type storyBlocks =
+export type StoryBlocks =
   | {
       id: string;
       settings: {
@@ -404,12 +409,12 @@ type storyBlocks =
     };
 
 export type TabsImageCardSection = {
-  blocks: tabsImageCardBlocks[];
+  blocks: TabsImageCardBlocks[];
   id: string;
   type: "tabs-image-card";
 };
 
-type tabsImageCardBlocks =
+export type TabsImageCardBlocks =
   | {
       id: string;
       settings: {
@@ -458,6 +463,43 @@ type tabsImageCardBlocks =
       };
       type: "tab";
     };
+
+export type TabsProcessStepSection = {
+  blocks: TabsProcessStepBlocks[];
+  id: string;
+  settings: {
+    /** Input type: text */
+    cta1?: string;
+    /** Input type: url */
+    cta1_link?: string;
+    /** Input type: text */
+    cta2?: string;
+    /** Input type: url */
+    cta2_link?: string;
+    /** Input type: richtext */
+    paragraph?: `<p${string}</p>`;
+    /** Input type: text */
+    pre_title?: string;
+    /** Input type: text */
+    title?: string;
+  };
+  type: "tabs-process-step";
+};
+
+export type TabsProcessStepBlocks = {
+  id: string;
+  settings: {
+    /** Input type: richtext */
+    paragraph?: `<p${string}</p>`;
+    /** Input type: textarea */
+    tab_paragraph?: string;
+    /** Input type: text */
+    tab_title?: string;
+    /** Input type: text */
+    title?: string;
+  };
+  type: "step";
+};
 
 export type TemplateArticleSection = {
   id: string;
@@ -511,6 +553,7 @@ export type Template_404Section = {
 
 export type Sections =
   | BlockquoteSection
+  | FaqSection
   | FeatureCarouselSection
   | FeatureListSection
   | FooterSection
@@ -526,6 +569,7 @@ export type Sections =
   | StatsGraphSection
   | StorySection
   | TabsImageCardSection
+  | TabsProcessStepSection
   | TemplateArticleSection
   | TemplateBlogSection
   | TemplateCartSection

@@ -217,14 +217,43 @@ export type ShopifySettingsInput =
   | ShopifyUrl
   | ShopifyVideo_url;
 
-type ShopifySectionDefault = {
-  blocks?: ShopifySectionBlock[];
-  settings?: (ShopifySettingsInput | ShopifyHeader | ShopifyParagraph)[];
+type ShopifySectionDefault<T = never> = {
+  blocks?: T extends never
+    ? {
+        settings: { [T: string]: string | number | boolean };
+        type: "step";
+      }[]
+    : T extends { blocks }
+    ? Partial<Omit<T["blocks"][number], "id">>[]
+    : {
+        settings: { [T: string]: string | number | boolean };
+        type: "step";
+      }[];
+  settings?: T extends never
+    ? { [T: string]: string | number | boolean }
+    : T extends { settings }
+    ? T["settings"]
+    : { [T: string]: string | number | boolean };
 };
-type ShopifySectionPreset = {
+
+type ShopifySectionPreset<T = never> = {
   name: string;
-  blocks?: ShopifySectionBlock[];
-  settings?: (ShopifySettingsInput | ShopifyHeader | ShopifyParagraph)[];
+  blocks?: T extends never
+    ? {
+        settings: { [T: string]: string | number | boolean };
+        type: "step";
+      }[]
+    : T extends { blocks }
+    ? Partial<Omit<T["blocks"][number], "id">>[]
+    : {
+        settings: { [T: string]: string | number | boolean };
+        type: "step";
+      }[];
+  settings?: T extends never
+    ? { [T: string]: string | number | boolean }
+    : T extends { settings }
+    ? T["settings"]
+    : { [T: string]: string | number | boolean };
 };
 
 type ShopifySectionBlock = {
@@ -234,14 +263,14 @@ type ShopifySectionBlock = {
   settings?: (ShopifySettingsInput | ShopifyHeader | ShopifyParagraph)[];
 };
 
-export type ShopifySection = {
+export type ShopifySection<T = never> = {
   name: string;
   blocks?: ShopifySectionBlock[];
   class?: string;
-  default?: ShopifySectionDefault;
+  default?: ShopifySectionDefault<T>;
   limit?: number;
   max_blocks?: number;
-  presets?: ShopifySectionPreset[];
+  presets?: ShopifySectionPreset<T>[];
   settings?: (ShopifySettingsInput | ShopifyHeader | ShopifyParagraph)[];
   tag?: "article" | "aside" | "div" | "footer" | "header" | "section";
   templates?:

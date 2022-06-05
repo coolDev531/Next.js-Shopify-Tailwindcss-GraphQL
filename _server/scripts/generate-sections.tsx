@@ -185,7 +185,7 @@ const sectionToTypes = (section, key) => {
 
   arr.push(`export type ${capitalize(key)}Section = {`);
   if (section.blocks?.length) {
-    arr.push(`  blocks: ${key}Blocks[];`);
+    arr.push(`  blocks: ${capitalize(key)}Blocks[];`);
   }
   arr.push(`  id: string;`);
   if (settings?.length) {
@@ -223,7 +223,7 @@ const sectionToTypes = (section, key) => {
 
   if (section.blocks?.length && section.blocks.length === 1) {
     arr.push("");
-    arr.push(`type ${key}Blocks = {`);
+    arr.push(`export type ${capitalize(key)}Blocks = {`);
 
     section.blocks.forEach((block) => {
       const blockSettings: ShopifySettingsInput[] = block.settings
@@ -270,7 +270,7 @@ const sectionToTypes = (section, key) => {
 
   if (section.blocks?.length && section.blocks.length > 1) {
     arr.push("");
-    arr.push(`type ${key}Blocks =`);
+    arr.push(`export type ${capitalize(key)}Blocks =`);
 
     section.blocks.forEach((block, i) => {
       const blockSettings: ShopifySettingsInput[] = block.settings
