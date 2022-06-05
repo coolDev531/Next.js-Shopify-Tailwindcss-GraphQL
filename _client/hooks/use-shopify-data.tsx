@@ -12,7 +12,6 @@ export const useShopifyData = <G, S>(props: {
   useEffect(() => {
     const handleMessages = (e) => {
       if (e?.data?.source === "theme-editor") {
-        console.log(e.data);
         setSections(e.data.sections);
         setGlobal(e.data.global);
         if (e.data.topic === "shopify:section:select") {

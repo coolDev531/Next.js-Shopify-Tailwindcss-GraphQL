@@ -21,7 +21,6 @@ export const fetchRouter = createRouter().query("shopify-content", {
         sections.push(JSONParse(scriptElement.textContent));
       });
 
-      console.log(sections);
       return { global, sections };
     } catch (err) {
       if (err.response.status === 404 && input === "/404") {

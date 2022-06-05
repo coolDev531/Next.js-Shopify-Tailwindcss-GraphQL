@@ -10,7 +10,6 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
     blocks.filter(({ type }) => type === "tab")[0]?.id
   );
 
-  console.log(activateTab);
   return (
     <>
       {blocks.map((block) => {

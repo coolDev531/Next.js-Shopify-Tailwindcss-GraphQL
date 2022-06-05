@@ -16,7 +16,6 @@ export const apiRoutes = trpc
     const start = Date.now();
     const result = await next();
     const durationMs = Date.now() - start;
-    console.log(path);
 
     return result;
   })

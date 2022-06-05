@@ -43,6 +43,7 @@ export const getAllArticles = async (shop: string, accessToken: string, reducer 
       }
     }
   }
+  console.log(articles);
 
   return articles;
 };

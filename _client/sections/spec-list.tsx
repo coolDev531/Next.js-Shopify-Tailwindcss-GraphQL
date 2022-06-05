@@ -23,7 +23,6 @@ export const SpecList: FC<SpecListSection> = ({ id, blocks, type }) => {
             return (
               <ul key={`list-${block.id}`} className="col-span-3 min-w-[200px] md:col-span-1">
                 {[...new Array(6)].map((_, index) => {
-                  console.log(index);
                   if (block.settings[`text${index + 1}`]) {
                     return (
                       <li

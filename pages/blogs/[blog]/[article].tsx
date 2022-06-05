@@ -25,8 +25,6 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
     process.env.SHOPIFY_API_ACCESS_TOKEN
   );
 
-  console.log(articles);
-
   const paths = articles.map((article) => ({
     params: { article: `${article.handle}`, blog: `${article.blog}` },
   }));
@@ -42,7 +40,6 @@ export const getStaticProps = async ({ params }) => {
     ctx: { req: {}, res: {} },
   });
 
-  console.log({ params });
   const data = await ssg.fetchQuery(
     "fetch.shopify-content",
     `/blogs/${params.blog}/${params.article}`

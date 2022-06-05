@@ -6,15 +6,12 @@ export const getAllProducts = async (
   accessToken: string,
   reducer = (p) => p
 ): Promise<_Product[]> => {
-  console.log("getAllProducts");
-  console.log(shop, accessToken);
   const ShopifyRest = new Shopify.Clients.Rest(shop, `${accessToken}`);
 
   let page_info = null;
   let products = [];
 
   for (let i = 0; i < 5000; i++) {
-    console.log(i);
     const { body, headers } = await ShopifyRest.get<Product.Get>({
       path: "products",
       query: page_info
@@ -28,7 +25,6 @@ export const getAllProducts = async (
       tries: 10,
     });
 
-    console.log({ body });
     products = [...products, ...reducer(body.products)];
 
     // console.log(headers.raw());
