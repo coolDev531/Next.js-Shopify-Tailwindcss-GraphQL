@@ -14,10 +14,24 @@ import { StatsGraph } from "_client/sections/stats-graph";
 import { Story } from "_client/sections/story";
 import { TabsImageCard } from "_client/sections/tabs-image-card";
 import { TabsProcessStep } from "_client/sections/tabs-process-step";
+import { TeamList } from "_client/sections/team-list";
+import { TestimonialList } from "_client/sections/testimonial-list";
 import { Sections } from "types/sections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {
+    case "team-list":
+      return (
+        <section key={section.id} className={section.type} id={section.id}>
+          <TeamList {...section} />
+        </section>
+      );
+    case "testimonial-list":
+      return (
+        <section key={section.id} className={section.type} id={section.id}>
+          <TestimonialList {...section} />
+        </section>
+      );
     case "tabs-faq":
       return (
         <section key={section.id} className={section.type} id={section.id}>

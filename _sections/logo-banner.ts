@@ -6,6 +6,15 @@ export const logoBanner: ShopifySection = {
   settings: [
     {
       type: "header",
+      content: "Content",
+    },
+    {
+      type: "text",
+      id: "title",
+      label: "Title",
+    },
+    {
+      type: "header",
       content: "Settings",
     },
     {

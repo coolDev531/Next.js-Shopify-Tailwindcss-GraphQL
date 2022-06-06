@@ -122,9 +122,7 @@ export type HeroSection = {
   id: string;
   settings: {
     /** Input type: collection */
-    collection?: _Collection & {
-      products: (_Product & { content: string; description: string })[];
-    };
+    collection?: (_Collection & { products: (_Product & { content: string; description: string })[] });
     /** Input type: image_picker */
     image?: _Image;
     /** Input type: richtext */
@@ -256,6 +254,8 @@ export type LogoBannerSection = {
   settings: {
     /** Input type: range */
     height: number;
+    /** Input type: text */
+    title?: string;
   };
   type: "logo-banner";
 };
@@ -419,7 +419,7 @@ export type TabsFaqBlocks = {
   id: string;
   settings: {
     /** Input type: collection */
-    faq_items?: _Collection & { products: (_Product & { content: string; description: string })[] };
+    faq_items?: (_Collection & { products: (_Product & { content: string; description: string })[] });
     /** Input type: text */
     title?: string;
   };
@@ -519,6 +519,48 @@ export type TabsProcessStepBlocks = {
   type: "step";
 };
 
+export type TeamListSection = {
+  blocks: TeamListBlocks[];
+  id: string;
+  type: "team-list";
+};
+
+export type TeamListBlocks =
+  | {
+      id: string;
+      settings: {
+        /** Input type: select */
+        position: "left" | "center" | "right";
+        /** Input type: text */
+        cta1?: string;
+        /** Input type: url */
+        cta1_link?: string;
+        /** Input type: text */
+        cta2?: string;
+        /** Input type: url */
+        cta2_link?: string;
+        /** Input type: richtext */
+        paragraph?: `<p${string}</p>`;
+        /** Input type: text */
+        pre_title?: string;
+        /** Input type: text */
+        title?: string;
+      };
+      type: "heading";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: image_picker */
+        image?: _Image;
+        /** Input type: text */
+        job_title?: string;
+        /** Input type: text */
+        name?: string;
+      };
+      type: "team_member";
+    };
+
 export type TemplateArticleSection = {
   id: string;
   type: "template-article";
@@ -569,6 +611,52 @@ export type Template_404Section = {
   type: "template-404";
 };
 
+export type TestimonialListSection = {
+  blocks: TestimonialListBlocks[];
+  id: string;
+  type: "testimonial-list";
+};
+
+export type TestimonialListBlocks =
+  | {
+      id: string;
+      settings: {
+        /** Input type: select */
+        position: "left" | "center" | "right";
+        /** Input type: text */
+        cta1?: string;
+        /** Input type: url */
+        cta1_link?: string;
+        /** Input type: text */
+        cta2?: string;
+        /** Input type: url */
+        cta2_link?: string;
+        /** Input type: richtext */
+        paragraph?: `<p${string}</p>`;
+        /** Input type: text */
+        pre_title?: string;
+        /** Input type: text */
+        title?: string;
+      };
+      type: "heading";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: text */
+        author?: string;
+        /** Input type: image_picker */
+        avatar?: _Image;
+        /** Input type: image_picker */
+        image?: _Image;
+        /** Input type: text */
+        job_title?: string;
+        /** Input type: richtext */
+        quote?: `<p${string}</p>`;
+      };
+      type: "testimonial";
+    };
+
 export type Sections =
   | BlockquoteSection
   | FeatureCarouselSection
@@ -588,6 +676,7 @@ export type Sections =
   | TabsFaqSection
   | TabsImageCardSection
   | TabsProcessStepSection
+  | TeamListSection
   | TemplateArticleSection
   | TemplateBlogSection
   | TemplateCartSection
@@ -597,4 +686,5 @@ export type Sections =
   | TemplatePasswordSection
   | TemplateProductSection
   | TemplateSearchSection
-  | Template_404Section;
+  | Template_404Section
+  | TestimonialListSection;
