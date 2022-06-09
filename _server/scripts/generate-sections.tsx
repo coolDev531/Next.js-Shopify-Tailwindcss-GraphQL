@@ -4,6 +4,8 @@ import { ShopifySection, ShopifySettingsInput } from "types/shopify";
 import { capitalize } from "utils/capitalize";
 import { toKebabCase } from "utils/to-kebab-case";
 
+const themeFolder = `_shopify-theme`;
+
 const sectionToLiquid = (section, key, shopifyThemeString) => {
   let sectionType = "_section-content";
   const regexp = new RegExp(`\\{%\\s+section\\s+["']${key}["']`, "gi");
@@ -22,7 +24,7 @@ ${JSON.stringify(section, undefined, 2)}
 };
 
 export const generateSections = () => {
-  const shopifyThemeString = fs.readFileSync("_shopify-theme/layout/theme.liquid", {
+  const shopifyThemeString = fs.readFileSync(`${themeFolder}/layout/theme.liquid`, {
     encoding: "utf-8",
   });
 
@@ -30,21 +32,21 @@ export const generateSections = () => {
     const section = Sections[key];
     const content = sectionToLiquid(section, key, shopifyThemeString);
 
-    if (!fs.existsSync(`_shopify-theme/snippets/section_${toKebabCase(key)}.liquid`)) {
-      fs.writeFileSync(`_shopify-theme/snippets/section_${toKebabCase(key)}.liquid`, `<div></div>`);
+    if (!fs.existsSync(`${themeFolder}/snippets/section_${toKebabCase(key)}.liquid`)) {
+      fs.writeFileSync(`${themeFolder}/snippets/section_${toKebabCase(key)}.liquid`, `<div></div>`);
     }
 
-    if (!fs.existsSync(`_shopify-theme/sections/${toKebabCase(key)}.liquid`)) {
-      fs.writeFileSync(`_shopify-theme/sections/${toKebabCase(key)}.liquid`, content);
+    if (!fs.existsSync(`${themeFolder}/sections/${toKebabCase(key)}.liquid`)) {
+      fs.writeFileSync(`${themeFolder}/sections/${toKebabCase(key)}.liquid`, content);
       continue;
     }
 
     const contentVerification = fs.readFileSync(
-      `_shopify-theme/sections/${toKebabCase(key)}.liquid`,
+      `${themeFolder}/sections/${toKebabCase(key)}.liquid`,
       { encoding: "utf-8" }
     );
     if (contentVerification !== content) {
-      fs.writeFileSync(`_shopify-theme/sections/${toKebabCase(key)}.liquid`, content);
+      fs.writeFileSync(`${themeFolder}/sections/${toKebabCase(key)}.liquid`, content);
     }
   }
 };
@@ -120,12 +122,20 @@ const getImports = (sections: { [T: string]: ShopifySection }) => {
         apiTypes.push("_Blog");
       }
       if (setting.type === "collection") {
-        if (apiTypes.includes("_Collection")) return;
-        apiTypes.push("_Collection");
+        if (!apiTypes.includes("_Collection")) {
+          apiTypes.push("_Collection");
+        }
+        if (!apiTypes.includes("_Product")) {
+          apiTypes.push("_Product");
+        }
       }
       if (setting.type === "collection_list") {
-        if (apiTypes.includes("_Collection")) return;
-        apiTypes.push("_Collection");
+        if (!apiTypes.includes("_Collection")) {
+          apiTypes.push("_Collection");
+        }
+        if (!apiTypes.includes("_Product")) {
+          apiTypes.push("_Product");
+        }
       }
       if (setting.type === "color") {
         if (localTypes.includes("_Color")) return;
@@ -157,7 +167,7 @@ const getImports = (sections: { [T: string]: ShopifySection }) => {
       }
     };
 
-    section.settings.forEach(analyseSetting);
+    section.settings?.forEach(analyseSetting);
     section.blocks?.forEach((block) => {
       block.settings?.forEach(analyseSetting);
     });
@@ -225,7 +235,7 @@ const sectionToTypes = (section, key) => {
     arr.push("");
     arr.push(`export type ${capitalize(key)}Blocks = {`);
 
-    section.blocks.forEach((block) => {
+    section.blocks?.forEach((block) => {
       const blockSettings: ShopifySettingsInput[] = block.settings
         ?.filter((s) => s.type !== "header" && s.type !== "paragraph")
         .sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0));
@@ -272,7 +282,7 @@ const sectionToTypes = (section, key) => {
     arr.push("");
     arr.push(`export type ${capitalize(key)}Blocks =`);
 
-    section.blocks.forEach((block, i) => {
+    section.blocks?.forEach((block, i) => {
       const blockSettings: ShopifySettingsInput[] = block.settings
         ?.filter((s) => s.type !== "header" && s.type !== "paragraph")
         .sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0));

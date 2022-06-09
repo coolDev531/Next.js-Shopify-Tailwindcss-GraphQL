@@ -12,24 +12,14 @@
           "type": "category",
           "settings": {
             "title": "General",
-            "faq_items": [
-              "i-have-a-lot-of-projects-how-does-your-project-management-work",
-              "what-type-of-projects-do-you-handle",
-              "why-migrate-to-shopify",
-              "whats-the-difference-between-fast-and-express-turnaround"
-            ]
+            "faq_items": "faq-general"
           }
         },
         "28d70a76-7738-475d-8cb1-f11dc2213349": {
           "type": "category",
           "settings": {
             "title": "Shopify",
-            "faq_items": [
-              "why-migrate-to-shopify",
-              "whats-the-difference-between-fast-and-express-turnaround",
-              "what-type-of-projects-do-you-handle",
-              "i-have-a-lot-of-projects-how-does-your-project-management-work"
-            ]
+            "faq_items": "faq-shopify"
           }
         }
       },
@@ -40,10 +30,106 @@
       "settings": {
         "title": "Frequently asked questions"
       }
+    },
+    "16544962364063b015": {
+      "type": "testimonial-list",
+      "blocks": {
+        "2abc680d-7be9-4ca8-9493-e631cc7feab6": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "asd",
+            "title": "asdasd",
+            "paragraph": "<p>asdasd<\/p>",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "position": "left"
+          }
+        },
+        "0274ff33-3e6c-45e6-b7e0-e16e9e61f981": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/milk-swirling-as-poured-in-coffee.jpg",
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, alias aut delectus harum inventore ipsa iure officiis quibusdam quisquam repellendus. Amet animi aut doloremque earum illo ipsum odit officia omnis?<\/p>",
+            "author": "asdasd",
+            "job_title": "asdasd"
+          }
+        },
+        "746d4293-d8c2-4ed9-8f0f-834171b61ce7": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/milk-swirling-as-poured-in-coffee.jpg",
+            "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, alias aut delectus harum inventore ipsa iure officiis quibusdam quisquam repellendus. Amet animi aut doloremque earum illo ipsum odit officia omnis?<\/p>",
+            "author": "asdasdasd",
+            "job_title": "asdasdasd",
+            "avatar": "shopify:\/\/shop_images\/Capturem.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "2abc680d-7be9-4ca8-9493-e631cc7feab6",
+        "0274ff33-3e6c-45e6-b7e0-e16e9e61f981",
+        "746d4293-d8c2-4ed9-8f0f-834171b61ce7"
+      ],
+      "settings": {
+      }
+    },
+    "1654496969c6d0756e": {
+      "type": "team-list",
+      "blocks": {
+        "22a5046a-829d-48ce-837a-27ced3bdd517": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "asdasdasd",
+            "title": "asdasdasd",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "position": "center"
+          }
+        },
+        "dfa8e86c-486e-4e0b-9729-8276f7146c2f": {
+          "type": "team_member",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021-September-Draft-Posts-_-Ads---WQ.jpg",
+            "name": "asdasdasdasd",
+            "job_title": "asdasdasdasd"
+          }
+        },
+        "db86ac4a-9675-45ed-aedd-0067f238b41d": {
+          "type": "team_member",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/yarn-1_530x530_crop_top_2x_b0c839fc-8bfe-47d7-b418-1c69e5cf030b.jpg",
+            "name": "dasdasd",
+            "job_title": "asdas"
+          }
+        },
+        "b80e7e20-8899-4128-aac9-7ed830fe0382": {
+          "type": "team_member",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
+            "name": "asdasd",
+            "job_title": "asdasdasd"
+          }
+        }
+      },
+      "block_order": [
+        "22a5046a-829d-48ce-837a-27ced3bdd517",
+        "dfa8e86c-486e-4e0b-9729-8276f7146c2f",
+        "db86ac4a-9675-45ed-aedd-0067f238b41d",
+        "b80e7e20-8899-4128-aac9-7ed830fe0382"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "1654426811d987d0cd"
+    "1654426811d987d0cd",
+    "16544962364063b015",
+    "1654496969c6d0756e"
   ]
 }

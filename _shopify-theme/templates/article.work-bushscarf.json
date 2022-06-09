@@ -11,14 +11,15 @@
       "settings": {
         "pre_title": "Portfolio of Work",
         "title": "vw",
-        "paragraph": "<p>VW Mossel Bay parts service offers high quality Genuine Volkswagen Parts. They pride themselves in consistency from years of excellent service. With a combination of hard work, dedication, and innovation, they always make sure to make their customers their number one priority.<\/p>",
-        "list": "<p>What we did (services):<br\/>•\tWeb Development<br\/>•\tCustom Features Development <br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/vw.jpg",
+        "paragraph": "<p>Est. 2016, Bush Scarf focuses on quality handwoven bamboo and mohair scarves. Locally made and proudly South African, the scarves express beauty, elegancy, and simplicity through the vivid and strong colour tones in their designs.<br\/><br\/>We helped Bushscarf in developing their Shopify Website, Product Photography & Product image editing and product content creation.<br\/><\/p>",
+        "list": "<p>What we did (services):<br\/>•\tWeb Development<br\/>•\tCustom theme editing <br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
+        "image": "shopify:\/\/shop_images\/yarn-1_530x530_crop_top_2x_b0c839fc-8bfe-47d7-b418-1c69e5cf030b.jpg",
         "collection": "frontpage"
       }
     },
     "1654079897751048da": {
       "type": "stats-graph",
+      "disabled": true,
       "blocks": {
         "8457496c-859c-46a2-8653-4953e4e81a20": {
           "type": "stat",
@@ -52,6 +53,7 @@
     },
     "16540846002974a6ff": {
       "type": "story",
+      "disabled": true,
       "blocks": {
         "93e0ffb2-4809-45bb-88aa-7cf835fef608": {
           "type": "heading",
@@ -186,11 +188,13 @@
         "32370b89-179d-470e-a674-cbeae597dfe7"
       ],
       "settings": {
+        "title": "",
         "height": 40
       }
     },
     "16541733016b2d4288": {
       "type": "tabs-image-card",
+      "disabled": true,
       "blocks": {
         "a97114d1-2a70-40f3-9f0c-32751ea9b4ab": {
           "type": "heading",
@@ -314,6 +318,7 @@
     },
     "16542555547186860a": {
       "type": "spec-list",
+      "disabled": true,
       "blocks": {
         "c2a192bb-8b31-4125-b05c-744bda6883aa": {
           "type": "heading",
@@ -465,6 +470,7 @@
     },
     "165426875321fe7fc5": {
       "type": "feature-list",
+      "disabled": true,
       "blocks": {
         "7d9184d1-b917-43ab-a84e-dbce8b2d3989": {
           "type": "feature",

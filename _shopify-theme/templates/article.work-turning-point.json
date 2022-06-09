@@ -19,6 +19,7 @@
     },
     "1654079897751048da": {
       "type": "stats-graph",
+      "disabled": true,
       "blocks": {
         "8457496c-859c-46a2-8653-4953e4e81a20": {
           "type": "stat",
@@ -50,8 +51,132 @@
       "settings": {
       }
     },
+    "16541733016b2d4288": {
+      "type": "tabs-image-card",
+      "blocks": {
+        "a97114d1-2a70-40f3-9f0c-32751ea9b4ab": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "Custom builder",
+            "title": "",
+            "paragraph": "<p>asdasd<\/p>",
+            "cta1": "asd",
+            "cta1_link": "##",
+            "cta2": "asdasd",
+            "cta2_link": "#",
+            "position": "left"
+          }
+        },
+        "2353a22b-85ba-4a79-9a1c-23bbf71d60d7": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Custom filter & search function",
+            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
+            "title": "Custom filter & search function",
+            "paragraph": "<p>This custom filter function helps search for products based on the model, year, and trim of vehicle.<\/p>",
+            "cta1": "asdasd",
+            "cta1_link": "#",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "image_link": ""
+          }
+        },
+        "5580bf76-a72e-4bfe-8d9d-a63518f96cc5": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Product content set-up",
+            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
+            "title": "Product content set-up",
+            "paragraph": "<p>This helped all products have a uniform content set and that linked to the filter function on the website. <\/p>",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/ampersand-01-classic.jpg",
+            "image_link": ""
+          }
+        },
+        "d507e67a-14b7-473e-a024-ccb8262d029c": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_title": "Google rating integration",
+            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
+            "title": "Google rating integration",
+            "paragraph": "<p>This integration helps increase the overall trust of visitors to the store by showcasing their live google ratings<\/p>",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/heart-02-shoreline.jpg",
+            "image_link": ""
+          }
+        },
+        "e3679b31-516e-4d8d-8463-58315b3dbaec": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_title": "Customized logo band",
+            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
+            "title": "Customized logo band",
+            "paragraph": "<p>This custom built helped showcase the large amount of brands that kidsliving offers while highlighted the logos flawlessly into the shops home page <\/p>",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image_link": ""
+          }
+        },
+        "57ab776c-10cd-4f7c-8b42-5b73d6edd21a": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_title": "asdasdasd",
+            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
+            "title": "",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image_link": ""
+          }
+        },
+        "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_title": "123sadasdadsasd",
+            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
+            "title": "",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/ms-icon-310x310.png",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a97114d1-2a70-40f3-9f0c-32751ea9b4ab",
+        "2353a22b-85ba-4a79-9a1c-23bbf71d60d7",
+        "5580bf76-a72e-4bfe-8d9d-a63518f96cc5",
+        "d507e67a-14b7-473e-a024-ccb8262d029c",
+        "e3679b31-516e-4d8d-8463-58315b3dbaec",
+        "57ab776c-10cd-4f7c-8b42-5b73d6edd21a",
+        "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41"
+      ],
+      "settings": {
+      }
+    },
     "16540846002974a6ff": {
       "type": "story",
+      "disabled": true,
       "blocks": {
         "93e0ffb2-4809-45bb-88aa-7cf835fef608": {
           "type": "heading",
@@ -186,134 +311,13 @@
         "32370b89-179d-470e-a674-cbeae597dfe7"
       ],
       "settings": {
+        "title": "",
         "height": 40
-      }
-    },
-    "16541733016b2d4288": {
-      "type": "tabs-image-card",
-      "blocks": {
-        "a97114d1-2a70-40f3-9f0c-32751ea9b4ab": {
-          "type": "heading",
-          "settings": {
-            "pre_title": "Custom builder",
-            "title": "",
-            "paragraph": "<p>asdasd<\/p>",
-            "cta1": "asd",
-            "cta1_link": "##",
-            "cta2": "asdasd",
-            "cta2_link": "#",
-            "position": "left"
-          }
-        },
-        "2353a22b-85ba-4a79-9a1c-23bbf71d60d7": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Custom filter & search function",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
-            "title": "Custom filter & search function",
-            "paragraph": "<p>This custom filter function helps search for products based on the model, year, and trim of vehicle.<\/p>",
-            "cta1": "asdasd",
-            "cta1_link": "#",
-            "cta2": "",
-            "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
-            "image_link": ""
-          }
-        },
-        "5580bf76-a72e-4bfe-8d9d-a63518f96cc5": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Product content set-up",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
-            "title": "Product content set-up",
-            "paragraph": "<p>This helped all products have a uniform content set and that linked to the filter function on the website. <\/p>",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/ampersand-01-classic.jpg",
-            "image_link": ""
-          }
-        },
-        "d507e67a-14b7-473e-a024-ccb8262d029c": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "tab_title": "Google rating integration",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
-            "title": "Google rating integration",
-            "paragraph": "<p>This integration helps increase the overall trust of visitors to the store by showcasing their live google ratings<\/p>",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/heart-02-shoreline.jpg",
-            "image_link": ""
-          }
-        },
-        "e3679b31-516e-4d8d-8463-58315b3dbaec": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "tab_title": "Customized logo band",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
-            "title": "Customized logo band",
-            "paragraph": "<p>This custom built helped showcase the large amount of brands that kidsliving offers while highlighted the logos flawlessly into the shops home page <\/p>",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "image_link": ""
-          }
-        },
-        "57ab776c-10cd-4f7c-8b42-5b73d6edd21a": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "tab_title": "asdasdasd",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
-            "title": "",
-            "paragraph": "",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "image_link": ""
-          }
-        },
-        "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "tab_title": "123sadasdadsasd",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
-            "title": "",
-            "paragraph": "",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/ms-icon-310x310.png",
-            "image_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "a97114d1-2a70-40f3-9f0c-32751ea9b4ab",
-        "2353a22b-85ba-4a79-9a1c-23bbf71d60d7",
-        "5580bf76-a72e-4bfe-8d9d-a63518f96cc5",
-        "d507e67a-14b7-473e-a024-ccb8262d029c",
-        "e3679b31-516e-4d8d-8463-58315b3dbaec",
-        "57ab776c-10cd-4f7c-8b42-5b73d6edd21a",
-        "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41"
-      ],
-      "settings": {
       }
     },
     "16542555547186860a": {
       "type": "spec-list",
+      "disabled": true,
       "blocks": {
         "c2a192bb-8b31-4125-b05c-744bda6883aa": {
           "type": "heading",
@@ -465,6 +469,7 @@
     },
     "165426875321fe7fc5": {
       "type": "feature-list",
+      "disabled": true,
       "blocks": {
         "7d9184d1-b917-43ab-a84e-dbce8b2d3989": {
           "type": "feature",
@@ -697,10 +702,10 @@
     "main",
     "16540104123512b9a3",
     "1654079897751048da",
+    "16541733016b2d4288",
     "16540846002974a6ff",
     "16540875305d711f9e",
     "1654092902cc4e4a33",
-    "16541733016b2d4288",
     "16542555547186860a",
     "1654259533f54af287",
     "16542613555478f86d",

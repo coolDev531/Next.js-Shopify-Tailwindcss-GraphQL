@@ -23,22 +23,22 @@
         "8457496c-859c-46a2-8653-4953e4e81a20": {
           "type": "stat",
           "settings": {
-            "stat": "1500+",
-            "descriptions": "Products & Variants"
+            "stat": "8500+",
+            "descriptions": "Website visits"
           }
         },
         "b206c8f8-78d7-4074-bae7-a25fdfa286ce": {
           "type": "stat",
           "settings": {
-            "stat": "36+",
-            "descriptions": "Collections"
+            "stat": "190+",
+            "descriptions": "Website subscribers"
           }
         },
         "daf38169-f867-497d-b358-3af89c50830e": {
           "type": "stat",
           "settings": {
-            "stat": "30+",
-            "descriptions": "Brands"
+            "stat": "350+",
+            "descriptions": "New leads"
           }
         }
       },
@@ -57,8 +57,8 @@
           "type": "heading",
           "settings": {
             "pre_title": "Case in point",
-            "title": "Going from zero to hero",
-            "paragraph": "<p>Store migration from WordPress to Shopify, integrated a product review app, Website design upgrade. SEO and product content information (monthly package), Page Review & Analysis, , Performance & SEO enhancement.<\/p>",
+            "title": "From problem to solution",
+            "paragraph": "<p>How we helped our client<br\/>solve the following challenges: migrating their store from WordPress to Shopify,<br\/>updating their store design and content flow to showcase their large amount of<br\/>inventory, and increasing site visits, engagement, and product purchases. <\/p>",
             "cta1": "asdasdasd",
             "cta1_link": "#",
             "cta2": "asd",
@@ -69,9 +69,9 @@
         "364ea5e8-5749-4d69-b8f0-528e5aab9c5b": {
           "type": "image-text",
           "settings": {
-            "pre_title": "Continues communication & feedback",
+            "pre_title": "Website migration analysis",
             "title": "",
-            "paragraph": "<p>Continuous development with regular meeting intervals discussing opportunities for growth and improvements. We take the time to understanding the clients’ products, customers, and overall needs.<\/p>",
+            "paragraph": "<p>When we first took over the website, one of our challenges was understand the extent of information and data that needed to be sorted through and migrated to the Shopify platform from WordPress. Our team did an extensive analyse of the current site to ensure that the migration was effective and seamless. They then created a strategic plan to implement the migration ensuring that the sites SEO, content, and web rankings were kept intact. <br\/> <br\/>•\tRedirect all changed links<br\/>•\tUpdating the website structure, to optimize user flow and experience<br\/>•\tUpdating website content and flow <br\/>•\tCustomer data Migration <br\/>•\tProduct and Order information migration <br\/><\/p>",
             "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "position": "left"
           }
@@ -79,10 +79,30 @@
         "4729554a-b37a-42dd-b189-ab78ef716946": {
           "type": "image-text",
           "settings": {
-            "pre_title": "asd",
-            "title": "asd",
-            "paragraph": "<p>asd<\/p>",
+            "pre_title": "Shopify web development",
+            "title": "",
+            "paragraph": "<p>Once we managed to extract all the information needed, we started developing their Shopify website tailored to our clients’ needs while taking to account to functions and features of their old site <br\/><br\/>•\tTheme Coding & Implementation<br\/>•\tShopify SEO Implementation and optimization <br\/>•\tShopify Apps Integration & Configuration<br\/>•\tPayment & Shipping Zones Set-Up<br\/>•\tProduct & Inventory Set-Up<br\/><\/p>",
             "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "position": "right"
+          }
+        },
+        "335e486e-acc3-4378-94be-fa0dc73c7a39": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "SEO & Site maintenance support",
+            "title": "",
+            "paragraph": "<p>Our team uses and develops cutting-edge SEO tools and crawling software to identify and analyze technical SEO factors that needs to be addressed. Using this data, we form a list of action items and, every month, slowly worked through each one of those areas. We continuously update our SEO strategy to remain flexible with the ever-changing landscape. <br\/><br\/>•\tEvaluating current keyword rankings<br\/>•\tIdentifying and creating quality links <br\/>•\tProduct content quality analysis and update<br\/>•\tObtaining on-topic quality links from niche directories and sites<br\/><\/p>",
+            "image": "shopify:\/\/shop_images\/45666405_2210510059223205_2884315360159139887_n.jpg",
+            "position": "left"
+          }
+        },
+        "0006cd19-f0fe-42e3-a223-964cdd22172a": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Google & social media ads",
+            "title": "",
+            "paragraph": "<p>When we first took over the client’s social ad campaigns, one of the biggest challenges was finding the people interested in its products. The company’s target audience of jewellery and watches is so broad. Our team performed several campaign audits and market analyses to quickly determine the client’s ideal target market, drive website purchases and deliver a solid return. We also created ads based on increased site purchases and website visits. <br\/><br\/>•\tAudience AB testing <br\/>•\tPromoting highest-priority products<br\/>•\tMonthly ad goals and review <br\/>•\tSpecial occasions & dates campaigns <br\/><\/p>",
+            "image": "shopify:\/\/shop_images\/45666405_2210510059223205_2884315360159139887_n.jpg",
             "position": "right"
           }
         }
@@ -90,7 +110,9 @@
       "block_order": [
         "93e0ffb2-4809-45bb-88aa-7cf835fef608",
         "364ea5e8-5749-4d69-b8f0-528e5aab9c5b",
-        "4729554a-b37a-42dd-b189-ab78ef716946"
+        "4729554a-b37a-42dd-b189-ab78ef716946",
+        "335e486e-acc3-4378-94be-fa0dc73c7a39",
+        "0006cd19-f0fe-42e3-a223-964cdd22172a"
       ],
       "settings": {
       }
@@ -186,6 +208,7 @@
         "32370b89-179d-470e-a674-cbeae597dfe7"
       ],
       "settings": {
+        "title": "",
         "height": 40
       }
     },
@@ -198,9 +221,9 @@
             "pre_title": "Custom builder",
             "title": "",
             "paragraph": "<p>asdasd<\/p>",
-            "cta1": "asd",
+            "cta1": "",
             "cta1_link": "##",
-            "cta2": "asdasd",
+            "cta2": "",
             "cta2_link": "#",
             "position": "left"
           }
@@ -237,12 +260,11 @@
         },
         "d507e67a-14b7-473e-a024-ccb8262d029c": {
           "type": "tab",
-          "disabled": true,
           "settings": {
-            "tab_title": "Google rating integration",
+            "tab_title": "Shopify to take-a-lot",
             "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
-            "title": "Google rating integration",
-            "paragraph": "<p>This integration helps increase the overall trust of visitors to the store by showcasing their live google ratings<\/p>",
+            "title": "Shopify to take-a-lot",
+            "paragraph": "",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
@@ -253,12 +275,11 @@
         },
         "e3679b31-516e-4d8d-8463-58315b3dbaec": {
           "type": "tab",
-          "disabled": true,
           "settings": {
-            "tab_title": "Customized logo band",
+            "tab_title": "Shopify to Courier guy",
             "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
-            "title": "Customized logo band",
-            "paragraph": "<p>This custom built helped showcase the large amount of brands that kidsliving offers while highlighted the logos flawlessly into the shops home page <\/p>",
+            "title": "Shopify to Courier guy",
+            "paragraph": "",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
@@ -269,11 +290,10 @@
         },
         "57ab776c-10cd-4f7c-8b42-5b73d6edd21a": {
           "type": "tab",
-          "disabled": true,
           "settings": {
-            "tab_title": "asdasdasd",
+            "tab_title": "Product review app",
             "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
-            "title": "",
+            "title": "Product review app",
             "paragraph": "",
             "cta1": "",
             "cta1_link": "",
@@ -332,7 +352,7 @@
           "type": "list",
           "settings": {
             "icon1": "CloudIcon",
-            "text1": "Front-end features",
+            "text1": "Theme editing",
             "icon2": "CloudIcon",
             "text2": "Graphic Design",
             "icon3": "CloudIcon",
@@ -370,7 +390,7 @@
             "icon2": "CloudIcon",
             "text2": "Ongoing Training",
             "icon3": "CloudIcon",
-            "text3": "",
+            "text3": "Project management",
             "icon4": "CloudIcon",
             "text4": "",
             "icon5": "CloudIcon",
@@ -470,32 +490,32 @@
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Data organization",
-            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
+            "title": "Conversion Rate Optimization",
+            "paragraph": "<p>Our team focuses on optimizing your sites speed by eliminating unnecessary form fields, placing clear calls-to-action and simplifying your page navigations. We also perform A\/B testing to ensure all aspects of your website are optimized for conversion.<\/p>"
           }
         },
         "335efa5a-6e14-4f5f-9f46-3faad15cb6a8": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Navigation consultation",
-            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
+            "title": "Website Analysis",
+            "paragraph": "<p>Our team performs thorough site analysis to determine your website’s conversion opportunities, threats, weaknesses, and strengths. We run SEO audits, test your site speed and functionality, and analyse your site traffic. These methods allow us to improve your site usability and increase your site engagement and conversions.<\/p>"
           }
         },
         "976c1d3a-29d8-43f3-8c94-e23b9461c461": {
           "type": "feature",
           "settings": {
             "icon": "CloudIcon",
-            "title": "Ongoing training",
-            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
+            "title": "Website Maintenance",
+            "paragraph": "<p>Regular site maintenance is crucial to ensure<br\/>your website is running at full capacity. We conduct scheduled site check-ups to<br\/>determine your website's key aspects that need improvement. Using the analytics<br\/>results, we develop strategies to enhance your site security, boost your<br\/>traffic and optimize your page experience.<\/p>"
           }
         },
         "bf211802-1d16-4343-b21c-1a6d7af721c0": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Content flow management",
-            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
+            "title": "Customer Focus & Communication",
+            "paragraph": "<p>We focus on developing customized processes to fit your needs. We understand that each client is different and work in different ways. We take the time to regularly communicate to our clients keeping them updating on our processes and encourage feedback. For the convenience of our clients, our meetings\/communications are done via email, whatsapp or video conferencing.<\/p>"
           }
         }
       },

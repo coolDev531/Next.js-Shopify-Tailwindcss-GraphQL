@@ -13,7 +13,7 @@
         "title": "KidsLiving",
         "paragraph": "<p>Est. 2008 in Cape Town, now a leading South African baby and kids store, offering an extensive range of imported and locally manufactured high-end products. We have worked with Kids Living since 2017 as their ecommerce success partners, covering all aspects from inventory management, digital marketing, web development to complete custom API solutions.<\/p>",
         "list": "<p>What we did (services):<br\/>•\tWeb Development<br\/>•\tCustom Features Development <br\/>•\tCustom App Integrations<br\/>•\tMonthly SEO & Site maintenance support <br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+        "image": "shopify:\/\/shop_images\/kidsliving.jpg",
         "collection": "frontpage"
       }
     },
@@ -23,15 +23,15 @@
         "8457496c-859c-46a2-8653-4953e4e81a20": {
           "type": "stat",
           "settings": {
-            "stat": "4000+",
-            "descriptions": "Products & Variants"
+            "stat": "29 000+",
+            "descriptions": "Website Visitors"
           }
         },
         "b206c8f8-78d7-4074-bae7-a25fdfa286ce": {
           "type": "stat",
           "settings": {
-            "stat": "241+",
-            "descriptions": "Collections"
+            "stat": "368+",
+            "descriptions": "Website Subscribers"
           }
         },
         "daf38169-f867-497d-b358-3af89c50830e": {
@@ -57,8 +57,8 @@
           "type": "heading",
           "settings": {
             "pre_title": "Case in point",
-            "title": "Going from zero to hero",
-            "paragraph": "<p>How we overcome Kids Livings challenge on having ther product information on BigCommerce and on an ancient POS system to a all round solution with VEND and Shopify.<\/p>",
+            "title": "From challenge to solution",
+            "paragraph": "<p>How we overcome Kids Livings challenge on having their product information on BigCommerce and on an outdated POS system to an all round solution with VEND and Shopify. Contiously working with them to help their business succeed. <\/p>",
             "cta1": "asdasdasd",
             "cta1_link": "#",
             "cta2": "asd",
@@ -69,9 +69,9 @@
         "364ea5e8-5749-4d69-b8f0-528e5aab9c5b": {
           "type": "image-text",
           "settings": {
-            "pre_title": "Continues communication & feedback",
+            "pre_title": "Website migration analysis",
             "title": "",
-            "paragraph": "<p>Continuous development with regular meeting intervals discussing opportunities for growth and improvements. We take the time to understanding the clients’ products, customers, and overall needs.<\/p>",
+            "paragraph": "<p>When we first took over the website, one of our challenges was understand the extent of information and data that needed to be sorted through and migrated to the Shopify platform from BigCommerce. Our team did an extensive analyse of the old site to ensure that the migration was effective and seamless. The biggest highlights was the amount of data and information that needed to be extracted, sorted and formatted for the new website. They created an in detailed strategic plan that took that into consideration and that ensured that the old sites SEO, content, and web rankings were kept intact. <br\/> <br\/>•\tRedirect all changed links<br\/>•\tUpdating the website structure, to optimize user flow and experience<br\/>•\tUpdating website content and flow <br\/>•\tWeb content migration <br\/><\/p>",
             "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "position": "left"
           }
@@ -79,18 +79,40 @@
         "4729554a-b37a-42dd-b189-ab78ef716946": {
           "type": "image-text",
           "settings": {
-            "pre_title": "asd",
-            "title": "asd",
-            "paragraph": "<p>asd<\/p>",
+            "pre_title": "",
+            "title": "Vend to Shopify integration",
+            "paragraph": "<p>Our team then integrated the extracted information onto vend and integrated it to shopify.   <br\/> <br\/>•\tOrganising product data<br\/>•\tMigrate Images from Products, Categories, Blog Description<br\/>•\tCustomer data Migration <br\/>•\tProduct and Order information migration <br\/><\/p>",
             "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "position": "right"
+          }
+        },
+        "d3a58043-2727-4644-8472-c959186be648": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Shopify web development",
+            "title": "",
+            "paragraph": "<p>With the migration complete we started developing their Shopify website tailored to our clients’ needs while taking to account to functions and features of their old site <br\/><br\/>•\tTheme Coding & Implementation<br\/>•\tShopify SEO Implementation and optimization <br\/>•\tShopify Apps Integration & Configuration<br\/>•\tPayment & Shipping Zones Set-Up<br\/>•\tProduct & Inventory Set-Up<br\/><\/p>",
+            "image": "shopify:\/\/shop_images\/yarn-1_530x530_crop_top_2x_b0c839fc-8bfe-47d7-b418-1c69e5cf030b.jpg",
+            "position": "right"
+          }
+        },
+        "aa2d5baa-f85f-478a-a8bb-5b6aac4202a4": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "SEO & Site maintenance support",
+            "title": "",
+            "paragraph": "<p>Our team uses and develops cutting-edge SEO tools and crawling software to identify and analyze technical SEO factors that needs to be addressed. Using this data, we form a list of action items and, every month, slowly worked through each one of those areas. We continuously update our SEO strategy to remain flexible with the ever-changing landscape. <br\/><br\/>•\tEvaluating current keyword rankings<br\/>•\tIdentifying and creating quality links <br\/>•\tProduct content quality analysis and update<br\/>•\tObtaining on-topic quality links from niche directories and sites<\/p>",
+            "image": "shopify:\/\/shop_images\/milk-swirling-as-poured-in-coffee.jpg",
+            "position": "left"
           }
         }
       },
       "block_order": [
         "93e0ffb2-4809-45bb-88aa-7cf835fef608",
         "364ea5e8-5749-4d69-b8f0-528e5aab9c5b",
-        "4729554a-b37a-42dd-b189-ab78ef716946"
+        "4729554a-b37a-42dd-b189-ab78ef716946",
+        "d3a58043-2727-4644-8472-c959186be648",
+        "aa2d5baa-f85f-478a-a8bb-5b6aac4202a4"
       ],
       "settings": {
       }
@@ -186,6 +208,7 @@
         "32370b89-179d-470e-a674-cbeae597dfe7"
       ],
       "settings": {
+        "title": "",
         "height": 40
       }
     },
@@ -345,7 +368,7 @@
           "type": "list",
           "settings": {
             "icon1": "CloudIcon",
-            "text1": "Social Media Marketing",
+            "text1": "Social Media Management",
             "icon2": "CloudIcon",
             "text2": "Product Research",
             "icon3": "CloudIcon",
@@ -366,7 +389,7 @@
             "icon2": "CloudIcon",
             "text2": "Ongoing Training",
             "icon3": "CloudIcon",
-            "text3": "",
+            "text3": "Data Management",
             "icon4": "CloudIcon",
             "text4": "",
             "icon5": "CloudIcon",
@@ -466,32 +489,32 @@
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Data organization",
-            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
+            "title": "Website Analysis",
+            "paragraph": "<p>Our team performs thorough site analysis to determine your website’s conversion opportunities, threats, weaknesses, and strengths. We run SEO audits, test your site speed and functionality, and analyse your site traffic. These methods allow us to improve your site usability and increase your site engagement and conversions.<\/p>"
           }
         },
         "335efa5a-6e14-4f5f-9f46-3faad15cb6a8": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Navigation consultation",
-            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
+            "title": "Conversion Rate Optimization",
+            "paragraph": "<p>Our team focuses on optimizing your sites speed by eliminating unnecessary form fields, placing clear calls-to-action and simplifying your page navigations. We also perform A\/B testing to ensure all aspects of your website are optimized for conversion.<\/p>"
           }
         },
         "976c1d3a-29d8-43f3-8c94-e23b9461c461": {
           "type": "feature",
           "settings": {
             "icon": "CloudIcon",
-            "title": "Ongoing training",
-            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
+            "title": "Website Maintenance",
+            "paragraph": "<p>Regular site maintenance is crucial to ensure<br\/>your website is running at full capacity. We conduct scheduled site check-ups<br\/>to determine your website's key aspects that need improvement. Using the<br\/>analytics results, we develop strategies to enhance your site security, boost<br\/>your traffic and optimize your page experience.<\/p>"
           }
         },
         "bf211802-1d16-4343-b21c-1a6d7af721c0": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Content flow management",
-            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
+            "title": "Customer Focus & Communication",
+            "paragraph": "<p>We focus on developing customized processes to fit your needs. We understand that each client is different and work in different ways. We take the time to regularly communicate to our clients keeping them updating on our processes and encourage feedback. For the convenience of our clients, our meetings\/communications are done via email, whatsapp or video conferencing.<\/p>"
           }
         }
       },

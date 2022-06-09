@@ -10,27 +10,28 @@
       "type": "hero",
       "settings": {
         "pre_title": "Portfolio of Work",
-        "title": "Zoom Printing",
-        "paragraph": "<p>Zoom Printing was founded in 2003 by individuals who asked a simple question. Why should you overpay for printing services by purchasing from a long chain of resellers? ZOOM PRINTING is a one-stop-shop for all printing needs at unbelievable prices. The pricing model is built on providing the highest possible quality for an affordable price. With Zoom Printing you print direct and benefit from \"factory pricing\".<\/p>",
-        "list": "<p>What we did (services):<br\/>•\tStore Migrations & Web Development<br\/>•\tCustom Features Development <br\/>•\tCustom App Integrations<br\/>•\tMonthly SEO & Site maintenance support <br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/zoom_printing.jpg",
+        "title": "Waraq",
+        "paragraph": "<p>Waraq is a health and beauty brand that focuses on sustainable health and while encouraging a beauty positive lifestyle.<\/p><p><\/p><p>We helped develop a minimalistic Shopify Website, with basic product image editing and content creation.<\/p>",
+        "list": "<p>What we did (services):<br\/>•\tWeb Development<br\/>•\tCustom theme editing <br\/><br\/><br\/><\/p>",
+        "image": "shopify:\/\/shop_images\/2021-September-Draft-Posts-_-Ads---WQ.jpg",
         "collection": "frontpage"
       }
     },
     "1654079897751048da": {
       "type": "stats-graph",
+      "disabled": true,
       "blocks": {
         "8457496c-859c-46a2-8653-4953e4e81a20": {
           "type": "stat",
           "settings": {
-            "stat": "2000+",
+            "stat": "4000+",
             "descriptions": "Products & Variants"
           }
         },
         "b206c8f8-78d7-4074-bae7-a25fdfa286ce": {
           "type": "stat",
           "settings": {
-            "stat": "46+",
+            "stat": "241+",
             "descriptions": "Collections"
           }
         },
@@ -52,13 +53,14 @@
     },
     "16540846002974a6ff": {
       "type": "story",
+      "disabled": true,
       "blocks": {
         "93e0ffb2-4809-45bb-88aa-7cf835fef608": {
           "type": "heading",
           "settings": {
             "pre_title": "Case in point",
-            "title": "From Challenge to Solution",
-            "paragraph": "<p>How we helped migrate their store from Legacy to shopify while creating a fresh and UX driven site that would suit their large inventory and requirements for customizable products with multiple product variability.<\/p>",
+            "title": "Going from zero to hero",
+            "paragraph": "<p>Shopify Website development, basic product image editing, content creation and content flow Performance & SEO enhancement.<\/p>",
             "cta1": "asdasdasd",
             "cta1_link": "#",
             "cta2": "asd",
@@ -69,9 +71,9 @@
         "364ea5e8-5749-4d69-b8f0-528e5aab9c5b": {
           "type": "image-text",
           "settings": {
-            "pre_title": "Website migration analysis",
+            "pre_title": "Continues communication & feedback",
             "title": "",
-            "paragraph": "<p>When we first took over the website, one of our challenges was understand the extent of information and data that needed to be sorted through and migrated to the Shopify platform from Legacy. Our team did an extensive analyse of the old site to ensure that the migration was effective and seamless. The biggest highlights was the amount of data and information that needed to be extracted, sorted and formatted for the new website. They created an in detailed strategic plan that took that into consideration and that ensured that the old sites SEO, content, and web rankings were kept intact. <br\/> <br\/>•\tRedirect all changed links<br\/>•\tUpdating the website structure, to optimize user flow and experience<br\/>•\tUpdating website content and flow <br\/>•\tWeb content migration <br\/><\/p>",
+            "paragraph": "<p>Continuous development with regular meeting intervals discussing opportunities for growth and improvements. We take the time to understanding the clients’ products, customers, and overall needs.<\/p>",
             "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "position": "left"
           }
@@ -192,6 +194,7 @@
     },
     "16541733016b2d4288": {
       "type": "tabs-image-card",
+      "disabled": true,
       "blocks": {
         "a97114d1-2a70-40f3-9f0c-32751ea9b4ab": {
           "type": "heading",
@@ -209,10 +212,10 @@
         "2353a22b-85ba-4a79-9a1c-23bbf71d60d7": {
           "type": "tab",
           "settings": {
-            "tab_title": "Custom builder",
+            "tab_title": "Custom filter & search function",
             "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
-            "title": "Custom builder",
-            "paragraph": "<p>This custom builder helps you build your own stroller, choosing elements like fabric styles, frame options, wheel types. It shows the changes in real life creating a very interactive purchase experience for people who want a custom product they built themselves.<\/p>",
+            "title": "Custom filter & search function",
+            "paragraph": "<p>This custom filter function helps search for products based on the model, year, and trim of vehicle.<\/p>",
             "cta1": "asdasd",
             "cta1_link": "#",
             "cta2": "",
@@ -224,10 +227,10 @@
         "5580bf76-a72e-4bfe-8d9d-a63518f96cc5": {
           "type": "tab",
           "settings": {
-            "tab_title": "Mega menu & custom brand section",
+            "tab_title": "Product content set-up",
             "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
-            "title": "Mega menu & custom brand section",
-            "paragraph": "<p>This custom build helped organize a large amount of product categories in user friendly manner, we also focused on the brands, organising them Alphabetically while highlighting the top popular brands<\/p>",
+            "title": "Product content set-up",
+            "paragraph": "<p>This helped all products have a uniform content set and that linked to the filter function on the website. <\/p>",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
@@ -238,6 +241,7 @@
         },
         "d507e67a-14b7-473e-a024-ccb8262d029c": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "tab_title": "Google rating integration",
             "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
@@ -253,6 +257,7 @@
         },
         "e3679b31-516e-4d8d-8463-58315b3dbaec": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "tab_title": "Customized logo band",
             "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
@@ -268,6 +273,7 @@
         },
         "57ab776c-10cd-4f7c-8b42-5b73d6edd21a": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "tab_title": "asdasdasd",
             "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
@@ -283,6 +289,7 @@
         },
         "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "tab_title": "123sadasdadsasd",
             "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
@@ -333,7 +340,7 @@
             "icon2": "CloudIcon",
             "text2": "Graphic Design",
             "icon3": "CloudIcon",
-            "text3": "Content organization",
+            "text3": "Newsletter Marketing",
             "icon4": "CloudIcon",
             "text4": "",
             "icon5": "CloudIcon",
@@ -346,7 +353,7 @@
           "type": "list",
           "settings": {
             "icon1": "CloudIcon",
-            "text1": "Blog migration",
+            "text1": "Social Media Marketing",
             "icon2": "CloudIcon",
             "text2": "Product Research",
             "icon3": "CloudIcon",
@@ -367,7 +374,7 @@
             "icon2": "CloudIcon",
             "text2": "Ongoing Training",
             "icon3": "CloudIcon",
-            "text3": "Platform research",
+            "text3": "",
             "icon4": "CloudIcon",
             "text4": "",
             "icon5": "CloudIcon",
@@ -388,6 +395,7 @@
     },
     "1654259533f54af287": {
       "type": "blockquote",
+      "disabled": true,
       "settings": {
         "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloremque dolores illum laudantium molestias nemo quo! Animi asperiores assumenda commodi culpa eveniet excepturi fugit illo incidunt iusto nam possimus quidem quos recusandae saepe similique, ullam?<\/p>",
         "author": "Tom",
@@ -462,37 +470,38 @@
     },
     "165426875321fe7fc5": {
       "type": "feature-list",
+      "disabled": true,
       "blocks": {
         "7d9184d1-b917-43ab-a84e-dbce8b2d3989": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Conversion Rate Optimization",
-            "paragraph": "<p>Our team focuses on optimizing your sites speed<br\/>by eliminating unnecessary form fields, placing clear calls-to-action and simplifying<br\/>your page navigations. We also perform A\/B testing to ensure all aspects of<br\/>your website are optimized for conversion.<\/p>"
+            "title": "Data organization",
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
           }
         },
         "335efa5a-6e14-4f5f-9f46-3faad15cb6a8": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Website Analysis",
-            "paragraph": "<p>Our team performs thorough site analysis to<br\/>determine your website’s conversion opportunities, threats, weaknesses, and<br\/>strengths. We run SEO audits, test your site speed and functionality, and analyse<br\/>your site traffic. These methods allow us to improve your site usability and<br\/>increase your site engagement and conversions.<\/p>"
+            "title": "Navigation consultation",
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
           }
         },
         "976c1d3a-29d8-43f3-8c94-e23b9461c461": {
           "type": "feature",
           "settings": {
             "icon": "CloudIcon",
-            "title": "Website Maintenance",
-            "paragraph": "<p>Regular site maintenance is crucial to ensure<br\/>your website is running at full capacity. We conduct scheduled site check-ups<br\/>to determine your website's key aspects that need improvement. Using the<br\/>analytics results, we develop strategies to enhance your site security, boost<br\/>your traffic and optimize your page experience.<\/p>"
+            "title": "Ongoing training",
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
           }
         },
         "bf211802-1d16-4343-b21c-1a6d7af721c0": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Customer Focus & Communication",
-            "paragraph": "<p>We focus on developing customized processes to<br\/>fit your needs. We understand that each client is different and work in<br\/>different ways. We take the time to regularly communicate to our clients<br\/>keeping them updating on our processes and encourage feedback. For the<br\/>convenience of our clients, our meetings\/communications are done via email,<br\/>whatsapp or video conferencing.<\/p>"
+            "title": "Content flow management",
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>"
           }
         }
       },
