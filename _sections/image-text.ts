@@ -23,6 +23,24 @@ export const imageText: ShopifySection = {
       label: "Paragraph",
     },
     {
+      type: "header",
+      content: "List Points",
+    },
+    {
+      type: "text",
+      id: "list_title",
+      label: "Title",
+    },
+    {
+      type: "richtext",
+      id: "list",
+      label: "List items",
+    },
+    {
+      type: "header",
+      content: "Image",
+    },
+    {
       type: "image_picker",
       id: "image",
       label: "Image",

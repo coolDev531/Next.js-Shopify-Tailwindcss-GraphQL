@@ -116,11 +116,7 @@ export const renderSection = (section: Sections) => {
       return <BlockHero key={section.id} {...section} />;
 
     case "image-text":
-      return (
-        <section key={section.id} className={section.type} id={section.id}>
-          <BlockImageText {...section} />
-        </section>
-      );
+      return <BlockImageText key={section.id} {...section} />;
     case "stats-graph":
       return <StatsGraph key={section.id} {...section} />;
     case "story":

@@ -14,13 +14,14 @@ export const Button: FC<
       <Link
         {...props}
         className={clsx(
-          "inline-flex items-center rounded px-8 py-3",
+          "inline-flex items-center rounded border px-8 py-3",
           "f:outline-none f:ring-2 f:ring-sky-400 f:ring-offset-2",
-          "transition-all duration-75",
-          "text-[15px] leading-4 ",
-          "border border-sky-500",
-          secondary ? "bg-white h:bg-sky-500" : "bg-sky-500 h:bg-white",
-          secondary ? "text-sky-600 h:text-white" : "text-white h:text-sky-600"
+          "transition-all duration-100",
+          "font-medium leading-4",
+          secondary
+            ? "border-sky-200 bg-white h:border-sky-500"
+            : "border-sky-500 bg-sky-500 h:bg-white",
+          secondary ? "text-sky-700/60 h:text-sky-600" : "text-white h:text-sky-600"
         )}
       >
         {children}
@@ -33,11 +34,13 @@ export const Button: FC<
         className={clsx(
           "inline-flex items-center rounded px-8 py-3",
           "f:outline-none f:ring-2 f:ring-sky-400 f:ring-offset-2",
-          "transition-all duration-75",
-          "text-[15px] leading-4 ",
-          "border border-sky-500",
-          secondary ? "bg-white h:bg-sky-500" : "bg-sky-500 h:bg-white",
-          secondary ? "text-sky-600 h:text-white" : "text-white h:text-sky-600"
+          "transition-all duration-100",
+          "font-medium leading-4",
+          "border ",
+          secondary
+            ? "border-sky-200 bg-white h:border-sky-500"
+            : "border-sky-500 bg-sky-500 h:bg-white",
+          secondary ? "text-sky-700/60 h:text-sky-600" : "text-white h:text-sky-600"
         )}
       >
         {children}

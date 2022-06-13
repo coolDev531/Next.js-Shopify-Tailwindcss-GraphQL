@@ -45,7 +45,7 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
                       <span className="mr-2 flex h-6 items-center leading-6 text-sky-500 ">
                         <CheckCircleIcon className="h-5" />
                       </span>
-                      <span className="leading-tight">{li}</span>
+                      <span className="leading-tight text-slate-500">{li}</span>
                     </li>
                   ))}
               </ul>

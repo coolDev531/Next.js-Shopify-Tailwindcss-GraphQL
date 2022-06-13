@@ -214,6 +214,10 @@ export type ImageTextSection = {
     /** Input type: image_picker */
     image?: _Image;
     /** Input type: richtext */
+    list?: `<p${string}</p>`;
+    /** Input type: text */
+    list_title?: string;
+    /** Input type: richtext */
     paragraph?: `<p${string}</p>`;
     /** Input type: text */
     pre_title?: string;
@@ -395,6 +399,10 @@ export type StoryBlocks =
         position: "left" | "right";
         /** Input type: image_picker */
         image?: _Image;
+        /** Input type: richtext */
+        list?: `<p${string}</p>`;
+        /** Input type: text */
+        list_title?: string;
         /** Input type: richtext */
         paragraph?: `<p${string}</p>`;
         /** Input type: text */
