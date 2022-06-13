@@ -111,11 +111,7 @@ export const renderSection = (section: Sections) => {
         </section>
       );
     case "heading":
-      return (
-        <section key={section.id} className={section.type} id={section.id}>
-          <BlockHeading {...section} />
-        </section>
-      );
+      return <BlockHeading key={section.id} {...section} />;
     case "hero":
       return <BlockHero key={section.id} {...section} />;
 

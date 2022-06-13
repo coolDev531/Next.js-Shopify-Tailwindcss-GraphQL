@@ -23,7 +23,7 @@ const getContainerClasses = (container: SectionProps["container"]) => {
       return "max-w-7xl px-4 sm:px-8";
     }
     default: {
-      return "";
+      return "px-4 sm:px-8";
     }
   }
 };

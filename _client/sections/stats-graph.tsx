@@ -26,7 +26,7 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
               strokeWidth="1"
             ></path>
             <line
-              className="stroke-slate-300"
+              className="stroke-sky-500"
               x1="862"
               y1="10"
               x2="862.01"

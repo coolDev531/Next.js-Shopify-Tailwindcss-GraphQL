@@ -1,51 +1,57 @@
+import { Section } from "_client/layout/section";
 import { Link } from "_client/link";
+import { Button } from "_client/typography/button";
+import { Heading } from "_client/typography/heading";
+import { Paragraph } from "_client/typography/paragraph";
+import { PreHeading } from "_client/typography/pre-heading";
 import clsx from "clsx";
 import { FC } from "react";
 import { HeadingSection } from "types/sections";
 
-export const BlockHeading: FC<HeadingSection> = ({ id, settings }) => {
+export const BlockHeading: FC<HeadingSection> = ({ id, settings, type }) => {
   return (
-    <div className="mx-auto max-w-7xl px-8 py-16">
+    <Section id={id} type={type} padding="base" container="xl">
       <div
         className={clsx(
           "flex",
-          settings.position === "left" && "justify-start text-left",
-          settings.position === "center" && "justify-center text-center",
-          settings.position === "right" && "justify-end text-right"
+          {
+            left: "justify-start text-left",
+            center: "justify-center text-center",
+            right: "justify-end text-right",
+          }[settings.position]
         )}
       >
         <section>
           <header>
-            <h2>{settings.pre_title}</h2>
-            <h1>{settings.title}</h1>
+            <PreHeading>{settings.pre_title}</PreHeading>
+            <Heading>{settings.title}</Heading>
           </header>
-          <main className="max-w-prose" dangerouslySetInnerHTML={{ __html: settings.paragraph }} />
+          <main className="max-w-prose">
+            <Paragraph>{settings.paragraph}</Paragraph>
+          </main>
           <footer
             className={clsx(
+              {
+                left: "justify-start text-left",
+                center: "justify-center text-center",
+                right: "justify-end text-right",
+              }[settings.position],
               ((settings.cta1 && settings.cta1_link) || (settings.cta2 && settings.cta2_link)) &&
-                "mt-8"
+                "mt-8 flex gap-4"
             )}
           >
             {settings.cta1 && settings.cta1_link && (
-              <Link
-                href={settings.cta1_link}
-                className="rounded border border-gray-700 bg-white py-2 px-4"
-              >
-                {settings.cta1}
-              </Link>
+              <Button href={settings.cta1_link}>{settings.cta1}</Button>
             )}
             {settings.cta2 && settings.cta2_link && (
-              <Link
-                href={settings.cta2_link}
-                className="ml-8 rounded border border-gray-700 bg-white py-2 px-4"
-              >
+              <Button href={settings.cta2_link} secondary>
                 {settings.cta2}
-              </Link>
+              </Button>
             )}
           </footer>
         </section>
       </div>
-    </div>
+    </Section>
   );
 };
 

@@ -1,0 +1,47 @@
+import { Link, LinkProps } from "_client/link";
+import clsx from "clsx";
+import { ButtonHTMLAttributes, FC, PropsWithChildren } from "react";
+
+type ButtonProps = {
+  secondary?: boolean;
+};
+export const Button: FC<
+  | PropsWithChildren<LinkProps & ButtonProps>
+  | PropsWithChildren<ButtonHTMLAttributes<any> & ButtonProps>
+> = ({ children, secondary, ...props }) => {
+  if ("href" in props) {
+    return (
+      <Link
+        {...props}
+        className={clsx(
+          "inline-flex items-center rounded px-8 py-3",
+          "f:outline-none f:ring-2 f:ring-sky-400 f:ring-offset-2",
+          "transition-all duration-75",
+          "text-[15px] leading-4 ",
+          "border border-sky-500",
+          secondary ? "bg-white h:bg-sky-500" : "bg-sky-500 h:bg-white",
+          secondary ? "text-sky-600 h:text-white" : "text-white h:text-sky-600"
+        )}
+      >
+        {children}
+      </Link>
+    );
+  } else {
+    return (
+      <button
+        {...props}
+        className={clsx(
+          "inline-flex items-center rounded px-8 py-3",
+          "f:outline-none f:ring-2 f:ring-sky-400 f:ring-offset-2",
+          "transition-all duration-75",
+          "text-[15px] leading-4 ",
+          "border border-sky-500",
+          secondary ? "bg-white h:bg-sky-500" : "bg-sky-500 h:bg-white",
+          secondary ? "text-sky-600 h:text-white" : "text-white h:text-sky-600"
+        )}
+      >
+        {children}
+      </button>
+    );
+  }
+};
