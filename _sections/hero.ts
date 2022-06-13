@@ -5,7 +5,7 @@ export const hero: ShopifySection = {
   settings: [
     {
       type: "header",
-      content: "Content",
+      content: "Header",
     },
     {
       type: "text",
@@ -23,19 +23,27 @@ export const hero: ShopifySection = {
       label: "Paragraph",
     },
     {
+      type: "header",
+      content: "List Points",
+    },
+    {
+      type: "text",
+      id: "list_title",
+      label: "Title",
+    },
+    {
       type: "richtext",
       id: "list",
-      label: "List",
+      label: "List items",
+    },
+    {
+      type: "header",
+      content: "Image",
     },
     {
       type: "image_picker",
       id: "image",
       label: "Image",
-    },
-    {
-      type: "collection",
-      id: "collection",
-      label: "Collection",
     },
   ],
   presets: [

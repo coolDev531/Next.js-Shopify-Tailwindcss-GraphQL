@@ -1,5 +1,5 @@
 import { _LinkList, _Color } from "types/shopify";
-import { _Image, _Collection, _Product } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
+import { _Image, _Product, _Collection } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
 
 export type BlockquoteSection = {
   id: string;
@@ -121,12 +121,12 @@ export type HeadingSection = {
 export type HeroSection = {
   id: string;
   settings: {
-    /** Input type: collection */
-    collection?: (_Collection & { products: (_Product & { content: string; description: string })[] });
     /** Input type: image_picker */
     image?: _Image;
     /** Input type: richtext */
     list?: `<p${string}</p>`;
+    /** Input type: text */
+    list_title?: string;
     /** Input type: richtext */
     paragraph?: `<p${string}</p>`;
     /** Input type: text */

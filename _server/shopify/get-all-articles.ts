@@ -11,6 +11,7 @@ export const getAllArticles = async (shop: string, accessToken: string, reducer 
 
   for (let j = 0; j < blogs.length; j++) {
     for (let i = 0; i < 5000; i++) {
+      console.log(blogs[j]);
       const { body, headers } = await ShopifyRest.get<Article.Get>({
         path: `blogs/${blogs[j].id}/articles`,
         query: page_info

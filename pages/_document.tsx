@@ -11,7 +11,7 @@ class Root extends Document {
           <Favicon />
           <Font />
         </Head>
-        <body className="bg-gradient-to-br from-slate-100/50 to-slate-50/75 text-gray-600 d:bg-dark-bg d:from-dark-bg d:to-dark-bg2 d:text-slate-400">
+        <body className="text-gray-600 d:text-slate-400">
           <Main />
           <NextScript />
         </body>

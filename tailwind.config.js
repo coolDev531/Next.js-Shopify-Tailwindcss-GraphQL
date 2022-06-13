@@ -2,7 +2,7 @@
 const plugin = require("tailwindcss/plugin");
 // eslint-disable-next-line node/no-unpublished-require
 const colors = require("tailwindcss/colors");
-
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -17,6 +17,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        sans: ["'Basier Circle'", ...defaultTheme.fontFamily.sans],
         mono: [
           "Consolas",
           `ui-monospace`,
@@ -396,6 +397,9 @@ module.exports = {
       backgroundImage: (theme) => ({
         tick: "url('/icons/tick.svg')",
         gradient1: `radial-gradient(at 100% 100%, rgba(7, 0, 31, 0.07), rgba(88, 5, 171, 0.01), rgba(0, 0, 0, 0)), linear-gradient(to right bottom, rgb(239, 254, 250), rgb(248, 250, 255), rgb(254, 238, 248), rgb(231, 249, 251))`,
+        "gradient-stats": `radial-gradient(ellipse 75% 650px at 35% calc(100% + 100px), ${theme(
+          "colors.sky.500"
+        )} 20%, ${theme("colors.sky.100")}, transparent);`,
       }),
       typography: ({ theme }) => ({
         dark: {

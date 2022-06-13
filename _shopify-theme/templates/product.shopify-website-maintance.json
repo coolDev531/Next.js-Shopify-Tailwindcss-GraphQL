@@ -25,32 +25,32 @@
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Website Analysis",
-            "paragraph": "<p>Our team performs thorough site analysis to<br\/>determine your website’s conversion opportunities, threats, weaknesses, and<br\/>strengths. We run SEO audits, test your site speed and functionality, and analyse<br\/>your site traffic. These methods allow us to improve your site usability and<br\/>increase your site engagement and conversions.<\/p>"
+            "title": "Benefit 1",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
           }
         },
         "6ae8fd1e-b2ee-4e23-be4b-e76c4131f2b7": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Customer Focus & Communication",
-            "paragraph": "<p>We<br\/>focus on developing customized processes to fit your needs. We understand that<br\/>each client is different and work in different ways. We take the time to regularly<br\/>communicate to our clients keeping them updating on our processes and encourage<br\/>feedback. For the convenience of our clients, our meetings\/communications are<br\/>done via email, whatsapp or video conferencing<\/p>"
+            "title": "Benefit 2",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
           }
         },
         "2bd223e9-952a-4c7b-b098-afcae3728cc4": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Website Maintenance",
-            "paragraph": "<p>Regular site maintenance is crucial to ensure<br\/>your website is running at full capacity. We conduct scheduled site check-ups<br\/>to determine your website's key aspects that need improvement. Using the<br\/>analytics results, we develop strategies to enhance your site security, boost<br\/>your traffic and optimize your page experience.<\/p>"
+            "title": "Benefit 3",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
           }
         },
         "fef8d93c-5bdc-49a7-8de3-3ef0c0ecd90a": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Conversion Rate Optimization",
-            "paragraph": "<p>Our team focuses on optimizing your sites speed<br\/>by eliminating unnecessary form fields, placing clear calls-to-action and simplifying<br\/>your page navigations. We also perform A\/B testing to ensure all aspects of<br\/>your website are optimized for conversion.<\/p>"
+            "title": "Benefit 4",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
           }
         }
       },
@@ -68,7 +68,7 @@
       "settings": {
         "pre_title": "Expert development",
         "title": "We speak, eat, sleep Shopify",
-        "paragraph": "<p>We have extensive Shopify experience and have developed ecommerce stores and Apps. We will start from the beginning including a discovery phase, content audit and sitemap planning. We will also highlight any specific needs or customizations you would like for your website. Your website includes product set-up and organization, with a fully operational & purchase ready Shopify store that is attractive, accessible, and user-friendly with a focus on high conversion rates.<br\/><br\/>Our websites are built with emphases on an effective UX flow, best SEO practices, for SEO optimization, strategic content flow and organization. This is to make sure that your website is optimized to performance at its best. <br\/><\/p>",
+        "paragraph": "<p>We have extensive Shopify experience and have developed ecommerce stores and Apps for and with the ecosystem bla blaLorem ipsum dolor sit amet, consectetue<\/p>",
         "cta1": "",
         "cta1_link": "",
         "cta2": "",
@@ -84,7 +84,7 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "From Scratch",
-            "paragraph": "<p>You are looking for a<br\/>new site and haven’t got<br\/>a site already, or the<br\/>need to connect it to a<br\/>3rd party POS<\/p>"
+            "paragraph": "<p>You are looking for a<br\/>new site and haven’t got<br\/>a site already, or the<br\/>need to connect it to a<br\/>3rd par ty POS<\/p>"
           }
         },
         "613b3423-00d0-40c1-a6c6-4295763917b9": {
@@ -92,7 +92,7 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Upgrade",
-            "paragraph": "<p>You have an existing<br\/>Shopify store and want<br\/>to upgrade the theme,<br\/>content structure, and<br\/>make more sales?<\/p>"
+            "paragraph": "<p>You have an existing<br\/>Shopify store and want<br\/>to upgrade t he theme,<br\/>content structure, and<br\/>make more sales?<\/p>"
           }
         },
         "f593e74c-72fe-4a2d-9dd4-eb0ff99ee28f": {
@@ -100,7 +100,7 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Integrate",
-            "paragraph": "<p>You have an extisting<br\/>brick & mortar store and<br\/>want to integrate your<br\/>back-end system into a<br\/>new Shopify store.<\/p>"
+            "paragraph": "<p>You have an extisting<br\/>brick & mor tar store and<br\/>want to integrate your<br\/>back-end system into a<br\/>new Shopify store.<\/p>"
           }
         },
         "03758003-6321-4a0c-8e54-8eab05c4a979": {
@@ -127,44 +127,44 @@
         "16544241313b2fcafc-0": {
           "type": "step",
           "settings": {
-            "tab_title": "Step 1 - Introduction & strategy phase",
-            "tab_paragraph": "This is when we get to know each other, and you share your vision with the team. We then put together a plan of action, specific to your requirements.",
-            "title": "Introduction & strategy phase",
-            "paragraph": "<p>This is when we get to know each other, and you<br\/>share your vision with the team. We then put together a plan of action, specific<br\/>to your requirements.<\/p>"
+            "tab_title": "Step 1 - Start",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
+            "title": "Incremental adoption",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
           }
         },
         "16544241313b2fcafc-1": {
           "type": "step",
           "settings": {
-            "tab_title": "Step 2 - Feed back stage",
-            "tab_paragraph": "You get to look at some mock-ups, and layouts for your site’s design and approve them or ask for changes.",
-            "title": "Feed back stage",
-            "paragraph": ""
+            "tab_title": "Step 2 - Move on",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
+            "title": "Incremental adoption",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
           }
         },
         "16544241313b2fcafc-2": {
           "type": "step",
           "settings": {
-            "tab_title": "Step 3 - Development stage",
-            "tab_paragraph": "The development and web design process gets underway where our team begins to build your perfect website",
-            "title": "Development stage",
+            "tab_title": "Step 3 - another one",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
+            "title": "Incremental adoption",
             "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
           }
         },
         "16544241313b2fcafc-3": {
           "type": "step",
           "settings": {
-            "tab_title": "Step 4 - Final Review Stage",
-            "tab_paragraph": "Afterward, there will be a final round of revisions to get everything just right before we launch your site.",
-            "title": "Final ReviewStage",
+            "tab_title": "Step 4 - Almost done",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
+            "title": "Incremental adoption",
             "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
           }
         },
         "16544241313b2fcafc-4": {
           "type": "step",
           "settings": {
-            "tab_title": "Step 5 - Launch",
-            "tab_paragraph": "All the hard work leads up to this, where we hand over your fully functional, ready to sell, Shopify site.",
+            "tab_title": "Step 5 - The end",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
             "title": "Incremental adoption",
             "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
           }
@@ -207,8 +207,8 @@
           "type": "image-text",
           "settings": {
             "pre_title": "",
-            "title": "Why choose LunaLemon",
-            "paragraph": "<p><strong>Certified Shopify partner:<\/strong> Luna Lemon is a part of the Shopify development community.<br\/><strong>Provide an all-in-one solution: <\/strong>We handle everything in-house, from developing and designing to advertising and maintaining your Shopify store.<br\/><strong>Customized themes to fit your needs: <\/strong>We provide custom theme design that will convert visitors into buyers.<br\/><strong>Dedicated project manager:<\/strong> We provide a dedicated point of contact at Luna Lemon to guide you through discovery, design, training, and final site launch.<br\/><strong>Experts in eCommerce optimization:<\/strong> In addition to being expert web developers, we have a full staff of SEO Specialists who can optimize your online store for better rankings.<br\/><\/p>",
+            "title": "asfafs",
+            "paragraph": "<p>afs<\/p>",
             "image": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
             "position": "left"
           }
@@ -252,15 +252,15 @@
           "type": "list",
           "settings": {
             "icon1": "ColorSwatchIcon",
-            "text1": "Discovery Phase",
+            "text1": "asdasd123",
             "icon2": "ColorSwatchIcon",
-            "text2": "SitemapPlanning & Product Organization",
+            "text2": "1231231",
             "icon3": "ColorSwatchIcon",
-            "text3": "Wireframing & Design Phase",
+            "text3": "123123",
             "icon4": "ColorSwatchIcon",
-            "text4": "Shopify App recommendations",
+            "text4": "23123",
             "icon5": "ColorSwatchIcon",
-            "text5": "",
+            "text5": "123123123",
             "icon6": "ColorSwatchIcon",
             "text6": ""
           }
@@ -269,34 +269,34 @@
           "type": "list",
           "settings": {
             "icon1": "ColorSwatchIcon",
-            "text1": "Instagram Feed",
+            "text1": "",
             "icon2": "ColorSwatchIcon",
-            "text2": "Facebook Pixel & Catalog Setup",
+            "text2": "",
             "icon3": "ColorSwatchIcon",
-            "text3": "Payment Gateway Setup",
+            "text3": "123123",
             "icon4": "ColorSwatchIcon",
-            "text4": "Taxes& Shipping Setup",
+            "text4": "12312",
             "icon5": "ColorSwatchIcon",
-            "text5": "",
+            "text5": "223123",
             "icon6": "ColorSwatchIcon",
-            "text6": ""
+            "text6": "123123321"
           }
         },
         "a6f38bae-51d8-4fc2-a8c5-3067eb477ac2": {
           "type": "list",
           "settings": {
             "icon1": "ColorSwatchIcon",
-            "text1": "Set up of Meta\/SEO Information",
+            "text1": "123123",
             "icon2": "ColorSwatchIcon",
-            "text2": "Google business & analytics set up\/integration",
+            "text2": "123123",
             "icon3": "ColorSwatchIcon",
-            "text3": "ShopifyTraining session",
+            "text3": "12313213",
             "icon4": "ColorSwatchIcon",
-            "text4": "",
+            "text4": "1231231",
             "icon5": "ColorSwatchIcon",
-            "text5": "",
+            "text5": "123123123123",
             "icon6": "ColorSwatchIcon",
-            "text6": ""
+            "text6": "1123123132"
           }
         }
       },
