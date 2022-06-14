@@ -19,8 +19,8 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
             layout="fill"
             // width={settings.image.width}
             // height={settings.image.height}
-            src={`https:${settings.image.src}`}
-            alt={settings.image.alt}
+            src={`https:${settings?.image?.src}`}
+            alt={settings?.image?.alt}
           />
         </figure>
       </div>
@@ -62,8 +62,8 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
                 layout="fill"
                 // width={settings.image.width}
                 // height={settings.image.height}
-                src={`https:${settings.image.src}`}
-                alt={settings.image.alt}
+                src={`https:${settings?.image?.src}`}
+                alt={settings?.image?.alt}
               />
             </figure>
           )}

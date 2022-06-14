@@ -21,10 +21,10 @@ export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, type }
                 <figure className="relative mb-2 h-10">
                   {block.settings.image
                     ? <Image
-                        src={`https:${block.settings.image.src}`}
+                        src={`https:${block?.settings?.image?.src}`}
                         layout="fill"
                         objectFit="contain"
-                        alt={block.settings.image.alt}
+                        alt={block?.settings?.image?.alt}
                       />
                     : null}
                 </figure>

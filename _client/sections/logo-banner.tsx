@@ -32,8 +32,8 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
                         layout="fill"
                         // width={settings.image.width}
                         // height={settings.image.height}
-                        src={`https:${block.settings.image.src}`}
-                        alt={block.settings.image.alt}
+                        src={`https:${block?.settings?.image?.src}`}
+                        alt={block?.settings?.image?.alt}
                       />
                     </figure>
                   : null;

@@ -20,11 +20,11 @@ export const TeamList: FC<TeamListSection> = ({ id, blocks, type }) => {
                 <figure className="relative h-44 w-44 overflow-hidden rounded-full">
                   {block.settings.image
                     ? <Image
-                        src={`https:${block.settings.image.src}`}
+                        src={`https:${block?.settings?.image?.src}`}
                         layout="fill"
                         objectFit="cover"
                         objectPosition="left"
-                        alt={block.settings.image.alt}
+                        alt={block?.settings?.image?.alt}
                       />
                     : null}
                 </figure>

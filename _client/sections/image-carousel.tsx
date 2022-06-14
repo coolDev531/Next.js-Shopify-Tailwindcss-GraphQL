@@ -30,10 +30,10 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, type }) =>
               >
                 {block.settings.image
                   ? <Image
-                      src={`https:${block.settings.image.src}`}
+                      src={`https:${block?.settings?.image?.src}`}
                       layout="fill"
                       objectFit="cover"
-                      alt={block.settings.image.alt}
+                      alt={block?.settings?.image?.alt}
                     />
                   : null}
               </figure>
