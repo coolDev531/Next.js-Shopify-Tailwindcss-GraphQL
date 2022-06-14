@@ -19,6 +19,9 @@ const getContainerClasses = (container: SectionProps["container"]) => {
     case "sm": {
       return "max-w-4xl px-4 sm:px-8";
     }
+    case "base": {
+      return "max-w-6xl px-4 sm:px-8";
+    }
     case "xl": {
       return "max-w-7xl px-4 sm:px-8";
     }

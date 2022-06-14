@@ -69,9 +69,11 @@
         "364ea5e8-5749-4d69-b8f0-528e5aab9c5b": {
           "type": "image-text",
           "settings": {
-            "pre_title": "Website migration analysis",
-            "title": "",
-            "paragraph": "<p>When we first took over the website, one of our challenges was understand the extent of information and data that needed to be sorted through and migrated to the Shopify platform from BigCommerce. Our team did an extensive analyse of the old site to ensure that the migration was effective and seamless. The biggest highlights was the amount of data and information that needed to be extracted, sorted and formatted for the new website. They created an in detailed strategic plan that took that into consideration and that ensured that the old sites SEO, content, and web rankings were kept intact. <br\/> <br\/>•\tRedirect all changed links<br\/>•\tUpdating the website structure, to optimize user flow and experience<br\/>•\tUpdating website content and flow <br\/>•\tWeb content migration <br\/><\/p>",
+            "pre_title": "",
+            "title": "Website migration analysis",
+            "paragraph": "<p>When we first took over the website, one of our challenges was understand the extent of information and data that needed to be sorted through and migrated to the Shopify platform from BigCommerce. Our team did an extensive analyse of the old site to ensure that the migration was effective and seamless. The biggest highlights was the amount of data and information that needed to be extracted, sorted and formatted for the new website. They created an in detailed strategic plan that took that into consideration and that ensured that the old sites SEO, content, and web rankings were kept intact.<\/p>",
+            "list_title": "",
+            "list": "<p>Redirect all changed links<\/p><p>Updating the website structure, to optimize user flow and experience<\/p><p>Updating website content and flow<\/p><p>Web content migration <\/p>",
             "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "position": "left"
           }
@@ -81,7 +83,9 @@
           "settings": {
             "pre_title": "",
             "title": "Vend to Shopify integration",
-            "paragraph": "<p>Our team then integrated the extracted information onto vend and integrated it to shopify.   <br\/> <br\/>•\tOrganising product data<br\/>•\tMigrate Images from Products, Categories, Blog Description<br\/>•\tCustomer data Migration <br\/>•\tProduct and Order information migration <br\/><\/p>",
+            "paragraph": "<p>Our team then integrated the extracted information onto vend and integrated it to shopify.<\/p>",
+            "list_title": "",
+            "list": "<p>Organising product data<\/p><p>Migrate Images from Products, Categories, Blog Description<\/p><p>Customer data Migration<\/p><p>Product and Order information migration<\/p>",
             "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "position": "right"
           }
@@ -89,9 +93,11 @@
         "d3a58043-2727-4644-8472-c959186be648": {
           "type": "image-text",
           "settings": {
-            "pre_title": "Shopify web development",
-            "title": "",
-            "paragraph": "<p>With the migration complete we started developing their Shopify website tailored to our clients’ needs while taking to account to functions and features of their old site <br\/><br\/>•\tTheme Coding & Implementation<br\/>•\tShopify SEO Implementation and optimization <br\/>•\tShopify Apps Integration & Configuration<br\/>•\tPayment & Shipping Zones Set-Up<br\/>•\tProduct & Inventory Set-Up<br\/><\/p>",
+            "pre_title": "",
+            "title": "Shopify web development",
+            "paragraph": "<p>With the migration complete we started developing their Shopify website tailored to our clients’ needs while taking to account to functions and features of their old site.<\/p>",
+            "list_title": "",
+            "list": "<p>Theme Coding & Implementation<\/p><p>Shopify SEO Implementation and optimization<\/p><p>Shopify Apps Integration & Configuration<\/p><p>Payment & Shipping Zones Set-Up<\/p><p>Product & Inventory Set-Up<\/p>",
             "image": "shopify:\/\/shop_images\/yarn-1_530x530_crop_top_2x_b0c839fc-8bfe-47d7-b418-1c69e5cf030b.jpg",
             "position": "left"
           }
@@ -99,9 +105,11 @@
         "aa2d5baa-f85f-478a-a8bb-5b6aac4202a4": {
           "type": "image-text",
           "settings": {
-            "pre_title": "SEO & Site maintenance support",
-            "title": "",
-            "paragraph": "<p>Our team uses and develops cutting-edge SEO tools and crawling software to identify and analyze technical SEO factors that needs to be addressed. Using this data, we form a list of action items and, every month, slowly worked through each one of those areas. We continuously update our SEO strategy to remain flexible with the ever-changing landscape. <br\/><br\/>•\tEvaluating current keyword rankings<br\/>•\tIdentifying and creating quality links <br\/>•\tProduct content quality analysis and update<br\/>•\tObtaining on-topic quality links from niche directories and sites<\/p>",
+            "pre_title": "",
+            "title": "SEO & Site maintenance support",
+            "paragraph": "<p>Our team uses and develops cutting-edge SEO tools and crawling software to identify and analyze technical SEO factors that needs to be addressed. Using this data, we form a list of action items and, every month, slowly worked through each one of those areas. We continuously update our SEO strategy to remain flexible with the ever-changing landscape.<\/p>",
+            "list_title": "",
+            "list": "<p>Evaluating current keyword rankings<\/p><p>Identifying and creating quality links<\/p><p>Product content quality analysis and update<\/p><p>Obtaining on-topic quality links from niche directories and sites<\/p>",
             "image": "shopify:\/\/shop_images\/milk-swirling-as-poured-in-coffee.jpg",
             "position": "right"
           }

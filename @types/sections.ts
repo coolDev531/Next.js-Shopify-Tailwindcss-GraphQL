@@ -209,6 +209,12 @@ export type ImageGalleryBlocks = {
 export type ImageTextSection = {
   id: string;
   settings: {
+    /** Input type: select */
+    aspect_desktop: "auto" | "9-16" | "1-1" | "4-3" | "3-2" | "16-9" | "21-9";
+    /** Input type: select */
+    aspect_mobile: "hidden" | "9-16" | "1-1" | "4-3" | "3-2" | "16-9" | "21-9";
+    /** Input type: checkbox */
+    fit_height: boolean;
     /** Input type: radio */
     position: "left" | "right";
     /** Input type: image_picker */
@@ -395,6 +401,12 @@ export type StoryBlocks =
   | {
       id: string;
       settings: {
+        /** Input type: select */
+        aspect_desktop: "auto" | "9-16" | "1-1" | "4-3" | "3-2" | "16-9" | "21-9";
+        /** Input type: select */
+        aspect_mobile: "hidden" | "9-16" | "1-1" | "4-3" | "3-2" | "16-9" | "21-9";
+        /** Input type: checkbox */
+        fit_height: boolean;
         /** Input type: radio */
         position: "left" | "right";
         /** Input type: image_picker */

@@ -27,7 +27,7 @@ export const BlockHeading: FC<HeadingSection> = ({ id, settings, type }) => {
             <Heading>{settings.title}</Heading>
           </header>
           <main className="max-w-prose">
-            <Paragraph>{settings.paragraph}</Paragraph>
+            <Paragraph size="xl">{settings.paragraph}</Paragraph>
           </main>
           <footer
             className={clsx(

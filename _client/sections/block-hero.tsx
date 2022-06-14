@@ -32,7 +32,7 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
             <Heading heading="h1">{settings.title}</Heading>
           </header>
           <main>
-            <Paragraph>{settings.paragraph}</Paragraph>
+            <Paragraph size="xl">{settings.paragraph}</Paragraph>
             <div className="mt-8">
               <h3 className="mb-1 font-semibold text-slate-700">{settings.list_title}</h3>
               <ul>
