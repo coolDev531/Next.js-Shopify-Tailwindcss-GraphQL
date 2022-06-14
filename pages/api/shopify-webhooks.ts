@@ -4,7 +4,7 @@ import { IncomingHttpHeaders } from "http";
 import getRawBody from "raw-body";
 
 import type { NextApiRequest, NextApiResponse } from "next";
-import { _Product } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
+import { _Product } from "shopify-typed-node-api/dist/clients/rest/request_types";
 
 export const Webhooks = async (
   req: NextApiRequest & { rawbody: Buffer },

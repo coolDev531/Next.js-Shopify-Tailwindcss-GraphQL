@@ -94,6 +94,7 @@
       "id": {{ value.id | json }},
       "image": {{ value.image | json }},
       "moderated": {{ value.moderated | json }},
+      "metafields": {% include '_map_metafields', metafields: value.metafields.data %},
       "published_at": "{{ value.published_at | date: "%Y-%m-%dT%H:%M:%S%z" }}",
       "tags": {{ value.tags | json }},
       "title": {{ value.title | json }},

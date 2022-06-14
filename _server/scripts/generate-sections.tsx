@@ -54,7 +54,7 @@ export const generateSections = () => {
 function getSettingsType(setting: ShopifySettingsInput) {
   switch (setting.type) {
     case "article":
-      return "?: _Article";
+      return "?: _Article & { content: string; excerpt: string }";
     case "checkbox":
       return ": boolean";
     case "number":
@@ -179,7 +179,7 @@ const getImports = (sections: { [T: string]: ShopifySection }) => {
       (apiTypes.length
         ? `import { ${apiTypes.join(
             ", "
-          )} } from "shopify-typed-node-api/dist/clients/rest/dataTypes";\n`
+          )} } from "shopify-typed-node-api/dist/clients/rest/request_types";\n`
         : "")
     }\n`;
   }

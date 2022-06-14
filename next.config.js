@@ -7,6 +7,7 @@ module.exports = {
   strictMode: true,
 
   images: {
+    dangerouslyAllowSVG: true,
     domains: [
       "assets.vercel.com",
       "avatars1.githubusercontent.com",

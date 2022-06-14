@@ -1757,32 +1757,32 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
-"@trpc/client@^9.25.0":
-  version "9.25.0"
-  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-9.25.0.tgz#0d94d4c2b2c261981003a6e673fcaf7e831f9eca"
-  integrity sha512-C4CfRMrRAkFvNTnbbICJ5DzCZUCKC53DKCUxIUBKpqzX19QTTOxVRJi5XtS4FrzKOK/Z8iyi3cqCVNTZP+dLrw==
+"@trpc/client@^9.25.2":
+  version "9.25.2"
+  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-9.25.2.tgz#3ece63bc58436a12a49a7ef3aa3ff54f03bdd750"
+  integrity sha512-wW4KEvG+mF5ParqmyTgSjxwOjvxtsQCso6nZeZ3PI19d9bBUprFx9E+UkS5R3gqNm9lddQx7tx+ie+OFkDmp3g==
   dependencies:
     "@babel/runtime" "^7.9.0"
 
-"@trpc/next@^9.25.0":
-  version "9.25.0"
-  resolved "https://registry.yarnpkg.com/@trpc/next/-/next-9.25.0.tgz#53abfe88638bdc72016bae4ff78a473b4b9a8900"
-  integrity sha512-x7kHmWvHaDJufzVlOEt+pFjDPhwaTrVCkFwDME4Y34umbUYgqKuhiClLzduPanFuKRgm8gAVVGq6/3EXQacIVA==
+"@trpc/next@^9.25.2":
+  version "9.25.2"
+  resolved "https://registry.yarnpkg.com/@trpc/next/-/next-9.25.2.tgz#721182d1426e28848c87ef473dff781e9c812ab4"
+  integrity sha512-OiRcmNd5sxTR23O2oVxBVoSj4DNVZe84GzXBKxShYjeDyld0OKmQzqB1H2rMsCmNU7/Yd4lYDQBjGnDVP5VxPQ==
   dependencies:
     "@babel/runtime" "^7.9.0"
     react-ssr-prepass "^1.5.0"
 
-"@trpc/react@^9.25.0":
-  version "9.25.0"
-  resolved "https://registry.yarnpkg.com/@trpc/react/-/react-9.25.0.tgz#f39864f229aa0b6376b973e7ee8a47ecd7900969"
-  integrity sha512-EbHDXHqon6L00MK/qM/aUwUwq0rhy2hpJ/IjNcKRCDyb2USnZiQbrERMC7v+3i6RZhI/lnJIFEXKArnmqE4rzw==
+"@trpc/react@^9.25.2":
+  version "9.25.2"
+  resolved "https://registry.yarnpkg.com/@trpc/react/-/react-9.25.2.tgz#93c9c9c46bfee16ede9b326c2c964a38b4f8b84d"
+  integrity sha512-osP1JmhhBLWmSkoCc19YcGiQdeEq0RtvO0uvLe2DfzGpQL1orB72nvqWHXlIGHWA4E0cnc1FRmoXokWYCwHPxQ==
   dependencies:
     "@babel/runtime" "^7.9.0"
 
-"@trpc/server@^9.25.0":
-  version "9.25.0"
-  resolved "https://registry.yarnpkg.com/@trpc/server/-/server-9.25.0.tgz#2986d3cefdb61fe19da953ec0d35f05afc70bb3a"
-  integrity sha512-kARZT3wnM5l1S9tXRsAOM6g/kZg/9UONTfPyvKH9lb2ekpISp6/EhD+cvb/qpq+959cvnWkCTO/rz08A2LWeag==
+"@trpc/server@^9.25.2":
+  version "9.25.2"
+  resolved "https://registry.yarnpkg.com/@trpc/server/-/server-9.25.2.tgz#3ac58753b4cf7b2aa1a2a51d94bd0798b495a78a"
+  integrity sha512-E5ibK5jLgWremiPs2pO+Y/YktRH7+CqmMwp97mTp9ymYZn3od4C9TuFg6bxEK1bQKnUezpzHJyGRADVKCWrjsw==
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
@@ -7595,10 +7595,10 @@ shopify-ftp2@^2.1.0:
     request "^2.47.0"
     stat-mode "^1.0.0"
 
-shopify-typed-node-api@^2.0.17:
-  version "2.0.17"
-  resolved "https://registry.yarnpkg.com/shopify-typed-node-api/-/shopify-typed-node-api-2.0.17.tgz#c4400dfb43b21e59b71aae6d4115767e4b519227"
-  integrity sha512-6blyY0mc+mULOhcU4HQamfaCTdskEklq9EwbFe67EVEUF9tfy3xNSp0YpHlVl8/Q9wsq1u6iVvfrvx2IRB1bvw==
+shopify-typed-node-api@^2.0.18:
+  version "2.0.18"
+  resolved "https://registry.yarnpkg.com/shopify-typed-node-api/-/shopify-typed-node-api-2.0.18.tgz#db967b38f7ea1c138835c9c11a5bc24763b467e6"
+  integrity sha512-i4qOo4HwMKS+ZA6vJO5rSJFld6FyCNNfjZ0cRJ8sgO9zBcv1xd1kRqAy+XKmRtN/Fwb5T5H23qS8mipQnhq9Fw==
   dependencies:
     "@shopify/network" "^1.5.1"
     "@types/jsonwebtoken" "^8.5.0"

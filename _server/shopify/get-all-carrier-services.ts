@@ -1,5 +1,5 @@
 import Shopify from "shopify-typed-node-api";
-import { CarrierService, Metafield, Order, Page } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
+import { CarrierService, Metafield, Order, Page } from "shopify-typed-node-api/dist/clients/rest/request_types";
 
 export const getAllCarrierServices = async (
   shop: string,

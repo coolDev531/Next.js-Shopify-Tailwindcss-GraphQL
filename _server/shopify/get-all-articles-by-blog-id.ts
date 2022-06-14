@@ -1,5 +1,5 @@
 import Shopify from "shopify-typed-node-api";
-import { _Article, Article } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
+import { _Article, Article } from "shopify-typed-node-api/dist/clients/rest/request_types";
 
 export const getAllArticlesByBlogId = async (
   shop: string,

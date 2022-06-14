@@ -1,4 +1,4 @@
-import { _Blog, _Collection, _Page, _Product } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
+import { _Blog, _Collection, _Page, _Product } from "shopify-typed-node-api/dist/clients/rest/request_types";
 
 type ShopifyHeader = {
   content: string;

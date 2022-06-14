@@ -1,0 +1,14 @@
+{%- if metafields -%}
+  [
+  {%- for key in metafields -%}
+    {
+      "key": {{ key[0] | json }},
+      "type": {{ metafields[key[0]].type | json }},
+      "value": {{ metafields[key[0]].value | json }},
+      "namespace": "data"
+    }{%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}
+  ]
+{%- else -%}
+  []
+{%- endif -%}

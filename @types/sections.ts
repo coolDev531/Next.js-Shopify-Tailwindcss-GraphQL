@@ -1,5 +1,5 @@
 import { _LinkList, _Color } from "types/shopify";
-import { _Image, _Product, _Collection } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
+import { _Image, _Product, _Article, _Collection } from "shopify-typed-node-api/dist/clients/rest/request_types";
 
 export type BlockquoteSection = {
   id: string;
@@ -245,18 +245,27 @@ export type InfoCardsSection = {
   type: "info-cards";
 };
 
-export type InfoCardsBlocks = {
-  id: string;
-  settings: {
-    /** Input type: richtext */
-    paragraph?: `<p${string}</p>`;
-    /** Input type: html */
-    svg?: string;
-    /** Input type: text */
-    title?: string;
-  };
-  type: "info-card";
-};
+export type InfoCardsBlocks =
+  | {
+      id: string;
+      settings: {
+        /** Input type: article */
+        content?: _Article & { content: string; excerpt: string };
+      };
+      type: "dynamic-info-card";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: richtext */
+        paragraph?: `<p${string}</p>`;
+        /** Input type: html */
+        svg?: string;
+        /** Input type: text */
+        title?: string;
+      };
+      type: "manual-info-card";
+    };
 
 export type LogoBannerSection = {
   blocks: LogoBannerBlocks[];

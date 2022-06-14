@@ -22,8 +22,24 @@
   ],
   "blocks": [
     {
-      "type": "info-card",
-      "name": "Info Card",
+      "type": "dynamic-info-card",
+      "name": "Dynamic Info Card",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Dynamic content",
+          "info": "The Title, excerpt, and metafield svg are used for each info card."
+        },
+        {
+          "type": "article",
+          "id": "content",
+          "label": "Content Source"
+        }
+      ]
+    },
+    {
+      "type": "manual-info-card",
+      "name": "Manual Info Card",
       "settings": [
         {
           "type": "header",

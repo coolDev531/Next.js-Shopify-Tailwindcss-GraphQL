@@ -1,5 +1,5 @@
 import Shopify from "shopify-typed-node-api";
-import { _CustomCollection, CustomCollection, SmartCollection } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
+import { _CustomCollection, CustomCollection, SmartCollection } from "shopify-typed-node-api/dist/clients/rest/request_types";
 
 export const getAllCustomCollections = async (
   shop: string,

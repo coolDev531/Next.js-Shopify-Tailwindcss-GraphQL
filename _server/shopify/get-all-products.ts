@@ -1,5 +1,5 @@
 import Shopify from "shopify-typed-node-api";
-import { _Product, Product } from "shopify-typed-node-api/dist/clients/rest/dataTypes";
+import { _Product, Product } from "shopify-typed-node-api/dist/clients/rest/request_types";
 
 export const getAllProducts = async (
   shop: string,
