@@ -3,6 +3,7 @@ import { withTRPC } from "@trpc/next";
 
 import { ContextProviders } from "_client/stores/_context-providers";
 import { LoadInitialData } from "_client/stores/_load-initial-data";
+import { useTooltipStore } from "_client/stores/tooltip-store";
 import { AppRouter } from "_server/settings/api-routes";
 import { DefaultSeo } from "next-seo";
 import { ThemeProvider } from "next-themes";
@@ -12,7 +13,10 @@ import { FC } from "react";
 import "styles/tailwind.css";
 import "styles/theme.scss";
 import "styles/utils.scss";
+import ReactTooltip from "react-tooltip";
 import superjson from "superjson";
+
+export const AppToolTip = ReactTooltip;
 
 export const SEO = {
   title: "Felix Tellmann",

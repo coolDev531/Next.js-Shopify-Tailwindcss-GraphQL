@@ -37,6 +37,7 @@
     "react-dom": "^18.1.0",
     "react-icons": "^4.4.0",
     "react-query": "^3.39.1",
+    "react-tooltip": "^4.2.21",
     "react-use": "^17.4.0",
     "shopify-typed-node-api": "^2.0.18",
     "string-strip-html": "^9.1.12",

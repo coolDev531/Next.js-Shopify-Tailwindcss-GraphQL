@@ -16,6 +16,15 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      keyframes: {
+        slide: {
+          "0%": { transform: "translate3d(0,0,0)" },
+          "100%": { transform: "translate3d(-50%,0,0)" },
+        },
+      },
+      animation: {
+        slide: "slide 30s linear infinite",
+      },
       fontFamily: {
         sans: ["'Basier Circle'", ...defaultTheme.fontFamily.sans],
         mono: [
@@ -464,6 +473,9 @@ module.exports = {
         },
         ".leading-0": {
           "line-height": "0",
+        },
+        ".animation-pause": {
+          " animation-play-state": "paused",
         },
       });
     }),

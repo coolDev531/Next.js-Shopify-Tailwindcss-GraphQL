@@ -264,7 +264,11 @@ export type LogoBannerSection = {
   id: string;
   settings: {
     /** Input type: range */
+    animation_duration: number;
+    /** Input type: range */
     height: number;
+    /** Input type: product_list */
+    logo_items?: _Product_liquid[];
     /** Input type: text */
     title?: string;
   };
@@ -277,20 +281,20 @@ export type LogoBannerBlocks =
       settings: {
         /** Input type: html */
         svg?: string;
-        /** Input type: url */
-        url?: string;
+        /** Input type: text */
+        title?: string;
       };
-      type: "svg";
+      type: "manual-svg";
     }
   | {
       id: string;
       settings: {
         /** Input type: image_picker */
         image?: _Image_liquid;
-        /** Input type: url */
-        url?: string;
+        /** Input type: text */
+        title?: string;
       };
-      type: "image";
+      type: "manual-image";
     };
 
 export type SpecListSection = {

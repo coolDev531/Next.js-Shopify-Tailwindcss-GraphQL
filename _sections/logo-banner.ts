@@ -14,6 +14,12 @@ export const logoBanner: ShopifySection = {
       label: "Title",
     },
     {
+      type: "product_list",
+      id: "logo_items",
+      label: "Logo Items",
+      info: "Featured Image & Title will be used",
+    },
+    {
       type: "header",
       content: "Settings",
     },
@@ -27,11 +33,21 @@ export const logoBanner: ShopifySection = {
       step: 5,
       unit: "px",
     },
+    {
+      type: "range",
+      id: "animation_duration",
+      label: "Animation duration",
+      default: 20,
+      min: 15,
+      max: 100,
+      step: 1,
+      unit: "s",
+    },
   ],
   blocks: [
     {
-      type: "svg",
-      name: "Svg Logo",
+      type: "manual-svg",
+      name: "Manual Svg Logo",
       settings: [
         {
           type: "header",
@@ -43,15 +59,15 @@ export const logoBanner: ShopifySection = {
           label: "SVG code",
         },
         {
-          type: "url",
-          id: "url",
-          label: "Link",
+          type: "text",
+          id: "title",
+          label: "Title",
         },
       ],
     },
     {
-      type: "image",
-      name: "Image Logo",
+      type: "manual-image",
+      name: "Manual Image Logo",
       settings: [
         {
           type: "header",
@@ -63,9 +79,9 @@ export const logoBanner: ShopifySection = {
           label: "Image",
         },
         {
-          type: "url",
-          id: "url",
-          label: "Link",
+          type: "text",
+          id: "title",
+          label: "Title",
         },
       ],
     },

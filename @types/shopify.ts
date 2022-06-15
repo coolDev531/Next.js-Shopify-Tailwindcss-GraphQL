@@ -612,7 +612,7 @@ export type _Variant_liquid = {
   url: string;
   weight: number;
   compare_at_price?: any;
-  featured_media?: any;
+  featured_media?: _Media_liquid;
   image?: any;
   inventory_management?: any;
   option2?: any;
@@ -647,7 +647,7 @@ export type _Product_liquid = {
   handle: string;
   id: number;
   images: any[];
-  media: any[];
+  media: _Media_liquid[];
   metafields: _Metafield_liquid[];
   options: string[];
   price: number;
@@ -662,9 +662,26 @@ export type _Product_liquid = {
   url: string;
   variants: _Variant_liquid[];
   vendor: string;
-  compare_at_price?: any;
-  featured_image?: any;
-  featured_media?: any;
+  compare_at_price?: number;
+  featured_image?: string;
+  featured_media?: _Media_liquid;
+};
+
+export type _Media_liquid = {
+  aspect_ratio: number;
+  height: number;
+  id: number;
+  media_type: string;
+  position: number;
+  preview_image: {
+    aspect_ratio: number;
+    height: number;
+    src: string;
+    width: number;
+  };
+  src: string;
+  width: number;
+  alt?: string;
 };
 
 export type _Collection_liquid = {
