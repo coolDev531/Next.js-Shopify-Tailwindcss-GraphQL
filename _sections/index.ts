@@ -18,4 +18,5 @@ export * from "_sections/tabs-image-card";
 export * from "_sections/tabs-process-step";
 export * from "_sections/team-list";
 export * from "_sections/templates";
+export * from "_sections/test";
 export * from "_sections/testimonial-list";

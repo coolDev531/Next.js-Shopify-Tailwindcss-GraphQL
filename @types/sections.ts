@@ -1,5 +1,4 @@
-import { _LinkList, _Color } from "types/shopify";
-import { _Image, _Product, _Article, _Collection } from "shopify-typed-node-api/dist/clients/rest/request_types";
+import { _Image_liquid, _Linklist_liquid, _Color_liquid, _Product_liquid, _Collection_liquid, _Page_liquid, _Blog_liquid, _Article_liquid, _Font_liquid } from "types/shopify";
 
 export type BlockquoteSection = {
   id: string;
@@ -49,7 +48,7 @@ export type FeatureCarouselBlocks =
       id: string;
       settings: {
         /** Input type: image_picker */
-        image?: _Image;
+        image?: _Image_liquid;
         /** Input type: url */
         link?: string;
         /** Input type: textarea */
@@ -88,9 +87,9 @@ export type HeaderSection = {
   id: string;
   settings: {
     /** Input type: image_picker */
-    logo?: _Image;
+    logo?: _Image_liquid;
     /** Input type: link_list */
-    menu?: _LinkList;
+    menu?: _Linklist_liquid;
   };
   type: "header";
 };
@@ -122,7 +121,7 @@ export type HeroSection = {
   id: string;
   settings: {
     /** Input type: image_picker */
-    image?: _Image;
+    image?: _Image_liquid;
     /** Input type: richtext */
     list?: `<p${string}</p>`;
     /** Input type: text */
@@ -170,7 +169,7 @@ export type ImageCarouselBlocks =
       id: string;
       settings: {
         /** Input type: image_picker */
-        image?: _Image;
+        image?: _Image_liquid;
         /** Input type: url */
         link?: string;
       };
@@ -193,13 +192,13 @@ export type ImageGalleryBlocks = {
     /** Input type: color_background */
     color_overlay?: string;
     /** Input type: color */
-    color_text?: _Color;
+    color_text?: _Color_liquid;
     /** Input type: image_picker */
-    image?: _Image;
+    image?: _Image_liquid;
     /** Input type: richtext */
     paragraph?: `<p${string}</p>`;
     /** Input type: product */
-    product?: _Product & { content: string; description: string };
+    product?: _Product_liquid;
     /** Input type: text */
     title?: string;
   };
@@ -218,7 +217,7 @@ export type ImageTextSection = {
     /** Input type: radio */
     position: "left" | "right";
     /** Input type: image_picker */
-    image?: _Image;
+    image?: _Image_liquid;
     /** Input type: richtext */
     list?: `<p${string}</p>`;
     /** Input type: text */
@@ -237,6 +236,8 @@ export type InfoCardsSection = {
   blocks: InfoCardsBlocks[];
   id: string;
   settings: {
+    /** Input type: product_list */
+    content_list?: _Product_liquid[];
     /** Input type: text */
     pre_title?: string;
     /** Input type: text */
@@ -245,27 +246,18 @@ export type InfoCardsSection = {
   type: "info-cards";
 };
 
-export type InfoCardsBlocks =
-  | {
-      id: string;
-      settings: {
-        /** Input type: article */
-        content?: _Article & { content: string; excerpt: string };
-      };
-      type: "dynamic-info-card";
-    }
-  | {
-      id: string;
-      settings: {
-        /** Input type: richtext */
-        paragraph?: `<p${string}</p>`;
-        /** Input type: html */
-        svg?: string;
-        /** Input type: text */
-        title?: string;
-      };
-      type: "manual-info-card";
-    };
+export type InfoCardsBlocks = {
+  id: string;
+  settings: {
+    /** Input type: richtext */
+    paragraph?: `<p${string}</p>`;
+    /** Input type: html */
+    svg?: string;
+    /** Input type: text */
+    title?: string;
+  };
+  type: "manual-info-card";
+};
 
 export type LogoBannerSection = {
   blocks: LogoBannerBlocks[];
@@ -294,7 +286,7 @@ export type LogoBannerBlocks =
       id: string;
       settings: {
         /** Input type: image_picker */
-        image?: _Image;
+        image?: _Image_liquid;
         /** Input type: url */
         url?: string;
       };
@@ -419,7 +411,7 @@ export type StoryBlocks =
         /** Input type: radio */
         position: "left" | "right";
         /** Input type: image_picker */
-        image?: _Image;
+        image?: _Image_liquid;
         /** Input type: richtext */
         list?: `<p${string}</p>`;
         /** Input type: text */
@@ -448,7 +440,7 @@ export type TabsFaqBlocks = {
   id: string;
   settings: {
     /** Input type: collection */
-    faq_items?: (_Collection & { products: (_Product & { content: string; description: string })[] });
+    faq_items?: _Collection_liquid;
     /** Input type: text */
     title?: string;
   };
@@ -496,7 +488,7 @@ export type TabsImageCardBlocks =
         /** Input type: url */
         cta2_link?: string;
         /** Input type: image_picker */
-        image?: _Image;
+        image?: _Image_liquid;
         /** Input type: url */
         image_link?: string;
         /** Input type: richtext */
@@ -581,7 +573,7 @@ export type TeamListBlocks =
       id: string;
       settings: {
         /** Input type: image_picker */
-        image?: _Image;
+        image?: _Image_liquid;
         /** Input type: text */
         job_title?: string;
         /** Input type: text */
@@ -640,6 +632,37 @@ export type Template_404Section = {
   type: "template-404";
 };
 
+export type TestSection = {
+  id: string;
+  settings: {
+    /** Input type: font_picker */
+    font: _Font_liquid;
+    /** Input type: article */
+    article?: _Article_liquid;
+    /** Input type: blog */
+    blog?: _Blog_liquid;
+    /** Input type: collection */
+    collection?: _Collection_liquid;
+    /** Input type: collection_list */
+    collection_list?: _Collection_liquid[];
+    /** Input type: color */
+    color?: _Color_liquid;
+    /** Input type: font */
+    font2?: string;
+    /** Input type: image_picker */
+    image?: _Image_liquid;
+    /** Input type: link_list */
+    links?: _Linklist_liquid;
+    /** Input type: page */
+    page?: _Page_liquid;
+    /** Input type: product */
+    product?: _Product_liquid;
+    /** Input type: product_list */
+    product_list?: _Product_liquid[];
+  };
+  type: "test";
+};
+
 export type TestimonialListSection = {
   blocks: TestimonialListBlocks[];
   id: string;
@@ -675,9 +698,9 @@ export type TestimonialListBlocks =
         /** Input type: text */
         author?: string;
         /** Input type: image_picker */
-        avatar?: _Image;
+        avatar?: _Image_liquid;
         /** Input type: image_picker */
-        image?: _Image;
+        image?: _Image_liquid;
         /** Input type: text */
         job_title?: string;
         /** Input type: richtext */
@@ -716,4 +739,5 @@ export type Sections =
   | TemplateProductSection
   | TemplateSearchSection
   | Template_404Section
+  | TestSection
   | TestimonialListSection;

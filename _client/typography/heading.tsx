@@ -14,7 +14,9 @@ export const Heading: FC<PropsWithChildren<HeadingProps>> = ({ children, heading
     }
     case "h2": {
       return (
-        <h2 className="mb-3 text-3xl font-bold text-slate-800 sm:text-4xl lg:mb-4">{children}</h2>
+        <h2 className="mb-3 text-3xl font-semibold text-slate-800 sm:text-4xl lg:mb-4">
+          {children}
+        </h2>
       );
     }
     case "h3": {

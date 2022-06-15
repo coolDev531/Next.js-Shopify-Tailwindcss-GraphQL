@@ -1,5 +1,3 @@
-import { _Blog, _Collection, _Page, _Product } from "shopify-typed-node-api/dist/clients/rest/request_types";
-
 type ShopifyHeader = {
   content: string;
   type: "header";
@@ -317,8 +315,440 @@ export type ShopifySettings = (
     }
 )[];
 
-/* TODO complete manual types*/
-export type _Color = {
+export type _Page_liquid = {
+  content: string;
+  handle: string;
+  id: number;
+  metafields: _Metafield_liquid[];
+  published_at: string;
+  template_suffix: string;
+  title: string;
+  url: string;
+  author?: any;
+};
+
+export type _Blog_liquid = {
+  all_tags: any[];
+  articles: _Article_liquid[];
+  articles_count: number;
+  handle: string;
+  id: number;
+  metafields: _Metafield_liquid[];
+  tags: any[];
+  title: string;
+  url: string;
+  comments_enabled?: any;
+  moderated?: any;
+};
+
+export type _Article_liquid = {
+  author: string;
+  comment_post_url: string;
+  comments: any[];
+  comments_count: number;
+  content: string;
+  created_at: string;
+  excerpt: string;
+  excerpt_or_content: string;
+  handle: string;
+  id: number;
+  metafields: _Metafield_liquid[];
+  published_at: string;
+  tags: any[];
+  title: string;
+  updated_at: string;
+  url: string;
+  user: {
+    account_owner: boolean;
+    email: string;
+    first_name: string;
+    last_name: string;
+    bio?: any;
+    homepage?: any;
+    image?: any;
+  };
+  comments_enabled?: any;
+  image?: any;
+  moderated?: any;
+};
+
+export type _Variant_liquid_json = {
+  available: boolean;
+  barcode: string;
+  id: number;
+  inventory_policy: string;
+  inventory_quantity: number;
+  name: string;
+  option1: string;
+  options: string[];
+  price: number;
+  requires_shipping: boolean;
+  sku: string;
+  taxable: boolean;
+  title: string;
+  weight: number;
+  compare_at_price?: any;
+  featured_image?: any;
+  inventory_management?: any;
+  option2?: any;
+  option3?: any;
+  public_title?: any;
+};
+
+export type _Product_liquid_json = {
+  available: boolean;
+  compare_at_price_max: number;
+  compare_at_price_min: number;
+  compare_at_price_varies: boolean;
+  content: string;
+  created_at: string;
+  description: string;
+  handle: string;
+  id: number;
+  images: any[];
+  options: string[];
+  price: number;
+  price_max: number;
+  price_min: number;
+  price_varies: boolean;
+  published_at: string;
+  tags: any[];
+  title: string;
+  type: string;
+  variants: _Variant_liquid_json[];
+  vendor: string;
+  compare_at_price?: any;
+  featured_image?: any;
+};
+
+export type _Metafield_liquid_product_reference = {
+  type: "product_reference";
+  key?: string;
+  namespace?: string;
+  value?: _Product_liquid_json;
+};
+export type _Metafield_liquid_list_product_reference = {
+  type: "list.product_reference";
+  key?: string;
+  namespace?: string;
+  value?: _Product_liquid_json[];
+};
+
+export type _Metafield_liquid_variant_reference = {
+  type: "variant_reference";
+  key?: string;
+  namespace?: string;
+  value?: _Variant_liquid_json;
+};
+export type _Metafield_liquid_list_variant_reference = {
+  type: "list.variant_reference";
+  key?: string;
+  namespace?: string;
+  value?: _Variant_liquid_json[];
+};
+export type _Metafield_liquid_page_reference = {
+  type: "page_reference";
+  key?: string;
+  namespace?: string;
+  value?: _Page_liquid_json;
+};
+
+export type _Metafield_liquid_file_reference_generic = {
+  media_type: "generic_file";
+  preview_image: {
+    aspect_ratio: number;
+    height: number;
+    src: string;
+    width: number;
+  };
+  url: string;
+  alt?: string;
+};
+
+export type _Metafield_liquid_file_reference_image = {
+  alt: string;
+  aspect_ratio: number;
+  height: number;
+  id: number;
+  media_type: "image";
+  position: null;
+  preview_image: {
+    aspect_ratio: number;
+    height: number;
+    src: string;
+    width: number;
+  };
+  src: string;
+  width: number;
+};
+
+export type _Metafield_liquid_file_reference = {
+  type: "file_reference";
+  key?: string;
+  namespace?: string;
+  value?: _Metafield_liquid_file_reference_generic | _Metafield_liquid_file_reference_image;
+};
+
+export type _Metafield_liquid_file_reference_force_generic = {
+  type: "file_reference";
+  key?: string;
+  namespace?: string;
+  value?: _Metafield_liquid_file_reference_generic;
+};
+export type _Metafield_liquid_file_reference_force_image = {
+  type: "file_reference";
+  key?: string;
+  namespace?: string;
+  value?: _Metafield_liquid_file_reference_image;
+};
+
+export type _Metafield_liquid =
+  | {
+      type:
+        | "color"
+        | "date"
+        | "date_time"
+        | "single_line_text_field"
+        | "multi_line_text_field"
+        | "url";
+      key?: string;
+      namespace?: string;
+      value?: string;
+    }
+  | {
+      type:
+        | "list.color"
+        | "list.date"
+        | "list.date_time"
+        | "list.single_line_text_field"
+        | "list.multi_line_text_field"
+        | "list.page_reference";
+      key?: string;
+      namespace?: string;
+      value?: string[];
+    }
+  | {
+      type: "number_integer";
+      key?: string;
+      namespace?: string;
+      value?: number;
+    }
+  | {
+      type: "list.number_integer";
+      key?: string;
+      namespace?: string;
+      value?: number[];
+    }
+  | {
+      type: "number_decimal";
+      key?: string;
+      namespace?: string;
+      value?: number | string;
+    }
+  | {
+      type: "list.number_decimal";
+      key?: string;
+      namespace?: string;
+      value?: (number | string)[];
+    }
+  | {
+      type: "json";
+      key?: string;
+      namespace?: string;
+      value?: unknown;
+    }
+  | {
+      type: "volume" | "weight" | "dimension";
+      key?: string;
+      namespace?: string;
+      value?: {
+        type: string;
+        unit: string;
+        value: number;
+      };
+    }
+  | {
+      type: "rating";
+      key?: string;
+      namespace?: string;
+      value?: {
+        rating: string;
+        scale_max: string;
+        scale_min: string;
+      };
+    }
+  | _Metafield_liquid_product_reference
+  | _Metafield_liquid_list_product_reference
+  | _Metafield_liquid_variant_reference
+  | _Metafield_liquid_list_variant_reference
+  | _Metafield_liquid_page_reference
+  | _Metafield_liquid_file_reference;
+
+export type _Page_liquid_json = {
+  content: string;
+  handle: string;
+  id: number;
+  published_at: string;
+  template_suffix: string;
+  title: string;
+  url: string;
+  author?: string;
+};
+
+export type _Variant_liquid = {
+  available: boolean;
+  barcode: string;
+  id: number;
+  inventory_policy: string;
+  inventory_quantity: number;
+  metafields: _Metafield_liquid[];
+  option1: string;
+  options: string[];
+  price: number;
+  requires_shipping: boolean;
+  sku: string;
+  taxable: boolean;
+  title: string;
+  url: string;
+  weight: number;
+  compare_at_price?: any;
+  featured_media?: any;
+  image?: any;
+  inventory_management?: any;
+  option2?: any;
+  option3?: any;
+};
+
+export type _Product_liquid = {
+  available: boolean;
+  collections: {
+    body_html: string;
+    disjunctive: boolean;
+    handle: string;
+    id: number;
+    published_at: string;
+    published_scope: string;
+    rules: {
+      column: string;
+      condition: string;
+      relation: string;
+    }[];
+    sort_order: string;
+    template_suffix: string;
+    title: string;
+    updated_at: string;
+  }[];
+  compare_at_price_max: number;
+  compare_at_price_min: number;
+  compare_at_price_varies: boolean;
+  content: string;
+  created_at: string;
+  description: string;
+  handle: string;
+  id: number;
+  images: any[];
+  media: any[];
+  metafields: _Metafield_liquid[];
+  options: string[];
+  price: number;
+  price_max: number;
+  price_min: number;
+  price_varies: boolean;
+  published_at: string;
+  tags: string[];
+  template_suffix: string;
+  title: string;
+  type: string;
+  url: string;
+  variants: _Variant_liquid[];
+  vendor: string;
+  compare_at_price?: any;
+  featured_image?: any;
+  featured_media?: any;
+};
+
+export type _Collection_liquid = {
+  all_products_count: number;
+  all_tags: string[];
+  all_types: string[];
+  all_vendors: string[];
+  default_sort_by: string;
+  description: string;
+  filters: any[];
+  handle: string;
+  id: number;
+  metafields: _Metafield_liquid[];
+  products: _Product_liquid[];
+  products_count: number;
+  published_at: string;
+  tags: string[];
+  template_suffix: string;
+  title: string;
+  url: string;
+  featured_image?: any;
+  image?: any;
+};
+
+export type _Link_liquid = {
+  active: boolean;
+  child_active: boolean;
+  child_current: boolean;
+  current: boolean;
+  levels: number;
+  links: any[];
+  title: string;
+  url: string;
+} & (
+  | {
+      type: "product_link";
+      object?: _Product_liquid;
+    }
+  | {
+      type: "collection_link";
+      object?: _Collection_liquid;
+    }
+  | {
+      type: "article_link";
+      object?: _Article_liquid;
+    }
+  | {
+      type: "blog_link";
+      object?: _Blog_liquid;
+    }
+  | {
+      type: "page_link";
+      object?: _Page_liquid;
+    }
+  | {
+      type: "policy_link";
+      object?: string;
+    }
+  | {
+      type: "http_link";
+      object?: null;
+    }
+  | {
+      type: "frontpage_link";
+      object?: null;
+    }
+  | {
+      type: "collections_link";
+      object?: null;
+    }
+  | {
+      type: "catalog_link";
+      object?: null;
+    }
+);
+
+export type _Linklist_liquid = {
+  handle: string;
+  levels: number;
+  links: _Link_liquid[];
+  title: string;
+};
+
+export type _Color_liquid = {
   alpha: number;
   blue: number;
   green: number;
@@ -329,34 +759,26 @@ export type _Color = {
   saturation: number;
 };
 
-export type _LinkList = {
-  handle: string;
-  levels: number;
-  links: Links[];
-  title: string;
-};
-
-export type _Font = {
+export type _Font_liquid = {
   baseline_ratio: number;
   fallback_families: string;
   family: string;
   style: string;
-  variants: Omit<_Font, "variants">[];
+  variants: Omit<_Font_liquid, "variants">[];
   weight: string;
   system?: any;
 };
 
-type Links = {
-  active: boolean;
-  child_active: boolean;
-  child_current: boolean;
-  current: boolean;
-  levels: number;
-  title: string;
-  type: string;
-  url: string;
-  links?: Links[];
-  object?: _Product | _Collection | _Page | _Blog | null;
-};
+export type _LinkLists_liquid = _Linklist_liquid[];
 
-export type _LinkLists = _LinkList[];
+export type _Image_liquid = {
+  alt: string;
+  aspect_ratio: number;
+  height: number;
+  id: number;
+  src: string;
+  width: number;
+  media_type?: any;
+  preview_image?: any;
+  variants?: any;
+};

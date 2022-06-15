@@ -41,7 +41,7 @@
 {%- capture linklistsObject -%}
   [
   {%- for linklist in linklists -%}
-    {% include '_map_linklist', input_linklist: linklist %}{%- unless forloop.last -%},{%- endunless -%}
+    {%- include '_map_linklist', input_linklist: linklist -%}{%- unless forloop.last -%},{%- endunless -%}
   {%- endfor -%}
   ]
 {%- endcapture -%}
@@ -90,7 +90,7 @@
 {%- endcapture -%}
 <script type="application/json" data-global>
   {
-    "settings": {% include '_map_settings_types', input_settings: settings %},
+    "settings": {%- include '_map_settings_types', input_settings: settings -%},
     "shop": {{ shopObject }},
     "request": {{ requestObject }},
     "linklists": {{ linklistsObject }},

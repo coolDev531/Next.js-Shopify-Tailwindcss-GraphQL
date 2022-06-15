@@ -20,6 +20,12 @@ import { Sections } from "types/sections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {
+    case "test":
+      return (
+        <section key={section.id} className={section.type} id={section.id}>
+          <div>Section to be developed: {section.type}</div>
+        </section>
+      );
     case "team-list":
       return (
         <section key={section.id} className={section.type} id={section.id}>
@@ -93,11 +99,7 @@ export const renderSection = (section: Sections) => {
         </section>
       );
     case "info-cards":
-      return (
-        <section key={section.id} className={section.type} id={section.id}>
-          <InfoCards {...section} />
-        </section>
-      );
+      return <InfoCards key={section.id} {...section} />;
     case "footer":
       return (
         <section key={section.id} className={section.type} id={section.id}>

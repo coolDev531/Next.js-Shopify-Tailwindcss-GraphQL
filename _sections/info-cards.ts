@@ -17,25 +17,13 @@ export const infoCards: ShopifySection = {
       id: "title",
       label: "Title",
     },
-  ],
-
-  blocks: [
     {
-      type: "dynamic-info-card",
-      name: "Dynamic Info Card",
-      settings: [
-        {
-          type: "header",
-          content: "Dynamic content",
-          info: "The Title, excerpt, and metafield svg are used for each info card.",
-        },
-        {
-          type: "article",
-          id: "content",
-          label: "Content Source",
-        },
-      ],
+      type: "product_list",
+      id: "content_list",
+      label: "Tech Items",
     },
+  ],
+  blocks: [
     {
       type: "manual-info-card",
       name: "Manual Info Card",

@@ -54,7 +54,7 @@ export const generateSections = () => {
 function getSettingsType(setting: ShopifySettingsInput) {
   switch (setting.type) {
     case "article":
-      return "?: _Article & { content: string; excerpt: string }";
+      return "?: _Article_liquid";
     case "checkbox":
       return ": boolean";
     case "number":
@@ -70,31 +70,31 @@ function getSettingsType(setting: ShopifySettingsInput) {
     case "textarea":
       return "?: string";
     case "blog":
-      return "?: _Blog";
+      return "?: _Blog_liquid";
     case "collection":
-      return "?: (_Collection & { products: (_Product & { content: string; description: string })[] })";
+      return "?: _Collection_liquid";
     case "collection_list":
-      return "?: (_Collection & { products: (_Product & { content: string; description: string })[] })[]";
+      return "?: _Collection_liquid[]";
     case "color":
-      return "?: _Color";
+      return "?: _Color_liquid";
     case "color_background":
       return "?: string";
     case "font_picker":
-      return ": _Font";
+      return ": _Font_liquid";
     case "html":
       return "?: string";
     case "image_picker":
-      return "?: _Image";
+      return "?: _Image_liquid";
     case "link_list":
-      return "?: _LinkList";
+      return "?: _Linklist_liquid";
     case "liquid":
       return "?: string";
     case "page":
-      return "?: _Page";
+      return "?: _Page_liquid";
     case "product":
-      return "?: _Product & { content: string; description: string }";
+      return "?: _Product_liquid";
     case "product_list":
-      return "?: (_Product & { content: string; description: string })[]";
+      return "?: _Product_liquid[]";
     case "richtext":
       return "?: `<p${string}</p>`";
     case "url":
@@ -108,62 +108,53 @@ function getSettingsType(setting: ShopifySettingsInput) {
 
 const getImports = (sections: { [T: string]: ShopifySection }) => {
   const localTypes = [];
-  const apiTypes = [];
 
   for (const key in sections) {
     const section = sections[key];
     const analyseSetting = (setting) => {
       if (setting.type === "article") {
-        if (apiTypes.includes("_Article")) return;
-        apiTypes.push("_Article");
+        if (localTypes.includes("_Article_liquid")) return;
+        localTypes.push("_Article_liquid");
       }
       if (setting.type === "blog") {
-        if (apiTypes.includes("_Blog")) return;
-        apiTypes.push("_Blog");
+        if (localTypes.includes("_Blog_liquid")) return;
+        localTypes.push("_Blog_liquid");
       }
       if (setting.type === "collection") {
-        if (!apiTypes.includes("_Collection")) {
-          apiTypes.push("_Collection");
-        }
-        if (!apiTypes.includes("_Product")) {
-          apiTypes.push("_Product");
-        }
+        if (localTypes.includes("_Collection_liquid")) return;
+        localTypes.push("_Collection_liquid");
       }
       if (setting.type === "collection_list") {
-        if (!apiTypes.includes("_Collection")) {
-          apiTypes.push("_Collection");
-        }
-        if (!apiTypes.includes("_Product")) {
-          apiTypes.push("_Product");
-        }
+        if (localTypes.includes("_Collection_liquid")) return;
+        localTypes.push("_Collection_liquid");
       }
       if (setting.type === "color") {
-        if (localTypes.includes("_Color")) return;
-        localTypes.push("_Color");
+        if (localTypes.includes("_Color_liquid")) return;
+        localTypes.push("_Color_liquid");
       }
       if (setting.type === "image_picker") {
-        if (apiTypes.includes("_Image")) return;
-        apiTypes.push("_Image");
+        if (localTypes.includes("_Image_liquid")) return;
+        localTypes.push("_Image_liquid");
       }
       if (setting.type === "font_picker") {
-        if (localTypes.includes("_Font")) return;
-        localTypes.push("_Font");
+        if (localTypes.includes("_Font_liquid")) return;
+        localTypes.push("_Font_liquid");
       }
       if (setting.type === "link_list") {
-        if (localTypes.includes("_LinkList")) return;
-        localTypes.push("_LinkList");
+        if (localTypes.includes("_Linklist_liquid")) return;
+        localTypes.push("_Linklist_liquid");
       }
       if (setting.type === "page") {
-        if (apiTypes.includes("_Page")) return;
-        apiTypes.push("_Page");
+        if (localTypes.includes("_Page_liquid")) return;
+        localTypes.push("_Page_liquid");
       }
       if (setting.type === "product") {
-        if (apiTypes.includes("_Product")) return;
-        apiTypes.push("_Product");
+        if (localTypes.includes("_Product_liquid")) return;
+        localTypes.push("_Product_liquid");
       }
       if (setting.type === "product_list") {
-        if (apiTypes.includes("_Product")) return;
-        apiTypes.push("_Product");
+        if (localTypes.includes("_Product_liquid")) return;
+        localTypes.push("_Product_liquid");
       }
     };
 
@@ -173,15 +164,8 @@ const getImports = (sections: { [T: string]: ShopifySection }) => {
     });
   }
 
-  if (localTypes.length || apiTypes.length) {
-    return `${
-      (localTypes.length ? `import { ${localTypes.join(", ")} } from "types/shopify";\n` : "") +
-      (apiTypes.length
-        ? `import { ${apiTypes.join(
-            ", "
-          )} } from "shopify-typed-node-api/dist/clients/rest/request_types";\n`
-        : "")
-    }\n`;
+  if (localTypes.length) {
+    return `import { ${localTypes.join(", ")} } from "types/shopify";\n\n`;
   }
   return ``;
 };
