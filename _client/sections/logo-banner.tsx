@@ -14,7 +14,7 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
           <h2 className="mb-6 text-[15px] font-medium text-slate-500">{settings.title}</h2>
         </header>
         <main
-          className="relative sm:left-1/2 sm:-ml-[50vw] sm:w-screen sm:pl-[max(32px,calc((100vw-80rem)/2+32px))]"
+          className="relative flex sm:left-1/2 sm:-ml-[50vw] sm:w-screen sm:pl-[max(32px,calc((100vw-80rem)/2+32px))]"
           onMouseEnter={() => {
             setTooltip(true);
           }}
@@ -24,7 +24,7 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
           }}
         >
           <div
-            className="scrollbar-none flex gap-12 overflow-x-scroll hfa:animation-pause md:animate-slide md:overflow-x-auto"
+            className="scrollbar-none flex scale-100 overflow-x-scroll whitespace-nowrap transition-all hfa:animation-pause md:animate-slide md:overflow-visible"
             style={{ animationDuration: `${settings.animation_duration}s` }}
           >
             <div className="grid auto-cols-max grid-flow-col-dense gap-12">
@@ -42,6 +42,7 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
                     <Image
                       objectFit="contain"
                       layout="fill"
+                      priority
                       src={`${product.featured_media.src}`}
                       alt={product.title}
                     />
@@ -78,7 +79,7 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
                 }
               })}
             </div>
-            <div className="grid auto-cols-max grid-flow-col-dense gap-12 md:hidden">
+            <div className="ml-12  hidden auto-cols-max grid-flow-col-dense gap-12 md:grid">
               {settings.logo_items?.map((product) => {
                 return (
                   <figure
@@ -88,11 +89,14 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
                     style={{
                       height: `${settings.height}px`,
                       width: `${product.featured_media.aspect_ratio * settings.height}px`,
+                      /*backgroundImage: `url('${product.featured_media.src}')`
+                      backgroundSize: "contain"*/
                     }}
                   >
                     <Image
                       objectFit="contain"
                       layout="fill"
+                      priority
                       src={`${product.featured_media.src}`}
                       alt={product.title}
                     />

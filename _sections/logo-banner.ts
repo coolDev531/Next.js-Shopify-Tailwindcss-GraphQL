@@ -38,7 +38,7 @@ export const logoBanner: ShopifySection = {
       id: "animation_duration",
       label: "Animation duration",
       default: 20,
-      min: 15,
+      min: 5,
       max: 100,
       step: 1,
       unit: "s",
