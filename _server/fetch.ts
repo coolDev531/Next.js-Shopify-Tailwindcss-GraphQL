@@ -9,6 +9,7 @@ export const fetchRouter = createRouter().query("shopify-content", {
   input: z.string(),
   resolve: async ({ input }) => {
     try {
+      console.log({ input });
       const data = await axios({
         url: `https://liquix-theme-dev.myshopify.com${input}`,
         method: "Get",

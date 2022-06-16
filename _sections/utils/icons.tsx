@@ -4,6 +4,11 @@ import { ShopifySelect } from "types/shopify";
 import Server2 from "public/icons/line-icons/server-2.svg";
 import Server8 from "public/icons/line-icons/server-8.svg";
 import Sizing from "public/icons/tw-icons/sizing.svg";
+import UpAlign1Light from "public/icons/line-icons/up-align-1-light.svg";
+import Columns1Light from "public/icons/line-icons/columns-1-light.svg";
+import LaptopStarLight from "public/icons/line-icons/laptop-star-light.svg";
+import Squares1Light from "public/icons/line-icons/squares-1-light.svg";
+import CubesLight from "public/icons/line-icons/cubes-light.svg";
 
 export const heroIcons = [
   {
@@ -134,11 +139,36 @@ export const renderIcon = (
     return renderTwIcon(value as typeof twIcons[number]["value"], className);
   }
   if (lineIcons.some((icon) => icon.value === value)) {
-    const Svg = dynamic(import(`public/icons/line-icons/${value}.svg`).then((d) => d.default));
+    return renderLineIcon(value as typeof lineIcons[number]["value"], className);
+    /* const Svg = dynamic(
+      import(`public/icons/line-icons/${value}.svg`)?.then((d) => d.default),
+      {
+        ssr: false,
+      }
+    );
     // @ts-ignore
-    return Svg ? <Svg className={className} /> : "";
+    return Svg ? <Svg className={className} /> : "";*/
   }
   return "";
+};
+
+export const renderLineIcon = (value: typeof lineIcons[number]["value"], className = "") => {
+  switch (value) {
+    case "server-2":
+      return <Server2 className={className} />;
+    case "server-8":
+      return <Server8 className={className} />;
+    case "up-align-1-light":
+      return <UpAlign1Light className={className} />;
+    case "columns-1-light":
+      return <Columns1Light className={className} />;
+    case "laptop-star-light":
+      return <LaptopStarLight className={className} />;
+    case "squares-1-light":
+      return <Squares1Light className={className} />;
+    case "cubes-light":
+      return <CubesLight className={className} />;
+  }
 };
 
 export const renderHeroIcon = (value: typeof heroIcons[number]["value"], className = "") => {
