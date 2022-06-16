@@ -69,7 +69,7 @@ export type FeatureListBlocks = {
   id: string;
   settings: {
     /** Input type: select */
-    icon: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8";
+    icon: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
     /** Input type: richtext */
     paragraph?: `<p${string}</p>`;
     /** Input type: text */
@@ -332,17 +332,17 @@ export type SpecListBlocks =
       id: string;
       settings: {
         /** Input type: select */
-        icon1: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8";
+        icon1: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon2: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8";
+        icon2: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon3: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8";
+        icon3: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon4: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8";
+        icon4: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon5: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8";
+        icon5: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon6: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8";
+        icon6: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: text */
         text1?: string;
         /** Input type: text */
@@ -485,6 +485,8 @@ export type TabsImageCardBlocks =
   | {
       id: string;
       settings: {
+        /** Input type: select */
+        tab_icon: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: text */
         cta1?: string;
         /** Input type: url */
@@ -499,8 +501,6 @@ export type TabsImageCardBlocks =
         image_link?: string;
         /** Input type: richtext */
         paragraph?: `<p${string}</p>`;
-        /** Input type: html */
-        tab_svg?: string;
         /** Input type: text */
         tab_title?: string;
         /** Input type: text */

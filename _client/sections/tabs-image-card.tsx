@@ -1,6 +1,7 @@
 import { Section } from "_client/layout/section";
 import { Link } from "_client/link";
 import BlockHeading from "_client/sections/block-heading";
+import { renderIcon } from "_sections/utils";
 import clsx from "clsx";
 import Image from "next/image";
 import { FC, useState } from "react";
@@ -19,14 +20,35 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
           : null;
       })}
       <Section id={id} type={type} container="xl">
-        <div className="flex gap-6">
+        <div className="grid auto-cols-[minmax(0,_8rem)] grid-flow-col-dense">
           {blocks.map((block) => {
             if (block.type !== "tab") return null;
 
             return (
-              <button key={`tab-${block.id}`} onClick={() => setActivateTab(block.id)}>
-                <figure dangerouslySetInnerHTML={{ __html: block.settings.tab_svg }} />
-                <h3>{block.settings.tab_title}</h3>
+              <button
+                className="group flex flex-col items-center "
+                key={`tab-${block.id}`}
+                onClick={() => setActivateTab(block.id)}
+              >
+                <figure>
+                  {renderIcon(
+                    block.settings.tab_icon,
+                    clsx(
+                      "w-12 h-12 mb-6  stroke-[12px] ",
+                      block.id === activateTab
+                        ? "text-sky-500 stroke-sky-500"
+                        : "text-slate-300 group-hover:text-slate-500/75 stroke-slate-300 group-hover:stroke-slate-500/75"
+                    )
+                  )}
+                </figure>
+                <h3
+                  className={clsx(
+                    "text-sm font-semibold",
+                    block.id === activateTab && "text-sky-500"
+                  )}
+                >
+                  {block.settings.tab_title}
+                </h3>
               </button>
             );
           })}

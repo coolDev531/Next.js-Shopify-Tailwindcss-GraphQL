@@ -87,6 +87,31 @@ export const lineIcons = [
     value: "server-8",
     group: "Line Icons",
   },
+  {
+    label: "Up Align 1 Light",
+    value: "up-align-1-light",
+    group: "Line Icons",
+  },
+  {
+    label: "columns-1-light",
+    value: "columns-1-light",
+    group: "Line Icons",
+  },
+  {
+    label: "laptop-star-light",
+    value: "laptop-star-light",
+    group: "Line Icons",
+  },
+  {
+    label: "squares-1-light",
+    value: "squares-1-light",
+    group: "Line Icons",
+  },
+  {
+    label: "cubes-light",
+    value: "cubes-light",
+    group: "Line Icons",
+  },
 ] as const;
 
 export const icons = [
@@ -109,7 +134,9 @@ export const renderIcon = (
     return renderTwIcon(value as typeof twIcons[number]["value"], className);
   }
   if (lineIcons.some((icon) => icon.value === value)) {
-    return renderLineIcon(value as typeof lineIcons[number]["value"], className);
+    const Svg = dynamic(import(`public/icons/line-icons/${value}.svg`).then((d) => d.default));
+    // @ts-ignore
+    return Svg ? <Svg className={className} /> : "";
   }
   return "";
 };
@@ -120,15 +147,6 @@ export const renderHeroIcon = (value: typeof heroIcons[number]["value"], classNa
       return <HeroIcon name="ColorSwatchIcon" className={className} />;
     case "CloudIcon":
       return <HeroIcon name="CloudIcon" className={className} />;
-  }
-};
-
-export const renderLineIcon = (value: typeof lineIcons[number]["value"], className = "") => {
-  switch (value) {
-    case "server-2":
-      return <Server2 className={className} />;
-    case "server-8":
-      return <Server8 className={className} />;
   }
 };
 

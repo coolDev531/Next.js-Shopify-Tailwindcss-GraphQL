@@ -1,4 +1,5 @@
 import { heading } from "_sections/heading";
+import { icons } from "_sections/utils";
 import { ShopifySection } from "types/shopify";
 
 export const tabsImageCard: ShopifySection = {
@@ -25,9 +26,10 @@ export const tabsImageCard: ShopifySection = {
           label: "Title",
         },
         {
-          type: "html",
-          id: "tab_svg",
-          label: "SVG Icon",
+          type: "select",
+          id: "tab_icon",
+          label: "Icon",
+          options: icons,
         },
         {
           type: "header",
