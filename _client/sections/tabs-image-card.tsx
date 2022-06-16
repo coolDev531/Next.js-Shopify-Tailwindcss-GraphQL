@@ -1,3 +1,4 @@
+import { Section } from "_client/layout/section";
 import { Link } from "_client/link";
 import BlockHeading from "_client/sections/block-heading";
 import clsx from "clsx";
@@ -17,7 +18,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
           ? <BlockHeading key={`heading-${block.id}`} {...block} />
           : null;
       })}
-      <div className="mx-auto max-w-7xl px-8 py-16">
+      <Section id={id} type={type} container="xl">
         <div className="flex gap-6">
           {blocks.map((block) => {
             if (block.type !== "tab") return null;
@@ -30,7 +31,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
             );
           })}
         </div>
-      </div>
+      </Section>
       <div className="mx-auto max-w-7xl px-8 py-16">
         {blocks.map((block) => {
           if (block.type !== "tab") return null;

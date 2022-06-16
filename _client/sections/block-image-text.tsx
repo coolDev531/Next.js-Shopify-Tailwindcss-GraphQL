@@ -74,6 +74,7 @@ export const BlockImageText: FC<ImageTextSection> = ({ id, settings, type }) => 
                   objectFit="cover"
                   objectPosition="50% 60%"
                   layout="fill"
+                  priority
                   // width={settings.image.width}
                   // height={settings.image.height}
                   src={`https:${settings?.image?.src}`}

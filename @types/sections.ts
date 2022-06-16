@@ -69,7 +69,7 @@ export type FeatureListBlocks = {
   id: string;
   settings: {
     /** Input type: select */
-    icon: "ColorSwatchIcon" | "CloudIcon";
+    icon: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8";
     /** Input type: richtext */
     paragraph?: `<p${string}</p>`;
     /** Input type: text */
@@ -263,6 +263,8 @@ export type LogoBannerSection = {
   blocks: LogoBannerBlocks[];
   id: string;
   settings: {
+    /** Input type: checkbox */
+    animate: boolean;
     /** Input type: range */
     animation_duration: number;
     /** Input type: range */
@@ -330,17 +332,17 @@ export type SpecListBlocks =
       id: string;
       settings: {
         /** Input type: select */
-        icon1: "ColorSwatchIcon" | "CloudIcon";
+        icon1: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8";
         /** Input type: select */
-        icon2: "ColorSwatchIcon" | "CloudIcon";
+        icon2: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8";
         /** Input type: select */
-        icon3: "ColorSwatchIcon" | "CloudIcon";
+        icon3: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8";
         /** Input type: select */
-        icon4: "ColorSwatchIcon" | "CloudIcon";
+        icon4: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8";
         /** Input type: select */
-        icon5: "ColorSwatchIcon" | "CloudIcon";
+        icon5: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8";
         /** Input type: select */
-        icon6: "ColorSwatchIcon" | "CloudIcon";
+        icon6: "ColorSwatchIcon" | "CloudIcon" | "sizing" | "colors" | "typography" | "shadows" | "filters" | "layout_simple" | "layout_playful" | "layout_elegant" | "layout_responsive" | "layout_grid" | "layout_floating" | "server-2" | "server-8";
         /** Input type: text */
         text1?: string;
         /** Input type: text */

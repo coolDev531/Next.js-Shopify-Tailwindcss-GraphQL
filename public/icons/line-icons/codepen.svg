@@ -1,0 +1,3 @@
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <path transform="scale(1, -1) translate(0, -256)" fill="currentColor" d="M248 174l-114 76q-6 4 -12 0l-114 -76q-2 -1 -3 -3.5t-1 -4.5v-76q0 -5 4 -9l114 -75q6 -4 12 0l114 75q2 1 3 4t1 5v76q0 2 -1 4.5t-3 3.5zM139 222l83 -56l-38 -25l-46 31q1 0 1 50v0zM118 222v-50l-47 -31l-37 25zM26 146l26 -18l-26 -18v36zM118 34l-84 56l37 25 l47 -31v-50zM128 102l-38 26l38 26l38 -26zM139 34v50l46 31l37 -25zM231 110l-27 18l27 18v-36z" />
+</svg>

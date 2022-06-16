@@ -34,6 +34,11 @@ export const logoBanner: ShopifySection = {
       unit: "px",
     },
     {
+      type: "checkbox",
+      id: "animate",
+      label: "Show slide animation",
+    },
+    {
       type: "range",
       id: "animation_duration",
       label: "Animation duration",

@@ -87,17 +87,9 @@ export const renderSection = (section: Sections) => {
         </section>
       );
     case "tabs-image-card":
-      return (
-        <section key={section.id} className={section.type} id={section.id}>
-          <TabsImageCard {...section} />
-        </section>
-      );
+      return <TabsImageCard key={section.id} {...section} />;
     case "logo-banner":
-      return (
-        <section key={section.id} className={section.type} id={section.id}>
-          <LogoBanner {...section} />
-        </section>
-      );
+      return <LogoBanner key={section.id} {...section} />;
     case "info-cards":
       return <InfoCards key={section.id} {...section} />;
     case "footer":

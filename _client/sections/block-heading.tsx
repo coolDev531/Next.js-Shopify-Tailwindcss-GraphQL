@@ -22,7 +22,7 @@ export const BlockHeading: FC<HeadingSection> = ({ id, settings, type }) => {
         )}
       >
         <section>
-          <header>
+          <header className="max-w-2xl">
             <PreHeading>{settings.pre_title}</PreHeading>
             <Heading>{settings.title}</Heading>
           </header>
