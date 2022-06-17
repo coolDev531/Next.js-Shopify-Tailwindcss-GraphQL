@@ -10,7 +10,7 @@ export const Paragraph: FC<PropsWithChildren<ParagraphProps>> = ({ children, siz
   return (
     <div
       className={clsx(
-        "max-w-xl leading-relaxed tracking-tight text-slate-500 [&>p]:mb-4",
+        "max-w-xl leading-relaxed tracking-tight text-slate-500 [&>p+p]:mt-4",
         {
           sm: "text-sm",
           base: "text-base",

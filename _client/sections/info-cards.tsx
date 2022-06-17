@@ -37,7 +37,7 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
                       backgroundImage: `url(${svgImage?.value?.url ?? product.featured_image})`,
                     }}
                   ></figure>
-                  <h3 className="mb-1 text-lg font-semibold text-slate-800">{product.title}</h3>
+                  <Heading heading="h3">{product.title}</Heading>
                 </header>
                 <main className="text-[15px] tracking-tight">
                   <p>{stripHtml(product.content).result}</p>

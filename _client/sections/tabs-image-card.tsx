@@ -1,6 +1,8 @@
 import { Section } from "_client/layout/section";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
+import { Heading } from "_client/typography/heading";
+import { Paragraph } from "_client/typography/paragraph";
 import { renderIcon } from "_sections/utils";
 import clsx from "clsx";
 import Image from "next/image";
@@ -21,7 +23,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
             </div>
           : null;
       })}
-      <div className="grid auto-cols-min grid-flow-col-dense gap-6">
+      <div className="scrollbar-none grid auto-cols-min grid-flow-col-dense gap-6 overflow-x-scroll">
         {blocks.map((block) => {
           if (block.type !== "tab") return null;
 
@@ -35,7 +37,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
                 {renderIcon(
                   block.settings.tab_icon,
                   clsx(
-                    "w-12 h-12 mb-6",
+                    "w-12 h-12 mb-4",
                     block.id === activateTab
                       ? "text-sky-500 [--svg-active-opacity:0.1] [--svg-active-fill:currentColor]"
                       : "text-slate-300 group-hover:text-slate-500/60"
@@ -44,7 +46,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
               </figure>
               <h3
                 className={clsx(
-                  "text-sm font-semibold",
+                  "text-sm font-semibold tracking-tight",
                   block.id === activateTab && "text-sky-500"
                 )}
               >
@@ -55,48 +57,64 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
         })}
       </div>
 
-      <div className="mx-auto max-w-7xl px-8 py-16">
+      <div className="relative mt-12">
+        <figure
+          className="absolute left-1/2 -z-20 -ml-[50vw] h-full w-screen bg-top bg-no-repeat"
+          style={{
+            backgroundImage: "url('/images/bg-gradient-light.jpg')",
+            backgroundSize: "123.25rem 100%",
+          }}
+        />
+        <figure className="absolute left-1/2 -z-10 -ml-[50vw] h-full w-screen bg-grid-slate-900/[0.04] [mask-image:linear-gradient(0deg,transparent,black)] "></figure>
         {blocks.map((block) => {
           if (block.type !== "tab") return null;
 
           return (
             <div
               key={`content-${block.id}`}
-              className={clsx("grid grid-cols-2 gap-8", block.id !== activateTab && "hidden")}
+              className={clsx(
+                block.id !== activateTab
+                  ? "hidden"
+                  : "flex grid-cols-2 flex-col gap-8  py-8 lg:grid lg:py-16"
+              )}
             >
-              <section className="my-24 rounded-xl bg-white p-8 shadow-2xl">
-                <header>
-                  <h1>{block.settings.title}</h1>
-                </header>
-                <main dangerouslySetInnerHTML={{ __html: block.settings.paragraph }} />
-                <footer
-                  className={clsx(
-                    ((block.settings.cta1 && block.settings.cta1_link) ||
-                      (block.settings.cta2 && block.settings.cta2_link)) &&
-                      "mt-8"
-                  )}
-                >
-                  {block.settings.cta1 && block.settings.cta1_link && (
-                    <Link
-                      href={block.settings.cta1_link}
-                      className="rounded border border-gray-700 bg-white py-2 px-4"
-                    >
-                      {block.settings.cta1}
-                    </Link>
-                  )}
-                  {block.settings.cta2 && block.settings.cta2_link && (
-                    <Link
-                      href={block.settings.cta2_link}
-                      className="ml-8 rounded border border-gray-700 bg-white py-2 px-4"
-                    >
-                      {block.settings.cta2}
-                    </Link>
-                  )}
-                </footer>
-              </section>
-              <section>
+              <div className="mb-24 flex flex-col justify-center">
+                <section className="rounded-xl bg-white p-8 shadow-xl">
+                  <header>
+                    <Heading heading="h3">{block.settings.title}</Heading>
+                  </header>
+                  <main>
+                    <Paragraph size="xl">{block.settings.paragraph}</Paragraph>
+                  </main>
+                  <footer
+                    className={clsx(
+                      ((block.settings.cta1 && block.settings.cta1_link) ||
+                        (block.settings.cta2 && block.settings.cta2_link)) &&
+                        "mt-8"
+                    )}
+                  >
+                    {block.settings.cta1 && block.settings.cta1_link && (
+                      <Link
+                        href={block.settings.cta1_link}
+                        className="rounded border border-gray-700 bg-white py-2 px-4"
+                      >
+                        {block.settings.cta1}
+                      </Link>
+                    )}
+                    {block.settings.cta2 && block.settings.cta2_link && (
+                      <Link
+                        href={block.settings.cta2_link}
+                        className="ml-8 rounded border border-gray-700 bg-white py-2 px-4"
+                      >
+                        {block.settings.cta2}
+                      </Link>
+                    )}
+                  </footer>
+                </section>
+              </div>
+              <section className="-mt-24 flex flex-col justify-center">
                 {block.settings.image && (
-                  <figure className="relative aspect-1">
+                  <figure className="relative aspect-og-image flex-1 overflow-hidden rounded-xl shadow-2xl lg:aspect-w-4 lg:aspect-h-3">
                     <Image
                       objectFit="cover"
                       objectPosition="50% 60%"

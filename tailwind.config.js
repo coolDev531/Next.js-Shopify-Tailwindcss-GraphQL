@@ -3,6 +3,9 @@ const plugin = require("tailwindcss/plugin");
 // eslint-disable-next-line node/no-unpublished-require
 const colors = require("tailwindcss/colors");
 const defaultTheme = require("tailwindcss/defaultTheme");
+const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
+const svgToDataUri = require("mini-svg-data-uri");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -475,9 +478,67 @@ module.exports = {
           "line-height": "0",
         },
         ".animation-pause": {
-          " animation-play-state": "paused",
+          "animation-play-state": "paused",
         },
       });
     }),
+    ({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          "bg-grid": (value) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
+            )}")`,
+          }),
+        },
+        { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
+      );
+
+      matchUtilities(
+        {
+          highlight: (value) => ({ boxShadow: `inset 0 1px 0 0 ${value}` }),
+        },
+        { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
+      );
+    },
+    ({ addUtilities, theme }) => {
+      const backgroundSize = "7.07px 7.07px";
+      const backgroundImage = (color) =>
+        `linear-gradient(135deg, ${color} 10%, transparent 10%, transparent 50%, ${color} 50%, ${color} 60%, transparent 60%, transparent 100%)`;
+      const colors = Object.entries(theme("backgroundColor")).filter(
+        ([, value]) => typeof value === "object" && value[400] && value[500]
+      );
+
+      addUtilities(
+        Object.fromEntries(
+          colors.map(([name, colors]) => {
+            const backgroundColor = `${colors[400]}1a`; // 10% opacity
+            const stripeColor = `${colors[500]}80`; // 50% opacity
+
+            return [
+              `.bg-stripes-${name}`,
+              {
+                backgroundColor,
+                backgroundImage: backgroundImage(stripeColor),
+                backgroundSize,
+              },
+            ];
+          })
+        )
+      );
+
+      addUtilities({
+        ".bg-stripes-white": {
+          backgroundImage: backgroundImage("rgba(255 255 255 / 0.75)"),
+          backgroundSize,
+        },
+      });
+
+      addUtilities({
+        ".ligatures-none": {
+          fontVariantLigatures: "none",
+        },
+      });
+    },
   ],
 };
