@@ -69,23 +69,11 @@ export const renderSection = (section: Sections) => {
         </section>
       );
     case "image-gallery":
-      return (
-        <section key={section.id} className={section.type} id={section.id}>
-          <ImageGallery {...section} />
-        </section>
-      );
+      return <ImageGallery {...section} />;
     case "blockquote":
-      return (
-        <section key={section.id} className={section.type} id={section.id}>
-          <BlockBlockquote {...section} />
-        </section>
-      );
+      return <BlockBlockquote key={section.id} {...section} />;
     case "spec-list":
-      return (
-        <section key={section.id} className={section.type} id={section.id}>
-          <SpecList {...section} />
-        </section>
-      );
+      return <SpecList key={section.id} {...section} />;
     case "tabs-image-card":
       return <TabsImageCard key={section.id} {...section} />;
     case "logo-banner":
@@ -114,11 +102,7 @@ export const renderSection = (section: Sections) => {
     case "stats-graph":
       return <StatsGraph key={section.id} {...section} />;
     case "story":
-      return (
-        <section key={section.id} className={section.type} id={section.id}>
-          <Story {...section} />
-        </section>
-      );
+      return <Story key={section.id} {...section} />;
     case "template-404":
       return (
         <section key={section.id} className={section.type} id={section.id}>

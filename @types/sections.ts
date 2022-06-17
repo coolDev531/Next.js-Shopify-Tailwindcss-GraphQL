@@ -1,4 +1,4 @@
-import { _Image_liquid, _Linklist_liquid, _Color_liquid, _Product_liquid, _Collection_liquid, _Page_liquid, _Blog_liquid, _Article_liquid, _Font_liquid } from "types/shopify";
+import { _Image_liquid, _Linklist_liquid, _Product_liquid, _Collection_liquid, _Page_liquid, _Blog_liquid, _Article_liquid, _Color_liquid, _Font_liquid } from "types/shopify";
 
 export type BlockquoteSection = {
   id: string;
@@ -185,14 +185,14 @@ export type ImageGallerySection = {
 export type ImageGalleryBlocks = {
   id: string;
   settings: {
+    /** Input type: checkbox */
+    color_use_light_text: boolean;
     /** Input type: range */
     columns: number;
     /** Input type: checkbox */
     hover_effect: boolean;
     /** Input type: color_background */
     color_overlay?: string;
-    /** Input type: color */
-    color_text?: _Color_liquid;
     /** Input type: image_picker */
     image?: _Image_liquid;
     /** Input type: richtext */

@@ -114,7 +114,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
               </div>
               <section className="-mt-24 flex flex-col justify-center">
                 {block.settings.image && (
-                  <figure className="relative aspect-og-image flex-1 overflow-hidden rounded-xl shadow-2xl lg:aspect-w-4 lg:aspect-h-3">
+                  <figure className="aspect-w-4 aspect-h-3 relative aspect-og-image flex-1 overflow-hidden rounded-xl shadow-2xl">
                     <Image
                       objectFit="cover"
                       objectPosition="50% 60%"

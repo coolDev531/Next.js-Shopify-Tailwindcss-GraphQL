@@ -37,14 +37,14 @@ export const imageGallery: ShopifySection = {
           label: "Title",
         },
         {
-          type: "color",
-          id: "color_text",
-          label: "Text Color",
-        },
-        {
           type: "richtext",
           id: "paragraph",
           label: "Paragraph",
+        },
+        {
+          type: "checkbox",
+          id: "color_use_light_text",
+          label: "Use light Text color",
         },
         {
           type: "color_background",

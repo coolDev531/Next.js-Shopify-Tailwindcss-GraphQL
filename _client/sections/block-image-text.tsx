@@ -8,9 +8,14 @@ import Image from "next/image";
 import { FC } from "react";
 import { ImageTextSection } from "types/sections";
 
-export const BlockImageText: FC<ImageTextSection> = ({ id, settings, type }) => {
+export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({
+  id,
+  settings,
+  type,
+  section,
+}) => {
   return (
-    <Section id={id} type={type} padding="base" container="xl">
+    <Section id={id} type={type} padding="base" container="xl" section={section}>
       <div className="grid-cols-2 gap-8 md:grid">
         {/*= =============== Text Content ================ */}
         <section
