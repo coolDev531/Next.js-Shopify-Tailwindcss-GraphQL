@@ -9,6 +9,7 @@ type SectionProps = {
   background?: Property.Background<string | number>;
   container?: "sm" | "base" | "xl" | "fullscreen";
   padding?: "base" | "xl";
+  section?: boolean;
 };
 
 const getContainerClasses = (container: SectionProps["container"]) => {
@@ -50,7 +51,11 @@ export const Section: FC<PropsWithChildren<SectionProps>> = ({
   type,
   id,
   children,
+  section = true,
 }) => {
+  if (!section) {
+    return <>{children}</>;
+  }
   return (
     <section className={type} id={id} style={{ background }}>
       <div

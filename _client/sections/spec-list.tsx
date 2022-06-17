@@ -1,4 +1,4 @@
-import BlockHeading from "_client/sections/block-heading";
+import { BlockHeading } from "_client/sections/block-heading";
 import { renderIcon } from "_sections/utils";
 import { FC } from "react";
 import { SpecListSection } from "types/sections";

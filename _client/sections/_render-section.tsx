@@ -1,5 +1,5 @@
 import { BlockBlockquote } from "_client/sections/block-blockquote";
-import BlockHeading from "_client/sections/block-heading";
+import { BlockHeading } from "_client/sections/block-heading";
 import { BlockHero } from "_client/sections/block-hero";
 import { BlockImageText } from "_client/sections/block-image-text";
 import { FeatureCarousel } from "_client/sections/feature-carousel";

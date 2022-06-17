@@ -1,6 +1,6 @@
 import { Section } from "_client/layout/section";
 import { Link } from "_client/link";
-import BlockHeading from "_client/sections/block-heading";
+import { BlockHeading } from "_client/sections/block-heading";
 import { renderIcon } from "_sections/utils";
 import clsx from "clsx";
 import Image from "next/image";
@@ -13,47 +13,48 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
   );
 
   return (
-    <>
+    <Section id={id} type={type} container="xl" padding="base">
       {blocks.map((block) => {
         return block.type === "heading"
-          ? <BlockHeading key={`heading-${block.id}`} {...block} />
+          ? <div className="mb-12" key={`heading-${block.id}`}>
+              <BlockHeading {...block} section={false} />
+            </div>
           : null;
       })}
-      <Section id={id} type={type} container="xl">
-        <div className="grid auto-cols-[minmax(0,_8rem)] grid-flow-col-dense">
-          {blocks.map((block) => {
-            if (block.type !== "tab") return null;
+      <div className="grid auto-cols-min grid-flow-col-dense gap-6">
+        {blocks.map((block) => {
+          if (block.type !== "tab") return null;
 
-            return (
-              <button
-                className="group flex flex-col items-center "
-                key={`tab-${block.id}`}
-                onClick={() => setActivateTab(block.id)}
+          return (
+            <button
+              className="group flex min-w-[6rem] flex-col items-center"
+              key={`tab-${block.id}`}
+              onClick={() => setActivateTab(block.id)}
+            >
+              <figure>
+                {renderIcon(
+                  block.settings.tab_icon,
+                  clsx(
+                    "w-12 h-12 mb-6",
+                    block.id === activateTab
+                      ? "text-sky-500 [--svg-active-opacity:0.1] [--svg-active-fill:currentColor]"
+                      : "text-slate-300 group-hover:text-slate-500/60"
+                  )
+                )}
+              </figure>
+              <h3
+                className={clsx(
+                  "text-sm font-semibold",
+                  block.id === activateTab && "text-sky-500"
+                )}
               >
-                <figure>
-                  {renderIcon(
-                    block.settings.tab_icon,
-                    clsx(
-                      "w-12 h-12 mb-6  stroke-[12px] ",
-                      block.id === activateTab
-                        ? "text-sky-500 stroke-sky-500"
-                        : "text-slate-300 group-hover:text-slate-500/75 stroke-slate-300 group-hover:stroke-slate-500/75"
-                    )
-                  )}
-                </figure>
-                <h3
-                  className={clsx(
-                    "text-sm font-semibold",
-                    block.id === activateTab && "text-sky-500"
-                  )}
-                >
-                  {block.settings.tab_title}
-                </h3>
-              </button>
-            );
-          })}
-        </div>
-      </Section>
+                {block.settings.tab_title}
+              </h3>
+            </button>
+          );
+        })}
+      </div>
+
       <div className="mx-auto max-w-7xl px-8 py-16">
         {blocks.map((block) => {
           if (block.type !== "tab") return null;
@@ -112,6 +113,6 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
           );
         })}
       </div>
-    </>
+    </Section>
   );
 };

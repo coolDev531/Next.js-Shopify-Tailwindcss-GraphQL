@@ -8,9 +8,14 @@ import clsx from "clsx";
 import { FC } from "react";
 import { HeadingSection } from "types/sections";
 
-export const BlockHeading: FC<HeadingSection> = ({ id, settings, type }) => {
+export const BlockHeading: FC<HeadingSection & { section?: boolean }> = ({
+  id,
+  settings,
+  type,
+  section = true,
+}) => {
   return (
-    <Section id={id} type={type} padding="base" container="xl">
+    <Section id={id} type={type} padding="base" container="xl" section={section}>
       <div
         className={clsx(
           "flex",
@@ -54,5 +59,3 @@ export const BlockHeading: FC<HeadingSection> = ({ id, settings, type }) => {
     </Section>
   );
 };
-
-export default BlockHeading;

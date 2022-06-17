@@ -1,4 +1,4 @@
-import BlockHeading from "_client/sections/block-heading";
+import { BlockHeading } from "_client/sections/block-heading";
 import Image from "next/image";
 import { FC } from "react";
 import { TestimonialListSection } from "types/sections";

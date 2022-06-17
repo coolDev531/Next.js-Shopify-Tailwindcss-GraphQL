@@ -1,0 +1,18 @@
+<svg version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 48 48"
+     fill="none">
+  <path d="M6 8h32a4 4 0 0 1 4 4v28H6V8Z"
+        fill="currentColor"
+        fill-opacity="var(--svg-active-opacity, 0)"></path>
+  <path d="M43 21v16a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V11a4 4 0 0 1 4-4h20M15 7v34"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"></path>
+  <path d="M37 7c0 1.101 0 6-6 6 1.101 0 6 0 6 6 0-6 4.899-6 6-6-6 0-6-4.899-6-6ZM31 21c0 .734 0 4-4 4 .734 0 4 0 4 4 0-4 3.266-4 4-4-4 0-4-3.266-4-4Z"
+        fill="var(--svg-active-fill, none)"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+</svg>

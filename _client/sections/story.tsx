@@ -1,4 +1,4 @@
-import BlockHeading from "_client/sections/block-heading";
+import { BlockHeading } from "_client/sections/block-heading";
 import { BlockImageText } from "_client/sections/block-image-text";
 import { FC } from "react";
 import { StorySection } from "types/sections";
