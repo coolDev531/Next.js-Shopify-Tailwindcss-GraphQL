@@ -1,4 +1,4 @@
-import HeroIcon from "_client/dynamic-hero-icon";
+import HeroIcon, { IconName } from "_client/dynamic-hero-icon";
 import dynamic from "next/dynamic";
 import { ShopifySelect } from "types/shopify";
 import Server2 from "public/icons/line-icons/server-2.svg";
@@ -21,18 +21,41 @@ import Sizing from "public/icons/tw-icons/sizing.svg";
 import Transforms from "public/icons/tw-icons/transforms.svg";
 import Typography from "public/icons/tw-icons/typography.svg";
 
-export const heroIcons = [
-  {
-    label: "ColorSwatchIcon",
-    value: "ColorSwatchIcon",
-    group: "Hero Icons",
-  },
-  {
-    label: "CloudIcon",
-    value: "CloudIcon",
-    group: "Hero Icons",
-  },
-] as const;
+export const heroIconItems: IconName[] = [
+  "BadgeCheckIcon",
+  "CameraIcon",
+  "ChatAlt2Icon",
+  "ColorSwatchIcon",
+  "CloudIcon",
+  "DesktopComputerIcon",
+  "CubeTransparentIcon",
+  "DeviceMobileIcon",
+  "DeviceTabletIcon",
+  "CursorClickIcon",
+  "HeartIcon",
+  "KeyIcon",
+  "LightningBoltIcon",
+  "LinkIcon",
+  "LightBulbIcon",
+  "LockClosedIcon",
+  "LockOpenIcon",
+  "PaperAirplaneIcon",
+  "ShoppingBagIcon",
+  "ShoppingCartIcon",
+  "SparklesIcon",
+  "TagIcon",
+  "TruckIcon",
+  "UserGroupIcon",
+  "AnnotationIcon",
+  "MailIcon",
+  "MailOpenIcon",
+];
+
+const createHeroIcons = (icons: IconName[]) => {
+  return icons.map((icon) => ({ value: icon, label: icon, group: "Hero Icons" }));
+};
+
+export const heroIcons = createHeroIcons(heroIconItems);
 
 export const twIcons = [
   {
@@ -94,38 +117,38 @@ export const twIcons = [
 
 export const lineIcons = [
   {
-    label: "Server 2",
     value: "server-2",
+    label: "Server 2",
     group: "Line Icons",
   },
   {
-    label: "Server 8",
     value: "server-8",
+    label: "Server 8",
     group: "Line Icons",
   },
   {
-    label: "Up Align 1 Light",
     value: "up-align-1-light",
+    label: "Up Align 1 Light",
     group: "Line Icons",
   },
   {
-    label: "columns-1-light",
     value: "columns-1-light",
+    label: "columns-1-light",
     group: "Line Icons",
   },
   {
-    label: "laptop-star-light",
     value: "laptop-star-light",
+    label: "laptop-star-light",
     group: "Line Icons",
   },
   {
-    label: "squares-1-light",
     value: "squares-1-light",
+    label: "squares-1-light",
     group: "Line Icons",
   },
   {
-    label: "cubes-light",
     value: "cubes-light",
+    label: "cubes-light",
     group: "Line Icons",
   },
 ] as const;
@@ -151,14 +174,6 @@ export const renderIcon = (
   }
   if (lineIcons.some((icon) => icon.value === value)) {
     return renderLineIcon(value as typeof lineIcons[number]["value"], className);
-    /* const Svg = dynamic(
-      import(`public/icons/line-icons/${value}.svg`)?.then((d) => d.default),
-      {
-        ssr: false,
-      }
-    );
-    // @ts-ignore
-    return Svg ? <Svg className={className} /> : "";*/
   }
   return "";
 };
@@ -183,12 +198,7 @@ export const renderLineIcon = (value: typeof lineIcons[number]["value"], classNa
 };
 
 export const renderHeroIcon = (value: typeof heroIcons[number]["value"], className = "") => {
-  switch (value) {
-    case "ColorSwatchIcon":
-      return <HeroIcon name="ColorSwatchIcon" className={className} />;
-    case "CloudIcon":
-      return <HeroIcon name="CloudIcon" className={className} />;
-  }
+  return <HeroIcon name={value} className={className} outline={false} />;
 };
 
 export const renderTwIcon = (value: typeof twIcons[number]["value"], className = "") => {

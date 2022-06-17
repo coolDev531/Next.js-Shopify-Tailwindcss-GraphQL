@@ -1,46 +1,44 @@
+import { Section } from "_client/layout/section";
 import { BlockHeading } from "_client/sections/block-heading";
 import { renderIcon } from "_sections/utils";
-import { FC } from "react";
+import { FC, Fragment } from "react";
 import { SpecListSection } from "types/sections";
 
 export const SpecList: FC<SpecListSection> = ({ id, blocks, type }) => {
   const count = blocks.filter(({ type }) => type === "list").length;
   return (
-    <>
+    <Section id={id} type={type} container="base" padding="base">
       {blocks.map((block) => {
         return block.type === "heading"
-          ? <BlockHeading key={`heading-${block.id}`} {...block} />
+          ? <BlockHeading key={`heading-${block.id}`} {...block} section={false} />
           : null;
       })}
-      <div className="mx-auto flex max-w-7xl justify-center px-8 pb-12">
-        <div
-          className="grid justify-center gap-8"
-          style={{ gridTemplateColumns: `repeat(${count}, minmax(max-content, 1fr))` }}
-        >
+      <div className="mt-8 flex justify-center">
+        <ul className="grid flex-1 justify-center gap-2 gap-y-1 sm:grid-cols-2 lg:grid-cols-[repeat(3,minmax(0,320px))]">
           {blocks.map((block) => {
             if (block.type !== "list") return null;
 
             return (
-              <ul key={`list-${block.id}`} className="col-span-3 min-w-[200px] md:col-span-1">
+              <Fragment key={`list-${block.id}`}>
                 {[...new Array(6)].map((_, index) => {
                   if (block.settings[`text${index + 1}`]) {
                     return (
                       <li
                         key={`list-${block.id}-${index}`}
-                        className="flex max-w-[240px] items-center gap-3"
+                        className="flex items-center gap-3 overflow-ellipsis whitespace-nowrap px-8"
                       >
-                        {renderIcon(block.settings[`icon${index + 1}`], "h-4 w-4")}
+                        {renderIcon(block.settings[`icon${index + 1}`], "h-4 w-4 min-w-[1rem]")}
                         {block.settings[`text${index + 1}`]}
                       </li>
                     );
                   }
                   return null;
                 })}
-              </ul>
+              </Fragment>
             );
           })}
-        </div>
+        </ul>
       </div>
-    </>
+    </Section>
   );
 };

@@ -17,7 +17,7 @@ const HeroIcon: FC<HeroIconProps> = ({ name, className = "", outline = false }) 
 
 export default HeroIcon;
 
-type IconName =
+export type IconName =
   | "AcademicCapIcon"
   | "AdjustmentsIcon"
   | "AnnotationIcon"
