@@ -799,3 +799,99 @@ export type _Image_liquid = {
   preview_image?: any;
   variants?: any;
 };
+
+export type _Shop_liquid_json = {
+  address: {
+    address1: string;
+    address2: string;
+    city: string;
+    company: string;
+    country: string;
+    country_code: string;
+    name: string;
+    phone: string;
+    province: string;
+    province_code: string;
+    zip: string;
+    first_name?: any;
+    last_name?: any;
+    latitude?: any;
+    longitude?: any;
+  };
+  address_city: string;
+  address_company: string;
+  address_country: string;
+  address_country_upper: string;
+  address_province: string;
+  address_province_code: string;
+  address_street: string;
+  address_summary: string;
+  address_zip: string;
+  "checkout.guest_login": boolean;
+  collections_count: number;
+  currency: string;
+  customer_accounts_enabled: boolean;
+  customer_accounts_optional: boolean;
+  description: string;
+  domain: string;
+  email: string;
+  enabled_payment_types: string[];
+  id: number;
+  money_format: string;
+  money_with_currency_format: string;
+  name: string;
+  password_message: string;
+  permanent_domain: string;
+  phone: string;
+  policies: any[];
+  products_count: number;
+  published_locales: {
+    shop_locale: {
+      enabled: boolean;
+      locale: string;
+      primary: boolean;
+      published: boolean;
+    };
+  }[];
+  secure_url: string;
+  types: string[];
+  url: string;
+  vendors: string[];
+  privacy_policy?: any;
+  refund_policy?: any;
+  shipping_policy?: any;
+  subscription_policy?: any;
+  terms_of_service?: any;
+};
+
+export type _Request_liquid = {
+  design_mode: boolean;
+  host: string;
+  locale: {
+    shop_locale: {
+      enabled: boolean;
+      locale: string;
+      primary: boolean;
+      published: boolean;
+    };
+  };
+  origin: string;
+  page_type: string;
+  path: string;
+};
+
+export type GlobalSettings = {
+  description: string;
+  handle: string;
+  linklists: _Linklist_liquid[];
+  product: _Product_liquid_json;
+  request: Request;
+  settings: ShopifySettings;
+  shop: _Shop_liquid_json;
+  template: string;
+  title: string;
+  article?: _Article_liquid;
+  blog?: _Blog_liquid;
+  collection?: _Collection_liquid;
+  page?: _Page_liquid_json;
+};
