@@ -1,17 +1,29 @@
 import { useTooltipStore } from "_client/stores/tooltip-store";
-import { AppToolTip } from "pages/_app";
-import { FC, PropsWithChildren, useEffect } from "react";
+import { FC, PropsWithChildren, useEffect, useState } from "react";
+import ReactTooltip from "react-tooltip";
+import { useMount } from "react-use";
 
 export const LoadInitialData: FC<PropsWithChildren<any>> = ({ children }) => {
   const [tooltip] = useTooltipStore();
+  const [showTooltip, setShowTooltip] = useState(false);
 
-  console.log({ tooltip });
+  useMount(() => {
+    setShowTooltip(true);
+    window?.parent?.postMessage(
+      {
+        source: "theme-content",
+        topic: "set-iframe",
+        totalHeight: document.body.clientHeight,
+      },
+      "*"
+    );
+  });
 
   return (
     <>
-      {children}{" "}
-      {tooltip
-        ? <AppToolTip
+      {children}
+      {tooltip && showTooltip
+        ? <ReactTooltip
             place="bottom"
             effect="solid"
             wrapper="span"

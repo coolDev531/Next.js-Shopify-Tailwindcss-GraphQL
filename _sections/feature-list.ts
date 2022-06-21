@@ -4,6 +4,7 @@ import { ShopifySection } from "types/shopify";
 export const featureList: ShopifySection = {
   name: "Feature list",
   settings: [],
+  max_blocks: 4,
   blocks: [
     {
       type: "feature",
@@ -24,6 +25,11 @@ export const featureList: ShopifySection = {
           type: "richtext",
           id: "paragraph",
           label: "Paragraph",
+        },
+        {
+          type: "richtext",
+          id: "paragraph_old",
+          label: "Paragraph_old",
         },
       ],
     },

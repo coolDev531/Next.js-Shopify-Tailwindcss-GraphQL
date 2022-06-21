@@ -1,0 +1,54 @@
+<svg version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 44 44"
+     fill="none"
+     class="flex-none">
+  <g filter="url(#hero-feature-1-filter)">
+    <path d="M2 10a8 8 0 018-8h24a8 8 0 018 8v24a8 8 0 01-8 8H10a8 8 0 01-8-8V10z"
+          fill="#1F2937"></path>
+  </g>
+  <path d="M2.75 10A7.25 7.25 0 0110 2.75h24A7.25 7.25 0 0141.25 10v24A7.25 7.25 0 0134 41.25H10A7.25 7.25 0 012.75 34V10z"
+        stroke="#334155"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+  <path d="M29 27.335L32.25 29l-6.603 3.382a8 8 0 01-7.294 0L11.75 29 15 27.335M29 20.336L32.25 22l-6.603 3.382a8 8 0 01-7.294 0L11.75 22 15 20.336"
+        stroke="#475569"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+  <path d="M11.75 15l9.338-4.783a2 2 0 011.824 0L32.25 15l-6.603 3.382a8 8 0 01-7.294 0L11.75 15z"
+        fill="#22D3EE"
+        fill-opacity=".2"
+        stroke="#22D3EE"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+  <defs>
+    <filter id="hero-feature-1-filter"
+            x="2"
+            y="1"
+            width="40"
+            height="41"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0"
+               result="BackgroundImageFix"></feFlood>
+      <feBlend in="SourceGraphic"
+               in2="BackgroundImageFix"
+               result="shape"></feBlend>
+      <feColorMatrix in="SourceAlpha"
+                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                     result="hardAlpha"></feColorMatrix>
+      <feOffset dy="-1"></feOffset>
+      <feGaussianBlur stdDeviation=".5"></feGaussianBlur>
+      <feComposite in2="hardAlpha"
+                   operator="arithmetic"
+                   k2="-1"
+                   k3="1"></feComposite>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"></feColorMatrix>
+      <feBlend in2="shape"
+               result="effect1_innerShadow"></feBlend>
+    </filter>
+  </defs>
+</svg>

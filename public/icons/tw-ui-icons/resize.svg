@@ -1,0 +1,62 @@
+<svg version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     aria-hidden="true"
+     viewBox="0 0 44 44"
+     fill="none"
+     class="flex-none">
+  <g filter="url(#hero-feature-3-filter)">
+    <path d="M2 10a8 8 0 018-8h24a8 8 0 018 8v24a8 8 0 01-8 8H10a8 8 0 01-8-8V10z"
+          fill="#1F2937"></path>
+  </g>
+  <path d="M2.75 10A7.25 7.25 0 0110 2.75h24A7.25 7.25 0 0141.25 10v24A7.25 7.25 0 0134 41.25H10A7.25 7.25 0 012.75 34V10z"
+        stroke="#334155"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+  <path d="M9.75 23.25v-1.5a4 4 0 014-4h8.5a4 4 0 014 4v8.5a4 4 0 01-4 4h-1.5"
+        stroke="#475569"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+  <path d="M29.75 34.25h.5a4 4 0 004-4v-18.5a2 2 0 00-2-2h-18.5a4 4 0 00-4 4v.5"
+        stroke="#475569"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+  <path d="M33.5 10.5l-23 23"
+        stroke="#22D3EE"
+        stroke-width="1.5"
+        stroke-linecap="round"></path>
+  <path d="M27.75 9.75h4.5a2 2 0 012 2v4.5M16.25 34.25h-4.5a2 2 0 01-2-2v-4.5"
+        stroke="#22D3EE"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+  <defs>
+    <filter id="hero-feature-3-filter"
+            x="2"
+            y="1"
+            width="40"
+            height="41"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0"
+               result="BackgroundImageFix"></feFlood>
+      <feBlend in="SourceGraphic"
+               in2="BackgroundImageFix"
+               result="shape"></feBlend>
+      <feColorMatrix in="SourceAlpha"
+                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                     result="hardAlpha"></feColorMatrix>
+      <feOffset dy="-1"></feOffset>
+      <feGaussianBlur stdDeviation=".5"></feGaussianBlur>
+      <feComposite in2="hardAlpha"
+                   operator="arithmetic"
+                   k2="-1"
+                   k3="1"></feComposite>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"></feColorMatrix>
+      <feBlend in2="shape"
+               result="effect1_innerShadow"></feBlend>
+    </filter>
+  </defs>
+</svg>

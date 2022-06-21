@@ -9,12 +9,15 @@
   {% include "_global-content" %}
   {% section 'header' %}
 
-  {{ content_for_layout }}
+  <div style="opacity: 0">
+    {{ content_for_layout }}
+  </div>
 
   {% section 'footer' %}
 
   {% if request.design_mode %}
-    <iframe id="theme-editor" style="width: 100%; height: 100vh; overflow: hidden;"
+    <iframe id="theme-editor"
+            style="width: 100%; height: 100%; overflow: hidden; position: absolute; top: 0; left:0; right: 0; bottom: 0; z-index: 10;"
             src="http://localhost:3000{{ request.path }}"
             frameborder="0"></iframe>
 
@@ -25,7 +28,29 @@
       fetch('http://localhost:3000{{ request.path }}').then((e) => {
         console.log(e);
       }).catch(err => {
-          themeEditor.setAttribute('src','https://theme-development.vercel.app{{ request.path }}')
+        themeEditor.setAttribute('src', 'https://theme-development.vercel.app{{ request.path }}');
+      });
+
+      window.addEventListener('message', (e) => {
+        if (e?.data?.source === "theme-content") {
+          switch (e.data.topic) {
+            case "resize" : {
+              const themeEditor = document.getElementById('theme-editor');
+              themeEditor.style.height = `${e.data.totalHeight}px`;
+              e.data.sections.forEach(({ id, height }) => {
+                const sectionElement = document.getElementById(`shopify-section-${id}`);
+                if (sectionElement) {
+                  sectionElement.style.height = `${height}px`;
+                }
+              });
+              break;
+            }
+            case "set-iframe": {
+              const themeEditor = document.getElementById('theme-editor');
+              themeEditor.style.height = `${e.data.totalHeight}px`;
+            }
+          }
+        }
       });
 
       const handleEvents = (e) => {
@@ -45,7 +70,7 @@
               topic: e.type,
               global,
               sections,
-              detail: e.detail
+              detail: e.detail,
             },
             "*",
           );

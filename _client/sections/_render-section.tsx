@@ -69,7 +69,7 @@ export const renderSection = (section: Sections) => {
         </section>
       );
     case "image-gallery":
-      return <ImageGallery {...section} />;
+      return <ImageGallery key={section.id} {...section} />;
     case "blockquote":
       return <BlockBlockquote key={section.id} {...section} />;
     case "spec-list":

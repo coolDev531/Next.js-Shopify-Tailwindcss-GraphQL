@@ -1,5 +1,4 @@
 import HeroIcon, { IconName } from "_client/dynamic-hero-icon";
-import dynamic from "next/dynamic";
 import { ShopifySelect } from "types/shopify";
 import Server2 from "public/icons/line-icons/server-2.svg";
 import Server8 from "public/icons/line-icons/server-8.svg";
@@ -20,6 +19,21 @@ import Simple from "public/icons/tw-icons/simple.svg";
 import Sizing from "public/icons/tw-icons/sizing.svg";
 import Transforms from "public/icons/tw-icons/transforms.svg";
 import Typography from "public/icons/tw-icons/typography.svg";
+
+import CalendarLight from "public/icons/tw-ui-icons/calendar-light.svg";
+import ChatLight from "public/icons/tw-ui-icons/chat-light.svg";
+import Code from "public/icons/tw-ui-icons/code.svg";
+import DeliveryLight from "public/icons/tw-ui-icons/delivery-light.svg";
+import ExchangeSimple from "public/icons/tw-ui-icons/exchange-simple.svg";
+import FastCheckoutLight from "public/icons/tw-ui-icons/fast-checkout-light.svg";
+import GiftCardLight from "public/icons/tw-ui-icons/gift-card-light.svg";
+import PlanetLight from "public/icons/tw-ui-icons/planet-light.svg";
+import Resize from "public/icons/tw-ui-icons/resize.svg";
+import ReturnsLight from "public/icons/tw-ui-icons/returns-light.svg";
+import ShippingSimple from "public/icons/tw-ui-icons/shipping-simple.svg";
+import Stack from "public/icons/tw-ui-icons/stack.svg";
+import WarrantyLight from "public/icons/tw-ui-icons/warranty-light.svg";
+import WarrantySimple from "public/icons/tw-ui-icons/warranty-simple.svg";
 
 export const heroIconItems: IconName[] = [
   "BadgeCheckIcon",
@@ -115,6 +129,79 @@ export const twIcons = [
   },
 ] as const;
 
+export const twUiIcons = [
+  {
+    value: "CalendarLight",
+    label: "CalendarLight",
+    group: "TW UI Icons",
+  },
+  {
+    value: "ChatLight",
+    label: "ChatLight",
+    group: "TW UI Icons",
+  },
+  {
+    value: "Code",
+    label: "Code",
+    group: "TW UI Icons",
+  },
+  {
+    value: "DeliveryLight",
+    label: "DeliveryLight",
+    group: "TW UI Icons",
+  },
+  {
+    value: "ExchangeSimple",
+    label: "ExchangeSimple",
+    group: "TW UI Icons",
+  },
+  {
+    value: "FastCheckoutLight",
+    label: "FastCheckoutLight",
+    group: "TW UI Icons",
+  },
+  {
+    value: "GiftCardLight",
+    label: "GiftCardLight",
+    group: "TW UI Icons",
+  },
+  {
+    value: "PlanetLight",
+    label: "PlanetLight",
+    group: "TW UI Icons",
+  },
+  {
+    value: "Resize",
+    label: "Resize",
+    group: "TW UI Icons",
+  },
+  {
+    value: "ReturnsLight",
+    label: "ReturnsLight",
+    group: "TW UI Icons",
+  },
+  {
+    value: "ShippingSimple",
+    label: "ShippingSimple",
+    group: "TW UI Icons",
+  },
+  {
+    value: "Stack",
+    label: "Stack",
+    group: "TW UI Icons",
+  },
+  {
+    value: "WarrantyLight",
+    label: "WarrantyLight",
+    group: "TW UI Icons",
+  },
+  {
+    value: "WarrantySimple",
+    label: "WarrantySimple",
+    group: "TW UI Icons",
+  },
+] as const;
+
 export const lineIcons = [
   {
     value: "server-2",
@@ -156,6 +243,7 @@ export const lineIcons = [
 export const icons = [
   ...(heroIcons as unknown as ShopifySelect["options"]),
   ...(twIcons as unknown as ShopifySelect["options"]),
+  ...(twUiIcons as unknown as ShopifySelect["options"]),
   ...(lineIcons as unknown as ShopifySelect["options"]),
 ];
 
@@ -163,6 +251,7 @@ export const renderIcon = (
   value:
     | typeof heroIcons[number]["value"]
     | typeof twIcons[number]["value"]
+    | typeof twUiIcons[number]["value"]
     | typeof lineIcons[number]["value"],
   className = ""
 ) => {
@@ -171,6 +260,9 @@ export const renderIcon = (
   }
   if (twIcons.some((icon) => icon.value === value)) {
     return renderTwIcon(value as typeof twIcons[number]["value"], className);
+  }
+  if (twUiIcons.some((icon) => icon.value === value)) {
+    return renderTwUiIcon(value as typeof twUiIcons[number]["value"], className);
   }
   if (lineIcons.some((icon) => icon.value === value)) {
     return renderLineIcon(value as typeof lineIcons[number]["value"], className);
@@ -225,5 +317,38 @@ export const renderTwIcon = (value: typeof twIcons[number]["value"], className =
       return <Transforms className={className} />;
     case "typography":
       return <Typography className={className} />;
+  }
+};
+
+export const renderTwUiIcon = (value: typeof twUiIcons[number]["value"], className = "") => {
+  switch (value) {
+    case "CalendarLight":
+      return <CalendarLight className={className} />;
+    case "ChatLight":
+      return <ChatLight className={className} />;
+    case "Code":
+      return <Code className={className} />;
+    case "DeliveryLight":
+      return <DeliveryLight className={className} />;
+    case "ExchangeSimple":
+      return <ExchangeSimple className={className} />;
+    case "FastCheckoutLight":
+      return <FastCheckoutLight className={className} />;
+    case "GiftCardLight":
+      return <GiftCardLight className={className} />;
+    case "PlanetLight":
+      return <PlanetLight className={className} />;
+    case "Resize":
+      return <Resize className={className} />;
+    case "ReturnsLight":
+      return <ReturnsLight className={className} />;
+    case "ShippingSimple":
+      return <ShippingSimple className={className} />;
+    case "Stack":
+      return <Stack className={className} />;
+    case "WarrantyLight":
+      return <WarrantyLight className={className} />;
+    case "WarrantySimple":
+      return <WarrantySimple className={className} />;
   }
 };

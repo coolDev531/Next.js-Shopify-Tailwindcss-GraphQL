@@ -1,4 +1,5 @@
 import { Sections } from "types/sections";
+import { GlobalSettings } from "types/shopify";
 import { JSONParse } from "utils/json-parse";
 import { createRouter } from "_server/settings/create-router";
 import axios from "axios";
@@ -16,7 +17,9 @@ export const fetchRouter = createRouter().query("shopify-content", {
       });
 
       const document = new JSDOM(data.data);
-      const global = JSONParse(document.window.document.querySelector("[data-global]").textContent);
+      const global: GlobalSettings = JSONParse(
+        document.window.document.querySelector("[data-global]").textContent
+      );
       const sections: Sections[] = [];
       document.window.document.querySelectorAll("[data-section]").forEach((scriptElement) => {
         sections.push(JSONParse(scriptElement.textContent));
@@ -27,7 +30,7 @@ export const fetchRouter = createRouter().query("shopify-content", {
       if (err.response.status === 404 && input === "/404") {
         const { data } = err.response;
         const document = new JSDOM(data);
-        const global = JSONParse(
+        const global: GlobalSettings = JSONParse(
           document.window.document.querySelector("[data-global]").textContent
         );
         const sections: Sections[] = [];
