@@ -1,13 +1,12 @@
 import { Section } from "_client/layout/section";
 import { useTooltipStore } from "_client/stores/tooltip-store";
 import Image from "next/image";
-import { AppToolTip } from "pages/_app";
 import { FC } from "react";
-import ReactTooltip from "react-tooltip";
 import { LogoBannerSection } from "types/sections";
 
 export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }) => {
   const [tooltip, setTooltip] = useTooltipStore();
+
   return (
     <Section id={id} type={type} container="xl">
       <div className="-mt-12 mb-16">

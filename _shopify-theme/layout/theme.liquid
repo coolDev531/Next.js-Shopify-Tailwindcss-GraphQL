@@ -79,9 +79,12 @@
       };
       document.addEventListener('shopify:inspector:activate', (e) => {
         handleEvents(e);
+        const themeEditor = document.getElementById('theme-editor');
+        themeEditor.style.zIndex = -10
       });
       document.addEventListener('shopify:inspector:deactivate', (e) => {
         handleEvents(e);
+        themeEditor.style.zIndex = 10
       });
       document.addEventListener('shopify:section:load', (e) => {
         handleEvents(e);

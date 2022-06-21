@@ -1,3 +1,4 @@
+import { Section } from "_client/layout/section";
 import { BlockHeading } from "_client/sections/block-heading";
 import Image from "next/image";
 import { FC } from "react";
@@ -7,10 +8,10 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, type }
   const featureCount = blocks.filter(({ type }) => type === "feature").length;
 
   return (
-    <>
+    <Section id={id} type={type} container="xl" padding="base">
       {blocks.map((block) => {
         return block.type === "heading"
-          ? <BlockHeading key={`heading-${block.id}`} {...block} />
+          ? <BlockHeading key={`heading-${block.id}`} {...block} section={false} />
           : null;
       })}
       <div className="scrollbar-none overflow-x-scroll">
@@ -52,6 +53,6 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, type }
           </div>
         </div>
       </div>
-    </>
+    </Section>
   );
 };
