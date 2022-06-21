@@ -15,9 +15,9 @@ export const FeatureList: FC<FeatureListSection> = ({ id, blocks, type }) => {
           className={clsx(
             "grid justify-center gap-8 gap-y-12",
             {
-              2: "lg:grid-cols-2",
+              2: "md:grid-cols-2",
               3: "lg:grid-cols-3",
-              4: "lg:grid-cols-2 xl:grid-cols-4",
+              4: "md:grid-cols-2 xl:grid-cols-4",
             }[blocks.length]
           )}
         >
@@ -33,10 +33,12 @@ export const FeatureList: FC<FeatureListSection> = ({ id, blocks, type }) => {
                       <figure className="mb-4 flex justify-center rounded-md bg-sky-500 p-2 text-white shadow-lg group-hfa:[--svg-active-opacity:0.4] group-hfa:[--svg-active-fill:currentColor]">
                         {renderIcon(block.settings.icon, "w-9 h-9")}
                       </figure>
-                      <Heading heading="h3">{block.settings.title}</Heading>
+                      <Heading heading="h3">
+                        <span className="tracking-tight">{block.settings.title}</span>
+                      </Heading>
                     </header>
                     <main>
-                      <Paragraph>{block.settings.paragraph}</Paragraph>
+                      <Paragraph size="sm">{block.settings.paragraph}</Paragraph>
                     </main>
                   </section>
                 );
