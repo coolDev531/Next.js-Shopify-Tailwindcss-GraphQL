@@ -3,16 +3,18 @@ import { ShopifySection } from "types/shopify";
 
 export const featureCarousel: ShopifySection = {
   name: "Feature carousel",
-  settings: [],
+  settings: [
+    ...heading.settings,
+    {
+      type: "product_list",
+      id: "features",
+      label: "Feature Items",
+    },
+  ],
   blocks: [
     {
-      type: "heading",
-      name: "Heading",
-      settings: heading.settings,
-    },
-    {
-      type: "feature",
-      name: "Feature",
+      type: "manual-feature",
+      name: "Manual Feature",
       settings: [
         {
           type: "image_picker",

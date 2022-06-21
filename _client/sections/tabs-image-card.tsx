@@ -23,7 +23,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
             </div>
           : null;
       })}
-      <div className="scrollbar-none grid auto-cols-min grid-flow-col-dense gap-6 overflow-x-scroll">
+      <div className="scrollbar-none -m-1 -mx-1 grid auto-cols-min grid-flow-col-dense gap-6 overflow-x-scroll p-1">
         {blocks.map((block) => {
           if (block.type !== "tab") return null;
 

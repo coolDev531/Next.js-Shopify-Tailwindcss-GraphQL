@@ -11,7 +11,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, blocks, type }) => {
 
   return (
     <Section id={id} type={type} padding="xl">
-      <div className="relative flex justify-center">
+      <div className="relative -mx-8 flex justify-center overflow-hidden">
         <figure
           className="absolute left-1/2 -z-20 -ml-[50vw] h-full w-screen bg-top bg-no-repeat"
           style={{

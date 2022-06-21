@@ -51,8 +51,8 @@ input[type="number"] {
 * {
   &:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 2px rgb(43, 164, 231);
-    @apply rounded-sm
+    @apply ring-2 ring-offset-2 ring-sky-400;
+    //@apply rounded-sm
   }
 }
 

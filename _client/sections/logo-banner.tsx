@@ -15,7 +15,7 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
             <h3 className="mb-1 font-semibold text-slate-700">{settings.title}</h3>
           </header>
           <main
-            className="relative flex sm:left-1/2 sm:-ml-[50vw] sm:w-screen sm:pl-[max(32px,calc((100vw-80rem)/2+32px))]"
+            className="relative flex overflow-hidden sm:left-1/2 sm:-ml-[50vw] sm:w-screen sm:pl-[max(32px,calc((100vw-80rem)/2+32px))]"
             onMouseEnter={() => {
               setTooltip(true);
             }}

@@ -14,9 +14,9 @@
       "variants": {{ value.variants | json }},
       "width": {{ value.width | json }}
       }{%- unless forloop.last -%},{%- endunless -%}
-    {%- elsif value.url contains "/collections/" -%}
+    {%- elsif value.url contains "/collections/" and value.id != blank -%}
       "{{ id }}": {%- include '_map_collection', input_collection: value -%}{%- unless forloop.last -%},{%- endunless -%}
-    {%- elsif value.url contains "/products/" -%}
+    {%- elsif value.url contains "/products/" and value.id != blank -%}
       "{{ id }}": {%- include '_map_product', input_product: value -%}{%- unless forloop.last -%},{%- endunless -%}
     {%- elsif value.count -%}
       "{{ id }}":[
@@ -28,7 +28,7 @@
         {%- endif -%}
       {%- endfor -%}
       ]{%- unless forloop.last -%},{%- endunless -%}
-    {%- elsif value.url contains "/blogs/" and value.articles_count != blank -%}
+    {%- elsif value.url contains "/blogs/" and value.articles_count != blank and value.id != blank -%}
       "{{ id }}": {
       "all_tags": {{ value.all_tags | json }},
       "articles": [{%- for article in value.articles -%}{%- include '_map_article', input_article: article -%}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}],
@@ -42,9 +42,9 @@
       "title": {{ value.title | json }},
       "url": {{ value.url | json }}
       }{%- unless forloop.last -%},{%- endunless -%}
-    {%- elsif value.url contains "/blogs/" and value.author -%}
+    {%- elsif value.url contains "/blogs/" and value.author and value.id != blank -%}
       "{{ id }}": {%- include '_map_article', input_article: value -%}{%- unless forloop.last -%},{%- endunless -%}
-    {%- elsif value.url contains "/pages/" -%}
+    {%- elsif value.url contains "/pages/" and value.id != blank -%}
       "{{ id }}": {%- include '_map_page', input_page: value -%}{%- unless forloop.last -%},{%- endunless -%}
     {%- elsif value.levels -%}
       "{{ id }}": {%- include '_map_linklist', input_linklist: value -%}{%- unless forloop.last -%},{%- endunless -%}

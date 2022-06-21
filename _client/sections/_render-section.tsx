@@ -57,11 +57,7 @@ export const renderSection = (section: Sections) => {
         </section>
       );
     case "feature-carousel":
-      return (
-        <section key={section.id} className={section.type} id={section.id}>
-          <FeatureCarousel {...section} />
-        </section>
-      );
+      return <FeatureCarousel key={section.id} {...section} />;
     case "feature-list":
       return (
         <section key={section.id} className={section.type} id={section.id}>

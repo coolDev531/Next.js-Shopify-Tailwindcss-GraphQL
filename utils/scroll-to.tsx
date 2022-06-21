@@ -17,10 +17,13 @@ const easeInOutQuad = ({ currentTime, start, change, duration }: EaseInOutQuadOp
   return (-change / 2) * (newCurrentTime * (newCurrentTime - 2) - 1) + start;
 };
 
-const scrollTo = (duration: number, to: number, container: HTMLElement | Window = window): void => {
+export const scrollToY = (
+  duration: number,
+  to: number,
+  container: HTMLElement | Window = window
+): void => {
   const start = container instanceof HTMLElement ? container.scrollTop : container.scrollY;
-  console.log({ start });
-  console.log({ to });
+
   const change = to - start;
   const startDate = new Date().getTime();
 
@@ -44,4 +47,37 @@ const scrollTo = (duration: number, to: number, container: HTMLElement | Window 
   };
   animateScroll();
 };
-export default scrollTo;
+
+export const scrollToX = (
+  duration: number,
+  to: number,
+  container: HTMLElement | Window = window,
+  callback: () => void = () => {}
+): void => {
+  const start = container instanceof HTMLElement ? container.scrollLeft : container.scrollX;
+
+  const change = to - start;
+  const startDate = new Date().getTime();
+
+  const animateScroll = () => {
+    const currentDate = new Date().getTime();
+    const currentTime = currentDate - startDate;
+
+    container.scrollTo(
+      easeInOutQuad({
+        currentTime,
+        start,
+        change,
+        duration,
+      }),
+      0
+    );
+
+    if (currentTime < duration) {
+      requestAnimationFrame(animateScroll);
+    } else {
+      callback();
+    }
+  };
+  animateScroll();
+};

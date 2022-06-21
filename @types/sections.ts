@@ -1,4 +1,4 @@
-import { _Image_liquid, _Linklist_liquid, _Product_liquid, _Collection_liquid, _Page_liquid, _Blog_liquid, _Article_liquid, _Color_liquid, _Font_liquid } from "types/shopify";
+import { _Product_liquid, _Image_liquid, _Linklist_liquid, _Collection_liquid, _Page_liquid, _Blog_liquid, _Article_liquid, _Color_liquid, _Font_liquid } from "types/shopify";
 
 export type BlockquoteSection = {
   id: string;
@@ -18,46 +18,43 @@ export type BlockquoteSection = {
 export type FeatureCarouselSection = {
   blocks: FeatureCarouselBlocks[];
   id: string;
+  settings: {
+    /** Input type: select */
+    position: "left" | "center" | "right";
+    /** Input type: text */
+    cta1?: string;
+    /** Input type: url */
+    cta1_link?: string;
+    /** Input type: text */
+    cta2?: string;
+    /** Input type: url */
+    cta2_link?: string;
+    /** Input type: product_list */
+    features?: _Product_liquid[];
+    /** Input type: richtext */
+    paragraph?: `<p${string}</p>`;
+    /** Input type: text */
+    pre_title?: string;
+    /** Input type: text */
+    title?: string;
+  };
   type: "feature-carousel";
 };
 
-export type FeatureCarouselBlocks =
-  | {
-      id: string;
-      settings: {
-        /** Input type: select */
-        position: "left" | "center" | "right";
-        /** Input type: text */
-        cta1?: string;
-        /** Input type: url */
-        cta1_link?: string;
-        /** Input type: text */
-        cta2?: string;
-        /** Input type: url */
-        cta2_link?: string;
-        /** Input type: richtext */
-        paragraph?: `<p${string}</p>`;
-        /** Input type: text */
-        pre_title?: string;
-        /** Input type: text */
-        title?: string;
-      };
-      type: "heading";
-    }
-  | {
-      id: string;
-      settings: {
-        /** Input type: image_picker */
-        image?: _Image_liquid;
-        /** Input type: url */
-        link?: string;
-        /** Input type: textarea */
-        paragraph?: string;
-        /** Input type: text */
-        title?: string;
-      };
-      type: "feature";
-    };
+export type FeatureCarouselBlocks = {
+  id: string;
+  settings: {
+    /** Input type: image_picker */
+    image?: _Image_liquid;
+    /** Input type: url */
+    link?: string;
+    /** Input type: textarea */
+    paragraph?: string;
+    /** Input type: text */
+    title?: string;
+  };
+  type: "manual-feature";
+};
 
 export type FeatureListSection = {
   blocks: FeatureListBlocks[];
