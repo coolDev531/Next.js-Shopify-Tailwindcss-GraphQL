@@ -3,16 +3,33 @@ import { ShopifySection } from "types/shopify";
 
 export const imageCarousel: ShopifySection = {
   name: "Image carousel",
-  settings: [],
-  blocks: [
+  settings: [
+    ...heading.settings,
     {
-      type: "heading",
-      name: "Heading",
-      settings: heading.settings,
+      type: "blog",
+      id: "images",
+      label: "Images",
     },
     {
-      type: "image",
-      name: "image",
+      type: "checkbox",
+      id: "animate",
+      label: "Show slide animation",
+    },
+    {
+      type: "range",
+      id: "animation_duration",
+      label: "Animation duration",
+      default: 20,
+      min: 5,
+      max: 100,
+      step: 1,
+      unit: "s",
+    },
+  ],
+  blocks: [
+    {
+      type: "manual-image",
+      name: "Image",
       settings: [
         {
           type: "image_picker",
@@ -27,7 +44,6 @@ export const imageCarousel: ShopifySection = {
       ],
     },
   ],
-
   presets: [
     {
       name: "Image carousel",

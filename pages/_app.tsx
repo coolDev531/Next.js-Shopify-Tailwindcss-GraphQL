@@ -63,7 +63,7 @@ const App: FC<AppProps> = ({ pageProps, Component }) => {
             openGraph={SEO.openGraph}
           />
 
-          <main className="min-h-[calc(100vh-300px)]">
+          <main className="min-h-[calc(100vh-300px)] overflow-hidden">
             <Component {...pageProps} />
           </main>
         </ThemeProvider>

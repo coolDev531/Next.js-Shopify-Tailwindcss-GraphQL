@@ -449,33 +449,37 @@
         "7d9184d1-b917-43ab-a84e-dbce8b2d3989": {
           "type": "feature",
           "settings": {
-            "icon": "ColorSwatchIcon",
+            "icon": "playful",
             "title": "Website Analysis",
-            "paragraph": "<p>Our team performs thorough site analysis to determine your website’s conversion opportunities, threats, weaknesses, and strengths. We run SEO audits, test your site speed and functionality, and analyse your site traffic. These methods allow us to improve your site usability and increase your site engagement and conversions.<\/p>"
+            "paragraph": "<p>In depth testing for performance for key metrics such as speed, traffic, search engine optimization (SEO), and user experience.<\/p>",
+            "paragraph_old": "<p>Our team performs thorough site analysis to determine your website’s conversion opportunities, threats, weaknesses, and strengths. We run SEO audits, test your site speed and functionality, and analyse your site traffic. These methods allow us to improve your site usability and increase your site engagement and conversions.<\/p>"
           }
         },
         "335efa5a-6e14-4f5f-9f46-3faad15cb6a8": {
           "type": "feature",
           "settings": {
-            "icon": "ColorSwatchIcon",
+            "icon": "filters",
             "title": "Conversion Rate Optimization",
-            "paragraph": "<p>Our team focuses on optimizing your sites speed by eliminating unnecessary form fields, placing clear calls-to-action and simplifying your page navigations. We also perform A\/B testing to ensure all aspects of your website are optimized for conversion.<\/p>"
+            "paragraph": "<p>From A\/B testing to UX analysis and design, we ensure all aspects of your website are optimized for conversion.<\/p>",
+            "paragraph_old": "<p>Our team focuses on optimizing your sites speed by eliminating unnecessary form fields, placing clear calls-to-action and simplifying your page navigations. We also perform A\/B testing to ensure all aspects of your website are optimized for conversion.<\/p>"
           }
         },
         "976c1d3a-29d8-43f3-8c94-e23b9461c461": {
           "type": "feature",
           "settings": {
-            "icon": "CloudIcon",
-            "title": "Website Maintenance",
-            "paragraph": "<p>Regular site maintenance is crucial to ensure<br\/>your website is running at full capacity. We conduct scheduled site check-ups<br\/>to determine your website's key aspects that need improvement. Using the<br\/>analytics results, we develop strategies to enhance your site security, boost<br\/>your traffic and optimize your page experience.<\/p>"
+            "icon": "transforms",
+            "title": "Preventative Maintenance",
+            "paragraph": "<p>Regular site maintenance is crucial to ensure your site is running at its optimum. We also do scheduled site check-ups with backups.<\/p>",
+            "paragraph_old": "<p>Regular site maintenance is crucial to ensure<br\/>your website is running at full capacity. We conduct scheduled site check-ups<br\/>to determine your website's key aspects that need improvement. Using the<br\/>analytics results, we develop strategies to enhance your site security, boost<br\/>your traffic and optimize your page experience.<\/p>"
           }
         },
         "bf211802-1d16-4343-b21c-1a6d7af721c0": {
           "type": "feature",
           "settings": {
-            "icon": "ColorSwatchIcon",
-            "title": "Customer Focus & Communication",
-            "paragraph": "<p>We focus on developing customized processes to fit your needs. We understand that each client is different and work in different ways. We take the time to regularly communicate to our clients keeping them updating on our processes and encourage feedback. For the convenience of our clients, our meetings\/communications are done via email, whatsapp or video conferencing.<\/p>"
+            "icon": "typography",
+            "title": "Project Communication",
+            "paragraph": "<p>We take the time to regularly communicate to our clients keeping them updating on our processes and encourage feedback. <\/p>",
+            "paragraph_old": "<p>We focus on developing customized processes to fit your needs. We understand that each client is different and work in different ways. We take the time to regularly communicate to our clients keeping them updating on our processes and encourage feedback. For the convenience of our clients, our meetings\/communications are done via email, whatsapp or video conferencing.<\/p>"
           }
         }
       },
@@ -490,75 +494,22 @@
     },
     "16543302228e17b41c": {
       "type": "feature-carousel",
-      "blocks": {
-        "72327450-7de3-4242-ad98-b6e0caffde82": {
-          "type": "heading",
-          "settings": {
-            "pre_title": "asdasd",
-            "title": "asdasdasd",
-            "paragraph": "<p>asdasda<\/p>",
-            "cta1": "as",
-            "cta1_link": "#",
-            "cta2": "",
-            "cta2_link": "",
-            "position": "left"
-          }
-        },
-        "b53a2b98-fe42-4f4d-9189-db1287866b3c": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/delicious-plate-of-pepperoni-pizza.jpg",
-            "title": "asdasdasd",
-            "paragraph": "asdasdasd",
-            "link": ""
-          }
-        },
-        "49325a4d-a438-4a41-b019-5dac2a0edd8b": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/person-cuts-into-plate-of-pasta.jpg",
-            "title": "123123123123",
-            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consectetur culpa deserunt laudantium molestias porro praesentium sapiente veniam.",
-            "link": ""
-          }
-        },
-        "61e4b795-9e17-4e8d-8f47-03b21ba236f1": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/two-red-cocktails-on-a-tray.jpg",
-            "title": "asd213sda",
-            "paragraph": "asdasdasdasd",
-            "link": ""
-          }
-        },
-        "6a176d7b-8529-43c8-bfd0-fefba7e11618": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/camera-looks-down-on-wooden-table-with-two-bao-buns.jpg",
-            "title": "dasd",
-            "paragraph": "asdasdas",
-            "link": ""
-          }
-        },
-        "ad35f5fe-5f16-4dcc-9c81-1ab8f007450a": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "title": "312312",
-            "paragraph": "12312312",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "72327450-7de3-4242-ad98-b6e0caffde82",
-        "b53a2b98-fe42-4f4d-9189-db1287866b3c",
-        "49325a4d-a438-4a41-b019-5dac2a0edd8b",
-        "61e4b795-9e17-4e8d-8f47-03b21ba236f1",
-        "6a176d7b-8529-43c8-bfd0-fefba7e11618",
-        "ad35f5fe-5f16-4dcc-9c81-1ab8f007450a"
-      ],
       "settings": {
+        "pre_title": "Customize",
+        "title": "We offer a large range of unique customizations and add ons",
+        "paragraph": "",
+        "cta1": "See all",
+        "cta1_link": "shopify:\/\/pages\/shopify-sites",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "left",
+        "features": [
+          "shopify-customizations",
+          "shopify-full-sites",
+          "shopify-integration",
+          "shopify-seo-packages",
+          "shopify-website-maintenance"
+        ]
       }
     },
     "1654332872499b00d2": {

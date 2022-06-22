@@ -39,13 +39,11 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
         <BlockHeading
           key={`heading-${id}`}
           section={false}
-          id=""
           settings={{ position, cta1, cta1_link, cta2, cta2_link, paragraph, pre_title, title }}
-          type="heading"
         />
         <div className="relative left-1/2 -ml-[50vw] w-screen">
           <div
-            className="scrollbar-none -my-2 grid snap-x snap-mandatory scroll-pl-[max(2rem,calc((100vw-80rem)/2+2rem))] auto-cols-min grid-flow-col-dense gap-6 overflow-x-scroll scroll-smooth py-2 pr-[max(2rem,min(calc((100vw-80rem)/2+80rem-360px-2rem),calc(100vw-360px-2rem+4px)))] pl-[max(2rem,calc((100vw-80rem)/2+2rem))]"
+            className="scrollbar-none -my-2 grid snap-x snap-mandatory scroll-pl-[max(1rem,calc((100vw-80rem)/2+1rem))] auto-cols-min grid-flow-col-dense gap-6 overflow-x-scroll scroll-smooth py-2 pr-[max(1rem,min(calc((100vw-80rem)/2+80rem-360px-1rem),calc(100vw-360px-1rem+4px)))] pl-[max(1rem,calc((100vw-80rem)/2+1rem))] md:scroll-pl-[max(2rem,calc((100vw-80rem)/2+2rem))] md:pr-[max(2rem,min(calc((100vw-80rem)/2+80rem-360px-2rem),calc(100vw-360px-2rem+4px)))] md:pl-[max(2rem,calc((100vw-80rem)/2+2rem))]"
             onScroll={handleScrollEvent}
             ref={scrollContainerRef}
           >
@@ -54,7 +52,7 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
                 <Link
                   href={product.url}
                   key={`feature-${id}-${product.id}`}
-                  className="snap-star group f:ring-2 f:ring-sky-400 f:ring-offset-2"
+                  className="group snap-start f:ring-2 f:ring-sky-400 f:ring-offset-2"
                 >
                   <figure className="relative mb-4 aspect-1 w-[360px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
                     {product.featured_media && (

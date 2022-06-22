@@ -9,6 +9,14 @@
   "created_at": "{{ input_article.created_at | date: "%Y-%m-%dT%H:%M:%S%z" }}",
   "excerpt": {{ input_article.excerpt | json }},
   "excerpt_or_content": {{ input_article.excerpt_or_content | json }},
+  "featured_media": {% if input_article.image %}{
+    "aspect_ratio": {{ input_article.image.aspect_ratio | json }},
+    "height": {{ input_article.image.height | json }},
+    "id": {{ input_article.image.id | json }},
+    "src": {{ input_article.image.src | json }},
+    "width": {{ input_article.image.width | json }},
+    "alt": {{ input_article.image.alt | json }}
+  }{% else %}null{% endif %},
   "handle": {{ input_article.handle | json }},
   "id": {{ input_article.id | json }},
   "image": {{ input_article.image | json }},

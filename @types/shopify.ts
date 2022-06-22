@@ -350,6 +350,7 @@ export type _Article_liquid = {
   created_at: string;
   excerpt: string;
   excerpt_or_content: string;
+  featured_media: Omit<_Media_liquid, "media_type" | "position" | "preview_image">;
   handle: string;
   id: number;
   metafields: _Metafield_liquid[];

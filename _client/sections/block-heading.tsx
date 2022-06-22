@@ -8,7 +8,7 @@ import clsx from "clsx";
 import { FC } from "react";
 import { HeadingSection } from "types/sections";
 
-export const BlockHeading: FC<HeadingSection & { section?: boolean }> = ({
+export const BlockHeading: FC<PartialBy<HeadingSection, "type" | "id"> & { section?: boolean }> = ({
   id,
   settings,
   type,
