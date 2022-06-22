@@ -54,7 +54,6 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
               })}
             {blocks.map((block) => {
               if (block.type !== "manual-image") return null;
-
               return (
                 <Link
                   tabIndex={-1}
