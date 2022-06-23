@@ -1,5 +1,5 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
-import { useShopifyData } from "_client/hooks/use-shopify-data";
+import { useInitShopifyData } from "_client/hooks/use-shopify-data";
 import { renderSection } from "_client/sections/_render-section";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
 import { GetStaticPropsContext, InferGetStaticPropsType } from "next";
@@ -9,7 +9,9 @@ import { Sections } from "types/sections";
 type IndexProps = {};
 
 export const Index: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) => {
-  const { sections, global } = useShopifyData<typeof props.global, typeof props.sections>(props);
+  const { sections, global } = useInitShopifyData<typeof props.global, typeof props.sections>(
+    props
+  );
 
   return <>{sections.map((section) => renderSection(section))}</>;
 };

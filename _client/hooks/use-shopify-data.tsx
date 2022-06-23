@@ -1,18 +1,24 @@
+import { useShopifyData } from "_client/stores/shopify-data-store";
 import { useCallback, useEffect, useState } from "react";
 import { DehydratedState } from "react-query";
 import { Sections } from "types/sections";
 import { GlobalSettings } from "types/shopify";
 
-export const useShopifyData = <G extends GlobalSettings, S extends Sections[]>(props: {
+export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[]>(props: {
   global: G;
   sections: S;
   trpcState?: DehydratedState;
 }) => {
-  const [global, setGlobal] = useState<G>(props.global);
-  const [sections, setSections] = useState<S>(props.sections);
+  const [{ global, sections }, setShopifyData] = useShopifyData();
+
+  useEffect(() => {
+    setShopifyData({
+      global: props.global,
+      sections: props.sections,
+    });
+  }, [props.global, props.sections, setShopifyData]);
 
   const messageSectionSizes = useCallback(() => {
-    console.log("resize");
     window?.parent?.postMessage(
       {
         source: "theme-content",
@@ -29,8 +35,8 @@ export const useShopifyData = <G extends GlobalSettings, S extends Sections[]>(p
 
   const handleMessages = useCallback((e) => {
     if (e?.data?.source === "theme-editor") {
-      setSections(e.data.sections);
-      setGlobal(e.data.global);
+      setShopifyData({ global: e.data.global, sections: e.data.sections });
+
       /*if (e.data.topic === "shopify:section:select") {
         const sectionElement = document.getElementById(e.data.detail.sectionId);
         if (sectionElement) {
@@ -38,7 +44,7 @@ export const useShopifyData = <G extends GlobalSettings, S extends Sections[]>(p
         }
       }*/
     }
-  }, []);
+  }, [setShopifyData]);
 
   useEffect(() => {
     window.addEventListener("message", handleMessages);

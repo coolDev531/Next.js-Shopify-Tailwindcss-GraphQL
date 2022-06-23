@@ -83,6 +83,7 @@ export type FooterSection = {
 };
 
 export type HeaderSection = {
+  blocks: HeaderBlocks[];
   id: string;
   settings: {
     /** Input type: image_picker */
@@ -92,6 +93,28 @@ export type HeaderSection = {
   };
   type: "header";
 };
+
+export type HeaderBlocks =
+  | {
+      id: string;
+      settings: {
+        /** Input type: text */
+        handle?: string;
+        /** Input type: product_list */
+        menu_items?: _Product_liquid[];
+      };
+      type: "dropdown_menu_features";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: text */
+        handle?: string;
+        /** Input type: blog */
+        menu_items?: _Blog_liquid;
+      };
+      type: "dropdown_menu_carousel";
+    };
 
 export type HeadingSection = {
   id: string;

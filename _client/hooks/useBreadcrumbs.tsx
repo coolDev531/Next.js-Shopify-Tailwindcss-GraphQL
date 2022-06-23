@@ -4,7 +4,7 @@ import { capitalize } from "utils/capitalize";
 export const useBreadcrumbs = (): { href: string; last: boolean; title: string }[] => {
   const router = useRouter();
 
-  const asPathWithoutQuery = router.asPath.split("?")[0];
+  const asPathWithoutQuery = router.asPath.split(/[?#]/gi)[0];
   const asPathNestedRoutes = asPathWithoutQuery.split("/").filter((v) => v.length > 0);
 
   const breadcrumbs = asPathNestedRoutes.map((subpath, index) => {

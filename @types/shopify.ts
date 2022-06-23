@@ -712,6 +712,7 @@ export type _Link_liquid = {
   child_active: boolean;
   child_current: boolean;
   current: boolean;
+  handle: string;
   levels: number;
   links: any[];
   title: string;

@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
-import { ComponentType, FC } from "react";
+import { ComponentType, FC, HTMLAttributes } from "react";
 
 type HeroIconProps = {
   name: IconName;
-  className?: string;
+  className?: HTMLAttributes<string>["className"];
   outline?: boolean;
 };
 

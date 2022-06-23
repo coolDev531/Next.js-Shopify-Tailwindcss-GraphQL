@@ -10,7 +10,6 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
   const { position, cta1, cta1_link, cta2, cta2_link, paragraph, pre_title, title } = settings;
   const router = useRouter();
 
-  console.log(router);
   return (
     <Section id={id} type={type} padding="base" container="xl">
       <BlockHeading
@@ -23,12 +22,12 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
           className="flex transition-all focus-within:animation-pause hfa:animation-pause md:w-fit md:animate-slide"
           style={{
             animationDuration: `${settings.animation_duration}s`,
-            animationPlayState: !settings.animate ? "paused" : "",
+            animationPlayState: !settings.animate ? "paused" : "running",
           }}
         >
           <div className="scrollbar-none grid flex-1 auto-cols-max grid-flow-col-dense gap-6 overflow-x-scroll px-4 pb-8 transition-all md:overflow-visible md:px-8 md:px-4">
-            {settings.images.articles
-              .filter(
+            {settings?.images?.articles
+              ?.filter(
                 (article) => article.url.replace(/\/blogs/gi, "") !== router.asPath.split("?")[0]
               )
               .map((article) => {
@@ -76,8 +75,8 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
             })}
           </div>
           <div className="scrollbar-none grid hidden flex-1   auto-cols-max grid-flow-col-dense gap-6 overflow-x-scroll pb-8 transition-all md:grid md:overflow-visible md:px-4">
-            {settings.images.articles
-              .filter(
+            {settings?.images?.articles
+              ?.filter(
                 (article) => article.url.replace(/\/blogs/gi, "") !== router.asPath.split("?")[0]
               )
               .map((article) => {

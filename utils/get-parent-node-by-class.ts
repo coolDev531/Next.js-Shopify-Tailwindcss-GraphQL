@@ -3,7 +3,7 @@ export const getParentNodeByClass = (
   className: string,
   i = 0
 ): HTMLElement | null => {
-  if (i > 20) {
+  if (i > 40) {
     return null;
   }
   if (target?.classList?.contains(className)) {

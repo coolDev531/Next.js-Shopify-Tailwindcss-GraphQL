@@ -10,6 +10,7 @@
     "current": {{ link.current |json }},
     "child_current": {{ link.child_current |json }},
     "levels": {{ link.levels |json }},
+    "handle": {{ link.handle |json }},
     "links": [
     {%- for sub_link in link.links  -%}
       {
@@ -18,6 +19,7 @@
       "current": {{ sub_link.current |json }},
       "child_current": {{ sub_link.child_current |json }},
       "levels": {{ sub_link.levels |json }},
+      "handle": {{ sub_link.handle |json }},
       "links": [
       {%- for sub_sub_link in sub_link.links  -%}
         {
@@ -26,6 +28,7 @@
         "current": {{ sub_sub_link.current |json }},
         "child_current": {{ sub_sub_link.child_current |json }},
         "levels": {{ sub_sub_link.levels |json }},
+        "handle": {{ sub_sub_link.handle |json }},
         "links": {{ sub_sub_link.links |json }},
         "object": {%- include '_map_linkobject', input_linkobject: sub_sub_link.object -%},
         "title": {{ sub_sub_link.title |json }},

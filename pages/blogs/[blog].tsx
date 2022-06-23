@@ -1,5 +1,5 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
-import { useShopifyData } from "_client/hooks/use-shopify-data";
+import { useInitShopifyData } from "_client/hooks/use-shopify-data";
 import { renderSection } from "_client/sections/_render-section";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
 import { getAllBlogs } from "_server/shopify/get-all-blogs";
@@ -12,7 +12,9 @@ export const Blog: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) 
   const router = useRouter();
   const { blog } = router.query;
 
-  const { sections, global } = useShopifyData<typeof props.global, typeof props.sections>(props);
+  const { sections, global } = useInitShopifyData<typeof props.global, typeof props.sections>(
+    props
+  );
 
   return <>{sections.map((section) => renderSection(section))}</>;
 };
