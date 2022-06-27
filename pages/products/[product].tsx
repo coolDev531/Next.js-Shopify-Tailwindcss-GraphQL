@@ -27,9 +27,11 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
     process.env.SHOPIFY_API_ACCESS_TOKEN
   );
 
-  const paths = products.map((product) => ({
-    params: { product: `${product.handle}` },
-  }));
+  const paths = products
+    .filter((product) => product.product_type === "Service")
+    .map((product) => ({
+      params: { product: `${product.handle}` },
+    }));
 
   return { paths, fallback: false };
 };
