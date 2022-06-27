@@ -13,7 +13,7 @@
         "title": "KidsLiving",
         "paragraph": "<p>Est. 2008 in Cape Town, now a leading South African baby and kids store, offering an extensive range of imported and locally manufactured high-end products. We have worked with Kids Living since 2017 as their ecommerce success partners, covering all aspects from inventory management, digital marketing, web development to complete custom API solutions.<\/p>",
         "list_title": "What we did:",
-        "list": "<p>Web Development<\/p><p>Custom Features Development<\/p><p>Custom App Integrations<\/p><p>Monthly SEO & Site maintenance support<\/p>",
+        "list": "<p>Shopify Web Development<\/p><p>Custom Features Development<\/p><p>Custom App Integrations<\/p><p>Monthly SEO & Site maintenance support<\/p>",
         "image": "shopify:\/\/shop_images\/627bcf588c162da9f0358ef0_Group_25201247_2520_3_-min-p-800_1.png"
       }
     },
@@ -74,7 +74,7 @@
             "paragraph": "<p>When we first took over the website, we first needed to understand the information and data that needed to be sorted through and migrated to the Shopify platform from BigCommerce. Our team did an extensive analysis and created a strategic plan that ensured the old website's SEO, content, and web rankings were kept intact taking into account a VEND to Shopify integration.<\/p>",
             "list_title": "",
             "list": "<p>Organising product data<\/p><p>Migrate Images from Products, Categories, Blog Description<\/p><p>Customer data Migration<\/p><p>Product and Order information migration<\/p><p>Vend to Shopify integration <\/p><p>Redirect all changed links<\/p><p>Content migration<\/p>",
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "image": "shopify:\/\/shop_images\/little-ducth-children-brand.jpg",
             "aspect_desktop": "1-1",
             "fit_height": true,
             "aspect_mobile": "16-9",
@@ -89,7 +89,7 @@
             "paragraph": "<p>With the migration complete and a strategic plan in place. Our team started developing the Shopify website. This was specifically tailored to our clients’ needs while taking to account the key functions and features that our clients required from their old website.<\/p>",
             "list_title": "",
             "list": "<p>Theme Coding & Implementation<\/p><p>Content structure update, for user experience optimization <\/p><p>Vend to Shopify integration<\/p><p>Shopify Apps Integration & Configuration<\/p><p>Payment & Shipping Zones Set-Up<\/p><p>Product & Inventory Set-Up<\/p><p>Shopify SEO Implementation and optimization<\/p>",
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "image": "shopify:\/\/shop_images\/littlee-dutch-tool-box.jpg",
             "aspect_desktop": "1-1",
             "fit_height": true,
             "aspect_mobile": "16-9",
@@ -104,7 +104,7 @@
             "paragraph": "<p>With the website successfully launched and live to the public, our team gets to work on creating monthly plans on improving and optimization our client’s website. They continually use and develop cutting-edge SEO tools and crawling software to identify and analyze technical SEO factors that needs to be addressed. They also work on product content research and creation. Consistently working on the website and keeping up to date with the ever-evolving online environment.<\/p>",
             "list_title": "",
             "list": "<p>Website data backup<\/p><p>Stand by for website queries or requests <\/p><p>Website updates and customizations <\/p><p>Evaluating current keyword rankings<\/p><p>Identifying and creating quality links<\/p><p>Content research & creation <\/p><p>Product content quality analysis and update<\/p>",
-            "image": "shopify:\/\/shop_images\/yarn-1_530x530_crop_top_2x_b0c839fc-8bfe-47d7-b418-1c69e5cf030b.jpg",
+            "image": "shopify:\/\/shop_images\/Luna-Lemon-image3.jpg",
             "aspect_desktop": "1-1",
             "fit_height": true,
             "aspect_mobile": "16-9",
@@ -220,7 +220,7 @@
             "cta1_link": "",
             "cta2": "",
             "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/ampersand-01-classic.jpg",
+            "image": "shopify:\/\/shop_images\/Mega-menu_2b8b8305-4bb2-4512-a1b7-489760e058c4.jpg",
             "image_link": ""
           }
         },
@@ -235,7 +235,7 @@
             "cta1_link": "",
             "cta2": "",
             "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/heart-02-shoreline.jpg",
+            "image": "shopify:\/\/shop_images\/Luna-Lemon-image2.jpg",
             "image_link": ""
           }
         },
@@ -250,7 +250,7 @@
             "cta1_link": "",
             "cta2": "",
             "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image": "shopify:\/\/shop_images\/Logo-banner_49135aee-1bc0-4a54-9f69-c52504c49d4f.jpg",
             "image_link": ""
           }
         }
@@ -340,6 +340,8 @@
         "547189e6-16c7-44f5-9dea-7ab932e1e925"
       ],
       "settings": {
+        "color_bg": "linear-gradient(145deg, rgba(2, 77, 164, 1), rgba(1, 155, 199, 1) 100%)",
+        "color_toggle": "light"
       }
     },
     "1654259533f54af287": {
@@ -357,7 +359,7 @@
         "3f49ea97-153c-4349-a955-ca74d7b42da4": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/0.1cdf0eeac332c7001f46cfed6ea1452d.png",
+            "image": "shopify:\/\/shop_images\/Luna-Lemon-image4_534ad61c-8f12-4445-9fab-942789b75f29.jpg",
             "columns": 4,
             "hover_effect": true,
             "title": "Super Duper",
@@ -370,7 +372,7 @@
         "5a10e0d6-59d9-4ec3-8271-1fa447427c6e": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.79c786d82b036471febe69cd12d13028.png",
+            "image": "shopify:\/\/shop_images\/Luna-Lemon-image5.jpg",
             "columns": 8,
             "hover_effect": false,
             "title": "",
@@ -383,7 +385,7 @@
         "d0cc6cec-72ee-4505-8a84-1480e96b7469": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.2de3b1b6fb50080c7a6436228f363894.png",
+            "image": "shopify:\/\/shop_images\/gift-registry.jpg",
             "columns": 8,
             "hover_effect": false,
             "title": "",
@@ -396,7 +398,7 @@
         "a1395033-59ba-4165-967f-64c5d84b6a02": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3.8520da0aa9ac19f9ea887af5a5e1692b.jpg",
+            "image": "shopify:\/\/shop_images\/Product-view.jpg",
             "columns": 4,
             "hover_effect": false,
             "title": "",
@@ -409,7 +411,7 @@
         "3d2545f3-edb7-443e-be7e-b685bd9bf4ae": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4.f2572f965602b909392c51212c0d9bce.jpg",
+            "image": "shopify:\/\/shop_images\/Website-baner.jpg",
             "columns": 4,
             "hover_effect": false,
             "title": "",

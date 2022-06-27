@@ -62,6 +62,7 @@ const DropdownPanel = ({ items, link }: { items: _Product_liquid[]; link: _Link_
                     layout="fill"
                     height={90}
                     width={90}
+                    sizes="180px"
                     priority
                     className=""
                     src={product?.featured_media?.src}
@@ -193,7 +194,7 @@ export const DesktopNav = ({
             switch (block.type) {
               case "dropdown_menu_features": {
                 return (
-                  <Popover>
+                  <Popover key={block.id}>
                     {({ open }) => (
                       <>
                         <div
@@ -226,7 +227,7 @@ export const DesktopNav = ({
                           leaveFrom="opacity-100 translate-y-0"
                           leaveTo="opacity-0 -translate-y-1"
                         >
-                          <Popover.Panel className="absolute inset-x-0 top-0 -z-10 hidden transform bg-white pt-[65px] shadow-lg md:block">
+                          <Popover.Panel className="absolute inset-x-0 top-0 -z-10 hidden transform bg-white pt-[65px] shadow-lg focus-visible:outline-none md:block">
                             <DropdownPanel items={block.settings.menu_items} link={link} />
                           </Popover.Panel>
                         </Transition>
@@ -236,10 +237,10 @@ export const DesktopNav = ({
                 );
               }
               case "dropdown_menu_carousel":
-                return <div></div>;
+                return <div key={block.id}></div>;
               case "dropdown_menu_portfolio":
                 return (
-                  <Popover>
+                  <Popover key={block.id}>
                     {({ open }) => (
                       <>
                         <div
@@ -272,8 +273,8 @@ export const DesktopNav = ({
                           leaveFrom="opacity-100 translate-y-0"
                           leaveTo="opacity-0 -translate-y-1"
                         >
-                          <Popover.Panel className="absolute inset-x-0 top-0 -z-10 hidden transform bg-white pt-[65px] shadow-lg md:block">
-                            <PortfolioMenu />
+                          <Popover.Panel className="absolute inset-x-0 top-0 -z-10 hidden transform bg-white pt-[65px] shadow-lg focus-visible:outline-none md:block">
+                            <PortfolioMenu {...block.settings} links={link.links} />
                           </Popover.Panel>
                         </Transition>
                       </>

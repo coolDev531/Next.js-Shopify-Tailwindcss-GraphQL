@@ -714,7 +714,7 @@ export type _Link_liquid = {
   current: boolean;
   handle: string;
   levels: number;
-  links: any[];
+  links: _Link_liquid[];
   title: string;
   url: string;
 } & (

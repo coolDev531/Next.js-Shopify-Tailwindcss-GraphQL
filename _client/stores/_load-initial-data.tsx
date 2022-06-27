@@ -1,4 +1,5 @@
 import { useTooltipStore } from "_client/stores/tooltip-store";
+import { useRouter } from "next/router";
 import { FC, PropsWithChildren, useEffect, useState } from "react";
 import ReactTooltip from "react-tooltip";
 import { useMount } from "react-use";
@@ -6,6 +7,7 @@ import { useMount } from "react-use";
 export const LoadInitialData: FC<PropsWithChildren<any>> = ({ children }) => {
   const [tooltip] = useTooltipStore();
   const [showTooltip, setShowTooltip] = useState(false);
+  const router = useRouter();
 
   useMount(() => {
     setShowTooltip(true);
