@@ -60,6 +60,7 @@ const DropdownPanel = ({ items, link }: { items: _Product_liquid[]; link: _Link_
                   <Image
                     objectFit="cover"
                     layout="fill"
+                    loading="eager"
                     height={90}
                     width={90}
                     sizes="180px"
