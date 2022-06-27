@@ -95,6 +95,40 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "currency_code_enabled": true
+    "currency_code_enabled": true,
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "3eba0d05-a30d-4f8f-8100-2a973c7326b4": {
+            "type": "dropdown_menu_features",
+            "settings": {
+              "handle": "services",
+              "menu_items": [
+                "shopify-customizations",
+                "shopify-full-sites",
+                "shopify-integration",
+                "shopify-website-maintenance",
+                "shopify-seo-packages"
+              ]
+            }
+          }
+        },
+        "block_order": [
+          "3eba0d05-a30d-4f8f-8100-2a973c7326b4"
+        ],
+        "settings": {
+          "menu": "main-menu"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
   }
 }

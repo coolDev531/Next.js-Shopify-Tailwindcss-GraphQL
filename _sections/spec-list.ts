@@ -6,7 +6,33 @@ import { ShopifySection, ShopifySelect } from "types/shopify";
 
 export const specList: ShopifySection = {
   name: "Spec list",
-  settings: [],
+  settings: [
+    {
+      type: "header",
+      content: "Colors",
+    },
+    {
+      type: "color_background",
+      id: "color_bg",
+      label: "Background",
+    },
+    {
+      type: "radio",
+      id: "color_toggle",
+      label: "Text Color",
+      default: "dark",
+      options: [
+        {
+          value: "dark",
+          label: "Dark",
+        },
+        {
+          value: "light",
+          label: "Light",
+        },
+      ],
+    },
+  ],
   blocks: [
     {
       type: "heading",

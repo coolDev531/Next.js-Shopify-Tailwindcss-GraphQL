@@ -58,6 +58,10 @@ module.exports = {
         "8xl": "90rem",
       },
       colors: {
+        accent: {
+          primary: "rgb(var(--color-accent-primary) / <alpha-value>)",
+          secondary: "rgb(var(--color-accent-secondary) / <alpha-value>)",
+        },
         dark: {
           border: "#3f3f46",
           bg: "#0e131f",
@@ -346,16 +350,16 @@ module.exports = {
           900: "#0f172a",
         },
         slate: {
-          50: "#f8fafc",
-          100: "#f1f5f9",
-          200: "#e2e8f0",
-          300: "#cbd5e1",
-          400: "#94a3b8",
-          500: "#64748b",
-          600: "#475569",
-          700: "#334155",
-          800: "#1e293b",
-          900: "#0f172a",
+          50: "rgb(var(--color-slate-50) / <alpha-value>)",
+          100: "rgb(var(--color-slate-100) / <alpha-value>)",
+          200: "rgb(var(--color-slate-200) / <alpha-value>)",
+          300: "rgb(var(--color-slate-300) / <alpha-value>)",
+          400: "rgb(var(--color-slate-400) / <alpha-value>)",
+          500: "rgb(var(--color-slate-500) / <alpha-value>)",
+          600: "rgb(var(--color-slate-600) / <alpha-value>)",
+          700: "rgb(var(--color-slate-700) / <alpha-value>)",
+          800: "rgb(var(--color-slate-800) / <alpha-value>)",
+          900: "rgb(var(--color-slate-900) / <alpha-value>)",
         },
         zinc: {
           50: "#fafafa",

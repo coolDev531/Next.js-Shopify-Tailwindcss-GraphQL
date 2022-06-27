@@ -7,6 +7,9 @@ type SectionProps = {
   id: string;
   type: Sections["type"];
   background?: Property.Background<string | number>;
+  bgHeight?: Property.Height;
+  bgOpacity?: Property.Opacity;
+  color?: "dark" | "light";
   container?: "sm" | "base" | "xl" | "fullscreen";
   padding?: "base" | "xl";
   section?: boolean;
@@ -48,19 +51,29 @@ export const Section: FC<PropsWithChildren<SectionProps>> = ({
   container,
   padding,
   background,
+  bgHeight,
+  bgOpacity,
   type,
   id,
   children,
   section = true,
+  color = "dark",
 }) => {
   if (!section) {
     return <>{children}</>;
   }
   return (
-    <section className={type} id={id} style={{ background }}>
+    <section className={clsx(type, "relative")} id={id}>
+      {background
+        ? <div
+            className="pointer-events-none absolute left-0 bottom-0 -z-50 h-full w-full select-none"
+            style={{ background, height: bgHeight, opacity: bgOpacity }}
+          />
+        : null}
       <div
         className={clsx(
           "relative mx-auto",
+          color === "light" && "text-inverted",
           getContainerClasses(container),
           getPaddingClasses(padding)
         )}

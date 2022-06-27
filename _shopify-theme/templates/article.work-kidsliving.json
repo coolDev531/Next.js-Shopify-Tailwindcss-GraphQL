@@ -58,10 +58,10 @@
           "settings": {
             "pre_title": "Case in point",
             "title": "From challenge to solution",
-            "paragraph": "<p>How we overcome Kids Livings challenge on having their product information on BigCommerce and on an outdated POS system to an all round solution with VEND and Shopify. Contiously working with them to help their business succeed. <\/p>",
-            "cta1": "asdasdasd",
+            "paragraph": "<p>How we overcome Kids Livings challenge on having their product information on BigCommerce and on an outdated POS system to an all round solution with VEND and Shopify. Continuously working with them to help their online business succeed. <\/p>",
+            "cta1": "Develop your website",
             "cta1_link": "#",
-            "cta2": "asd",
+            "cta2": "Explore All Services",
             "cta2_link": "#",
             "position": "center"
           }
@@ -69,11 +69,11 @@
         "364ea5e8-5749-4d69-b8f0-528e5aab9c5b": {
           "type": "image-text",
           "settings": {
-            "pre_title": "",
-            "title": "Website migration analysis",
-            "paragraph": "<p>When we first took over the website, one of our challenges was understand the extent of information and data that needed to be sorted through and migrated to the Shopify platform from BigCommerce. Our team did an extensive analyse of the old site to ensure that the migration was effective and seamless. The biggest highlights was the amount of data and information that needed to be extracted, sorted and formatted for the new website. They created an in detailed strategic plan that took that into consideration and that ensured that the old sites SEO, content, and web rankings were kept intact.<\/p>",
+            "pre_title": "Starting the journey to success",
+            "title": "Analysis & Migration",
+            "paragraph": "<p>When we first took over the website, we first needed to understand the information and data that needed to be sorted through and migrated to the Shopify platform from BigCommerce. Our team did an extensive analysis and created a strategic plan that ensured the old website's SEO, content, and web rankings were kept intact taking into account a VEND to Shopify integration.<\/p>",
             "list_title": "",
-            "list": "<p>Redirect all changed links<\/p><p>Updating the website structure, to optimize user flow and experience<\/p><p>Updating website content and flow<\/p><p>Web content migration <\/p>",
+            "list": "<p>Organising product data<\/p><p>Migrate Images from Products, Categories, Blog Description<\/p><p>Customer data Migration<\/p><p>Product and Order information migration<\/p><p>Vend to Shopify integration <\/p><p>Redirect all changed links<\/p><p>Content migration<\/p>",
             "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "aspect_desktop": "1-1",
             "fit_height": true,
@@ -84,11 +84,11 @@
         "4729554a-b37a-42dd-b189-ab78ef716946": {
           "type": "image-text",
           "settings": {
-            "pre_title": "",
-            "title": "Vend to Shopify integration",
-            "paragraph": "<p>Our team then integrated the extracted information onto vend and integrated it to shopify.<\/p>",
+            "pre_title": "Turing the vision into reality",
+            "title": "Shopify web development",
+            "paragraph": "<p>With the migration complete and a strategic plan in place. Our team started developing the Shopify website. This was specifically tailored to our clients’ needs while taking to account the key functions and features that our clients required from their old website.<\/p>",
             "list_title": "",
-            "list": "<p>Organising product data<\/p><p>Migrate Images from Products, Categories, Blog Description<\/p><p>Customer data Migration<\/p><p>Product and Order information migration<\/p>",
+            "list": "<p>Theme Coding & Implementation<\/p><p>Content structure update, for user experience optimization <\/p><p>Vend to Shopify integration<\/p><p>Shopify Apps Integration & Configuration<\/p><p>Payment & Shipping Zones Set-Up<\/p><p>Product & Inventory Set-Up<\/p><p>Shopify SEO Implementation and optimization<\/p>",
             "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "aspect_desktop": "1-1",
             "fit_height": true,
@@ -99,11 +99,11 @@
         "d3a58043-2727-4644-8472-c959186be648": {
           "type": "image-text",
           "settings": {
-            "pre_title": "",
-            "title": "Shopify web development",
-            "paragraph": "<p>With the migration complete we started developing their Shopify website tailored to our clients’ needs while taking to account to functions and features of their old site.<\/p>",
+            "pre_title": "Continuous work for continuous results",
+            "title": "Site maintenance & SEO",
+            "paragraph": "<p>With the website successfully launched and live to the public, our team gets to work on creating monthly plans on improving and optimization our client’s website. They continually use and develop cutting-edge SEO tools and crawling software to identify and analyze technical SEO factors that needs to be addressed. They also work on product content research and creation. Consistently working on the website and keeping up to date with the ever-evolving online environment.<\/p>",
             "list_title": "",
-            "list": "<p>Theme Coding & Implementation<\/p><p>Shopify SEO Implementation and optimization<\/p><p>Shopify Apps Integration & Configuration<\/p><p>Payment & Shipping Zones Set-Up<\/p><p>Product & Inventory Set-Up<\/p>",
+            "list": "<p>Website data backup<\/p><p>Stand by for website queries or requests <\/p><p>Website updates and customizations <\/p><p>Evaluating current keyword rankings<\/p><p>Identifying and creating quality links<\/p><p>Content research & creation <\/p><p>Product content quality analysis and update<\/p>",
             "image": "shopify:\/\/shop_images\/yarn-1_530x530_crop_top_2x_b0c839fc-8bfe-47d7-b418-1c69e5cf030b.jpg",
             "aspect_desktop": "1-1",
             "fit_height": true,
@@ -113,6 +113,7 @@
         },
         "aa2d5baa-f85f-478a-a8bb-5b6aac4202a4": {
           "type": "image-text",
+          "disabled": true,
           "settings": {
             "pre_title": "",
             "title": "SEO & Site maintenance support",
@@ -185,7 +186,7 @@
           "settings": {
             "pre_title": "Custom Features",
             "title": "We have worked with KidsLiving  on a large number of unique features",
-            "paragraph": "<p>Our team of Shopify web developers can work with you to select a suitable option, and develop your tailored feature so it perfectly represents your vision.<\/p>",
+            "paragraph": "<p>Our team of Shopify web developers work closely with our clients to create a selection of suitable options, and unique features that perfectly represent their vision and needs. <\/p>",
             "cta1": "Learn more",
             "cta1_link": "##",
             "cta2": "",
@@ -199,12 +200,12 @@
             "tab_title": "Custom builder",
             "tab_icon": "sizing",
             "title": "Custom builder",
-            "paragraph": "<p>This custom builder helps you build your own stroller, choosing elements like fabric styles, frame options, wheel types. It shows the changes in real life creating a very interactive purchase experience for people who want a custom product they built themselves.<\/p>",
-            "cta1": "asdasd",
+            "paragraph": "<p>This custom builder helps you create your own stroller by choosing elements like fabric styles, frame options and wheel types. It shows the changes in real life creating an interactive purchase experience for people who want a custom product they built themselves.<\/p>",
+            "cta1": "Equire on cust",
             "cta1_link": "#",
             "cta2": "",
             "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "image": "shopify:\/\/shop_images\/ezgif.com-gif-maker2.gif",
             "image_link": ""
           }
         },
@@ -214,7 +215,7 @@
             "tab_title": "Mega menu",
             "tab_icon": "grid",
             "title": "Mega menu & custom brand section",
-            "paragraph": "<p>This custom build helped organize a large amount of product categories in user friendly manner, we also focused on the brands, organising them Alphabetically while highlighting the top popular brands<\/p>",
+            "paragraph": "<p>This custom build was created to organize a large amount of product categories in a user friendly manner. Highlight was also given on the brands, organising them Alphabetically while showcases the top popular brands.<\/p>",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
@@ -229,7 +230,7 @@
             "tab_title": "Google rating integration",
             "tab_icon": "elegant",
             "title": "Google rating integration",
-            "paragraph": "<p>This integration helps increase the overall trust of visitors to the store by showcasing their live google ratings<\/p>",
+            "paragraph": "<p>This integration helps increase the overall trust of visitors to the store by showcasing their live google ratings.<\/p>",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
@@ -244,7 +245,7 @@
             "tab_title": "Customized logo band",
             "tab_icon": "brutalist",
             "title": "Logo Banner",
-            "paragraph": "<p>This custom built helped showcase the large amount of brands that kidsliving offers while highlighted the logos flawlessly into the shops home page <\/p>",
+            "paragraph": "<p>This custom build helped showcase the key large brands that kidsliving offers, interating the logos flawlessly into the websites home page.<\/p>",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
@@ -271,7 +272,7 @@
           "type": "heading",
           "settings": {
             "pre_title": "",
-            "title": "... and much more.",
+            "title": "More to expect when working with us...",
             "paragraph": "",
             "cta1": "",
             "cta1_link": "",
@@ -514,113 +515,18 @@
     },
     "1654332872499b00d2": {
       "type": "image-carousel",
-      "blocks": {
-        "c0ffc8ad-3f4b-410f-af2f-da7cafd62fc9": {
-          "type": "heading",
-          "settings": {
-            "pre_title": "asdasdasd",
-            "title": "asdasdasdasd",
-            "paragraph": "",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "position": "center"
-          }
-        },
-        "8f3cf455-a5ce-425b-bf03-e145be89e736": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/person-cuts-into-plate-of-pasta.jpg",
-            "link": ""
-          }
-        },
-        "aa96e5f7-6417-47d3-a959-e0552f62e228": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/delicious-plate-of-pepperoni-pizza.jpg",
-            "link": ""
-          }
-        },
-        "e14a06fb-4f62-4331-af3c-3939b6cc2c99": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
-            "link": ""
-          }
-        },
-        "63cd4660-0815-4624-80f8-590efdeec96b": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/camera-looks-down-on-wooden-table-with-two-bao-buns.jpg",
-            "link": ""
-          }
-        },
-        "b98d42da-3dcb-4d0f-98fa-ae8ce55a74ad": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/two-red-cocktails-on-a-tray.jpg",
-            "link": ""
-          }
-        },
-        "797e95a5-ff90-4b78-a815-33454afccb9a": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/hands-slice-red-pepper-on-wooden-cutting-board.jpg",
-            "link": ""
-          }
-        },
-        "81693dd4-3af2-4251-83e6-6a0536b8692b": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/person-cuts-into-plate-of-pasta.jpg",
-            "link": ""
-          }
-        },
-        "f8b7e3b4-142c-47e9-a605-086b8568394d": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/camera-looks-down-on-wooden-table-with-two-bao-buns.jpg",
-            "link": ""
-          }
-        },
-        "6774d44d-0a94-4e10-be5d-fb67d41601c4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/person-cuts-into-plate-of-pasta.jpg",
-            "link": ""
-          }
-        },
-        "fa064bf9-9b04-4089-a385-6450b8e1924c": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "link": ""
-          }
-        },
-        "a90648f7-1552-495d-8070-b034d3f4eb60": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/delicious-plate-of-pepperoni-pizza.jpg",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "c0ffc8ad-3f4b-410f-af2f-da7cafd62fc9",
-        "8f3cf455-a5ce-425b-bf03-e145be89e736",
-        "aa96e5f7-6417-47d3-a959-e0552f62e228",
-        "e14a06fb-4f62-4331-af3c-3939b6cc2c99",
-        "63cd4660-0815-4624-80f8-590efdeec96b",
-        "b98d42da-3dcb-4d0f-98fa-ae8ce55a74ad",
-        "797e95a5-ff90-4b78-a815-33454afccb9a",
-        "81693dd4-3af2-4251-83e6-6a0536b8692b",
-        "f8b7e3b4-142c-47e9-a605-086b8568394d",
-        "6774d44d-0a94-4e10-be5d-fb67d41601c4",
-        "fa064bf9-9b04-4089-a385-6450b8e1924c",
-        "a90648f7-1552-495d-8070-b034d3f4eb60"
-      ],
       "settings": {
+        "pre_title": "Explore",
+        "title": "Checkout more of our work",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "images": "work",
+        "animate": true,
+        "animation_duration": 80
       }
     }
   },

@@ -1,13 +1,11 @@
 import HeroIcon from "_client/dynamic-hero-icon";
-import { useDebouncedEffect } from "_client/hooks/use-debounce-effect";
 import { Section } from "_client/layout/section";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
 import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import Image from "next/image";
-import { FC, useCallback, useEffect, useRef, useState } from "react";
-import { useDebounce } from "react-use";
+import { FC, useCallback, useRef, useState } from "react";
 import { FeatureCarouselSection } from "types/sections";
 import { scrollToX } from "utils/scroll-to";
 
@@ -34,7 +32,15 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
   }, []);
 
   return (
-    <Section id={id} type={type} container="xl" padding="base">
+    <Section
+      id={id}
+      type={type}
+      container="xl"
+      padding="base"
+      background={`url("/images/bg-gradient-light-180.jpg") top center no-repeat`}
+      bgOpacity={0.6}
+      bgHeight="calc(100% + 140px)"
+    >
       <div className="flex flex-col gap-8">
         <BlockHeading
           key={`heading-${id}`}

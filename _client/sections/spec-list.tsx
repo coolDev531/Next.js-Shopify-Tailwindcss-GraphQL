@@ -4,10 +4,17 @@ import { renderIcon } from "_sections/utils";
 import { FC, Fragment } from "react";
 import { SpecListSection } from "types/sections";
 
-export const SpecList: FC<SpecListSection> = ({ id, blocks, type }) => {
+export const SpecList: FC<SpecListSection> = ({ id, blocks, type, settings }) => {
   const count = blocks.filter(({ type }) => type === "list").length;
   return (
-    <Section id={id} type={type} container="base" padding="base">
+    <Section
+      id={id}
+      type={type}
+      container="base"
+      padding="base"
+      background={settings.color_bg}
+      color={settings.color_toggle}
+    >
       {blocks.map((block) => {
         return block.type === "heading"
           ? <BlockHeading key={`heading-${block.id}`} {...block} section={false} />
@@ -27,7 +34,10 @@ export const SpecList: FC<SpecListSection> = ({ id, blocks, type }) => {
                         key={`list-${block.id}-${index}`}
                         className="flex items-center gap-3 overflow-ellipsis whitespace-nowrap px-8"
                       >
-                        {renderIcon(block.settings[`icon${index + 1}`], "h-4 w-4 min-w-[1rem]")}
+                        {renderIcon(
+                          block.settings[`icon${index + 1}`],
+                          "h-4 w-4 min-w-[1rem] text-slate-700"
+                        )}
                         {block.settings[`text${index + 1}`]}
                       </li>
                     );

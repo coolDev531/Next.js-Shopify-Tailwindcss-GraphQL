@@ -1,6 +1,6 @@
 {% include "_section-global-content", type: "header" %}
 {% include "section_header" %}
-
+  
 {% schema %}
 {
   "name": "Header",
@@ -50,7 +50,24 @@
           "label": "Menu Item Catalog"
         }
       ]
+    },
+    {
+      "type": "dropdown_menu_portfolio",
+      "name": "Dropdown Portfolio Menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "handle",
+          "label": "Menu item Handle",
+          "info": "Must match a top level menu item"
+        },
+        {
+          "type": "blog",
+          "id": "menu_items",
+          "label": "Menu Item Catalog"
+        }
+      ]
     }
   ]
 }
-{% endschema %}
+{% endschema %} 

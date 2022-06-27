@@ -49,5 +49,22 @@ export const header: ShopifySection = {
         },
       ],
     },
+    {
+      type: "dropdown_menu_portfolio",
+      name: "Dropdown Portfolio Menu",
+      settings: [
+        {
+          type: "text",
+          id: "handle",
+          label: "Menu item Handle",
+          info: "Must match a top level menu item",
+        },
+        {
+          type: "blog",
+          id: "menu_items",
+          label: "Menu Item Catalog",
+        },
+      ],
+    },
   ],
 };

@@ -65,7 +65,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
             backgroundSize: "123.25rem 100%",
           }}
         />
-        <figure className="absolute left-1/2 -z-10 -ml-[50vw] h-full w-screen bg-grid-slate-900/[0.04] [mask-image:linear-gradient(0deg,transparent,black)] "></figure>
+        <figure className="absolute left-1/2 -z-10 -ml-[50vw] h-full w-screen bg-grid-gray-900/[0.04] [mask-image:linear-gradient(0deg,transparent,black)] "></figure>
         {blocks.map((block) => {
           if (block.type !== "tab") return null;
 

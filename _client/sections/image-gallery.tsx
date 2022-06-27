@@ -19,7 +19,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, blocks, type }) => {
             backgroundSize: "123.25rem 100%",
           }}
         />
-        <figure className="absolute left-1/2 top-16 bottom-16 -z-10 -ml-[50vw] h-full w-screen bg-grid-slate-900/[0.04] [mask-image:linear-gradient(0deg,transparent,black)]"></figure>
+        <figure className="absolute left-1/2 top-16 bottom-16 -z-10 -ml-[50vw] h-full w-screen bg-grid-gray-900/[0.04] [mask-image:linear-gradient(0deg,transparent,black)]"></figure>
         <section className="mx-auto w-[80rem] min-w-[80rem] [mask-image:linear-gradient(0deg,transparent_0%,white_45%)]">
           <div className="relative  flex items-end gap-8 px-8">
             {firstRow.map((block) => (
