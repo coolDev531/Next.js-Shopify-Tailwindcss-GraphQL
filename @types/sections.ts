@@ -78,8 +78,28 @@ export type FeatureListBlocks = {
 };
 
 export type FooterSection = {
+  blocks: FooterBlocks[];
   id: string;
+  settings: {
+    /** Input type: url */
+    facebook?: string;
+    /** Input type: url */
+    github?: string;
+    /** Input type: url */
+    google?: string;
+    /** Input type: url */
+    instagram?: string;
+  };
   type: "footer";
+};
+
+export type FooterBlocks = {
+  id: string;
+  settings: {
+    /** Input type: link_list */
+    menu?: _Linklist_liquid;
+  };
+  type: "menu";
 };
 
 export type HeaderSection = {

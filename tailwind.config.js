@@ -19,6 +19,9 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      screens: {
+        xs: { max: "639px" },
+      },
       keyframes: {
         slide: {
           "0%, 100%": { transform: "translate3d(0,0,0)" },

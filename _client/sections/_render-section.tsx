@@ -4,6 +4,7 @@ import { BlockHero } from "_client/sections/block-hero";
 import { BlockImageText } from "_client/sections/block-image-text";
 import { FeatureCarousel } from "_client/sections/feature-carousel";
 import { FeatureList } from "_client/sections/feature-list";
+import { Footer } from "_client/sections/footer";
 import { Header } from "_client/sections/header/header";
 import { ImageCarousel } from "_client/sections/image-carousel";
 import { ImageGallery } from "_client/sections/image-gallery";
@@ -78,11 +79,7 @@ export const renderSection = (section: Sections) => {
     case "info-cards":
       return <InfoCards key={section.id} {...section} />;
     case "footer":
-      return (
-        <section key={section.id} className={section.type} id={section.id}>
-          <div>Section to be developed: {section.type}</div>
-        </section>
-      );
+      return <Footer key={section.id} {...section} />;
     case "header":
       return <Header key={section.id} {...section} />;
     case "heading":
