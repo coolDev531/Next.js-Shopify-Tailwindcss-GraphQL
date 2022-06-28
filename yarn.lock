@@ -7613,10 +7613,10 @@ shell-quote@^1.6.1:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.3.tgz#aa40edac170445b9a431e17bb62c0b881b9c4123"
   integrity sha512-Vpfqwm4EnqGdlsBFNmHhxhElJYrdfcxPThu+ryKS5J8L/fhAwLazFZtq+S+TWZ9ANj2piSQLGj6NQg+lKPmxrw==
 
-shopify-ftp-access@^2.3.6:
-  version "2.3.6"
-  resolved "https://registry.yarnpkg.com/shopify-ftp-access/-/shopify-ftp-access-2.3.6.tgz#c1f0d884f127ac6a7b182afc9f11e7da1d30bba5"
-  integrity sha512-9dM/Kf3j6WtIwoUrDhw3IqGmXv2qU5mOIEPFxg0CeL8yK4TabjeOm/orrSn5TuTh2jeNuh3H1fTSbNLgqjWjkA==
+shopify-ftp-access@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/shopify-ftp-access/-/shopify-ftp-access-3.0.2.tgz#745e9b9bb7dc36329b2c4fa55a09ef54074fae4d"
+  integrity sha512-wb3BxygGfn5wbrJ9gF0WJvVYIT2dvotFOytMWHKmXfor8oD+4i9mdPUncKu2eXGC+Z+kAdXC01vtDEr+sBdE2g==
   dependencies:
     "@types/node" "^18.0.0"
     chalk "4.1.2"
