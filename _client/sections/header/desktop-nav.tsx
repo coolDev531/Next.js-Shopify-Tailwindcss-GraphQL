@@ -8,7 +8,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
-import { FocusEventHandler, Fragment, MouseEventHandler, useCallback, useRef, useState } from "react";
+import { FC, FocusEventHandler, Fragment, MouseEventHandler, useCallback, useRef, useState } from "react";
 import { HeaderBlocks } from "types/sections";
 import { _Link_liquid, _Linklist_liquid, _Product_liquid } from "types/shopify";
 import { getParentNodeByClass } from "utils/get-parent-node-by-class";
@@ -103,13 +103,10 @@ const DropdownPanel = ({ items, link }: { items: _Product_liquid[]; link: _Link_
   );
 };
 
-export const DesktopNav = ({
-  menu,
-  blocks,
-}: {
+export const DesktopNav: FC<{
   blocks: HeaderBlocks[];
   menu: _Linklist_liquid;
-}) => {
+}> = ({ menu, blocks }) => {
   const [initialNavPosition, setInitialNavPosition] = useState({
     width: 0,
     left: 0,
@@ -175,7 +172,7 @@ export const DesktopNav = ({
   return (
     <>
       <nav
-        className="scrollbar-none header-nav mt-auto ml-auto hidden h-full overflow-auto px-2 sm:flex"
+        className="scrollbar-none header-nav mt-auto ml-auto hidden h-full overflow-auto px-2 md:flex"
         onBlur={handleNavFocus}
         onMouseLeave={handleNavReset}
         onMouseOver={handleNavHover}

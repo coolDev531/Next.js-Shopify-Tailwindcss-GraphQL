@@ -145,7 +145,6 @@
         "title": "The tech we used:",
         "content_list": [
           "shopify",
-          "takealot",
           "vend-pos"
         ]
       }
@@ -153,7 +152,7 @@
     "1654092902cc4e4a33": {
       "type": "logo-banner",
       "settings": {
-        "title": "asdasdasd",
+        "title": "",
         "logo_items": [
           "graphql",
           "copy-of-css",
@@ -201,7 +200,7 @@
             "tab_icon": "sizing",
             "title": "Custom builder",
             "paragraph": "<p>This custom builder helps you create your own stroller by choosing elements like fabric styles, frame options and wheel types. It shows the changes in real life creating an interactive purchase experience for people who want a custom product they built themselves.<\/p>",
-            "cta1": "Equire on cust",
+            "cta1": "",
             "cta1_link": "#",
             "cta2": "",
             "cta2_link": "",
@@ -446,6 +445,19 @@
       "settings": {
       }
     },
+    "165641455846f7d959": {
+      "type": "heading",
+      "settings": {
+        "pre_title": "Continuous work for continuous results",
+        "title": "Support after Launch",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
+      }
+    },
     "165426875321fe7fc5": {
       "type": "feature-list",
       "blocks": {
@@ -543,6 +555,7 @@
     "16542555547186860a",
     "1654259533f54af287",
     "16542613555478f86d",
+    "165641455846f7d959",
     "165426875321fe7fc5",
     "16543302228e17b41c",
     "1654332872499b00d2"

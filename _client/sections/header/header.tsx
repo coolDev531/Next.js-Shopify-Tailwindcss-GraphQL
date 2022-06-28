@@ -1,15 +1,13 @@
-import { Popover, Transition } from "@headlessui/react";
 import { Badge } from "_client/badge";
 import { Section } from "_client/layout/section";
 import LightDarkSwitcher from "_client/light-dark-switch";
 import { Link } from "_client/link";
 import { DesktopNav } from "_client/sections/header/desktop-nav";
-import { HEADER } from "content/header";
+import { NavMobile } from "_client/sections/header/navMobile";
 import { SEO } from "content/seo";
-import NextLink from "next/link";
 import LunalemonLogo from "public/logo.svg";
-import { FC, Fragment } from "react";
-import { BsGithub, BsThreeDotsVertical } from "react-icons/bs";
+import { FC } from "react";
+import { BsGithub } from "react-icons/bs";
 import { HeaderSection } from "types/sections";
 
 export const Header: FC<HeaderSection> = ({ id, type, settings, blocks }) => {
@@ -27,7 +25,7 @@ export const Header: FC<HeaderSection> = ({ id, type, settings, blocks }) => {
           <DesktopNav menu={settings.menu} blocks={blocks} />
           <NavDividerDesktop />
           <NavSettingsDesktop />
-          <NavMobile />
+          <NavMobile menu={settings.menu} blocks={blocks} />
         </div>
       </header>
     </Section>
@@ -53,12 +51,12 @@ function VersionBadge() {
 }
 
 function NavDividerDesktop() {
-  return <div className="my-auto hidden h-6 w-px bg-slate-200 dark:bg-gray-700 sm:block" />;
+  return <div className="my-auto hidden h-6 w-px bg-slate-200 dark:bg-gray-700 md:block" />;
 }
 
 function NavSettingsDesktop() {
   return (
-    <nav className="hidden h-full items-center gap-1 px-2 sm:flex">
+    <nav className="hidden h-full items-center gap-1 px-2 md:flex">
       <LightDarkSwitcher />
 
       <Link
@@ -107,62 +105,6 @@ function NavSettingsDesktop() {
           </>
         )}
       </Popover>*/}
-    </nav>
-  );
-}
-
-function NavMobile() {
-  return (
-    <nav className="ml-auto flex h-full items-center gap-1 px-2 sm:hidden">
-      <LightDarkSwitcher />
-
-      <Popover className="relative">
-        {({ close }) => (
-          <>
-            <Popover.Button className="flex h-8 w-8 items-center justify-center rounded text-xl hfa:text-slate-900 dark:hfa:text-white">
-              <span className="sr-only">Open user menu</span>
-              <BsThreeDotsVertical />
-            </Popover.Button>
-            <Popover.Overlay className="pointer-events-none fixed top-0 left-0 right-0 h-screen w-screen bg-black/20 backdrop-blur-sm dark:bg-gray-900/20" />
-
-            <Transition
-              as={Fragment}
-              enter="transition ease-out duration-100"
-              enterFrom="transform opacity-0 scale-95"
-              enterTo="transform opacity-100 scale-100"
-              leave="transition ease-in duration-75"
-              leaveFrom="transform opacity-100 scale-100"
-              leaveTo="transform opacity-0 scale-95"
-            >
-              <Popover.Panel className="absolute right-0 mt-2 min-w-[190px] origin-top-right divide-y divide-gray-200 whitespace-nowrap rounded bg-white  py-1 shadow-lg dark:divide-gray-700 dark:bg-dark-card ">
-                <div className="pb-1">
-                  {HEADER.nav.map(({ name, href }, index) => (
-                    <NextLink key={name + index} href={href}>
-                      <a
-                        className=" block py-2 px-4 text-sm hfa:bg-slate-100"
-                        onClick={() => close()}
-                      >
-                        {name}
-                      </a>
-                    </NextLink>
-                  ))}
-
-                  <a
-                    className="group flex items-center justify-between py-2 px-4 text-sm hfa:bg-slate-100"
-                    href={SEO.github}
-                    referrerPolicy="no-referrer"
-                    target="_blank"
-                    onClick={() => close()}
-                    rel="noreferrer"
-                  >
-                    GitHub
-                  </a>
-                </div>
-              </Popover.Panel>
-            </Transition>
-          </>
-        )}
-      </Popover>
     </nav>
   );
 }

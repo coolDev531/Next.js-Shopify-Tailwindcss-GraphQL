@@ -253,7 +253,6 @@
     },
     "16542555547186860a": {
       "type": "spec-list",
-      "disabled": true,
       "blocks": {
         "c2a192bb-8b31-4125-b05c-744bda6883aa": {
           "type": "heading",
@@ -407,7 +406,6 @@
     },
     "165426875321fe7fc5": {
       "type": "feature-list",
-      "disabled": true,
       "blocks": {
         "7d9184d1-b917-43ab-a84e-dbce8b2d3989": {
           "type": "feature",
