@@ -74,7 +74,7 @@
             "paragraph": "<p>When we started the project with Broadway Jewellers. We first needed to understand the information and data that needed to be sorted through and migrated to the Shopify platform from WordPress. Our team did an extensive analysis and created a strategic plan that ensured the old website's SEO, content, and web rankings were kept intact during the migration.<\/p><p> <br\/>With the content migration complete, our team started developing the Shopify website according to our clients’ needs while taking to account the key functions and features required for website.<br\/><br\/><\/p>",
             "list_title": "",
             "list": "<p>Organising product data<\/p><p>Migrate Images from Products & Categories<\/p><p>Customer data Migration<\/p><p>Product and Order information migration<\/p><p>Redirect all changed links<\/p><p>Theme Coding & Implementation<\/p><p>Shopify Apps Integration & Configuration<\/p><p>Payment & Shipping Zones Set-Up<\/p><p>Product & Inventory Set-Up<\/p>",
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "image": "shopify:\/\/shop_images\/Lunalemon-pictures1.jpg",
             "aspect_desktop": "auto",
             "fit_height": false,
             "aspect_mobile": "16-9",
@@ -89,7 +89,7 @@
             "paragraph": "<p>After a successful website build and launch. We worked on optimizing their websites and a monthly maintenance plan. Our team worked on creating monthly plans on improving and optimization our client’s website. They continually use and develop cutting-edge SEO tools and crawling software to identify and analyze technical SEO factors that needs to be addressed. They also worked on product content research and creation. Consistently working on the website and keeping up to date with the ever-evolving online environment.<\/p>",
             "list_title": "",
             "list": "<p>Website data backup<\/p><p>Stand by for website queries or requests <\/p><p>Website updates and customizations <\/p><p>Evaluating current keyword rankings<\/p><p>Identifying and creating quality links<\/p><p>Content research & creation <\/p><p>Product content quality analysis and update<\/p>",
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "image": "shopify:\/\/shop_images\/Lunalemon-pictures.jpg",
             "aspect_desktop": "auto",
             "fit_height": false,
             "aspect_mobile": "16-9",
@@ -104,7 +104,7 @@
             "paragraph": "<p>When we first took over the client’s social ad campaigns, one of the biggest challenges was finding the people interested in its products. The company’s target audience of jewellery and watches was so broad at that time. Our team performed several campaign audits and market analyses to quickly determine the client’s ideal target market, drive website purchases and deliver a solid return. <\/p>",
             "list_title": "",
             "list": "<p>Audience AB testing <\/p><p>Promoting highest-priority products<\/p><p>Monthly ad goals and review<\/p><p>Special occasions & dates campaigns<\/p><p>Product placement ads<\/p>",
-            "image": "shopify:\/\/shop_images\/45666405_2210510059223205_2884315360159139887_n.jpg",
+            "image": "shopify:\/\/shop_images\/Lunalemon-pictures2_37875377-4e55-4e2f-955f-186bd9106ad6.jpg",
             "aspect_desktop": "auto",
             "fit_height": false,
             "aspect_mobile": "16-9",
@@ -166,14 +166,29 @@
         "a97114d1-2a70-40f3-9f0c-32751ea9b4ab": {
           "type": "heading",
           "settings": {
-            "pre_title": "Custom builder",
-            "title": "",
-            "paragraph": "<p>asdasd<\/p>",
+            "pre_title": "Custom Features",
+            "title": "We have worked with Broadway Jewellers on a number of unique features",
+            "paragraph": "<p>Our team of Shopify web developers work closely with our clients to<br\/>create a selection of suitable options, and unique features that perfectly<br\/>represent their vision and needs.<\/p>",
             "cta1": "",
             "cta1_link": "##",
             "cta2": "",
             "cta2_link": "#",
             "position": "left"
+          }
+        },
+        "5580bf76-a72e-4bfe-8d9d-a63518f96cc5": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Jewellery Customizer",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "Jewellery customizer",
+            "paragraph": "<p>This Jewellery customizer helps users choose options to create their own personalized necklace, or bracelet by typing in their name, choosing the material, size, font style and language.<\/p>",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/1.jpg",
+            "image_link": ""
           }
         },
         "2353a22b-85ba-4a79-9a1c-23bbf71d60d7": {
@@ -182,27 +197,12 @@
             "tab_title": "Custom Filter Functionality",
             "tab_icon": "BadgeCheckIcon",
             "title": "Custom Filter Functionality",
-            "paragraph": "<p>This was custom built to filter through the products with specific features related to product colour, gender, materials, and water resistance  <\/p>",
-            "cta1": "asdasd",
+            "paragraph": "<p>This Custom Filter Functionality was built to filter through the products with specific features related to product colour, gender, materials, and water resistance options.<\/p>",
+            "cta1": "",
             "cta1_link": "#",
             "cta2": "",
             "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
-            "image_link": ""
-          }
-        },
-        "5580bf76-a72e-4bfe-8d9d-a63518f96cc5": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Custom Jewelry name page",
-            "tab_icon": "BadgeCheckIcon",
-            "title": "Custom Jewelry name page",
-            "paragraph": "<p>this helps users choose options to create their personalized Jewelry by typing in their name, choosing the material, size, font style and language.<\/p>",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/ampersand-01-classic.jpg",
+            "image": "shopify:\/\/shop_images\/filter-functionanilty.jpg",
             "image_link": ""
           }
         },
@@ -217,7 +217,7 @@
             "cta1_link": "",
             "cta2": "",
             "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/heart-02-shoreline.jpg",
+            "image": "shopify:\/\/shop_images\/Shopify-take-a-lot-integration.jpg",
             "image_link": ""
           }
         },
@@ -232,7 +232,7 @@
             "cta1_link": "",
             "cta2": "",
             "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image": "shopify:\/\/shop_images\/Shopify-corrier-guy-integration.jpg",
             "image_link": ""
           }
         },
@@ -242,12 +242,12 @@
             "tab_title": "Product review app",
             "tab_icon": "BadgeCheckIcon",
             "title": "Product review app",
-            "paragraph": "",
+            "paragraph": "<p>This integration helps increase the overall trust of visitors to the<br\/>store and increases conversion by showcasing ratings of the particular product.<\/p>",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
             "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image": "shopify:\/\/shop_images\/Lunalemon-pictures1_26891528-ca84-4d23-a9f0-1bdbda7e7943.jpg",
             "image_link": ""
           }
         },
@@ -270,8 +270,8 @@
       },
       "block_order": [
         "a97114d1-2a70-40f3-9f0c-32751ea9b4ab",
-        "2353a22b-85ba-4a79-9a1c-23bbf71d60d7",
         "5580bf76-a72e-4bfe-8d9d-a63518f96cc5",
+        "2353a22b-85ba-4a79-9a1c-23bbf71d60d7",
         "d507e67a-14b7-473e-a024-ccb8262d029c",
         "e3679b31-516e-4d8d-8463-58315b3dbaec",
         "57ab776c-10cd-4f7c-8b42-5b73d6edd21a",
@@ -287,7 +287,7 @@
           "type": "heading",
           "settings": {
             "pre_title": "",
-            "title": "asdasdasd",
+            "title": "More to expect when working with us...",
             "paragraph": "",
             "cta1": "",
             "cta1_link": "",

@@ -11,10 +11,10 @@
       "settings": {
         "pre_title": "Portfolio of Work",
         "title": "Zoom Printing",
-        "paragraph": "<p>Zoom Printing was founded in 2003 by individuals who asked a simple question. Why should you overpay for printing services by purchasing from a long chain of resellers? ZOOM PRINTING is a one-stop-shop for all printing needs at unbelievable prices. The pricing model is built on providing the highest possible quality for an affordable price. With Zoom Printing you print direct and benefit from \"factory pricing\".<\/p>",
-        "list": "<p>What we did (services):<br\/>•\tStore Migrations & Web Development<br\/>•\tCustom Features Development <br\/>•\tCustom App Integrations<br\/>•\tMonthly SEO & Site maintenance support <br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/zoom_printing.jpg",
-        "collection": "frontpage"
+        "paragraph": "<p>Founded in 2003, ZOOM PRINTING is a one-stop-shop for all printing needs at unbelievable prices. The pricing model is built on providing the highest possible quality for an affordable price.<\/p><p>We have worked with ZOOM PRINTING in successfully migrating their store from Legacy to Shopify covering aspects from inventory management, web development, custom product set-up. <br\/><\/p>",
+        "list_title": "What we did:",
+        "list": "<p>Store Migration<\/p><p>Shopify Web Development<\/p><p>Custom Features Development<\/p>",
+        "image": "shopify:\/\/shop_images\/zoom_printing.jpg"
       }
     },
     "1654079897751048da": {
@@ -58,10 +58,10 @@
           "settings": {
             "pre_title": "Case in point",
             "title": "From Challenge to Solution",
-            "paragraph": "<p>How we helped migrate their store from Legacy to shopify while creating a fresh and UX driven site that would suit their large inventory and requirements for customizable products with multiple product variability.<\/p>",
-            "cta1": "asdasdasd",
+            "paragraph": "<p>How we overcome ZOOM PRINTING challenges to migrate their store from Legacy to Shopify, while creating a fresh and UX driven site that would suit their large inventory and requirements for customizable products with multiple product variability.<\/p>",
+            "cta1": "Develop your website",
             "cta1_link": "#",
-            "cta2": "asd",
+            "cta2": "Explore our services",
             "cta2_link": "#",
             "position": "center"
           }
@@ -69,129 +69,83 @@
         "364ea5e8-5749-4d69-b8f0-528e5aab9c5b": {
           "type": "image-text",
           "settings": {
-            "pre_title": "Website migration analysis",
-            "title": "",
-            "paragraph": "<p>When we first took over the website, one of our challenges was understand the extent of information and data that needed to be sorted through and migrated to the Shopify platform from Legacy. Our team did an extensive analyse of the old site to ensure that the migration was effective and seamless. The biggest highlights was the amount of data and information that needed to be extracted, sorted and formatted for the new website. They created an in detailed strategic plan that took that into consideration and that ensured that the old sites SEO, content, and web rankings were kept intact. <br\/> <br\/>•\tRedirect all changed links<br\/>•\tUpdating the website structure, to optimize user flow and experience<br\/>•\tUpdating website content and flow <br\/>•\tWeb content migration <br\/><\/p>",
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "pre_title": "Starting the journey to success",
+            "title": "Analysis & Migration",
+            "paragraph": "<p>When we first took over the website, we first needed to understand the information and data that needed to be sorted through and migrated to the Shopify platform from Legacy  to Shopify. A big highlight for us was the number of products and multiple variables each product had. Our team did an extensive analysis and created a strategic plan that ensured the old website's SEO, content, and web rankings were kept intact.<\/p>",
+            "list_title": "",
+            "list": "<p>Organising product data<\/p><p>Migrate Images from Products, Categories<\/p><p>Customer data Migration<\/p><p>Product and Order information migration<\/p><p>Redirect all changed links<\/p><p>Content migration<\/p>",
+            "image": "shopify:\/\/shop_images\/sstore-migration.jpg",
+            "aspect_desktop": "3-2",
+            "fit_height": false,
+            "aspect_mobile": "21-9",
             "position": "left"
           }
         },
         "4729554a-b37a-42dd-b189-ab78ef716946": {
           "type": "image-text",
           "settings": {
-            "pre_title": "asd",
-            "title": "asd",
-            "paragraph": "<p>asd<\/p>",
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "pre_title": "Turing the vision into reality",
+            "title": "Shopify web development",
+            "paragraph": "<p>With the content migration complete and a strategic plan in place. Our team started developing the Shopify website. This was specifically tailored to our clients’ needs while taking to account the key functions and features that our clients required from their old website.<\/p>",
+            "list_title": "",
+            "list": "<p>Theme Coding & Implementation<\/p><p>Content structure update, for user experience optimization <\/p><p>Vend to Shopify integration<\/p><p>Shopify Apps Integration & Configuration<\/p><p>Payment & Shipping Zones Set-Up<\/p><p>Product & Inventory Set-Up<\/p><p>Shopify SEO Implementation and optimization<\/p>",
+            "image": "shopify:\/\/shop_images\/Lunalemon-pictures1_7c31068b-8036-4588-8fe1-ab064889243a.jpg",
+            "aspect_desktop": "3-2",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
             "position": "right"
+          }
+        },
+        "22cd2f91-4e3a-4fea-bbd9-38910507a126": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Developing solutions unique to your needs",
+            "title": "Custom Features",
+            "paragraph": "",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/businss-cards.jpg",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
+            "position": "left"
           }
         }
       },
       "block_order": [
         "93e0ffb2-4809-45bb-88aa-7cf835fef608",
         "364ea5e8-5749-4d69-b8f0-528e5aab9c5b",
-        "4729554a-b37a-42dd-b189-ab78ef716946"
+        "4729554a-b37a-42dd-b189-ab78ef716946",
+        "22cd2f91-4e3a-4fea-bbd9-38910507a126"
       ],
       "settings": {
       }
     },
     "16540875305d711f9e": {
       "type": "info-cards",
-      "blocks": {
-        "fb6608c3-2a06-483c-abdd-2d1baebd2dbe": {
-          "type": "info-card",
-          "settings": {
-            "title": "asfafs",
-            "paragraph": "<p>asfasddas<\/p>",
-            "svg": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 15 15\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path d=\"M1.84998 7.49998C1.84998 7.21321 1.87134 6.93143 1.91256 6.65615L9.56374 2.23875C9.86311 2.35627 10.15 2.49861 10.4219 2.66322L3.77065 6.50332C3.73669 6.52183 3.70482 6.5449 3.67602 6.57238C3.5911 6.65308 3.54245 6.76286 3.53682 6.87658C3.53359 6.9418 3.54451 7.00831 3.57086 7.07137C3.58927 7.1157 3.6149 7.15742 3.64744 7.19458C3.67306 7.22396 3.702 7.24941 3.73337 7.27069L7.32533 9.83813L3.87232 11.8317C2.63604 10.7953 1.84998 9.23944 1.84998 7.49998ZM8.36843 10.2751C8.37682 10.2706 8.38509 10.2659 8.39322 10.2608L9.84091 9.42499C9.84706 9.42163 9.85314 9.41812 9.85915 9.41446L11.3101 8.57677C11.3655 8.54649 11.4154 8.504 11.4554 8.44995C11.6034 8.25031 11.5616 7.96848 11.362 7.82046L7.82779 5.20017L11.2161 3.24393C12.4013 4.27963 13.15 5.80237 13.15 7.49998C13.15 7.83546 13.1207 8.16411 13.0647 8.48353L5.56875 12.8113C5.26138 12.6995 4.96646 12.5618 4.68662 12.4008L8.36843 10.2751ZM8.18149 9.34383L4.81659 6.93868L5.50918 6.53881L8.80604 8.98324L8.18149 9.34383ZM6.35875 6.04832L6.97822 5.69067L10.2751 8.13506L9.6556 8.49275L6.35875 6.04832ZM8.3318 1.91078L2.24263 5.42636C3.06941 3.33188 5.11164 1.84998 7.49998 1.84998C7.78258 1.84998 8.06033 1.87072 8.3318 1.91078ZM6.84684 13.1126C7.06114 13.1373 7.27908 13.15 7.49998 13.15C9.8246 13.15 11.8213 11.7461 12.6886 9.7399L6.84684 13.1126ZM7.49998 0.849976C3.82728 0.849976 0.849976 3.82728 0.849976 7.49998C0.849976 11.1727 3.82728 14.15 7.49998 14.15C11.1727 14.15 14.15 11.1727 14.15 7.49998C14.15 3.82728 11.1727 0.849976 7.49998 0.849976Z\" fill=\"currentColor\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"><\/path><\/svg>"
-          }
-        },
-        "02b5b4ee-d9af-42ee-b7c5-f1ac36b8e530": {
-          "type": "info-card",
-          "settings": {
-            "title": "asdasdasd",
-            "paragraph": "<p>asdasdasd<\/p>",
-            "svg": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1.75391 14.9998C1.75391 7.68444 7.6842 1.75415 14.9996 1.75415C22.3149 1.75415 28.2452 7.68444 28.2452 14.9998C28.2452 22.3151 22.3149 28.2455 14.9996 28.2455C7.6842 28.2455 1.75391 22.3151 1.75391 14.9998ZM7.56191 6.4319C9.3655 4.86489 11.6687 3.85795 14.2008 3.68183V13.0708L7.56191 6.4319ZM6.43062 7.56335C4.8644 9.36653 3.85792 11.6689 3.68166 14.2H13.0673L6.43062 7.56335ZM13.0673 15.8H3.68169C3.85806 18.3311 4.8646 20.6334 6.43085 22.4365L13.0673 15.8ZM7.56217 23.5679C9.36572 25.1348 11.6688 26.1417 14.2008 26.3178V16.9293L7.56217 23.5679ZM15.8008 16.9335V26.3176C18.3313 26.1411 20.6332 25.1347 22.436 23.5687L15.8008 16.9335ZM23.5675 22.4375C25.1342 20.6342 26.1411 18.3315 26.3174 15.8H16.9301L23.5675 22.4375ZM16.9301 14.2H26.3175C26.1412 11.6685 25.1344 9.36574 23.5677 7.56242L16.9301 14.2ZM22.4363 6.43109C20.6334 4.86504 18.3314 3.85856 15.8008 3.682V13.0666L22.4363 6.43109Z\" fill=\"currentcolor\"><\/path><\/svg>"
-          }
-        },
-        "0135068e-b303-402c-ad26-50218fb8a7b7": {
-          "type": "info-card",
-          "settings": {
-            "title": "asdasdasdasd",
-            "paragraph": "<p>asdasdasd<\/p>",
-            "svg": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 15 15\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path d=\"M2.14921 3.99996C2.14921 2.97778 2.97784 2.14915 4.00002 2.14915C5.02219 2.14915 5.85083 2.97778 5.85083 3.99996C5.85083 5.02213 5.02219 5.85077 4.00002 5.85077C2.97784 5.85077 2.14921 5.02213 2.14921 3.99996ZM4.00002 1.24915C2.48079 1.24915 1.24921 2.48073 1.24921 3.99996C1.24921 5.51919 2.48079 6.75077 4.00002 6.75077C5.51925 6.75077 6.75083 5.51919 6.75083 3.99996C6.75083 2.48073 5.51925 1.24915 4.00002 1.24915ZM5.82034 11.0001L2.49998 12.8369V9.16331L5.82034 11.0001ZM2.63883 8.21159C2.17228 7.9535 1.59998 8.29093 1.59998 8.82411V13.1761C1.59998 13.7093 2.17228 14.0467 2.63883 13.7886L6.57235 11.6126C7.05389 11.3462 7.05389 10.654 6.57235 10.3876L2.63883 8.21159ZM8.30001 9.00003C8.30001 8.61343 8.61341 8.30003 9.00001 8.30003H13C13.3866 8.30003 13.7 8.61343 13.7 9.00003V13C13.7 13.3866 13.3866 13.7 13 13.7H9.00001C8.61341 13.7 8.30001 13.3866 8.30001 13V9.00003ZM9.20001 9.20003V12.8H12.8V9.20003H9.20001ZM13.4432 2.19311C13.6189 2.01737 13.6189 1.73245 13.4432 1.55671C13.2675 1.38098 12.9826 1.38098 12.8068 1.55671L11 3.36353L9.19321 1.55674C9.01748 1.381 8.73255 1.381 8.55682 1.55674C8.38108 1.73247 8.38108 2.0174 8.55682 2.19313L10.3636 3.99992L8.55682 5.80671C8.38108 5.98245 8.38108 6.26737 8.55682 6.44311C8.73255 6.61885 9.01748 6.61885 9.19321 6.44311L11 4.63632L12.8068 6.44314C12.9826 6.61887 13.2675 6.61887 13.4432 6.44314C13.6189 6.2674 13.6189 5.98247 13.4432 5.80674L11.6364 3.99992L13.4432 2.19311Z\" fill=\"currentColor\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"><\/path><\/svg>"
-          }
-        },
-        "6019f941-d682-4287-a2a1-a81d7d04e16b": {
-          "type": "info-card",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "paragraph": "",
-            "svg": ""
-          }
-        },
-        "5b3fe2ae-0fda-4328-8ee4-d145ae75eb9e": {
-          "type": "info-card",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "paragraph": "",
-            "svg": ""
-          }
-        },
-        "665dcec1-7ac9-4dcc-9354-9cca041fac39": {
-          "type": "info-card",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "paragraph": "",
-            "svg": ""
-          }
-        }
-      },
-      "block_order": [
-        "fb6608c3-2a06-483c-abdd-2d1baebd2dbe",
-        "02b5b4ee-d9af-42ee-b7c5-f1ac36b8e530",
-        "0135068e-b303-402c-ad26-50218fb8a7b7",
-        "6019f941-d682-4287-a2a1-a81d7d04e16b",
-        "5b3fe2ae-0fda-4328-8ee4-d145ae75eb9e",
-        "665dcec1-7ac9-4dcc-9354-9cca041fac39"
-      ],
       "settings": {
         "pre_title": "asdasd",
-        "title": "asdasdasd"
+        "title": "asdasdasd",
+        "content_list": [
+
+        ]
       }
     },
     "1654092902cc4e4a33": {
       "type": "logo-banner",
-      "blocks": {
-        "8b8647c3-3975-4e39-8e12-20652445b191": {
-          "type": "svg",
-          "settings": {
-            "svg": "<svg width=\"30\" height=\"30\" viewbox=\"0 0 15 15\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path d=\"M2.14921 3.99996C2.14921 2.97778 2.97784 2.14915 4.00002 2.14915C5.02219 2.14915 5.85083 2.97778 5.85083 3.99996C5.85083 5.02213 5.02219 5.85077 4.00002 5.85077C2.97784 5.85077 2.14921 5.02213 2.14921 3.99996ZM4.00002 1.24915C2.48079 1.24915 1.24921 2.48073 1.24921 3.99996C1.24921 5.51919 2.48079 6.75077 4.00002 6.75077C5.51925 6.75077 6.75083 5.51919 6.75083 3.99996C6.75083 2.48073 5.51925 1.24915 4.00002 1.24915ZM5.82034 11.0001L2.49998 12.8369V9.16331L5.82034 11.0001ZM2.63883 8.21159C2.17228 7.9535 1.59998 8.29093 1.59998 8.82411V13.1761C1.59998 13.7093 2.17228 14.0467 2.63883 13.7886L6.57235 11.6126C7.05389 11.3462 7.05389 10.654 6.57235 10.3876L2.63883 8.21159ZM8.30001 9.00003C8.30001 8.61343 8.61341 8.30003 9.00001 8.30003H13C13.3866 8.30003 13.7 8.61343 13.7 9.00003V13C13.7 13.3866 13.3866 13.7 13 13.7H9.00001C8.61341 13.7 8.30001 13.3866 8.30001 13V9.00003ZM9.20001 9.20003V12.8H12.8V9.20003H9.20001ZM13.4432 2.19311C13.6189 2.01737 13.6189 1.73245 13.4432 1.55671C13.2675 1.38098 12.9826 1.38098 12.8068 1.55671L11 3.36353L9.19321 1.55674C9.01748 1.381 8.73255 1.381 8.55682 1.55674C8.38108 1.73247 8.38108 2.0174 8.55682 2.19313L10.3636 3.99992L8.55682 5.80671C8.38108 5.98245 8.38108 6.26737 8.55682 6.44311C8.73255 6.61885 9.01748 6.61885 9.19321 6.44311L11 4.63632L12.8068 6.44314C12.9826 6.61887 13.2675 6.61887 13.4432 6.44314C13.6189 6.2674 13.6189 5.98247 13.4432 5.80674L11.6364 3.99992L13.4432 2.19311Z\" fill=\"currentColor\" fill-rule=\"evenodd\" clip-rule=\"evenodd\"><\/path><\/svg>",
-            "url": "#"
-          }
-        },
-        "32370b89-179d-470e-a674-cbeae597dfe7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ms-icon-310x310.png",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "8b8647c3-3975-4e39-8e12-20652445b191",
-        "32370b89-179d-470e-a674-cbeae597dfe7"
-      ],
       "settings": {
         "title": "",
-        "height": 40
+        "logo_items": [
+
+        ],
+        "height": 40,
+        "animate": false,
+        "animation_duration": 20
       }
     },
     "16541733016b2d4288": {
       "type": "tabs-image-card",
+      "disabled": true,
       "blocks": {
         "a97114d1-2a70-40f3-9f0c-32751ea9b4ab": {
           "type": "heading",
@@ -210,7 +164,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Custom builder",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
+            "tab_icon": "BadgeCheckIcon",
             "title": "Custom builder",
             "paragraph": "<p>This custom builder helps you build your own stroller, choosing elements like fabric styles, frame options, wheel types. It shows the changes in real life creating a very interactive purchase experience for people who want a custom product they built themselves.<\/p>",
             "cta1": "asdasd",
@@ -225,7 +179,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Mega menu & custom brand section",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
+            "tab_icon": "BadgeCheckIcon",
             "title": "Mega menu & custom brand section",
             "paragraph": "<p>This custom build helped organize a large amount of product categories in user friendly manner, we also focused on the brands, organising them Alphabetically while highlighting the top popular brands<\/p>",
             "cta1": "",
@@ -240,7 +194,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Google rating integration",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
+            "tab_icon": "BadgeCheckIcon",
             "title": "Google rating integration",
             "paragraph": "<p>This integration helps increase the overall trust of visitors to the store by showcasing their live google ratings<\/p>",
             "cta1": "",
@@ -255,7 +209,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Customized logo band",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
+            "tab_icon": "BadgeCheckIcon",
             "title": "Customized logo band",
             "paragraph": "<p>This custom built helped showcase the large amount of brands that kidsliving offers while highlighted the logos flawlessly into the shops home page <\/p>",
             "cta1": "",
@@ -270,7 +224,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "asdasdasd",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
+            "tab_icon": "BadgeCheckIcon",
             "title": "",
             "paragraph": "",
             "cta1": "",
@@ -285,7 +239,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "123sadasdadsasd",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
+            "tab_icon": "BadgeCheckIcon",
             "title": "",
             "paragraph": "",
             "cta1": "",
@@ -316,7 +270,7 @@
           "type": "heading",
           "settings": {
             "pre_title": "",
-            "title": "asdasdasd",
+            "title": "More to expect when working with us...",
             "paragraph": "",
             "cta1": "",
             "cta1_link": "",
@@ -384,6 +338,8 @@
         "547189e6-16c7-44f5-9dea-7ab932e1e925"
       ],
       "settings": {
+        "color_bg": "",
+        "color_toggle": "dark"
       }
     },
     "1654259533f54af287": {
@@ -405,8 +361,8 @@
             "columns": 4,
             "hover_effect": true,
             "title": "Super Duper",
-            "color_text": "#ffffff",
             "paragraph": "<p>Super DuperSuper DuperSuper Duper<\/p><p>Super Duper<\/p><p>Super Duper<\/p>",
+            "color_use_light_text": false,
             "color_overlay": "linear-gradient(121deg, rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.29) 99%)",
             "product": ""
           }
@@ -418,8 +374,8 @@
             "columns": 8,
             "hover_effect": false,
             "title": "",
-            "color_text": "#ffffff",
             "paragraph": "",
+            "color_use_light_text": false,
             "color_overlay": "",
             "product": ""
           }
@@ -431,8 +387,8 @@
             "columns": 8,
             "hover_effect": false,
             "title": "",
-            "color_text": "",
             "paragraph": "",
+            "color_use_light_text": false,
             "color_overlay": "",
             "product": ""
           }
@@ -444,8 +400,8 @@
             "columns": 4,
             "hover_effect": false,
             "title": "",
-            "color_text": "",
             "paragraph": "",
+            "color_use_light_text": false,
             "color_overlay": "",
             "product": ""
           }
@@ -468,7 +424,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Conversion Rate Optimization",
-            "paragraph": "<p>Our team focuses on optimizing your sites speed<br\/>by eliminating unnecessary form fields, placing clear calls-to-action and simplifying<br\/>your page navigations. We also perform A\/B testing to ensure all aspects of<br\/>your website are optimized for conversion.<\/p>"
+            "paragraph": "<p>Our team focuses on optimizing your sites speed<br\/>by eliminating unnecessary form fields, placing clear calls-to-action and simplifying<br\/>your page navigations. We also perform A\/B testing to ensure all aspects of<br\/>your website are optimized for conversion.<\/p>",
+            "paragraph_old": ""
           }
         },
         "335efa5a-6e14-4f5f-9f46-3faad15cb6a8": {
@@ -476,7 +433,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Website Analysis",
-            "paragraph": "<p>Our team performs thorough site analysis to<br\/>determine your website’s conversion opportunities, threats, weaknesses, and<br\/>strengths. We run SEO audits, test your site speed and functionality, and analyse<br\/>your site traffic. These methods allow us to improve your site usability and<br\/>increase your site engagement and conversions.<\/p>"
+            "paragraph": "<p>Our team performs thorough site analysis to<br\/>determine your website’s conversion opportunities, threats, weaknesses, and<br\/>strengths. We run SEO audits, test your site speed and functionality, and analyse<br\/>your site traffic. These methods allow us to improve your site usability and<br\/>increase your site engagement and conversions.<\/p>",
+            "paragraph_old": ""
           }
         },
         "976c1d3a-29d8-43f3-8c94-e23b9461c461": {
@@ -484,7 +442,8 @@
           "settings": {
             "icon": "CloudIcon",
             "title": "Website Maintenance",
-            "paragraph": "<p>Regular site maintenance is crucial to ensure<br\/>your website is running at full capacity. We conduct scheduled site check-ups<br\/>to determine your website's key aspects that need improvement. Using the<br\/>analytics results, we develop strategies to enhance your site security, boost<br\/>your traffic and optimize your page experience.<\/p>"
+            "paragraph": "<p>Regular site maintenance is crucial to ensure<br\/>your website is running at full capacity. We conduct scheduled site check-ups<br\/>to determine your website's key aspects that need improvement. Using the<br\/>analytics results, we develop strategies to enhance your site security, boost<br\/>your traffic and optimize your page experience.<\/p>",
+            "paragraph_old": ""
           }
         },
         "bf211802-1d16-4343-b21c-1a6d7af721c0": {
@@ -492,7 +451,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Customer Focus & Communication",
-            "paragraph": "<p>We focus on developing customized processes to<br\/>fit your needs. We understand that each client is different and work in<br\/>different ways. We take the time to regularly communicate to our clients<br\/>keeping them updating on our processes and encourage feedback. For the<br\/>convenience of our clients, our meetings\/communications are done via email,<br\/>whatsapp or video conferencing.<\/p>"
+            "paragraph": "<p>We focus on developing customized processes to<br\/>fit your needs. We understand that each client is different and work in<br\/>different ways. We take the time to regularly communicate to our clients<br\/>keeping them updating on our processes and encourage feedback. For the<br\/>convenience of our clients, our meetings\/communications are done via email,<br\/>whatsapp or video conferencing.<\/p>",
+            "paragraph_old": ""
           }
         }
       },
@@ -507,186 +467,34 @@
     },
     "16543302228e17b41c": {
       "type": "feature-carousel",
-      "blocks": {
-        "72327450-7de3-4242-ad98-b6e0caffde82": {
-          "type": "heading",
-          "settings": {
-            "pre_title": "asdasd",
-            "title": "asdasdasd",
-            "paragraph": "<p>asdasda<\/p>",
-            "cta1": "as",
-            "cta1_link": "#",
-            "cta2": "",
-            "cta2_link": "",
-            "position": "left"
-          }
-        },
-        "b53a2b98-fe42-4f4d-9189-db1287866b3c": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/delicious-plate-of-pepperoni-pizza.jpg",
-            "title": "asdasdasd",
-            "paragraph": "asdasdasd",
-            "link": ""
-          }
-        },
-        "49325a4d-a438-4a41-b019-5dac2a0edd8b": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/person-cuts-into-plate-of-pasta.jpg",
-            "title": "123123123123",
-            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consectetur culpa deserunt laudantium molestias porro praesentium sapiente veniam.",
-            "link": ""
-          }
-        },
-        "61e4b795-9e17-4e8d-8f47-03b21ba236f1": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/two-red-cocktails-on-a-tray.jpg",
-            "title": "asd213sda",
-            "paragraph": "asdasdasdasd",
-            "link": ""
-          }
-        },
-        "6a176d7b-8529-43c8-bfd0-fefba7e11618": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/camera-looks-down-on-wooden-table-with-two-bao-buns.jpg",
-            "title": "dasd",
-            "paragraph": "asdasdas",
-            "link": ""
-          }
-        },
-        "ad35f5fe-5f16-4dcc-9c81-1ab8f007450a": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "title": "312312",
-            "paragraph": "12312312",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "72327450-7de3-4242-ad98-b6e0caffde82",
-        "b53a2b98-fe42-4f4d-9189-db1287866b3c",
-        "49325a4d-a438-4a41-b019-5dac2a0edd8b",
-        "61e4b795-9e17-4e8d-8f47-03b21ba236f1",
-        "6a176d7b-8529-43c8-bfd0-fefba7e11618",
-        "ad35f5fe-5f16-4dcc-9c81-1ab8f007450a"
-      ],
       "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "features": [
+
+        ]
       }
     },
     "1654332872499b00d2": {
       "type": "image-carousel",
-      "blocks": {
-        "c0ffc8ad-3f4b-410f-af2f-da7cafd62fc9": {
-          "type": "heading",
-          "settings": {
-            "pre_title": "asdasdasd",
-            "title": "asdasdasdasd",
-            "paragraph": "",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "position": "center"
-          }
-        },
-        "8f3cf455-a5ce-425b-bf03-e145be89e736": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/person-cuts-into-plate-of-pasta.jpg",
-            "link": ""
-          }
-        },
-        "aa96e5f7-6417-47d3-a959-e0552f62e228": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/delicious-plate-of-pepperoni-pizza.jpg",
-            "link": ""
-          }
-        },
-        "e14a06fb-4f62-4331-af3c-3939b6cc2c99": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
-            "link": ""
-          }
-        },
-        "63cd4660-0815-4624-80f8-590efdeec96b": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/camera-looks-down-on-wooden-table-with-two-bao-buns.jpg",
-            "link": ""
-          }
-        },
-        "b98d42da-3dcb-4d0f-98fa-ae8ce55a74ad": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/two-red-cocktails-on-a-tray.jpg",
-            "link": ""
-          }
-        },
-        "797e95a5-ff90-4b78-a815-33454afccb9a": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/hands-slice-red-pepper-on-wooden-cutting-board.jpg",
-            "link": ""
-          }
-        },
-        "81693dd4-3af2-4251-83e6-6a0536b8692b": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/person-cuts-into-plate-of-pasta.jpg",
-            "link": ""
-          }
-        },
-        "f8b7e3b4-142c-47e9-a605-086b8568394d": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/camera-looks-down-on-wooden-table-with-two-bao-buns.jpg",
-            "link": ""
-          }
-        },
-        "6774d44d-0a94-4e10-be5d-fb67d41601c4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/person-cuts-into-plate-of-pasta.jpg",
-            "link": ""
-          }
-        },
-        "fa064bf9-9b04-4089-a385-6450b8e1924c": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "link": ""
-          }
-        },
-        "a90648f7-1552-495d-8070-b034d3f4eb60": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/delicious-plate-of-pepperoni-pizza.jpg",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "c0ffc8ad-3f4b-410f-af2f-da7cafd62fc9",
-        "8f3cf455-a5ce-425b-bf03-e145be89e736",
-        "aa96e5f7-6417-47d3-a959-e0552f62e228",
-        "e14a06fb-4f62-4331-af3c-3939b6cc2c99",
-        "63cd4660-0815-4624-80f8-590efdeec96b",
-        "b98d42da-3dcb-4d0f-98fa-ae8ce55a74ad",
-        "797e95a5-ff90-4b78-a815-33454afccb9a",
-        "81693dd4-3af2-4251-83e6-6a0536b8692b",
-        "f8b7e3b4-142c-47e9-a605-086b8568394d",
-        "6774d44d-0a94-4e10-be5d-fb67d41601c4",
-        "fa064bf9-9b04-4089-a385-6450b8e1924c",
-        "a90648f7-1552-495d-8070-b034d3f4eb60"
-      ],
       "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "images": "",
+        "animate": false,
+        "animation_duration": 20
       }
     }
   },

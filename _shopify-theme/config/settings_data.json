@@ -112,10 +112,23 @@
                 "shopify-seo-packages"
               ]
             }
+          },
+          "3798ff69-22ec-4cf7-b4b7-296c9633d9f6": {
+            "type": "dropdown_menu_portfolio",
+            "settings": {
+              "handle": "work",
+              "title_1": "Lunatag App",
+              "link_1": "shopify:\/\/blogs\/work\/clickupload",
+              "image_1": "shopify:\/\/shop_images\/small-business-interior.jpg",
+              "title_2": "Kids Living",
+              "link_2": "shopify:\/\/blogs\/work\/kids-living",
+              "image_2": "shopify:\/\/shop_images\/baby-nursery-supplies.jpg"
+            }
           }
         },
         "block_order": [
-          "3eba0d05-a30d-4f8f-8100-2a973c7326b4"
+          "3eba0d05-a30d-4f8f-8100-2a973c7326b4",
+          "3798ff69-22ec-4cf7-b4b7-296c9633d9f6"
         ],
         "settings": {
           "menu": "main-menu"
