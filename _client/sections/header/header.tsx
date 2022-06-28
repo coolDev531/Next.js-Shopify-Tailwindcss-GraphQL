@@ -34,7 +34,7 @@ export const Header: FC<HeaderSection> = ({ id, type, settings, blocks }) => {
 
 function Logo() {
   return (
-    <div className="flex items-center pt-1 pb-2">
+    <div className="z-50 flex items-center pl-2 pt-1 pb-2">
       <Link href="/" className="flex h-full items-center [&_svg]:h-full [&_svg]:w-full">
         <LunalemonLogo />
       </Link>
@@ -44,7 +44,7 @@ function Logo() {
 
 function VersionBadge() {
   return (
-    <div className="ml-4 flex items-center">
+    <div className="z-50 ml-4 flex items-center">
       <Badge>v{process.env.NEXT_PUBLIC_APP_VERSION}</Badge>
     </div>
   );

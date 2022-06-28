@@ -28,7 +28,9 @@ export const NavMobile: FC<{
 
   return (
     <nav className="ml-auto flex h-full items-center gap-1 px-2 md:hidden">
-      <LightDarkSwitcher />
+      <div className="z-50">
+        <LightDarkSwitcher />
+      </div>
 
       <Popover className="relative">
         {({ close }) => (
@@ -85,7 +87,7 @@ export const NavMobile: FC<{
                                     transition:
                                       menuSelected === block.id
                                         ? "0.15s cubic-bezier(0.4, 0, 0.2, 1), border 0.15s cubic-bezier(0.4, 0, 0.2, 1)"
-                                        : "0.15s cubic-bezier(0.4, 0, 0.2, 1), border 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+                                        : "0.15s cubic-bezier(0.4, 0, 0.2, 1), border 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
                                   }}
                                 >
                                   {link.title}
@@ -115,6 +117,7 @@ export const NavMobile: FC<{
                                     {block.settings.menu_items.map((product) => {
                                       return (
                                         <Link
+                                          onClick={() => close()}
                                           href={product.url}
                                           key={`feature-${link.handle}-${product.id}`}
                                           className="group w-[280px] snap-start rounded-md px-3 py-4 hfa:bg-slate-50 f:ring-2 f:ring-sky-400 f:ring-offset-2"
@@ -172,7 +175,7 @@ export const NavMobile: FC<{
                                     transition:
                                       menuSelected === block.id
                                         ? "0.15s cubic-bezier(0.4, 0, 0.2, 1), border 0.15s cubic-bezier(0.4, 0, 0.2, 1)"
-                                        : "0.15s cubic-bezier(0.4, 0, 0.2, 1), border 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+                                        : "0.15s cubic-bezier(0.4, 0, 0.2, 1), border 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
                                   }}
                                 >
                                   {link.title}
@@ -201,6 +204,7 @@ export const NavMobile: FC<{
                                       ) {
                                         return (
                                           <Link
+                                            onClick={() => close()}
                                             key={block.settings[`title_${index + 1}`]}
                                             href={block.settings[`link_${index + 1}`]}
                                             className="group relative aspect-1 overflow-hidden rounded"
@@ -258,6 +262,7 @@ export const NavMobile: FC<{
                                               {subLink.links.map((subLink) => (
                                                 <li key={subLink.handle}>
                                                   <Link
+                                                    onClick={() => close()}
                                                     href={subLink.url}
                                                     className="-m-1 flex rounded p-1 text-sm text-slate-500 hfa:text-sky-500"
                                                   >
