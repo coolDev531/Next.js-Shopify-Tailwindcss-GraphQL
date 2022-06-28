@@ -122,15 +122,15 @@ export const NavMobile: FC<{
                                           key={`feature-${link.handle}-${product.id}`}
                                           className="group w-[280px] snap-start rounded-md px-3 py-4 hfa:bg-slate-50 f:ring-2 f:ring-sky-400 f:ring-offset-2"
                                         >
-                                          <figure className="relative mb-4 aspect-1 w-[90px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
+                                          <figure className="relative mb-4 aspect-1 w-[140px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
                                             {product.featured_media && (
                                               <Image
                                                 objectFit="cover"
                                                 layout="fill"
                                                 loading="eager"
-                                                height={90}
-                                                width={90}
-                                                sizes="180px"
+                                                height={140}
+                                                width={140}
+                                                sizes="500px"
                                                 priority
                                                 className=""
                                                 src={product?.featured_media?.src}
