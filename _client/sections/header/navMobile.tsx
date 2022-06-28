@@ -207,7 +207,7 @@ export const NavMobile: FC<{
                                             onClick={() => close()}
                                             key={block.settings[`title_${index + 1}`]}
                                             href={block.settings[`link_${index + 1}`]}
-                                            className="group relative aspect-1 overflow-hidden rounded"
+                                            className="group relative aspect-1 overflow-hidden rounded drop-shadow-lg"
                                           >
                                             <>
                                               <Image
