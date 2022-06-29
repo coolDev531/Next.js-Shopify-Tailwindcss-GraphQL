@@ -79,11 +79,11 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
               )}
             >
               <div className="mb-24 flex flex-col justify-center">
-                <section className="rounded-xl bg-white p-8 shadow-xl">
-                  <header>
+                <section className="rounded bg-slate-900 p-8 opacity-90">
+                  <header className="text-inverted">
                     <Heading heading="h3">{block.settings.title}</Heading>
                   </header>
-                  <main>
+                  <main className="text-inverted">
                     <Paragraph size="xl">{block.settings.paragraph}</Paragraph>
                   </main>
                   <footer
