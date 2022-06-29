@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { Property } from "csstype";
-import { FC, PropsWithChildren } from "react";
+import { FC, HTMLAttributes, PropsWithChildren } from "react";
 import { Sections } from "types/sections";
 
 type SectionProps = {
@@ -9,6 +9,7 @@ type SectionProps = {
   background?: Property.Background<string | number>;
   bgHeight?: Property.Height;
   bgOpacity?: Property.Opacity;
+  className?: React.ComponentProps<"div">["className"];
   color?: "dark" | "light";
   container?: "sm" | "base" | "xl" | "fullscreen";
   padding?: "base" | "xl";
@@ -50,6 +51,7 @@ const getPaddingClasses = (padding: SectionProps["padding"]) => {
 export const Section: FC<PropsWithChildren<SectionProps>> = ({
   container,
   padding,
+  className,
   background,
   bgHeight,
   bgOpacity,
@@ -63,7 +65,7 @@ export const Section: FC<PropsWithChildren<SectionProps>> = ({
     return <>{children}</>;
   }
   return (
-    <section className={clsx(type, "relative")} id={id}>
+    <section className={clsx(type, "relative", className)} id={id}>
       {background
         ? <div
             className="pointer-events-none absolute left-0 bottom-0 -z-50 h-full w-full select-none"

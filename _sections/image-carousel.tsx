@@ -32,6 +32,11 @@ export const imageCarousel: ShopifySection = {
       name: "Image",
       settings: [
         {
+          type: "text",
+          id: "title",
+          label: "Title",
+        },
+        {
           type: "image_picker",
           id: "image",
           label: "Image",

@@ -47,6 +47,9 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
                             alt={article.featured_media.alt}
                           />
                         : null}
+                      <div className="absolute inset-x-0 bottom-0 flex h-14 items-center whitespace-nowrap bg-white/70 px-2 font-medium text-slate-900 opacity-0 transition-all group-hfa:opacity-100">
+                        {article.title}
+                      </div>
                     </figure>
                   </Link>
                 );
@@ -69,6 +72,9 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
                           alt={block.settings.image.alt}
                         />
                       : null}
+                    <div className="absolute inset-x-0 bottom-0 flex h-14 items-center whitespace-nowrap bg-white/70 px-2 font-medium text-slate-900 opacity-0 transition-all group-hfa:opacity-100">
+                      {block.settings.title}
+                    </div>
                   </figure>
                 </Link>
               );
@@ -96,6 +102,9 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
                             alt={article.featured_media.alt}
                           />
                         : null}
+                      <div className="absolute inset-x-0 bottom-0 flex h-14 items-center whitespace-nowrap bg-white/70 px-2 font-medium text-slate-900 opacity-0 transition-all group-hfa:opacity-100">
+                        {article.title}
+                      </div>
                     </figure>
                   </Link>
                 );
@@ -119,6 +128,9 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
                           alt={block.settings.image.alt}
                         />
                       : null}
+                    <div className="absolute inset-x-0 bottom-0 flex h-14 items-center whitespace-nowrap bg-white/70 px-2 font-medium text-slate-900 opacity-0 transition-all group-hfa:opacity-100">
+                      {block.settings.title}
+                    </div>
                   </figure>
                 </Link>
               );
