@@ -42,7 +42,7 @@ export const Webhooks = async (
       case "products/update": {
         const product = body as _Product;
         console.log(product);
-        await res.unstable_revalidate(`/products/${product.handle}`);
+        await res.revalidate(`/products/${product.handle}`);
         res.status(200).send("success");
         break;
       }
