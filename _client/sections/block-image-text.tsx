@@ -4,7 +4,7 @@ import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import { PreHeading } from "_client/typography/pre-heading";
 import clsx from "clsx";
-import Image from "next/image";
+import Image from "next/future/image";
 import { FC } from "react";
 import { ImageTextSection } from "types/sections";
 
@@ -16,12 +16,12 @@ export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({
 }) => {
   return (
     <Section id={id} type={type} padding="base" container="xl" section={section}>
-      <div className="grid-cols-2 gap-8 md:grid">
+      <div className="flex grid-cols-2 flex-col-reverse gap-8 md:grid">
         {/*= =============== Text Content ================ */}
         <section
           className={clsx(
             "flex max-w-lg flex-col justify-center py-8",
-            settings.position === "left" && "order-2"
+            settings.position === "left" && "md:order-2"
           )}
         >
           <header>
@@ -76,12 +76,10 @@ export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({
                 )}
               >
                 <Image
-                  objectFit="cover"
-                  objectPosition="50% 60%"
-                  layout="fill"
                   priority
-                  // width={settings.image.width}
-                  // height={settings.image.height}
+                  className="object-cover"
+                  width={settings.image.width}
+                  height={settings.image.height}
                   src={`https:${settings?.image?.src}`}
                   alt={settings?.image?.alt}
                 />

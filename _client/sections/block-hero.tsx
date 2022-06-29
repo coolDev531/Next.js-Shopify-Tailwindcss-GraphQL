@@ -4,7 +4,8 @@ import { Section } from "_client/layout/section";
 import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import { PreHeading } from "_client/typography/pre-heading";
-import Image from "next/image";
+import Image from "next/future/image";
+import Image2 from "next/image";
 import { FC } from "react";
 import { HeroSection } from "types/sections";
 
@@ -14,11 +15,10 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
       <div className="mx-auto -mt-4 max-w-lg">
         <figure className="relative mx-4 mb-8 aspect-1 lg:hidden">
           <Image
-            objectFit="contain"
-            objectPosition="50% 60%"
-            layout="fill"
-            // width={settings.image.width}
-            // height={settings.image.height}
+            priority
+            className="object-contain"
+            width={settings.image.width}
+            height={settings.image.height}
             src={`https:${settings?.image?.src}`}
             alt={settings?.image?.alt}
           />
@@ -53,13 +53,14 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
           </main>
           <footer></footer>
         </section>
-        <section className="hidden px-4 lg:block">
+        <section className="hidden lg:block">
           {settings.image && (
-            <figure className="relative h-full">
+            <figure className="relative h-full min-h-[600px] overflow-visible">
               <Image
-                objectFit="contain"
-                objectPosition="50% 60%"
-                layout="fill"
+                priority
+                className="block min-w-[600px]"
+                width={600}
+                height={600 * settings.image.aspect_ratio}
                 // width={settings.image.width}
                 // height={settings.image.height}
                 src={`https:${settings?.image?.src}`}

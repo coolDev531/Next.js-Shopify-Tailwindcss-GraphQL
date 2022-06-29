@@ -14,7 +14,7 @@ export const Button: FC<
       <Link
         {...props}
         className={clsx(
-          "inline-flex items-center rounded border px-8 py-3",
+          "inline-flex items-center whitespace-nowrap rounded border px-4 py-3 sm:px-8",
           "f:outline-none f:ring-2 f:ring-sky-400 f:ring-offset-2",
           "transition-all duration-100",
           "font-medium leading-4",
@@ -32,7 +32,7 @@ export const Button: FC<
       <button
         {...props}
         className={clsx(
-          "inline-flex items-center rounded px-8 py-3",
+          "inline-flex items-center whitespace-nowrap rounded border px-4 py-3 sm:px-8",
           "f:outline-none f:ring-2 f:ring-sky-400 f:ring-offset-2",
           "transition-all duration-100",
           "font-medium leading-4",

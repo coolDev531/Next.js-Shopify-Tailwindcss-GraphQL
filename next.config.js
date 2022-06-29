@@ -5,7 +5,6 @@ module.exports = {
   swcMinify: true,
   reactStrictMode: true,
   strictMode: true,
-
   images: {
     dangerouslyAllowSVG: true,
     domains: [
@@ -52,6 +51,7 @@ module.exports = {
   },
   experimental: {
     externalDir: true,
+    images: { allowFutureImage: true },
   },
   env: {
     ...this.env,
