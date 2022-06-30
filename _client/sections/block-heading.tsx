@@ -42,7 +42,7 @@ export const BlockHeading: FC<PartialBy<HeadingSection, "type" | "id"> & { secti
                 right: "justify-end text-right",
               }[settings.position],
               ((settings.cta1 && settings.cta1_link) || (settings.cta2 && settings.cta2_link)) &&
-                "mt-8 flex gap-4"
+                "mt-8 flex flex-wrap gap-4"
             )}
           >
             {settings.cta1 && settings.cta1_link && (
