@@ -45,6 +45,7 @@
               e.data.sections.forEach(({ id, height }) => {
                 const sectionElement = document.getElementById(`shopify-section-${id}`);
                 if (sectionElement) {
+                  sectionElement.style.position = 'relative'
                   sectionElement.style.height = `${height}px`;
                 }
               });

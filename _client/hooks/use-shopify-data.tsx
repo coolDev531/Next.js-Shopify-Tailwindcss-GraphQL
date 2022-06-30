@@ -37,12 +37,12 @@ export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[
     if (e?.data?.source === "theme-editor") {
       setShopifyData({ global: e.data.global, sections: e.data.sections });
 
-      /*if (e.data.topic === "shopify:section:select") {
+      if (e.data.topic === "shopify:section:select") {
         const sectionElement = document.getElementById(e.data.detail.sectionId);
         if (sectionElement) {
           sectionElement.scrollIntoView({ behavior: "smooth", block: "start" });
         }
-      }*/
+      }
     }
   }, [setShopifyData]);
 
