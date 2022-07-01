@@ -1,9 +1,10 @@
+import { heading } from "_sections/heading";
 import { icons } from "_sections/utils";
 import { ShopifySection } from "types/shopify";
 
 export const featureList: ShopifySection = {
   name: "Feature list",
-  settings: [],
+  settings: [...heading.settings],
   max_blocks: 4,
   blocks: [
     {

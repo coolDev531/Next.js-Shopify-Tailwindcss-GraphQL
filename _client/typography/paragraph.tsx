@@ -24,7 +24,7 @@ export const Paragraph: FC<PropsWithChildren<ParagraphProps>> = ({
         light ? "text-slate-200" : "text-slate-500"
       )}
     >
-      {parse(children as string)}
+      {typeof children === "string" ? parse(children as string) : null}
     </div>
   );
 };

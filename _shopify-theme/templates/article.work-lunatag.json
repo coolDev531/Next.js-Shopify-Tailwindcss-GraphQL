@@ -10,8 +10,8 @@
       "type": "hero",
       "settings": {
         "pre_title": "Portfolio of Work",
-        "title": "Clickupload App",
-        "paragraph": "<p>ClickUpload enables your store to let customers upload files to their orders. The app supports all file types and sizes. All files are linked to the order and can be downloaded easily.<\/p>",
+        "title": "Lunatag App",
+        "paragraph": "<p>Lunatag helps you \"Tell a story through your pictures\"<br\/>The focus is to make shopping easy for visitors on your website by highlighting your products through images.<br\/><\/p>",
         "list_title": "",
         "list": "",
         "image": "shopify:\/\/shop_images\/vw.jpg"
@@ -73,8 +73,8 @@
             "title": "App features",
             "paragraph": "<p>We continuously work on developing and improving our Shopify Apps for the best experiene and benifits.<\/p>",
             "list_title": "",
-            "list": "<p>Supports all file types<\/p><p>Choose to accept only certain file types<\/p><p>Preview uploaded images before adding products to the cart<\/p><p>Instant setup, no coding required<\/p><p>Quick product upload time<\/p><p>Files linked to order<\/p><p>Files are Achieved<\/p>",
-            "image": "shopify:\/\/shop_images\/Lunalemon-pictures_11ce71e0-2f26-443b-9ba3-3044134f0198.jpg",
+            "list": "<p>Tag products on any picture on your website<\/p><p>Tag products on different pages<\/p><p>Live Chat & Email Support<\/p><p>Easy set up<\/p><p>No need for a Gallery <\/p>",
+            "image": "shopify:\/\/shop_images\/Lunatag.jpg",
             "aspect_desktop": "auto",
             "fit_height": false,
             "aspect_mobile": "16-9",
@@ -113,8 +113,8 @@
           "type": "feature",
           "settings": {
             "icon": "BadgeCheckIcon",
-            "title": "File Display",
-            "paragraph": "<p>Uploaded files are displayed on your cart and checkout pages. Preview images before checking out.<\/p>",
+            "title": "Custom Tag Formatting",
+            "paragraph": "<p>Easily format your tags to seamlessly blend in with the look and feel of your store.<\/p>",
             "paragraph_old": ""
           }
         },
@@ -122,8 +122,8 @@
           "type": "feature",
           "settings": {
             "icon": "BadgeCheckIcon",
-            "title": "Unlimited upload fields",
-            "paragraph": "<p>You can add as many upload fields as you wish. This can be created based on specific products or collections.<\/p>",
+            "title": "Highlight promotions",
+            "paragraph": "<p>Make your discounts easily known to visitors through your product tags.<\/p>",
             "paragraph_old": ""
           }
         },
@@ -131,13 +131,14 @@
           "type": "feature",
           "settings": {
             "icon": "BadgeCheckIcon",
-            "title": "Manage file restrictions",
-            "paragraph": "<p>You can limit the type of files as well as the size that customers can upload. Have more control of the files you need.<\/p>",
+            "title": "Easy setup",
+            "paragraph": "<p>Setting up could not be any easier, start tagging your images right away.<\/p>",
             "paragraph_old": ""
           }
         },
         "9a4d8a7f-af6e-4d79-a8ed-e5b49922b910": {
           "type": "feature",
+          "disabled": true,
           "settings": {
             "icon": "BadgeCheckIcon",
             "title": "Customize your App",
@@ -324,8 +325,8 @@
         "c2a192bb-8b31-4125-b05c-744bda6883aa": {
           "type": "heading",
           "settings": {
-            "pre_title": "",
-            "title": "More to expect when working with us...",
+            "pre_title": "More then just a E-commerce platform, Shopify has so much to offer",
+            "title": "Why choose Shopify?",
             "paragraph": "",
             "cta1": "",
             "cta1_link": "",
@@ -338,13 +339,13 @@
           "type": "list",
           "settings": {
             "icon1": "DesktopComputerIcon",
-            "text1": "Front-end features",
+            "text1": "Easy to use",
             "icon2": "ColorSwatchIcon",
-            "text2": "Graphic Design",
+            "text2": "Great support",
             "icon3": "MailIcon",
-            "text3": "Newsletter Marketing",
+            "text3": "Great collection of themes",
             "icon4": "CloudIcon",
-            "text4": "",
+            "text4": "Multi-payment gateway integration",
             "icon5": "CloudIcon",
             "text5": "",
             "icon6": "CloudIcon",
@@ -355,13 +356,13 @@
           "type": "list",
           "settings": {
             "icon1": "ChatAlt2Icon",
-            "text1": "Social Media Management",
+            "text1": "Across-channel selling",
             "icon2": "LightningBoltIcon",
-            "text2": "Product Research",
+            "text2": "Analytics reporting",
             "icon3": "BadgeCheckIcon",
-            "text3": "Tech-support",
+            "text3": "Built-in cart abandonment feature",
             "icon4": "CloudIcon",
-            "text4": "",
+            "text4": "Full HTML and CSS editing abilities",
             "icon5": "CloudIcon",
             "text5": "",
             "icon6": "CloudIcon",
@@ -372,13 +373,13 @@
           "type": "list",
           "settings": {
             "icon1": "SparklesIcon",
-            "text1": "Custom App Integrations",
+            "text1": "Optimized for SEO",
             "icon2": "UserGroupIcon",
-            "text2": "Ongoing Training",
+            "text2": "Tracking & maintaining customer data",
             "icon3": "CubeTransparentIcon",
-            "text3": "Data Management",
+            "text3": "Affordable & scalable",
             "icon4": "CloudIcon",
-            "text4": "",
+            "text4": "Integrations made easy",
             "icon5": "CloudIcon",
             "text5": "",
             "icon6": "CloudIcon",
@@ -400,120 +401,20 @@
     "1654259533f54af287": {
       "type": "blockquote",
       "settings": {
-        "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloremque dolores illum laudantium molestias nemo quo! Animi asperiores assumenda commodi culpa eveniet excepturi fugit illo incidunt iusto nam possimus quidem quos recusandae saepe similique, ullam?",
-        "author": "Tom",
-        "job_title": "Kids Living, Managing Director",
+        "quote": "Great application! Exactly what I was looking for! The onboarding was really smooth and I was able to tag products on my hero image in no time! Highly recommend!",
+        "author": "iconutopia",
+        "job_title": "Shopify Store Owner",
         "quotation_marks": true
       }
     },
     "16542613555478f86d": {
       "type": "image-gallery",
-      "blocks": {
-        "3f49ea97-153c-4349-a955-ca74d7b42da4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Luna-Lemon-image4_534ad61c-8f12-4445-9fab-942789b75f29.jpg",
-            "columns": 4,
-            "hover_effect": true,
-            "title": "Super Duper",
-            "paragraph": "<p>Super DuperSuper DuperSuper Duper<\/p><p>Super Duper<\/p><p>Super Duper<\/p>",
-            "color_use_light_text": true,
-            "color_overlay": "linear-gradient(165deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) 100%)",
-            "product": ""
-          }
-        },
-        "5a10e0d6-59d9-4ec3-8271-1fa447427c6e": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Luna-Lemon-image5.jpg",
-            "columns": 8,
-            "hover_effect": false,
-            "title": "",
-            "paragraph": "",
-            "color_use_light_text": false,
-            "color_overlay": "",
-            "product": ""
-          }
-        },
-        "d0cc6cec-72ee-4505-8a84-1480e96b7469": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/gift-registry.jpg",
-            "columns": 8,
-            "hover_effect": false,
-            "title": "",
-            "paragraph": "",
-            "color_use_light_text": false,
-            "color_overlay": "",
-            "product": ""
-          }
-        },
-        "a1395033-59ba-4165-967f-64c5d84b6a02": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Product-view.jpg",
-            "columns": 4,
-            "hover_effect": false,
-            "title": "",
-            "paragraph": "",
-            "color_use_light_text": false,
-            "color_overlay": "",
-            "product": ""
-          }
-        },
-        "3d2545f3-edb7-443e-be7e-b685bd9bf4ae": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Website-baner.jpg",
-            "columns": 4,
-            "hover_effect": false,
-            "title": "",
-            "paragraph": "",
-            "color_use_light_text": false,
-            "color_overlay": "",
-            "product": ""
-          }
-        },
-        "560b9350-a32e-4c51-8f81-e4fe9b61d04f": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5.c37910f9e6259ec2a366896c204721bf.png",
-            "columns": 4,
-            "hover_effect": false,
-            "title": "",
-            "paragraph": "",
-            "color_use_light_text": false,
-            "color_overlay": "",
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "3f49ea97-153c-4349-a955-ca74d7b42da4",
-        "5a10e0d6-59d9-4ec3-8271-1fa447427c6e",
-        "d0cc6cec-72ee-4505-8a84-1480e96b7469",
-        "a1395033-59ba-4165-967f-64c5d84b6a02",
-        "3d2545f3-edb7-443e-be7e-b685bd9bf4ae",
-        "560b9350-a32e-4c51-8f81-e4fe9b61d04f"
-      ],
       "settings": {
-      }
-    },
-    "165641455846f7d959": {
-      "type": "heading",
-      "settings": {
-        "pre_title": "Continuous work for continuous results",
-        "title": "Support after Launch",
-        "paragraph": "",
-        "cta1": "",
-        "cta1_link": "",
-        "cta2": "",
-        "cta2_link": "",
-        "position": "center"
       }
     },
     "165426875321fe7fc5": {
       "type": "feature-list",
+      "disabled": true,
       "blocks": {
         "7d9184d1-b917-43ab-a84e-dbce8b2d3989": {
           "type": "feature",
@@ -559,6 +460,14 @@
         "bf211802-1d16-4343-b21c-1a6d7af721c0"
       ],
       "settings": {
+        "pre_title": "Continuous work for continuous results",
+        "title": "Support after Launch",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
       }
     },
     "16543302228e17b41c": {
@@ -610,7 +519,7 @@
     "16542555547186860a",
     "1654259533f54af287",
     "16542613555478f86d",
-    "165641455846f7d959",
+
     "165426875321fe7fc5",
     "16543302228e17b41c",
     "1654332872499b00d2"

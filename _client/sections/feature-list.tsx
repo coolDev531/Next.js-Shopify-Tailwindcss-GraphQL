@@ -1,5 +1,6 @@
 import HeroIcon from "_client/dynamic-hero-icon";
 import { Section } from "_client/layout/section";
+import { BlockHeading } from "_client/sections/block-heading";
 import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import { renderIcon } from "_sections/utils";
@@ -7,10 +8,11 @@ import clsx from "clsx";
 import { FC } from "react";
 import { FeatureListSection } from "types/sections";
 
-export const FeatureList: FC<FeatureListSection> = ({ id, blocks, type }) => {
+export const FeatureList: FC<FeatureListSection> = ({ id, blocks, type, settings }) => {
   return (
     <Section id={id} type={type} container="xl" padding="base">
-      <div className="-mx-8 flex justify-center">
+      <BlockHeading settings={settings} section={false} />
+      <div className="-mx-8 mt-16 flex justify-center">
         <div
           className={clsx(
             "grid justify-center gap-8 gap-y-12",

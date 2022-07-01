@@ -13,8 +13,7 @@
         "title": "Turning Point",
         "paragraph": "<p>Ballet and Dancewear company focusing on handmade and high-end dance wear with modern styles and designs. Always dedicated to design products that Suit-Your-Body. We have joined Turning Points team to help migrate their site from Wordpress to a much more user-friendly Shopify site.<\/p>",
         "list": "<p>What we did (services):<br\/>•\tWeb Development<br\/>•\tCustom Features Development <br\/>•\tCustom App Integrations<br\/><br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/turning_point.jpg",
-        "collection": "frontpage"
+        "image": "shopify:\/\/shop_images\/turning_point.jpg"
       }
     },
     "1654079897751048da": {
@@ -71,7 +70,6 @@
           "type": "tab",
           "settings": {
             "tab_title": "Custom filter & search function",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
             "title": "Custom filter & search function",
             "paragraph": "<p>This custom filter function helps search for products based on the model, year, and trim of vehicle.<\/p>",
             "cta1": "asdasd",
@@ -86,7 +84,6 @@
           "type": "tab",
           "settings": {
             "tab_title": "Product content set-up",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
             "title": "Product content set-up",
             "paragraph": "<p>This helped all products have a uniform content set and that linked to the filter function on the website. <\/p>",
             "cta1": "",
@@ -102,7 +99,6 @@
           "disabled": true,
           "settings": {
             "tab_title": "Google rating integration",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
             "title": "Google rating integration",
             "paragraph": "<p>This integration helps increase the overall trust of visitors to the store by showcasing their live google ratings<\/p>",
             "cta1": "",
@@ -118,7 +114,6 @@
           "disabled": true,
           "settings": {
             "tab_title": "Customized logo band",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
             "title": "Customized logo band",
             "paragraph": "<p>This custom built helped showcase the large amount of brands that kidsliving offers while highlighted the logos flawlessly into the shops home page <\/p>",
             "cta1": "",
@@ -134,7 +129,6 @@
           "disabled": true,
           "settings": {
             "tab_title": "asdasdasd",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
             "title": "",
             "paragraph": "",
             "cta1": "",
@@ -150,7 +144,6 @@
           "disabled": true,
           "settings": {
             "tab_title": "123sadasdadsasd",
-            "tab_svg": "<svg width=\"48\" height=\"48\" fill=\"none\" aria-hidden=\"true\" class=\"mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500\"><path d=\"M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><path d=\"M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z\" fill=\"currentColor\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"><\/path><path d=\"M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><\/path><\/svg>",
             "title": "",
             "paragraph": "",
             "cta1": "",
@@ -349,110 +342,10 @@
     },
     "16542613555478f86d": {
       "type": "image-gallery",
-      "blocks": {
-        "3f49ea97-153c-4349-a955-ca74d7b42da4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Luna-Lemon-image4_534ad61c-8f12-4445-9fab-942789b75f29.jpg",
-            "columns": 4,
-            "hover_effect": true,
-            "title": "Super Duper",
-            "paragraph": "<p>Super DuperSuper DuperSuper Duper<\/p><p>Super Duper<\/p><p>Super Duper<\/p>",
-            "color_use_light_text": true,
-            "color_overlay": "linear-gradient(165deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) 100%)",
-            "product": ""
-          }
-        },
-        "5a10e0d6-59d9-4ec3-8271-1fa447427c6e": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Luna-Lemon-image5.jpg",
-            "columns": 8,
-            "hover_effect": false,
-            "title": "",
-            "paragraph": "",
-            "color_use_light_text": false,
-            "color_overlay": "",
-            "product": ""
-          }
-        },
-        "d0cc6cec-72ee-4505-8a84-1480e96b7469": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/gift-registry.jpg",
-            "columns": 8,
-            "hover_effect": false,
-            "title": "",
-            "paragraph": "",
-            "color_use_light_text": false,
-            "color_overlay": "",
-            "product": ""
-          }
-        },
-        "a1395033-59ba-4165-967f-64c5d84b6a02": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Product-view.jpg",
-            "columns": 4,
-            "hover_effect": false,
-            "title": "",
-            "paragraph": "",
-            "color_use_light_text": false,
-            "color_overlay": "",
-            "product": ""
-          }
-        },
-        "3d2545f3-edb7-443e-be7e-b685bd9bf4ae": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Website-baner.jpg",
-            "columns": 4,
-            "hover_effect": false,
-            "title": "",
-            "paragraph": "",
-            "color_use_light_text": false,
-            "color_overlay": "",
-            "product": ""
-          }
-        },
-        "560b9350-a32e-4c51-8f81-e4fe9b61d04f": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5.c37910f9e6259ec2a366896c204721bf.png",
-            "columns": 4,
-            "hover_effect": false,
-            "title": "",
-            "paragraph": "",
-            "color_use_light_text": false,
-            "color_overlay": "",
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "3f49ea97-153c-4349-a955-ca74d7b42da4",
-        "5a10e0d6-59d9-4ec3-8271-1fa447427c6e",
-        "d0cc6cec-72ee-4505-8a84-1480e96b7469",
-        "a1395033-59ba-4165-967f-64c5d84b6a02",
-        "3d2545f3-edb7-443e-be7e-b685bd9bf4ae",
-        "560b9350-a32e-4c51-8f81-e4fe9b61d04f"
-      ],
       "settings": {
       }
     },
-    "165641455846f7d959": {
-      "type": "heading",
-      "settings": {
-        "pre_title": "Continuous work for continuous results",
-        "title": "Support after Launch",
-        "paragraph": "",
-        "cta1": "",
-        "cta1_link": "",
-        "cta2": "",
-        "cta2_link": "",
-        "position": "center"
-      }
-    },
+
     "165426875321fe7fc5": {
       "type": "feature-list",
       "blocks": {
@@ -500,6 +393,14 @@
         "bf211802-1d16-4343-b21c-1a6d7af721c0"
       ],
       "settings": {
+        "pre_title": "Continuous work for continuous results",
+        "title": "Support after Launch",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
       }
     },
     "16543302228e17b41c": {
@@ -550,7 +451,7 @@
     "16542555547186860a",
     "1654259533f54af287",
     "16542613555478f86d",
-    "165641455846f7d959",
+
     "165426875321fe7fc5",
     "16543302228e17b41c",
     "1654332872499b00d2"

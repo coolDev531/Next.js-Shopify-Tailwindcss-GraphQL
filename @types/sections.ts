@@ -59,6 +59,24 @@ export type FeatureCarouselBlocks = {
 export type FeatureListSection = {
   blocks: FeatureListBlocks[];
   id: string;
+  settings: {
+    /** Input type: select */
+    position: "left" | "center" | "right";
+    /** Input type: text */
+    cta1?: string;
+    /** Input type: url */
+    cta1_link?: string;
+    /** Input type: text */
+    cta2?: string;
+    /** Input type: url */
+    cta2_link?: string;
+    /** Input type: richtext */
+    paragraph?: `<p${string}</p>`;
+    /** Input type: text */
+    pre_title?: string;
+    /** Input type: text */
+    title?: string;
+  };
   type: "feature-list";
 };
 
@@ -66,66 +84,7 @@ export type FeatureListBlocks = {
   id: string;
   settings: {
     /** Input type: select */
-    icon:
-      | "BadgeCheckIcon"
-      | "CameraIcon"
-      | "ChatAlt2Icon"
-      | "ColorSwatchIcon"
-      | "CloudIcon"
-      | "DesktopComputerIcon"
-      | "CubeTransparentIcon"
-      | "DeviceMobileIcon"
-      | "DeviceTabletIcon"
-      | "CursorClickIcon"
-      | "HeartIcon"
-      | "KeyIcon"
-      | "LightningBoltIcon"
-      | "LinkIcon"
-      | "LightBulbIcon"
-      | "LockClosedIcon"
-      | "LockOpenIcon"
-      | "PaperAirplaneIcon"
-      | "ShoppingBagIcon"
-      | "ShoppingCartIcon"
-      | "SparklesIcon"
-      | "TagIcon"
-      | "TruckIcon"
-      | "UserGroupIcon"
-      | "AnnotationIcon"
-      | "MailIcon"
-      | "MailOpenIcon"
-      | "brutalist"
-      | "colors"
-      | "elegant"
-      | "filters"
-      | "grid"
-      | "playful"
-      | "shadows"
-      | "simple"
-      | "sizing"
-      | "transforms"
-      | "typography"
-      | "CalendarLight"
-      | "ChatLight"
-      | "Code"
-      | "DeliveryLight"
-      | "ExchangeSimple"
-      | "FastCheckoutLight"
-      | "GiftCardLight"
-      | "PlanetLight"
-      | "Resize"
-      | "ReturnsLight"
-      | "ShippingSimple"
-      | "Stack"
-      | "WarrantyLight"
-      | "WarrantySimple"
-      | "server-2"
-      | "server-8"
-      | "up-align-1-light"
-      | "columns-1-light"
-      | "laptop-star-light"
-      | "squares-1-light"
-      | "cubes-light";
+    icon: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
     /** Input type: richtext */
     paragraph?: `<p${string}</p>`;
     /** Input type: richtext */
@@ -301,32 +260,34 @@ export type ImageCarouselBlocks = {
 };
 
 export type ImageGallerySection = {
-  blocks: ImageGalleryBlocks[];
-  id: string;
-  type: "image-gallery";
-};
-
-export type ImageGalleryBlocks = {
   id: string;
   settings: {
-    /** Input type: checkbox */
-    color_use_light_text: boolean;
-    /** Input type: range */
-    columns: number;
-    /** Input type: checkbox */
-    hover_effect: boolean;
-    /** Input type: color_background */
-    color_overlay?: string;
     /** Input type: image_picker */
-    image?: _Image_liquid;
-    /** Input type: richtext */
-    paragraph?: `<p${string}</p>`;
-    /** Input type: product */
-    product?: _Product_liquid;
+    image1?: _Image_liquid;
+    /** Input type: image_picker */
+    image2?: _Image_liquid;
+    /** Input type: image_picker */
+    image3?: _Image_liquid;
+    /** Input type: image_picker */
+    image4?: _Image_liquid;
+    /** Input type: image_picker */
+    image5?: _Image_liquid;
+    /** Input type: image_picker */
+    image6?: _Image_liquid;
     /** Input type: text */
-    title?: string;
+    title1?: string;
+    /** Input type: text */
+    title2?: string;
+    /** Input type: text */
+    title3?: string;
+    /** Input type: text */
+    title4?: string;
+    /** Input type: text */
+    title5?: string;
+    /** Input type: text */
+    title6?: string;
   };
-  type: "image";
+  type: "image-gallery";
 };
 
 export type ImageTextSection = {
@@ -462,371 +423,17 @@ export type SpecListBlocks =
       id: string;
       settings: {
         /** Input type: select */
-        icon1:
-          | "BadgeCheckIcon"
-          | "CameraIcon"
-          | "ChatAlt2Icon"
-          | "ColorSwatchIcon"
-          | "CloudIcon"
-          | "DesktopComputerIcon"
-          | "CubeTransparentIcon"
-          | "DeviceMobileIcon"
-          | "DeviceTabletIcon"
-          | "CursorClickIcon"
-          | "HeartIcon"
-          | "KeyIcon"
-          | "LightningBoltIcon"
-          | "LinkIcon"
-          | "LightBulbIcon"
-          | "LockClosedIcon"
-          | "LockOpenIcon"
-          | "PaperAirplaneIcon"
-          | "ShoppingBagIcon"
-          | "ShoppingCartIcon"
-          | "SparklesIcon"
-          | "TagIcon"
-          | "TruckIcon"
-          | "UserGroupIcon"
-          | "AnnotationIcon"
-          | "MailIcon"
-          | "MailOpenIcon"
-          | "brutalist"
-          | "colors"
-          | "elegant"
-          | "filters"
-          | "grid"
-          | "playful"
-          | "shadows"
-          | "simple"
-          | "sizing"
-          | "transforms"
-          | "typography"
-          | "CalendarLight"
-          | "ChatLight"
-          | "Code"
-          | "DeliveryLight"
-          | "ExchangeSimple"
-          | "FastCheckoutLight"
-          | "GiftCardLight"
-          | "PlanetLight"
-          | "Resize"
-          | "ReturnsLight"
-          | "ShippingSimple"
-          | "Stack"
-          | "WarrantyLight"
-          | "WarrantySimple"
-          | "server-2"
-          | "server-8"
-          | "up-align-1-light"
-          | "columns-1-light"
-          | "laptop-star-light"
-          | "squares-1-light"
-          | "cubes-light";
+        icon1: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon2:
-          | "BadgeCheckIcon"
-          | "CameraIcon"
-          | "ChatAlt2Icon"
-          | "ColorSwatchIcon"
-          | "CloudIcon"
-          | "DesktopComputerIcon"
-          | "CubeTransparentIcon"
-          | "DeviceMobileIcon"
-          | "DeviceTabletIcon"
-          | "CursorClickIcon"
-          | "HeartIcon"
-          | "KeyIcon"
-          | "LightningBoltIcon"
-          | "LinkIcon"
-          | "LightBulbIcon"
-          | "LockClosedIcon"
-          | "LockOpenIcon"
-          | "PaperAirplaneIcon"
-          | "ShoppingBagIcon"
-          | "ShoppingCartIcon"
-          | "SparklesIcon"
-          | "TagIcon"
-          | "TruckIcon"
-          | "UserGroupIcon"
-          | "AnnotationIcon"
-          | "MailIcon"
-          | "MailOpenIcon"
-          | "brutalist"
-          | "colors"
-          | "elegant"
-          | "filters"
-          | "grid"
-          | "playful"
-          | "shadows"
-          | "simple"
-          | "sizing"
-          | "transforms"
-          | "typography"
-          | "CalendarLight"
-          | "ChatLight"
-          | "Code"
-          | "DeliveryLight"
-          | "ExchangeSimple"
-          | "FastCheckoutLight"
-          | "GiftCardLight"
-          | "PlanetLight"
-          | "Resize"
-          | "ReturnsLight"
-          | "ShippingSimple"
-          | "Stack"
-          | "WarrantyLight"
-          | "WarrantySimple"
-          | "server-2"
-          | "server-8"
-          | "up-align-1-light"
-          | "columns-1-light"
-          | "laptop-star-light"
-          | "squares-1-light"
-          | "cubes-light";
+        icon2: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon3:
-          | "BadgeCheckIcon"
-          | "CameraIcon"
-          | "ChatAlt2Icon"
-          | "ColorSwatchIcon"
-          | "CloudIcon"
-          | "DesktopComputerIcon"
-          | "CubeTransparentIcon"
-          | "DeviceMobileIcon"
-          | "DeviceTabletIcon"
-          | "CursorClickIcon"
-          | "HeartIcon"
-          | "KeyIcon"
-          | "LightningBoltIcon"
-          | "LinkIcon"
-          | "LightBulbIcon"
-          | "LockClosedIcon"
-          | "LockOpenIcon"
-          | "PaperAirplaneIcon"
-          | "ShoppingBagIcon"
-          | "ShoppingCartIcon"
-          | "SparklesIcon"
-          | "TagIcon"
-          | "TruckIcon"
-          | "UserGroupIcon"
-          | "AnnotationIcon"
-          | "MailIcon"
-          | "MailOpenIcon"
-          | "brutalist"
-          | "colors"
-          | "elegant"
-          | "filters"
-          | "grid"
-          | "playful"
-          | "shadows"
-          | "simple"
-          | "sizing"
-          | "transforms"
-          | "typography"
-          | "CalendarLight"
-          | "ChatLight"
-          | "Code"
-          | "DeliveryLight"
-          | "ExchangeSimple"
-          | "FastCheckoutLight"
-          | "GiftCardLight"
-          | "PlanetLight"
-          | "Resize"
-          | "ReturnsLight"
-          | "ShippingSimple"
-          | "Stack"
-          | "WarrantyLight"
-          | "WarrantySimple"
-          | "server-2"
-          | "server-8"
-          | "up-align-1-light"
-          | "columns-1-light"
-          | "laptop-star-light"
-          | "squares-1-light"
-          | "cubes-light";
+        icon3: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon4:
-          | "BadgeCheckIcon"
-          | "CameraIcon"
-          | "ChatAlt2Icon"
-          | "ColorSwatchIcon"
-          | "CloudIcon"
-          | "DesktopComputerIcon"
-          | "CubeTransparentIcon"
-          | "DeviceMobileIcon"
-          | "DeviceTabletIcon"
-          | "CursorClickIcon"
-          | "HeartIcon"
-          | "KeyIcon"
-          | "LightningBoltIcon"
-          | "LinkIcon"
-          | "LightBulbIcon"
-          | "LockClosedIcon"
-          | "LockOpenIcon"
-          | "PaperAirplaneIcon"
-          | "ShoppingBagIcon"
-          | "ShoppingCartIcon"
-          | "SparklesIcon"
-          | "TagIcon"
-          | "TruckIcon"
-          | "UserGroupIcon"
-          | "AnnotationIcon"
-          | "MailIcon"
-          | "MailOpenIcon"
-          | "brutalist"
-          | "colors"
-          | "elegant"
-          | "filters"
-          | "grid"
-          | "playful"
-          | "shadows"
-          | "simple"
-          | "sizing"
-          | "transforms"
-          | "typography"
-          | "CalendarLight"
-          | "ChatLight"
-          | "Code"
-          | "DeliveryLight"
-          | "ExchangeSimple"
-          | "FastCheckoutLight"
-          | "GiftCardLight"
-          | "PlanetLight"
-          | "Resize"
-          | "ReturnsLight"
-          | "ShippingSimple"
-          | "Stack"
-          | "WarrantyLight"
-          | "WarrantySimple"
-          | "server-2"
-          | "server-8"
-          | "up-align-1-light"
-          | "columns-1-light"
-          | "laptop-star-light"
-          | "squares-1-light"
-          | "cubes-light";
+        icon4: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon5:
-          | "BadgeCheckIcon"
-          | "CameraIcon"
-          | "ChatAlt2Icon"
-          | "ColorSwatchIcon"
-          | "CloudIcon"
-          | "DesktopComputerIcon"
-          | "CubeTransparentIcon"
-          | "DeviceMobileIcon"
-          | "DeviceTabletIcon"
-          | "CursorClickIcon"
-          | "HeartIcon"
-          | "KeyIcon"
-          | "LightningBoltIcon"
-          | "LinkIcon"
-          | "LightBulbIcon"
-          | "LockClosedIcon"
-          | "LockOpenIcon"
-          | "PaperAirplaneIcon"
-          | "ShoppingBagIcon"
-          | "ShoppingCartIcon"
-          | "SparklesIcon"
-          | "TagIcon"
-          | "TruckIcon"
-          | "UserGroupIcon"
-          | "AnnotationIcon"
-          | "MailIcon"
-          | "MailOpenIcon"
-          | "brutalist"
-          | "colors"
-          | "elegant"
-          | "filters"
-          | "grid"
-          | "playful"
-          | "shadows"
-          | "simple"
-          | "sizing"
-          | "transforms"
-          | "typography"
-          | "CalendarLight"
-          | "ChatLight"
-          | "Code"
-          | "DeliveryLight"
-          | "ExchangeSimple"
-          | "FastCheckoutLight"
-          | "GiftCardLight"
-          | "PlanetLight"
-          | "Resize"
-          | "ReturnsLight"
-          | "ShippingSimple"
-          | "Stack"
-          | "WarrantyLight"
-          | "WarrantySimple"
-          | "server-2"
-          | "server-8"
-          | "up-align-1-light"
-          | "columns-1-light"
-          | "laptop-star-light"
-          | "squares-1-light"
-          | "cubes-light";
+        icon5: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon6:
-          | "BadgeCheckIcon"
-          | "CameraIcon"
-          | "ChatAlt2Icon"
-          | "ColorSwatchIcon"
-          | "CloudIcon"
-          | "DesktopComputerIcon"
-          | "CubeTransparentIcon"
-          | "DeviceMobileIcon"
-          | "DeviceTabletIcon"
-          | "CursorClickIcon"
-          | "HeartIcon"
-          | "KeyIcon"
-          | "LightningBoltIcon"
-          | "LinkIcon"
-          | "LightBulbIcon"
-          | "LockClosedIcon"
-          | "LockOpenIcon"
-          | "PaperAirplaneIcon"
-          | "ShoppingBagIcon"
-          | "ShoppingCartIcon"
-          | "SparklesIcon"
-          | "TagIcon"
-          | "TruckIcon"
-          | "UserGroupIcon"
-          | "AnnotationIcon"
-          | "MailIcon"
-          | "MailOpenIcon"
-          | "brutalist"
-          | "colors"
-          | "elegant"
-          | "filters"
-          | "grid"
-          | "playful"
-          | "shadows"
-          | "simple"
-          | "sizing"
-          | "transforms"
-          | "typography"
-          | "CalendarLight"
-          | "ChatLight"
-          | "Code"
-          | "DeliveryLight"
-          | "ExchangeSimple"
-          | "FastCheckoutLight"
-          | "GiftCardLight"
-          | "PlanetLight"
-          | "Resize"
-          | "ReturnsLight"
-          | "ShippingSimple"
-          | "Stack"
-          | "WarrantyLight"
-          | "WarrantySimple"
-          | "server-2"
-          | "server-8"
-          | "up-align-1-light"
-          | "columns-1-light"
-          | "laptop-star-light"
-          | "squares-1-light"
-          | "cubes-light";
+        icon6: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: text */
         text1?: string;
         /** Input type: text */
@@ -970,66 +577,7 @@ export type TabsImageCardBlocks =
       id: string;
       settings: {
         /** Input type: select */
-        tab_icon:
-          | "BadgeCheckIcon"
-          | "CameraIcon"
-          | "ChatAlt2Icon"
-          | "ColorSwatchIcon"
-          | "CloudIcon"
-          | "DesktopComputerIcon"
-          | "CubeTransparentIcon"
-          | "DeviceMobileIcon"
-          | "DeviceTabletIcon"
-          | "CursorClickIcon"
-          | "HeartIcon"
-          | "KeyIcon"
-          | "LightningBoltIcon"
-          | "LinkIcon"
-          | "LightBulbIcon"
-          | "LockClosedIcon"
-          | "LockOpenIcon"
-          | "PaperAirplaneIcon"
-          | "ShoppingBagIcon"
-          | "ShoppingCartIcon"
-          | "SparklesIcon"
-          | "TagIcon"
-          | "TruckIcon"
-          | "UserGroupIcon"
-          | "AnnotationIcon"
-          | "MailIcon"
-          | "MailOpenIcon"
-          | "brutalist"
-          | "colors"
-          | "elegant"
-          | "filters"
-          | "grid"
-          | "playful"
-          | "shadows"
-          | "simple"
-          | "sizing"
-          | "transforms"
-          | "typography"
-          | "CalendarLight"
-          | "ChatLight"
-          | "Code"
-          | "DeliveryLight"
-          | "ExchangeSimple"
-          | "FastCheckoutLight"
-          | "GiftCardLight"
-          | "PlanetLight"
-          | "Resize"
-          | "ReturnsLight"
-          | "ShippingSimple"
-          | "Stack"
-          | "WarrantyLight"
-          | "WarrantySimple"
-          | "server-2"
-          | "server-8"
-          | "up-align-1-light"
-          | "columns-1-light"
-          | "laptop-star-light"
-          | "squares-1-light"
-          | "cubes-light";
+        tab_icon: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: text */
         cta1?: string;
         /** Input type: url */

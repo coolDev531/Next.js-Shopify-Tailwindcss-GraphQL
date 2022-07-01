@@ -11,9 +11,9 @@
         "pre_title": "",
         "title": "We create Shopify Ecommerce solutions.",
         "paragraph": "<p>Wether you want to built a new ecommerce store, migrate from a different platform, or need to upgrade your current site. We are here to help you succeed.<\/p>",
-        "cta1": "asdasd",
+        "cta1": "New Store",
         "cta1_link": "#",
-        "cta2": "asdasd",
+        "cta2": "Store Migration",
         "cta2_link": "#",
         "position": "center"
       }
@@ -25,32 +25,37 @@
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Website Analysis",
-            "paragraph": "<p>Our team performs thorough site analysis to<br\/>determine your website’s conversion opportunities, threats, weaknesses, and<br\/>strengths. We run SEO audits, test your site speed and functionality, and analyse<br\/>your site traffic. These methods allow us to improve your site usability and<br\/>increase your site engagement and conversions.<\/p>"
+            "title": "Reach out",
+            "paragraph": "<p>Have a question? or have a service you need. Choose an option that suites you or send us an enquiry. Our team is ready to get you started. <\/p>",
+            "paragraph_old": ""
           }
         },
         "6ae8fd1e-b2ee-4e23-be4b-e76c4131f2b7": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Customer Focus & Communication",
-            "paragraph": "<p>We<br\/>focus on developing customized processes to fit your needs. We understand that<br\/>each client is different and work in different ways. We take the time to regularly<br\/>communicate to our clients keeping them updating on our processes and encourage<br\/>feedback. For the convenience of our clients, our meetings\/communications are<br\/>done via email, whatsapp or video conferencing<\/p>"
+            "title": "Team Match",
+            "paragraph": "<p>Based on your enquiry we will assign a dedicated project manager matched to assist you, they take the time to ensure your needs are taken care of. <\/p>",
+            "paragraph_old": ""
           }
         },
         "2bd223e9-952a-4c7b-b098-afcae3728cc4": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
-            "title": "Website Maintenance",
-            "paragraph": "<p>Regular site maintenance is crucial to ensure<br\/>your website is running at full capacity. We conduct scheduled site check-ups<br\/>to determine your website's key aspects that need improvement. Using the<br\/>analytics results, we develop strategies to enhance your site security, boost<br\/>your traffic and optimize your page experience.<\/p>"
+            "title": "Get started",
+            "paragraph": "<p>You are in good hands. With your dedicated project manager, the sky is the limit, they will be there every step of the way to see that your project is complete.<\/p>",
+            "paragraph_old": ""
           }
         },
         "fef8d93c-5bdc-49a7-8de3-3ef0c0ecd90a": {
           "type": "feature",
+          "disabled": true,
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Conversion Rate Optimization",
-            "paragraph": "<p>Our team focuses on optimizing your sites speed<br\/>by eliminating unnecessary form fields, placing clear calls-to-action and simplifying<br\/>your page navigations. We also perform A\/B testing to ensure all aspects of<br\/>your website are optimized for conversion.<\/p>"
+            "paragraph": "<p>Our team focuses on optimizing your sites speed<br\/>by eliminating unnecessary form fields, placing clear calls-to-action and simplifying<br\/>your page navigations. We also perform A\/B testing to ensure all aspects of<br\/>your website are optimized for conversion.<\/p>",
+            "paragraph_old": ""
           }
         }
       },
@@ -68,7 +73,7 @@
       "settings": {
         "pre_title": "Expert development",
         "title": "We speak, eat, sleep Shopify",
-        "paragraph": "<p>We have extensive Shopify experience and have developed ecommerce stores and Apps. We will start from the beginning including a discovery phase, content audit and sitemap planning. We will also highlight any specific needs or customizations you would like for your website. Your website includes product set-up and organization, with a fully operational & purchase ready Shopify store that is attractive, accessible, and user-friendly with a focus on high conversion rates.<br\/><br\/>Our websites are built with emphases on an effective UX flow, best SEO practices, for SEO optimization, strategic content flow and organization. This is to make sure that your website is optimized to performance at its best. <br\/><\/p>",
+        "paragraph": "<p>We have extensive Shopify experience and have developed ecommerce stores and Apps. We will start from the beginning including a discovery phase, content audit and sitemap planning. We will also highlight any specific needs or customizations you would like for your website. Your website includes product set-up and organization, with a fully operational & purchase ready Shopify store that is attractive, accessible, and user-friendly with a focus on high conversion rates.<br\/><br\/><br\/><\/p>",
         "cta1": "",
         "cta1_link": "",
         "cta2": "",
@@ -84,7 +89,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "From Scratch",
-            "paragraph": "<p>You are looking for a<br\/>new site and haven’t got<br\/>a site already, or the<br\/>need to connect it to a<br\/>3rd party POS<\/p>"
+            "paragraph": "<p>You are looking for a<br\/>new site and haven’t got<br\/>a site already, or the<br\/>need to connect it to a<br\/>3rd party POS<\/p>",
+            "paragraph_old": ""
           }
         },
         "613b3423-00d0-40c1-a6c6-4295763917b9": {
@@ -92,7 +98,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Upgrade",
-            "paragraph": "<p>You have an existing<br\/>Shopify store and want<br\/>to upgrade the theme,<br\/>content structure, and<br\/>make more sales?<\/p>"
+            "paragraph": "<p>You have an existing<br\/>Shopify store and want<br\/>to upgrade the theme,<br\/>content structure, and<br\/>make more sales?<\/p>",
+            "paragraph_old": ""
           }
         },
         "f593e74c-72fe-4a2d-9dd4-eb0ff99ee28f": {
@@ -100,7 +107,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Integrate",
-            "paragraph": "<p>You have an extisting<br\/>brick & mortar store and<br\/>want to integrate your<br\/>back-end system into a<br\/>new Shopify store.<\/p>"
+            "paragraph": "<p>You have an extisting<br\/>brick & mortar store and<br\/>want to integrate your<br\/>back-end system into a<br\/>new Shopify store.<\/p>",
+            "paragraph_old": ""
           }
         },
         "03758003-6321-4a0c-8e54-8eab05c4a979": {
@@ -108,7 +116,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Migration",
-            "paragraph": "<p>You want to change<br\/>your ecommerce platform<br\/>from WooCommerce,<br\/>Magento, Big-<br\/>Commerce or other?<\/p>"
+            "paragraph": "<p>You want to change<br\/>your ecommerce platform<br\/>from WooCommerce,<br\/>Magento, Big-<br\/>Commerce or other?<\/p>",
+            "paragraph_old": ""
           }
         }
       },
@@ -128,36 +137,36 @@
           "type": "step",
           "settings": {
             "tab_title": "Step 1 - Introduction & strategy phase",
-            "tab_paragraph": "This is when we get to know each other, and you share your vision with the team. We then put together a plan of action, specific to your requirements.",
+            "tab_paragraph": "This is when we take the time to understand your vision & needs.",
             "title": "Introduction & strategy phase",
-            "paragraph": "<p>This is when we get to know each other, and you<br\/>share your vision with the team. We then put together a plan of action, specific<br\/>to your requirements.<\/p>"
+            "paragraph": "<p>We are all ears and ready to get make your vision and ideas a reality. At this phase the more informatoin you share with us the better. We then put together a plan of action, specific to your requirements.<\/p>"
           }
         },
         "16544241313b2fcafc-1": {
           "type": "step",
           "settings": {
-            "tab_title": "Step 2 - Feed back stage",
-            "tab_paragraph": "You get to look at some mock-ups, and layouts for your site’s design and approve them or ask for changes.",
-            "title": "Feed back stage",
-            "paragraph": ""
+            "tab_title": "Step 2 - Feedback stage",
+            "tab_paragraph": "We are dedicated in building your perfect website and encourage feedback throughout the project.",
+            "title": "Feedback stage",
+            "paragraph": "<p>We put together some proposed  mock-ups, and layouts for your website’s design and let you give us feedback until you are happy with the results.<\/p>"
           }
         },
         "16544241313b2fcafc-2": {
           "type": "step",
           "settings": {
             "tab_title": "Step 3 - Development stage",
-            "tab_paragraph": "The development and web design process gets underway where our team begins to build your perfect website",
+            "tab_paragraph": "Our team gets to work on turning your vision into reality. Keeping you up to date in the process.",
             "title": "Development stage",
-            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+            "paragraph": "<p>Wether its a store migration, website upgrate or a totally new website. Our team is on it. Ensuring that the development runs smoothly and effectively while keeping you updated throughout the process. <\/p>"
           }
         },
         "16544241313b2fcafc-3": {
           "type": "step",
           "settings": {
             "tab_title": "Step 4 - Final Review Stage",
-            "tab_paragraph": "Afterward, there will be a final round of revisions to get everything just right before we launch your site.",
+            "tab_paragraph": "Everything is coming together. We are finalizing the pieces of your website before we go live.",
             "title": "Final ReviewStage",
-            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+            "paragraph": "<p>This phase is critical. Our team goes over the final round of revisions to get everything just right before we launch your site. We go over any changes and adjustments needed encouraging feedback throughout the process. Once every is a go, we move on to our next and final stage.<\/p>"
           }
         },
         "16544241313b2fcafc-4": {
@@ -165,8 +174,8 @@
           "settings": {
             "tab_title": "Step 5 - Launch",
             "tab_paragraph": "All the hard work leads up to this, where we hand over your fully functional, ready to sell, Shopify site.",
-            "title": "Incremental adoption",
-            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+            "title": "Website Launch",
+            "paragraph": "<p>We have made it and all the hard work has paid of. Our team guides you through the website launch process, ensuring that everything is functional and ready for you to start selling right away. <\/p>"
           }
         }
       },
@@ -178,10 +187,10 @@
         "16544241313b2fcafc-4"
       ],
       "settings": {
-        "pre_title": "Developer experience to love",
-        "title": "Develop with an open, thought‑out API",
-        "paragraph": "<p>One of our main goals is to provide the best possible developer experience. Radix Primitives provides a fully-typed API. All components share a similar API, creating a consistent and predictable experience.<\/p>",
-        "cta1": "",
+        "pre_title": "Partners in you online success",
+        "title": "We are here every step of the way",
+        "paragraph": "<p>One of our main goals is to provide the best possible experience working with us, while developing your powerful website optimized for success. Whe nworking with us, you are matched with a designated project manager to ensure that your project needs are taken care of. <\/p>",
+        "cta1": "Explore all services",
         "cta1_link": "",
         "cta2": "",
         "cta2_link": ""
@@ -195,7 +204,7 @@
           "settings": {
             "pre_title": "Get Started",
             "title": "Ready to start your Shopify project?",
-            "paragraph": "<p>Get started now blurb, skip to quoting form challenge on<br\/>having ther product information on BigCommerce and on<br\/>max 4 lines for aestetics<\/p>",
+            "paragraph": "<p>Shopify is more then just a E-commerce platform, and has so much to offer. In a nutshell it runs smoothly and provides great experience – for both store owners and their customers. Shopify is our eCommerce platform of choice that we've been working, developing, and consistently upgrading since 2015. <\/p>",
             "cta1": "123123",
             "cta1_link": "",
             "cta2": "123123123",
@@ -203,31 +212,41 @@
             "position": "center"
           }
         },
-        "a0b070e8-45e6-47be-9d07-7f2371f7e8ea": {
-          "type": "image-text",
-          "settings": {
-            "pre_title": "",
-            "title": "Why choose LunaLemon",
-            "paragraph": "<p><strong>Certified Shopify partner:<\/strong> Luna Lemon is a part of the Shopify development community.<br\/><strong>Provide an all-in-one solution: <\/strong>We handle everything in-house, from developing and designing to advertising and maintaining your Shopify store.<br\/><strong>Customized themes to fit your needs: <\/strong>We provide custom theme design that will convert visitors into buyers.<br\/><strong>Dedicated project manager:<\/strong> We provide a dedicated point of contact at Luna Lemon to guide you through discovery, design, training, and final site launch.<br\/><strong>Experts in eCommerce optimization:<\/strong> In addition to being expert web developers, we have a full staff of SEO Specialists who can optimize your online store for better rankings.<br\/><\/p>",
-            "image": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
-            "position": "left"
-          }
-        },
         "1edc02ca-a844-4f5c-93fb-791e53248869": {
           "type": "image-text",
           "settings": {
-            "pre_title": "",
-            "title": "asfafs",
-            "paragraph": "<p>asfafs<\/p>",
+            "pre_title": "Choosing the right plateform",
+            "title": "Why we choose Shopify",
+            "paragraph": "<p>Over 1 million merchants across 175 countries agree with us and trust Shopify to run their stores. Here's why we think it's the right platform for you too...<\/p>",
+            "list_title": "",
+            "list": "<p>Easy to use<\/p><p>Great support<\/p><p>Multi-payment gateway integration<\/p><p><\/p><p>Tracking and maintaining customer data<\/p><p>Across-channel selling<\/p><p>Analytics reporting<\/p><p>Built-in cart abandonment feature<\/p><p>Optimized for SEO, easily customizable keywords<\/p><p>Integrations made easy<\/p>",
             "image": "shopify:\/\/shop_images\/Capturem.jpg",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
             "position": "right"
+          }
+        },
+        "a0b070e8-45e6-47be-9d07-7f2371f7e8ea": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Shopify experts & partners",
+            "title": "Why work with us",
+            "paragraph": "<p><strong>Certified Shopify partner:<\/strong> Luna Lemon is a part of the Shopify development community.<br\/><strong>Provide an all-in-one solution: <\/strong>We handle everything in-house, from developing and designing to advertising and maintaining your Shopify store.<br\/><strong>Customized themes to fit your needs: <\/strong>We provide custom theme design that will convert visitors into buyers.<br\/><strong>Dedicated project manager:<\/strong> We provide a dedicated point of contact at Luna Lemon to guide you through discovery, design, training, and final site launch.<br\/><strong>Experts in eCommerce optimization:<\/strong> In addition to being expert web developers, we have a full staff of SEO Specialists who can optimize your online store for better rankings.<br\/><\/p>",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
+            "position": "left"
           }
         }
       },
       "block_order": [
         "2a8dbc1e-9c29-40a3-8c79-6adc1d8fa95f",
-        "a0b070e8-45e6-47be-9d07-7f2371f7e8ea",
-        "1edc02ca-a844-4f5c-93fb-791e53248869"
+        "1edc02ca-a844-4f5c-93fb-791e53248869",
+        "a0b070e8-45e6-47be-9d07-7f2371f7e8ea"
       ],
       "settings": {
       }
@@ -307,242 +326,72 @@
         "a6f38bae-51d8-4fc2-a8c5-3067eb477ac2"
       ],
       "settings": {
+        "color_bg": "",
+        "color_toggle": "dark"
       }
     },
     "1654762016e3f34059": {
       "type": "image-carousel",
-      "blocks": {
-        "a13e9dbc-0037-417b-b71b-028c4dbca922": {
-          "type": "heading",
-          "settings": {
-            "pre_title": "Explore",
-            "title": "Sites we’ve built for our clients",
-            "paragraph": "",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "position": "center"
-          }
-        },
-        "ae364fec-09a3-4835-8e51-4f2985e16021": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
-            "link": ""
-          }
-        },
-        "ab0bed14-ba1a-45c3-8577-773c343f0605": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Shawl-6_1024x1024_2x_7e3ec59a-ce06-4c22-8791-d3beb1c5f0ea.jpg",
-            "link": ""
-          }
-        },
-        "55014a00-f9c8-4b34-9486-706c0e1905a4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Capture.jpg",
-            "link": ""
-          }
-        },
-        "3ed18e50-940f-4887-ae50-50fd2a4e4095": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2021-September-Draft-Posts-_-Ads---WQ.jpg",
-            "link": ""
-          }
-        },
-        "c7fa4016-efc7-4e92-9dff-6a3cc73efa30": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2021-September-Draft-Posts-_-Ads---WQ.jpg",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "a13e9dbc-0037-417b-b71b-028c4dbca922",
-        "ae364fec-09a3-4835-8e51-4f2985e16021",
-        "ab0bed14-ba1a-45c3-8577-773c343f0605",
-        "55014a00-f9c8-4b34-9486-706c0e1905a4",
-        "3ed18e50-940f-4887-ae50-50fd2a4e4095",
-        "c7fa4016-efc7-4e92-9dff-6a3cc73efa30"
-      ],
       "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "images": "",
+        "animate": false,
+        "animation_duration": 20
       }
     },
     "165476583906badf90": {
       "type": "logo-banner",
-      "blocks": {
-        "351b615c-bd01-44ce-99fc-9e04af076f67": {
-          "type": "image",
-          "settings": {
-            "url": ""
-          }
-        },
-        "491e8a39-3583-43d4-9f0e-bc644176812a": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/yarn-1_530x530_crop_top_2x_b0c839fc-8bfe-47d7-b418-1c69e5cf030b.jpg",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "351b615c-bd01-44ce-99fc-9e04af076f67",
-        "491e8a39-3583-43d4-9f0e-bc644176812a"
-      ],
       "settings": {
         "title": "Brands we've worked with",
-        "height": 40
+        "logo_items": [
+
+        ],
+        "height": 40,
+        "animate": false,
+        "animation_duration": 20
       }
     },
     "165476205467493fae": {
       "type": "feature-carousel",
-      "blocks": {
-        "8ac6a320-e38a-4d40-98e7-7d52f972c073": {
-          "type": "heading",
-          "settings": {
-            "pre_title": "Customize",
-            "title": "We offer a large range ofunique customizations and add ons",
-            "paragraph": "",
-            "cta1": "asfasf",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "position": "left"
-          }
-        },
-        "708e3dce-e55f-480b-be3b-7918cb42e3ac": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ford.jpg",
-            "title": "asfasf",
-            "paragraph": "asffasfas",
-            "link": ""
-          }
-        },
-        "03ff3d79-c4fd-4996-8717-e6468e6ca841": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/person-cuts-into-plate-of-pasta.jpg",
-            "title": "asfafs",
-            "paragraph": "afafafa",
-            "link": ""
-          }
-        },
-        "4d148a52-e035-41e3-9b64-316efeca43d6": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
-            "title": "aaffa",
-            "paragraph": "saffasfasafs",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "8ac6a320-e38a-4d40-98e7-7d52f972c073",
-        "708e3dce-e55f-480b-be3b-7918cb42e3ac",
-        "03ff3d79-c4fd-4996-8717-e6468e6ca841",
-        "4d148a52-e035-41e3-9b64-316efeca43d6"
-      ],
       "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "features": [
+
+        ]
       }
     },
     "1654765182e225ecd7": {
       "type": "info-cards",
-      "blocks": {
-        "a33aac81-b0ab-416d-8648-5d2aefa586c3": {
-          "type": "info-card",
-          "settings": {
-            "title": "WooCommerce",
-            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
-            "svg": ""
-          }
-        },
-        "1798219d-9f25-4d34-b26b-caafad9c98e9": {
-          "type": "info-card",
-          "settings": {
-            "title": "Magento",
-            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
-            "svg": ""
-          }
-        },
-        "91e4b380-57f0-44b8-adb4-78bc6c0d52a9": {
-          "type": "info-card",
-          "settings": {
-            "title": "PrestaShop",
-            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
-            "svg": ""
-          }
-        },
-        "16dd06a5-a6b3-4d77-b01a-6bec5a3d389f": {
-          "type": "info-card",
-          "settings": {
-            "title": "Other?",
-            "paragraph": "<p>We do also, this, this this and that!<\/p>",
-            "svg": ""
-          }
-        }
-      },
-      "block_order": [
-        "a33aac81-b0ab-416d-8648-5d2aefa586c3",
-        "1798219d-9f25-4d34-b26b-caafad9c98e9",
-        "91e4b380-57f0-44b8-adb4-78bc6c0d52a9",
-        "16dd06a5-a6b3-4d77-b01a-6bec5a3d389f"
-      ],
       "settings": {
         "pre_title": "Migrations",
-        "title": "No matter what platform you come from,"
+        "title": "No matter what platform you come from,",
+        "content_list": [
+
+        ]
       }
     },
     "1654765182e225ecd72": {
       "type": "info-cards",
-      "blocks": {
-        "a33aac81-b0ab-416d-8648-5d2aefa586c32": {
-          "type": "info-card",
-          "settings": {
-            "title": "Vend POS",
-            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
-            "svg": ""
-          }
-        },
-        "1798219d-9f25-4d34-b26b-caafad9c98e92": {
-          "type": "info-card",
-          "settings": {
-            "title": "Dearsystems",
-            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
-            "svg": ""
-          }
-        },
-        "91e4b380-57f0-44b8-adb4-78bc6c0d52a92": {
-          "type": "info-card",
-          "settings": {
-            "title": "Erply",
-            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
-            "svg": ""
-          }
-        },
-        "16dd06a5-a6b3-4d77-b01a-6bec5a3d389f2": {
-          "type": "info-card",
-          "settings": {
-            "title": "Other?",
-            "paragraph": "<p>We do also, this, this this and that!<\/p>",
-            "svg": ""
-          }
-        }
-      },
-      "block_order": [
-        "a33aac81-b0ab-416d-8648-5d2aefa586c32",
-        "1798219d-9f25-4d34-b26b-caafad9c98e92",
-        "91e4b380-57f0-44b8-adb4-78bc6c0d52a92",
-        "16dd06a5-a6b3-4d77-b01a-6bec5a3d389f2"
-      ],
       "settings": {
         "pre_title": "Integrations",
-        "title": "or what back-end you want to use."
+        "title": "or what back-end you want to use.",
+        "content_list": [
+
+        ]
       }
     },
     "165476560159b5ef3e": {

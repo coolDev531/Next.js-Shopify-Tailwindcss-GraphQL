@@ -1,14 +1,9 @@
 import { Section } from "_client/layout/section";
-import { Heading } from "_client/typography/heading";
-import { Paragraph } from "_client/typography/paragraph";
-import Image from "next/image";
+import Image from "next/future/image";
 import { FC } from "react";
 import { ImageGallerySection } from "types/sections";
 
-export const ImageGallery: FC<ImageGallerySection> = ({ id, blocks, type }) => {
-  const firstRow = blocks.filter(({ type }) => type === "image").slice(0, 3);
-  const secondRow = blocks.filter(({ type }) => type === "image").slice(3, 6);
-
+export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) => {
   return (
     <Section id={id} type={type} padding="base">
       <div className="relative -mx-8 flex justify-center overflow-hidden ">
@@ -19,79 +14,149 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, blocks, type }) => {
             backgroundSize: "123.25rem 100%",
           }}
         />
-        <figure className="absolute left-1/2 top-16 bottom-16 -z-10 -ml-[50vw] h-full w-screen bg-grid-gray-900/[0.04] [mask-image:linear-gradient(0deg,transparent,black)]"></figure>
+        <figure className="absolute left-1/2 top-16 bottom-16 -z-10 -ml-[50vw] h-full w-screen bg-grid-gray-900/[0.04] [mask-image:linear-gradient(0deg,transparent,black)]" />
         <section className="mx-auto w-[80rem] min-w-[80rem] [mask-image:linear-gradient(0deg,transparent_0%,white_45%)]">
-          <div className="relative  flex items-end gap-8 px-8">
-            {firstRow.map((block) => (
-              <figure
-                key={block.id}
-                className="group relative flex overflow-hidden rounded shadow-2xl"
-              >
-                {block.settings.image
-                  ? <Image
-                      src={`https:${block?.settings?.image?.src}`}
-                      width={block?.settings?.image?.width}
-                      height={block?.settings?.image?.height}
-                      alt={block?.settings?.image?.alt}
-                    />
-                  : null}
-                {block.settings.hover_effect && (
-                  <figcaption
-                    className="absolute inset-0 h-full w-full p-8 opacity-0 transition-opacity group-hfa:opacity-100"
-                    style={{ background: block.settings.color_overlay }}
-                  >
-                    <section>
-                      <header>
-                        <Heading heading="h3" light={block.settings.color_use_light_text}>
-                          {block.settings.title}
-                        </Heading>
-                      </header>
-                      <main>
-                        <Paragraph size="sm" light={block.settings.color_use_light_text}>
-                          {block.settings.paragraph}
-                        </Paragraph>
-                      </main>
-                    </section>
+          <div className="relative flex items-end gap-8 px-8">
+            {/*= =============== Image 1 ================ */}
+            <figure className="group relative flex aspect-[1.02118] w-[944px] select-none overflow-hidden rounded shadow-2xl">
+              {settings.image1
+                ? <Image
+                    className="bg-center object-cover"
+                    src={`https:${settings?.image1?.src}`}
+                    width={settings?.image1?.width}
+                    height={settings?.image1?.height}
+                    alt={settings?.image1?.alt}
+                  />
+                : <Image
+                    className="bg-center object-cover"
+                    src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-1.png?format=webp"
+                    width={1000}
+                    height={1000}
+                    alt="Placeholder Image"
+                  />}
+              {settings.title1
+                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-slate-500 opacity-0 transition-all group-hfa:opacity-100">
+                    {settings.title1}
                   </figcaption>
-                )}
-              </figure>
-            ))}
+                : null}
+            </figure>
+            {/*= =============== Image 2 ================ */}
+            <figure className="group relative flex aspect-[2.13962] w-[2268px] select-none overflow-hidden rounded shadow-2xl">
+              {settings.image2
+                ? <Image
+                    className="bg-center object-cover"
+                    src={`https:${settings?.image2?.src}`}
+                    width={settings?.image2?.width}
+                    height={settings?.image2?.height}
+                    alt={settings?.image2?.alt}
+                  />
+                : <Image
+                    className="bg-center object-cover"
+                    src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-lifestyle-2.png?format=webp"
+                    width={1000}
+                    height={1000}
+                    alt="Placeholder Image"
+                  />}
+              {settings.title2
+                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-slate-500 opacity-0 transition-all group-hfa:opacity-100">
+                    {settings.title2}
+                  </figcaption>
+                : null}
+            </figure>
+            {/*= =============== Image 3 ================ */}
+            <figure className="group relative flex aspect-[1.41284] w-[1232px] select-none overflow-hidden rounded shadow-2xl">
+              {settings.image3
+                ? <Image
+                    className="bg-center object-cover"
+                    src={`https:${settings?.image3?.src}`}
+                    width={settings?.image3?.width}
+                    height={settings?.image3?.height}
+                    alt={settings?.image3?.alt}
+                  />
+                : <Image
+                    className="bg-center object-cover"
+                    src="https:///cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-collection-5.png?format=webp"
+                    width={1000}
+                    height={1000}
+                    alt="Placeholder Image"
+                  />}
+              {settings.title3
+                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-slate-500 opacity-0 transition-all group-hfa:opacity-100">
+                    {settings.title3}
+                  </figcaption>
+                : null}
+            </figure>
           </div>
           <div className="relative mt-8 flex items-start gap-8">
-            {secondRow.map((block) => (
-              <figure
-                key={block.id}
-                className="group relative flex overflow-hidden rounded shadow-2xl"
-              >
-                {block.settings.image
-                  ? <Image
-                      src={`https:${block?.settings?.image?.src}`}
-                      width={block?.settings?.image?.width}
-                      height={block?.settings?.image?.height}
-                      alt={block?.settings?.image?.alt}
-                    />
-                  : null}
-                {block.settings.hover_effect && (
-                  <figcaption
-                    className="absolute inset-0 h-full w-full p-8 opacity-0 transition-opacity group-hfa:opacity-100"
-                    style={{ background: block.settings.color_overlay }}
-                  >
-                    <section>
-                      <header>
-                        <Heading heading="h3" light={block.settings.color_use_light_text}>
-                          {block.settings.title}
-                        </Heading>
-                      </header>
-                      <main>
-                        <Paragraph size="sm" light={block.settings.color_use_light_text}>
-                          {block.settings.paragraph}
-                        </Paragraph>
-                      </main>
-                    </section>
+            {/*= =============== Image 4 ================ */}
+            <figure className="group relative flex aspect-[1.22279] w-[1888px] select-none overflow-hidden rounded shadow-2xl">
+              {settings.image4
+                ? <Image
+                    className="bg-center object-cover"
+                    src={`https:${settings?.image4?.src}`}
+                    width={settings?.image4?.width}
+                    height={settings?.image4?.height}
+                    alt={settings?.image4?.alt}
+                  />
+                : <Image
+                    className="bg-center object-cover"
+                    src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-collection-6.png?format=webp"
+                    width={1000}
+                    height={1000}
+                    alt="Placeholder Image"
+                  />}
+              {settings.title4
+                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-slate-500 opacity-0 transition-all group-hfa:opacity-100">
+                    {settings.title4}
                   </figcaption>
-                )}
-              </figure>
-            ))}
+                : null}
+            </figure>
+            {/*= =============== Image 5 ================ */}
+            <figure className="group relative flex aspect-[1.90086] w-[1764px] select-none overflow-hidden rounded shadow-2xl">
+              {settings.image5
+                ? <Image
+                    className="bg-center object-cover"
+                    src={`https:${settings?.image5?.src}`}
+                    width={settings?.image5?.width}
+                    height={settings?.image5?.height}
+                    alt={settings?.image5?.alt}
+                  />
+                : <Image
+                    className="bg-center object-cover"
+                    src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-lifestyle-1.png?format=webp"
+                    width={1000}
+                    height={1000}
+                    alt="Placeholder Image"
+                  />}
+              {settings.title5
+                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-slate-500 opacity-0 transition-all group-hfa:opacity-100">
+                    {settings.title6}
+                  </figcaption>
+                : null}
+            </figure>
+            {/*= =============== Image 6 ================ */}
+            <figure className="group relative flex aspect-[0.86301] w-[1008px] select-none overflow-hidden rounded shadow-2xl">
+              {settings.image6
+                ? <Image
+                    className="bg-center object-cover"
+                    src={`https:${settings?.image6?.src}`}
+                    width={settings?.image6?.width}
+                    height={settings?.image6?.height}
+                    alt={settings?.image6?.alt}
+                  />
+                : <Image
+                    className="bg-center object-cover"
+                    src="https:///cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-collection-1.png?format=webp"
+                    width={1000}
+                    height={1000}
+                    alt="Placeholder Image"
+                  />}
+              {settings.title6
+                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-slate-500 opacity-0 transition-all group-hfa:opacity-100">
+                    {settings.title6}
+                  </figcaption>
+                : null}
+            </figure>
           </div>
         </section>
       </div>
