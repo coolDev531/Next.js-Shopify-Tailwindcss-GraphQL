@@ -1,11 +1,12 @@
-import { Section } from "_client/layout/section";
+import { Wrapper } from "_client/layout/wrapper";
+import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
 import { FC } from "react";
 import { BlockquoteSection } from "types/sections";
 
 export const BlockBlockquote: FC<BlockquoteSection> = ({ id, settings, type }) => {
   return (
-    <Section id={id} type={type} container="xl" padding="base">
+    <Wrapper maxWidth="xl" paddingY="base">
       <figure className="relative mx-auto max-w-prose px-4">
         <div className="absolute inset-0 -z-10 flex h-[84%] select-none items-center justify-center">
           <div className="relative aspect-1 h-full  rounded-[0_0_100%_0] bg-sky-200/40">
@@ -32,6 +33,6 @@ export const BlockBlockquote: FC<BlockquoteSection> = ({ id, settings, type }) =
           <h4 className="text-sm text-slate-400">{settings.job_title}</h4>
         </figcaption>
       </figure>
-    </Section>
+    </Wrapper>
   );
 };

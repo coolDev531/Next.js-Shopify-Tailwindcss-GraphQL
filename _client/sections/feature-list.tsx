@@ -1,15 +1,17 @@
-import { Section } from "_client/layout/section";
+import HeroIcon from "_client/dynamic-hero-icon";
+import { Wrapper } from "_client/layout/wrapper";
 import { BlockHeading } from "_client/sections/block-heading";
-import { RichText } from "_client/typography/rich-text";
+import { Heading } from "_client/typography/heading";
+import { Paragraph } from "_client/typography/paragraph";
 import { renderIcon } from "_sections/utils";
 import clsx from "clsx";
 import { FC } from "react";
 import { FeatureListSection } from "types/sections";
 
-export const FeatureList: FC<FeatureListSection> = ({ id, blocks, type, settings }) => {
+export const FeatureList: FC<FeatureListSection> = ({ blocks, settings }) => {
   return (
-    <Section id={id} type={type} container="xl" padding="base">
-      <BlockHeading settings={settings} section={false} />
+    <Wrapper maxWidth="xl" paddingY="none">
+      <BlockHeading settings={settings} />
       <div className="-mx-8 mt-16 flex justify-center">
         <div
           className={clsx(
@@ -33,12 +35,12 @@ export const FeatureList: FC<FeatureListSection> = ({ id, blocks, type, settings
                       <figure className="mb-4 flex justify-center rounded-md bg-sky-500 p-2 text-white shadow-lg group-hfa:[--svg-active-opacity:0.4] group-hfa:[--svg-active-fill:currentColor]">
                         {renderIcon(block.settings.icon, "w-9 h-9")}
                       </figure>
-                      <h2 className="heading-lg">
+                      <Heading as="h3" size="lg">
                         <span className="tracking-tight">{block.settings.title}</span>
-                      </h2>
+                      </Heading>
                     </header>
                     <main>
-                      <RichText className="paragraph-sm">{block.settings.paragraph}</RichText>
+                      <Paragraph size="sm">{block.settings.paragraph}</Paragraph>
                     </main>
                   </section>
                 );
@@ -47,6 +49,6 @@ export const FeatureList: FC<FeatureListSection> = ({ id, blocks, type, settings
           })}
         </div>
       </div>
-    </Section>
+    </Wrapper>
   );
 };

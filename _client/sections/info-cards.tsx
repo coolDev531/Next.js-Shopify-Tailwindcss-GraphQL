@@ -1,6 +1,5 @@
-import { Section } from "_client/layout/section";
+import { Wrapper } from "_client/layout/wrapper";
 import { Heading } from "_client/typography/heading";
-import { PreHeading } from "_client/typography/pre-heading";
 import { FC } from "react";
 import { stripHtml } from "string-strip-html";
 import { InfoCardsSection } from "types/sections";
@@ -8,11 +7,15 @@ import { _Metafield_liquid_file_reference_force_generic } from "types/shopify";
 
 export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) => {
   return (
-    <Section type={type} id={id} container="xl" padding="base">
+    <Wrapper maxWidth="xl" paddingY="base">
       <section>
         <header>
-          <h3 className="pre-heading">{settings.pre_title}</h3>
-          <h2 className="heading-xl">{settings.title}</h2>
+          <Heading as="h3" size="pre">
+            {settings.pre_title}
+          </Heading>
+          <Heading as="h2" size="xl">
+            {settings.title}
+          </Heading>
         </header>
       </section>
       <div className="relative sm:left-1/2 sm:-ml-[50vw] sm:w-screen sm:pl-[max(32px,calc((100vw-80rem)/2+32px))]">
@@ -37,7 +40,9 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
                       backgroundImage: `url(${svgImage?.value?.url ?? product.featured_image})`,
                     }}
                   ></figure>
-                  <h3 className="heading-lg">{product.title}</h3>
+                  <Heading as="h3" size="lg">
+                    {product.title}
+                  </Heading>
                 </header>
                 <main className="text-[15px] tracking-tight">
                   <p>{stripHtml(product.content).result}</p>
@@ -70,6 +75,6 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
           })}
         </div>
       </div>
-    </Section>
+    </Wrapper>
   );
 };

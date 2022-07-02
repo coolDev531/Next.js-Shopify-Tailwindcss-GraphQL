@@ -1,9 +1,9 @@
-import { Section } from "_client/layout/section";
+import { Wrapper } from "_client/layout/wrapper";
 import { FC } from "react";
 import { StatsGraphSection } from "types/sections";
 
 export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGraphSection) => (
-  <Section id={id} type={type} container="xl">
+  <Wrapper paddingY="none" maxWidth="xl">
     <div className="absolute left-1/2 bottom-0 -z-10 -ml-[50vw] h-full max-h-full w-screen">
       <div className="absolute bottom-0 h-full w-full">
         <div className="absolute bottom-0 left-0 hidden w-[50vw] border-b border-b-sky-500 md:block" />
@@ -85,5 +85,5 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
         }
       })}
     </div>
-  </Section>
+  </Wrapper>
 );

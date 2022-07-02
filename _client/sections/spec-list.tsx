@@ -1,23 +1,21 @@
-import { Section } from "_client/layout/section";
+import { Wrapper } from "_client/layout/wrapper";
 import { BlockHeading } from "_client/sections/block-heading";
 import { renderIcon } from "_sections/utils";
+import clsx from "clsx";
 import { FC, Fragment } from "react";
 import { SpecListSection } from "types/sections";
 
 export const SpecList: FC<SpecListSection> = ({ id, blocks, type, settings }) => {
-  const count = blocks.filter(({ type }) => type === "list").length;
   return (
-    <Section
-      id={id}
-      type={type}
-      container="base"
-      padding="base"
+    <Wrapper
+      maxWidth="base"
+      paddingY="base"
       background={settings.color_bg}
-      color={settings.color_toggle}
+      className={clsx(settings.color_toggle === "light" && "color-slate-inverted")}
     >
       {blocks.map((block) => {
         return block.type === "heading"
-          ? <BlockHeading key={`heading-${block.id}`} {...block} section={false} />
+          ? <BlockHeading key={`heading-${block.id}`} {...block} />
           : null;
       })}
       <div className="mt-8 flex justify-center">
@@ -49,6 +47,6 @@ export const SpecList: FC<SpecListSection> = ({ id, blocks, type, settings }) =>
           })}
         </ul>
       </div>
-    </Section>
+    </Wrapper>
   );
 };

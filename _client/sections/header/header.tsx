@@ -1,5 +1,5 @@
 import { Badge } from "_client/badge";
-import { Section } from "_client/layout/section";
+import { Wrapper } from "_client/layout/wrapper";
 import LightDarkSwitcher from "_client/light-dark-switch";
 import { Link } from "_client/link";
 import { DesktopNav } from "_client/sections/header/desktop-nav";
@@ -12,7 +12,7 @@ import { HeaderSection } from "types/sections";
 
 export const Header: FC<HeaderSection> = ({ id, type, settings, blocks }) => {
   return (
-    <Section id={id} type={type}>
+    <>
       <div className="h-[65px] opacity-0"></div>
       <header className="fixed top-0 right-0 left-0 z-50 h-header bg-white/75 backdrop-blur-lg  dark:bg-dark-bg">
         <div
@@ -28,7 +28,7 @@ export const Header: FC<HeaderSection> = ({ id, type, settings, blocks }) => {
           <NavMobile menu={settings.menu} blocks={blocks} />
         </div>
       </header>
-    </Section>
+    </>
   );
 };
 

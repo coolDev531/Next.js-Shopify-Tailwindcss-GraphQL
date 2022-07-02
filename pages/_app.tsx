@@ -10,7 +10,6 @@ import { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { FC } from "react";
 import "styles/tailwind.css";
-// import "styles/typography.css";
 import "styles/theme.scss";
 import "styles/utils.scss";
 import superjson from "superjson";
@@ -63,7 +62,7 @@ const App: FC<AppProps> = ({ pageProps, Component }) => {
             openGraph={SEO.openGraph}
           />
           {/*<Header />*/}
-          <main className="min-h-[calc(100vh-300px)] overflow-hidden">
+          <main className="min-h-[calc(100vh-300px)] overflow-hidden [&_section]:relative">
             <Component {...pageProps} />
           </main>
         </ThemeProvider>

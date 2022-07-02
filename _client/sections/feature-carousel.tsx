@@ -1,9 +1,9 @@
 import HeroIcon from "_client/dynamic-hero-icon";
-import { Section } from "_client/layout/section";
+import { Wrapper } from "_client/layout/wrapper";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
 import { Heading } from "_client/typography/heading";
-import { RichText } from "_client/typography/rich-text";
+import { Paragraph } from "_client/typography/paragraph";
 import Image from "next/image";
 import { FC, useCallback, useRef, useState } from "react";
 import { FeatureCarouselSection } from "types/sections";
@@ -32,11 +32,9 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
   }, []);
 
   return (
-    <Section
-      id={id}
-      type={type}
-      container="xl"
-      padding="base"
+    <Wrapper
+      maxWidth="xl"
+      paddingY="base"
       background={`url("/images/bg-gradient-light-180.jpg") top center no-repeat`}
       bgOpacity={0.6}
       bgHeight="calc(100% + 140px)"
@@ -44,7 +42,6 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
       <div className="flex flex-col gap-8">
         <BlockHeading
           key={`heading-${id}`}
-          section={false}
           settings={{ position, cta1, cta1_link, cta2, cta2_link, paragraph, pre_title, title }}
         />
         <div className="relative left-1/2 -ml-[50vw] w-screen">
@@ -53,58 +50,27 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
             onScroll={handleScrollEvent}
             ref={scrollContainerRef}
           >
-            {settings.features.map((product) => {
-              return (
-                <Link
-                  href={product.url}
-                  key={`feature-${id}-${product.id}`}
-                  className="group snap-start f:ring-2 f:ring-sky-400 f:ring-offset-2"
-                >
-                  <figure className="relative mb-4 aspect-1 w-[360px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
-                    {product.featured_media && (
-                      <Image
-                        objectFit="cover"
-                        layout="fill"
-                        src={product?.featured_media?.src}
-                        alt={product?.featured_media?.alt}
-                      />
-                    )}
-                  </figure>
-                  <header>
-                    <h3 className="heading-base">{product.title}</h3>
-                  </header>
-                  <main>
-                    <RichText className="paragraph-sm">{product.content}</RichText>
-                  </main>
-                </Link>
-              );
-            })}
+            {settings.features.map((product) => (
+              <FeatureCarouselItem
+                key={`feature-${id}-${product.id}`}
+                id={product.id}
+                href={product.url}
+                image={product.featured_media}
+                title={product.title}
+                description={product.content}
+              />
+            ))}
             {blocks.map((block) => {
               if (block.type !== "manual-feature") return null;
               return (
-                <Link
+                <FeatureCarouselItem
+                  key={`feature-${id}-${block.id}`}
+                  id={block.id}
                   href={block.settings.link}
-                  key={`feature -${block.id}`}
-                  className="group snap-start"
-                >
-                  <figure className="relative mb-4 aspect-1 w-[360px] overflow-hidden rounded shadow-xl group-hfa:shadow-none">
-                    {block.settings.image && (
-                      <Image
-                        objectFit="cover"
-                        objectPosition="50% 60%"
-                        layout="fill"
-                        src={`https:${block?.settings?.image?.src}`}
-                        alt={block?.settings?.image?.alt}
-                      />
-                    )}
-                  </figure>
-                  <header>
-                    <h3 className="heading-base">{block.settings.title}</h3>
-                  </header>
-                  <main>
-                    <RichText className="paragraph-sm">{block.settings.paragraph}</RichText>
-                  </main>
-                </Link>
+                  image={block.settings.image}
+                  title={block.settings.title}
+                  description={block.settings.paragraph}
+                />
               );
             })}
           </div>
@@ -128,6 +94,24 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
             : null}
         </div>
       </div>
-    </Section>
+    </Wrapper>
+  );
+};
+
+export const FeatureCarouselItem = ({ id, href, image, title, description }) => {
+  return (
+    <Link href={href} className="group snap-start f:ring-2 f:ring-sky-400 f:ring-offset-2">
+      <figure className="relative mb-4 aspect-1 w-[360px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
+        {image && <Image objectFit="cover" layout="fill" src={image?.src} alt={image?.alt} />}
+      </figure>
+      <header>
+        <Heading as="h3" size="base">
+          {title}
+        </Heading>
+      </header>
+      <main>
+        <Paragraph size="sm">{description}</Paragraph>
+      </main>
+    </Link>
   );
 };

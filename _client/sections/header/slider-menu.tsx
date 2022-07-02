@@ -1,7 +1,7 @@
 import HeroIcon from "_client/dynamic-hero-icon";
 import { Link } from "_client/link";
 import { Heading } from "_client/typography/heading";
-import { RichText } from "_client/typography/rich-text";
+import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
 import Image from "next/image";
 import { useCallback, useRef, useState } from "react";
@@ -66,10 +66,12 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
                 )}
               </figure>
               <header>
-                <h3 className="heading-base">{product.title}</h3>
+                <Heading as="h3" size="base">
+                  {product.title}
+                </Heading>
               </header>
               <main>
-                <RichText className="paragraph-sm">{product.content}</RichText>
+                <Paragraph size="sm">{product.content}</Paragraph>
               </main>
             </Link>
           );

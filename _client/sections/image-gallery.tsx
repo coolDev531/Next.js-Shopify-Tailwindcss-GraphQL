@@ -1,11 +1,11 @@
-import { Section } from "_client/layout/section";
+import { Wrapper } from "_client/layout/wrapper";
 import Image from "next/future/image";
 import { FC } from "react";
 import { ImageGallerySection } from "types/sections";
 
 export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) => {
   return (
-    <Section id={id} type={type} padding="base">
+    <Wrapper maxWidth="fullscreen" paddingY="base">
       <div className="relative -mx-8 flex justify-center overflow-hidden ">
         <figure
           className="absolute left-1/2 top-16 bottom-16 -z-20 -ml-[50vw] w-screen bg-top bg-no-repeat"
@@ -160,7 +160,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
           </div>
         </section>
       </div>
-    </Section>
+    </Wrapper>
   );
 };
 

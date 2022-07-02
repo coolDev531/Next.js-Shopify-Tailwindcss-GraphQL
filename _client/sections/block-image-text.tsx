@@ -1,21 +1,15 @@
 import { CheckCircleIcon } from "@heroicons/react/solid";
-import { Section } from "_client/layout/section";
+import { Wrapper } from "_client/layout/wrapper";
 import { Heading } from "_client/typography/heading";
-import { RichText } from "_client/typography/rich-text";
-import { PreHeading } from "_client/typography/pre-heading";
+import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
 import Image from "next/future/image";
 import { FC } from "react";
 import { ImageTextSection } from "types/sections";
 
-export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({
-  id,
-  settings,
-  type,
-  section,
-}) => {
+export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ settings }) => {
   return (
-    <Section id={id} type={type} padding="base" container="xl" section={section}>
+    <Wrapper paddingY="base" maxWidth="xl">
       <div className="flex grid-cols-2 flex-col-reverse gap-8 md:grid">
         {/*= =============== Text Content ================ */}
         <section
@@ -25,11 +19,15 @@ export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({
           )}
         >
           <header>
-            <h3 className="pre-heading">{settings.pre_title}</h3>
-            <h2 className="heading-xl">{settings.title}</h2>
+            <Heading as="h3" size="pre">
+              {settings.pre_title}
+            </Heading>
+            <Heading as="h2" size="xl">
+              {settings.title}
+            </Heading>
           </header>
           <main>
-            <RichText className="paragraph-base">{settings.paragraph}</RichText>
+            <Paragraph>{settings.paragraph}</Paragraph>
             <div className="mt-8">
               <h3 className="mb-1 font-semibold text-slate-700">{settings.list_title}</h3>
               <ul>
@@ -87,6 +85,6 @@ export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({
             </div>
           : <div />}
       </div>
-    </Section>
+    </Wrapper>
   );
 };

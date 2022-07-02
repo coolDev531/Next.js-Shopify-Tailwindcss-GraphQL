@@ -1,4 +1,4 @@
-import { Section } from "_client/layout/section";
+import { Wrapper } from "_client/layout/wrapper";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
 import Image from "next/image";
@@ -11,11 +11,10 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
   const router = useRouter();
 
   return (
-    <Section id={id} type={type} padding="base" container="xl">
+    <Wrapper paddingY="base" maxWidth="xl">
       <BlockHeading
         key={`heading-${id}`}
         settings={{ position, cta1, cta1_link, cta2, cta2_link, paragraph, pre_title, title }}
-        section={false}
       />
       <div className="relative left-1/2 -ml-[50vw] w-screen max-w-[100vw]">
         <div
@@ -138,6 +137,6 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
           </div>
         </div>
       </div>
-    </Section>
+    </Wrapper>
   );
 };

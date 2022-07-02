@@ -1,8 +1,8 @@
-import { Section } from "_client/layout/section";
+import { Wrapper } from "_client/layout/wrapper";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
 import { Heading } from "_client/typography/heading";
-import { RichText } from "_client/typography/rich-text";
+import { Paragraph } from "_client/typography/paragraph";
 import { renderIcon } from "_sections/utils";
 import clsx from "clsx";
 import Image from "next/future/image";
@@ -15,11 +15,11 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
   );
 
   return (
-    <Section id={id} type={type} container="xl" padding="base">
+    <Wrapper maxWidth="xl" paddingY="base">
       {blocks.map((block) => {
         return block.type === "heading"
           ? <div className="mb-12" key={`heading-${block.id}`}>
-              <BlockHeading {...block} section={false} />
+              <BlockHeading {...block} />
             </div>
           : null;
       })}
@@ -84,10 +84,12 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
                   <div className="pointer-events-none absolute inset-x-6 inset-y-0 border-l border-r border-slate-100" />
                   <div className="bg-slate-100 py-6 px-6 sm:py-9">
                     <header className="">
-                      <h3 className="heading-lg">{block.settings.title}</h3>
+                      <Heading as="h3" size="lg">
+                        {block.settings.title}
+                      </Heading>
                     </header>
                     <main className="">
-                      <RichText className="paragraph-xl">{block.settings.paragraph}</RichText>
+                      <Paragraph size="lg">{block.settings.paragraph}</Paragraph>
                     </main>
                     <footer
                       className={clsx(
@@ -156,6 +158,6 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
           );
         })}
       </div>
-    </Section>
+    </Wrapper>
   );
 };

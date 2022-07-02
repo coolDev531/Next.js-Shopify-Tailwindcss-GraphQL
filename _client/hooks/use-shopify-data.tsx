@@ -26,7 +26,7 @@ export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[
         totalHeight: document.body.clientHeight,
         sections: sections.map(({ id }) => ({
           id,
-          height: document.getElementById(id)?.clientHeight ?? 0,
+          height: document.getElementById(`section--${id}`)?.clientHeight ?? 0,
         })),
       },
       "*"
@@ -38,7 +38,7 @@ export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[
       setShopifyData({ global: e.data.global, sections: e.data.sections });
 
       if (e.data.topic === "shopify:section:select") {
-        const sectionElement = document.getElementById(e.data.detail.sectionId);
+        const sectionElement = document.getElementById(`section--${e.data.detail.sectionId}`);
         if (sectionElement) {
           sectionElement.scrollIntoView({ behavior: "smooth", block: "start" });
         }

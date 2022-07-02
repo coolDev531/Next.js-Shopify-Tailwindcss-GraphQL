@@ -1,4 +1,4 @@
-import { Section } from "_client/layout/section";
+import { Wrapper } from "_client/layout/wrapper";
 import { useTooltipStore } from "_client/stores/tooltip-store";
 import Image from "next/image";
 import { FC } from "react";
@@ -8,7 +8,7 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
   const [tooltip, setTooltip] = useTooltipStore();
 
   return (
-    <Section id={id} type={type} container="xl">
+    <Wrapper maxWidth="xl" paddingY="base">
       <div className="-mt-12 mb-16">
         <section>
           <header className="mb-4">
@@ -143,6 +143,6 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
           </main>
         </section>
       </div>
-    </Section>
+    </Wrapper>
   );
 };

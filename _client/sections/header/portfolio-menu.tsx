@@ -1,4 +1,5 @@
 import { Link } from "_client/link";
+import { Heading } from "_client/typography/heading";
 import Image from "next/image";
 import { FC } from "react";
 import { HeaderBlocks } from "types/sections";

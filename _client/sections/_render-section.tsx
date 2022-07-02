@@ -6,6 +6,7 @@ import { FeatureCarousel } from "_client/sections/feature-carousel";
 import { FeatureList } from "_client/sections/feature-list";
 import { Footer } from "_client/sections/footer";
 import { Header } from "_client/sections/header/header";
+import { SectionHeading } from "_client/sections/heading";
 import { ImageCarousel } from "_client/sections/image-carousel";
 import { ImageGallery } from "_client/sections/image-gallery";
 import { InfoCards } from "_client/sections/info-cards";
@@ -24,132 +25,187 @@ export const renderSection = (section: Sections) => {
   switch (section.type) {
     case "test":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <div>Section to be developed: {section.type}</div>
         </section>
       );
     case "team-list":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <TeamList {...section} />
         </section>
       );
     case "testimonial-list":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <TestimonialList {...section} />
         </section>
       );
     case "tabs-faq":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <TabsFaq {...section} />
         </section>
       );
     case "tabs-process-step":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <TabsProcessStep {...section} />
         </section>
       );
     case "image-carousel":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <ImageCarousel {...section} />
         </section>
       );
     case "feature-carousel":
-      return <FeatureCarousel key={section.id} {...section} />;
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <FeatureCarousel key={section.id} {...section} />
+        </section>
+      );
     case "feature-list":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <FeatureList {...section} />
         </section>
       );
     case "image-gallery":
-      return <ImageGallery key={section.id} {...section} />;
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <ImageGallery key={section.id} {...section} />
+        </section>
+      );
     case "blockquote":
-      return <BlockBlockquote key={section.id} {...section} />;
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <BlockBlockquote key={section.id} {...section} />
+        </section>
+      );
     case "spec-list":
-      return <SpecList key={section.id} {...section} />;
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <SpecList key={section.id} {...section} />
+        </section>
+      );
     case "tabs-image-card":
-      return <TabsImageCard key={section.id} {...section} />;
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <TabsImageCard key={section.id} {...section} />
+        </section>
+      );
     case "logo-banner":
-      return <LogoBanner key={section.id} {...section} />;
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <LogoBanner key={section.id} {...section} />
+        </section>
+      );
     case "info-cards":
-      return <InfoCards key={section.id} {...section} />;
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <InfoCards key={section.id} {...section} />
+        </section>
+      );
     case "footer":
-      return <Footer key={section.id} {...section} />;
+      return (
+        <footer key={section.id} className={section.type} id={`section--${section.id}`}>
+          <Footer key={section.id} {...section} />
+        </footer>
+      );
     case "header":
-      return <Header key={section.id} {...section} />;
+      return (
+        <header key={section.id} className={section.type} id={`section--${section.id}`}>
+          <Header key={section.id} {...section} />
+        </header>
+      );
     case "heading":
-      return <BlockHeading key={section.id} {...section} />;
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <SectionHeading key={section.id} {...section} />
+        </section>
+      );
     case "hero":
-      return <BlockHero key={section.id} {...section} />;
-
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <BlockHero key={section.id} {...section} />
+        </section>
+      );
     case "image-text":
-      return <BlockImageText key={section.id} {...section} />;
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <BlockImageText key={section.id} {...section} />
+        </section>
+      );
     case "stats-graph":
-      return <StatsGraph key={section.id} {...section} />;
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <StatsGraph key={section.id} {...section} />
+        </section>
+      );
     case "story":
-      return <Story key={section.id} {...section} />;
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <Story key={section.id} {...section} />
+        </section>
+      );
     case "template-404":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <div>Section to be developed: {section.type}</div>
         </section>
       );
     case "template-article":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <div>Section to be developed: {section.type}</div>
         </section>
       );
     case "template-blog":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <div>Section to be developed: {section.type}</div>
         </section>
       );
     case "template-cart":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <div>Section to be developed: {section.type}</div>
         </section>
       );
     case "collection":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <div>Section to be developed: {section.type}</div>
         </section>
       );
     case "template-list-collections":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <div>Section to be developed: {section.type}</div>
         </section>
       );
     case "template-page":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <div>Section to be developed: {section.type}</div>
         </section>
       );
     case "template-password":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <div>Section to be developed: {section.type}</div>
         </section>
       );
     case "template-product":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <div>Section to be developed: {section.type}</div>
         </section>
       );
     case "template-search":
       return (
-        <section key={section.id} className={section.type} id={section.id}>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
           <div>Section to be developed: {section.type}</div>
         </section>
       );
