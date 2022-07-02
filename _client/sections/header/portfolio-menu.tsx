@@ -8,19 +8,29 @@ import { _Link_liquid } from "types/shopify";
 export const PortfolioMenu: FC<
   Extract<HeaderBlocks, { type: "dropdown_menu_portfolio" }>["settings"] & { links: _Link_liquid[] }
 > = ({ handle, links, ...props }) => {
+  console.log([...new Array(2).keys()]);
+  console.log([...new Array(3).keys()]);
+  console.log([...Array(2).keys()]);
+  console.log([...Array(2)]);
+  console.log(Array(2));
+  console.log(Array(3));
+  console.log(Array(2).keys());
+  console.log(Array(2).keys());
+  console.log(Array(2).keys());
+  console.log(new Array(2).keys());
   return (
     <div className="mx-auto flex max-w-7xl gap-8 px-4 py-16 sm:px-8">
-      {[...new Array(2).keys()].map((key) => {
+      {[1, 2].map((key) => {
         console.log(props);
         console.log(key);
-        console.log(props[`image_${key + 1}`]);
-        console.log(props[`title_${key + 1}`]);
-        console.log(props[`link_${key + 1}`]);
-        if (props[`image_${key + 1}`] && props[`title_${key + 1}`] && props[`link_${key + 1}`]) {
+        console.log(props[`image_${key}`]);
+        console.log(props[`title_${key}`]);
+        console.log(props[`link_${key}`]);
+        if (props[`image_${key}`] && props[`title_${key}`] && props[`link_${key}`]) {
           return (
             <Link
-              key={props[`title_${key + 1}`]}
-              href={props[`link_${key + 1}`]}
+              key={props[`title_${key}`]}
+              href={props[`link_${key}`]}
               className="group relative aspect-1 h-[257px] overflow-hidden rounded-lg"
             >
               <>
@@ -31,13 +41,13 @@ export const PortfolioMenu: FC<
                   height={500}
                   sizes="500px"
                   priority
-                  src={`https:${props[`image_${key + 1}`].src}`}
+                  src={`https:${props[`image_${key}`].src}`}
                   alt="placeholder"
                   className="group-hover:opacity-75"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3">
                   <h3 className="mb-0.5 text-sm font-medium text-slate-900">
-                    {props[`title_${key + 1}`]}
+                    {props[`title_${key}`]}
                   </h3>
                   <p className="text-xs text-slate-700">See more</p>
                 </div>

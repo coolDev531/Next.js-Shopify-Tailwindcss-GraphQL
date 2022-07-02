@@ -195,17 +195,17 @@ export const NavMobile: FC<{
                                   )}
                                 >
                                   <div className="grid grid-cols-2 gap-4 py-4">
-                                    {[...new Array(2).keys()].map((e, index) => {
+                                    {[1, 2].map((e, key) => {
                                       if (
-                                        block.settings[`image_${index + 1}`] &&
-                                        block.settings[`title_${index + 1}`] &&
-                                        block.settings[`link_${index + 1}`]
+                                        block.settings[`image_${key}`] &&
+                                        block.settings[`title_${key}`] &&
+                                        block.settings[`link_${key}`]
                                       ) {
                                         return (
                                           <Link
                                             onClick={() => close()}
-                                            key={block.settings[`title_${index + 1}`]}
-                                            href={block.settings[`link_${index + 1}`]}
+                                            key={block.settings[`title_${key}`]}
+                                            href={block.settings[`link_${key}`]}
                                             className="group relative aspect-1 overflow-hidden rounded drop-shadow-lg"
                                           >
                                             <>
@@ -216,15 +216,13 @@ export const NavMobile: FC<{
                                                 height={500}
                                                 sizes="300px"
                                                 priority
-                                                src={`https:${
-                                                  block.settings[`image_${index + 1}`].src
-                                                }`}
+                                                src={`https:${block.settings[`image_${key}`].src}`}
                                                 alt="placeholder"
                                                 className="group-hover:opacity-75"
                                               />
                                               <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3">
                                                 <h3 className="mb-0.5 text-sm font-medium text-slate-900">
-                                                  {block.settings[`title_${index + 1}`]}
+                                                  {block.settings[`title_${key}`]}
                                                 </h3>
                                                 <p className="text-xs text-slate-700">See more</p>
                                               </div>

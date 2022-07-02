@@ -27,18 +27,18 @@ export const SpecList: FC<SpecListSection> = ({ id, blocks, type, settings }) =>
 
             return (
               <Fragment key={`list-${block.id}`}>
-                {[...new Array(6)].map((_, index) => {
-                  if (block.settings[`text${index + 1}`]) {
+                {[1, 2, 3, 4, 5, 6].map((_, key) => {
+                  if (block.settings[`text${key}`]) {
                     return (
                       <li
-                        key={`list-${block.id}-${index}`}
+                        key={`list-${block.id}-${key}`}
                         className="flex items-center gap-3 overflow-ellipsis whitespace-nowrap px-8"
                       >
                         {renderIcon(
-                          block.settings[`icon${index + 1}`],
+                          block.settings[`icon${key}`],
                           "h-4 w-4 min-w-[1rem] text-slate-700"
                         )}
-                        {block.settings[`text${index + 1}`]}
+                        {block.settings[`text${key}`]}
                       </li>
                     );
                   }
