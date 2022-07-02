@@ -62,7 +62,7 @@ export const NavMobile: FC<{
                     <HeroIcon name="XIcon" className="h-6 w-6" />
                   </button>
                   <ul className="flex flex-col gap-2 transition-all">
-                    {menu.links.map((link, i) => {
+                    {menu?.links.map((link, i) => {
                       const block = blocks.find((block) => block.settings.handle === link.handle);
                       if (block) {
                         switch (block.type) {

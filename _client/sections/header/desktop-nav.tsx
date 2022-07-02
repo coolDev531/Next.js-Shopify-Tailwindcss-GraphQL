@@ -93,7 +93,7 @@ export const DesktopNav: FC<{
             opacity: navHover.opacity,
           }}*/
         />
-        {menu.links.map((link, i) => {
+        {menu?.links.map((link, i) => {
           const block = blocks.find((block) => block.settings.handle === link.handle);
           if (block) {
             switch (block.type) {
