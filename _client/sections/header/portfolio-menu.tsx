@@ -8,16 +8,6 @@ import { _Link_liquid } from "types/shopify";
 export const PortfolioMenu: FC<
   Extract<HeaderBlocks, { type: "dropdown_menu_portfolio" }>["settings"] & { links: _Link_liquid[] }
 > = ({ handle, links, ...props }) => {
-  console.log([...new Array(2).keys()]);
-  console.log([...new Array(3).keys()]);
-  console.log([...Array(2).keys()]);
-  console.log([...Array(2)]);
-  console.log(Array(2));
-  console.log(Array(3));
-  console.log(Array(2).keys());
-  console.log(Array(2).keys());
-  console.log(Array(2).keys());
-  console.log(new Array(2).keys());
   return (
     <div className="mx-auto flex max-w-7xl gap-8 px-4 py-16 sm:px-8">
       {[1, 2].map((key) => {
