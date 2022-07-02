@@ -15,6 +15,7 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
       <div className="mx-auto -mt-4 max-w-lg">
         <figure className="relative mx-4 mb-8 aspect-1 lg:hidden">
           <Image
+            sizes="400px,650px"
             priority
             className="object-contain"
             width={settings.image.width}
