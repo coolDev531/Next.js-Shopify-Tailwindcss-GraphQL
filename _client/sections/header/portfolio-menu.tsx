@@ -12,6 +12,7 @@ export const PortfolioMenu: FC<
     <div className="mx-auto flex max-w-7xl gap-8 px-4 py-16 sm:px-8">
       {[...new Array(2).keys()].map((key) => {
         console.log(props);
+        console.log(key);
         console.log(props[`image_${key + 1}`]);
         console.log(props[`title_${key + 1}`]);
         console.log(props[`link_${key + 1}`]);
