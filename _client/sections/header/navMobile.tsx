@@ -195,8 +195,7 @@ export const NavMobile: FC<{
                                   )}
                                 >
                                   <div className="grid grid-cols-2 gap-4 py-4">
-                                    {new Array(2).fill(1).map((e, index) => {
-                                      console.log({ e, index });
+                                    {[...new Array(2).keys()].map((e, index) => {
                                       if (
                                         block.settings[`image_${index + 1}`] &&
                                         block.settings[`title_${index + 1}`] &&

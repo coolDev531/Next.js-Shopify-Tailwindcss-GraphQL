@@ -8,11 +8,10 @@ import { _Link_liquid } from "types/shopify";
 export const PortfolioMenu: FC<
   Extract<HeaderBlocks, { type: "dropdown_menu_portfolio" }>["settings"] & { links: _Link_liquid[] }
 > = ({ handle, links, ...props }) => {
-  console.log(links);
   return (
     <div className="mx-auto flex max-w-7xl gap-8 px-4 py-16 sm:px-8">
-      {new Array(2).fill(1).map((e, index) => {
-        console.log({ e, index });
+      {[...new Array(2).keys()].map((e, index) => {
+        console.log(props);
         if (
           props[`image_${index + 1}`] &&
           props[`title_${index + 1}`] &&
