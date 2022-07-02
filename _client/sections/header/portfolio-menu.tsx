@@ -10,17 +10,16 @@ export const PortfolioMenu: FC<
 > = ({ handle, links, ...props }) => {
   return (
     <div className="mx-auto flex max-w-7xl gap-8 px-4 py-16 sm:px-8">
-      {[...new Array(2).keys()].map((e, index) => {
+      {[...new Array(2).keys()].map((key) => {
         console.log(props);
-        if (
-          props[`image_${index + 1}`] &&
-          props[`title_${index + 1}`] &&
-          props[`link_${index + 1}`]
-        ) {
+        console.log(props[`image_${key + 1}`]);
+        console.log(props[`title_${key + 1}`]);
+        console.log(props[`link_${key + 1}`]);
+        if (props[`image_${key + 1}`] && props[`title_${key + 1}`] && props[`link_${key + 1}`]) {
           return (
             <Link
-              key={props[`title_${index + 1}`]}
-              href={props[`link_${index + 1}`]}
+              key={props[`title_${key + 1}`]}
+              href={props[`link_${key + 1}`]}
               className="group relative aspect-1 h-[257px] overflow-hidden rounded-lg"
             >
               <>
@@ -31,13 +30,13 @@ export const PortfolioMenu: FC<
                   height={500}
                   sizes="500px"
                   priority
-                  src={`https:${props[`image_${index + 1}`].src}`}
+                  src={`https:${props[`image_${key + 1}`].src}`}
                   alt="placeholder"
                   className="group-hover:opacity-75"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3">
                   <h3 className="mb-0.5 text-sm font-medium text-slate-900">
-                    {props[`title_${index + 1}`]}
+                    {props[`title_${key + 1}`]}
                   </h3>
                   <p className="text-xs text-slate-700">See more</p>
                 </div>
