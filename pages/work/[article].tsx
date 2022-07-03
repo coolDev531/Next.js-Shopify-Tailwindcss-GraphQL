@@ -28,9 +28,11 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
     77191413815 /* HARDCODED: Work Blog Id */
   );
 
-  const paths = articles.map((article) => ({
-    params: { article: `${article.handle}`, blog: `${article.blog}` },
-  }));
+  const paths = articles
+    .filter((article) => article.published)
+    .map((article) => ({
+      params: { article: `${article.handle}`, blog: `${article.blog}` },
+    }));
 
   return { paths, fallback: false };
 };

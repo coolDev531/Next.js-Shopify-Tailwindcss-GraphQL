@@ -27,9 +27,11 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
     process.env.SHOPIFY_API_ACCESS_TOKEN
   );
 
-  const paths = articles.map((article) => ({
-    params: { article: `${article.handle}`, blog: `${article.blog}` },
-  }));
+  const paths = articles
+    .filter((article) => article.published)
+    .map((article) => ({
+      params: { article: `${article.handle}`, blog: `${article.blog}` },
+    }));
 
   return { paths, fallback: false };
 };
