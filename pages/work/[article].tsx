@@ -29,7 +29,7 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
   );
 
   const paths = articles
-    .filter((article) => article.published)
+    .filter((article) => article.published_at)
     .map((article) => ({
       params: { article: `${article.handle}`, blog: `${article.blog}` },
     }));

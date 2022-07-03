@@ -27,9 +27,11 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
     process.env.SHOPIFY_API_ACCESS_TOKEN
   );
 
-  const paths = pages.map((page) => ({
-    params: { page: `${page.handle}` },
-  }));
+  const paths = pages
+    .filter((page) => page.published_at)
+    .map((page) => ({
+      params: { page: `${page.handle}` },
+    }));
 
   return { paths, fallback: false };
 };
@@ -43,7 +45,7 @@ export const getStaticProps = async ({ params }) => {
   });
 
   const data = await ssg.fetchQuery("fetch.shopify-content", `/pages/${params.page}` as string);
-  console.log(data);
+
   // console.log('state', ssr.dehydrate());
   return {
     props: {
