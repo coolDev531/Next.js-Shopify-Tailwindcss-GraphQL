@@ -3,7 +3,7 @@ import { Section } from "_client/layout/section";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
 import { Heading } from "_client/typography/heading";
-import { Paragraph } from "_client/typography/paragraph";
+import { RichText } from "_client/typography/rich-text";
 import Image from "next/image";
 import { FC, useCallback, useRef, useState } from "react";
 import { FeatureCarouselSection } from "types/sections";
@@ -71,10 +71,10 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
                     )}
                   </figure>
                   <header>
-                    <Heading heading="h4">{product.title}</Heading>
+                    <h3 className="heading-base">{product.title}</h3>
                   </header>
                   <main>
-                    <Paragraph size="sm">{product.content}</Paragraph>
+                    <RichText className="paragraph-sm">{product.content}</RichText>
                   </main>
                 </Link>
               );
@@ -99,10 +99,10 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
                     )}
                   </figure>
                   <header>
-                    <Heading heading="h4">{block.settings.title}</Heading>
+                    <h3 className="heading-base">{block.settings.title}</h3>
                   </header>
                   <main>
-                    <Paragraph size="sm">{block.settings.paragraph}</Paragraph>
+                    <RichText className="paragraph-sm">{block.settings.paragraph}</RichText>
                   </main>
                 </Link>
               );

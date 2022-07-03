@@ -456,7 +456,7 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("@tailwindcss/aspect-ratio"),
     require("tailwind-children"),
-    plugin(({ addVariant, addUtilities }) => {
+    plugin(({ addVariant, addUtilities, addComponents }) => {
       addVariant("hfa", ["&:hover", "&:focus", "&:active"]);
       addVariant("ha", ["&:hover", "&:active"]);
       addVariant("hf", ["&:hover", "&:focus"]);

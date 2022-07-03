@@ -2,7 +2,7 @@ import { Section } from "_client/layout/section";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
 import { Heading } from "_client/typography/heading";
-import { Paragraph } from "_client/typography/paragraph";
+import { RichText } from "_client/typography/rich-text";
 import { renderIcon } from "_sections/utils";
 import clsx from "clsx";
 import Image from "next/future/image";
@@ -84,10 +84,10 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
                   <div className="pointer-events-none absolute inset-x-6 inset-y-0 border-l border-r border-slate-100" />
                   <div className="bg-slate-100 py-6 px-6 sm:py-9">
                     <header className="">
-                      <Heading heading="h3">{block.settings.title}</Heading>
+                      <h3 className="heading-lg">{block.settings.title}</h3>
                     </header>
                     <main className="">
-                      <Paragraph size="xl">{block.settings.paragraph}</Paragraph>
+                      <RichText className="paragraph-xl">{block.settings.paragraph}</RichText>
                     </main>
                     <footer
                       className={clsx(

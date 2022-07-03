@@ -11,8 +11,8 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
     <Section type={type} id={id} container="xl" padding="base">
       <section>
         <header>
-          <PreHeading>{settings.pre_title}</PreHeading>
-          <Heading>{settings.title}</Heading>
+          <h3 className="pre-heading">{settings.pre_title}</h3>
+          <h2 className="heading-xl">{settings.title}</h2>
         </header>
       </section>
       <div className="relative sm:left-1/2 sm:-ml-[50vw] sm:w-screen sm:pl-[max(32px,calc((100vw-80rem)/2+32px))]">
@@ -37,7 +37,7 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
                       backgroundImage: `url(${svgImage?.value?.url ?? product.featured_image})`,
                     }}
                   ></figure>
-                  <Heading heading="h3">{product.title}</Heading>
+                  <h3 className="heading-lg">{product.title}</h3>
                 </header>
                 <main className="text-[15px] tracking-tight">
                   <p>{stripHtml(product.content).result}</p>

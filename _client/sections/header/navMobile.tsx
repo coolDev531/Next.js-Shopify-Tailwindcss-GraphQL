@@ -2,9 +2,7 @@ import { Popover, Transition } from "@headlessui/react";
 import HeroIcon from "_client/dynamic-hero-icon";
 import LightDarkSwitcher from "_client/light-dark-switch";
 import { Link } from "_client/link";
-import { PortfolioMenu } from "_client/sections/header/portfolio-menu";
-import { Heading } from "_client/typography/heading";
-import { Paragraph } from "_client/typography/paragraph";
+import { RichText } from "_client/typography/rich-text";
 import clsx from "clsx";
 import Image from "next/image";
 import { FC, Fragment, useCallback, useState } from "react";
@@ -139,10 +137,12 @@ export const NavMobile: FC<{
                                             )}
                                           </figure>
                                           <header>
-                                            <Heading heading="h4">{product.title}</Heading>
+                                            <h3 className="heading-base">{product.title}</h3>
                                           </header>
                                           <main>
-                                            <Paragraph size="sm">{product.content}</Paragraph>
+                                            <RichText className="paragraph-sm">
+                                              {product.content}
+                                            </RichText>
                                           </main>
                                         </Link>
                                       );
@@ -254,7 +254,7 @@ export const NavMobile: FC<{
                                                 : "0",
                                             }}
                                           >
-                                            <Heading heading="h4">{subLink.title}</Heading>
+                                            <h3 className="heading-base">{subLink.title}</h3>
                                             <ul className="flex  flex-col gap-1">
                                               {subLink.links.map((subLink) => (
                                                 <li key={subLink.handle}>

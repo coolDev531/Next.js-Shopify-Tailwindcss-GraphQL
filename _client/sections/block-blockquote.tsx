@@ -1,5 +1,4 @@
 import { Section } from "_client/layout/section";
-import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
 import { FC } from "react";
 import { BlockquoteSection } from "types/sections";

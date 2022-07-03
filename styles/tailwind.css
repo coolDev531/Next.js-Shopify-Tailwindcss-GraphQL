@@ -1,10 +1,8 @@
+@import "typogrpahy.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
-
 
 @layer base {
 

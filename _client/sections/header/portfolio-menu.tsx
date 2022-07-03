@@ -1,5 +1,4 @@
 import { Link } from "_client/link";
-import { Heading } from "_client/typography/heading";
 import Image from "next/image";
 import { FC } from "react";
 import { HeaderBlocks } from "types/sections";
@@ -47,7 +46,7 @@ export const PortfolioMenu: FC<
           if (link && link.links.length) {
             return (
               <div key={link.handle} className="">
-                <Heading heading="h4">{link.title}</Heading>
+                <h3 className="heading-base">{link.title}</h3>
                 <ul className="mt-4 flex flex-col gap-3">
                   {link.links.map((subLink) => (
                     <li key={subLink.handle}>

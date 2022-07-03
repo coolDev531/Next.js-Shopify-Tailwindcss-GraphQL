@@ -1,8 +1,6 @@
-import HeroIcon from "_client/dynamic-hero-icon";
 import { Section } from "_client/layout/section";
 import { BlockHeading } from "_client/sections/block-heading";
-import { Heading } from "_client/typography/heading";
-import { Paragraph } from "_client/typography/paragraph";
+import { RichText } from "_client/typography/rich-text";
 import { renderIcon } from "_sections/utils";
 import clsx from "clsx";
 import { FC } from "react";
@@ -35,12 +33,12 @@ export const FeatureList: FC<FeatureListSection> = ({ id, blocks, type, settings
                       <figure className="mb-4 flex justify-center rounded-md bg-sky-500 p-2 text-white shadow-lg group-hfa:[--svg-active-opacity:0.4] group-hfa:[--svg-active-fill:currentColor]">
                         {renderIcon(block.settings.icon, "w-9 h-9")}
                       </figure>
-                      <Heading heading="h3">
+                      <h2 className="heading-lg">
                         <span className="tracking-tight">{block.settings.title}</span>
-                      </Heading>
+                      </h2>
                     </header>
                     <main>
-                      <Paragraph size="sm">{block.settings.paragraph}</Paragraph>
+                      <RichText className="paragraph-sm">{block.settings.paragraph}</RichText>
                     </main>
                   </section>
                 );

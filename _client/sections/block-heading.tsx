@@ -1,9 +1,6 @@
 import { Section } from "_client/layout/section";
-import { Link } from "_client/link";
 import { Button } from "_client/typography/button";
-import { Heading } from "_client/typography/heading";
-import { Paragraph } from "_client/typography/paragraph";
-import { PreHeading } from "_client/typography/pre-heading";
+import { RichText } from "_client/typography/rich-text";
 import clsx from "clsx";
 import { FC } from "react";
 import { HeadingSection } from "types/sections";
@@ -28,11 +25,11 @@ export const BlockHeading: FC<PartialBy<HeadingSection, "type" | "id"> & { secti
       >
         <section>
           <header className="max-w-2xl">
-            <h2 className="pre-heading">{settings.pre_title}</h2>
-            <Heading>{settings.title}</Heading>
+            <h3 className="pre-heading">{settings.pre_title}</h3>
+            <h2 className="heading-xl">{settings.title}</h2>
           </header>
           <main className="max-w-prose">
-            <Paragraph size="xl">{settings.paragraph}</Paragraph>
+            <RichText className="paragraph-lg">{settings.paragraph}</RichText>
           </main>
           <footer
             className={clsx(

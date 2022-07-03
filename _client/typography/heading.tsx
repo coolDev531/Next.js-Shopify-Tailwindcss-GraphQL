@@ -15,7 +15,7 @@ export const Heading: FC<PropsWithChildren<HeadingProps>> = ({
       return (
         <h1
           className={clsx(
-            "mb-3 text-3xl font-bold  lg:mb-4 lg:text-5xl xl:text-6xl",
+            "mb-3 text-3xl font-bold lg:mb-4 lg:text-5xl xl:text-6xl",
             light ? "text-slate-50" : "text-slate-800"
           )}
         >
