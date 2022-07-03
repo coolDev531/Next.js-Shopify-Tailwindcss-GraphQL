@@ -56,6 +56,7 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
                     height={product?.featured_media?.height}
                     width={product?.featured_media?.width}
                     maxWidth={90}
+                    pixelDensity={2}
                     priority
                     className="h-full bg-cover object-cover"
                     src={product?.featured_media?.src}

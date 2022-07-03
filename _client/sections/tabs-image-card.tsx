@@ -6,6 +6,7 @@ import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import { renderIcon } from "_sections/utils";
 import clsx from "clsx";
+import img1 from "public/images/bg-gradient-light.jpg";
 
 import { FC, useState } from "react";
 import { TabsImageCardSection } from "types/sections";
@@ -59,13 +60,15 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
       </div>
 
       <div className="relative mt-12">
-        <figure
-          className="absolute left-1/2 -z-20 -ml-[50vw] h-full w-screen bg-top bg-no-repeat"
-          style={{
-            backgroundImage: "url('/images/bg-gradient-light.jpg')",
-            backgroundSize: "123.25rem 100%",
-          }}
-        />
+        <figure className="absolute left-1/2 -z-20 -ml-[50vw] h-full w-screen bg-top bg-no-repeat">
+          <Image
+            src={img1}
+            width={img1.width}
+            height={img1.height}
+            alt="background image"
+            className="absolute bottom-0 top-0 left-1/2 block h-full min-w-[123.25rem] -translate-x-1/2"
+          />
+        </figure>
         <figure className="absolute left-1/2 -z-10 -ml-[50vw] h-full w-screen bg-grid-gray-900/[0.04] [mask-image:linear-gradient(0deg,transparent,black)] "></figure>
         {blocks.map((block) => {
           if (block.type !== "tab") return null;

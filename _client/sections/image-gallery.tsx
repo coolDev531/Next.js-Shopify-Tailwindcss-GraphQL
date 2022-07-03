@@ -2,18 +2,21 @@ import { Wrapper } from "_client/layout/wrapper";
 import { Image } from "_client/image";
 import { FC } from "react";
 import { ImageGallerySection } from "types/sections";
+import img1 from "/public/images/bg-gradient-light.jpg";
 
 export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) => {
   return (
     <Wrapper maxWidth="fullscreen" paddingY="base">
       <div className="relative -mx-8 flex justify-center overflow-hidden ">
-        <figure
-          className="absolute left-1/2 top-16 bottom-16 -z-20 -ml-[50vw] w-screen bg-top bg-no-repeat"
-          style={{
-            backgroundImage: "url('/images/bg-gradient-light.jpg')",
-            backgroundSize: "123.25rem 100%",
-          }}
-        />
+        <figure className="absolute left-1/2 top-16 bottom-16 -z-20 -ml-[50vw] w-screen overflow-hidden bg-top bg-no-repeat">
+          <Image
+            src={img1}
+            width="123.25rem"
+            height=""
+            alt="background image"
+            className="absolute bottom-0 top-0 left-1/2 block h-full min-w-[123.25rem] -translate-x-1/2"
+          />
+        </figure>
         <figure className="absolute left-1/2 top-16 bottom-16 -z-10 -ml-[50vw] h-full w-screen bg-grid-gray-900/[0.04] [mask-image:linear-gradient(0deg,transparent,black)]" />
         <section className="mx-auto w-[80rem] min-w-[80rem] [mask-image:linear-gradient(0deg,transparent_0%,white_45%)]">
           <div className="relative flex items-end gap-8 px-8">
