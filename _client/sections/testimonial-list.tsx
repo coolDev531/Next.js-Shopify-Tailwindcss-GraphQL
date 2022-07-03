@@ -1,5 +1,5 @@
+import { Image } from "_client/image";
 import { BlockHeading } from "_client/sections/block-heading";
-import Image from "next/image";
 import { FC } from "react";
 import { TestimonialListSection } from "types/sections";
 
@@ -21,9 +21,10 @@ export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, type }
                 <figure className="relative mb-2 h-10">
                   {block.settings.image
                     ? <Image
-                        src={`https:${block?.settings?.image?.src}`}
-                        layout="fill"
-                        objectFit="contain"
+                        src={`${block?.settings?.image?.src}`}
+                        className="object-contain"
+                        width={block?.settings?.image?.width}
+                        height={block?.settings?.image?.height}
                         alt={block?.settings?.image?.alt}
                       />
                     : null}
@@ -37,10 +38,11 @@ export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, type }
                 {block.settings.avatar
                   ? <figure className="relative aspect-1 h-8 w-8 overflow-hidden rounded-full">
                       <Image
-                        src={`https:${block.settings.avatar.src}`}
-                        layout="fill"
-                        objectFit="cover"
+                        src={`${block.settings.avatar.src}`}
+                        className="object-cover"
                         alt={block.settings.avatar.alt}
+                        width={block?.settings?.avatar?.width}
+                        height={block?.settings?.avatar?.height}
                       />
                     </figure>
                   : null}

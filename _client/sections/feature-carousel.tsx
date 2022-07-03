@@ -1,10 +1,10 @@
 import HeroIcon from "_client/dynamic-hero-icon";
+import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
 import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
-import Image from "next/image";
 import { FC, useCallback, useRef, useState } from "react";
 import { FeatureCarouselSection } from "types/sections";
 import { scrollToX } from "utils/scroll-to";
@@ -102,7 +102,16 @@ export const FeatureCarouselItem = ({ id, href, image, title, description }) => 
   return (
     <Link href={href} className="group snap-start f:ring-2 f:ring-sky-400 f:ring-offset-2">
       <figure className="relative mb-4 aspect-1 w-[360px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
-        {image && <Image objectFit="cover" layout="fill" src={image?.src} alt={image?.alt} />}
+        {image && (
+          <Image
+            className="h-full object-cover"
+            width={image.width}
+            height={image.height}
+            src={image?.src}
+            alt={image?.alt}
+            maxWidth={360}
+          />
+        )}
       </figure>
       <header>
         <Heading as="h3" size="base">

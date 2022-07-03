@@ -1,10 +1,11 @@
+import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { FC } from "react";
 import { ImageCarouselSection } from "types/sections";
+import { _Media_liquid } from "types/shopify";
 
 export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, type }) => {
   const { position, cta1, cta1_link, cta2, cta2_link, paragraph, pre_title, title } = settings;
@@ -29,53 +30,23 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
               ?.filter(
                 (article) => article.url.replace(/\/blogs/gi, "") !== router.asPath.split("?")[0]
               )
-              .map((article) => {
-                return (
-                  <Link
-                    tabIndex={-1}
-                    key={`image-${article.id}`}
-                    href={article.url.replace(/\/blogs/gi, "")}
-                    className="group relative"
-                  >
-                    <figure className="relative isolate aspect-1 w-[200px] overflow-hidden rounded shadow-lg transition-shadow group-hfa:shadow">
-                      {article.featured_media
-                        ? <Image
-                            src={`https:${article.featured_media.src}`}
-                            layout="fill"
-                            objectFit="cover"
-                            alt={article.featured_media.alt}
-                          />
-                        : null}
-                      <div className="absolute inset-x-0 bottom-0 flex h-14 items-center whitespace-nowrap bg-white/70 px-2 font-medium text-slate-900 opacity-0 transition-all group-hfa:opacity-100">
-                        {article.title}
-                      </div>
-                    </figure>
-                  </Link>
-                );
-              })}
+              .map((article) => (
+                <ImageCarouselItem
+                  key={`image-${article.id}`}
+                  href={article.url.replace(/\/blogs/gi, "")}
+                  image={article.featured_media}
+                  title={article.title}
+                />
+              ))}
             {blocks.map((block) => {
               if (block.type !== "manual-image") return null;
               return (
-                <Link
-                  tabIndex={-1}
+                <ImageCarouselItem
                   key={`image-${block.id}`}
                   href={"#" ?? block.settings.link.replace(/\/blogs/gi, "")}
-                  className="group relative"
-                >
-                  <figure className="relative isolate aspect-1 w-[200px] overflow-hidden rounded shadow-lg transition-shadow group-hfa:shadow">
-                    {block.settings.image
-                      ? <Image
-                          src={`https:${block.settings.image.src}`}
-                          layout="fill"
-                          objectFit="cover"
-                          alt={block.settings.image.alt}
-                        />
-                      : null}
-                    <div className="absolute inset-x-0 bottom-0 flex h-14 items-center whitespace-nowrap bg-white/70 px-2 font-medium text-slate-900 opacity-0 transition-all group-hfa:opacity-100">
-                      {block.settings.title}
-                    </div>
-                  </figure>
-                </Link>
+                  image={block.settings.image}
+                  title={block.settings.title}
+                />
               );
             })}
           </div>
@@ -86,57 +57,55 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
               )
               .map((article) => {
                 return (
-                  <Link
-                    tabIndex={-1}
+                  <ImageCarouselItem
                     key={`image-${article.id}`}
-                    href={"#" ?? article.url.replace(/\/blogs/gi, "")}
-                    className="group relative"
-                  >
-                    <figure className="relative isolate aspect-1 w-[200px] overflow-hidden rounded shadow-lg transition-shadow group-hfa:shadow">
-                      {article.featured_media
-                        ? <Image
-                            src={`https:${article.featured_media.src}`}
-                            layout="fill"
-                            objectFit="cover"
-                            alt={article.featured_media.alt}
-                          />
-                        : null}
-                      <div className="absolute inset-x-0 bottom-0 flex h-14 items-center whitespace-nowrap bg-white/70 px-2 font-medium text-slate-900 opacity-0 transition-all group-hfa:opacity-100">
-                        {article.title}
-                      </div>
-                    </figure>
-                  </Link>
+                    href={article.url.replace(/\/blogs/gi, "")}
+                    image={article.featured_media}
+                    title={article.title}
+                  />
                 );
               })}
             {blocks.map((block) => {
               if (block.type !== "manual-image") return null;
 
               return (
-                <Link
-                  tabIndex={-1}
+                <ImageCarouselItem
                   key={`image-${block.id}`}
                   href={"#" ?? block.settings.link.replace(/\/blogs/gi, "")}
-                  className="group relative"
-                >
-                  <figure className="relative isolate aspect-1 w-[200px] overflow-hidden rounded shadow-lg transition-shadow group-hfa:shadow">
-                    {block.settings.image
-                      ? <Image
-                          src={`https:${block.settings.image.src}`}
-                          layout="fill"
-                          objectFit="cover"
-                          alt={block.settings.image.alt}
-                        />
-                      : null}
-                    <div className="absolute inset-x-0 bottom-0 flex h-14 items-center whitespace-nowrap bg-white/70 px-2 font-medium text-slate-900 opacity-0 transition-all group-hfa:opacity-100">
-                      {block.settings.title}
-                    </div>
-                  </figure>
-                </Link>
+                  image={block.settings.image}
+                  title={block.settings.title}
+                />
               );
             })}
           </div>
         </div>
       </div>
     </Wrapper>
+  );
+};
+
+export const ImageCarouselItem: FC<{
+  href: string;
+  image: Omit<_Media_liquid, "media_type" | "position" | "preview_image">;
+  title: string;
+}> = ({ href, image, title }) => {
+  return (
+    <Link tabIndex={-1} href={href} className="group relative">
+      <figure className="relative isolate aspect-1 w-[200px] overflow-hidden rounded shadow-lg transition-shadow group-hfa:shadow">
+        {image
+          ? <Image
+              src={`${image.src}`}
+              className="h-full object-cover"
+              width={image.width}
+              height={image.height}
+              alt={image.alt}
+              maxWidth={200}
+            />
+          : null}
+        <div className="absolute inset-x-0 bottom-0 flex h-14 items-center whitespace-nowrap bg-white/70 px-2 font-medium text-slate-900 opacity-0 transition-all group-hfa:opacity-100">
+          {title}
+        </div>
+      </figure>
+    </Link>
   );
 };

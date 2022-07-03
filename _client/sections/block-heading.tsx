@@ -1,4 +1,3 @@
-import { Wrapper } from "_client/layout/wrapper";
 import { Button } from "_client/typography/button";
 import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
@@ -18,7 +17,16 @@ export const BlockHeading: FC<PartialBy<HeadingSection, "type" | "id">> = ({ set
         }[settings.position]
       )}
     >
-      <section>
+      <section
+        className={clsx(
+          "flex flex-col",
+          {
+            left: "items-start text-left",
+            center: "items-center text-center",
+            right: "items-end text-right",
+          }[settings.position]
+        )}
+      >
         <header className="max-w-2xl">
           <Heading size="pre" as="h3">
             {settings.pre_title}

@@ -1,9 +1,9 @@
 import { CheckCircleIcon } from "@heroicons/react/solid";
+import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
-import Image from "next/future/image";
 import { FC } from "react";
 import { ImageTextSection } from "types/sections";
 
@@ -75,11 +75,12 @@ export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ s
               >
                 <Image
                   priority
-                  className="object-cover"
+                  className="h-full object-cover"
                   width={settings.image.width}
                   height={settings.image.height}
-                  src={`https:${settings?.image?.src}`}
+                  src={`${settings?.image?.src}`}
                   alt={settings?.image?.alt}
+                  maxWidth={512}
                 />
               </figure>
             </div>

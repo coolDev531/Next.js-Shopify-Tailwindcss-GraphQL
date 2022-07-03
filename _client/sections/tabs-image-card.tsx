@@ -1,3 +1,4 @@
+import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
@@ -5,7 +6,7 @@ import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import { renderIcon } from "_sections/utils";
 import clsx from "clsx";
-import Image from "next/future/image";
+
 import { FC, useState } from "react";
 import { TabsImageCardSection } from "types/sections";
 
@@ -146,9 +147,10 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
                   <figure className="aspect-w-4 aspect-h-3 relative aspect-og-image flex-1 select-none overflow-hidden rounded-b-lg rounded-t-sm">
                     <Image
                       className="object-cover"
+                      maxWidth={600}
                       width={block.settings.image.width}
                       height={block.settings.image.height}
-                      src={`https:${block?.settings?.image?.src}`}
+                      src={`${block?.settings?.image?.src}`}
                       alt={block?.settings?.image?.alt}
                     />
                   </figure>

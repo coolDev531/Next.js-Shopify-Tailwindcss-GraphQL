@@ -1,6 +1,6 @@
+import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { useTooltipStore } from "_client/stores/tooltip-store";
-import Image from "next/image";
 import { FC } from "react";
 import { LogoBannerSection } from "types/sections";
 
@@ -32,46 +32,26 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
               }}
             >
               <div className="grid auto-cols-max grid-flow-col-dense gap-12">
-                {settings.logo_items?.map((product) => {
-                  return (
-                    <figure
+                {settings.logo_items
+                  .filter((p) => p.featured_media)
+                  .map((product) => (
+                    <LogoBannerItem
                       key={product.id}
-                      className="relative w-full cursor-pointer opacity-60 grayscale transition-all hfa:opacity-100  hfa:grayscale-0"
-                      data-tip={product.title}
-                      style={{
-                        height: `${settings.height}px`,
-                        width: `${product.featured_media.aspect_ratio * settings.height}px`,
-                      }}
-                    >
-                      <Image
-                        objectFit="contain"
-                        layout="fill"
-                        priority
-                        src={`${product.featured_media.src}`}
-                        alt={product.title}
-                      />
-                    </figure>
-                  );
-                })}
+                      height={settings.height}
+                      title={product.title}
+                      image={product.featured_media}
+                    />
+                  ))}
                 {blocks.map((block) => {
                   switch (block.type) {
                     case "manual-image":
                       return block.settings.image
-                        ? <figure
+                        ? <LogoBannerItem
                             key={block.id}
-                            className="relative w-full"
-                            style={{ height: `${settings.height}px` }}
-                          >
-                            <Image
-                              objectFit="contain"
-                              objectPosition="50% 60%"
-                              layout="fill"
-                              // width={settings.image.width}
-                              // height={settings.image.height}
-                              src={`https:${block?.settings?.image?.src}`}
-                              alt={block?.settings?.image?.alt}
-                            />
-                          </figure>
+                            height={settings.height}
+                            title={block.settings.title}
+                            image={block.settings.image}
+                          />
                         : null;
                     case "manual-svg":
                       return (
@@ -84,29 +64,30 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
                 })}
               </div>
               <div className="ml-12 hidden auto-cols-max grid-flow-col-dense gap-12 md:grid">
-                {settings.logo_items?.map((product) => {
-                  return (
-                    <figure
-                      key={product.id}
-                      className="relative w-full cursor-pointer opacity-60 grayscale transition-all hfa:opacity-100  hfa:grayscale-0"
-                      data-tip={product.title}
-                      style={{
-                        height: `${settings.height}px`,
-                        width: `${product.featured_media.aspect_ratio * settings.height}px`,
-                        /*backgroundImage: `url('${product.featured_media.src}')`
+                {settings.logo_items
+                  .filter((p) => p.featured_media)
+                  .map((product) => {
+                    return (
+                      <figure
+                        key={product.id}
+                        className="relative w-full cursor-pointer opacity-60 grayscale transition-all hfa:opacity-100  hfa:grayscale-0"
+                        data-tip={product.title}
+                        style={{
+                          height: `${settings.height}px`,
+                          width: `${product.featured_media.aspect_ratio * settings.height}px`,
+                          /*backgroundImage: `url('${product.featured_media.src}')`
                       backgroundSize: "contain"*/
-                      }}
-                    >
-                      <Image
-                        objectFit="contain"
-                        layout="fill"
-                        priority
-                        src={`${product.featured_media.src}`}
-                        alt={product.title}
-                      />
-                    </figure>
-                  );
-                })}
+                        }}
+                      >
+                        <LogoBannerItem
+                          key={product.id}
+                          height={settings.height}
+                          title={product.title}
+                          image={product.featured_media}
+                        />
+                      </figure>
+                    );
+                  })}
                 {blocks.map((block) => {
                   switch (block.type) {
                     case "manual-image":
@@ -116,14 +97,11 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
                             className="relative w-full"
                             style={{ height: `${settings.height}px` }}
                           >
-                            <Image
-                              objectFit="contain"
-                              objectPosition="50% 60%"
-                              layout="fill"
-                              // width={settings.image.width}
-                              // height={settings.image.height}
-                              src={`https:${block?.settings?.image?.src}`}
-                              alt={block?.settings?.image?.alt}
+                            <LogoBannerItem
+                              key={block.id}
+                              height={settings.height}
+                              title={block.settings.title}
+                              image={block.settings.image}
                             />
                           </figure>
                         : null;
@@ -144,5 +122,28 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
         </section>
       </div>
     </Wrapper>
+  );
+};
+
+export const LogoBannerItem = ({ title, image, height }) => {
+  return (
+    <figure
+      className="relative w-full cursor-pointer opacity-60 grayscale transition-all hfa:opacity-100  hfa:grayscale-0"
+      data-tip={title}
+      style={{
+        height: `${height}px`,
+        width: `${image.aspect_ratio * height}px`,
+      }}
+    >
+      <Image
+        priority
+        className="h-full object-contain"
+        src={`${image.src}`}
+        width={image.width}
+        height={image.height}
+        alt={title}
+        maxHeight={height}
+      />
+    </figure>
   );
 };

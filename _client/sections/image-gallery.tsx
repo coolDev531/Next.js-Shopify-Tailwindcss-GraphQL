@@ -1,5 +1,5 @@
 import { Wrapper } from "_client/layout/wrapper";
-import Image from "next/future/image";
+import { Image } from "_client/image";
 import { FC } from "react";
 import { ImageGallerySection } from "types/sections";
 
@@ -21,14 +21,15 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
             <figure className="group relative flex aspect-[1.02118] w-[944px] select-none overflow-hidden rounded shadow-2xl">
               {settings.image1
                 ? <Image
-                    className="bg-center object-cover"
-                    src={`https:${settings?.image1?.src}`}
+                    className="h-full bg-center object-cover"
+                    src={`${settings?.image1?.src}`}
                     width={settings?.image1?.width}
                     height={settings?.image1?.height}
                     alt={settings?.image1?.alt}
+                    maxWidth={300}
                   />
                 : <Image
-                    className="bg-center object-cover"
+                    className="h-full bg-center object-cover"
                     src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-1.png?format=webp"
                     width={1000}
                     height={1000}
@@ -44,14 +45,15 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
             <figure className="group relative flex aspect-[2.13962] w-[2268px] select-none overflow-hidden rounded shadow-2xl">
               {settings.image2
                 ? <Image
-                    className="bg-center object-cover"
-                    src={`https:${settings?.image2?.src}`}
+                    className="h-full bg-center object-cover"
+                    src={`${settings?.image2?.src}`}
                     width={settings?.image2?.width}
                     height={settings?.image2?.height}
                     alt={settings?.image2?.alt}
+                    maxWidth={600}
                   />
                 : <Image
-                    className="bg-center object-cover"
+                    className="h-full bg-center object-cover"
                     src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-lifestyle-2.png?format=webp"
                     width={1000}
                     height={1000}
@@ -67,14 +69,15 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
             <figure className="group relative flex aspect-[1.41284] w-[1232px] select-none overflow-hidden rounded shadow-2xl">
               {settings.image3
                 ? <Image
-                    className="bg-center object-cover"
-                    src={`https:${settings?.image3?.src}`}
+                    className="h-full bg-center object-cover"
+                    src={`${settings?.image3?.src}`}
                     width={settings?.image3?.width}
                     height={settings?.image3?.height}
                     alt={settings?.image3?.alt}
+                    maxWidth={350}
                   />
                 : <Image
-                    className="bg-center object-cover"
+                    className="h-full bg-center object-cover"
                     src="https:///cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-collection-5.png?format=webp"
                     width={1000}
                     height={1000}
@@ -92,14 +95,15 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
             <figure className="group relative flex aspect-[1.22279] w-[1888px] select-none overflow-hidden rounded shadow-2xl">
               {settings.image4
                 ? <Image
-                    className="bg-center object-cover"
-                    src={`https:${settings?.image4?.src}`}
+                    className="h-full bg-center object-cover"
+                    src={`${settings?.image4?.src}`}
                     width={settings?.image4?.width}
                     height={settings?.image4?.height}
                     alt={settings?.image4?.alt}
+                    maxWidth={520}
                   />
                 : <Image
-                    className="bg-center object-cover"
+                    className="h-full bg-center object-cover"
                     src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-collection-6.png?format=webp"
                     width={1000}
                     height={1000}
@@ -115,14 +119,15 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
             <figure className="group relative flex aspect-[1.90086] w-[1764px] select-none overflow-hidden rounded shadow-2xl">
               {settings.image5
                 ? <Image
-                    className="bg-center object-cover"
-                    src={`https:${settings?.image5?.src}`}
+                    className="h-full bg-center object-cover"
+                    src={`${settings?.image5?.src}`}
                     width={settings?.image5?.width}
                     height={settings?.image5?.height}
                     alt={settings?.image5?.alt}
+                    maxWidth={500}
                   />
                 : <Image
-                    className="bg-center object-cover"
+                    className="h-full bg-center object-cover"
                     src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-lifestyle-1.png?format=webp"
                     width={1000}
                     height={1000}
@@ -138,14 +143,15 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
             <figure className="group relative flex aspect-[0.86301] w-[1008px] select-none overflow-hidden rounded shadow-2xl">
               {settings.image6
                 ? <Image
-                    className="bg-center object-cover"
-                    src={`https:${settings?.image6?.src}`}
+                    className="h-full bg-center object-cover"
+                    src={`${settings?.image6?.src}`}
                     width={settings?.image6?.width}
                     height={settings?.image6?.height}
                     alt={settings?.image6?.alt}
+                    maxWidth={290}
                   />
                 : <Image
-                    className="bg-center object-cover"
+                    className="h-full bg-center object-cover"
                     src="https:///cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-collection-1.png?format=webp"
                     width={1000}
                     height={1000}
@@ -180,7 +186,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, blocks, type }) => {
                 >
                   {block.settings.image
                     ? <Image
-                        src={`https:${block?.settings?.image?.src}`}
+                        src={`${block?.settings?.image?.src}`}
                         layout="fill"
                         objectFit="cover"
                         alt={block?.settings?.image?.alt}

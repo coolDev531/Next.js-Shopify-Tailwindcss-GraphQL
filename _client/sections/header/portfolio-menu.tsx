@@ -1,6 +1,6 @@
+import { Image } from "_client/image";
 import { Link } from "_client/link";
 import { Heading } from "_client/typography/heading";
-import Image from "next/image";
 import { FC } from "react";
 import { HeaderBlocks } from "types/sections";
 import { _Link_liquid } from "types/shopify";
@@ -20,15 +20,13 @@ export const PortfolioMenu: FC<
             >
               <>
                 <Image
-                  objectFit="cover"
-                  layout="fill"
-                  width={500}
-                  height={500}
-                  sizes="500px"
+                  width={`${props[`image_${key}`].width}`}
+                  height={`${props[`image_${key}`].height}`}
+                  maxWidth={257}
                   priority
-                  src={`https:${props[`image_${key}`].src}`}
+                  src={`${props[`image_${key}`].src}`}
                   alt="placeholder"
-                  className="group-hover:opacity-75"
+                  className="aspect-1 object-cover group-hover:opacity-75"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3">
                   <h3 className="mb-0.5 text-sm font-medium text-slate-900">

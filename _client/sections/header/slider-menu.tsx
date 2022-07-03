@@ -1,9 +1,9 @@
 import HeroIcon from "_client/dynamic-hero-icon";
+import { Image } from "_client/image";
 import { Link } from "_client/link";
 import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
-import Image from "next/image";
 import { useCallback, useRef, useState } from "react";
 import { _Link_liquid, _Product_liquid } from "types/shopify";
 import { scrollToX } from "utils/scroll-to";
@@ -52,14 +52,12 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
               <figure className="relative mb-4 aspect-1 w-[90px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
                 {product.featured_media && (
                   <Image
-                    objectFit="cover"
-                    layout="fill"
                     loading="eager"
-                    height={90}
-                    width={90}
-                    sizes="180px"
+                    height={product?.featured_media?.height}
+                    width={product?.featured_media?.width}
+                    maxWidth={90}
                     priority
-                    className=""
+                    className="h-full bg-cover object-cover"
                     src={product?.featured_media?.src}
                     alt={product?.featured_media?.alt}
                   />

@@ -1,5 +1,6 @@
+import { Image } from "_client/image";
 import { BlockHeading } from "_client/sections/block-heading";
-import Image from "next/image";
+
 import { FC } from "react";
 import { TeamListSection } from "types/sections";
 
@@ -20,10 +21,10 @@ export const TeamList: FC<TeamListSection> = ({ id, blocks, type }) => {
                 <figure className="relative h-44 w-44 overflow-hidden rounded-full">
                   {block.settings.image
                     ? <Image
-                        src={`https:${block?.settings?.image?.src}`}
-                        layout="fill"
-                        objectFit="cover"
-                        objectPosition="left"
+                        src={`${block?.settings?.image?.src}`}
+                        className="object-cover object-left"
+                        width={block.settings.image.width}
+                        height={block.settings.image.height}
                         alt={block?.settings?.image?.alt}
                       />
                     : null}

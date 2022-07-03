@@ -1,12 +1,11 @@
 import { Popover, Transition } from "@headlessui/react";
 import HeroIcon from "_client/dynamic-hero-icon";
+import { Image } from "_client/image";
 import LightDarkSwitcher from "_client/light-dark-switch";
 import { Link } from "_client/link";
-import { PortfolioMenu } from "_client/sections/header/portfolio-menu";
 import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
-import Image from "next/image";
 import { FC, Fragment, useCallback, useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { HeaderBlocks } from "types/sections";
@@ -125,14 +124,12 @@ export const NavMobile: FC<{
                                           <figure className="relative mb-4 aspect-1 w-[140px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
                                             {product.featured_media && (
                                               <Image
-                                                objectFit="cover"
-                                                layout="fill"
                                                 loading="eager"
-                                                height={140}
-                                                width={140}
-                                                sizes="500px"
+                                                height={product?.featured_media?.height}
+                                                width={product?.featured_media?.width}
+                                                maxWidth={140}
                                                 priority
-                                                className=""
+                                                className="h-full object-cover"
                                                 src={product?.featured_media?.src}
                                                 alt={product?.featured_media?.alt}
                                               />
@@ -197,7 +194,7 @@ export const NavMobile: FC<{
                                   )}
                                 >
                                   <div className="grid grid-cols-2 gap-4 py-4">
-                                    {[1, 2].map((e, key) => {
+                                    {[1, 2].map((key) => {
                                       if (
                                         block.settings[`image_${key}`] &&
                                         block.settings[`title_${key}`] &&
@@ -212,15 +209,13 @@ export const NavMobile: FC<{
                                           >
                                             <>
                                               <Image
-                                                objectFit="cover"
-                                                layout="fill"
-                                                width={500}
-                                                height={500}
-                                                sizes="300px"
+                                                width={`${block.settings[`image_${key}`].width}`}
+                                                height={`${block.settings[`image_${key}`].height}`}
+                                                maxWidth={300}
                                                 priority
-                                                src={`https:${block.settings[`image_${key}`].src}`}
+                                                src={`${block.settings[`image_${key}`].src}`}
                                                 alt="placeholder"
-                                                className="group-hover:opacity-75"
+                                                className="h-full object-cover group-hover:opacity-75"
                                               />
                                               <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3">
                                                 <h3 className="mb-0.5 text-sm font-medium text-slate-900">

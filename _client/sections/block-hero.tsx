@@ -1,9 +1,10 @@
 import { CheckCircleIcon } from "@heroicons/react/solid";
+import { Image } from "_client/image";
 import { Breadcrumbs } from "_client/layout/breadcrumbs";
 import { Wrapper } from "_client/layout/wrapper";
 import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
-import Image from "next/future/image";
+
 import { FC } from "react";
 import { HeroSection } from "types/sections";
 
@@ -13,12 +14,13 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
       <div className="mx-auto -mt-4 max-w-lg">
         <figure className="relative mx-4 mb-8 aspect-1 lg:hidden">
           <Image
-            sizes="350px, 700px"
+            maxWidth={600}
+            pixelDensity={1}
             priority
             className="object-contain"
             width={settings.image.width}
             height={settings.image.height}
-            src={`https:${settings?.image?.src}`}
+            src={`${settings?.image?.src}`}
             alt={settings?.image?.alt}
           />
         </figure>
@@ -66,7 +68,7 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
                 height={600 * settings.image.aspect_ratio}
                 // width={settings.image.width}
                 // height={settings.image.height}
-                src={`https:${settings?.image?.src}`}
+                src={`${settings?.image?.src}`}
                 alt={settings?.image?.alt}
               />
             </figure>

@@ -7,6 +7,7 @@ module.exports = {
   strictMode: true,
   images: {
     dangerouslyAllowSVG: true,
+    deviceSizes: [460, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     domains: [
       "assets.vercel.com",
       "avatars1.githubusercontent.com",
