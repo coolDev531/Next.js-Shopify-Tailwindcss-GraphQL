@@ -344,67 +344,19 @@
     },
     "16542613555478f86d": {
       "type": "image-gallery",
-      "blocks": {
-        "3f49ea97-153c-4349-a955-ca74d7b42da4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/hands-slice-red-pepper-on-wooden-cutting-board.jpg",
-            "columns": 4,
-            "hover_effect": true,
-            "title": "Super Duper",
-            "paragraph": "<p>Super DuperSuper DuperSuper Duper<\/p><p>Super Duper<\/p><p>Super Duper<\/p>",
-            "color_use_light_text": false,
-            "color_overlay": "linear-gradient(121deg, rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.29) 99%)",
-            "product": ""
-          }
-        },
-        "5a10e0d6-59d9-4ec3-8271-1fa447427c6e": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/two-red-cocktails-on-a-tray.jpg",
-            "columns": 8,
-            "hover_effect": false,
-            "title": "",
-            "paragraph": "",
-            "color_use_light_text": false,
-            "color_overlay": "",
-            "product": ""
-          }
-        },
-        "d0cc6cec-72ee-4505-8a84-1480e96b7469": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/person-cuts-into-plate-of-pasta.jpg",
-            "columns": 8,
-            "hover_effect": false,
-            "title": "",
-            "paragraph": "",
-            "color_use_light_text": false,
-            "color_overlay": "",
-            "product": ""
-          }
-        },
-        "a1395033-59ba-4165-967f-64c5d84b6a02": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/camera-looks-down-on-wooden-table-with-two-bao-buns.jpg",
-            "columns": 4,
-            "hover_effect": false,
-            "title": "",
-            "paragraph": "",
-            "color_use_light_text": false,
-            "color_overlay": "",
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "3f49ea97-153c-4349-a955-ca74d7b42da4",
-        "5a10e0d6-59d9-4ec3-8271-1fa447427c6e",
-        "d0cc6cec-72ee-4505-8a84-1480e96b7469",
-        "a1395033-59ba-4165-967f-64c5d84b6a02"
-      ],
       "settings": {
+        "image1": "shopify:\/\/shop_images\/gallery-1.jpg",
+        "title1": "",
+        "image2": "shopify:\/\/shop_images\/Luna-Lemon-image5.jpg",
+        "title2": "Graphic design",
+        "image3": "shopify:\/\/shop_images\/gift-registry.jpg",
+        "title3": "Gift Registry",
+        "image4": "shopify:\/\/shop_images\/Product-view.jpg",
+        "title4": "",
+        "image5": "shopify:\/\/shop_images\/Website-baner.jpg",
+        "title5": "",
+        "image6": "shopify:\/\/shop_images\/image-photo.jpg",
+        "title6": ""
       }
     },
     "165426875321fe7fc5": {
@@ -455,6 +407,14 @@
         "bf211802-1d16-4343-b21c-1a6d7af721c0"
       ],
       "settings": {
+        "pre_title": "Continuous work for continuous results",
+        "title": "Support after Launch",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
       }
     },
     "16543302228e17b41c": {

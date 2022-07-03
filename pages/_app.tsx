@@ -10,6 +10,7 @@ import { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { FC } from "react";
 import "styles/tailwind.css";
+// import "styles/typography.css";
 import "styles/theme.scss";
 import "styles/utils.scss";
 import superjson from "superjson";

@@ -1,0 +1,5 @@
+@layer components {
+  .pre-heading {
+    @apply mb-2 font-semibold text-sky-500 xl:text-lg
+  }
+}

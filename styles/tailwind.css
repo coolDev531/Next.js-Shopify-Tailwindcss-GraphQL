@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
 @layer base {
 
   @font-face {
@@ -71,7 +75,7 @@
 }
 
 @layer utilities {
-  .text-inverted, .text-light {
+  .color-slate-inverted {
     --color-slate-900: 254 255 255;
     --color-slate-800: 248 250 252;
     --color-slate-700: 241 245 249;
@@ -83,18 +87,5 @@
     --color-slate-100: 51 65 85;
     --color-slate-50: 30 41 59;
     /*--color-slate-50: 15 23 42;*/
-  }
-
-  .text-dark {
-    --color-slate-50: 248 250 252;
-    --color-slate-100: 241 245 249;
-    --color-slate-200: 226 232 240;
-    --color-slate-300: 203 213 225;
-    --color-slate-400: 148 163 184;
-    --color-slate-500: 100 116 139;
-    --color-slate-600: 71 85 105;
-    --color-slate-700: 51 65 85;
-    --color-slate-800: 30 41 59;
-    --color-slate-900: 15 23 42;
   }
 }

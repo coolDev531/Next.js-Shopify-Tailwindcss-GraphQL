@@ -28,7 +28,7 @@ export const BlockHeading: FC<PartialBy<HeadingSection, "type" | "id"> & { secti
       >
         <section>
           <header className="max-w-2xl">
-            <PreHeading>{settings.pre_title}</PreHeading>
+            <h2 className="pre-heading">{settings.pre_title}</h2>
             <Heading>{settings.title}</Heading>
           </header>
           <main className="max-w-prose">

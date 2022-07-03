@@ -11,11 +11,6 @@ export const PortfolioMenu: FC<
   return (
     <div className="mx-auto flex max-w-7xl gap-8 px-4 py-16 sm:px-8">
       {[1, 2].map((key) => {
-        console.log(props);
-        console.log(key);
-        console.log(props[`image_${key}`]);
-        console.log(props[`title_${key}`]);
-        console.log(props[`link_${key}`]);
         if (props[`image_${key}`] && props[`title_${key}`] && props[`link_${key}`]) {
           return (
             <Link

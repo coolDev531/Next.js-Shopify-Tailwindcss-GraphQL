@@ -32,7 +32,7 @@ module.exports = {
         slide: "slide 30s linear infinite",
       },
       fontFamily: {
-        sans: ["'Basier Circle'", ...defaultTheme.fontFamily.sans],
+        sans: [/*"Inter",*/ "'Basier Circle'", ...defaultTheme.fontFamily.sans],
         mono: [
           "Consolas",
           `ui-monospace`,

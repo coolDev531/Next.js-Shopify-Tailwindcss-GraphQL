@@ -75,7 +75,7 @@ export const Section: FC<PropsWithChildren<SectionProps>> = ({
       <div
         className={clsx(
           "relative mx-auto",
-          color === "light" && "text-inverted",
+          color === "light" && "color-slate-inverted",
           getContainerClasses(container),
           getPaddingClasses(padding)
         )}
