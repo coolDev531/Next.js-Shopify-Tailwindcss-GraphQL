@@ -109,7 +109,7 @@ export const FeatureCarouselItem = ({ id, href, image, title, description }) => 
             height={image.height}
             src={image?.src}
             alt={image?.alt}
-            maxWidth={360}
+            maxWidth={500}
           />
         )}
       </figure>

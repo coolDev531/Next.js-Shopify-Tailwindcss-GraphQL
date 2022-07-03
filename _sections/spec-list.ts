@@ -17,6 +17,12 @@ export const specList: ShopifySection = {
       label: "Background",
     },
     {
+      type: "checkbox",
+      id: "blur_bg",
+      label: "Blur background",
+      default: true,
+    },
+    {
       type: "radio",
       id: "color_toggle",
       label: "Text Color",

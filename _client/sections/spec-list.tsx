@@ -11,6 +11,7 @@ export const SpecList: FC<SpecListSection> = ({ id, blocks, type, settings }) =>
       maxWidth="base"
       paddingY="base"
       background={settings.color_bg}
+      bgBlur={settings.blur_bg}
       className={clsx(settings.color_toggle === "light" && "color-slate-inverted")}
     >
       {blocks.map((block) => {

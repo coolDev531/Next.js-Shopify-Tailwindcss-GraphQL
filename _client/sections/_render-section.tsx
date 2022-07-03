@@ -1,3 +1,4 @@
+import { Background } from "_client/sections/background";
 import { BlockBlockquote } from "_client/sections/block-blockquote";
 import { BlockHeading } from "_client/sections/block-heading";
 import { BlockHero } from "_client/sections/block-hero";
@@ -23,6 +24,12 @@ import { Sections } from "types/sections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {
+    case "background":
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <Background {...section} />
+        </section>
+      );
     case "test":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>

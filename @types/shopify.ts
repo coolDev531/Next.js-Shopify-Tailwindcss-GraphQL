@@ -794,7 +794,7 @@ export type _Image_liquid = {
   alt: string;
   aspect_ratio: number;
   height: number;
-  id: number;
+  id: string;
   src: string;
   width: number;
   media_type?: any;

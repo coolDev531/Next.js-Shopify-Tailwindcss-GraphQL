@@ -1,3 +1,4 @@
+export * from "_sections/background";
 export * from "_sections/blockquote";
 export * from "_sections/feature-carousel";
 export * from "_sections/feature-list";

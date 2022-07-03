@@ -1,4 +1,132 @@
-import { _Product_liquid, _Image_liquid, _Linklist_liquid, _Blog_liquid, _Collection_liquid, _Page_liquid, _Article_liquid, _Color_liquid, _Font_liquid } from "types/shopify";
+import { _Image_liquid, _Product_liquid, _Linklist_liquid, _Blog_liquid, _Collection_liquid, _Page_liquid, _Article_liquid, _Color_liquid, _Font_liquid } from "types/shopify";
+
+export type BackgroundSection = {
+  blocks: BackgroundBlocks[];
+  id: string;
+  type: "background";
+};
+
+export type BackgroundBlocks =
+  | {
+      id: string;
+      settings: {
+        /** Input type: range */
+        height: number;
+        /** Input type: range */
+        marginTop: number;
+        /** Input type: range */
+        opacity: number;
+        /** Input type: color_background */
+        color?: string;
+        /** Input type: textarea */
+        css?: string;
+        /** Input type: image_picker */
+        image?: _Image_liquid;
+        /** Input type: html */
+        svg?: string;
+      };
+      type: "all";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: range */
+        height: number;
+        /** Input type: range */
+        marginTop: number;
+        /** Input type: range */
+        opacity: number;
+        /** Input type: color_background */
+        color?: string;
+        /** Input type: textarea */
+        css?: string;
+        /** Input type: image_picker */
+        image?: _Image_liquid;
+        /** Input type: html */
+        svg?: string;
+      };
+      type: "mobile";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: range */
+        height: number;
+        /** Input type: range */
+        marginTop: number;
+        /** Input type: range */
+        opacity: number;
+        /** Input type: color_background */
+        color?: string;
+        /** Input type: textarea */
+        css?: string;
+        /** Input type: image_picker */
+        image?: _Image_liquid;
+        /** Input type: html */
+        svg?: string;
+      };
+      type: "mobile_tablet";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: range */
+        height: number;
+        /** Input type: range */
+        marginTop: number;
+        /** Input type: range */
+        opacity: number;
+        /** Input type: color_background */
+        color?: string;
+        /** Input type: textarea */
+        css?: string;
+        /** Input type: image_picker */
+        image?: _Image_liquid;
+        /** Input type: html */
+        svg?: string;
+      };
+      type: "tablet";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: range */
+        height: number;
+        /** Input type: range */
+        marginTop: number;
+        /** Input type: range */
+        opacity: number;
+        /** Input type: color_background */
+        color?: string;
+        /** Input type: textarea */
+        css?: string;
+        /** Input type: image_picker */
+        image?: _Image_liquid;
+        /** Input type: html */
+        svg?: string;
+      };
+      type: "tablet_desktop";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: range */
+        height: number;
+        /** Input type: range */
+        marginTop: number;
+        /** Input type: range */
+        opacity: number;
+        /** Input type: color_background */
+        color?: string;
+        /** Input type: textarea */
+        css?: string;
+        /** Input type: image_picker */
+        image?: _Image_liquid;
+        /** Input type: html */
+        svg?: string;
+      };
+      type: "desktop";
+    };
 
 export type BlockquoteSection = {
   id: string;
@@ -388,6 +516,8 @@ export type SpecListSection = {
   blocks: SpecListBlocks[];
   id: string;
   settings: {
+    /** Input type: checkbox */
+    blur_bg: boolean;
     /** Input type: radio */
     color_toggle: "dark" | "light";
     /** Input type: color_background */
@@ -807,6 +937,7 @@ export type TestimonialListBlocks =
     };
 
 export type Sections =
+  | BackgroundSection
   | BlockquoteSection
   | FeatureCarouselSection
   | FeatureListSection

@@ -1,0 +1,436 @@
+{% include "_section-content", type: "background" %}
+{% include "section_background" %}
+  
+{% schema %}
+{
+  "name": "Background",
+  "max_blocks": 3,
+  "blocks": [
+    {
+      "type": "all",
+      "name": "All Devices",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Settings"
+        },
+        {
+          "type": "color_background",
+          "id": "color",
+          "label": "Color",
+          "default": "rgb(255 255 255 / 5%)"
+        },
+        {
+          "type": "textarea",
+          "id": "css",
+          "label": "Css Properties"
+        },
+        {
+          "type": "header",
+          "content": "Image / Svg"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "html",
+          "id": "svg",
+          "label": "Svg"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "label": "Opacity",
+          "default": 100,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        {
+          "type": "header",
+          "content": "Position"
+        },
+        {
+          "type": "range",
+          "id": "height",
+          "label": "Height",
+          "default": 800,
+          "min": 0,
+          "max": 3000,
+          "step": 50,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "marginTop",
+          "label": "Top Margin",
+          "default": 0,
+          "min": -2000,
+          "max": 1000,
+          "step": 50,
+          "unit": "px"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "mobile",
+      "name": "Mobile",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Settings"
+        },
+        {
+          "type": "color_background",
+          "id": "color",
+          "label": "Color",
+          "default": "rgb(255 255 255 / 5%)"
+        },
+        {
+          "type": "textarea",
+          "id": "css",
+          "label": "Css Properties"
+        },
+        {
+          "type": "header",
+          "content": "Image / Svg"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "html",
+          "id": "svg",
+          "label": "Svg"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "label": "Opacity",
+          "default": 100,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        {
+          "type": "header",
+          "content": "Position"
+        },
+        {
+          "type": "range",
+          "id": "height",
+          "label": "Height",
+          "default": 800,
+          "min": 0,
+          "max": 3000,
+          "step": 50,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "marginTop",
+          "label": "Top Margin",
+          "default": 0,
+          "min": -2000,
+          "max": 1000,
+          "step": 50,
+          "unit": "px"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "mobile_tablet",
+      "name": "Mobile & Tablet",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Settings"
+        },
+        {
+          "type": "color_background",
+          "id": "color",
+          "label": "Color",
+          "default": "rgb(255 255 255 / 5%)"
+        },
+        {
+          "type": "textarea",
+          "id": "css",
+          "label": "Css Properties"
+        },
+        {
+          "type": "header",
+          "content": "Image / Svg"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "html",
+          "id": "svg",
+          "label": "Svg"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "label": "Opacity",
+          "default": 100,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        {
+          "type": "header",
+          "content": "Position"
+        },
+        {
+          "type": "range",
+          "id": "height",
+          "label": "Height",
+          "default": 800,
+          "min": 0,
+          "max": 3000,
+          "step": 50,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "marginTop",
+          "label": "Top Margin",
+          "default": 0,
+          "min": -2000,
+          "max": 1000,
+          "step": 50,
+          "unit": "px"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "tablet",
+      "name": "Tablet",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Settings"
+        },
+        {
+          "type": "color_background",
+          "id": "color",
+          "label": "Color",
+          "default": "rgb(255 255 255 / 5%)"
+        },
+        {
+          "type": "textarea",
+          "id": "css",
+          "label": "Css Properties"
+        },
+        {
+          "type": "header",
+          "content": "Image / Svg"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "html",
+          "id": "svg",
+          "label": "Svg"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "label": "Opacity",
+          "default": 100,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        {
+          "type": "header",
+          "content": "Position"
+        },
+        {
+          "type": "range",
+          "id": "height",
+          "label": "Height",
+          "default": 800,
+          "min": 0,
+          "max": 3000,
+          "step": 50,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "marginTop",
+          "label": "Top Margin",
+          "default": 0,
+          "min": -2000,
+          "max": 1000,
+          "step": 50,
+          "unit": "px"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "tablet_desktop",
+      "name": "Tablet & Desktop",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Settings"
+        },
+        {
+          "type": "color_background",
+          "id": "color",
+          "label": "Color",
+          "default": "rgb(255 255 255 / 5%)"
+        },
+        {
+          "type": "textarea",
+          "id": "css",
+          "label": "Css Properties"
+        },
+        {
+          "type": "header",
+          "content": "Image / Svg"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "html",
+          "id": "svg",
+          "label": "Svg"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "label": "Opacity",
+          "default": 100,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        {
+          "type": "header",
+          "content": "Position"
+        },
+        {
+          "type": "range",
+          "id": "height",
+          "label": "Height",
+          "default": 800,
+          "min": 0,
+          "max": 3000,
+          "step": 50,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "marginTop",
+          "label": "Top Margin",
+          "default": 0,
+          "min": -2000,
+          "max": 1000,
+          "step": 50,
+          "unit": "px"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "desktop",
+      "name": "Desktop",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Settings"
+        },
+        {
+          "type": "color_background",
+          "id": "color",
+          "label": "Color",
+          "default": "rgb(255 255 255 / 5%)"
+        },
+        {
+          "type": "textarea",
+          "id": "css",
+          "label": "Css Properties"
+        },
+        {
+          "type": "header",
+          "content": "Image / Svg"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "html",
+          "id": "svg",
+          "label": "Svg"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "label": "Opacity",
+          "default": 100,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        {
+          "type": "header",
+          "content": "Position"
+        },
+        {
+          "type": "range",
+          "id": "height",
+          "label": "Height",
+          "default": 800,
+          "min": 0,
+          "max": 3000,
+          "step": 50,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "marginTop",
+          "label": "Top Margin",
+          "default": 0,
+          "min": -2000,
+          "max": 1000,
+          "step": 50,
+          "unit": "px"
+        }
+      ],
+      "limit": 1
+    }
+  ],
+  "presets": [
+    {
+      "name": "Background"
+    }
+  ]
+}
+{% endschema %} 
