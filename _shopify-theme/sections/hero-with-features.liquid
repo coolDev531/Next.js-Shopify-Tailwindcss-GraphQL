@@ -1,105 +1,102 @@
-{% include "_section-content", type: "tabs-image-card" %}
-{% include "section_tabs-image-card" %}
+{% include "_section-content", type: "hero-with-features" %}
+{% include "section_hero-with-features" %}
   
 {% schema %}
 {
-  "name": "Tabs image card",
-  "settings": [],
+  "name": "Hero with features",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "pre_title",
+      "label": "Pre header"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "product_list",
+      "id": "tech",
+      "label": "Tech Stack",
+      "limit": 3
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Paragraph"
+    },
+    {
+      "type": "header",
+      "content": "Primary Button"
+    },
+    {
+      "type": "text",
+      "id": "cta1",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "cta1_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Secondary Button"
+    },
+    {
+      "type": "text",
+      "id": "cta2",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "cta2_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image 3"
+    }
+  ],
+  "max_blocks": 4,
   "blocks": [
     {
-      "type": "heading",
-      "name": "Heading",
+      "type": "feature",
+      "name": "Feature",
       "settings": [
-        {
-          "type": "header",
-          "content": "Content"
-        },
-        {
-          "type": "text",
-          "id": "pre_title",
-          "label": "Pre header"
-        },
         {
           "type": "text",
           "id": "title",
           "label": "Title"
         },
         {
-          "type": "richtext",
+          "type": "textarea",
           "id": "paragraph",
           "label": "Paragraph"
         },
         {
-          "type": "header",
-          "content": "Primary Button"
-        },
-        {
-          "type": "text",
-          "id": "cta1",
-          "label": "Text"
-        },
-        {
-          "type": "url",
-          "id": "cta1_link",
-          "label": "Link"
-        },
-        {
-          "type": "header",
-          "content": "Secondary Button"
-        },
-        {
-          "type": "text",
-          "id": "cta2",
-          "label": "Text"
-        },
-        {
-          "type": "url",
-          "id": "cta2_link",
-          "label": "Link"
-        },
-        {
-          "type": "header",
-          "content": "Settings"
-        },
-        {
           "type": "select",
-          "id": "position",
-          "label": "Position",
-          "default": "center",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            },
-            {
-              "value": "right",
-              "label": "Right"
-            }
-          ]
-        }
-      ],
-      "limit": 1
-    },
-    {
-      "type": "tab",
-      "name": "Tab",
-      "settings": [
-        {
-          "type": "header",
-          "content": "Tab Selector"
-        },
-        {
-          "type": "text",
-          "id": "tab_title",
-          "label": "Title"
-        },
-        {
-          "type": "select",
-          "id": "tab_icon",
+          "id": "icon",
           "label": "Icon",
           "options": [
             {
@@ -448,70 +445,13 @@
               "group": "Line Icons"
             }
           ]
-        },
-        {
-          "type": "header",
-          "content": "Content"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title"
-        },
-        {
-          "type": "richtext",
-          "id": "paragraph",
-          "label": "Paragraph"
-        },
-        {
-          "type": "header",
-          "content": "Primary Button"
-        },
-        {
-          "type": "text",
-          "id": "cta1",
-          "label": "Text"
-        },
-        {
-          "type": "url",
-          "id": "cta1_link",
-          "label": "Link"
-        },
-        {
-          "type": "header",
-          "content": "Secondary Button"
-        },
-        {
-          "type": "text",
-          "id": "cta2",
-          "label": "Text"
-        },
-        {
-          "type": "url",
-          "id": "cta2_link",
-          "label": "Link"
-        },
-        {
-          "type": "header",
-          "content": "Image"
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "url",
-          "id": "image_link",
-          "label": "Link"
         }
-      ],
-      "limit": 6
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Tabs image card"
+      "name": "Hero with features"
     }
   ]
 }

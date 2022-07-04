@@ -115,7 +115,7 @@ export type FeatureListBlocks = {
   id: string;
   settings: {
     /** Input type: select */
-    icon: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
+    icon: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "ui-avatar" | "ui-code" | "ui-cursor" | "ui-mobile" | "ui-responsive" | "ui-stack" | "ui-1" | "ui-2" | "ui-3" | "ui-4" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
     /** Input type: richtext */
     paragraph?: `<p${string}</p>`;
     /** Input type: richtext */
@@ -226,6 +226,49 @@ export type HeadingSection = {
     title?: string;
   };
   type: "heading";
+};
+
+export type HeroWithFeaturesSection = {
+  blocks: HeroWithFeaturesBlocks[];
+  id: string;
+  settings: {
+    /** Input type: text */
+    cta1?: string;
+    /** Input type: url */
+    cta1_link?: string;
+    /** Input type: text */
+    cta2?: string;
+    /** Input type: url */
+    cta2_link?: string;
+    /** Input type: image_picker */
+    image_1?: _Image_liquid;
+    /** Input type: image_picker */
+    image_2?: _Image_liquid;
+    /** Input type: image_picker */
+    image_3?: _Image_liquid;
+    /** Input type: richtext */
+    paragraph?: `<p${string}</p>`;
+    /** Input type: text */
+    pre_title?: string;
+    /** Input type: product_list */
+    tech?: _Product_liquid[];
+    /** Input type: text */
+    title?: string;
+  };
+  type: "hero-with-features";
+};
+
+export type HeroWithFeaturesBlocks = {
+  id: string;
+  settings: {
+    /** Input type: select */
+    icon: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "ui-avatar" | "ui-code" | "ui-cursor" | "ui-mobile" | "ui-responsive" | "ui-stack" | "ui-1" | "ui-2" | "ui-3" | "ui-4" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
+    /** Input type: textarea */
+    paragraph?: string;
+    /** Input type: text */
+    title?: string;
+  };
+  type: "feature";
 };
 
 export type HeroSection = {
@@ -456,17 +499,17 @@ export type SpecListBlocks =
       id: string;
       settings: {
         /** Input type: select */
-        icon1: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
+        icon1: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "ui-avatar" | "ui-code" | "ui-cursor" | "ui-mobile" | "ui-responsive" | "ui-stack" | "ui-1" | "ui-2" | "ui-3" | "ui-4" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon2: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
+        icon2: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "ui-avatar" | "ui-code" | "ui-cursor" | "ui-mobile" | "ui-responsive" | "ui-stack" | "ui-1" | "ui-2" | "ui-3" | "ui-4" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon3: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
+        icon3: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "ui-avatar" | "ui-code" | "ui-cursor" | "ui-mobile" | "ui-responsive" | "ui-stack" | "ui-1" | "ui-2" | "ui-3" | "ui-4" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon4: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
+        icon4: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "ui-avatar" | "ui-code" | "ui-cursor" | "ui-mobile" | "ui-responsive" | "ui-stack" | "ui-1" | "ui-2" | "ui-3" | "ui-4" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon5: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
+        icon5: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "ui-avatar" | "ui-code" | "ui-cursor" | "ui-mobile" | "ui-responsive" | "ui-stack" | "ui-1" | "ui-2" | "ui-3" | "ui-4" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: select */
-        icon6: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
+        icon6: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "ui-avatar" | "ui-code" | "ui-cursor" | "ui-mobile" | "ui-responsive" | "ui-stack" | "ui-1" | "ui-2" | "ui-3" | "ui-4" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: text */
         text1?: string;
         /** Input type: text */
@@ -610,7 +653,7 @@ export type TabsImageCardBlocks =
       id: string;
       settings: {
         /** Input type: select */
-        tab_icon: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
+        tab_icon: "BadgeCheckIcon" | "CameraIcon" | "ChatAlt2Icon" | "ColorSwatchIcon" | "CloudIcon" | "DesktopComputerIcon" | "CubeTransparentIcon" | "DeviceMobileIcon" | "DeviceTabletIcon" | "CursorClickIcon" | "HeartIcon" | "KeyIcon" | "LightningBoltIcon" | "LinkIcon" | "LightBulbIcon" | "LockClosedIcon" | "LockOpenIcon" | "PaperAirplaneIcon" | "ShoppingBagIcon" | "ShoppingCartIcon" | "SparklesIcon" | "TagIcon" | "TruckIcon" | "UserGroupIcon" | "AnnotationIcon" | "MailIcon" | "MailOpenIcon" | "brutalist" | "colors" | "elegant" | "filters" | "grid" | "playful" | "shadows" | "simple" | "sizing" | "transforms" | "typography" | "ui-avatar" | "ui-code" | "ui-cursor" | "ui-mobile" | "ui-responsive" | "ui-stack" | "ui-1" | "ui-2" | "ui-3" | "ui-4" | "CalendarLight" | "ChatLight" | "Code" | "DeliveryLight" | "ExchangeSimple" | "FastCheckoutLight" | "GiftCardLight" | "PlanetLight" | "Resize" | "ReturnsLight" | "ShippingSimple" | "Stack" | "WarrantyLight" | "WarrantySimple" | "server-2" | "server-8" | "up-align-1-light" | "columns-1-light" | "laptop-star-light" | "squares-1-light" | "cubes-light";
         /** Input type: text */
         cta1?: string;
         /** Input type: url */
@@ -729,7 +772,7 @@ export type TemplateCartSection = {
 
 export type TemplateCollectionSection = {
   id: string;
-  type: "collection";
+  type: "template-collection";
 };
 
 export type TemplateListCollectionsSection = {
@@ -847,6 +890,7 @@ export type Sections =
   | FooterSection
   | HeaderSection
   | HeadingSection
+  | HeroWithFeaturesSection
   | HeroSection
   | ImageCarouselSection
   | ImageGallerySection

@@ -1,6 +1,5 @@
 import { Image } from "_client/image";
 import { Link } from "_client/link";
-import { Heading } from "_client/typography/heading";
 import { FC } from "react";
 import { HeaderBlocks } from "types/sections";
 import { _Link_liquid } from "types/shopify";

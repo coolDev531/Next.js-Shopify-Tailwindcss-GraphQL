@@ -20,6 +20,17 @@ import Sizing from "public/icons/tw-icons/sizing.svg";
 import Transforms from "public/icons/tw-icons/transforms.svg";
 import Typography from "public/icons/tw-icons/typography.svg";
 
+import UiAvatar from "public/icons/tw-icons/ui-avatar.svg";
+import UiCode from "public/icons/tw-icons/ui-code.svg";
+import UiCursor from "public/icons/tw-icons/ui-cursor.svg";
+import UiMobile from "public/icons/tw-icons/ui-mobile.svg";
+import UiResponsive from "public/icons/tw-icons/ui-responsive.svg";
+import UiStack from "public/icons/tw-icons/ui-stack.svg";
+import Ui1 from "public/icons/tw-icons/ui-1.svg";
+import Ui2 from "public/icons/tw-icons/ui-2.svg";
+import Ui3 from "public/icons/tw-icons/ui-3.svg";
+import Ui4 from "public/icons/tw-icons/ui-4.svg";
+
 import CalendarLight from "public/icons/tw-ui-icons/calendar-light.svg";
 import ChatLight from "public/icons/tw-ui-icons/chat-light.svg";
 import Code from "public/icons/tw-ui-icons/code.svg";
@@ -125,6 +136,56 @@ export const twIcons = [
   {
     value: "typography",
     label: "Typography",
+    group: "TW Icons",
+  },
+  {
+    value: "ui-avatar",
+    label: "Ui-avatar.svg",
+    group: "TW Icons",
+  },
+  {
+    value: "ui-code",
+    label: "Ui-code.svg",
+    group: "TW Icons",
+  },
+  {
+    value: "ui-cursor",
+    label: "Ui-cursor.svg",
+    group: "TW Icons",
+  },
+  {
+    value: "ui-mobile",
+    label: "Ui-mobile.svg",
+    group: "TW Icons",
+  },
+  {
+    value: "ui-responsive",
+    label: "Ui-responsive.svg",
+    group: "TW Icons",
+  },
+  {
+    value: "ui-stack",
+    label: "Ui-stack.svg",
+    group: "TW Icons",
+  },
+  {
+    value: "ui-1",
+    label: "Ui-1.svg",
+    group: "TW Icons",
+  },
+  {
+    value: "ui-2",
+    label: "Ui-2.svg",
+    group: "TW Icons",
+  },
+  {
+    value: "ui-3",
+    label: "Ui-3.svg",
+    group: "TW Icons",
+  },
+  {
+    value: "ui-4",
+    label: "Ui-4.svg",
     group: "TW Icons",
   },
 ] as const;
@@ -295,6 +356,26 @@ export const renderHeroIcon = (value: typeof heroIcons[number]["value"], classNa
 
 export const renderTwIcon = (value: typeof twIcons[number]["value"], className = "") => {
   switch (value) {
+    case "ui-1":
+      return <Ui1 className={className} />;
+    case "ui-2":
+      return <Ui2 className={className} />;
+    case "ui-3":
+      return <Ui3 className={className} />;
+    case "ui-4":
+      return <Ui4 className={className} />;
+    case "ui-avatar":
+      return <UiAvatar className={className} />;
+    case "ui-code":
+      return <UiCode className={className} />;
+    case "ui-cursor":
+      return <UiCursor className={className} />;
+    case "ui-mobile":
+      return <UiMobile className={className} />;
+    case "ui-responsive":
+      return <UiResponsive className={className} />;
+    case "ui-stack":
+      return <UiStack className={className} />;
     case "brutalist":
       return <Brutalist className={className} />;
     case "colors":

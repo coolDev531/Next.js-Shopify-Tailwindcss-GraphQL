@@ -21,7 +21,7 @@ export const templateCart: ShopifySection = {
   settings: [],
 };
 export const templateCollection: ShopifySection = {
-  name: "Collection",
+  name: "Template Collection",
   settings: [],
 };
 export const templateListCollections: ShopifySection = {

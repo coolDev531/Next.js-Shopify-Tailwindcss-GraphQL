@@ -53,7 +53,6 @@ export const background: ShopifySection<BackgroundSection> = {
           type: "color_background",
           id: "color",
           label: "Color",
-          default: "rgb(255 255 255 / 5%)",
         },
         {
           type: "textarea",

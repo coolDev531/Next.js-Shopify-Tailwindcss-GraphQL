@@ -8,6 +8,7 @@ import { FeatureList } from "_client/sections/feature-list";
 import { Footer } from "_client/sections/footer";
 import { Header } from "_client/sections/header/header";
 import { SectionHeading } from "_client/sections/heading";
+import { HeroWithFeatures } from "_client/sections/hero-with-features";
 import { ImageCarousel } from "_client/sections/image-carousel";
 import { ImageGallery } from "_client/sections/image-gallery";
 import { InfoCards } from "_client/sections/info-cards";
@@ -24,6 +25,12 @@ import { Sections } from "types/sections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {
+    case "hero-with-features":
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <HeroWithFeatures {...section} />
+        </section>
+      );
     case "background":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>
@@ -158,63 +165,43 @@ export const renderSection = (section: Sections) => {
       );
     case "template-404":
       return (
-        <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <div>Section to be developed: {section.type}</div>
-        </section>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}></section>
       );
     case "template-article":
       return (
-        <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <div>Section to be developed: {section.type}</div>
-        </section>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}></section>
       );
     case "template-blog":
       return (
-        <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <div>Section to be developed: {section.type}</div>
-        </section>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}></section>
       );
     case "template-cart":
       return (
-        <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <div>Section to be developed: {section.type}</div>
-        </section>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}></section>
       );
-    case "collection":
+    case "template-collection":
       return (
-        <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <div>Section to be developed: {section.type}</div>
-        </section>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}></section>
       );
     case "template-list-collections":
       return (
-        <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <div>Section to be developed: {section.type}</div>
-        </section>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}></section>
       );
     case "template-page":
       return (
-        <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <div>Section to be developed: {section.type}</div>
-        </section>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}></section>
       );
     case "template-password":
       return (
-        <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <div>Section to be developed: {section.type}</div>
-        </section>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}></section>
       );
     case "template-product":
       return (
-        <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <div>Section to be developed: {section.type}</div>
-        </section>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}></section>
       );
     case "template-search":
       return (
-        <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <div>Section to be developed: {section.type}</div>
-        </section>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}></section>
       );
   }
 };
