@@ -138,6 +138,45 @@
       "settings": {
       }
     },
+    "16540875305d711f9e": {
+      "type": "info-cards",
+      "settings": {
+        "pre_title": "Explore",
+        "title": "The tech we used:",
+        "content_list": [
+          "shopify",
+          "vend-pos"
+        ]
+      }
+    },
+    "1654092902cc4e4a33": {
+      "type": "logo-banner",
+      "settings": {
+        "title": "",
+        "logo_items": [
+          "graphql",
+          "copy-of-css",
+          "eslint",
+          "postman",
+          "sendgrid",
+          "sass",
+          "vercel",
+          "windows-support",
+          "ios",
+          "amazon-web-services",
+          "github",
+          "google-analytics",
+          "google-tag-manager",
+          "grunt",
+          "gulp",
+          "typescript",
+          "shopify"
+        ],
+        "height": 50,
+        "animate": false,
+        "animation_duration": 70
+      }
+    },
     "16541733016b2d4288": {
       "type": "tabs-image-card",
       "blocks": {
@@ -258,45 +297,6 @@
       "settings": {
       }
     },
-    "16540875305d711f9e": {
-      "type": "info-cards",
-      "settings": {
-        "pre_title": "Explore",
-        "title": "The tech we used:",
-        "content_list": [
-          "shopify",
-          "vend-pos"
-        ]
-      }
-    },
-    "1654092902cc4e4a33": {
-      "type": "logo-banner",
-      "settings": {
-        "title": "",
-        "logo_items": [
-          "graphql",
-          "copy-of-css",
-          "eslint",
-          "postman",
-          "sendgrid",
-          "sass",
-          "vercel",
-          "windows-support",
-          "ios",
-          "amazon-web-services",
-          "github",
-          "google-analytics",
-          "google-tag-manager",
-          "grunt",
-          "gulp",
-          "typescript",
-          "shopify"
-        ],
-        "height": 50,
-        "animate": false,
-        "animation_duration": 70
-      }
-    },
     "16542555547186860a": {
       "type": "spec-list",
       "blocks": {
@@ -373,6 +373,7 @@
       ],
       "settings": {
         "color_bg": "linear-gradient(145deg, rgba(2, 77, 164, 1), rgba(1, 155, 199, 1) 100%)",
+        "blur_bg": true,
         "color_toggle": "light"
       }
     },
@@ -386,7 +387,7 @@
       }
     },
     "16542613555478f86d": {
-     "type": "image-gallery",
+      "type": "image-gallery",
       "settings": {
         "image1": "shopify:\/\/shop_images\/gallery-1.jpg",
         "title1": "",
@@ -403,7 +404,6 @@
       }
     },
     "165426875321fe7fc5": {
-
       "type": "feature-list",
       "blocks": {
         "7d9184d1-b917-43ab-a84e-dbce8b2d3989": {

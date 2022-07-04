@@ -341,7 +341,7 @@
       }
     },
     "16542613555478f86d": {
-   "type": "image-gallery",
+      "type": "image-gallery",
       "settings": {
         "image1": "shopify:\/\/shop_images\/gallery-1.jpg",
         "title1": "",
@@ -357,7 +357,6 @@
         "title6": ""
       }
     },
-
     "165426875321fe7fc5": {
       "type": "feature-list",
       "blocks": {
@@ -463,7 +462,6 @@
     "16542555547186860a",
     "1654259533f54af287",
     "16542613555478f86d",
-
     "165426875321fe7fc5",
     "16543302228e17b41c",
     "1654332872499b00d2"

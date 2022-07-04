@@ -66,6 +66,14 @@
         "fef8d93c-5bdc-49a7-8de3-3ef0c0ecd90a"
       ],
       "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
       }
     },
     "165476159216c4ff5c": {
@@ -128,6 +136,27 @@
         "03758003-6321-4a0c-8e54-8eab05c4a979"
       ],
       "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "shopify:\/\/blogs\/tech",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
+      }
+    },
+    "16569306741e559fb4": {
+      "type": "heading",
+      "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "2222",
+        "cta1_link": "shopify:\/\/blogs\/work\/ford",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
       }
     },
     "1654424131fb27794e": {
@@ -204,7 +233,7 @@
           "settings": {
             "pre_title": "Get Started",
             "title": "Ready to start your Shopify project?",
-            "paragraph": "<p>Shopify is more then just a E-commerce platform, and has so much to offer. In a nutshell it runs smoothly and provides great experience – for both store owners and their customers. Shopify is our eCommerce platform of choice that we've been working, developing, and consistently upgrading since 2015. <\/p>",
+            "paragraph": "<p>Shopify is more then just a E-commerce platform, and has so much to offer. In a nutshell it runs smoothly and provides great experience – for both store owners and their customers. Shopify is our eCommerce platform of choice that we've been working, developing, and consistently upgrading since 2017 <\/p>",
             "cta1": "123123",
             "cta1_link": "",
             "cta2": "123123123",
@@ -327,6 +356,7 @@
       ],
       "settings": {
         "color_bg": "",
+        "blur_bg": true,
         "color_toggle": "dark"
       }
     },
@@ -419,6 +449,42 @@
       "settings": {
         "title": "Frequentlyasked questions"
       }
+    },
+    "1656930716ec9b0e94": {
+      "type": "image-carousel",
+      "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "images": "work",
+        "animate": false,
+        "animation_duration": 20
+      }
+    },
+    "165693105620682646": {
+      "type": "feature-carousel",
+      "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "features": [
+          "shopify-customizations",
+          "shopify-full-sites",
+          "shopify-integration",
+          "shopify-seo-packages",
+          "shopify-website-maintenance"
+        ]
+      }
     }
   },
   "order": [
@@ -427,6 +493,7 @@
     "16547615536da214ca",
     "165476159216c4ff5c",
     "16547657217b1dfb71",
+    "16569306741e559fb4",
     "1654424131fb27794e",
     "1654762013d2c9eed0",
     "1654761954c36d4db0",
@@ -435,6 +502,8 @@
     "165476205467493fae",
     "1654765182e225ecd7",
     "1654765182e225ecd72",
-    "165476560159b5ef3e"
+    "165476560159b5ef3e",
+    "1656930716ec9b0e94",
+    "165693105620682646"
   ]
 }
