@@ -5,7 +5,7 @@ import { BlockHeading } from "_client/sections/block-heading";
 import { useRouter } from "next/router";
 import { FC } from "react";
 import { ImageCarouselSection } from "types/sections";
-import { _Media_liquid } from "types/shopify";
+import { _Image_liquid, _Media_liquid } from "types/shopify";
 
 export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, type }) => {
   const { position, cta1, cta1_link, cta2, cta2_link, paragraph, pre_title, title } = settings;
@@ -86,7 +86,7 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
 
 export const ImageCarouselItem: FC<{
   href: string;
-  image: Omit<_Media_liquid, "media_type" | "position" | "preview_image">;
+  image: Omit<_Media_liquid, "media_type" | "position" | "preview_image"> | _Image_liquid;
   title: string;
 }> = ({ href, image, title }) => {
   return (

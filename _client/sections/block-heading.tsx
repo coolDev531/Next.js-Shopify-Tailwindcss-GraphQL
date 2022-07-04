@@ -3,6 +3,7 @@ import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
 import { FC } from "react";
+import { PartialBy } from "types/index";
 import { HeadingSection } from "types/sections";
 
 export const BlockHeading: FC<PartialBy<HeadingSection, "type" | "id">> = ({ settings }) => {
