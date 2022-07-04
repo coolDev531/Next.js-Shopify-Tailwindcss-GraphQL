@@ -8,13 +8,13 @@ import { FooterSection } from "types/sections";
 export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
   return (
     <footer id={id} className="mt-24">
-      <section className="border-y border-slate-200 bg-slate-100 ">
-        <div className="mx-auto  max-w-7xl  py-16 px-4 sm:px-8">
+      <section className="border-y border-slate-200 bg-slate-100 dark:border-slate-700 dark:bg-dark-card">
+        <div className="mx-auto max-w-7xl py-16 px-4 sm:px-8">
           <nav className="auto-cols-min grid-flow-col-dense justify-between gap-8 md:grid">
             {blocks.map((block) => {
               if (block.settings.menu) {
                 return (
-                  <nav key={block.id} className="border-b border-b-slate-300  md:border-none ">
+                  <nav key={block.id} className="border-b border-b-slate-300 md:border-none ">
                     <input
                       type="checkbox"
                       hidden
@@ -25,7 +25,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                       htmlFor={`${block.id}-${block.settings.menu.handle}`}
                       className="peer-checked:[&_svg]:rotate-180"
                     >
-                      <h3 className="mb-2 mt-3 flex cursor-pointer select-none items-center justify-between text-sm font-medium text-slate-600 md:cursor-default">
+                      <h3 className="mb-2 mt-3 flex cursor-pointer select-none items-center justify-between text-sm font-medium text-slate-600 dark:text-slate-200 md:cursor-default">
                         {block.settings.menu.title}
                         <HeroIcon
                           name="XIcon"
@@ -33,12 +33,12 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                         />
                       </h3>
                     </label>
-                    <ul className="hidden flex-col gap-1 pl-4  pb-4 peer-checked:flex md:flex md:pl-0 md:pb-0">
+                    <ul className="hidden flex-col gap-1 pl-4 pb-4 peer-checked:flex md:flex md:pl-0 md:pb-0">
                       {block.settings.menu.links.map((link) => {
                         return (
                           <li key={link.handle}>
                             <Link
-                              className="select-none whitespace-nowrap text-sm text-slate-500"
+                              className="select-none whitespace-nowrap text-sm text-slate-500 dark:text-slate-400"
                               href={link.url}
                             >
                               {link.title}
@@ -59,7 +59,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
             </Link>
           </header>
           <footer className="mt-4 flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <small className="order-2 text-center text-slate-500 sm:order-none sm:text-right">
+            <small className="order-2 text-center text-slate-500 dark:text-slate-400 sm:order-none sm:text-right">
               Copyright © {new Date().getFullYear()} Lunalemon.dev - All rights reserved.
             </small>
             <nav className="flex flex-1 items-center justify-end divide-x divide-slate-200">
@@ -67,7 +67,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                 ? <Link
                     href={settings.facebook}
                     target="_blank"
-                    className="px-4 py-1 text-xl text-slate-500 transition-all hfa:text-sky-500"
+                    className="px-4 py-1 text-xl text-slate-500 transition-all hfa:text-sky-500 dark:text-slate-400 dark:hfa:text-sky-400"
                   >
                     <BsFacebook />
                   </Link>
@@ -76,7 +76,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                 ? <Link
                     href={settings.github}
                     target="_blank"
-                    className="px-4 py-1 text-xl text-slate-500 transition-all hfa:text-sky-500"
+                    className="px-4 py-1 text-xl text-slate-500 transition-all hfa:text-sky-500 dark:text-slate-400 dark:hfa:text-sky-400"
                   >
                     <BsGithub />
                   </Link>
@@ -85,7 +85,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                 ? <Link
                     href={settings.google}
                     target="_blank"
-                    className="px-4 py-1 text-xl text-slate-500 transition-all hfa:text-sky-500"
+                    className="px-4 py-1 text-xl text-slate-500 transition-all hfa:text-sky-500 dark:text-slate-400 dark:hfa:text-sky-400"
                   >
                     <BsGoogle />
                   </Link>
@@ -94,7 +94,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                 ? <Link
                     href={settings.instagram}
                     target="_blank"
-                    className="px-4 py-1 text-xl text-slate-500 transition-all hfa:text-sky-500"
+                    className="px-4 py-1 text-xl text-slate-500 transition-all hfa:text-sky-500 dark:text-slate-400 dark:hfa:text-sky-400"
                   >
                     <BsInstagram />
                   </Link>
@@ -103,7 +103,9 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
           </footer>
         </div>
       </section>
-      <section className="flex h-16 items-center justify-center">Made with 🍋 by Lunalemon</section>
+      <section className="flex h-16 items-center justify-center dark:text-slate-300">
+        Made with 🍋 by Lunalemon
+      </section>
     </footer>
   );
 };

@@ -7,6 +7,7 @@ import { Paragraph } from "_client/typography/paragraph";
 import { renderIcon } from "_sections/utils";
 import clsx from "clsx";
 import img1 from "public/images/bg-gradient-light.jpg";
+import img2 from "public/images/bg-gradient-dark.png";
 
 import { FC, useState } from "react";
 import { TabsImageCardSection } from "types/sections";
@@ -41,15 +42,15 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
                   clsx(
                     "w-12 h-12 mb-4",
                     block.id === activateTab
-                      ? "text-sky-500 [--svg-active-opacity:0.1] [--svg-active-fill:currentColor]"
-                      : "text-slate-300 group-hover:text-slate-500/60"
+                      ? "text-sky-500 dark:text-sky-400 [--svg-active-opacity:0.1] [--svg-active-fill:currentColor]"
+                      : "text-slate-300 group-hover:text-slate-500/60 dark:text-slate-600 dark:group-hover:text-slate-300/60"
                   )
                 )}
               </figure>
               <h3
                 className={clsx(
                   "text-sm font-semibold tracking-tight",
-                  block.id === activateTab && "text-sky-500"
+                  block.id === activateTab && "text-sky-500 dark:text-sky-400"
                 )}
               >
                 {block.settings.tab_title}
@@ -66,10 +67,17 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
             width={img1.width}
             height={img1.height}
             alt="background image"
-            className="absolute bottom-0 top-0 left-1/2 block h-full min-w-[123.25rem] -translate-x-1/2"
+            className="absolute bottom-0 top-0 left-1/2 block h-full min-w-[123.25rem] -translate-x-1/2 dark:hidden"
+          />
+          <Image
+            src={img2}
+            width={img2.width}
+            height={img2.height}
+            alt="background image"
+            className="absolute bottom-0 top-0 left-1/2 hidden h-full min-w-[123.25rem] -translate-x-1/2 opacity-60 dark:block"
           />
         </figure>
-        <figure className="absolute left-1/2 -z-10 -ml-[50vw] h-full w-screen bg-grid-gray-900/[0.04] [mask-image:linear-gradient(0deg,transparent,black)] "></figure>
+        <figure className="absolute left-1/2 -z-10 -ml-[50vw] h-full w-screen bg-grid-gray-900/[0.04] [mask-image:linear-gradient(0deg,transparent,black)] dark:bg-grid-gray-100/[0.05] "></figure>
         {blocks.map((block) => {
           if (block.type !== "tab") return null;
 

@@ -7,6 +7,7 @@ type SectionProps = {
   paddingY: "none" | "base" | "xl";
   background?: Property.Background<string | number>;
   bgBlur?: boolean;
+  bgClassName?: React.ComponentProps<"div">["className"];
   bgHeight?: Property.Height;
   bgOpacity?: Property.Opacity;
   className?: React.ComponentProps<"div">["className"];
@@ -21,6 +22,7 @@ export const Wrapper: FC<PropsWithChildren<SectionProps>> = ({
   bgOpacity,
   children,
   className,
+  bgClassName,
 }) => {
   const getContainerClasses = (container: SectionProps["maxWidth"]) => {
     switch (container) {
@@ -61,11 +63,12 @@ export const Wrapper: FC<PropsWithChildren<SectionProps>> = ({
 
   return (
     <>
-      {background
+      {background || bgClassName
         ? <div
             className={clsx(
               "pointer-events-none absolute left-0 bottom-0 -z-10 h-full w-full select-none",
-              bgBlur && "border-y border-slate-200 backdrop-blur-md backdrop-saturate-200"
+              bgBlur && "border-y border-slate-200 backdrop-blur-md backdrop-saturate-200",
+              bgClassName
             )}
             style={{ background, height: bgHeight, opacity: bgOpacity }}
           />

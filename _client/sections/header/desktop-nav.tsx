@@ -85,7 +85,7 @@ export const DesktopNav: FC<{
         onMouseOver={handleNavHover}
       >
         <div
-          className="nav-hover-effect absolute top-1/2 z-0 h-8 -translate-y-1/2 transform rounded bg-sky-200/30 dark:bg-slate-700"
+          className="nav-hover-effect absolute top-1/2 z-0 h-8 -translate-y-1/2 transform rounded bg-sky-200/30 dark:bg-dark-card"
           /* style={{
             width: `${navHover.width}px`,
             left: `${navHover.left}px`,
@@ -132,7 +132,7 @@ export const DesktopNav: FC<{
                           leaveFrom="opacity-100 translate-y-0"
                           leaveTo="opacity-0 -translate-y-1"
                         >
-                          <Popover.Panel className="absolute inset-x-0 top-0 -z-10 hidden transform bg-white pt-[65px] shadow-lg focus-visible:outline-none md:block">
+                          <Popover.Panel className="absolute inset-x-0 top-0 -z-10 hidden transform bg-white pt-[65px] shadow-lg focus-visible:outline-none dark:bg-dark-bg md:block">
                             <SliderMenu items={block.settings.menu_items} link={link} />
                           </Popover.Panel>
                         </Transition>
@@ -178,7 +178,7 @@ export const DesktopNav: FC<{
                           leaveFrom="opacity-100 translate-y-0"
                           leaveTo="opacity-0 -translate-y-1"
                         >
-                          <Popover.Panel className="absolute inset-x-0 top-0 -z-10 hidden transform bg-white pt-[65px] shadow-lg focus-visible:outline-none md:block">
+                          <Popover.Panel className="absolute inset-x-0 top-0 -z-10 hidden transform bg-white pt-[65px] shadow-lg focus-visible:outline-none dark:bg-dark-bg md:block">
                             <PortfolioMenu {...block.settings} links={link.links} />
                           </Popover.Panel>
                         </Transition>

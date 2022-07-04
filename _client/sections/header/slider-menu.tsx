@@ -34,10 +34,10 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
       <div
         className={clsx(
           "scrollbar-none -my-2 grid snap-x snap-mandatory auto-cols-min grid-flow-col-dense gap-6 overflow-x-scroll scroll-smooth py-2",
-          "pl-[max(1rem,calc((100vw-80rem)/2+1rem))] md:pl-[max(2rem,calc((100vw-80rem)/2+1rem))]",
-          "scroll-pl-[max(1rem,calc((100vw-80rem)/2+1rem))] md:scroll-pl-[max(2rem,calc((100vw-80rem)/2+1rem))]",
-          "pr-[max(1rem,min(calc((100vw-80rem)/2+80rem-300px-1rem),calc(100vw-300px-1rem+4px)))]",
-          "md:pr-[max(1rem,min(calc((100vw-80rem)/2+80rem-300px-1rem),calc(100vw-300px-1rem+4px)))]"
+          "pl-[max(var(--slider-padding),calc((100vw-80rem)/2+var(--slider-padding)))] md:pl-[max(2rem,calc((100vw-80rem)/2+var(--slider-padding)))]",
+          "scroll-pl-[max(var(--slider-padding),calc((100vw-80rem)/2+var(--slider-padding)))] md:scroll-pl-[max(2rem,calc((100vw-80rem)/2+var(--slider-padding)))]",
+          "pr-[max(var(--slider-padding),min(calc((100vw-80rem)/2+80rem-300px-var(--slider-padding)),calc(100vw-300px-var(--slider-padding)+4px)))]",
+          "[--slider-padding:1rem]"
         )}
         onScroll={handleScrollEvent}
         ref={scrollContainerRef}
@@ -47,7 +47,7 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
             <Link
               href={product.url}
               key={`feature-${link.handle}-${product.id}`}
-              className="group w-[300px] snap-start rounded-md p-4 hfa:bg-slate-50 f:ring-2 f:ring-sky-400 f:ring-offset-2"
+              className="group w-[300px] snap-start rounded-md p-4 hfa:bg-slate-50 f:ring-2 f:ring-sky-400 f:ring-offset-2 dark:hfa:bg-slate-700/30"
             >
               <figure className="relative mb-4 aspect-1 w-[90px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
                 {product.featured_media && (
@@ -79,7 +79,7 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
       {scrollIndex !== 0
         ? <button
             tabIndex={-1}
-            className="absolute top-[calc(310px)] left-4 hidden items-center justify-center rounded-full border border-slate-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-slate-50/90 sm:flex"
+            className="absolute top-[calc(310px)] left-4 hidden items-center justify-center rounded-full border border-slate-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-slate-50/90 dark:border-slate-700 dark:bg-dark-card sm:flex sm:flex"
             onClick={(e) => handleManualScroll(-1)}
           >
             <HeroIcon name="ChevronLeftIcon" className="h-4 w-4" />
@@ -88,7 +88,7 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
       {scrollIndex < maxIndex - 1
         ? <button
             tabIndex={-1}
-            className="absolute top-[calc(310px)] right-4 hidden items-center justify-center rounded-full border border-slate-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-slate-50/90 sm:flex"
+            className="absolute top-[calc(310px)] right-4 hidden items-center justify-center rounded-full border border-slate-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-slate-50/90 dark:border-slate-700 dark:bg-dark-card sm:flex"
             onClick={(e) => handleManualScroll(1)}
           >
             <HeroIcon name="ChevronRightIcon" className="h-4 w-4" />

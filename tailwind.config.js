@@ -419,6 +419,7 @@ module.exports = {
         "gradient-stats": `radial-gradient(ellipse 75% 650px at 35% calc(100% + 100px), ${theme(
           "colors.sky.500"
         )} 20%, ${theme("colors.sky.100")}, transparent);`,
+        "gradient-stats-dark": `radial-gradient(ellipse 65% 600px at 35% calc(100% + 100px), #0f75a9 35%, #132940, transparent)`,
       }),
       typography: ({ theme }) => ({
         dark: {

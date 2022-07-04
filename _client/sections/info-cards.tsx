@@ -31,7 +31,7 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
             return (
               <section
                 key={product.id}
-                className="min-w-[220px] select-none rounded-md border border-slate-200 bg-white p-3.5 transition-all hfa:border-slate-400/60"
+                className="min-w-[220px] select-none rounded-md border border-slate-200 bg-white p-3.5 transition-all hfa:border-slate-400/60 dark:border-slate-700/80 dark:bg-dark-bg dark:hfa:border-slate-500/80"
               >
                 <header className="flex flex-col gap-2">
                   <figure
@@ -44,7 +44,7 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
                     {product.title}
                   </Heading>
                 </header>
-                <main className="text-[15px] tracking-tight">
+                <main className="paragraph-sm">
                   <p>{stripHtml(product.content).result}</p>
                 </main>
               </section>

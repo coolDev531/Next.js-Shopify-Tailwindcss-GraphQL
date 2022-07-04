@@ -40,7 +40,7 @@ export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ s
                       <span className="mr-2 flex h-6 items-center leading-6 text-sky-500">
                         <CheckCircleIcon className="h-5" />
                       </span>
-                      <span className="leading-tight text-slate-500 ">{li}</span>
+                      <span className="leading-tight text-slate-500 dark:text-slate-400">{li}</span>
                     </li>
                   ))}
               </ul>

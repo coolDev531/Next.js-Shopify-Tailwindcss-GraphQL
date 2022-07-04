@@ -11,7 +11,7 @@ class Root extends Document {
           <Favicon />
           <Font />
         </Head>
-        <body className="min-h-screen overflow-x-hidden text-slate-600 d:text-slate-400">
+        <body className="min-h-screen overflow-x-hidden text-slate-600 d:text-slate-400 dark:bg-dark-bg">
           <Main />
           <NextScript />
         </body>

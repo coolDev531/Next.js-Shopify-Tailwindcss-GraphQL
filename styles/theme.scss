@@ -51,7 +51,7 @@ input[type="number"] {
 * {
   &:focus-visible {
     outline: none;
-    @apply ring-2 ring-offset-2 ring-sky-400;
+    @apply ring-2 ring-offset-2 ring-sky-400 dark:ring-white dark:ring-offset-0;
     //@apply rounded-sm
   }
 }
@@ -78,7 +78,7 @@ button {
     background: transparent; /* Chrome/Safari/Webkit */
   }
 }
-
+/*
 ::-webkit-scrollbar {
   width: 8px;
   height: 6px;
@@ -100,4 +100,4 @@ button {
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-gray-200;
-}
+}*/

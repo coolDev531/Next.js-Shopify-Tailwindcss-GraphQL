@@ -26,7 +26,7 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
               strokeWidth="1"
             ></path>
             <line
-              className="stroke-sky-500"
+              className="stroke-sky-500 dark:stroke-sky-400"
               x1="862"
               y1="10"
               x2="862.01"
@@ -43,7 +43,7 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
                 x2="960"
                 y2="319"
                 gradientUnits="userSpaceOnUse"
-                className="from-white/0 to-white"
+                className="from-white/0 to-white dark:from-dark-bg/0 dark:to-dark-bg"
               >
                 <stop offset="0" stopColor="var(--tw-gradient-from)"></stop>
                 <stop offset="0.7" stopColor="var(--tw-gradient-to)"></stop>
@@ -55,7 +55,7 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
                 x2="900"
                 y2="359.5"
                 gradientUnits="userSpaceOnUse"
-                className="from-sky-500 to-slate-300"
+                className="from-sky-500 to-slate-700 dark:from-sky-400"
               >
                 <stop offset="0" stopColor="var(--tw-gradient-from)"></stop>
                 <stop offset="1" stopColor="var(--tw-gradient-to)"></stop>
@@ -65,7 +65,7 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
         </div>
       </div>
       <div className="pointer-events-none absolute bottom-0 h-screen w-full select-none overflow-hidden">
-        <div className="absolute -left-[200px] -right-[200px] -bottom-[200px] -z-10 h-[700px] -rotate-12 bg-gradient-stats" />
+        <div className="absolute -left-[200px] -right-[200px] -bottom-[200px] -z-10 h-[700px] -rotate-12 bg-gradient-stats dark:bg-gradient-stats-dark" />
       </div>
     </div>
     <div className="divide- flex flex-col pb-8 pt-16 md:-ml-8 md:flex-row md:items-center md:divide-x">
@@ -75,10 +75,12 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
             return (
               <section key={block.id} className="py-3 md:px-8 md:py-0">
                 <header>
-                  <h3 className="mb-2 text-5xl font-medium tracking-tight text-slate-900">
+                  <h3 className="mb-2 text-5xl font-medium tracking-tight text-slate-900 dark:text-slate-50">
                     {block.settings.stat}
                   </h3>
-                  <h2 className="text-slate-500">{block.settings.descriptions}</h2>
+                  <h2 className="text-slate-500 dark:text-slate-400">
+                    {block.settings.descriptions}
+                  </h2>
                 </header>
               </section>
             );

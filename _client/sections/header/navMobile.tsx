@@ -53,7 +53,7 @@ export const NavMobile: FC<{
               leaveTo="transform opacity-0 scale-95"
             >
               <Popover.Panel className="fixed inset-0 z-30">
-                <nav className="relative m-1 overflow-hidden rounded bg-white px-2 pt-16 pb-10 shadow sm:px-3 sm:px-7">
+                <nav className="relative m-1 overflow-hidden rounded bg-white px-2 pt-16 pb-10 shadow dark:bg-dark-bg sm:px-3 sm:px-7">
                   <button
                     className="absolute right-3 top-3 rounded p-1 sm:right-5"
                     onClick={() => close()}
@@ -74,29 +74,12 @@ export const NavMobile: FC<{
                                   menuSelected !== block.id && "flex flex-col"
                                 )}
                               >
-                                <button
-                                  onClick={() => handleDropdownSelect(block.id)}
-                                  className={clsx(
-                                    " h-8  items-center rounded border-b-2 border-transparent py-1  pr-3 font-medium",
-                                    menuSelected === block.id
-                                      ? "ml-3 inline-flex rounded-none border-b-slate-300 h:border-b-slate-400"
-                                      : "flex flex-1 pl-3 h:bg-slate-100"
-                                  )}
-                                  style={{
-                                    transition:
-                                      menuSelected === block.id
-                                        ? "0.15s cubic-bezier(0.4, 0, 0.2, 1), border 0.15s cubic-bezier(0.4, 0, 0.2, 1)"
-                                        : "0.15s cubic-bezier(0.4, 0, 0.2, 1), border 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-                                  }}
-                                >
-                                  {link.title}
-                                  <div className="h-4 w-4 ">
-                                    <HeroIcon
-                                      className="pointer-events-none ml-1 h-4 w-4"
-                                      name="ChevronDownIcon"
-                                    />
-                                  </div>
-                                </button>
+                                <DropdownButton
+                                  handleDropdownSelect={handleDropdownSelect}
+                                  menuSelected={menuSelected}
+                                  title={link.title}
+                                  id={block.id}
+                                />
                                 <div
                                   className={clsx(
                                     "relative left-1/2 -ml-[calc(50vw-4px)] w-[calc(100vw-8px)] origin-top transition-all",
@@ -108,9 +91,9 @@ export const NavMobile: FC<{
                                   <div
                                     className={clsx(
                                       "scrollbar-none -my-1 grid snap-x snap-mandatory auto-cols-min grid-flow-col-dense gap-6 overflow-x-scroll scroll-smooth py-2",
-                                      "pl-[max(1rem,calc((100vw-80rem)/2+0.75rem))]",
-                                      "scroll-pl-[max(0.75rem,calc((100vw-80rem)/2+0.75rem))]",
-                                      "pr-[max(0.75rem,min(calc((100vw-80rem)/2+80rem-280px-0.75rem),calc(100vw-280px-0.75rem+4px)))]"
+                                      "pl-[max(var(--slider-padding),calc((100vw-80rem)/2+var(--slider-padding)))]",
+                                      "scroll-pl-[max(var(--slider-padding),calc((100vw-80rem)/2+var(--slider-padding)))]",
+                                      "pr-[max(var(--slider-padding),min(calc((100vw-80rem)/2+80rem-280px-var(--slider-padding)),calc(100vw-280px-var(--slider-padding)+4px)))] [--slider-padding:0.75rem] sm:[--slider-padding:2rem]"
                                     )}
                                   >
                                     {block.settings.menu_items.map((product) => {
@@ -119,7 +102,7 @@ export const NavMobile: FC<{
                                           onClick={() => close()}
                                           href={product.url}
                                           key={`feature-${link.handle}-${product.id}`}
-                                          className="group w-[280px] snap-start rounded-md px-3 py-4 hfa:bg-slate-50 f:ring-2 f:ring-sky-400 f:ring-offset-2"
+                                          className="group w-[280px] snap-start rounded-md px-3 py-4 hfa:bg-slate-50 f:ring-2 f:ring-sky-400 f:ring-offset-2 dark:hfa:bg-slate-700/30"
                                         >
                                           <figure className="relative mb-4 aspect-1 w-[140px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
                                             {product.featured_media && (
@@ -162,29 +145,12 @@ export const NavMobile: FC<{
                                   menuSelected !== block.id && "flex flex-col"
                                 )}
                               >
-                                <button
-                                  onClick={() => handleDropdownSelect(block.id)}
-                                  className={clsx(
-                                    " h-8  items-center rounded border-b-2 border-transparent py-1  pr-3 font-medium",
-                                    menuSelected === block.id
-                                      ? "ml-3 inline-flex rounded-none border-b-slate-300 h:border-b-slate-400"
-                                      : "flex flex-1 pl-3 h:bg-slate-100"
-                                  )}
-                                  style={{
-                                    transition:
-                                      menuSelected === block.id
-                                        ? "0.15s cubic-bezier(0.4, 0, 0.2, 1), border 0.15s cubic-bezier(0.4, 0, 0.2, 1)"
-                                        : "0.15s cubic-bezier(0.4, 0, 0.2, 1), border 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-                                  }}
-                                >
-                                  {link.title}
-                                  <div className="h-4 w-4 ">
-                                    <HeroIcon
-                                      className="pointer-events-none ml-1 h-4 w-4"
-                                      name="ChevronDownIcon"
-                                    />
-                                  </div>
-                                </button>
+                                <DropdownButton
+                                  handleDropdownSelect={handleDropdownSelect}
+                                  menuSelected={menuSelected}
+                                  title={link.title}
+                                  id={block.id}
+                                />
                                 <div
                                   className={clsx(
                                     "relative flex origin-top flex-col gap-4 px-3 transition-all",
@@ -217,11 +183,13 @@ export const NavMobile: FC<{
                                                 alt="placeholder"
                                                 className="h-full object-cover group-hover:opacity-75"
                                               />
-                                              <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3">
-                                                <h3 className="mb-0.5 text-sm font-medium text-slate-900">
+                                              <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3 dark:bg-slate-900/80">
+                                                <h3 className="mb-0.5 text-sm font-medium text-slate-900 dark:text-slate-200">
                                                   {block.settings[`title_${key}`]}
                                                 </h3>
-                                                <p className="text-xs text-slate-700">See more</p>
+                                                <p className="text-xs text-slate-700 dark:text-slate-400">
+                                                  See more
+                                                </p>
                                               </div>
                                             </>
                                           </Link>
@@ -252,13 +220,13 @@ export const NavMobile: FC<{
                                             }}
                                           >
                                             <h3 className="heading-base">{subLink.title}</h3>
-                                            <ul className="flex  flex-col gap-1">
+                                            <ul className="flex flex-col gap-1">
                                               {subLink.links.map((subLink) => (
                                                 <li key={subLink.handle}>
                                                   <Link
                                                     onClick={() => close()}
                                                     href={subLink.url}
-                                                    className="-m-1 flex rounded p-1 text-sm text-slate-500 hfa:text-sky-500"
+                                                    className="-m-1 flex rounded p-1 text-sm text-slate-500 hfa:text-sky-500 dark:text-slate-400/90 dark:hfa:text-sky-400"
                                                   >
                                                     {subLink.title}
                                                   </Link>
@@ -286,7 +254,7 @@ export const NavMobile: FC<{
                         <li key={link.handle}>
                           <Link
                             href={link.url}
-                            className="flex rounded py-1 px-3  font-medium hfa:bg-slate-100"
+                            className="flex rounded py-1 px-3 font-medium hfa:bg-slate-100 dark:text-slate-300 dark:hfa:bg-slate-700/50"
                           >
                             {link.title}
                           </Link>
@@ -301,5 +269,30 @@ export const NavMobile: FC<{
         )}
       </Popover>
     </nav>
+  );
+};
+
+export const DropdownButton = ({ handleDropdownSelect, menuSelected, title, id }) => {
+  return (
+    <button
+      onClick={() => handleDropdownSelect(id)}
+      className={clsx(
+        "h-8 items-center rounded border-b-2 border-transparent py-1 pr-3 font-medium dark:text-slate-300",
+        menuSelected === id
+          ? "ml-3 inline-flex rounded-none border-b-slate-300 h:border-b-slate-400 dark:border-b-slate-700 dark:h:border-b-slate-600"
+          : "flex flex-1 pl-3 h:bg-slate-100 dark:h:bg-slate-700/50"
+      )}
+      style={{
+        transition:
+          menuSelected === id
+            ? "0.15s cubic-bezier(0.4, 0, 0.2, 1), border 0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+            : "0.15s cubic-bezier(0.4, 0, 0.2, 1), border 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+      }}
+    >
+      {title}
+      <div className="h-4 w-4 ">
+        <HeroIcon className="pointer-events-none ml-1 h-4 w-4" name="ChevronDownIcon" />
+      </div>
+    </button>
   );
 };

@@ -3,6 +3,7 @@ import { Image } from "_client/image";
 import { FC } from "react";
 import { ImageGallerySection } from "types/sections";
 import img1 from "/public/images/bg-gradient-light.jpg";
+import img2 from "/public/images/bg-gradient-darkpng.png";
 
 export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) => {
   return (
@@ -11,13 +12,20 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
         <figure className="absolute left-1/2 top-16 bottom-16 -z-20 -ml-[50vw] w-screen overflow-hidden bg-top bg-no-repeat">
           <Image
             src={img1}
-            width="123.25rem"
-            height=""
+            width={img1.width}
+            height={img1.height}
             alt="background image"
-            className="absolute bottom-0 top-0 left-1/2 block h-full min-w-[123.25rem] -translate-x-1/2"
+            className="absolute bottom-0 top-0 left-1/2 block h-full min-w-[123.25rem] -translate-x-1/2 dark:hidden"
+          />
+          <Image
+            src={img2}
+            width={img2.width}
+            height={img2.height}
+            alt="background image"
+            className="absolute bottom-0 top-0 left-1/2 hidden h-full min-w-[123.25rem] -translate-x-1/2 opacity-60 dark:block"
           />
         </figure>
-        <figure className="absolute left-1/2 top-16 bottom-16 -z-10 -ml-[50vw] h-full w-screen bg-grid-gray-900/[0.04] [mask-image:linear-gradient(0deg,transparent,black)]" />
+        <figure className="absolute left-1/2 top-16 bottom-16 -z-10 -ml-[50vw] h-full w-screen bg-grid-gray-900/[0.04] [mask-image:linear-gradient(0deg,transparent,black)] dark:bg-grid-gray-100/[0.05]" />
         <section className="mx-auto w-[80rem] min-w-[80rem] [mask-image:linear-gradient(0deg,transparent_0%,white_45%)]">
           <div className="relative flex items-end gap-8 px-8">
             {/*= =============== Image 1 ================ */}

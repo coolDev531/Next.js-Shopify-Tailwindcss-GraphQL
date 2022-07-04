@@ -35,9 +35,10 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
     <Wrapper
       maxWidth="xl"
       paddingY="base"
-      background={`url("/images/bg-gradient-light-180.jpg") top center no-repeat`}
+      // background={`url("/images/bg-gradient-light-180.jpg") top center no-repeat`}
       bgOpacity={0.6}
       bgHeight="calc(100% + 140px)"
+      bgClassName="bg-[url('/images/bg-gradient-light-180.jpg')] dark:bg-[url('/images/bg-gradient-templates.png')] bg-top bg-no-repeat"
     >
       <div className="flex flex-col gap-8">
         <BlockHeading

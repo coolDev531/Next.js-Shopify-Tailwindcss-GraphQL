@@ -106,11 +106,11 @@
             "settings": {
               "handle": "services",
               "menu_items": [
-                "shopify-customizations",
                 "shopify-full-sites",
+                "shopify-customizations",
                 "shopify-integration",
-                "shopify-website-maintenance",
-                "shopify-seo-packages"
+                "shopify-seo-packages",
+                "shopify-website-maintenance"
               ]
             }
           },

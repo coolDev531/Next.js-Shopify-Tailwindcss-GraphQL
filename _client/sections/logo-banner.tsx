@@ -70,7 +70,7 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
                     return (
                       <figure
                         key={product.id}
-                        className="relative w-full cursor-pointer opacity-60 grayscale transition-all hfa:opacity-100  hfa:grayscale-0"
+                        className="relative w-full cursor-pointer opacity-60 grayscale transition-all hfa:opacity-100 hfa:grayscale-0"
                         data-tip={product.title}
                         style={{
                           height: `${settings.height}px`,
@@ -116,8 +116,8 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
                 })}
               </div>
             </div>
-            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-[max(16px,calc((100vw-80rem)/2+16px))] bg-gradient-to-r from-transparent to-white sm:w-[max(32px,calc((100vw-80rem)/2+32px))] sm:from-transparent sm:via-white sm:to-white"></div>
-            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-[max(16px,calc((100vw-80rem)/2+16px))] bg-gradient-to-l from-transparent to-white sm:w-[max(32px,calc((100vw-80rem)/2+32px))] sm:from-transparent sm:via-white sm:to-white"></div>
+            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-[max(16px,calc((100vw-80rem)/2+16px))] bg-gradient-to-r from-transparent to-white dark:to-dark-bg sm:w-[max(32px,calc((100vw-80rem)/2+32px))] sm:from-transparent sm:via-white sm:to-white dark:sm:via-dark-bg dark:sm:to-dark-bg"></div>
+            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-[max(16px,calc((100vw-80rem)/2+16px))] bg-gradient-to-l from-transparent dark:to-dark-bg sm:w-[max(32px,calc((100vw-80rem)/2+32px))] sm:from-transparent sm:via-white sm:to-white dark:sm:via-dark-bg dark:sm:to-dark-bg"></div>
           </main>
         </section>
       </div>
@@ -128,7 +128,7 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
 export const LogoBannerItem = ({ title, image, height }) => {
   return (
     <figure
-      className="relative w-full cursor-pointer opacity-60 grayscale transition-all hfa:opacity-100  hfa:grayscale-0"
+      className="relative w-full cursor-pointer opacity-60 grayscale transition-all hfa:opacity-100 hfa:grayscale-0 dark:opacity-80 dark:brightness-125 dark:contrast-150 dark:hfa:opacity-100 dark:hfa:contrast-100"
       data-tip={title}
       style={{
         height: `${height}px`,
