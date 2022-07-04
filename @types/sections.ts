@@ -6,127 +6,30 @@ export type BackgroundSection = {
   type: "background";
 };
 
-export type BackgroundBlocks =
-  | {
-      id: string;
-      settings: {
-        /** Input type: range */
-        height: number;
-        /** Input type: range */
-        marginTop: number;
-        /** Input type: range */
-        opacity: number;
-        /** Input type: color_background */
-        color?: string;
-        /** Input type: textarea */
-        css?: string;
-        /** Input type: image_picker */
-        image?: _Image_liquid;
-        /** Input type: html */
-        svg?: string;
-      };
-      type: "all";
-    }
-  | {
-      id: string;
-      settings: {
-        /** Input type: range */
-        height: number;
-        /** Input type: range */
-        marginTop: number;
-        /** Input type: range */
-        opacity: number;
-        /** Input type: color_background */
-        color?: string;
-        /** Input type: textarea */
-        css?: string;
-        /** Input type: image_picker */
-        image?: _Image_liquid;
-        /** Input type: html */
-        svg?: string;
-      };
-      type: "mobile";
-    }
-  | {
-      id: string;
-      settings: {
-        /** Input type: range */
-        height: number;
-        /** Input type: range */
-        marginTop: number;
-        /** Input type: range */
-        opacity: number;
-        /** Input type: color_background */
-        color?: string;
-        /** Input type: textarea */
-        css?: string;
-        /** Input type: image_picker */
-        image?: _Image_liquid;
-        /** Input type: html */
-        svg?: string;
-      };
-      type: "mobile_tablet";
-    }
-  | {
-      id: string;
-      settings: {
-        /** Input type: range */
-        height: number;
-        /** Input type: range */
-        marginTop: number;
-        /** Input type: range */
-        opacity: number;
-        /** Input type: color_background */
-        color?: string;
-        /** Input type: textarea */
-        css?: string;
-        /** Input type: image_picker */
-        image?: _Image_liquid;
-        /** Input type: html */
-        svg?: string;
-      };
-      type: "tablet";
-    }
-  | {
-      id: string;
-      settings: {
-        /** Input type: range */
-        height: number;
-        /** Input type: range */
-        marginTop: number;
-        /** Input type: range */
-        opacity: number;
-        /** Input type: color_background */
-        color?: string;
-        /** Input type: textarea */
-        css?: string;
-        /** Input type: image_picker */
-        image?: _Image_liquid;
-        /** Input type: html */
-        svg?: string;
-      };
-      type: "tablet_desktop";
-    }
-  | {
-      id: string;
-      settings: {
-        /** Input type: range */
-        height: number;
-        /** Input type: range */
-        marginTop: number;
-        /** Input type: range */
-        opacity: number;
-        /** Input type: color_background */
-        color?: string;
-        /** Input type: textarea */
-        css?: string;
-        /** Input type: image_picker */
-        image?: _Image_liquid;
-        /** Input type: html */
-        svg?: string;
-      };
-      type: "desktop";
-    };
+export type BackgroundBlocks = {
+  id: string;
+  settings: {
+    /** Input type: range */
+    height: number;
+    /** Input type: range */
+    marginTop: number;
+    /** Input type: range */
+    opacity: number;
+    /** Input type: radio */
+    type: "all" | "mobile" | "mobile_tablet" | "tablet" | "tablet_desktop" | "desktop";
+    /** Input type: color_background */
+    color?: string;
+    /** Input type: textarea */
+    css?: string;
+    /** Input type: image_picker */
+    image?: _Image_liquid;
+    /** Input type: html */
+    svg?: string;
+    /** Input type: text */
+    title?: string;
+  };
+  type: "bg";
+};
 
 export type BlockquoteSection = {
   id: string;

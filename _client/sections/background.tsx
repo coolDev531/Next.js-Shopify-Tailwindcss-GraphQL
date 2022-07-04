@@ -19,7 +19,7 @@ export type BackgroundBlockProps = {
   type: BackgroundSection["blocks"][number]["type"];
 };
 
-export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, type, settings }) => {
+export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
   return (
     <>
       <style jsx>{`
@@ -30,7 +30,7 @@ export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, type, settings }
       <div
         id={`background-${id}`}
         className={clsx(
-          "absolute inset-x-0 -z-10 ml-[50%] w-screen -translate-x-1/2",
+          "pointer-events-none absolute inset-x-0 -z-10 ml-[50%] w-screen -translate-x-1/2 select-none",
           {
             all: "",
             mobile: "sm:hidden",
@@ -38,7 +38,7 @@ export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, type, settings }
             tablet: "hidden sm:block lg:hidden",
             tablet_desktop: "hidden sm:block",
             desktop: "hidden lg:block",
-          }[type]
+          }[settings.type]
         )}
         style={{
           background: settings.color,

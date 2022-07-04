@@ -64,7 +64,7 @@ export const Wrapper: FC<PropsWithChildren<SectionProps>> = ({
       {background
         ? <div
             className={clsx(
-              "pointer-events-none absolute left-0 bottom-0 z-0 h-full w-full select-none",
+              "pointer-events-none absolute left-0 bottom-0 -z-10 h-full w-full select-none",
               bgBlur && "border-y border-slate-200 backdrop-blur-md backdrop-saturate-200"
             )}
             style={{ background, height: bgHeight, opacity: bgOpacity }}
