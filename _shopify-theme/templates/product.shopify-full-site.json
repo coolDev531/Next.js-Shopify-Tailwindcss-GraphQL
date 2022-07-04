@@ -5,6 +5,57 @@
       "settings": {
       }
     },
+    "1656935895e67bca71": {
+      "type": "hero-with-features",
+      "blocks": {
+        "689e6e02-64ee-4082-adc0-5adbbcb4c9d7": {
+          "type": "feature",
+          "settings": {
+            "title": "Reach out",
+            "paragraph": "Have a question? or have a service you need. Choose an option that suites you or send us an enquiry. Our team is ready to get you started.",
+            "icon": "ui-1"
+          }
+        },
+        "8a2a41e9-564a-45c3-abac-f9443e19308f": {
+          "type": "feature",
+          "settings": {
+            "title": "Team Match",
+            "paragraph": "Based on your enquiry we will assign a dedicated project manager matched to assist you, they take the time to ensure your needs are taken care of.",
+            "icon": "ui-2"
+          }
+        },
+        "161fe8eb-8549-454a-8b98-b7ac8a2e64d1": {
+          "type": "feature",
+          "settings": {
+            "title": "Get started",
+            "paragraph": "You are in good hands. With your dedicated project manager, the sky is the limit, they will be there every step of the way to see that your project is complete.",
+            "icon": "ui-3"
+          }
+        }
+      },
+      "block_order": [
+        "689e6e02-64ee-4082-adc0-5adbbcb4c9d7",
+        "8a2a41e9-564a-45c3-abac-f9443e19308f",
+        "161fe8eb-8549-454a-8b98-b7ac8a2e64d1"
+      ],
+      "settings": {
+        "pre_title": "Websites tailored to your needs",
+        "title": "We create Shopify Ecommerce solutions.",
+        "tech": [
+          "shopify",
+          "copy-of-node-js",
+          "tailwindcss"
+        ],
+        "paragraph": "<p>Wether you want to built a new ecommerce store, migrate from a different platform, or need to upgrade your current site. We are here to help you succeed.<\/p>",
+        "cta1": "Get started",
+        "cta1_link": "#",
+        "cta2": "Learn more",
+        "cta2_link": "#",
+        "image_1": "shopify:\/\/shop_images\/2.png",
+        "image_2": "shopify:\/\/shop_images\/1.png",
+        "image_3": "shopify:\/\/shop_images\/3.png"
+      }
+    },
     "16547615501aa86d63": {
       "type": "heading",
       "settings": {
@@ -489,6 +540,7 @@
   },
   "order": [
     "main",
+    "1656935895e67bca71",
     "16547615501aa86d63",
     "16547615536da214ca",
     "165476159216c4ff5c",
