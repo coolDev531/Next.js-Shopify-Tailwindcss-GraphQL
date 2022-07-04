@@ -91,10 +91,10 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
               )}
             >
               <div className="mb-24 flex flex-col">
-                <section className="xl:mt-18 relative z-10 rounded-lg bg-white px-6 py-5 shadow-xl ring-1 ring-slate-900/5">
-                  <div className="pointer-events-none absolute inset-x-0 inset-y-5 border-t border-b border-slate-100" />
-                  <div className="pointer-events-none absolute inset-x-6 inset-y-0 border-l border-r border-slate-100" />
-                  <div className="bg-slate-100 py-6 px-6 sm:py-9">
+                <section className="xl:mt-18 relative z-10 rounded-lg bg-white px-6 py-5 shadow-xl ring-1 ring-slate-900/5 dark:bg-dark-card">
+                  <div className="pointer-events-none absolute inset-x-0 inset-y-5 border-t border-b border-slate-100 dark:border-slate-700/60" />
+                  <div className="pointer-events-none absolute inset-x-6 inset-y-0 border-l border-r border-slate-100 dark:border-slate-700/60" />
+                  <div className="bg-slate-100 py-6 px-6 dark:bg-dark-bg sm:py-9">
                     <header className="">
                       <Heading as="h3" size="lg">
                         {block.settings.title}
