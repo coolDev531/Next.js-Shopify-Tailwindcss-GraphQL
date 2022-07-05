@@ -15,9 +15,15 @@ export const logoBanner: ShopifySection = {
     },
     {
       type: "product_list",
-      id: "logo_items",
+      id: "products",
       label: "Logo Items",
-      info: "Featured Image & Title will be used",
+      info: "Logo / Featured Image & Title will be used",
+    },
+    {
+      type: "collection",
+      id: "collection",
+      label: "Collection",
+      info: "Logo Featured Image & Title will be used",
     },
     {
       type: "header",

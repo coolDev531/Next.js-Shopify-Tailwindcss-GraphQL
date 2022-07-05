@@ -28,7 +28,8 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
   );
 
   const paths = products
-    .filter((product) => product.product_type === "Service")
+    .filter((product) => product.status === "active")
+    .filter((product) => product.product_type === "Service" || product.product_type === "portfolio")
     .map((product) => ({
       params: { product: `${product.handle}` },
     }));

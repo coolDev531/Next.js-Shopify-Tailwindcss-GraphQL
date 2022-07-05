@@ -1,8 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "template-article",
-      "disabled": true,
+      "type": "template-product",
       "settings": {
       }
     },
@@ -14,7 +13,7 @@
         "paragraph": "<p>Hydrobiz is a Cape Town based company that supplies professional horticulture equipment and consumables. <\/p><p><br\/>We have worked with Hydrobiz in successfully upgrading their Shopify Website covering aspects from inventory management, web development, and integrating their website to DEAR POS system. <br\/><\/p>",
         "list_title": "What we did:",
         "list": "<p>Store design update<\/p><p>Shopify Web Development <\/p><p>Shopify to DEAR intergration <\/p><p><\/p>",
-        "image": "shopify:\/\/shop_images\/Hero-blue.png"
+        "image": "shopify:\/\/shop_images\/hydrobiz.jpg"
       }
     },
     "1654079897751048da": {
@@ -311,17 +310,17 @@
     "16542613555478f86d": {
       "type": "image-gallery",
       "settings": {
-        "image1": "shopify:\/\/shop_images\/collage-4.png",
+        "image1": "shopify:\/\/shop_images\/gallery-1.jpg",
         "title1": "",
-        "image2": "shopify:\/\/shop_images\/COLLAGE-2.png",
+        "image2": "shopify:\/\/shop_images\/Luna-Lemon-image5.jpg",
         "title2": "Graphic design",
-        "image3": "shopify:\/\/shop_images\/collage-6.png",
+        "image3": "shopify:\/\/shop_images\/gift-registry.jpg",
         "title3": "Gift Registry",
-        "image4": "shopify:\/\/shop_images\/collage-5.png",
+        "image4": "shopify:\/\/shop_images\/Product-view.jpg",
         "title4": "",
-        "image5": "shopify:\/\/shop_images\/COLLAGE-3.png",
+        "image5": "shopify:\/\/shop_images\/Website-baner.jpg",
         "title5": "",
-        "image6": "shopify:\/\/shop_images\/collage-1.png",
+        "image6": "shopify:\/\/shop_images\/image-photo.jpg",
         "title6": ""
       }
     },

@@ -132,7 +132,7 @@ export const DesktopNav: FC<{
                           leaveFrom="opacity-100 translate-y-0"
                           leaveTo="opacity-0 -translate-y-1"
                         >
-                          <Popover.Panel className="absolute inset-x-0 top-0 -z-10 hidden transform bg-white pt-[65px] shadow-lg focus-visible:outline-none dark:bg-dark-bg md:block">
+                          <Popover.Panel className="absolute inset-x-0 top-0 -z-10 hidden transform bg-white pt-[65px] shadow-lg focus-visible:outline-none dark:bg-dark-bg dark:shadow-white/10 md:block">
                             <SliderMenu items={block.settings.menu_items} link={link} />
                           </Popover.Panel>
                         </Transition>
@@ -178,7 +178,7 @@ export const DesktopNav: FC<{
                           leaveFrom="opacity-100 translate-y-0"
                           leaveTo="opacity-0 -translate-y-1"
                         >
-                          <Popover.Panel className="absolute inset-x-0 top-0 -z-10 hidden transform bg-white pt-[65px] shadow-lg focus-visible:outline-none dark:bg-dark-bg md:block">
+                          <Popover.Panel className="absolute inset-x-0 top-0 -z-10 hidden transform bg-white pt-[65px] shadow-lg focus-visible:outline-none dark:bg-dark-bg dark:shadow-white/10 md:block">
                             <PortfolioMenu {...block.settings} links={link.links} />
                           </Popover.Panel>
                         </Transition>

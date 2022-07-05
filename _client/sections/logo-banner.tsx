@@ -1,6 +1,7 @@
 import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { useTooltipStore } from "_client/stores/tooltip-store";
+import clsx from "clsx";
 import { FC } from "react";
 import { LogoBannerSection } from "types/sections";
 
@@ -31,90 +32,8 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
                 animationPlayState: !settings.animate ? "paused" : "",
               }}
             >
-              <div className="grid auto-cols-max grid-flow-col-dense gap-12">
-                {settings.logo_items
-                  .filter((p) => p.featured_media)
-                  .map((product) => (
-                    <LogoBannerItem
-                      key={product.id}
-                      height={settings.height}
-                      title={product.title}
-                      image={product.featured_media}
-                    />
-                  ))}
-                {blocks.map((block) => {
-                  switch (block.type) {
-                    case "manual-image":
-                      return block.settings.image
-                        ? <LogoBannerItem
-                            key={block.id}
-                            height={settings.height}
-                            title={block.settings.title}
-                            image={block.settings.image}
-                          />
-                        : null;
-                    case "manual-svg":
-                      return (
-                        <figure
-                          key={block.id}
-                          dangerouslySetInnerHTML={{ __html: block.settings.svg }}
-                        />
-                      );
-                  }
-                })}
-              </div>
-              <div className="ml-12 hidden auto-cols-max grid-flow-col-dense gap-12 md:grid">
-                {settings.logo_items
-                  .filter((p) => p.featured_media)
-                  .map((product) => {
-                    return (
-                      <figure
-                        key={product.id}
-                        className="relative w-full cursor-pointer opacity-60 grayscale transition-all hfa:opacity-100 hfa:grayscale-0"
-                        data-tip={product.title}
-                        style={{
-                          height: `${settings.height}px`,
-                          width: `${product.featured_media.aspect_ratio * settings.height}px`,
-                          /*backgroundImage: `url('${product.featured_media.src}')`
-                      backgroundSize: "contain"*/
-                        }}
-                      >
-                        <LogoBannerItem
-                          key={product.id}
-                          height={settings.height}
-                          title={product.title}
-                          image={product.featured_media}
-                        />
-                      </figure>
-                    );
-                  })}
-                {blocks.map((block) => {
-                  switch (block.type) {
-                    case "manual-image":
-                      return block.settings.image
-                        ? <figure
-                            key={block.id}
-                            className="relative w-full"
-                            style={{ height: `${settings.height}px` }}
-                          >
-                            <LogoBannerItem
-                              key={block.id}
-                              height={settings.height}
-                              title={block.settings.title}
-                              image={block.settings.image}
-                            />
-                          </figure>
-                        : null;
-                    case "manual-svg":
-                      return (
-                        <figure
-                          key={block.id}
-                          dangerouslySetInnerHTML={{ __html: block.settings.svg }}
-                        />
-                      );
-                  }
-                })}
-              </div>
+              <LogoBannerSlider settings={settings} blocks={blocks} />
+              <LogoBannerSlider settings={settings} blocks={blocks} className="!hidden md:!grid" />
             </div>
             <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-[max(16px,calc((100vw-80rem)/2+16px))] bg-gradient-to-r from-transparent to-white dark:to-dark-bg sm:w-[max(32px,calc((100vw-80rem)/2+32px))] sm:from-transparent sm:via-white sm:to-white dark:sm:via-dark-bg dark:sm:to-dark-bg"></div>
             <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-[max(16px,calc((100vw-80rem)/2+16px))] bg-gradient-to-l from-transparent dark:to-dark-bg sm:w-[max(32px,calc((100vw-80rem)/2+32px))] sm:from-transparent sm:via-white sm:to-white dark:sm:via-dark-bg dark:sm:to-dark-bg"></div>
@@ -122,6 +41,56 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
         </section>
       </div>
     </Wrapper>
+  );
+};
+
+export const LogoBannerSlider: FC<
+  Omit<LogoBannerSection, "id" | "type"> & { className?: string }
+> = ({ settings, blocks, className }) => {
+  return (
+    <div className={clsx("grid auto-cols-max grid-flow-col-dense gap-12", className)}>
+      {settings.products
+        ?.filter((p) => p.metafields.find(({ key }) => key === "logo") || p.featured_media)
+        .map((product) => (
+          <LogoBannerItem
+            key={product.id}
+            height={settings.height}
+            title={product.title}
+            image={
+              product.metafields.find(({ key }) => key === "logo").value ?? product.featured_media
+            }
+          />
+        ))}
+      {settings.collection?.products
+        ?.filter((p) => p.metafields.find(({ key }) => key === "logo") || p.featured_media)
+        .map((product) => (
+          <LogoBannerItem
+            key={product.id}
+            height={settings.height}
+            title={product.title}
+            image={
+              product.metafields.find(({ key }) => key === "logo").value ?? product.featured_media
+            }
+          />
+        ))}
+      {blocks.map((block) => {
+        switch (block.type) {
+          case "manual-image":
+            return block.settings.image
+              ? <LogoBannerItem
+                  key={block.id}
+                  height={settings.height}
+                  title={block.settings.title}
+                  image={block.settings.image}
+                />
+              : null;
+          case "manual-svg":
+            return (
+              <figure key={block.id} dangerouslySetInnerHTML={{ __html: block.settings.svg }} />
+            );
+        }
+      })}
+    </div>
   );
 };
 

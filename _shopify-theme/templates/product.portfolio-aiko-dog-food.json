@@ -1,8 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "template-article",
-      "disabled": true,
+      "type": "template-product",
       "settings": {
       }
     },

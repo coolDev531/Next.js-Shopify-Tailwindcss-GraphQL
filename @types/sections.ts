@@ -300,6 +300,10 @@ export type ImageCarouselSection = {
     animation_duration: number;
     /** Input type: select */
     position: "left" | "center" | "right";
+    /** Input type: blog */
+    blog?: _Blog_liquid;
+    /** Input type: collection */
+    collection?: _Collection_liquid;
     /** Input type: text */
     cta1?: string;
     /** Input type: url */
@@ -308,12 +312,12 @@ export type ImageCarouselSection = {
     cta2?: string;
     /** Input type: url */
     cta2_link?: string;
-    /** Input type: blog */
-    images?: _Blog_liquid;
     /** Input type: richtext */
     paragraph?: `<p${string}</p>`;
     /** Input type: text */
     pre_title?: string;
+    /** Input type: product_list */
+    products?: _Product_liquid[];
     /** Input type: text */
     title?: string;
   };
@@ -428,8 +432,10 @@ export type LogoBannerSection = {
     animation_duration: number;
     /** Input type: range */
     height: number;
+    /** Input type: collection */
+    collection?: _Collection_liquid;
     /** Input type: product_list */
-    logo_items?: _Product_liquid[];
+    products?: _Product_liquid[];
     /** Input type: text */
     title?: string;
   };

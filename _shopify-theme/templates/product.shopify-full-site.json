@@ -422,7 +422,11 @@
         "cta2": "",
         "cta2_link": "",
         "position": "center",
-        "images": "",
+        "products": [
+
+        ],
+        "collection": "",
+        "blog": "",
         "animate": false,
         "animation_duration": 20
       }
@@ -431,9 +435,10 @@
       "type": "logo-banner",
       "settings": {
         "title": "Brands we've worked with",
-        "logo_items": [
+        "products": [
 
         ],
+        "collection": "portfolio",
         "height": 40,
         "animate": false,
         "animation_duration": 20
@@ -512,7 +517,11 @@
         "cta2": "",
         "cta2_link": "",
         "position": "center",
-        "images": "work",
+        "products": [
+
+        ],
+        "collection": "",
+        "blog": "work",
         "animate": false,
         "animation_duration": 20
       }

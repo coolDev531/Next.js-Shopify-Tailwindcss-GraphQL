@@ -1,8 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "template-article",
-      "disabled": true,
+      "type": "template-product",
       "settings": {
       }
     },
@@ -10,35 +9,35 @@
       "type": "hero",
       "settings": {
         "pre_title": "Portfolio of Work",
-        "title": "Aiko Dog Food",
-        "paragraph": "<p>Delicious and healthy insect-based dog food. Good for sensitive stomachs and the planet. Aiko’s founders, Natalie and Nora, are good friends who share a love for their furry friends. When they both failed to find dog food that met their needs in terms of health, quality and especially sustainability, they decided to make it themselves, and so Aiko was born. Now their furry friends eat delicious, earth-friendly Aiko every day.<\/p><p><\/p><p>We helped Aiko successfully launch their website, after having to rescue and put together from a half developed custom design from previous developers. We have worked closely to match their budget with a two-point plan, fixing their initial site and removing essential functionality for an accelerated launch, and a full custom design development.<\/p>",
-        "list": "<p>What we did (services):<br\/>•\tCustom Theme and Web development<br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/Capture.jpg"
+        "title": "Broadway Jewellers",
+        "paragraph": "<p>Broadway Jewellers provides a wide range of branded watches, Jewellery and accessories. They strive every day to earn the confidence and trust of their clients by exceeding their expectations of quality, service, and value. <\/p><p><\/p><p>Our work with Broadway Jewellers starting with migrating their site form WordPress to Shopify, we also covered an array of aspects from inventory management, digital marketing, SEO web solutions, web design upgrade to custom API solutions.<\/p>",
+        "list_title": "What we did:",
+        "list": "<p>Store Migration <\/p><p>Shopify Web Development<\/p><p>Custom Features Development<\/p><p>Custom App Integrations<\/p><p>Monthly SEO & Site maintenance support<\/p>",
+        "image": "shopify:\/\/shop_images\/image-mock---Liz.png"
       }
     },
     "1654079897751048da": {
       "type": "stats-graph",
-      "disabled": true,
       "blocks": {
         "8457496c-859c-46a2-8653-4953e4e81a20": {
           "type": "stat",
           "settings": {
-            "stat": "4000+",
-            "descriptions": "Products & Variants"
+            "stat": "8500+",
+            "descriptions": "Website visits"
           }
         },
         "b206c8f8-78d7-4074-bae7-a25fdfa286ce": {
           "type": "stat",
           "settings": {
-            "stat": "241+",
-            "descriptions": "Collections"
+            "stat": "190+",
+            "descriptions": "Website subscribers"
           }
         },
         "daf38169-f867-497d-b358-3af89c50830e": {
           "type": "stat",
           "settings": {
-            "stat": "100+",
-            "descriptions": "Brands"
+            "stat": "350+",
+            "descriptions": "New leads"
           }
         }
       },
@@ -52,17 +51,16 @@
     },
     "16540846002974a6ff": {
       "type": "story",
-      "disabled": true,
       "blocks": {
         "93e0ffb2-4809-45bb-88aa-7cf835fef608": {
           "type": "heading",
           "settings": {
             "pre_title": "Case in point",
-            "title": "Going from zero to hero",
-            "paragraph": "<p>How we overcome Kids Livings challenge on having ther product information on BigCommerce and on an ancient POS system to a all round solution with VEND and Shopify.<\/p>",
-            "cta1": "asdasdasd",
+            "title": "From problem to solution",
+            "paragraph": "<p>How we overcome Broadway Jewellers challenges to migrate their store from WordPress to Shopify and having an updated store design and content flow to showcase their large amount of inventory. We continuously worked with them to increase site visits, engagement, and product purchases. <br\/><\/p>",
+            "cta1": "Develop your website",
             "cta1_link": "#",
-            "cta2": "asd",
+            "cta2": "Explore all services",
             "cta2_link": "#",
             "position": "center"
           }
@@ -70,20 +68,61 @@
         "364ea5e8-5749-4d69-b8f0-528e5aab9c5b": {
           "type": "image-text",
           "settings": {
-            "pre_title": "Continues communication & feedback",
-            "title": "",
-            "paragraph": "<p>Continuous development with regular meeting intervals discussing opportunities for growth and improvements. We take the time to understanding the clients’ products, customers, and overall needs.<\/p>",
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "pre_title": "Starting off the journey to Success",
+            "title": "Migration & Development",
+            "paragraph": "<p>When we started the project with Broadway Jewellers. We first needed to understand the information and data that needed to be sorted through and migrated to the Shopify platform from WordPress. Our team did an extensive analysis and created a strategic plan that ensured the old website's SEO, content, and web rankings were kept intact during the migration.<\/p><p> <br\/>With the content migration complete, our team started developing the Shopify website according to our clients’ needs while taking to account the key functions and features required for website.<br\/><br\/><\/p>",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/web-development_cbf6041a-748b-437d-b9fc-9affbe986e64.png",
+            "aspect_desktop": "4-3",
+            "fit_height": false,
+            "aspect_mobile": "4-3",
             "position": "left"
           }
         },
         "4729554a-b37a-42dd-b189-ab78ef716946": {
           "type": "image-text",
           "settings": {
-            "pre_title": "asd",
-            "title": "asd",
-            "paragraph": "<p>asd<\/p>",
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "pre_title": "Continuous work for continuous results",
+            "title": "SEO & Site Maintenance",
+            "paragraph": "<p>After a successful website build and launch. We worked on optimizing their websites and a monthly maintenance plan. Our team worked on creating monthly plans on improving and optimization our client’s website. They continually use and develop cutting-edge SEO tools and crawling software to identify and analyze technical SEO factors that needs to be addressed. They also worked on product content research and creation. Consistently working on the website and keeping up to date with the ever-evolving online environment.<\/p>",
+            "list_title": "",
+            "list": "<p>Website data backup<\/p><p>Stand by for website queries or requests <\/p><p>Website updates and customizations <\/p><p>Evaluating current keyword rankings<\/p><p>Identifying and creating quality links<\/p><p>Content research & creation <\/p><p>Product content quality analysis and update<\/p>",
+            "image": "shopify:\/\/shop_images\/seo-and-site-maintenance.png",
+            "aspect_desktop": "4-3",
+            "fit_height": false,
+            "aspect_mobile": "4-3",
+            "position": "right"
+          }
+        },
+        "335e486e-acc3-4378-94be-fa0dc73c7a39": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Working on targeting the right audience",
+            "title": "Google & Social Media Ads",
+            "paragraph": "<p>When we first took over the client’s social ad campaigns, one of the biggest challenges was finding the people interested in its products. The company’s target audience of jewellery and watches was so broad at that time. Our team performed several campaign audits and market analyses to quickly determine the client’s ideal target market, drive website purchases and deliver a solid return. <\/p>",
+            "list_title": "",
+            "list": "<p>Audience AB testing <\/p><p>Promoting highest-priority products<\/p><p>Monthly ad goals and review<\/p><p>Special occasions & dates campaigns<\/p><p>Product placement ads<\/p>",
+            "image": "shopify:\/\/shop_images\/Google-and-social-media-ads.png",
+            "aspect_desktop": "4-3",
+            "fit_height": false,
+            "aspect_mobile": "4-3",
+            "position": "left"
+          }
+        },
+        "0006cd19-f0fe-42e3-a223-964cdd22172a": {
+          "type": "image-text",
+          "disabled": true,
+          "settings": {
+            "pre_title": "Google & social media ads",
+            "title": "",
+            "paragraph": "",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/45666405_2210510059223205_2884315360159139887_n.jpg",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
             "position": "right"
           }
         }
@@ -91,125 +130,9 @@
       "block_order": [
         "93e0ffb2-4809-45bb-88aa-7cf835fef608",
         "364ea5e8-5749-4d69-b8f0-528e5aab9c5b",
-        "4729554a-b37a-42dd-b189-ab78ef716946"
-      ],
-      "settings": {
-      }
-    },
-    "16541733016b2d4288": {
-      "type": "tabs-image-card",
-      "disabled": true,
-      "blocks": {
-        "a97114d1-2a70-40f3-9f0c-32751ea9b4ab": {
-          "type": "heading",
-          "settings": {
-            "pre_title": "Custom builder",
-            "title": "",
-            "paragraph": "<p>asdasd<\/p>",
-            "cta1": "asd",
-            "cta1_link": "##",
-            "cta2": "asdasd",
-            "cta2_link": "#",
-            "position": "left"
-          }
-        },
-        "2353a22b-85ba-4a79-9a1c-23bbf71d60d7": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Custom filter & search function",
-            "title": "Custom filter & search function",
-            "paragraph": "<p>This custom filter function helps search for products based on the model, year, and trim of vehicle.<\/p>",
-            "cta1": "asdasd",
-            "cta1_link": "#",
-            "cta2": "",
-            "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
-            "image_link": ""
-          }
-        },
-        "5580bf76-a72e-4bfe-8d9d-a63518f96cc5": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Product content set-up",
-            "title": "Product content set-up",
-            "paragraph": "<p>This helped all products have a uniform content set and that linked to the filter function on the website. <\/p>",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/ampersand-01-classic.jpg",
-            "image_link": ""
-          }
-        },
-        "d507e67a-14b7-473e-a024-ccb8262d029c": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "tab_title": "Google rating integration",
-            "title": "Google rating integration",
-            "paragraph": "<p>This integration helps increase the overall trust of visitors to the store by showcasing their live google ratings<\/p>",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/heart-02-shoreline.jpg",
-            "image_link": ""
-          }
-        },
-        "e3679b31-516e-4d8d-8463-58315b3dbaec": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "tab_title": "Customized logo band",
-            "title": "Customized logo band",
-            "paragraph": "<p>This custom built helped showcase the large amount of brands that kidsliving offers while highlighted the logos flawlessly into the shops home page <\/p>",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "image_link": ""
-          }
-        },
-        "57ab776c-10cd-4f7c-8b42-5b73d6edd21a": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "tab_title": "asdasdasd",
-            "title": "",
-            "paragraph": "",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "image_link": ""
-          }
-        },
-        "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "tab_title": "123sadasdadsasd",
-            "title": "",
-            "paragraph": "",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "image": "shopify:\/\/shop_images\/ms-icon-310x310.png",
-            "image_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "a97114d1-2a70-40f3-9f0c-32751ea9b4ab",
-        "2353a22b-85ba-4a79-9a1c-23bbf71d60d7",
-        "5580bf76-a72e-4bfe-8d9d-a63518f96cc5",
-        "d507e67a-14b7-473e-a024-ccb8262d029c",
-        "e3679b31-516e-4d8d-8463-58315b3dbaec",
-        "57ab776c-10cd-4f7c-8b42-5b73d6edd21a",
-        "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41"
+        "4729554a-b37a-42dd-b189-ab78ef716946",
+        "335e486e-acc3-4378-94be-fa0dc73c7a39",
+        "0006cd19-f0fe-42e3-a223-964cdd22172a"
       ],
       "settings": {
       }
@@ -251,6 +174,126 @@
         "height": 50,
         "animate": false,
         "animation_duration": 70
+      }
+    },
+    "16541733016b2d4288": {
+      "type": "tabs-image-card",
+      "blocks": {
+        "a97114d1-2a70-40f3-9f0c-32751ea9b4ab": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "Custom Features",
+            "title": "We have worked with Broadway Jewellers on a number of unique features",
+            "paragraph": "<p>Our team of Shopify web developers work closely with our clients to<br\/>create a selection of suitable options, and unique features that perfectly<br\/>represent their vision and needs.<\/p>",
+            "cta1": "",
+            "cta1_link": "##",
+            "cta2": "",
+            "cta2_link": "#",
+            "position": "left"
+          }
+        },
+        "5580bf76-a72e-4bfe-8d9d-a63518f96cc5": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Jewellery Customizer",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "Jewellery customizer",
+            "paragraph": "<p>This Jewellery customizer helps users choose options to create their own personalized necklace, or bracelet by typing in their name, choosing the material, size, font style and language.<\/p>",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/1.jpg",
+            "image_link": ""
+          }
+        },
+        "2353a22b-85ba-4a79-9a1c-23bbf71d60d7": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Custom Filter Functionality",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "Custom Filter Functionality",
+            "paragraph": "<p>This Custom Filter Functionality was built to filter through the products with specific features related to product colour, gender, materials, and water resistance options.<\/p>",
+            "cta1": "",
+            "cta1_link": "#",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/filter-functionanilty.jpg",
+            "image_link": ""
+          }
+        },
+        "d507e67a-14b7-473e-a024-ccb8262d029c": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Shopify to take-a-lot",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "Shopify to take-a-lot",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/Shopify-take-a-lot-integration.jpg",
+            "image_link": ""
+          }
+        },
+        "e3679b31-516e-4d8d-8463-58315b3dbaec": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Shopify to Courier guy",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "Shopify to Courier guy",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/Shopify-corrier-guy-integration.jpg",
+            "image_link": ""
+          }
+        },
+        "57ab776c-10cd-4f7c-8b42-5b73d6edd21a": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Product review app",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "Product review app",
+            "paragraph": "<p>This integration helps increase the overall trust of visitors to the<br\/>store and increases conversion by showcasing ratings of the particular product.<\/p>",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/Lunalemon-pictures1_26891528-ca84-4d23-a9f0-1bdbda7e7943.jpg",
+            "image_link": ""
+          }
+        },
+        "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_title": "123sadasdadsasd",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/ms-icon-310x310.png",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a97114d1-2a70-40f3-9f0c-32751ea9b4ab",
+        "5580bf76-a72e-4bfe-8d9d-a63518f96cc5",
+        "2353a22b-85ba-4a79-9a1c-23bbf71d60d7",
+        "d507e67a-14b7-473e-a024-ccb8262d029c",
+        "e3679b31-516e-4d8d-8463-58315b3dbaec",
+        "57ab776c-10cd-4f7c-8b42-5b73d6edd21a",
+        "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41"
+      ],
+      "settings": {
       }
     },
     "16542555547186860a": {
@@ -329,6 +372,7 @@
       ],
       "settings": {
         "color_bg": "linear-gradient(145deg, rgba(2, 77, 164, 1), rgba(1, 155, 199, 1) 100%)",
+        "blur_bg": true,
         "color_toggle": "light"
       }
     },
@@ -344,17 +388,17 @@
     "16542613555478f86d": {
       "type": "image-gallery",
       "settings": {
-        "image1": "shopify:\/\/shop_images\/gallery-1.jpg",
+        "image1": "shopify:\/\/shop_images\/watch-1--collage.png",
         "title1": "",
-        "image2": "shopify:\/\/shop_images\/Luna-Lemon-image5.jpg",
+        "image2": "shopify:\/\/shop_images\/home-paage-collage-1.png",
         "title2": "Graphic design",
-        "image3": "shopify:\/\/shop_images\/gift-registry.jpg",
+        "image3": "shopify:\/\/shop_images\/image-mock---Liz_6d5c8621-dfec-4982-b7bb-9afa83d8c72a.png",
         "title3": "Gift Registry",
-        "image4": "shopify:\/\/shop_images\/Product-view.jpg",
+        "image4": "shopify:\/\/shop_images\/collage-3-home-page.png",
         "title4": "",
-        "image5": "shopify:\/\/shop_images\/Website-baner.jpg",
+        "image5": "shopify:\/\/shop_images\/diseal-collage-2.png",
         "title5": "",
-        "image6": "shopify:\/\/shop_images\/image-photo.jpg",
+        "image6": "shopify:\/\/shop_images\/collage-5-contact.png",
         "title6": ""
       }
     },

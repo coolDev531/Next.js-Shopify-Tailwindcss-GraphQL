@@ -1,8 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "template-article",
-      "disabled": true,
+      "type": "template-product",
       "settings": {
       }
     },
@@ -10,10 +9,10 @@
       "type": "hero",
       "settings": {
         "pre_title": "Portfolio of Work",
-        "title": "Aiko Dog Food",
-        "paragraph": "<p>Delicious and healthy insect-based dog food. Good for sensitive stomachs and the planet. Aiko’s founders, Natalie and Nora, are good friends who share a love for their furry friends. When they both failed to find dog food that met their needs in terms of health, quality and especially sustainability, they decided to make it themselves, and so Aiko was born. Now their furry friends eat delicious, earth-friendly Aiko every day.<\/p><p><\/p><p>We helped Aiko successfully launch their website, after having to rescue and put together from a half developed custom design from previous developers. We have worked closely to match their budget with a two-point plan, fixing their initial site and removing essential functionality for an accelerated launch, and a full custom design development.<\/p>",
-        "list": "<p>What we did (services):<br\/>•\tCustom Theme and Web development<br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/Capture.jpg"
+        "title": "MindOverMatter",
+        "paragraph": "<p>The Mind over Matter Foundation (Non-profit Company K2021991397) was formed with the intention of providing help for those with cancer who cannot afford the latest and most advanced technologies and healthcare services, which are currently only available in the private sector.<\/p><p><\/p><p>We have worked with the Mind Over Matter foundation in 2021 to create a complete new Shopify experience, where the ecommerce functionality is primarily used to support Sponsorship for the foundation. Part of the site is a complete custom builder to allow sponsors to send Merchandise to their list of donors. We have created the site on an accelerated timeframe to suit the Mind Over Matters launch date.<\/p>",
+        "list": "<p>What we did (services):<br\/>•\tWeb Development<br\/>•\tCustom theme editing<br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
+        "image": "shopify:\/\/shop_images\/271695288_209918818020486_1978859092656950454_n.jpg"
       }
     },
     "1654079897751048da": {
@@ -59,7 +58,7 @@
           "settings": {
             "pre_title": "Case in point",
             "title": "Going from zero to hero",
-            "paragraph": "<p>How we overcome Kids Livings challenge on having ther product information on BigCommerce and on an ancient POS system to a all round solution with VEND and Shopify.<\/p>",
+            "paragraph": "<p>We have worked with the Mind Over Matter foundation in 2021 to create a complete new Shopify experience, where the ecommerce functionality is primarily used to support Sponsorship for the foundation. Part of the site is a complete custom builder to allow sponsors to send Merchandise to their list of donors. We have created the site on an accelerated timeframe to suit the Mind Over Matters launch date.<\/p>",
             "cta1": "asdasdasd",
             "cta1_link": "#",
             "cta2": "asd",
@@ -94,6 +93,45 @@
         "4729554a-b37a-42dd-b189-ab78ef716946"
       ],
       "settings": {
+      }
+    },
+    "16540875305d711f9e": {
+      "type": "info-cards",
+      "settings": {
+        "pre_title": "Explore",
+        "title": "The tech we used:",
+        "content_list": [
+          "shopify",
+          "vend-pos"
+        ]
+      }
+    },
+    "1654092902cc4e4a33": {
+      "type": "logo-banner",
+      "settings": {
+        "title": "",
+        "products": [
+          "graphql",
+          "copy-of-css",
+          "eslint",
+          "postman",
+          "sendgrid",
+          "sass",
+          "vercel",
+          "windows-support",
+          "ios",
+          "amazon-web-services",
+          "github",
+          "google-analytics",
+          "google-tag-manager",
+          "grunt",
+          "gulp",
+          "typescript",
+          "shopify"
+        ],
+        "height": 50,
+        "animate": false,
+        "animation_duration": 70
       }
     },
     "16541733016b2d4288": {
@@ -212,45 +250,6 @@
         "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41"
       ],
       "settings": {
-      }
-    },
-    "16540875305d711f9e": {
-      "type": "info-cards",
-      "settings": {
-        "pre_title": "Explore",
-        "title": "The tech we used:",
-        "content_list": [
-          "shopify",
-          "vend-pos"
-        ]
-      }
-    },
-    "1654092902cc4e4a33": {
-      "type": "logo-banner",
-      "settings": {
-        "title": "",
-        "products": [
-          "graphql",
-          "copy-of-css",
-          "eslint",
-          "postman",
-          "sendgrid",
-          "sass",
-          "vercel",
-          "windows-support",
-          "ios",
-          "amazon-web-services",
-          "github",
-          "google-analytics",
-          "google-tag-manager",
-          "grunt",
-          "gulp",
-          "typescript",
-          "shopify"
-        ],
-        "height": 50,
-        "animate": false,
-        "animation_duration": 70
       }
     },
     "16542555547186860a": {

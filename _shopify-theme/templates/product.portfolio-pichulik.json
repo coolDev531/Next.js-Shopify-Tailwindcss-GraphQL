@@ -1,8 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "template-article",
-      "disabled": true,
+      "type": "template-product",
       "settings": {
       }
     },
@@ -10,10 +9,10 @@
       "type": "hero",
       "settings": {
         "pre_title": "Portfolio of Work",
-        "title": "Aiko Dog Food",
-        "paragraph": "<p>Delicious and healthy insect-based dog food. Good for sensitive stomachs and the planet. Aiko’s founders, Natalie and Nora, are good friends who share a love for their furry friends. When they both failed to find dog food that met their needs in terms of health, quality and especially sustainability, they decided to make it themselves, and so Aiko was born. Now their furry friends eat delicious, earth-friendly Aiko every day.<\/p><p><\/p><p>We helped Aiko successfully launch their website, after having to rescue and put together from a half developed custom design from previous developers. We have worked closely to match their budget with a two-point plan, fixing their initial site and removing essential functionality for an accelerated launch, and a full custom design development.<\/p>",
-        "list": "<p>What we did (services):<br\/>•\tCustom Theme and Web development<br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/Capture.jpg"
+        "title": "Pichulik",
+        "paragraph": "<p>PICHULIK is an women run, ethical jewellery Atelier based in Cape Town, South Africa. Rooted in Africa, and inspired by ancient traditions and cultures around the world, PICHULIK seeks to impart sacred feminine wisdom through its unique and intentional designs.<\/p><p><\/p><p>We have worked with Pichulik to take their existing Shopify store into an International site & local site and developed a custom navigation to improve their user experience.<br\/>We have worked on the project in partnership with Thinn who has handled their POS integration and account management.<br\/><\/p>",
+        "list": "<p>What we did (services):<br\/>•\tWeb Development<br\/>•\tCustom Features Development <br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
+        "image": "shopify:\/\/shop_images\/Capture1.jpg"
       }
     },
     "1654079897751048da": {
@@ -59,7 +58,7 @@
           "settings": {
             "pre_title": "Case in point",
             "title": "Going from zero to hero",
-            "paragraph": "<p>How we overcome Kids Livings challenge on having ther product information on BigCommerce and on an ancient POS system to a all round solution with VEND and Shopify.<\/p>",
+            "paragraph": "<p>We have worked with Pichulik to take their existing Shopify store into an International site & local site and developed a custom navigation to improve their user experience.<br\/>We have worked on the project in partnership with Thinn who has handled their POS integration and account management.<br\/><\/p>",
             "cta1": "asdasdasd",
             "cta1_link": "#",
             "cta2": "asd",
@@ -98,7 +97,6 @@
     },
     "16541733016b2d4288": {
       "type": "tabs-image-card",
-      "disabled": true,
       "blocks": {
         "a97114d1-2a70-40f3-9f0c-32751ea9b4ab": {
           "type": "heading",

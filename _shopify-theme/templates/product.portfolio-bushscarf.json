@@ -1,8 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "template-article",
-      "disabled": true,
+      "type": "template-product",
       "settings": {
       }
     },
@@ -10,10 +9,11 @@
       "type": "hero",
       "settings": {
         "pre_title": "Portfolio of Work",
-        "title": "Aiko Dog Food",
-        "paragraph": "<p>Delicious and healthy insect-based dog food. Good for sensitive stomachs and the planet. Aiko’s founders, Natalie and Nora, are good friends who share a love for their furry friends. When they both failed to find dog food that met their needs in terms of health, quality and especially sustainability, they decided to make it themselves, and so Aiko was born. Now their furry friends eat delicious, earth-friendly Aiko every day.<\/p><p><\/p><p>We helped Aiko successfully launch their website, after having to rescue and put together from a half developed custom design from previous developers. We have worked closely to match their budget with a two-point plan, fixing their initial site and removing essential functionality for an accelerated launch, and a full custom design development.<\/p>",
-        "list": "<p>What we did (services):<br\/>•\tCustom Theme and Web development<br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/Capture.jpg"
+        "title": "Bush Scarf",
+        "paragraph": "<p>Est. 2016, Bush Scarf focuses on quality handwoven bamboo and mohair scarves. Locally made and proudly South African, the scarves express beauty, elegancy, and simplicity through the vivid and strong colour tones in their designs.<br\/><br\/>We worked with Bushscarf in successfully developing their Shopify Website covering aspects from product photography, product image editing and product content creation.<br\/><\/p>",
+        "list_title": "What we did:",
+        "list": "<p>Web Development<\/p><p>Custom theme editing <\/p><p>Product content creation<\/p>",
+        "image": "shopify:\/\/shop_images\/yarn-1_530x530_crop_top_2x_b0c839fc-8bfe-47d7-b418-1c69e5cf030b.jpg"
       }
     },
     "1654079897751048da": {
@@ -73,7 +73,12 @@
             "pre_title": "Continues communication & feedback",
             "title": "",
             "paragraph": "<p>Continuous development with regular meeting intervals discussing opportunities for growth and improvements. We take the time to understanding the clients’ products, customers, and overall needs.<\/p>",
+            "list_title": "",
+            "list": "",
             "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
             "position": "left"
           }
         },
@@ -83,7 +88,12 @@
             "pre_title": "asd",
             "title": "asd",
             "paragraph": "<p>asd<\/p>",
+            "list_title": "",
+            "list": "",
             "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
             "position": "right"
           }
         }
@@ -94,6 +104,28 @@
         "4729554a-b37a-42dd-b189-ab78ef716946"
       ],
       "settings": {
+      }
+    },
+    "16540875305d711f9e": {
+      "type": "info-cards",
+      "settings": {
+        "pre_title": "asdasd",
+        "title": "asdasdasd",
+        "content_list": [
+
+        ]
+      }
+    },
+    "1654092902cc4e4a33": {
+      "type": "logo-banner",
+      "settings": {
+        "title": "",
+        "products": [
+
+        ],
+        "height": 40,
+        "animate": false,
+        "animation_duration": 20
       }
     },
     "16541733016b2d4288": {
@@ -117,6 +149,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Custom filter & search function",
+            "tab_icon": "BadgeCheckIcon",
             "title": "Custom filter & search function",
             "paragraph": "<p>This custom filter function helps search for products based on the model, year, and trim of vehicle.<\/p>",
             "cta1": "asdasd",
@@ -131,6 +164,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Product content set-up",
+            "tab_icon": "BadgeCheckIcon",
             "title": "Product content set-up",
             "paragraph": "<p>This helped all products have a uniform content set and that linked to the filter function on the website. <\/p>",
             "cta1": "",
@@ -146,6 +180,7 @@
           "disabled": true,
           "settings": {
             "tab_title": "Google rating integration",
+            "tab_icon": "BadgeCheckIcon",
             "title": "Google rating integration",
             "paragraph": "<p>This integration helps increase the overall trust of visitors to the store by showcasing their live google ratings<\/p>",
             "cta1": "",
@@ -161,6 +196,7 @@
           "disabled": true,
           "settings": {
             "tab_title": "Customized logo band",
+            "tab_icon": "BadgeCheckIcon",
             "title": "Customized logo band",
             "paragraph": "<p>This custom built helped showcase the large amount of brands that kidsliving offers while highlighted the logos flawlessly into the shops home page <\/p>",
             "cta1": "",
@@ -176,6 +212,7 @@
           "disabled": true,
           "settings": {
             "tab_title": "asdasdasd",
+            "tab_icon": "BadgeCheckIcon",
             "title": "",
             "paragraph": "",
             "cta1": "",
@@ -191,6 +228,7 @@
           "disabled": true,
           "settings": {
             "tab_title": "123sadasdadsasd",
+            "tab_icon": "BadgeCheckIcon",
             "title": "",
             "paragraph": "",
             "cta1": "",
@@ -214,53 +252,15 @@
       "settings": {
       }
     },
-    "16540875305d711f9e": {
-      "type": "info-cards",
-      "settings": {
-        "pre_title": "Explore",
-        "title": "The tech we used:",
-        "content_list": [
-          "shopify",
-          "vend-pos"
-        ]
-      }
-    },
-    "1654092902cc4e4a33": {
-      "type": "logo-banner",
-      "settings": {
-        "title": "",
-        "products": [
-          "graphql",
-          "copy-of-css",
-          "eslint",
-          "postman",
-          "sendgrid",
-          "sass",
-          "vercel",
-          "windows-support",
-          "ios",
-          "amazon-web-services",
-          "github",
-          "google-analytics",
-          "google-tag-manager",
-          "grunt",
-          "gulp",
-          "typescript",
-          "shopify"
-        ],
-        "height": 50,
-        "animate": false,
-        "animation_duration": 70
-      }
-    },
     "16542555547186860a": {
       "type": "spec-list",
+      "disabled": true,
       "blocks": {
         "c2a192bb-8b31-4125-b05c-744bda6883aa": {
           "type": "heading",
           "settings": {
             "pre_title": "",
-            "title": "More to expect when working with us...",
+            "title": "asdasdasd",
             "paragraph": "",
             "cta1": "",
             "cta1_link": "",
@@ -272,11 +272,11 @@
         "44fb2853-5096-4fa2-aca3-c29c975a4eba": {
           "type": "list",
           "settings": {
-            "icon1": "DesktopComputerIcon",
+            "icon1": "CloudIcon",
             "text1": "Front-end features",
-            "icon2": "ColorSwatchIcon",
+            "icon2": "CloudIcon",
             "text2": "Graphic Design",
-            "icon3": "MailIcon",
+            "icon3": "CloudIcon",
             "text3": "Newsletter Marketing",
             "icon4": "CloudIcon",
             "text4": "",
@@ -289,11 +289,11 @@
         "55701476-5010-4325-acd9-093e88bcc020": {
           "type": "list",
           "settings": {
-            "icon1": "ChatAlt2Icon",
-            "text1": "Social Media Management",
-            "icon2": "LightningBoltIcon",
+            "icon1": "CloudIcon",
+            "text1": "Social Media Marketing",
+            "icon2": "CloudIcon",
             "text2": "Product Research",
-            "icon3": "BadgeCheckIcon",
+            "icon3": "CloudIcon",
             "text3": "Tech-support",
             "icon4": "CloudIcon",
             "text4": "",
@@ -306,12 +306,12 @@
         "547189e6-16c7-44f5-9dea-7ab932e1e925": {
           "type": "list",
           "settings": {
-            "icon1": "SparklesIcon",
+            "icon1": "CloudIcon",
             "text1": "Custom App Integrations",
-            "icon2": "UserGroupIcon",
+            "icon2": "CloudIcon",
             "text2": "Ongoing Training",
-            "icon3": "CubeTransparentIcon",
-            "text3": "Data Management",
+            "icon3": "CloudIcon",
+            "text3": "",
             "icon4": "CloudIcon",
             "text4": "",
             "icon5": "CloudIcon",
@@ -328,16 +328,16 @@
         "547189e6-16c7-44f5-9dea-7ab932e1e925"
       ],
       "settings": {
-        "color_bg": "linear-gradient(145deg, rgba(2, 77, 164, 1), rgba(1, 155, 199, 1) 100%)",
-        "color_toggle": "light"
+        "color_bg": "",
+        "color_toggle": "dark"
       }
     },
     "1654259533f54af287": {
       "type": "blockquote",
       "settings": {
-        "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloremque dolores illum laudantium molestias nemo quo! Animi asperiores assumenda commodi culpa eveniet excepturi fugit illo incidunt iusto nam possimus quidem quos recusandae saepe similique, ullam?",
+        "quote": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloremque dolores illum laudantium molestias nemo quo! Animi asperiores assumenda commodi culpa eveniet excepturi fugit illo incidunt iusto nam possimus quidem quos recusandae saepe similique, ullam?<\/p>",
         "author": "Tom",
-        "job_title": "Kids Living, Managing Director",
+        "job_title": "CEO",
         "quotation_marks": true
       }
     },
@@ -360,41 +360,42 @@
     },
     "165426875321fe7fc5": {
       "type": "feature-list",
+      "disabled": true,
       "blocks": {
         "7d9184d1-b917-43ab-a84e-dbce8b2d3989": {
           "type": "feature",
           "settings": {
-            "icon": "playful",
-            "title": "Website Analysis",
-            "paragraph": "<p>In depth testing for performance for key metrics such as speed, traffic, search engine optimization (SEO), and user experience.<\/p>",
-            "paragraph_old": "<p>Our team performs thorough site analysis to determine your website’s conversion opportunities, threats, weaknesses, and strengths. We run SEO audits, test your site speed and functionality, and analyse your site traffic. These methods allow us to improve your site usability and increase your site engagement and conversions.<\/p>"
+            "icon": "ColorSwatchIcon",
+            "title": "Data organization",
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>",
+            "paragraph_old": ""
           }
         },
         "335efa5a-6e14-4f5f-9f46-3faad15cb6a8": {
           "type": "feature",
           "settings": {
-            "icon": "filters",
-            "title": "Conversion Rate Optimization",
-            "paragraph": "<p>From A\/B testing to UX analysis and design, we ensure all aspects of your website are optimized for conversion.<\/p>",
-            "paragraph_old": "<p>Our team focuses on optimizing your sites speed by eliminating unnecessary form fields, placing clear calls-to-action and simplifying your page navigations. We also perform A\/B testing to ensure all aspects of your website are optimized for conversion.<\/p>"
+            "icon": "ColorSwatchIcon",
+            "title": "Navigation consultation",
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>",
+            "paragraph_old": ""
           }
         },
         "976c1d3a-29d8-43f3-8c94-e23b9461c461": {
           "type": "feature",
           "settings": {
-            "icon": "transforms",
-            "title": "Preventative Maintenance",
-            "paragraph": "<p>Regular site maintenance is crucial to ensure your site is running at its optimum. We also do scheduled site check-ups with backups.<\/p>",
-            "paragraph_old": "<p>Regular site maintenance is crucial to ensure<br\/>your website is running at full capacity. We conduct scheduled site check-ups<br\/>to determine your website's key aspects that need improvement. Using the<br\/>analytics results, we develop strategies to enhance your site security, boost<br\/>your traffic and optimize your page experience.<\/p>"
+            "icon": "CloudIcon",
+            "title": "Ongoing training",
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>",
+            "paragraph_old": ""
           }
         },
         "bf211802-1d16-4343-b21c-1a6d7af721c0": {
           "type": "feature",
           "settings": {
-            "icon": "typography",
-            "title": "Project Communication",
-            "paragraph": "<p>We take the time to regularly communicate to our clients keeping them updating on our processes and encourage feedback. <\/p>",
-            "paragraph_old": "<p>We focus on developing customized processes to fit your needs. We understand that each client is different and work in different ways. We take the time to regularly communicate to our clients keeping them updating on our processes and encourage feedback. For the convenience of our clients, our meetings\/communications are done via email, whatsapp or video conferencing.<\/p>"
+            "icon": "ColorSwatchIcon",
+            "title": "Content flow management",
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum harum laudantium obcaecati pariatur? Ex id illo neque nobis quibusdam.<\/p>",
+            "paragraph_old": ""
           }
         }
       },
@@ -418,37 +419,33 @@
     "16543302228e17b41c": {
       "type": "feature-carousel",
       "settings": {
-        "pre_title": "Customize",
-        "title": "We offer a large range of unique customizations and add ons",
-        "paragraph": "",
-        "cta1": "See all",
-        "cta1_link": "shopify:\/\/pages\/shopify-sites",
-        "cta2": "",
-        "cta2_link": "",
-        "position": "left",
-        "features": [
-          "shopify-customizations",
-          "shopify-full-sites",
-          "shopify-integration",
-          "shopify-seo-packages",
-          "shopify-website-maintenance"
-        ]
-      }
-    },
-    "1654332872499b00d2": {
-      "type": "image-carousel",
-      "settings": {
-        "pre_title": "Explore",
-        "title": "Checkout more of our work",
+        "pre_title": "",
+        "title": "",
         "paragraph": "",
         "cta1": "",
         "cta1_link": "",
         "cta2": "",
         "cta2_link": "",
         "position": "center",
-        "blog": "work",
-        "animate": true,
-        "animation_duration": 80
+        "features": [
+
+        ]
+      }
+    },
+    "1654332872499b00d2": {
+      "type": "image-carousel",
+      "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "images": "",
+        "animate": false,
+        "animation_duration": 20
       }
     }
   },

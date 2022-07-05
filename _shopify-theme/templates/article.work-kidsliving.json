@@ -14,7 +14,7 @@
         "paragraph": "<p>Est. 2008 in Cape Town, now a leading South African baby and kids store, offering an extensive range of imported and locally manufactured high-end products. We have worked with Kids Living since 2017 as their ecommerce success partners, covering all aspects from inventory management, digital marketing, web development to complete custom API solutions.<\/p>",
         "list_title": "What we did:",
         "list": "<p>Shopify Web Development<\/p><p>Custom Features Development<\/p><p>Custom App Integrations<\/p><p>Monthly SEO & Site maintenance support<\/p>",
-        "image": "shopify:\/\/shop_images\/hero_e5a28093-3ca9-4e32-b2c4-1d004529e43c.png"
+        "image": "shopify:\/\/shop_images\/hero-pink.png"
       }
     },
     "1654079897751048da": {
@@ -246,7 +246,7 @@
       "type": "logo-banner",
       "settings": {
         "title": "",
-        "logo_items": [
+        "products": [
           "graphql",
           "copy-of-css",
           "eslint",
@@ -588,7 +588,7 @@
         "cta2": "",
         "cta2_link": "",
         "position": "center",
-        "images": "work",
+        "blog": "work",
         "animate": true,
         "animation_duration": 80
       }

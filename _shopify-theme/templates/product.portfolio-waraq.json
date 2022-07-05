@@ -1,8 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "template-article",
-      "disabled": true,
+      "type": "template-product",
       "settings": {
       }
     },
@@ -10,10 +9,11 @@
       "type": "hero",
       "settings": {
         "pre_title": "Portfolio of Work",
-        "title": "Aiko Dog Food",
-        "paragraph": "<p>Delicious and healthy insect-based dog food. Good for sensitive stomachs and the planet. Aiko’s founders, Natalie and Nora, are good friends who share a love for their furry friends. When they both failed to find dog food that met their needs in terms of health, quality and especially sustainability, they decided to make it themselves, and so Aiko was born. Now their furry friends eat delicious, earth-friendly Aiko every day.<\/p><p><\/p><p>We helped Aiko successfully launch their website, after having to rescue and put together from a half developed custom design from previous developers. We have worked closely to match their budget with a two-point plan, fixing their initial site and removing essential functionality for an accelerated launch, and a full custom design development.<\/p>",
-        "list": "<p>What we did (services):<br\/>•\tCustom Theme and Web development<br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/Capture.jpg"
+        "title": "Waraq",
+        "paragraph": "<p>Waraq is a health and beauty brand that focuses on sustainable health and while encouraging a beauty positive lifestyle.<\/p><p><\/p><p>We worked with Waraq in successfully developing their Shopify Website covering aspects from product image editing and<br\/>content creation.<\/p>",
+        "list_title": "What we did:",
+        "list": "<p>Web Development<\/p><p>Custom theme editing<\/p><p>Product image editing<\/p>",
+        "image": "shopify:\/\/shop_images\/2021-September-Draft-Posts-_-Ads---WQ.jpg"
       }
     },
     "1654079897751048da": {
@@ -59,7 +59,7 @@
           "settings": {
             "pre_title": "Case in point",
             "title": "Going from zero to hero",
-            "paragraph": "<p>How we overcome Kids Livings challenge on having ther product information on BigCommerce and on an ancient POS system to a all round solution with VEND and Shopify.<\/p>",
+            "paragraph": "<p>Shopify Website development, basic product image editing, content creation and content flow Performance & SEO enhancement.<\/p>",
             "cta1": "asdasdasd",
             "cta1_link": "#",
             "cta2": "asd",
@@ -73,7 +73,12 @@
             "pre_title": "Continues communication & feedback",
             "title": "",
             "paragraph": "<p>Continuous development with regular meeting intervals discussing opportunities for growth and improvements. We take the time to understanding the clients’ products, customers, and overall needs.<\/p>",
+            "list_title": "",
+            "list": "",
             "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
             "position": "left"
           }
         },
@@ -83,7 +88,12 @@
             "pre_title": "asd",
             "title": "asd",
             "paragraph": "<p>asd<\/p>",
+            "list_title": "",
+            "list": "",
             "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
             "position": "right"
           }
         }
@@ -117,6 +127,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Custom filter & search function",
+            "tab_icon": "BadgeCheckIcon",
             "title": "Custom filter & search function",
             "paragraph": "<p>This custom filter function helps search for products based on the model, year, and trim of vehicle.<\/p>",
             "cta1": "asdasd",
@@ -131,6 +142,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Product content set-up",
+            "tab_icon": "BadgeCheckIcon",
             "title": "Product content set-up",
             "paragraph": "<p>This helped all products have a uniform content set and that linked to the filter function on the website. <\/p>",
             "cta1": "",
@@ -146,6 +158,7 @@
           "disabled": true,
           "settings": {
             "tab_title": "Google rating integration",
+            "tab_icon": "BadgeCheckIcon",
             "title": "Google rating integration",
             "paragraph": "<p>This integration helps increase the overall trust of visitors to the store by showcasing their live google ratings<\/p>",
             "cta1": "",
@@ -161,6 +174,7 @@
           "disabled": true,
           "settings": {
             "tab_title": "Customized logo band",
+            "tab_icon": "BadgeCheckIcon",
             "title": "Customized logo band",
             "paragraph": "<p>This custom built helped showcase the large amount of brands that kidsliving offers while highlighted the logos flawlessly into the shops home page <\/p>",
             "cta1": "",
@@ -176,6 +190,7 @@
           "disabled": true,
           "settings": {
             "tab_title": "asdasdasd",
+            "tab_icon": "BadgeCheckIcon",
             "title": "",
             "paragraph": "",
             "cta1": "",
@@ -191,6 +206,7 @@
           "disabled": true,
           "settings": {
             "tab_title": "123sadasdadsasd",
+            "tab_icon": "BadgeCheckIcon",
             "title": "",
             "paragraph": "",
             "cta1": "",

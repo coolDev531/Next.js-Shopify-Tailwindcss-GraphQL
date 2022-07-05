@@ -6,9 +6,22 @@ export const imageCarousel: ShopifySection = {
   settings: [
     ...heading.settings,
     {
+      type: "product_list",
+      id: "products",
+      label: "Images via products",
+      info: "Featured Image & Title will be used",
+    },
+    {
+      type: "collection",
+      id: "collection",
+      label: "Images via Collection",
+      info: "Featured Image & Title will be used",
+    },
+    {
       type: "blog",
-      id: "images",
-      label: "Images",
+      id: "blog",
+      label: "Images via Blog",
+      info: "Featured Image & Title will be used",
     },
     {
       type: "checkbox",

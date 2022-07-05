@@ -1,8 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "template-article",
-      "disabled": true,
+      "type": "template-product",
       "settings": {
       }
     },
@@ -10,27 +9,27 @@
       "type": "hero",
       "settings": {
         "pre_title": "Portfolio of Work",
-        "title": "Aiko Dog Food",
-        "paragraph": "<p>Delicious and healthy insect-based dog food. Good for sensitive stomachs and the planet. Aiko’s founders, Natalie and Nora, are good friends who share a love for their furry friends. When they both failed to find dog food that met their needs in terms of health, quality and especially sustainability, they decided to make it themselves, and so Aiko was born. Now their furry friends eat delicious, earth-friendly Aiko every day.<\/p><p><\/p><p>We helped Aiko successfully launch their website, after having to rescue and put together from a half developed custom design from previous developers. We have worked closely to match their budget with a two-point plan, fixing their initial site and removing essential functionality for an accelerated launch, and a full custom design development.<\/p>",
-        "list": "<p>What we did (services):<br\/>•\tCustom Theme and Web development<br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/Capture.jpg"
+        "title": "Zoom Printing",
+        "paragraph": "<p>Founded in 2003, ZOOM PRINTING is a one-stop-shop for all printing needs at unbelievable prices. The pricing model is built on providing the highest possible quality for an affordable price.<\/p><p>We have worked with ZOOM PRINTING in successfully migrating their store from Legacy to Shopify covering aspects from inventory management, web development, custom product set-up. <br\/><\/p>",
+        "list_title": "What we did:",
+        "list": "<p>Store Migration<\/p><p>Shopify Web Development<\/p><p>Custom Features Development<\/p>",
+        "image": "shopify:\/\/shop_images\/zoom_printing.jpg"
       }
     },
     "1654079897751048da": {
       "type": "stats-graph",
-      "disabled": true,
       "blocks": {
         "8457496c-859c-46a2-8653-4953e4e81a20": {
           "type": "stat",
           "settings": {
-            "stat": "4000+",
+            "stat": "2000+",
             "descriptions": "Products & Variants"
           }
         },
         "b206c8f8-78d7-4074-bae7-a25fdfa286ce": {
           "type": "stat",
           "settings": {
-            "stat": "241+",
+            "stat": "46+",
             "descriptions": "Collections"
           }
         },
@@ -52,17 +51,16 @@
     },
     "16540846002974a6ff": {
       "type": "story",
-      "disabled": true,
       "blocks": {
         "93e0ffb2-4809-45bb-88aa-7cf835fef608": {
           "type": "heading",
           "settings": {
             "pre_title": "Case in point",
-            "title": "Going from zero to hero",
-            "paragraph": "<p>How we overcome Kids Livings challenge on having ther product information on BigCommerce and on an ancient POS system to a all round solution with VEND and Shopify.<\/p>",
-            "cta1": "asdasdasd",
+            "title": "From Challenge to Solution",
+            "paragraph": "<p>How we overcome ZOOM PRINTING challenges to migrate their store from Legacy to Shopify, while creating a fresh and UX driven site that would suit their large inventory and requirements for customizable products with multiple product variability.<\/p>",
+            "cta1": "Develop your website",
             "cta1_link": "#",
-            "cta2": "asd",
+            "cta2": "Explore our services",
             "cta2_link": "#",
             "position": "center"
           }
@@ -70,28 +68,54 @@
         "364ea5e8-5749-4d69-b8f0-528e5aab9c5b": {
           "type": "image-text",
           "settings": {
-            "pre_title": "Continues communication & feedback",
-            "title": "",
-            "paragraph": "<p>Continuous development with regular meeting intervals discussing opportunities for growth and improvements. We take the time to understanding the clients’ products, customers, and overall needs.<\/p>",
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "pre_title": "Starting the journey to success",
+            "title": "Analysis & Migration",
+            "paragraph": "<p>When we first took over the website, we first needed to understand the information and data that needed to be sorted through and migrated to the Shopify platform from Legacy  to Shopify. A big highlight for us was the number of products and multiple variables each product had. Our team did an extensive analysis and created a strategic plan that ensured the old website's SEO, content, and web rankings were kept intact.<\/p>",
+            "list_title": "",
+            "list": "<p>Organising product data<\/p><p>Migrate Images from Products, Categories<\/p><p>Customer data Migration<\/p><p>Product and Order information migration<\/p><p>Redirect all changed links<\/p><p>Content migration<\/p>",
+            "image": "shopify:\/\/shop_images\/sstore-migration.jpg",
+            "aspect_desktop": "3-2",
+            "fit_height": false,
+            "aspect_mobile": "21-9",
             "position": "left"
           }
         },
         "4729554a-b37a-42dd-b189-ab78ef716946": {
           "type": "image-text",
           "settings": {
-            "pre_title": "asd",
-            "title": "asd",
-            "paragraph": "<p>asd<\/p>",
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "pre_title": "Turing the vision into reality",
+            "title": "Shopify web development",
+            "paragraph": "<p>With the content migration complete and a strategic plan in place. Our team started developing the Shopify website. This was specifically tailored to our clients’ needs while taking to account the key functions and features that our clients required from their old website.<\/p>",
+            "list_title": "",
+            "list": "<p>Theme Coding & Implementation<\/p><p>Content structure update, for user experience optimization <\/p><p>Vend to Shopify integration<\/p><p>Shopify Apps Integration & Configuration<\/p><p>Payment & Shipping Zones Set-Up<\/p><p>Product & Inventory Set-Up<\/p><p>Shopify SEO Implementation and optimization<\/p>",
+            "image": "shopify:\/\/shop_images\/Lunalemon-pictures1_7c31068b-8036-4588-8fe1-ab064889243a.jpg",
+            "aspect_desktop": "3-2",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
             "position": "right"
+          }
+        },
+        "22cd2f91-4e3a-4fea-bbd9-38910507a126": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Developing solutions unique to your needs",
+            "title": "Custom Features",
+            "paragraph": "",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/businss-cards.jpg",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
+            "position": "left"
           }
         }
       },
       "block_order": [
         "93e0ffb2-4809-45bb-88aa-7cf835fef608",
         "364ea5e8-5749-4d69-b8f0-528e5aab9c5b",
-        "4729554a-b37a-42dd-b189-ab78ef716946"
+        "4729554a-b37a-42dd-b189-ab78ef716946",
+        "22cd2f91-4e3a-4fea-bbd9-38910507a126"
       ],
       "settings": {
       }
@@ -116,9 +140,10 @@
         "2353a22b-85ba-4a79-9a1c-23bbf71d60d7": {
           "type": "tab",
           "settings": {
-            "tab_title": "Custom filter & search function",
-            "title": "Custom filter & search function",
-            "paragraph": "<p>This custom filter function helps search for products based on the model, year, and trim of vehicle.<\/p>",
+            "tab_title": "Custom builder",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "Custom builder",
+            "paragraph": "<p>This custom builder helps you build your own stroller, choosing elements like fabric styles, frame options, wheel types. It shows the changes in real life creating a very interactive purchase experience for people who want a custom product they built themselves.<\/p>",
             "cta1": "asdasd",
             "cta1_link": "#",
             "cta2": "",
@@ -130,9 +155,10 @@
         "5580bf76-a72e-4bfe-8d9d-a63518f96cc5": {
           "type": "tab",
           "settings": {
-            "tab_title": "Product content set-up",
-            "title": "Product content set-up",
-            "paragraph": "<p>This helped all products have a uniform content set and that linked to the filter function on the website. <\/p>",
+            "tab_title": "Mega menu & custom brand section",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "Mega menu & custom brand section",
+            "paragraph": "<p>This custom build helped organize a large amount of product categories in user friendly manner, we also focused on the brands, organising them Alphabetically while highlighting the top popular brands<\/p>",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
@@ -143,9 +169,9 @@
         },
         "d507e67a-14b7-473e-a024-ccb8262d029c": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "tab_title": "Google rating integration",
+            "tab_icon": "BadgeCheckIcon",
             "title": "Google rating integration",
             "paragraph": "<p>This integration helps increase the overall trust of visitors to the store by showcasing their live google ratings<\/p>",
             "cta1": "",
@@ -158,9 +184,9 @@
         },
         "e3679b31-516e-4d8d-8463-58315b3dbaec": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "tab_title": "Customized logo band",
+            "tab_icon": "BadgeCheckIcon",
             "title": "Customized logo band",
             "paragraph": "<p>This custom built helped showcase the large amount of brands that kidsliving offers while highlighted the logos flawlessly into the shops home page <\/p>",
             "cta1": "",
@@ -173,9 +199,9 @@
         },
         "57ab776c-10cd-4f7c-8b42-5b73d6edd21a": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "tab_title": "asdasdasd",
+            "tab_icon": "BadgeCheckIcon",
             "title": "",
             "paragraph": "",
             "cta1": "",
@@ -188,9 +214,9 @@
         },
         "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "tab_title": "123sadasdadsasd",
+            "tab_icon": "BadgeCheckIcon",
             "title": "",
             "paragraph": "",
             "cta1": "",
