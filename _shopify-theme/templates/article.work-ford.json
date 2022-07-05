@@ -177,6 +177,7 @@
           "typescript",
           "shopify"
         ],
+        "collection": "",
         "height": 50,
         "animate": false,
         "animation_duration": 70
@@ -536,7 +537,9 @@
         "cta2": "",
         "cta2_link": "",
         "position": "center",
-        "products": [],
+        "products": [
+
+        ],
         "collection": "portfolio",
         "blog": "",
         "animate": true,

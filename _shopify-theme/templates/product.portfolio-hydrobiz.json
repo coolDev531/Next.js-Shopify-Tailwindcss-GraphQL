@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "template-product",
+      "disabled": true,
       "settings": {
       }
     },
@@ -13,7 +14,7 @@
         "paragraph": "<p>Hydrobiz is a Cape Town based company that supplies professional horticulture equipment and consumables. <\/p><p><br\/>We have worked with Hydrobiz in successfully upgrading their Shopify Website covering aspects from inventory management, web development, and integrating their website to DEAR POS system. <br\/><\/p>",
         "list_title": "What we did:",
         "list": "<p>Store design update<\/p><p>Shopify Web Development <\/p><p>Shopify to DEAR intergration <\/p><p><\/p>",
-        "image": "shopify:\/\/shop_images\/hydrobiz.jpg"
+        "image": "shopify:\/\/shop_images\/Hero-blue.png"
       }
     },
     "1654079897751048da": {
@@ -310,17 +311,17 @@
     "16542613555478f86d": {
       "type": "image-gallery",
       "settings": {
-        "image1": "shopify:\/\/shop_images\/gallery-1.jpg",
+        "image1": "shopify:\/\/shop_images\/collage-4.png",
         "title1": "",
-        "image2": "shopify:\/\/shop_images\/Luna-Lemon-image5.jpg",
+        "image2": "shopify:\/\/shop_images\/COLLAGE-2.png",
         "title2": "Graphic design",
-        "image3": "shopify:\/\/shop_images\/gift-registry.jpg",
+        "image3": "shopify:\/\/shop_images\/collage-6.png",
         "title3": "Gift Registry",
-        "image4": "shopify:\/\/shop_images\/Product-view.jpg",
+        "image4": "shopify:\/\/shop_images\/collage-5.png",
         "title4": "",
-        "image5": "shopify:\/\/shop_images\/Website-baner.jpg",
+        "image5": "shopify:\/\/shop_images\/COLLAGE-3.png",
         "title5": "",
-        "image6": "shopify:\/\/shop_images\/image-photo.jpg",
+        "image6": "shopify:\/\/shop_images\/collage-1.png",
         "title6": ""
       }
     },
@@ -412,7 +413,9 @@
         "cta2": "",
         "cta2_link": "",
         "position": "center",
-        "products": [],
+        "products": [
+
+        ],
         "collection": "portfolio",
         "blog": "",
         "animate": true,

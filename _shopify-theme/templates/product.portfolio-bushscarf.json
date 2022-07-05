@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "template-product",
+      "disabled": true,
       "settings": {
       }
     },
@@ -435,17 +436,21 @@
     "1654332872499b00d2": {
       "type": "image-carousel",
       "settings": {
-        "pre_title": "",
-        "title": "",
+        "pre_title": "Explore",
+        "title": "Checkout more of our work",
         "paragraph": "",
         "cta1": "",
         "cta1_link": "",
         "cta2": "",
         "cta2_link": "",
         "position": "center",
-        "images": "",
-        "animate": false,
-        "animation_duration": 20
+        "products": [
+
+        ],
+        "collection": "portfolio",
+        "blog": "",
+        "animate": true,
+        "animation_duration": 80
       }
     }
   },

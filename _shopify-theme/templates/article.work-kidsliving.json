@@ -588,7 +588,9 @@
         "cta2": "",
         "cta2_link": "",
         "position": "center",
-        "products": [],
+        "products": [
+
+        ],
         "collection": "portfolio",
         "blog": "",
         "animate": true,
