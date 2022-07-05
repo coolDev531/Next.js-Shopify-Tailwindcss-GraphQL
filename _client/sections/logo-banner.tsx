@@ -26,14 +26,18 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
             }}
           >
             <div
-              className="scrollbar-none flex scale-100 overflow-x-scroll whitespace-nowrap transition-all hfa:animation-pause md:animate-slide md:overflow-visible"
+              className="scrollbar-none s cale-100 flex overflow-x-scroll whitespace-nowrap transition-all hfa:animation-pause md:animate-slide md:overflow-visible"
               style={{
                 animationDuration: `${settings.animation_duration}s`,
                 animationPlayState: !settings.animate ? "paused" : "",
               }}
             >
               <LogoBannerSlider settings={settings} blocks={blocks} />
-              <LogoBannerSlider settings={settings} blocks={blocks} className="!hidden md:!grid" />
+              <LogoBannerSlider
+                settings={settings}
+                blocks={blocks}
+                className="ml-12 !hidden md:!grid"
+              />
             </div>
             <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-[max(16px,calc((100vw-80rem)/2+16px))] bg-gradient-to-r from-transparent to-white dark:to-dark-bg sm:w-[max(32px,calc((100vw-80rem)/2+32px))] sm:from-transparent sm:via-white sm:to-white dark:sm:via-dark-bg dark:sm:to-dark-bg"></div>
             <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-[max(16px,calc((100vw-80rem)/2+16px))] bg-gradient-to-l from-transparent dark:to-dark-bg sm:w-[max(32px,calc((100vw-80rem)/2+32px))] sm:from-transparent sm:via-white sm:to-white dark:sm:via-dark-bg dark:sm:to-dark-bg"></div>
@@ -51,25 +55,25 @@ export const LogoBannerSlider: FC<
     <div className={clsx("grid auto-cols-max grid-flow-col-dense gap-12", className)}>
       {settings.products
         ?.filter((p) => p.metafields.find(({ key }) => key === "logo") || p.featured_media)
-        .map((product) => (
+        ?.map((product) => (
           <LogoBannerItem
             key={product.id}
             height={settings.height}
             title={product.title}
             image={
-              product.metafields.find(({ key }) => key === "logo").value ?? product.featured_media
+              product.metafields.find(({ key }) => key === "logo")?.value ?? product.featured_media
             }
           />
         ))}
       {settings.collection?.products
         ?.filter((p) => p.metafields.find(({ key }) => key === "logo") || p.featured_media)
-        .map((product) => (
+        ?.map((product) => (
           <LogoBannerItem
             key={product.id}
             height={settings.height}
             title={product.title}
             image={
-              product.metafields.find(({ key }) => key === "logo").value ?? product.featured_media
+              product.metafields.find(({ key }) => key === "logo")?.value ?? product.featured_media
             }
           />
         ))}

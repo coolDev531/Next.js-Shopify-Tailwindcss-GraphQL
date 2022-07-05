@@ -445,7 +445,9 @@
         "cta2": "",
         "cta2_link": "",
         "position": "center",
-        "blog": "work",
+        "products": [],
+        "collection": "portfolio",
+        "blog": "",
         "animate": true,
         "animation_duration": 80
       }

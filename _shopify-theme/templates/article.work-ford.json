@@ -158,7 +158,7 @@
       "type": "logo-banner",
       "settings": {
         "title": "",
-        "logo_items": [
+        "products": [
           "graphql",
           "copy-of-css",
           "eslint",
@@ -536,6 +536,9 @@
         "cta2": "",
         "cta2_link": "",
         "position": "center",
+        "products": [],
+        "collection": "portfolio",
+        "blog": "",
         "animate": true,
         "animation_duration": 80
       }
