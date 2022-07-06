@@ -43,6 +43,7 @@
     "react-use": "^17.4.0",
     "shopify-ftp-access": "^3.0.3",
     "shopify-typed-node-api": "^2.0.18",
+    "short-uuid": "^4.2.0",
     "string-strip-html": "^9.1.12",
     "superjson": "^1.9.1",
     "type-fest": "^2.15.1",

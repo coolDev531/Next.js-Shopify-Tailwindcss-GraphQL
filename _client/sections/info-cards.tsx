@@ -4,6 +4,7 @@ import { FC } from "react";
 import { stripHtml } from "string-strip-html";
 import { InfoCardsSection } from "types/sections";
 import { _Metafield_liquid_file_reference_force_generic } from "types/shopify";
+import { cleanSvgIds } from "utils/clean-svg-ids";
 
 export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) => {
   return (
@@ -61,7 +62,9 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
                     <header className="flex flex-col gap-2">
                       <figure
                         className="[&>svg]:h-8[&>svg]:w-8"
-                        dangerouslySetInnerHTML={{ __html: block.settings.svg }}
+                        dangerouslySetInnerHTML={{
+                          __html: cleanSvgIds(block.settings.svg, block.id),
+                        }}
                       />
                       <h3>{block.settings.title}</h3>
                     </header>

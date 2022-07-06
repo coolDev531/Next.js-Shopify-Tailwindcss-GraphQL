@@ -4,6 +4,7 @@ import { useTooltipStore } from "_client/stores/tooltip-store";
 import clsx from "clsx";
 import { FC } from "react";
 import { LogoBannerSection } from "types/sections";
+import { cleanSvgIds } from "utils/clean-svg-ids";
 
 export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }) => {
   const [tooltip, setTooltip] = useTooltipStore();
@@ -90,7 +91,10 @@ export const LogoBannerSlider: FC<
               : null;
           case "manual-svg":
             return (
-              <figure key={block.id} dangerouslySetInnerHTML={{ __html: block.settings.svg }} />
+              <figure
+                key={block.id}
+                dangerouslySetInnerHTML={{ __html: cleanSvgIds(block.settings.svg, block.id) }}
+              />
             );
         }
       })}

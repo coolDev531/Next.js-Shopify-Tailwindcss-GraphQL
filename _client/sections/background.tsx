@@ -3,6 +3,7 @@ import clsx from "clsx";
 import svgToDataUri from "mini-svg-data-uri";
 import { FC } from "react";
 import { BackgroundSection } from "types/sections";
+import { cleanSvgIds } from "utils/clean-svg-ids";
 
 export const Background: FC<BackgroundSection> = ({ blocks }) => {
   return (
@@ -62,15 +63,7 @@ export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
               className="relative h-full w-full"
               style={{ opacity: settings.opacity / 100 }}
               dangerouslySetInnerHTML={{
-                __html: settings.svg
-                  .match(/url\(#([^)]*)\)/gi)
-                  .map((match) => match.replace(/url\(#([^)]*)\)/gi, "$1"))
-                  .reduce(
-                    (acc, svgId, index) => {
-                      return acc.replaceAll(svgId, `svgId-${id}-${index}-${svgId}`);
-                    },
-                    settings.svg
-                  ),
+                __html: cleanSvgIds(settings.svg, id),
               }}
             />
           : null}
