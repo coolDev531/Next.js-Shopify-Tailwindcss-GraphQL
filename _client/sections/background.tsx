@@ -1,5 +1,6 @@
 import { Image } from "_client/image";
 import clsx from "clsx";
+import svgToDataUri from "mini-svg-data-uri";
 import { FC } from "react";
 import { BackgroundSection } from "types/sections";
 
@@ -20,6 +21,9 @@ export type BackgroundBlockProps = {
 };
 
 export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
+  console.log(
+    settings.svg.match(/url\(#([^)]*)\)/gi).map((match) => match.replace(/url\(#([^)]*)\)/gi, "$1"))
+  );
   return (
     <>
       <style jsx>{`
@@ -60,7 +64,18 @@ export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
           ? <div
               className="relative h-full w-full"
               style={{ opacity: settings.opacity / 100 }}
-              dangerouslySetInnerHTML={{ __html: settings.svg }}
+              dangerouslySetInnerHTML={{
+                __html: settings.svg
+                  .match(/url\(#([^)]*)\)/gi)
+                  .map((match) => match.replace(/url\(#([^)]*)\)/gi, "$1"))
+                  .reduce(
+                    (acc, svgId, index) => {
+                      console.log(svgId, 123);
+                      return acc.replaceAll(svgId, `svgId-${id}-${index}-${svgId}`);
+                    },
+                    settings.svg
+                  ),
+              }}
             />
           : null}
       </div>
