@@ -60,17 +60,14 @@ export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
           : null}
         {settings.svg
           ? <div
-              className="relative flex h-full w-full overflow-hidden"
+              className="relative h-full w-full overflow-hidden"
               style={{ opacity: settings.opacity / 100 }}
-              /* dangerouslySetInnerHTML={{
-                __html: cleanSvgIds(settings.svg, id),
-              }}*/
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt="background"
                 aria-hidden
-                className="image mx-auto h-full flex-1"
+                className="image mx-auto h-full"
                 src={svgToDataUri(settings.svg)}
               />
             </div>
