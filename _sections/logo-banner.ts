@@ -65,7 +65,7 @@ export const logoBanner: ShopifySection = {
           content: "Content",
         },
         {
-          type: "html",
+          type: "textarea",
           id: "svg",
           label: "SVG code",
         },

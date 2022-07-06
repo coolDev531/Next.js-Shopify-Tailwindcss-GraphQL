@@ -43,7 +43,7 @@ export const infoCards: ShopifySection = {
           label: "Description",
         },
         {
-          type: "html",
+          type: "textarea",
           id: "svg",
           label: "SVG code",
         },

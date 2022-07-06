@@ -70,7 +70,7 @@ export const background: ShopifySection<BackgroundSection> = {
           label: "Image",
         },
         {
-          type: "html",
+          type: "textarea",
           id: "svg",
           label: "Svg",
         },

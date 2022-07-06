@@ -23,7 +23,7 @@ export type BackgroundBlocks = {
     css?: string;
     /** Input type: image_picker */
     image?: _Image_liquid;
-    /** Input type: html */
+    /** Input type: textarea */
     svg?: string;
     /** Input type: text */
     title?: string;
@@ -414,7 +414,7 @@ export type InfoCardsBlocks = {
   settings: {
     /** Input type: richtext */
     paragraph?: `<p${string}</p>`;
-    /** Input type: html */
+    /** Input type: textarea */
     svg?: string;
     /** Input type: text */
     title?: string;
@@ -446,7 +446,7 @@ export type LogoBannerBlocks =
   | {
       id: string;
       settings: {
-        /** Input type: html */
+        /** Input type: textarea */
         svg?: string;
         /** Input type: text */
         title?: string;

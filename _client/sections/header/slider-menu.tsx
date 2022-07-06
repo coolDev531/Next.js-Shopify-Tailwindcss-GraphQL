@@ -49,7 +49,7 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
               key={`feature-${link.handle}-${product.id}`}
               className="group w-[300px] snap-start rounded-md p-4 hfa:bg-slate-50 f:ring-2 f:ring-sky-400 f:ring-offset-2 dark:hfa:bg-slate-700/30"
             >
-              <figure className="relative mb-4 aspect-1 w-[90px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
+              <figure className="relative mb-4 aspect-1 h-[90px] w-[90px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
                 {product.featured_media && (
                   <Image
                     loading="eager"
@@ -58,7 +58,7 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
                     maxWidth={90}
                     pixelDensity={2}
                     priority
-                    className="h-full bg-cover object-cover"
+                    className="aspect-1 h-full w-full bg-cover object-cover"
                     src={product?.featured_media?.src}
                     alt={product?.featured_media?.alt}
                   />

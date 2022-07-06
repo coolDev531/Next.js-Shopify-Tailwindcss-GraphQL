@@ -15,7 +15,7 @@ export const PortfolioMenu: FC<
             <Link
               key={props[`title_${key}`]}
               href={props[`link_${key}`]}
-              className="group relative aspect-1 h-[257px] overflow-hidden rounded-lg"
+              className="group relative h-[257px] w-[257px] overflow-hidden rounded-lg"
             >
               <>
                 <Image
@@ -25,7 +25,7 @@ export const PortfolioMenu: FC<
                   priority
                   src={`${props[`image_${key}`].src}`}
                   alt="placeholder"
-                  className="aspect-1 object-cover group-hover:opacity-75"
+                  className="aspect-1 h-full w-full object-cover group-hover:opacity-75"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3 dark:bg-slate-900/80">
                   <h3 className="mb-0.5 text-sm font-medium text-slate-900 dark:text-slate-200">
