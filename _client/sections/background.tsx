@@ -66,7 +66,8 @@ export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
                 __html: cleanSvgIds(settings.svg, id),
               }}*/
             >
-              <Image src={svgToDataUri(settings.svg)} width={1200} height={1200} />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img alt="background image" aria-hidden src={svgToDataUri(settings.svg)} />
             </div>
           : null}
       </div>
