@@ -21,9 +21,6 @@ export type BackgroundBlockProps = {
 };
 
 export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
-  console.log(
-    settings.svg.match(/url\(#([^)]*)\)/gi).map((match) => match.replace(/url\(#([^)]*)\)/gi, "$1"))
-  );
   return (
     <>
       <style jsx>{`
@@ -70,7 +67,6 @@ export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
                   .map((match) => match.replace(/url\(#([^)]*)\)/gi, "$1"))
                   .reduce(
                     (acc, svgId, index) => {
-                      console.log(svgId, 123);
                       return acc.replaceAll(svgId, `svgId-${id}-${index}-${svgId}`);
                     },
                     settings.svg
