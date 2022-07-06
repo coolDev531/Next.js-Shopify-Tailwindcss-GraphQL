@@ -418,7 +418,7 @@ module.exports = {
         gradient1: `radial-gradient(at 100% 100%, rgba(7, 0, 31, 0.07), rgba(88, 5, 171, 0.01), rgba(0, 0, 0, 0)), linear-gradient(to right bottom, rgb(239, 254, 250), rgb(248, 250, 255), rgb(254, 238, 248), rgb(231, 249, 251))`,
         "gradient-stats": `radial-gradient(ellipse 75% 650px at 35% calc(100% + 100px), ${theme(
           "colors.sky.500"
-        )} 20%, ${theme("colors.sky.100")}, rgb(255 255 255 / 0);`,
+        )} 20%, ${theme("colors.sky.100")}, rgb(255 255 255 / 0)`,
         "gradient-stats-dark": `radial-gradient(ellipse 65% 600px at 35% calc(100% + 100px), #0f75a9 35%, #132940, transparent)`,
       }),
       typography: ({ theme }) => ({

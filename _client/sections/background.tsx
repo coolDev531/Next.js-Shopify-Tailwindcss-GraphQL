@@ -62,10 +62,12 @@ export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
           ? <div
               className="relative h-full w-full"
               style={{ opacity: settings.opacity / 100 }}
-              dangerouslySetInnerHTML={{
+              /* dangerouslySetInnerHTML={{
                 __html: cleanSvgIds(settings.svg, id),
-              }}
-            />
+              }}*/
+            >
+              <Image src={svgToDataUri(settings.svg)} width={1200} height={1200} />
+            </div>
           : null}
       </div>
     </>
