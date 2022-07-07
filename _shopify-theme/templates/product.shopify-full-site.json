@@ -436,11 +436,18 @@
       "settings": {
         "title": "Brands we've worked with",
         "products": [
-
+          "ford",
+          "kids-living",
+          "lunatag",
+          "volkswagen",
+          "zoom-printing",
+          "bushscarf",
+          "broadway-jewellers",
+          "moritz-tellmann"
         ],
-        "collection": "portfolio",
+        "collection": "",
         "height": 40,
-        "animate": false,
+        "animate": true,
         "animation_duration": 20
       }
     },
