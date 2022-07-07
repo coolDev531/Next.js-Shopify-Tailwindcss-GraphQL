@@ -845,48 +845,45 @@ export type TestSection = {
 export type TestimonialListSection = {
   blocks: TestimonialListBlocks[];
   id: string;
+  settings: {
+    /** Input type: select */
+    position: "left" | "center" | "right";
+    /** Input type: text */
+    cta1?: string;
+    /** Input type: url */
+    cta1_link?: string;
+    /** Input type: text */
+    cta2?: string;
+    /** Input type: url */
+    cta2_link?: string;
+    /** Input type: richtext */
+    paragraph?: `<p${string}</p>`;
+    /** Input type: text */
+    pre_title?: string;
+    /** Input type: product_list */
+    products?: _Product_liquid[];
+    /** Input type: text */
+    title?: string;
+  };
   type: "testimonial-list";
 };
 
-export type TestimonialListBlocks =
-  | {
-      id: string;
-      settings: {
-        /** Input type: select */
-        position: "left" | "center" | "right";
-        /** Input type: text */
-        cta1?: string;
-        /** Input type: url */
-        cta1_link?: string;
-        /** Input type: text */
-        cta2?: string;
-        /** Input type: url */
-        cta2_link?: string;
-        /** Input type: richtext */
-        paragraph?: `<p${string}</p>`;
-        /** Input type: text */
-        pre_title?: string;
-        /** Input type: text */
-        title?: string;
-      };
-      type: "heading";
-    }
-  | {
-      id: string;
-      settings: {
-        /** Input type: text */
-        author?: string;
-        /** Input type: image_picker */
-        avatar?: _Image_liquid;
-        /** Input type: image_picker */
-        image?: _Image_liquid;
-        /** Input type: text */
-        job_title?: string;
-        /** Input type: richtext */
-        quote?: `<p${string}</p>`;
-      };
-      type: "testimonial";
-    };
+export type TestimonialListBlocks = {
+  id: string;
+  settings: {
+    /** Input type: text */
+    author?: string;
+    /** Input type: image_picker */
+    image?: _Image_liquid;
+    /** Input type: text */
+    job_title?: string;
+    /** Input type: url */
+    link?: string;
+    /** Input type: richtext */
+    quote?: `<p${string}</p>`;
+  };
+  type: "testimonial";
+};
 
 export type Sections =
   | BackgroundSection

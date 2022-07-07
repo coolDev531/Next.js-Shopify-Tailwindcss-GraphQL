@@ -4,16 +4,19 @@ import { TestimonialListSection } from "types/sections";
 
 export const testimonialList: ShopifySection<TestimonialListSection> = {
   name: "Testimonial list",
-  settings: [],
+  settings: [
+    ...heading.settings,
+    {
+      type: "product_list",
+      id: "products",
+      label: "Products",
+      limit: 2,
+    },
+  ],
   blocks: [
     {
-      type: "heading",
-      name: "Heading",
-      settings: heading.settings,
-    },
-    {
       type: "testimonial",
-      name: "Testimonial",
+      name: "Manual Testimonial",
       settings: [
         {
           type: "header",
@@ -40,9 +43,9 @@ export const testimonialList: ShopifySection<TestimonialListSection> = {
           label: "Title",
         },
         {
-          type: "image_picker",
-          id: "avatar",
-          label: "Avatar Image",
+          type: "url",
+          id: "link",
+          label: "Link",
         },
       ],
     },

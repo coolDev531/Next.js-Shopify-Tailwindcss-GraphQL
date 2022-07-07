@@ -29,7 +29,9 @@ export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ s
           <main>
             <Paragraph>{settings.paragraph}</Paragraph>
             <div className="mt-8">
-              <h3 className="mb-1 font-semibold text-slate-700">{settings.list_title}</h3>
+              <h3 className="mb-1 font-semibold text-slate-700 dark:text-slate-300">
+                {settings.list_title}
+              </h3>
               <ul>
                 {settings?.list
                   .replace(/<\/p>/gi, "")

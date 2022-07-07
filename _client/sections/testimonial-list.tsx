@@ -1,58 +1,129 @@
 import { Image } from "_client/image";
+import { Wrapper } from "_client/layout/wrapper";
+import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
 import { FC } from "react";
 import { TestimonialListSection } from "types/sections";
+import { _Metafield_liquid_file_reference_force_generic, _Metafield_liquid_file_reference_force_image } from "types/shopify";
 
-export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, type }) => {
+export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, settings, type }) => {
+  const { products, ...heading } = settings;
+
   return (
-    <>
-      {blocks.map((block) => {
-        return block.type === "heading"
-          ? <BlockHeading key={`heading-${block.id}`} {...block} />
-          : null;
-      })}
-      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-16 py-16 px-8">
+    <Wrapper maxWidth="xl" paddingY="base">
+      <BlockHeading settings={heading} />
+      <div className="mt-4 grid grid-cols-2 gap-8">
+        {products.map((product) => {
+          const logo = product.metafields.find(
+            ({ key }) => key === "logo"
+          ) as _Metafield_liquid_file_reference_force_image;
+          const logoDark = product.metafields.find(
+            ({ key }) => key === "logo_dark"
+          ) as _Metafield_liquid_file_reference_force_image;
+          const testimonial = product.metafields.find(({ key }) => key === "testimonial")
+            ?.value as string;
+          const author = product.metafields.find(({ key }) => key === "contact_person")
+            ?.value as string;
+          const jobTitle = product.metafields.find(({ key }) => key === "job_title")
+            ?.value as string;
+
+          return (
+            <TestimonialListItem
+              key={product.id}
+              id={id}
+              blockId={product.id}
+              link={product.url}
+              logo={logo}
+              logoDark={logoDark}
+              testimonial={testimonial}
+              author={author}
+              jobTitle={jobTitle}
+            />
+          );
+        })}
         {blocks.map((block) => {
           if (block.type !== "testimonial") return null;
 
           return (
-            <section key={`testimonial-${block.id}`}>
-              <header>
-                <figure className="relative mb-2 h-10">
-                  {block.settings.image
-                    ? <Image
-                        src={`${block?.settings?.image?.src}`}
-                        className="object-contain"
-                        width={block?.settings?.image?.width}
-                        height={block?.settings?.image?.height}
-                        alt={block?.settings?.image?.alt}
-                      />
-                    : null}
-                </figure>
-              </header>
-              <blockquote
-                className="mb-2"
-                dangerouslySetInnerHTML={{ __html: block.settings.quote }}
-              />
-              <footer className="flex gap-2">
-                {block.settings.avatar
-                  ? <figure className="relative aspect-1 h-8 w-8 overflow-hidden rounded-full">
-                      <Image
-                        src={`${block.settings.avatar.src}`}
-                        className="object-cover"
-                        alt={block.settings.avatar.alt}
-                        width={block?.settings?.avatar?.width}
-                        height={block?.settings?.avatar?.height}
-                      />
-                    </figure>
-                  : null}
-                <div>{block.settings.author}</div>
-                <div>{block.settings.job_title}</div>
-              </footer>
-            </section>
+            <TestimonialListItem
+              key={block.id}
+              id={id}
+              blockId={block.id}
+              link={block.settings.link}
+              logo={block.settings.image}
+              logoDark={undefined}
+              testimonial={block.settings.quote}
+              author={block.settings.author}
+              jobTitle={block.settings.job_title}
+            />
           );
         })}
       </div>
-    </>
+    </Wrapper>
+  );
+};
+
+export const TestimonialListItem = ({
+  id,
+  blockId,
+  link,
+  logo,
+  logoDark,
+  testimonial,
+  author,
+  jobTitle,
+}) => {
+  return (
+    <Link
+      href={link}
+      key={`testimonial-${id}-${blockId}`}
+      className="min-w-[220px] select-none rounded-md border border-slate-200 bg-white p-6 transition-all hfa:border-slate-400/60 dark:border-slate-700/80 dark:bg-dark-card dark:hfa:border-slate-500/80"
+    >
+      <header>
+        <figure className="relative h-10 grayscale-0">
+          {logo && logoDark
+            ? <>
+                <Image
+                  src={`${logo?.value.src}`}
+                  className="h-full w-auto object-contain dark:hidden"
+                  maxHeight={200}
+                  width={logo?.value.width}
+                  height={logo?.value.height}
+                  alt={logo?.value.alt}
+                />
+                <Image
+                  src={`${logoDark?.value.src}`}
+                  className="hidden h-full w-auto object-contain dark:block"
+                  maxHeight={200}
+                  width={logoDark?.value.width}
+                  height={logoDark?.value.height}
+                  alt={logoDark?.value.alt}
+                />
+              </>
+            : logo
+            ? <Image
+                src={`${logo?.value.src}`}
+                className="h-full w-auto object-contain"
+                maxHeight={200}
+                width={logo?.value.width}
+                height={logo?.value.height}
+                alt={logo?.value.alt}
+              />
+            : null}
+        </figure>
+      </header>
+      <blockquote className="mt-2 text-lg dark:text-slate-100">{testimonial}</blockquote>
+      <footer className="mt-3 flex items-center gap-2">
+        <figure className="relative flex aspect-1 h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-sky-500/50 text-[13px] font-medium text-white dark:bg-sky-400/50">
+          {author?.match(/(\w+[^\w]*)/gi).map((match) => {
+            return match.charAt(0).toUpperCase();
+          })}
+        </figure>
+        <div className="flex items-center gap-1 text-[15px] dark:text-slate-300">
+          <div className="font-semibold dark:text-slate-100">{author},</div>
+          <div className="text-slate-500 dark:text-slate-400">{jobTitle}</div>
+        </div>
+      </footer>
+    </Link>
   );
 };

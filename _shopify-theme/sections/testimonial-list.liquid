@@ -4,88 +4,89 @@
 {% schema %}
 {
   "name": "Testimonial list",
-  "settings": [],
-  "blocks": [
+  "settings": [
     {
-      "type": "heading",
-      "name": "Heading",
-      "settings": [
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "pre_title",
+      "label": "Pre header"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Paragraph"
+    },
+    {
+      "type": "header",
+      "content": "Primary Button"
+    },
+    {
+      "type": "text",
+      "id": "cta1",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "cta1_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Secondary Button"
+    },
+    {
+      "type": "text",
+      "id": "cta2",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "cta2_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Settings"
+    },
+    {
+      "type": "select",
+      "id": "position",
+      "label": "Position",
+      "default": "center",
+      "options": [
         {
-          "type": "header",
-          "content": "Content"
+          "value": "left",
+          "label": "Left"
         },
         {
-          "type": "text",
-          "id": "pre_title",
-          "label": "Pre header"
+          "value": "center",
+          "label": "Center"
         },
         {
-          "type": "text",
-          "id": "title",
-          "label": "Title"
-        },
-        {
-          "type": "richtext",
-          "id": "paragraph",
-          "label": "Paragraph"
-        },
-        {
-          "type": "header",
-          "content": "Primary Button"
-        },
-        {
-          "type": "text",
-          "id": "cta1",
-          "label": "Text"
-        },
-        {
-          "type": "url",
-          "id": "cta1_link",
-          "label": "Link"
-        },
-        {
-          "type": "header",
-          "content": "Secondary Button"
-        },
-        {
-          "type": "text",
-          "id": "cta2",
-          "label": "Text"
-        },
-        {
-          "type": "url",
-          "id": "cta2_link",
-          "label": "Link"
-        },
-        {
-          "type": "header",
-          "content": "Settings"
-        },
-        {
-          "type": "select",
-          "id": "position",
-          "label": "Position",
-          "default": "center",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            },
-            {
-              "value": "right",
-              "label": "Right"
-            }
-          ]
+          "value": "right",
+          "label": "Right"
         }
       ]
     },
     {
+      "type": "product_list",
+      "id": "products",
+      "label": "Products",
+      "limit": 2
+    }
+  ],
+  "blocks": [
+    {
       "type": "testimonial",
-      "name": "Testimonial",
+      "name": "Manual Testimonial",
       "settings": [
         {
           "type": "header",
@@ -112,9 +113,9 @@
           "label": "Title"
         },
         {
-          "type": "image_picker",
-          "id": "avatar",
-          "label": "Avatar Image"
+          "type": "url",
+          "id": "link",
+          "label": "Link"
         }
       ]
     }

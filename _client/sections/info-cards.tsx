@@ -23,16 +23,13 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
         <div className="scrollbar-none grid gap-4 overflow-x-scroll sm:auto-cols-min sm:grid-flow-col-dense">
           {settings.content_list.map((product) => {
             const svgImage = product.metafields.find(
-              (metafield) =>
-                metafield.key === "svg" &&
-                metafield.type === "file_reference" &&
-                metafield.value.media_type === "generic_file"
+              ({ key }) => key === "logo"
             ) as _Metafield_liquid_file_reference_force_generic;
 
             return (
               <section
                 key={product.id}
-                className="min-w-[220px] select-none rounded-md border border-slate-200 bg-white p-3.5 transition-all hfa:border-slate-400/60 dark:border-slate-700/80 dark:bg-dark-bg dark:hfa:border-slate-500/80"
+                className="min-w-[220px] select-none rounded-md border border-slate-200 bg-white p-3.5 transition-all hfa:border-slate-400/60 dark:border-slate-700/80 dark:bg-dark-card dark:hfa:border-slate-500/80"
               >
                 <header className="flex flex-col gap-2">
                   <figure
