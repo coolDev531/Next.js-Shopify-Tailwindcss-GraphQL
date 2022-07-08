@@ -1,9 +1,7 @@
 import ReactIcon, { ReactIconProps } from "_client/dynamic-react-icon";
 import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
-import { Link } from "_client/link";
 import { Button } from "_client/typography/button";
-import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import { renderIcon } from "_sections/utils";
 import { FC } from "react";
@@ -18,12 +16,8 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
         <div className="lg:flex">
           <section className="relative z-20 mx-auto max-w-[40rem] pb-16 pt-0 lg:mx-0 lg:w-[40rem] lg:max-w-none lg:flex-none lg:pb-24 lg:pr-4 lg:pt-20">
             <header>
-              <Heading size="pre" as="h2">
-                {settings.pre_title}
-              </Heading>
-              <Heading size="2xl" as="h1">
-                {settings.title}
-              </Heading>
+              <h2 className="heading-pre">{settings.pre_title}</h2>
+              <h1 className="heading-2xl">{settings.title}</h1>
               <div className="mt-4 flex flex-wrap gap-6">
                 {settings.tech.map((product) => {
                   const icon = product.metafields.find(({ key }) => key === "react_icon")?.value;
@@ -162,7 +156,7 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
           </section>
         </div>
 
-        <div className="relative mx-auto grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
+        <div className="relative mx-auto grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:auto-cols-fr lg:grid-flow-col">
           {blocks.map((block) => {
             return (
               <section key={`block-${block.id}`} className="group flex">
@@ -176,7 +170,7 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
                 </div>
                 <div className="ml-6">
                   <header>
-                    <h2 className="heading-sm">{block.settings.title}</h2>
+                    <h2 className="heading-xs">{block.settings.title}</h2>
                   </header>
                   <main className="mt-2">
                     <Paragraph className="paragraph-sm leading-6 tracking-normal text-slate-700">

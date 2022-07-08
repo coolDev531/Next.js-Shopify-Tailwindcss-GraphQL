@@ -2,7 +2,6 @@ import { CheckCircleIcon } from "@heroicons/react/solid";
 import { Image } from "_client/image";
 import { Breadcrumbs } from "_client/layout/breadcrumbs";
 import { Wrapper } from "_client/layout/wrapper";
-import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 
 import { FC } from "react";
@@ -29,12 +28,8 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
       <div className="grid-cols-2 gap-8 lg:grid">
         <section className="my-8 lg:pr-10">
           <header>
-            <Heading as="h2" size="pre">
-              {settings.pre_title}
-            </Heading>
-            <Heading as="h1" size="2xl">
-              {settings.title}
-            </Heading>
+            <h2 className="heading-pre">{settings.pre_title}</h2>
+            <h1 className="heading-2xl">{settings.title}</h1>
           </header>
           <main>
             <Paragraph size="lg">{settings.paragraph}</Paragraph>

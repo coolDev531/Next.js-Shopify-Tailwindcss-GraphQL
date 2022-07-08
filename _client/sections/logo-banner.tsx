@@ -2,7 +2,7 @@ import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { useTooltipStore } from "_client/stores/tooltip-store";
 import clsx from "clsx";
-import { FC, forwardRef, LegacyRef, useEffect, useRef, useState } from "react";
+import { FC, forwardRef, useEffect, useRef, useState } from "react";
 import { useWindowSize } from "react-use";
 import { LogoBannerSection } from "types/sections";
 import { _Image_liquid, _Media_liquid } from "types/shopify";
@@ -21,10 +21,10 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
       setAnimate(true);
     }
     if (!settings.animate || bannerRef.current?.clientWidth < containerRef.current?.clientWidth) {
-      animationContainerRef.current.classList.remove("md:animate-slide");
+      animationContainerRef.current?.classList?.remove("md:animate-slide");
       setTimeout(
         () => {
-          animationContainerRef.current.classList.add("md:animate-slide");
+          animationContainerRef.current?.classList?.add("md:animate-slide");
         },
         2
       );

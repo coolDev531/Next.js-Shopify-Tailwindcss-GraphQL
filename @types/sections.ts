@@ -46,6 +46,98 @@ export type BlockquoteSection = {
   type: "blockquote";
 };
 
+export type ContactSection = {
+  blocks: ContactBlocks[];
+  id: string;
+  settings: {
+    /** Input type: richtext */
+    address?: `<p${string}</p>`;
+    /** Input type: text */
+    contact_title?: string;
+    /** Input type: richtext */
+    email?: `<p${string}</p>`;
+    /** Input type: richtext */
+    hours?: `<p${string}</p>`;
+    /** Input type: richtext */
+    info_paragraph?: `<p${string}</p>`;
+    /** Input type: text */
+    info_title?: string;
+    /** Input type: richtext */
+    phone?: `<p${string}</p>`;
+    /** Input type: text */
+    sub_title?: string;
+    /** Input type: richtext */
+    submit_paragraph?: `<p${string}</p>`;
+    /** Input type: text */
+    title?: string;
+  };
+  type: "contact";
+};
+
+export type ContactBlocks =
+  | {
+      id: string;
+      settings: {
+        /** Input type: select */
+        autocomplete: "off" | "name" | "honorific-prefix" | "given-name" | "additional-name" | "family-name" | "honorific-suffix" | "nickname" | "email" | "username" | "new-password" | "current-password" | "one-time-code" | "organization-title" | "organization" | "street-address" | "address-line1, address-line2, address-line3" | "address-level4" | "address-level3" | "address-level2" | "address-level1" | "country" | "country-name" | "postal-code" | "cc-name" | "cc-given-name" | "cc-additional-name" | "cc-family-name" | "cc-number" | "cc-exp" | "cc-exp-month" | "cc-exp-year" | "cc-csc" | "cc-type" | "transaction-currency" | "transaction-amount" | "language" | "bday" | "bday-day" | "bday-month" | "bday-year" | "sex" | "tel" | "tel-country-code" | "tel-national" | "tel-area-code" | "tel-local" | "tel-extension" | "impp" | "url" | "photo";
+        /** Input type: checkbox */
+        required: boolean;
+        /** Input type: radio */
+        size: "half" | "full";
+        /** Input type: select */
+        type: "text" | "textarea" | "email" | "password" | "number" | "tel" | "url" | "date";
+        /** Input type: textarea */
+        error_message?: string;
+        /** Input type: text */
+        placeholder?: string;
+        /** Input type: text */
+        title?: string;
+      };
+      type: "basic";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: select */
+        autocomplete: "off" | "name" | "honorific-prefix" | "given-name" | "additional-name" | "family-name" | "honorific-suffix" | "nickname" | "email" | "username" | "new-password" | "current-password" | "one-time-code" | "organization-title" | "organization" | "street-address" | "address-line1, address-line2, address-line3" | "address-level4" | "address-level3" | "address-level2" | "address-level1" | "country" | "country-name" | "postal-code" | "cc-name" | "cc-given-name" | "cc-additional-name" | "cc-family-name" | "cc-number" | "cc-exp" | "cc-exp-month" | "cc-exp-year" | "cc-csc" | "cc-type" | "transaction-currency" | "transaction-amount" | "language" | "bday" | "bday-day" | "bday-month" | "bday-year" | "sex" | "tel" | "tel-country-code" | "tel-national" | "tel-area-code" | "tel-local" | "tel-extension" | "impp" | "url" | "photo";
+        /** Input type: range */
+        lines: number;
+        /** Input type: checkbox */
+        required: boolean;
+        /** Input type: radio */
+        size: "half" | "full";
+        /** Input type: textarea */
+        error_message?: string;
+        /** Input type: text */
+        placeholder?: string;
+        /** Input type: text */
+        title?: string;
+      };
+      type: "textarea";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: checkbox */
+        required: boolean;
+        /** Input type: radio */
+        size: "half" | "full";
+        /** Input type: radio */
+        type: "radio" | "checkbox" | "select";
+        /** Input type: textarea */
+        error_message?: string;
+        /** Input type: textarea */
+        options?: string;
+        /** Input type: text */
+        title?: string;
+      };
+      type: "group";
+    }
+  | {
+      id: string;
+      type: "separator";
+    };
+
 export type FeatureCarouselSection = {
   blocks: FeatureCarouselBlocks[];
   id: string;
@@ -888,6 +980,7 @@ export type TestimonialListBlocks = {
 export type Sections =
   | BackgroundSection
   | BlockquoteSection
+  | ContactSection
   | FeatureCarouselSection
   | FeatureListSection
   | FooterSection

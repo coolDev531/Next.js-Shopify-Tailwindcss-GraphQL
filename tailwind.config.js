@@ -65,6 +65,10 @@ module.exports = {
           primary: "rgb(var(--color-accent-primary) / <alpha-value>)",
           secondary: "rgb(var(--color-accent-secondary) / <alpha-value>)",
         },
+        button: {
+          text: "rgb(var(--color-button-text) / <alpha-value>)",
+          bg: "rgb(var(--color-button-bg) / <alpha-value>)",
+        },
         dark: {
           border: "#3f3f46",
           bg: "#0e131f",
@@ -459,6 +463,7 @@ module.exports = {
     require("tailwind-children"),
     plugin(({ addVariant, addUtilities, addComponents }) => {
       addVariant("hfa", ["&:hover", "&:focus", "&:active"]);
+      addVariant("hfva", ["&:hover", "&:focus", "&:focus-visible", "&:active"]);
       addVariant("ha", ["&:hover", "&:active"]);
       addVariant("hf", ["&:hover", "&:focus"]);
       addVariant("fa", ["&:focus", "&:active"]);
@@ -471,7 +476,14 @@ module.exports = {
       addVariant("a", ["&::after"]);
       addVariant("not-prose", [":not(.prose &)&"]);
       addVariant("hfaa", ["&:hover", "&:focus", "&:active, &.active"]);
+      addVariant("hfvaa", ["&:hover", "&:focus", "&:focus-visible", "&:active, &.active"]);
       addVariant("group-hfa", [".group:hover &", ".group:focus &", ".group:active &"]);
+      addVariant("group-hfva", [
+        ".group:hover &",
+        ".group:focus &",
+        ".group:focus-visible &",
+        ".group:active &",
+      ]);
       addUtilities({
         ".shape-geometric-precision": {
           "shape-rendering": "geometricPrecision",

@@ -14,19 +14,19 @@
   }
 
   .heading-lg {
-    @apply mb-1 text-lg font-semibold text-slate-800 dark:text-slate-100;
+    @apply mb-3 text-2xl font-semibold sm:text-3xl lg:mb-4 text-slate-800 tracking-tight dark:text-slate-100;
   }
 
   .heading-base {
-    @apply mb-1 font-semibold text-slate-700 dark:text-slate-200;
+    @apply mb-1 text-lg font-semibold text-slate-800 dark:text-slate-100;
   }
 
   .heading-sm {
-    @apply mb-1 font-semibold text-slate-700 text-sm dark:text-slate-300;
+    @apply mb-1 font-semibold text-slate-700 dark:text-slate-200;
   }
 
   .heading-xs {
-    @apply mb-1 font-semibold text-slate-700 text-sm;
+    @apply mb-1 font-semibold text-slate-700 text-sm dark:text-slate-300;
   }
 
   .heading-pre {
@@ -45,6 +45,15 @@
   .paragraph-sm {
     @apply max-w-xl tracking-tight leading-relaxed text-slate-500 [&>p+p]:mt-4 text-sm dark:text-slate-400;
   }
-}
 
+  .button {
+    @apply inline-flex items-center whitespace-nowrap py-3 px-4
+    text-sm font-medium leading-4
+    transition-all duration-100
+    f:outline-none f:ring-2 f:ring-button-bg/80 f:ring-offset-2
+    shadow-button-bg/25
+    rounded-md border border-button-bg/80
+    bg-button-bg h:bg-button-bg/70;
+  }
+}
 

@@ -1,7 +1,6 @@
 import { CheckCircleIcon } from "@heroicons/react/solid";
 import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
-import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
 import { FC } from "react";
@@ -19,12 +18,8 @@ export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ s
           )}
         >
           <header>
-            <Heading as="h3" size="pre">
-              {settings.pre_title}
-            </Heading>
-            <Heading as="h2" size="xl">
-              {settings.title}
-            </Heading>
+            <h3 className="heading-pre">{settings.pre_title}</h3>
+            <h2 className="heading-xl">{settings.title}</h2>
           </header>
           <main>
             <Paragraph>{settings.paragraph}</Paragraph>

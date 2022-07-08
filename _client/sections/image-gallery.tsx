@@ -1,14 +1,18 @@
-import { Wrapper } from "_client/layout/wrapper";
-import { Image } from "_client/image";
-import { FC } from "react";
-import { ImageGallerySection } from "types/sections";
-import img1 from "/public/images/bg-gradient-light.jpg";
 import img2 from "/public/images/bg-gradient-darkpng.png";
+import img1 from "/public/images/bg-gradient-light.jpg";
+import { Image } from "_client/image";
+import { Wrapper } from "_client/layout/wrapper";
+import { motion, useInView } from "framer-motion";
+import { FC, useRef } from "react";
+import { ImageGallerySection } from "types/sections";
 
 export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) => {
+  const galleryRef = useRef();
+  const inView = useInView(galleryRef, { amount: "some", once: true });
+
   return (
     <Wrapper maxWidth="fullscreen" paddingY="base">
-      <div className="relative -mx-8 flex justify-center overflow-hidden ">
+      <div className="relative -mx-8 flex justify-center overflow-hidden" ref={galleryRef}>
         <figure className="absolute left-1/2 top-16 bottom-16 -z-20 -ml-[50vw] w-screen overflow-hidden bg-top bg-no-repeat">
           <Image
             src={img1}
@@ -29,7 +33,11 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
         <section className="mx-auto w-[80rem] min-w-[80rem] [mask-image:linear-gradient(0deg,transparent_0%,white_45%)]">
           <div className="relative flex items-end gap-8 px-8">
             {/*= =============== Image 1 ================ */}
-            <figure className="group relative flex aspect-[1.02118] w-[944px] select-none overflow-hidden rounded shadow-2xl">
+            <motion.figure
+              className="group flex aspect-[1.02118] w-[944px] select-none overflow-hidden rounded shadow-2xl"
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 34 }}
+              transition={{ duration: 0.5, delay: 0 }}
+            >
               {settings.image1
                 ? <Image
                     className="h-full bg-center object-cover"
@@ -51,9 +59,13 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     {settings.title1}
                   </figcaption>
                 : null}
-            </figure>
+            </motion.figure>
             {/*= =============== Image 2 ================ */}
-            <figure className="group relative flex aspect-[2.13962] w-[2268px] select-none overflow-hidden rounded shadow-2xl">
+            <motion.figure
+              className="group relative flex aspect-[2.13962] w-[2268px] select-none overflow-hidden rounded shadow-2xl"
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 34 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
               {settings.image2
                 ? <Image
                     className="h-full bg-center object-cover"
@@ -75,9 +87,13 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     {settings.title2}
                   </figcaption>
                 : null}
-            </figure>
+            </motion.figure>
             {/*= =============== Image 3 ================ */}
-            <figure className="group relative flex aspect-[1.41284] w-[1232px] select-none overflow-hidden rounded shadow-2xl">
+            <motion.figure
+              className="group relative flex aspect-[1.41284] w-[1232px] select-none overflow-hidden rounded shadow-2xl"
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 34 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
               {settings.image3
                 ? <Image
                     className="h-full bg-center object-cover"
@@ -99,11 +115,15 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     {settings.title3}
                   </figcaption>
                 : null}
-            </figure>
+            </motion.figure>
           </div>
           <div className="relative mt-8 flex items-start gap-8">
             {/*= =============== Image 4 ================ */}
-            <figure className="group relative flex aspect-[1.22279] w-[1888px] select-none overflow-hidden rounded shadow-2xl">
+            <motion.figure
+              className="group relative flex aspect-[1.22279] w-[1888px] select-none overflow-hidden rounded shadow-2xl"
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 34 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
               {settings.image4
                 ? <Image
                     className="h-full bg-center object-cover"
@@ -125,9 +145,13 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     {settings.title4}
                   </figcaption>
                 : null}
-            </figure>
+            </motion.figure>
             {/*= =============== Image 5 ================ */}
-            <figure className="group relative flex aspect-[1.90086] w-[1764px] select-none overflow-hidden rounded shadow-2xl">
+            <motion.figure
+              className="group relative flex aspect-[1.90086] w-[1764px] select-none overflow-hidden rounded shadow-2xl"
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 34 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+            >
               {settings.image5
                 ? <Image
                     className="h-full bg-center object-cover"
@@ -149,9 +173,13 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     {settings.title6}
                   </figcaption>
                 : null}
-            </figure>
+            </motion.figure>
             {/*= =============== Image 6 ================ */}
-            <figure className="group relative flex aspect-[0.86301] w-[1008px] select-none overflow-hidden rounded shadow-2xl">
+            <motion.figure
+              className="group relative flex aspect-[0.86301] w-[1008px] select-none overflow-hidden rounded shadow-2xl"
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 34 }}
+              transition={{ duration: 0.5, delay: 1 }}
+            >
               {settings.image6
                 ? <Image
                     className="h-full bg-center object-cover"
@@ -173,7 +201,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     {settings.title6}
                   </figcaption>
                 : null}
-            </figure>
+            </motion.figure>
           </div>
         </section>
       </div>

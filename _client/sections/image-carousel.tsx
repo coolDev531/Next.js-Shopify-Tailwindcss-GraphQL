@@ -26,7 +26,11 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
           }}
         >
           <ImageCarouselSlider settings={settings} blocks={blocks} />
-          <ImageCarouselSlider settings={settings} blocks={blocks} className="!hidden md:!grid" />
+          <ImageCarouselSlider
+            settings={settings}
+            blocks={blocks}
+            className="-ml-8 !hidden md:!grid"
+          />
         </div>
       </div>
     </Wrapper>

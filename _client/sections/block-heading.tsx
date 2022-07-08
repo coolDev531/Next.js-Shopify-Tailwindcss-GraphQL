@@ -1,5 +1,4 @@
 import { Button } from "_client/typography/button";
-import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
 import { FC } from "react";
@@ -29,12 +28,8 @@ export const BlockHeading: FC<PartialBy<HeadingSection, "type" | "id">> = ({ set
         )}
       >
         <header className="max-w-2xl">
-          <Heading size="pre" as="h3">
-            {settings.pre_title}
-          </Heading>
-          <Heading size="xl" as="h2">
-            {settings.title}
-          </Heading>
+          <h3 className="heading-pre">{settings.pre_title}</h3>
+          <h2 className="heading-xl">{settings.title}</h2>
         </header>
         <main className="max-w-prose">
           <Paragraph size="lg">{settings.paragraph}</Paragraph>

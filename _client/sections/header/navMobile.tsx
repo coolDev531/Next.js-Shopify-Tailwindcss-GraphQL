@@ -3,7 +3,6 @@ import HeroIcon from "_client/dynamic-hero-icon";
 import { Image } from "_client/image";
 import LightDarkSwitcher from "_client/light-dark-switch";
 import { Link } from "_client/link";
-import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
 import { FC, Fragment, useCallback, useState } from "react";
@@ -119,9 +118,7 @@ export const NavMobile: FC<{
                                             )}
                                           </figure>
                                           <header>
-                                            <Heading as="h3" size="base">
-                                              {product.title}
-                                            </Heading>
+                                            <h3 className="heading-sm">{product.title}</h3>
                                           </header>
                                           <main>
                                             <Paragraph size="sm">{product.content}</Paragraph>
@@ -219,7 +216,7 @@ export const NavMobile: FC<{
                                                 : "0",
                                             }}
                                           >
-                                            <h3 className="heading-base">{subLink.title}</h3>
+                                            <h3 className="heading-sm">{subLink.title}</h3>
                                             <ul className="flex flex-col gap-1">
                                               {subLink.links.map((subLink) => (
                                                 <li key={subLink.handle}>

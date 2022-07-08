@@ -12,9 +12,9 @@
         "pre_title": "Portfolio of Work",
         "title": "Lunatag App",
         "paragraph": "<p>Lunatag helps you \"Tell a story through your pictures\"<br\/>The focus is to make shopping easy for visitors on your website by highlighting your products through images.<br\/><\/p>",
-        "list_title": "",
-        "list": "",
-        "image": "shopify:\/\/shop_images\/vw.jpg"
+        "list_title": "App features",
+        "list": "<p>Picture tagging function<\/p><p>Automatic picture detection <\/p><p>easily search for products to tag<\/p><p>Picture tagging in multiple pages<\/p><p>Custom the tag design<\/p>",
+        "image": "shopify:\/\/shop_images\/Hero_334b94a9-3c12-40b2-a6e0-56310121da12.png"
       }
     },
     "1654079897751048da": {
@@ -154,6 +154,14 @@
         "9a4d8a7f-af6e-4d79-a8ed-e5b49922b910"
       ],
       "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
       }
     },
     "16540875305d711f9e": {
@@ -190,6 +198,7 @@
           "typescript",
           "shopify"
         ],
+        "collection": "",
         "height": 50,
         "animate": false,
         "animation_duration": 70
@@ -395,6 +404,7 @@
       ],
       "settings": {
         "color_bg": "linear-gradient(145deg, rgba(2, 77, 164, 1), rgba(1, 155, 199, 1) 100%)",
+        "blur_bg": true,
         "color_toggle": "light"
       }
     },
@@ -410,17 +420,17 @@
     "16542613555478f86d": {
       "type": "image-gallery",
       "settings": {
-        "image1": "shopify:\/\/shop_images\/gallery-1.jpg",
+        "image1": "shopify:\/\/shop_images\/collage-1_e4b108b2-e840-41a7-a5dd-9e9e54df08ec.png",
         "title1": "",
-        "image2": "shopify:\/\/shop_images\/Luna-Lemon-image5.jpg",
+        "image2": "shopify:\/\/shop_images\/collage-2_dd733209-ff1d-4545-a69e-a5bf11f1b67f.png",
         "title2": "Graphic design",
-        "image3": "shopify:\/\/shop_images\/gift-registry.jpg",
+        "image3": "shopify:\/\/shop_images\/collage-3_ed40e70f-996c-4b37-8448-22619b16f6e2.png",
         "title3": "Gift Registry",
-        "image4": "shopify:\/\/shop_images\/Product-view.jpg",
+        "image4": "shopify:\/\/shop_images\/collage-4_8b0660f5-b052-4b7e-b203-006f2c045f82.png",
         "title4": "",
-        "image5": "shopify:\/\/shop_images\/Website-baner.jpg",
+        "image5": "shopify:\/\/shop_images\/collaage-5.png",
         "title5": "",
-        "image6": "shopify:\/\/shop_images\/image-photo.jpg",
+        "image6": "shopify:\/\/shop_images\/collage-6_6e873a9c-514f-4a2f-addc-4e4e8bd3a44e.png",
         "title6": ""
       }
     },

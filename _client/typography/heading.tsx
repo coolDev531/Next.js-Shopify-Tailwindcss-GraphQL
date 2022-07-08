@@ -23,11 +23,11 @@ export const Heading: FC<PropsWithChildren<HeadingProps>> = ({
       case "xl":
         return "heading-xl";
       case "lg":
-        return "heading-lg";
-      case "base":
         return "heading-base";
-      case "sm":
+      case "base":
         return "heading-sm";
+      case "sm":
+        return "heading-xs";
       case "xs":
         return "heading-xs";
       case "pre":

@@ -44,7 +44,7 @@ export const PortfolioMenu: FC<
           if (link && link.links.length) {
             return (
               <div key={link.handle} className="">
-                <h3 className="heading-base">{link.title}</h3>
+                <h3 className="heading-sm">{link.title}</h3>
                 <ul className="mt-4 flex flex-col gap-3">
                   {link.links.map((subLink) => (
                     <li key={subLink.handle}>

@@ -1,5 +1,4 @@
 import { Wrapper } from "_client/layout/wrapper";
-import { Heading } from "_client/typography/heading";
 import { FC } from "react";
 import { stripHtml } from "string-strip-html";
 import { InfoCardsSection } from "types/sections";
@@ -11,12 +10,8 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
     <Wrapper maxWidth="xl" paddingY="base">
       <section>
         <header>
-          <Heading as="h3" size="pre">
-            {settings.pre_title}
-          </Heading>
-          <Heading as="h2" size="xl">
-            {settings.title}
-          </Heading>
+          <h3 className="heading-pre">{settings.pre_title}</h3>
+          <h2 className="heading-xl">{settings.title}</h2>
         </header>
       </section>
       <div className="relative sm:left-1/2 sm:-ml-[50vw] sm:w-screen sm:pl-[max(32px,calc((100vw-80rem)/2+32px))]">
@@ -38,9 +33,7 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
                       backgroundImage: `url(${svgImage?.value?.url ?? product.featured_image})`,
                     }}
                   ></figure>
-                  <Heading as="h3" size="lg">
-                    {product.title}
-                  </Heading>
+                  <h3 className="heading-base"> {product.title} </h3>
                 </header>
                 <main className="paragraph-sm">
                   <p>{stripHtml(product.content).result}</p>

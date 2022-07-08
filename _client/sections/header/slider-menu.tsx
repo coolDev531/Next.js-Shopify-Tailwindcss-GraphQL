@@ -1,7 +1,6 @@
 import HeroIcon from "_client/dynamic-hero-icon";
 import { Image } from "_client/image";
 import { Link } from "_client/link";
-import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
 import { useCallback, useRef, useState } from "react";
@@ -65,9 +64,7 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
                 )}
               </figure>
               <header>
-                <Heading as="h3" size="base">
-                  {product.title}
-                </Heading>
+                <h3 className="heading-sm">{product.title}</h3>
               </header>
               <main>
                 <Paragraph size="sm">{product.content}</Paragraph>

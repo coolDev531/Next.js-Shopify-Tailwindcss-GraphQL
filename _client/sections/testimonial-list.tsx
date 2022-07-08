@@ -4,7 +4,7 @@ import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
 import { FC } from "react";
 import { TestimonialListSection } from "types/sections";
-import { _Metafield_liquid_file_reference_force_generic, _Metafield_liquid_file_reference_force_image } from "types/shopify";
+import { _Metafield_liquid_file_reference_force_image } from "types/shopify";
 
 export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, settings, type }) => {
   const { products, ...heading } = settings;
@@ -13,7 +13,7 @@ export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, settin
     <Wrapper maxWidth="xl" paddingY="base">
       <BlockHeading settings={heading} />
       <div className="mt-4 grid grid-cols-2 gap-8">
-        {products.map((product) => {
+        {products?.map((product) => {
           const logo = product.metafields.find(
             ({ key }) => key === "logo"
           ) as _Metafield_liquid_file_reference_force_image;
@@ -112,7 +112,7 @@ export const TestimonialListItem = ({
             : null}
         </figure>
       </header>
-      <blockquote className="mt-2 text-lg dark:text-slate-100">{testimonial}</blockquote>
+      <blockquote className="mt-2 dark:text-slate-100">{testimonial}</blockquote>
       <footer className="mt-3 flex items-center gap-2">
         <figure className="relative flex aspect-1 h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-sky-500/50 text-[13px] font-medium text-white dark:bg-sky-400/50">
           {author?.match(/(\w+[^\w]*)/gi).map((match) => {

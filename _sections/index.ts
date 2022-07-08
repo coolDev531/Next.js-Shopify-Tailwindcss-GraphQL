@@ -1,5 +1,6 @@
 export * from "_sections/background";
 export * from "_sections/blockquote";
+export * from "_sections/contact";
 export * from "_sections/feature-carousel";
 export * from "_sections/feature-list";
 export * from "_sections/footer";

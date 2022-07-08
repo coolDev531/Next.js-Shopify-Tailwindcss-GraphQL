@@ -1,8 +1,8 @@
 import { Background } from "_client/sections/background";
 import { BlockBlockquote } from "_client/sections/block-blockquote";
-import { BlockHeading } from "_client/sections/block-heading";
 import { BlockHero } from "_client/sections/block-hero";
 import { BlockImageText } from "_client/sections/block-image-text";
+import { Contact } from "_client/sections/contact";
 import { FeatureCarousel } from "_client/sections/feature-carousel";
 import { FeatureList } from "_client/sections/feature-list";
 import { Footer } from "_client/sections/footer";
@@ -25,6 +25,12 @@ import { Sections } from "types/sections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {
+    case "contact":
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <Contact {...section} />
+        </section>
+      );
     case "hero-with-features":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>

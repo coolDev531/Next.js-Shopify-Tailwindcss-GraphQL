@@ -3,7 +3,6 @@ import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
-import { Heading } from "_client/typography/heading";
 import { Paragraph } from "_client/typography/paragraph";
 import { FC, useCallback, useRef, useState } from "react";
 import { FeatureCarouselSection } from "types/sections";
@@ -115,9 +114,7 @@ export const FeatureCarouselItem = ({ id, href, image, title, description }) => 
         )}
       </figure>
       <header>
-        <Heading as="h3" size="base">
-          {title}
-        </Heading>
+        <h3 className="heading-sm">{title}</h3>
       </header>
       <main>
         <Paragraph size="sm">{description}</Paragraph>

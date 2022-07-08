@@ -14,4 +14,7 @@ declare module "react" {
     global?: boolean;
     jsx?: boolean;
   }
+  interface CSSProperties {
+    [key: `--${string}`]: string | number;
+  }
 }

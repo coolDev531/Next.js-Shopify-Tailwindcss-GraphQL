@@ -203,7 +203,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Filter Function",
-            "tab_icon": "BadgeCheckIcon",
+            "tab_icon": "filters",
             "title": "Custom filter & search function",
             "paragraph": "<p>This custom filter function helps search for products based on the model, year, and trim of vehicle.<\/p>",
             "cta1": "",
@@ -218,7 +218,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Product set-up",
-            "tab_icon": "BadgeCheckIcon",
+            "tab_icon": "grid",
             "title": "Product content set-up",
             "paragraph": "<p>This ensured all products have a uniform content set-up that linked them to the filter function on the website. It also made identifying the product vehicle match easier for users. <\/p>",
             "cta1": "",

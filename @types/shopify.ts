@@ -1,3 +1,5 @@
+import type settings from "../_shopify-theme/config/settings_data.json";
+
 type ShopifyHeader = {
   content: string;
   type: "header";
@@ -888,7 +890,7 @@ export type GlobalSettings = {
   linklists: _Linklist_liquid[];
   product: _Product_liquid_json;
   request: Request;
-  settings: ShopifySettings;
+  settings: /*ShopifySettings*/ /*Omit<typeof settings["current"], "sections" | "content_for_index">*/ any;
   shop: _Shop_liquid_json;
   template: string;
   title: string;

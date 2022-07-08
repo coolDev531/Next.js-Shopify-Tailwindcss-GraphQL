@@ -73,11 +73,12 @@
       "{{ id }}": {
       "hex": {{ value | json }},
       "alpha": {{ value.alpha | json }},
-      "blue": {{ value.blue | json }},
+      "red": {{ value.red | json }},
       "green": {{ value.green | json }},
+      "blue": {{ value.blue | json }},
+      "rgb": "{{ value.red }} {{ value.green }} {{ value.blue }}",
       "hue": {{ value.hue | json }},
       "lightness": {{ value.lightness | json }},
-      "red": {{ value.red | json }},
       "saturation": {{ value.saturation | json }}
       }{%- unless forloop.last -%},{%- endunless -%}
     {%- elsif value contains "<" or value contains "=" -%}

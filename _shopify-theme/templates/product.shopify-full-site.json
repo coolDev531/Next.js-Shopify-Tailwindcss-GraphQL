@@ -56,6 +56,19 @@
         "image_3": "shopify:\/\/shop_images\/3.png"
       }
     },
+    "1657266690e55b9106": {
+      "type": "contact",
+      "settings": {
+        "title": "Get in Touch",
+        "sub_title": "Tell us how we can help and we’ll get in touch shortly.",
+        "info_title": "How can we help you?",
+        "info_paragraph": "<p>Feel free to contact us with any questions, projects or partnerships. <br\/><br\/>Want to have a online meeting instead? Request an appointment with us.<br\/><br\/>Prefer a cup of coffee and a chat face to face? Schedule an appointment with us in our Cape Town offices.<\/p>",
+        "contact_title": "Cape Town Office",
+        "address": "<p><a href=\"https:\/\/g.page\/tellmann-cpt?share\" target=\"_blank\">21 Pepper Street <br\/>3rd Floor - C\/O Ademas Solutions<br\/>Cape Town, 8001 <br\/>South Africa<\/a><\/p>",
+        "email": "<p><a href=\"mailto:hello@lunalemon.dev\">hello@lunalemon.dev<\/a><\/p>",
+        "hours": "<p>Office Hours: 9:00 - 16:30<\/p>"
+      }
+    },
     "16547615501aa86d63": {
       "type": "heading",
       "settings": {
@@ -406,29 +419,26 @@
         "a6f38bae-51d8-4fc2-a8c5-3067eb477ac2"
       ],
       "settings": {
-        "color_bg": "",
+        "color_bg": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(54, 212, 255, 1) 47%, rgba(43, 252, 135, 1) 83%)",
         "blur_bg": true,
         "color_toggle": "dark"
       }
     },
-    "1654762016e3f34059": {
-      "type": "image-carousel",
+    "165719846348099467": {
+      "type": "testimonial-list",
       "settings": {
-        "pre_title": "",
-        "title": "",
+        "pre_title": "Case studies",
+        "title": "World-class teams use Lunalemon to power their products",
         "paragraph": "",
         "cta1": "",
         "cta1_link": "",
         "cta2": "",
         "cta2_link": "",
-        "position": "center",
+        "position": "left",
         "products": [
-
-        ],
-        "collection": "",
-        "blog": "",
-        "animate": false,
-        "animation_duration": 20
+          "kids-living",
+          "hydrobiz"
+        ]
       }
     },
     "165476583906badf90": {
@@ -451,29 +461,15 @@
         "animation_duration": 20
       }
     },
-    "165476205467493fae": {
-      "type": "feature-carousel",
-      "settings": {
-        "pre_title": "",
-        "title": "",
-        "paragraph": "",
-        "cta1": "",
-        "cta1_link": "",
-        "cta2": "",
-        "cta2_link": "",
-        "position": "center",
-        "features": [
-
-        ]
-      }
-    },
     "1654765182e225ecd7": {
       "type": "info-cards",
       "settings": {
         "pre_title": "Migrations",
         "title": "No matter what platform you come from,",
         "content_list": [
-
+          "takealot",
+          "copy-of-shopify",
+          "vend-pos-1"
         ]
       }
     },
@@ -483,7 +479,9 @@
         "pre_title": "Integrations",
         "title": "or what back-end you want to use.",
         "content_list": [
-
+          "copy-of-shopify",
+          "takealot",
+          "shopify"
         ]
       }
     },
@@ -527,8 +525,8 @@
         "products": [
 
         ],
-        "collection": "",
-        "blog": "work",
+        "collection": "portfolio",
+        "blog": "",
         "animate": false,
         "animation_duration": 20
       }
@@ -557,6 +555,7 @@
   "order": [
     "main",
     "1656935895e67bca71",
+    "1657266690e55b9106",
     "16547615501aa86d63",
     "16547615536da214ca",
     "165476159216c4ff5c",
@@ -565,9 +564,8 @@
     "1654424131fb27794e",
     "1654762013d2c9eed0",
     "1654761954c36d4db0",
-    "1654762016e3f34059",
+    "165719846348099467",
     "165476583906badf90",
-    "165476205467493fae",
     "1654765182e225ecd7",
     "1654765182e225ecd72",
     "165476560159b5ef3e",

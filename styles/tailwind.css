@@ -1,4 +1,4 @@
-@import "typogrpahy.css";
+@import "typogrpahy.scss";
 
 @tailwind base;
 @tailwind components;
