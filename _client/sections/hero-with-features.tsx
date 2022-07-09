@@ -1,4 +1,4 @@
-import ReactIcon, { ReactIconProps } from "_client/dynamic-react-icon";
+import { ReactIcon, ReactIconProps } from "_client/dynamic-react-icon";
 import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { Button } from "_client/typography/button";

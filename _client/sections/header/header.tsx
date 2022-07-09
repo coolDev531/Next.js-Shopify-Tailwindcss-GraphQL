@@ -1,5 +1,5 @@
 import { Badge } from "_client/badge";
-import ReactIcon from "_client/dynamic-react-icon";
+import { ReactIcon } from "_client/dynamic-react-icon";
 import LightDarkSwitcher from "_client/light-dark-switch";
 import { Link } from "_client/link";
 import { DesktopNav } from "_client/sections/header/desktop-nav";
@@ -64,7 +64,7 @@ function NavSettingsDesktop() {
         target="_blank"
         rel="noreferrer"
       >
-        <ReactIcon name="BsGithub" />
+        <ReactIcon name="FaGithub" />
       </Link>
       {/*<Popover className="relative">
         {({ close, open }) => (

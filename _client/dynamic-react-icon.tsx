@@ -6,6 +6,36 @@ export type ReactIconProps = Omit<JSX.IntrinsicElements["svg"], "name"> & {
   name: keyof typeof Icons;
 };
 
+export const ReactIcon: FC<ReactIconProps> = ({ name, ...props }) => {
+  // console.log({ iconName: name });
+  const Icon: ComponentType<JSX.IntrinsicElements["svg"]> = dynamic(
+    () => {
+      const asyncImport = {
+        FaGithub: import("@react-icons/all-files/fa/FaGithub"),
+        FaShopify: import("@react-icons/all-files/fa/FaShopify"),
+        SiNextdotjs: import("@react-icons/all-files/si/SiNextDotJs"),
+        SiTailwindcss: import("@react-icons/all-files/si/SiTailwindcss"),
+        FiCopy: import("@react-icons/all-files/fi/FiCopy"),
+        FaFacebook: import("@react-icons/all-files/Fa/FaFacebook"),
+        FaGoogle: import("@react-icons/all-files/Fa/FaGoogle"),
+        FaInstagram: import("@react-icons/all-files/Fa/FaInstagram"),
+      }[name];
+      if (asyncImport) {
+        return asyncImport.then((mod) => {
+          return mod[Object.keys(mod)[0]];
+        });
+      }
+      return null;
+    }
+    // @ts-ignore
+  );
+
+  return <Icon {...props} />;
+};
+
+/*
+;
+
 type ReactIconTypes =
   | "ai"
   | "bi"
@@ -31,7 +61,7 @@ type ReactIconTypes =
   | "vsc"
   | "wi";
 
-const ReactIcon: FC<ReactIconProps> = ({ name, ...props }) => {
+const ReactIcon2: FC<ReactIconProps> = ({ name, ...props }) => {
   const route = name.substring(0, 2).toLowerCase();
   switch (name.substring(0, 2).toLowerCase() as ReactIconTypes) {
     case "ai": {
@@ -224,3 +254,4 @@ const ReactIcon: FC<ReactIconProps> = ({ name, ...props }) => {
 };
 
 export default ReactIcon;
+*/

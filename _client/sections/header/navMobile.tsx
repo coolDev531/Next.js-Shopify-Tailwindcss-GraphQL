@@ -1,6 +1,6 @@
 import { Popover, Transition } from "@headlessui/react";
 import HeroIcon from "_client/dynamic-hero-icon";
-import ReactIcon from "_client/dynamic-react-icon";
+import { ReactIcon } from "_client/dynamic-react-icon";
 import { Image } from "_client/image";
 import LightDarkSwitcher from "_client/light-dark-switch";
 import { Link } from "_client/link";

@@ -1,5 +1,5 @@
 import HeroIcon from "_client/dynamic-hero-icon";
-import ReactIcon from "_client/dynamic-react-icon";
+import { ReactIcon } from "_client/dynamic-react-icon";
 import { Link } from "_client/link";
 import LunalemonLogo from "public/logo.svg";
 import { FC } from "react";
@@ -69,7 +69,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                     target="_blank"
                     className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
                   >
-                    <ReactIcon name="BsFacebook" />
+                    <ReactIcon name="FaFacebook" />
                   </Link>
                 : null}
               {settings.github
@@ -78,7 +78,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                     target="_blank"
                     className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
                   >
-                    <ReactIcon name="BsGithub" />
+                    <ReactIcon name="FaGithub" />
                   </Link>
                 : null}
               {settings.google
@@ -87,7 +87,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                     target="_blank"
                     className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
                   >
-                    <ReactIcon name="BsGoogle" />
+                    <ReactIcon name="FaGoogle" />
                   </Link>
                 : null}
               {settings.instagram
@@ -96,7 +96,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                     target="_blank"
                     className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
                   >
-                    <ReactIcon name="BsInstagram" />
+                    <ReactIcon name="FaInstagram" />
                   </Link>
                 : null}
             </nav>

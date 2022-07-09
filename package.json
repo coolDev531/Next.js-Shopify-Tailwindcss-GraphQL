@@ -20,6 +20,7 @@
   "dependencies": {
     "@headlessui/react": "^1.6.5",
     "@heroicons/react": "^1.0.6",
+    "@react-icons/all-files": "^4.1.0",
     "@trpc/client": "^9.25.3",
     "@trpc/next": "^9.25.3",
     "@trpc/react": "^9.25.3",
@@ -39,7 +40,6 @@
     "raw-body": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.4.0",
     "react-query": "^3.39.1",
     "react-tooltip": "^4.2.21",
     "react-use": "^17.4.0",
@@ -74,6 +74,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.14",
     "postcss-import": "^14.1.0",
+    "react-icons": "^4.4.0",
     "relative-indexing-method-polyfill": "^1.0.1",
     "sass": "^1.53.0",
     "tailwind-children": "^0.5.0",

@@ -1,4 +1,4 @@
-import ReactIcon from "_client/dynamic-react-icon";
+import { ReactIcon } from "_client/dynamic-react-icon";
 import { Link } from "_client/link";
 import clsx from "clsx";
 import { FC } from "react";
