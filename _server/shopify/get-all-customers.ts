@@ -1,5 +1,5 @@
 import Shopify from "shopify-typed-node-api";
-import { Customer, Metafield, Order } from "shopify-typed-node-api/dist/clients/rest/request_types";
+import { Customer } from "shopify-typed-node-api/dist/clients/rest/request_types";
 
 export const getAllCustomers = async (shop: string, accessToken: string, reducer = (p) => p) => {
   const ShopifyRest = new Shopify.Clients.Rest(shop, `${accessToken}`);

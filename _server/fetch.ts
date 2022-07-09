@@ -1,9 +1,9 @@
-import { Sections } from "types/sections";
-import { GlobalSettings } from "types/shopify";
-import { JSONParse } from "utils/json-parse";
 import { createRouter } from "_server/settings/create-router";
 import axios from "axios";
 import { JSDOM } from "jsdom";
+import { Sections } from "types/sections";
+import { GlobalSettings } from "types/shopify";
+import { JSONParse } from "utils/json-parse";
 import { z } from "zod";
 
 export const fetchRouter = createRouter().query("shopify-content", {

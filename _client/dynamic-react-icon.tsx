@@ -32,6 +32,7 @@ type ReactIconTypes =
   | "wi";
 
 const ReactIcon: FC<ReactIconProps> = ({ name, ...props }) => {
+  const route = name.substring(0, 2).toLowerCase();
   switch (name.substring(0, 2).toLowerCase() as ReactIconTypes) {
     case "ai": {
       const Icon: ComponentType<JSX.IntrinsicElements["svg"]> = dynamic(() =>

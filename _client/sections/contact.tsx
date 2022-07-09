@@ -1,15 +1,11 @@
+import { Listbox, Transition } from "@headlessui/react";
 import HeroIcon from "_client/dynamic-hero-icon";
 import { Wrapper } from "_client/layout/wrapper";
 import { useShopifyData } from "_client/stores/shopify-data-store";
-import { Button } from "_client/typography/button";
 import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
-import { FC, Fragment, ReactNode, useCallback, useState } from "react";
-import { IoIosClock, IoIosMail, IoIosPin } from "react-icons/io";
-import { FaMapPin } from "react-icons/fa";
-import { divWrapper } from "react-universal-interface/lib/createEnhancer";
+import { FC, Fragment, useCallback, useState } from "react";
 import { ContactBlocks, ContactSection } from "types/sections";
-import { Listbox, Transition } from "@headlessui/react";
 
 export type BasicInputProps = Extract<ContactBlocks, { type: "basic" }>["settings"] & {
   blockId: ContactBlocks["id"];

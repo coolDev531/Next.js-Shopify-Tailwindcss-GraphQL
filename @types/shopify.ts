@@ -1,5 +1,4 @@
 import { SettingsSchema } from "types/settings";
-import type settings from "../_shopify-theme/config/settings_data.json";
 
 type ShopifyHeader = {
   content: string;

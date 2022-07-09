@@ -2,7 +2,7 @@ import { header } from "_sections/header";
 import { heading } from "_sections/heading";
 import { icons } from "_sections/utils";
 
-import { ShopifySection, ShopifySelect } from "types/shopify";
+import { ShopifySection } from "types/shopify";
 
 export const specList: ShopifySection = {
   name: "Spec list",

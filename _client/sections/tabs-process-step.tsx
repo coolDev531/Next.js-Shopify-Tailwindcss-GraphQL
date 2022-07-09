@@ -1,7 +1,8 @@
+import ReactIcon from "_client/dynamic-react-icon";
 import { Link } from "_client/link";
 import clsx from "clsx";
 import { FC } from "react";
-import { FiCopy } from "react-icons/fi";
+
 import { TabsProcessStepSection } from "types/sections";
 
 export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, blocks, type }) => {
@@ -91,7 +92,7 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
                   onClick={(e) => console.log(e)}
                   type="button"
                 >
-                  <FiCopy />
+                  <ReactIcon name="FiCopy" />
                 </button>
               </div>
             </header>

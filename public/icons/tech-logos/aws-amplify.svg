@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="256px" height="191px" viewBox="0 0 256 191" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+<svg width="256px"
+     height="191px"
+     viewBox="0 0 256 191"
+     version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     preserveAspectRatio="xMidYMid">
     <title>Amplify</title>
     <defs>
         <linearGradient x1="100%" y1="22.1718317%" x2="0%" y2="77.8281683%" id="Amplify-linearGradient-1">

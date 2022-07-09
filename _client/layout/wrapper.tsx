@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { Property } from "csstype";
-import { FC, HTMLAttributes, PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from "react";
 
 type SectionProps = {
   maxWidth: "sm" | "base" | "xl" | "fullscreen";

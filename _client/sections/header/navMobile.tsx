@@ -1,12 +1,12 @@
 import { Popover, Transition } from "@headlessui/react";
 import HeroIcon from "_client/dynamic-hero-icon";
+import ReactIcon from "_client/dynamic-react-icon";
 import { Image } from "_client/image";
 import LightDarkSwitcher from "_client/light-dark-switch";
 import { Link } from "_client/link";
 import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
 import { FC, Fragment, useCallback, useState } from "react";
-import { BsThreeDotsVertical } from "react-icons/bs";
 import { useMountedState } from "react-use";
 import { HeaderBlocks } from "types/sections";
 import { _Linklist_liquid } from "types/shopify";
@@ -40,7 +40,7 @@ export const NavMobile: FC<{
           <>
             <Popover.Button className="flex h-8 w-8 items-center justify-center rounded text-xl hfa:text-gray-900 dark:hfa:text-white">
               <span className="sr-only">Open user menu</span>
-              <BsThreeDotsVertical />
+              <ReactIcon name="BsThreeDotsVertical" />
             </Popover.Button>
             <Popover.Overlay
               onClick={() => close()}

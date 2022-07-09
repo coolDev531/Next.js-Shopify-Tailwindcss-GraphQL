@@ -1,8 +1,8 @@
 import HeroIcon from "_client/dynamic-hero-icon";
+import ReactIcon from "_client/dynamic-react-icon";
 import { Link } from "_client/link";
 import LunalemonLogo from "public/logo.svg";
 import { FC } from "react";
-import { BsFacebook, BsGithub, BsGoogle, BsInstagram } from "react-icons/bs";
 import { FooterSection } from "types/sections";
 
 export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
@@ -69,7 +69,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                     target="_blank"
                     className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
                   >
-                    <BsFacebook />
+                    <ReactIcon name="BsFacebook" />
                   </Link>
                 : null}
               {settings.github
@@ -78,7 +78,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                     target="_blank"
                     className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
                   >
-                    <BsGithub />
+                    <ReactIcon name="BsGithub" />
                   </Link>
                 : null}
               {settings.google
@@ -87,7 +87,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                     target="_blank"
                     className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
                   >
-                    <BsGoogle />
+                    <ReactIcon name="BsGoogle" />
                   </Link>
                 : null}
               {settings.instagram
@@ -96,7 +96,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                     target="_blank"
                     className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
                   >
-                    <BsInstagram />
+                    <ReactIcon name="BsInstagram" />
                   </Link>
                 : null}
             </nav>

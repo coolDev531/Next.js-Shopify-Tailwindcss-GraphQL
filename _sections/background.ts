@@ -1,5 +1,5 @@
-import { ShopifySection } from "types/shopify";
 import { BackgroundSection } from "types/sections";
+import { ShopifySection } from "types/shopify";
 
 export const background: ShopifySection<BackgroundSection> = {
   name: "Background",

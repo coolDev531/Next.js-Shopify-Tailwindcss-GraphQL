@@ -1,12 +1,11 @@
 import HeroIcon, { IconName } from "_client/dynamic-hero-icon";
-import { ShopifySelect } from "types/shopify";
+import Columns1Light from "public/icons/line-icons/columns-1-light.svg";
+import CubesLight from "public/icons/line-icons/cubes-light.svg";
+import LaptopStarLight from "public/icons/line-icons/laptop-star-light.svg";
 import Server2 from "public/icons/line-icons/server-2.svg";
 import Server8 from "public/icons/line-icons/server-8.svg";
-import UpAlign1Light from "public/icons/line-icons/up-align-1-light.svg";
-import Columns1Light from "public/icons/line-icons/columns-1-light.svg";
-import LaptopStarLight from "public/icons/line-icons/laptop-star-light.svg";
 import Squares1Light from "public/icons/line-icons/squares-1-light.svg";
-import CubesLight from "public/icons/line-icons/cubes-light.svg";
+import UpAlign1Light from "public/icons/line-icons/up-align-1-light.svg";
 
 import Brutalist from "public/icons/tw-icons/brutalist.svg";
 import Colors from "public/icons/tw-icons/colors.svg";
@@ -19,6 +18,10 @@ import Simple from "public/icons/tw-icons/simple.svg";
 import Sizing from "public/icons/tw-icons/sizing.svg";
 import Transforms from "public/icons/tw-icons/transforms.svg";
 import Typography from "public/icons/tw-icons/typography.svg";
+import Ui1 from "public/icons/tw-icons/ui-1.svg";
+import Ui2 from "public/icons/tw-icons/ui-2.svg";
+import Ui3 from "public/icons/tw-icons/ui-3.svg";
+import Ui4 from "public/icons/tw-icons/ui-4.svg";
 
 import UiAvatar from "public/icons/tw-icons/ui-avatar.svg";
 import UiCode from "public/icons/tw-icons/ui-code.svg";
@@ -26,10 +29,6 @@ import UiCursor from "public/icons/tw-icons/ui-cursor.svg";
 import UiMobile from "public/icons/tw-icons/ui-mobile.svg";
 import UiResponsive from "public/icons/tw-icons/ui-responsive.svg";
 import UiStack from "public/icons/tw-icons/ui-stack.svg";
-import Ui1 from "public/icons/tw-icons/ui-1.svg";
-import Ui2 from "public/icons/tw-icons/ui-2.svg";
-import Ui3 from "public/icons/tw-icons/ui-3.svg";
-import Ui4 from "public/icons/tw-icons/ui-4.svg";
 
 import CalendarLight from "public/icons/tw-ui-icons/calendar-light.svg";
 import ChatLight from "public/icons/tw-ui-icons/chat-light.svg";
@@ -45,6 +44,7 @@ import ShippingSimple from "public/icons/tw-ui-icons/shipping-simple.svg";
 import Stack from "public/icons/tw-ui-icons/stack.svg";
 import WarrantyLight from "public/icons/tw-ui-icons/warranty-light.svg";
 import WarrantySimple from "public/icons/tw-ui-icons/warranty-simple.svg";
+import { ShopifySelect } from "types/shopify";
 
 export const heroIconItems: IconName[] = [
   "BadgeCheckIcon",

@@ -1,5 +1,5 @@
-import { ShopifySection } from "types/shopify";
 import { TabsFaqSection } from "types/sections";
+import { ShopifySection } from "types/shopify";
 
 export const tabsFaq: ShopifySection<TabsFaqSection> = {
   name: "Tabs faq",

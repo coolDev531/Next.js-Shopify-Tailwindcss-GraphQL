@@ -1,6 +1,6 @@
 import { heading } from "_sections/heading";
-import { ShopifySection } from "types/shopify";
 import { TeamListSection } from "types/sections";
+import { ShopifySection } from "types/shopify";
 
 export const teamList: ShopifySection<TeamListSection> = {
   name: "Team list",

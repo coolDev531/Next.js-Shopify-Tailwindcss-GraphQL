@@ -3,7 +3,6 @@ import clsx from "clsx";
 import svgToDataUri from "mini-svg-data-uri";
 import { FC } from "react";
 import { BackgroundSection } from "types/sections";
-import { cleanSvgIds } from "utils/clean-svg-ids";
 
 export const Background: FC<BackgroundSection> = ({ blocks }) => {
   return (

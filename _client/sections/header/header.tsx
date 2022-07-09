@@ -1,5 +1,5 @@
 import { Badge } from "_client/badge";
-import { Wrapper } from "_client/layout/wrapper";
+import ReactIcon from "_client/dynamic-react-icon";
 import LightDarkSwitcher from "_client/light-dark-switch";
 import { Link } from "_client/link";
 import { DesktopNav } from "_client/sections/header/desktop-nav";
@@ -7,7 +7,7 @@ import { NavMobile } from "_client/sections/header/navMobile";
 import { SEO } from "content/seo";
 import LunalemonLogo from "public/logo.svg";
 import { FC } from "react";
-import { BsGithub } from "react-icons/bs";
+
 import { HeaderSection } from "types/sections";
 
 export const Header: FC<HeaderSection> = ({ id, type, settings, blocks }) => {
@@ -64,7 +64,7 @@ function NavSettingsDesktop() {
         target="_blank"
         rel="noreferrer"
       >
-        <BsGithub />
+        <ReactIcon name="BsGithub" />
       </Link>
       {/*<Popover className="relative">
         {({ close, open }) => (

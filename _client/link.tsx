@@ -1,6 +1,6 @@
-import { isExternalUrl } from "utils/is-external-url";
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
 import { AnchorHTMLAttributes, FC, useCallback } from "react";
+import { isExternalUrl } from "utils/is-external-url";
 
 export type LinkProps = AnchorHTMLAttributes<any> & NextLinkProps;
 

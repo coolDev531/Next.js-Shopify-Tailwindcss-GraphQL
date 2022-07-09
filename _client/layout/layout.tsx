@@ -1,4 +1,3 @@
-import { useInitShopifyData } from "_client/hooks/use-shopify-data";
 import { renderSection } from "_client/sections/_render-section";
 import { ContextProviders } from "_client/stores/_context-providers";
 import { LoadInitialData } from "_client/stores/_load-initial-data";
@@ -18,7 +17,7 @@ export const Layout: FC<LayoutProps> = ({ sections, global }) => {
   const router = useRouter();
   const { theme } = useTheme();
 
-  const pageSettings = sections.find(
+  const pageSettings = sections?.find(
     (section) => section.type === "page-settings"
   ) as PageSettingsSection;
 
@@ -39,30 +38,30 @@ export const Layout: FC<LayoutProps> = ({ sections, global }) => {
       <ContextProviders>
         <style jsx global>{`
           :root {
-            --color-bg: ${global.settings.color_bg?.rgb};
-            --color-bg-dark: ${global.settings.color_bg_dark?.rgb};
-            --color-bg-secondary: ${global.settings.color_bg_secondary?.rgb};
-            --color-bg-secondary-dark: ${global.settings.color_bg_secondary?.rgb};
+            --color-bg: ${global?.settings.color_bg?.rgb};
+            --color-bg-dark: ${global?.settings.color_bg_dark?.rgb};
+            --color-bg-secondary: ${global?.settings.color_bg_secondary?.rgb};
+            --color-bg-secondary-dark: ${global?.settings.color_bg_secondary?.rgb};
 
-            --color-card: ${global.settings.color_bg_card?.rgb};
-            --color-card-dark: ${global.settings.color_bg_card_dark?.rgb};
+            --color-card: ${global?.settings.color_bg_card?.rgb};
+            --color-card-dark: ${global?.settings.color_bg_card_dark?.rgb};
 
-            --color-accent: ${global.settings.color_accent?.rgb};
-            --color-accent-contrast: ${global.settings.color_accent_contrast?.rgb};
-            --color-accent-secondary: ${global.settings.color_accent_secondary?.rgb};
-            --color-accent-secondary-contrast: ${global.settings.color_accent_secondary_contrast
+            --color-accent: ${global?.settings.color_accent?.rgb};
+            --color-accent-contrast: ${global?.settings.color_accent_contrast?.rgb};
+            --color-accent-secondary: ${global?.settings.color_accent_secondary?.rgb};
+            --color-accent-secondary-contrast: ${global?.settings.color_accent_secondary_contrast
               ?.rgb};
 
-            --color-accent-dark: ${global.settings.color_accent_dark?.rgb};
-            --color-accent-contrast-dark: ${global.settings.color_accent_contrast_dark?.rgb};
-            --color-accent-secondary-dark: ${global.settings.color_accent_secondary_dark?.rgb};
-            --color-accent-secondary--contrast-dark: ${global.settings
+            --color-accent-dark: ${global?.settings.color_accent_dark?.rgb};
+            --color-accent-contrast-dark: ${global?.settings.color_accent_contrast_dark?.rgb};
+            --color-accent-secondary-dark: ${global?.settings.color_accent_secondary_dark?.rgb};
+            --color-accent-secondary--contrast-dark: ${global?.settings
               .color_accent_secondary_contrast_dark?.rgb};
 
-            --color-success: ${global.settings.color_success?.rgb};
-            --color-info: ${global.settings.color_info?.rgb};
-            --color-warning: ${global.settings.color_warning?.rgb};
-            --color-danger: ${global.settings.color_danger?.rgb};
+            --color-success: ${global?.settings.color_success?.rgb};
+            --color-info: ${global?.settings.color_info?.rgb};
+            --color-warning: ${global?.settings.color_warning?.rgb};
+            --color-danger: ${global?.settings.color_danger?.rgb};
           }
 
           .dark {
@@ -119,7 +118,7 @@ export const Layout: FC<LayoutProps> = ({ sections, global }) => {
                 openGraph={SEO.openGraph}
               />
 
-              {sections.map((section) => renderSection(section))}
+              {sections?.map((section) => renderSection(section))}
             </ThemeProvider>
           </LoadInitialData>
         </main>

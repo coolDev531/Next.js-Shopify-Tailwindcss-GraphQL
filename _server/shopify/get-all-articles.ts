@@ -1,6 +1,6 @@
 import { getAllBlogs } from "_server/shopify/get-all-blogs";
 import Shopify from "shopify-typed-node-api";
-import { _Article, Article, Blog, Metafield, Order, Page } from "shopify-typed-node-api/dist/clients/rest/request_types";
+import { _Article, Article } from "shopify-typed-node-api/dist/clients/rest/request_types";
 
 export const getAllArticles = async (shop: string, accessToken: string, reducer = (p) => p) => {
   const ShopifyRest = new Shopify.Clients.Rest(shop, `${accessToken}`);

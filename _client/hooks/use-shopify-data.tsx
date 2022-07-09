@@ -1,6 +1,5 @@
 import { useShopifyData } from "_client/stores/shopify-data-store";
-import { useCallback, useEffect, useState } from "react";
-import { DehydratedState } from "react-query";
+import { useCallback, useEffect } from "react";
 import { Sections } from "types/sections";
 import { GlobalSettings } from "types/shopify";
 
@@ -13,7 +12,7 @@ export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[
         source: "theme-content",
         topic: "resize",
         totalHeight: document.body.clientHeight,
-        sections: sections.map(({ id }) => ({
+        sections: sections?.map(({ id }) => ({
           id,
           height: document.getElementById(`section--${id}`)?.clientHeight ?? 0,
         })),

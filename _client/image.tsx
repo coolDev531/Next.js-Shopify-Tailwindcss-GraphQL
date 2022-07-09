@@ -1,4 +1,3 @@
-import { Property } from "csstype";
 import { ImageProps } from "next/dist/client/future/image";
 import NextImage from "next/future/image";
 import { FC } from "react";
@@ -12,6 +11,9 @@ export const Image: FC<
   }
 > = ({ pixelDensity = 1, ...props }) => {
   const { src, width, height, maxWidth, maxHeight, ...rest } = props;
+  if (!src) {
+    return null;
+  }
   const aspectRatio = +width / +height;
   return (
     <NextImage

@@ -1,5 +1,5 @@
-import { ShopifySection } from "types/shopify";
 import { ContactSection } from "types/sections";
+import { ShopifySection } from "types/shopify";
 
 const autoCompleteOptions = [
   "off",

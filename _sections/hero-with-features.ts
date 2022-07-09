@@ -1,6 +1,6 @@
 import { icons } from "_sections/utils";
-import { ShopifySection } from "types/shopify";
 import { HeroWithFeaturesSection } from "types/sections";
+import { ShopifySection } from "types/shopify";
 
 export const heroWithFeatures: ShopifySection<HeroWithFeaturesSection> = {
   name: "Hero with features",
