@@ -74,13 +74,13 @@
   "password_message": {{ shop.password_message | json }},
   "permanent_domain": {{ shop.permanent_domain | json }},
   "phone": {{ shop.phone | json }},
-  "policies": {{ shop.policies | json }},
-  "privacy_policy": {{ shop.privacy_policy | json }},
+  {% comment %}"policies": {{ shop.policies | json }},{% endcomment %}
+  {% comment %}"privacy_policy": {{ shop.privacy_policy | json }},{% endcomment %}
   "published_locales": {{ shop.published_locales | json }},
-  "refund_policy": {{ shop.refund_policy | json }},
-  "shipping_policy": {{ shop.shipping_policy | json }},
-  "subscription_policy": {{ shop.subscription_policy | json }},
-  "terms_of_service": {{ shop.terms_of_service | json }},
+  {% comment %}"refund_policy": {{ shop.refund_policy | json }},{% endcomment %}
+  {% comment %}"shipping_policy": {{ shop.shipping_policy | json }},{% endcomment %}
+  {% comment %}"subscription_policy": {{ shop.subscription_policy | json }},{% endcomment %}
+  {% comment %}"terms_of_service": {{ shop.terms_of_service | json }},{% endcomment %}
   "products_count": {{ shop.products_count | json }},
   "secure_url": {{ shop.secure_url | json }},
   "types": {{ shop.types | json }},

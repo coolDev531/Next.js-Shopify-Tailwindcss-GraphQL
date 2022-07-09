@@ -1,55 +1,15 @@
 {%- if input_linklist -%}
-  {
-  "handle": {{ input_linklist.handle | json }},
-  "levels": {{ input_linklist.levels | json }},
-  "links": [
-  {%- for link in input_linklist.links  -%}
+  {% unless input_linklist.handle contains "-legacy-" %}
     {
-    "active": {{ link.active | json }},
-    "child_active": {{ link.child_active |json }},
-    "current": {{ link.current |json }},
-    "child_current": {{ link.child_current |json }},
-    "levels": {{ link.levels |json }},
-    "handle": {{ link.handle |json }},
-    "links": [
-    {%- for sub_link in link.links  -%}
-      {
-      "active": {{ sub_link.active | json }},
-      "child_active": {{ sub_link.child_active |json }},
-      "current": {{ sub_link.current |json }},
-      "child_current": {{ sub_link.child_current |json }},
-      "levels": {{ sub_link.levels |json }},
-      "handle": {{ sub_link.handle |json }},
-      "links": [
-      {%- for sub_sub_link in sub_link.links  -%}
-        {
-        "active": {{ sub_sub_link.active | json }},
-        "child_active": {{ sub_sub_link.child_active |json }},
-        "current": {{ sub_sub_link.current |json }},
-        "child_current": {{ sub_sub_link.child_current |json }},
-        "levels": {{ sub_sub_link.levels |json }},
-        "handle": {{ sub_sub_link.handle |json }},
-        "links": {{ sub_sub_link.links |json }},
-        "object": {%- include '_map_linkobject', input_linkobject: sub_sub_link.object -%},
-        "title": {{ sub_sub_link.title |json }},
-        "type": {{ sub_sub_link.type |json }},
-        "url": {{ sub_sub_link.url |json }}
-        }{%- unless forloop.last -%},{%- endunless -%}
-      {%- endfor -%}],
-      "object": {%- include '_map_linkobject', input_linkobject: sub_link.object -%},
-      "title": {{ sub_link.title |json }},
-      "type": {{ sub_link.type |json }},
-      "url": {{ sub_link.url |json }}
-      }{%- unless forloop.last -%},{%- endunless -%}
-    {%- endfor -%}],
-    "object": {%- include '_map_linkobject', input_linkobject: link.object  -%},
-    "title": {{ link.title |json }},
-    "type": {{ link.type |json }},
-    "url": {{ link.url |json }}
-    }{%- unless forloop.last -%},{%- endunless -%}
-  {%- endfor -%}],
-  "title": {{ input_linklist.title | json }}
-  }
+    "handle": {{ input_linklist.handle | json }},
+    "levels": {{ input_linklist.levels | json }},
+    "links": {%- include '_map_links', input_links: input_linklist.links -%},
+    "title": {{ input_linklist.title | json }}
+    }
+  {% else %}
+    null
+  {% endunless %}
 {%- else -%}
-null
+  null
 {%- endif -%}
+

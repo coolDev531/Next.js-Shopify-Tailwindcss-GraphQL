@@ -54,7 +54,7 @@ export const TabsFaq: FC<TabsFaqSection> = ({ id, settings, blocks, type }) => {
                         </header>
                         <main
                           className="text-sm opacity-75"
-                          dangerouslySetInnerHTML={{ __html: product.description }}
+                          dangerouslySetInnerHTML={{ __html: product.content }}
                         />
                       </section>
                     );

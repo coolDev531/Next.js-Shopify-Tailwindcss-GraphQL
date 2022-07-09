@@ -1,10 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "template-product",
-      "settings": {
-      }
-    },
     "1656935895e67bca71": {
       "type": "hero-with-features",
       "blocks": {
@@ -696,7 +691,6 @@
     }
   },
   "order": [
-    "main",
     "1656935895e67bca71",
     "1657266690e55b9106",
     "16547615501aa86d63",

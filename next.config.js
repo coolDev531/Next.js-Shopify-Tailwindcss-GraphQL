@@ -4,6 +4,9 @@
 module.exports = {
   swcMinify: true,
   reactStrictMode: true,
+  api: {
+    responseLimit: "8mb",
+  },
   strictMode: true,
   images: {
     dangerouslyAllowSVG: true,

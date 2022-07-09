@@ -55,7 +55,7 @@
       "family": {{ value.family | json }},
       "style": {{ value.style | json }},
       "system": {{ value.system | json }},
-      "weight": {{ value.weight | json }},
+      "weight": {{ value.weight | json }}{% comment %},
       "variants": [
       {%- for font_variant in value.variants -%}
         {
@@ -67,19 +67,19 @@
         "weight": {{ font_variant.weight | json }}
         }{%- unless forloop.last -%},{%- endunless -%}
       {%- endfor -%}
-      ]
+      ]{% endcomment %}
       }{%- unless forloop.last -%},{%- endunless -%}
     {%- elsif value.alpha -%}
       "{{ id }}": {
       "hex": {{ value | json }},
       "alpha": {{ value.alpha | json }},
-      "red": {{ value.red | json }},
-      "green": {{ value.green | json }},
-      "blue": {{ value.blue | json }},
-      "rgb": "{{ value.red }} {{ value.green }} {{ value.blue }}",
-      "hue": {{ value.hue | json }},
-      "lightness": {{ value.lightness | json }},
-      "saturation": {{ value.saturation | json }}
+      {% comment %}"red": {{ value.red | json }},{% endcomment %}
+      {% comment %}"green": {{ value.green | json }},{% endcomment %}
+      {% comment %}"blue": {{ value.blue | json }},{% endcomment %}
+      "rgb": "{{ value.red }} {{ value.green }} {{ value.blue }}"{% comment %},
+      "hue": {{ value.hue | json }},{% endcomment %}
+      {% comment %}"lightness": {{ value.lightness | json }},{% endcomment %}
+      {% comment %}"saturation": {{ value.saturation | json }}{% endcomment %}
       }{%- unless forloop.last -%},{%- endunless -%}
     {%- elsif value contains "<" or value contains "=" -%}
       "{{ id }}": {%- assign value = value
@@ -212,7 +212,7 @@
             | replace: "ychannelselector=", "yChannelSelector="
             | replace: "zoomandpan=", "zoomAndPan="
     -%}{{ value | json }}{%- unless forloop.last -%},{%- endunless -%}
-      {% else %}
+    {% else %}
       "{{ id }}": {{ value | json }}{%- unless forloop.last -%},{%- endunless -%}
     {%- endif -%}
   {%- endfor -%}

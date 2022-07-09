@@ -84,30 +84,30 @@ export const TestimonialListItem = ({
           {logo && logoDark
             ? <>
                 <Image
-                  src={`${logo?.value.src}`}
+                  src={`${logo?.value?.src}`}
                   className="h-full w-auto object-contain dark:hidden"
                   maxHeight={200}
-                  width={logo?.value.width}
-                  height={logo?.value.height}
-                  alt={logo?.value.alt}
+                  width={logo?.value?.width}
+                  height={logo?.value?.height}
+                  alt={logo?.value?.alt}
                 />
                 <Image
-                  src={`${logoDark?.value.src}`}
+                  src={`${logoDark?.value?.src}`}
                   className="hidden h-full w-auto object-contain dark:block"
                   maxHeight={200}
-                  width={logoDark?.value.width}
-                  height={logoDark?.value.height}
-                  alt={logoDark?.value.alt}
+                  width={logoDark?.value?.width}
+                  height={logoDark?.value?.height}
+                  alt={logoDark?.value?.alt}
                 />
               </>
             : logo
             ? <Image
-                src={`${logo?.value.src}`}
+                src={`${logo?.value?.src}`}
                 className="h-full w-auto object-contain"
                 maxHeight={200}
-                width={logo?.value.width}
-                height={logo?.value.height}
-                alt={logo?.value.alt}
+                width={logo?.value?.width}
+                height={logo?.value?.height}
+                alt={logo?.value?.alt}
               />
             : null}
         </figure>

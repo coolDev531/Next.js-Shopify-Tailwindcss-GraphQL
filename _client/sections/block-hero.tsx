@@ -12,16 +12,18 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
     <Wrapper maxWidth="xl" paddingY="base">
       <div className="mx-auto -mt-4 max-w-lg">
         <figure className="relative mx-4 mb-8 aspect-1 lg:hidden">
-          <Image
-            maxWidth={600}
-            pixelDensity={1}
-            priority
-            className="object-contain"
-            width={settings.image.width}
-            height={settings.image.height}
-            src={`${settings?.image?.src}`}
-            alt={settings?.image?.alt}
-          />
+          {settings.image
+            ? <Image
+                maxWidth={600}
+                pixelDensity={1}
+                priority
+                className="object-contain"
+                width={settings.image?.width}
+                height={settings.image?.height}
+                src={`${settings?.image?.src}`}
+                alt={settings?.image?.alt}
+              />
+            : null}
         </figure>
       </div>
       <Breadcrumbs />
@@ -62,9 +64,9 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
                 priority
                 className="block min-w-[600px]"
                 width={600}
-                height={600 * settings.image.aspect_ratio}
-                // width={settings.image.width}
-                // height={settings.image.height}
+                height={600 * settings.image?.aspect_ratio}
+                // width={settings.image?.width}
+                // height={settings.image?.height}
                 src={`${settings?.image?.src}`}
                 alt={settings?.image?.alt}
               />

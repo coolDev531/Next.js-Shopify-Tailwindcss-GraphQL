@@ -1,6 +1,24 @@
 {
   "current": {
-
+    "grayscale": "slate",
+    "color_bg": "#ffffff",
+    "color_bg_dark": "#0e131f",
+    "color_bg_secondary": "#f8fafc",
+    "color_bg_secondary_dark": "#1b212e",
+    "color_bg_card": "#f1f5f9",
+    "color_bg_card_dark": "#19222e",
+    "color_accent": "#0ea5e9",
+    "color_accent_contrast": "#ffffff",
+    "color_accent_secondary": "#ec4899",
+    "color_accent_secondary_contrast": "#ffffff",
+    "color_accent_dark": "#38bdf8",
+    "color_accent_contrast_dark": "#ffffff",
+    "color_accent_secondary_dark": "#f472b6",
+    "color_accent_secondary_contrast_dark": "#ffffff",
+    "color_success": "#22c55e",
+    "color_info": "#38bdf8",
+    "color_warning": "#f59e0b",
+    "color_danger": "#fc0000",
     "sections": {
       "header": {
         "type": "header",

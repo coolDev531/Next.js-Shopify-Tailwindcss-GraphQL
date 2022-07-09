@@ -1,9 +1,16 @@
 {
   "sections": {
-    "main": {
-      "type": "template-article",
-      "disabled": true,
+    "165736865351d527c7": {
+      "type": "page-settings",
       "settings": {
+        "color_accent": "#fc1989",
+        "color_accent_contrast": "#ffffff",
+        "color_accent_secondary": "",
+        "color_accent_secondary_contrast": "",
+        "color_accent_dark": "#ec4899",
+        "color_accent_contrast_dark": "#ffffff",
+        "color_accent_secondary_dark": "",
+        "color_accent_secondary_contrast_dark": ""
       }
     },
     "16540104123512b9a3": {
@@ -600,7 +607,7 @@
     }
   },
   "order": [
-    "main",
+    "165736865351d527c7",
     "16540104123512b9a3",
     "1654079897751048da",
     "16540846002974a6ff",
