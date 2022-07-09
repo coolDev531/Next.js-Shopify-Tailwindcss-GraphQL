@@ -41,7 +41,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
                   clsx(
                     "w-12 h-12 mb-4",
                     block.id === activateTab
-                      ? "text-sky-500 dark:text-sky-400 [--svg-active-opacity:0.1] [--svg-active-fill:currentColor]"
+                      ? "text-accent [--svg-active-opacity:0.1] [--svg-active-fill:currentColor]"
                       : "text-gray-300 group-hover:text-gray-500/60 dark:text-gray-600 dark:group-hover:text-gray-300/60"
                   )
                 )}
@@ -49,7 +49,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
               <h3
                 className={clsx(
                   "text-sm font-semibold tracking-tight",
-                  block.id === activateTab && "text-sky-500 dark:text-sky-400"
+                  block.id === activateTab && "text-accent"
                 )}
               >
                 {block.settings.tab_title}

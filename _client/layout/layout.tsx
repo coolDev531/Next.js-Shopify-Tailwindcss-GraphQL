@@ -9,7 +9,7 @@ import { ThemeProvider } from "next-themes";
 import { useRouter } from "next/router";
 import { SEO } from "pages/_app";
 import { FC } from "react";
-import { Sections } from "types/sections";
+import { PageSettingsSection, Sections } from "types/sections";
 import { GlobalSettings } from "types/shopify";
 
 type LayoutProps = { global: GlobalSettings; sections: Sections[] };
@@ -17,6 +17,10 @@ type LayoutProps = { global: GlobalSettings; sections: Sections[] };
 export const Layout: FC<LayoutProps> = ({ sections, global }) => {
   const router = useRouter();
 
+  const pageSettings = sections.find(
+    (section) => section.type === "page-settings"
+  ) as PageSettingsSection;
+  console.log(pageSettings);
   return (
     <ShopifyDataProvider init={{ sections, global }}>
       <ContextProviders>
@@ -37,14 +41,37 @@ export const Layout: FC<LayoutProps> = ({ sections, global }) => {
             --color-warning: ${global.settings.color_warning.rgb};
             --color-danger: ${global.settings.color_danger.rgb};
           }
+
+          .dark {
+            --color-bg: var(--color-bg-dark);
+            --color-bg-secondary: var(--color-bg-secondary-dark);
+            --color-card: var(--color-card-dark);
+            --color-accent: var(--color-accent-dark);
+            --color-accent-secondary: var(--color-accent-secondary-dark);
+          }
+
+          .page-settings--color-accent {
+            --color-accent: ${pageSettings?.settings.color_accent.rgb};
+          }
+
+          .dark .page-settings {
+            --color-bg: var(--color-bg-dark);
+            --color-bg-secondary: var(--color-bg-secondary-dark);
+            --color-card: var(--color-card-dark);
+            --color-accent: var(--color-accent-dark);
+            --color-accent-secondary: var(--color-accent-secondary-dark);
+          }
         `}</style>
         <main
           className={clsx(
-            "min-h-screen overflow-x-hidden text-gray-600 d:text-gray-400 dark:bg-dark-bg",
+            "page-settings",
+            pageSettings?.settings.color_accent.alpha > 0 && "page-settings--color-accent",
+            "relative min-h-screen overflow-x-hidden text-gray-600 d:text-gray-400",
             "min-h-[calc(100vh-300px)] [&>:is(section,header,footer)]:relative",
             `color-gray--${global?.settings?.grayscale}`
           )}
         >
+          <div className="user-select-none absolute inset-0 -z-[100] h-full w-full bg-bg"></div>
           <LoadInitialData>
             <ThemeProvider attribute="class">
               <DefaultSeo

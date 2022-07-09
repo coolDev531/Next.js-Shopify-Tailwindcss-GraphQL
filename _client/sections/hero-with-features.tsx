@@ -164,7 +164,7 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
                   {block.settings.icon
                     ? renderIcon(
                         block.settings.icon,
-                        "h-10 w-10 shrink-0 rounded-lg shadow-md text-sky-500 shadow-sky-500/[.12] transform-cpu group-hfa:[--svg-active-opacity:1]"
+                        "h-10 w-10 shrink-0 rounded-lg shadow-md text-accent shadow-accent/[.12] transform-cpu group-hfa:[--svg-active-opacity:1]"
                       )
                     : null}
                 </div>

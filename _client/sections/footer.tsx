@@ -67,7 +67,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                 ? <Link
                     href={settings.facebook}
                     target="_blank"
-                    className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-sky-500 dark:text-gray-400 dark:hfa:text-sky-400"
+                    className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
                   >
                     <BsFacebook />
                   </Link>
@@ -76,7 +76,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                 ? <Link
                     href={settings.github}
                     target="_blank"
-                    className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-sky-500 dark:text-gray-400 dark:hfa:text-sky-400"
+                    className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
                   >
                     <BsGithub />
                   </Link>
@@ -85,7 +85,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                 ? <Link
                     href={settings.google}
                     target="_blank"
-                    className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-sky-500 dark:text-gray-400 dark:hfa:text-sky-400"
+                    className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
                   >
                     <BsGoogle />
                   </Link>
@@ -94,7 +94,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                 ? <Link
                     href={settings.instagram}
                     target="_blank"
-                    className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-sky-500 dark:text-gray-400 dark:hfa:text-sky-400"
+                    className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
                   >
                     <BsInstagram />
                   </Link>

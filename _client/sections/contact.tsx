@@ -143,7 +143,7 @@ export const AdvancedInput: FC<AdvancedInputProps> = ({
                       <input
                         name={title}
                         type="checkbox"
-                        className="h-4 w-4 rounded border-gray-300 text-sky-500 focus:ring-sky-400"
+                        className="h-4 w-4 rounded border-gray-300 text-accent focus:ring-sky-400"
                       />
                       <div className="ml-4">{option}</div>
                     </label>
@@ -196,7 +196,7 @@ export const AdvancedInput: FC<AdvancedInputProps> = ({
                               key={`option-${blockId}-${opt}`}
                               className={({ active }) =>
                                 clsx(
-                                  active ? "bg-sky-500" : "text-gray-900",
+                                  active ? "bg-accent" : "text-gray-900",
                                   "relative cursor-default select-none py-2 pl-8 pr-4"
                                 )
                               }
@@ -217,7 +217,7 @@ export const AdvancedInput: FC<AdvancedInputProps> = ({
                                   {selected
                                     ? <span
                                         className={clsx(
-                                          active ? "text-white" : "text-sky-500",
+                                          active ? "text-white" : "text-accent",
                                           "absolute inset-y-0 left-0 flex items-center pl-1.5"
                                         )}
                                       >
@@ -293,7 +293,7 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
               }
             })}
           </main>
-          <footer className="flex items-center justify-between bg-sky-500 px-6 py-10 text-white">
+          <footer className="flex items-center justify-between bg-accent px-6 py-10 text-white">
             <Paragraph className="text-white [&_a]:underline">
               {settings.submit_paragraph}
             </Paragraph>

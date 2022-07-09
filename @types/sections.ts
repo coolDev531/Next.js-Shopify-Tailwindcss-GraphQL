@@ -1,4 +1,4 @@
-import { _Image_liquid, _Product_liquid, _Linklist_liquid, _Blog_liquid, _Collection_liquid, _Page_liquid, _Article_liquid, _Color_liquid, _Font_liquid } from "types/shopify";
+import { _Image_liquid, _Product_liquid, _Linklist_liquid, _Blog_liquid, _Collection_liquid, _Color_liquid, _Page_liquid, _Article_liquid, _Font_liquid } from "types/shopify";
 
 export type BackgroundSection = {
   blocks: BackgroundBlocks[];
@@ -556,6 +556,15 @@ export type LogoBannerBlocks =
       type: "manual-image";
     };
 
+export type PageSettingsSection = {
+  id: string;
+  settings: {
+    /** Input type: color */
+    color_accent?: _Color_liquid;
+  };
+  type: "page-settings";
+};
+
 export type SpecListSection = {
   blocks: SpecListBlocks[];
   id: string;
@@ -993,6 +1002,7 @@ export type Sections =
   | ImageTextSection
   | InfoCardsSection
   | LogoBannerSection
+  | PageSettingsSection
   | SpecListSection
   | StatsGraphSection
   | StorySection

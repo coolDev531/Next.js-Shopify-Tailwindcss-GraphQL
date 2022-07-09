@@ -114,7 +114,7 @@ export const TestimonialListItem = ({
       </header>
       <blockquote className="mt-2 dark:text-gray-100">{testimonial}</blockquote>
       <footer className="mt-3 flex items-center gap-2">
-        <figure className="relative flex aspect-1 h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-sky-500/50 text-[13px] font-medium text-white dark:bg-sky-400/50">
+        <figure className="relative flex aspect-1 h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-accent/50 text-[13px] font-medium text-white">
           {author?.match(/(\w+[^\w]*)/gi).map((match) => {
             return match.charAt(0).toUpperCase();
           })}

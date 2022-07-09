@@ -44,7 +44,7 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
                   .filter((li) => li.length > 0)
                   .map((li) => (
                     <li key={li} className="mb-0.5 flex">
-                      <span className="mr-2 flex h-6 items-center leading-6 text-sky-500 dark:text-sky-400">
+                      <span className="mr-2 flex h-6 items-center leading-6 text-accent">
                         <CheckCircleIcon className="h-5" />
                       </span>
                       <span className="leading-tight text-gray-500 dark:text-gray-400">{li}</span>

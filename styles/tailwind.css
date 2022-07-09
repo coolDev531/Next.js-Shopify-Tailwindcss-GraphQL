@@ -149,11 +149,11 @@
 }
 
 .color-slate-inverted {
+  --color-slate-50: 30 41 59;
   --color-slate-100: 51 65 85;
   --color-slate-200: 71 85 105;
   --color-slate-300: 100 116 139;
   --color-slate-400: 148 163 184;
-  --color-slate-50: 30 41 59;
   --color-slate-500: 203 213 225;
   --color-slate-600: 226 232 240;
   --color-slate-700: 241 245 249;
@@ -179,4 +179,5 @@
     --color-warning: 245 158 11;
     --color-danger: 252 0 0;
   }
+
 }

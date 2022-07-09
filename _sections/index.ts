@@ -13,6 +13,7 @@ export * from "_sections/image-gallery";
 export * from "_sections/image-text";
 export * from "_sections/info-cards";
 export * from "_sections/logo-banner";
+export * from "_sections/page-settings";
 export * from "_sections/spec-list";
 export * from "_sections/stats-graph";
 export * from "_sections/story";

@@ -45,7 +45,7 @@ input[type="number"] {
     outline: none;
   }
 
-  @apply outline-sky-500;
+  @apply outline-accent;
 }
 
 /*:is([type="checkbox"], [type="radio"]):is(:focus) {

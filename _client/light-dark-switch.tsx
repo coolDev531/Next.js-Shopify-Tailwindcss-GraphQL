@@ -33,7 +33,7 @@ const LightDarkSwitcher: FC = () => {
   return (
     <motion.button
       title="Theme toggle"
-      className="relative flex h-8 w-8 items-center justify-center rounded transition-colors transition-all duration-75 hfa:bg-gray-200 hfa:text-gray-900 h:!text-orange-600 h:shadow-glowLight dark:hfa:bg-dark-card dark:hfa:text-white dark:h:!text-sky-500 dark:h:shadow-glowDark"
+      className="relative flex h-8 w-8 items-center justify-center rounded transition-colors transition-all duration-75 hfa:bg-gray-200 hfa:text-gray-900 h:!text-orange-600 h:shadow-glowLight dark:hfa:bg-dark-card dark:hfa:text-white dark:h:!text-accent dark:h:shadow-glowDark"
       name="ToggleThemeButton"
       onClick={() => {
         setTheme(isDark ? "light" : "dark");

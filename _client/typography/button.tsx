@@ -20,11 +20,9 @@ export const Button: FC<
           "transition-all duration-100",
           "font-medium leading-4",
           secondary
-            ? "border-sky-200 bg-white/20 h:border-sky-300 h:backdrop-blur-sm h:backdrop-saturate-200 dark:border-sky-700 dark:bg-dark-bg/20 dark:h:border-sky-400"
-            : "border-sky-500 bg-sky-500 shadow-lg shadow-sky-500/25 h:bg-sky-400 dark:bg-sky-800 dark:h:bg-sky-700",
-          secondary
-            ? "text-sky-700/90 h:text-sky-600 dark:text-sky-400 dark:h:text-sky-300"
-            : "text-white"
+            ? "border-sky-200 bg-white/20 h:border-sky-300 h:backdrop-blur-sm h:backdrop-saturate-200 dark:bg-dark-bg/20"
+            : "border-accent bg-accent shadow-lg shadow-accent/25 h:bg-sky-400",
+          secondary ? "text-sky-700/90 h:text-sky-600" : "text-white"
         )}
       >
         {children}
@@ -41,7 +39,7 @@ export const Button: FC<
           "font-medium leading-4",
           secondary
             ? "border-sky-200 bg-white/20 h:border-sky-300 h:backdrop-blur-sm h:backdrop-saturate-200"
-            : "border-sky-500 bg-sky-500 h:bg-sky-400",
+            : "border-accent bg-accent h:bg-sky-400",
           secondary ? "text-sky-700/90 h:text-sky-600" : "text-white"
         )}
       >

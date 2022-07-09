@@ -2,41 +2,41 @@ import { ShopifySection } from "types/shopify";
 
 export const template_404: ShopifySection = {
   name: "Template 404",
-  settings: [],
+  presets: [{ name: "Template 404" }],
 };
 export const templateSearch: ShopifySection = {
   name: "Template search",
-  settings: [],
+  presets: [{ name: "Template search" }],
 };
 export const templateArticle: ShopifySection = {
   name: "Template article",
-  settings: [],
+  presets: [{ name: "Template article" }],
 };
 export const templateBlog: ShopifySection = {
   name: "Template blog",
-  settings: [],
+  presets: [{ name: "Template blog" }],
 };
 export const templateCart: ShopifySection = {
   name: "Template cart",
-  settings: [],
+  presets: [{ name: "Template cart" }],
 };
 export const templateCollection: ShopifySection = {
   name: "Template Collection",
-  settings: [],
+  presets: [{ name: "Template Collection" }],
 };
 export const templateListCollections: ShopifySection = {
   name: "Template list collections",
-  settings: [],
+  presets: [{ name: "Template list" }],
 };
 export const templatePage: ShopifySection = {
   name: "Template page",
-  settings: [],
+  presets: [{ name: "Template page" }],
 };
 export const templatePassword: ShopifySection = {
   name: "Template password",
-  settings: [],
+  presets: [{ name: "Template password" }],
 };
 export const templateProduct: ShopifySection = {
   name: "Template Product",
-  settings: [],
+  presets: [{ name: "Template Product" }],
 };

@@ -6,7 +6,7 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
   <Wrapper paddingY="none" maxWidth="xl">
     <div className="absolute left-1/2 bottom-0 -z-10 -ml-[50vw] h-full max-h-full w-screen">
       <div className="absolute bottom-0 h-full w-full">
-        <div className="absolute bottom-0 left-0 hidden w-[50vw] border-b border-b-sky-500 md:block" />
+        <div className="absolute bottom-0 left-0 hidden w-[50vw] border-b border-b-accent md:block" />
         <div className="absolute bottom-0 right-0 flex flex h-full max-h-full w-screen md:w-[50vw]">
           <svg
             className="mt-auto h-[70%] flex-1 md:h-full"
@@ -26,7 +26,7 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
               strokeWidth="1"
             ></path>
             <line
-              className="stroke-sky-500 dark:stroke-sky-400"
+              className="stroke-accent"
               x1="862"
               y1="10"
               x2="862.01"
@@ -43,7 +43,7 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
                 x2="960"
                 y2="319"
                 gradientUnits="userSpaceOnUse"
-                className="from-white/0 to-white dark:from-dark-bg/0 dark:to-dark-bg"
+                className="from-bg/0 to-bg"
               >
                 <stop offset="0" stopColor="var(--tw-gradient-from)"></stop>
                 <stop offset="0.7" stopColor="var(--tw-gradient-to)"></stop>
@@ -55,7 +55,7 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
                 x2="900"
                 y2="359.5"
                 gradientUnits="userSpaceOnUse"
-                className="from-sky-500 to-gray-700 dark:from-sky-400"
+                className="from-accent to-accent/20"
               >
                 <stop offset="0" stopColor="var(--tw-gradient-from)"></stop>
                 <stop offset="1" stopColor="var(--tw-gradient-to)"></stop>
@@ -65,7 +65,7 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
         </div>
       </div>
       <div className="pointer-events-none absolute bottom-0 h-screen w-full select-none overflow-hidden">
-        <div className="absolute -left-[200px] -right-[200px] -bottom-[200px] -z-10 h-[700px] -rotate-12 bg-gradient-stats dark:bg-gradient-stats-dark" />
+        <div className="absolute -left-[200px] -right-[200px] -bottom-[200px] -z-10 h-[700px] -rotate-12 bg-gradient-stats" />
       </div>
     </div>
     <div className="divide- flex flex-col pb-8 pt-16 md:-ml-8 md:flex-row md:items-center md:divide-x">

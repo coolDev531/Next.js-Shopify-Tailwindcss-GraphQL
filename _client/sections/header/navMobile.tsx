@@ -228,7 +228,7 @@ export const NavMobile: FC<{
                                                   <Link
                                                     onClick={() => close()}
                                                     href={subLink.url}
-                                                    className="-m-1 flex rounded p-1 text-sm text-gray-500 hfa:text-sky-500 dark:text-gray-400/90 dark:hfa:text-sky-400"
+                                                    className="-m-1 flex rounded p-1 text-sm text-gray-500 hfa:text-accent dark:text-gray-400/90"
                                                   >
                                                     {subLink.title}
                                                   </Link>

@@ -24,6 +24,27 @@ export const LoadInitialData: FC<PropsWithChildren<any>> = ({ children }) => {
     );
   });
 
+  useEffect(() => {
+    const hideTooltip = () => {
+      setTimeout(
+        () => {
+          setShowTooltip(false);
+          setTimeout(
+            () => {
+              setShowTooltip(true);
+            },
+            10
+          );
+        },
+        200
+      );
+    };
+    window.addEventListener("scroll", hideTooltip);
+    return () => {
+      window.removeEventListener("scroll", hideTooltip);
+    };
+  }, []);
+
   return (
     <>
       {children}
@@ -32,10 +53,17 @@ export const LoadInitialData: FC<PropsWithChildren<any>> = ({ children }) => {
             place="bottom"
             effect="solid"
             wrapper="span"
-            arrowColor="#fff"
+            arrowColor="rgb(var(--color-card))"
             // globalEventOff="hide-global-tooltip"
             // possibleCustomEventsOff="hide-global-tooltip"
-            className="!bg-white !text-gray-600 !opacity-100 shadow-xl drop-shadow"
+            className="relative !border-none !border-transparent !p-0"
+            getContent={(content) => {
+              return (
+                <div className="h-[calc(100%+1px)] w-[calc(100%+1px)] rounded-sm border-card bg-card py-2 px-5 text-slate-700 opacity-100 shadow-xl dark:text-gray-50">
+                  {content}
+                </div>
+              );
+            }}
           />
         : null}
     </>
