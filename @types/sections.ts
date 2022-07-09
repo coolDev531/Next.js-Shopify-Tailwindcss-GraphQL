@@ -561,6 +561,20 @@ export type PageSettingsSection = {
   settings: {
     /** Input type: color */
     color_accent?: _Color_liquid;
+    /** Input type: color */
+    color_accent_contrast?: _Color_liquid;
+    /** Input type: color */
+    color_accent_contrast_dark?: _Color_liquid;
+    /** Input type: color */
+    color_accent_dark?: _Color_liquid;
+    /** Input type: color */
+    color_accent_secondary?: _Color_liquid;
+    /** Input type: color */
+    color_accent_secondary_contrast?: _Color_liquid;
+    /** Input type: color */
+    color_accent_secondary_contrast_dark?: _Color_liquid;
+    /** Input type: color */
+    color_accent_secondary_dark?: _Color_liquid;
   };
   type: "page-settings";
 };

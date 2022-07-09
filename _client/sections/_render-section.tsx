@@ -25,6 +25,8 @@ import { Sections } from "types/sections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {
+    case "page-settings":
+      return null;
     case "contact":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>

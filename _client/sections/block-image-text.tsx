@@ -34,7 +34,7 @@ export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ s
                   .filter((li) => li.length > 0)
                   .map((li) => (
                     <li key={li} className="mb-1 flex">
-                      <span className="mr-2 flex h-6 items-center leading-6 text-accent">
+                      <span className="mr-2 flex h-6 items-center leading-6 text-accent/80">
                         <CheckCircleIcon className="h-5" />
                       </span>
                       <span className="leading-tight text-gray-500 dark:text-gray-400">{li}</span>

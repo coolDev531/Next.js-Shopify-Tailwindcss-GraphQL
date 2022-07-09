@@ -1,4 +1,4 @@
-@import "typogrpahy.scss";
+@import "typography.scss";
 
 @tailwind base;
 @tailwind components;
@@ -171,9 +171,13 @@
     --color-card: 241 245 249;
     --color-card-dark: 25 34 46;
     --color-accent: 14 165 233;
-    --color-accent-dark: 56 189 248;
+    --color-accent-contrast: 14 165 233;
     --color-accent-secondary: 236 72 153;
+    --color-accent-secondary-contrast: 236 72 153;
+    --color-accent-dark: 56 189 248;
+    --color-accent-contrast-dark: 56 189 248;
     --color-accent-secondary-dark: 27 33 46;
+    --color-accent-secondary-contrast-dark: 27 33 46;
     --color-success: 34 197 94;
     --color-info: 56 189 248;
     --color-warning: 245 158 11;

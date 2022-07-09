@@ -94,8 +94,8 @@
       },
       {
         "type": "color",
-        "id": "color_accent_dark",
-        "label": "Color_accent_dark"
+        "id": "color_accent_contrast",
+        "label": "Color_accent_contrast"
       },
       {
         "type": "color",
@@ -104,8 +104,32 @@
       },
       {
         "type": "color",
+        "id": "color_accent_secondary_contrast",
+        "label": "Color_accent_secondary_contrast"
+      },
+      {
+        "type": "header",
+        "content": "Accents Dark"
+      },
+      {
+        "type": "color",
+        "id": "color_accent_dark",
+        "label": "Color_accent_dark"
+      },
+      {
+        "type": "color",
+        "id": "color_accent_contrast_dark",
+        "label": "Color_accent_contrast_dark"
+      },
+      {
+        "type": "color",
         "id": "color_accent_secondary_dark",
         "label": "Color_accent_secondary_dark"
+      },
+      {
+        "type": "color",
+        "id": "color_accent_secondary_contrast_dark",
+        "label": "Color_accent_secondary_contrast_dark"
       },
       {
         "type": "header",

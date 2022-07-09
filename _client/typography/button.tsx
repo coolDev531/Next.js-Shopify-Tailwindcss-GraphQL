@@ -12,37 +12,13 @@ export const Button: FC<
   if ("href" in props) {
     /* inline-flex justify-center rounded-lg bg-gray-900 py-3 px-4 text-sm font-semibold text-white hover:bg-gray-700*/
     return (
-      <Link
-        {...props}
-        className={clsx(
-          "inline-flex items-center whitespace-nowrap rounded-md border py-3 px-4 text-sm",
-          "f:outline-none f:ring-2 f:ring-sky-400 f:ring-offset-2",
-          "transition-all duration-100",
-          "font-medium leading-4",
-          secondary
-            ? "border-sky-200 bg-white/20 h:border-sky-300 h:backdrop-blur-sm h:backdrop-saturate-200 dark:bg-dark-bg/20"
-            : "border-accent bg-accent shadow-lg shadow-accent/25 h:bg-sky-400",
-          secondary ? "text-sky-700/90 h:text-sky-600" : "text-white"
-        )}
-      >
+      <Link {...props} className={clsx("button", secondary && "button-secondary")}>
         {children}
       </Link>
     );
   } else {
     return (
-      <button
-        {...props}
-        className={clsx(
-          "inline-flex items-center whitespace-nowrap rounded-md border py-3 px-4 text-sm",
-          "f:outline-none f:ring-2 f:ring-sky-400 f:ring-offset-2",
-          "transition-all duration-100",
-          "font-medium leading-4",
-          secondary
-            ? "border-sky-200 bg-white/20 h:border-sky-300 h:backdrop-blur-sm h:backdrop-saturate-200"
-            : "border-accent bg-accent h:bg-sky-400",
-          secondary ? "text-sky-700/90 h:text-sky-600" : "text-white"
-        )}
-      >
+      <button {...props} className={clsx("button", secondary && "button-secondary")}>
         {children}
       </button>
     );

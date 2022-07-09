@@ -297,10 +297,7 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
             <Paragraph className="text-white [&_a]:underline">
               {settings.submit_paragraph}
             </Paragraph>
-            <button
-              className="button"
-              style={{ "--color-button-bg": global.settings?.color_accent?.rgb }}
-            >
+            <button className="button" style={{ "--color-accent": "var(--color-gray-900)" }}>
               Submit
             </button>
           </footer>

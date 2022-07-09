@@ -33,7 +33,7 @@
     @apply mb-2 font-semibold text-accent xl:text-lg;
   }
 
-  /*= =============== PARAGRAPH ================  */
+  /*= =============== PARAGRAPH ================ */
   .paragraph-lg {
     @apply max-w-xl tracking-tight leading-relaxed text-gray-500 [&>p+p]:mt-4 md:text-lg xl:max-w-2xl dark:text-gray-400;
   }
@@ -46,14 +46,20 @@
     @apply max-w-xl tracking-tight leading-relaxed text-gray-500 [&>p+p]:mt-4 text-sm dark:text-gray-400;
   }
 
-  .button {
-    @apply inline-flex items-center whitespace-nowrap py-3 px-4
-    text-sm font-medium leading-4
-    transition-all duration-100
-    f:outline-none f:ring-2 f:ring-accent/80 f:ring-offset-2
-    shadow-accent/25
-    rounded-md border border-accent/80
-    bg-accent h:bg-accent/70;
+  .button, .button-secondary {
+    @apply inline-flex items-center whitespace-nowrap py-3 px-4 rounded-md
+    text-sm font-medium leading-4 duration-100 transition-all
+    f:outline-none f:ring-2 f:ring-accent-contrast/80 f:ring-offset-2
+  }
+
+  .button:not(.button-secondary) {
+    @apply shadow-accent/25 border border-accent/80 bg-accent h:bg-accent/70 text-accent-contrast;
+  }
+
+  .button-secondary {
+    @apply bg-gray-400/[0.04] text-gray-600 backdrop-blur-md border border-accent/30 hfa:bg-gray-400/[0.07] hfa:border-accent/60 hfa:text-gray-900
+    dark:text-gray-400 dark:hfa:text-gray-100
+
   }
 }
 
