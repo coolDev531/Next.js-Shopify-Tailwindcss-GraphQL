@@ -11,10 +11,11 @@
     "start": "next start",
     "export": "next build && next export -o .export",
     "shopify": "shopify-ftp",
-    "codegen": "graphql-codegen --config .graphql.yml"
+    "codegen": "graphql-codegen --config .graphql.yml",
+    "analyze": "SET ANALYZE=true&& next build"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=16.0.0"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.5",
@@ -53,6 +54,7 @@
     "@graphql-codegen/cli": "^2.7.0",
     "@graphql-codegen/typescript": "^2.6.0",
     "@graphql-codegen/typescript-operations": "^2.4.3",
+    "@next/bundle-analyzer": "^12.2.2",
     "@svgr/webpack": "^6.2.1",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.2",

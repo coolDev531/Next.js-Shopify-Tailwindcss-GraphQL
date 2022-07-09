@@ -24,10 +24,11 @@ export const getStaticProps = async ({ params }) => {
 
   const data = await ssg.fetchQuery("fetch.shopify-content", "/404");
   fs.writeFileSync("./props-data.json", JSON.stringify(data));
+  fs.writeFileSync("./ssg.dehydrate.json", JSON.stringify(ssg.dehydrate()));
   // console.log('state', ssr.dehydrate());
   return {
     props: {
-      trpcState: ssg.dehydrate(),
+      // trpcState: ssg.dehydrate(),
       ...data,
     },
     revalidate: 60,

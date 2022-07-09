@@ -1,7 +1,12 @@
 /**
  * @type {import('next').NextConfig}
  */
-module.exports = {
+
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
+
+module.exports = withBundleAnalyzer({
   swcMinify: true,
   reactStrictMode: true,
   api: {
@@ -61,4 +66,4 @@ module.exports = {
     ...this.env,
     NEXT_PUBLIC_APP_VERSION: require("./package.json").version,
   },
-};
+});
