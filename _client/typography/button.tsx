@@ -10,7 +10,7 @@ export const Button: FC<
   | PropsWithChildren<ButtonHTMLAttributes<any> & ButtonProps>
 > = ({ children, secondary, ...props }) => {
   if ("href" in props) {
-    /* inline-flex justify-center rounded-lg bg-slate-900 py-3 px-4 text-sm font-semibold text-white hover:bg-slate-700*/
+    /* inline-flex justify-center rounded-lg bg-gray-900 py-3 px-4 text-sm font-semibold text-white hover:bg-gray-700*/
     return (
       <Link
         {...props}

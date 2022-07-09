@@ -31,7 +31,7 @@ export const SpecList: FC<SpecListSection> = ({ id, blocks, type, settings }) =>
                     return (
                       <li
                         key={`list-${block.id}-${key}`}
-                        className="flex items-center gap-3 overflow-ellipsis whitespace-nowrap px-8 text-slate-700 dark:text-slate-400"
+                        className="flex items-center gap-3 overflow-ellipsis whitespace-nowrap px-8 text-gray-700 dark:text-gray-400"
                       >
                         {renderIcon(block.settings[`icon${key}`], "h-4 w-4 min-w-[1rem]")}
                         {block.settings[`text${key}`]}

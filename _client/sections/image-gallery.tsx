@@ -55,7 +55,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     alt="Placeholder Image"
                   />}
               {settings.title1
-                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-slate-500 opacity-0 transition-all group-hfa:opacity-100">
+                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-gray-500 opacity-0 transition-all group-hfa:opacity-100">
                     {settings.title1}
                   </figcaption>
                 : null}
@@ -83,7 +83,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     alt="Placeholder Image"
                   />}
               {settings.title2
-                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-slate-500 opacity-0 transition-all group-hfa:opacity-100">
+                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-gray-500 opacity-0 transition-all group-hfa:opacity-100">
                     {settings.title2}
                   </figcaption>
                 : null}
@@ -111,7 +111,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     alt="Placeholder Image"
                   />}
               {settings.title3
-                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-slate-500 opacity-0 transition-all group-hfa:opacity-100">
+                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-gray-500 opacity-0 transition-all group-hfa:opacity-100">
                     {settings.title3}
                   </figcaption>
                 : null}
@@ -141,7 +141,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     alt="Placeholder Image"
                   />}
               {settings.title4
-                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-slate-500 opacity-0 transition-all group-hfa:opacity-100">
+                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-gray-500 opacity-0 transition-all group-hfa:opacity-100">
                     {settings.title4}
                   </figcaption>
                 : null}
@@ -169,7 +169,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     alt="Placeholder Image"
                   />}
               {settings.title5
-                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-slate-500 opacity-0 transition-all group-hfa:opacity-100">
+                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-gray-500 opacity-0 transition-all group-hfa:opacity-100">
                     {settings.title6}
                   </figcaption>
                 : null}
@@ -197,7 +197,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     alt="Placeholder Image"
                   />}
               {settings.title6
-                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-slate-500 opacity-0 transition-all group-hfa:opacity-100">
+                ? <figcaption className="absolute inset-x-0 bottom-0 bg-white/70 px-3 py-3 text-sm font-medium text-gray-500 opacity-0 transition-all group-hfa:opacity-100">
                     {settings.title6}
                   </figcaption>
                 : null}

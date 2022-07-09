@@ -77,7 +77,7 @@ export const TestimonialListItem = ({
     <Link
       href={link}
       key={`testimonial-${id}-${blockId}`}
-      className="min-w-[220px] select-none rounded-md border border-slate-200 bg-white p-6 transition-all hfa:border-slate-400/60 dark:border-slate-700/80 dark:bg-dark-card dark:hfa:border-slate-500/80"
+      className="min-w-[220px] select-none rounded-md border border-gray-200 bg-white p-6 transition-all hfa:border-gray-400/60 dark:border-gray-700/80 dark:bg-dark-card dark:hfa:border-gray-500/80"
     >
       <header>
         <figure className="relative h-10 grayscale-0">
@@ -112,16 +112,16 @@ export const TestimonialListItem = ({
             : null}
         </figure>
       </header>
-      <blockquote className="mt-2 dark:text-slate-100">{testimonial}</blockquote>
+      <blockquote className="mt-2 dark:text-gray-100">{testimonial}</blockquote>
       <footer className="mt-3 flex items-center gap-2">
         <figure className="relative flex aspect-1 h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-sky-500/50 text-[13px] font-medium text-white dark:bg-sky-400/50">
           {author?.match(/(\w+[^\w]*)/gi).map((match) => {
             return match.charAt(0).toUpperCase();
           })}
         </figure>
-        <div className="flex items-center gap-1 text-[15px] dark:text-slate-300">
-          <div className="font-semibold dark:text-slate-100">{author},</div>
-          <div className="text-slate-500 dark:text-slate-400">{jobTitle}</div>
+        <div className="flex items-center gap-1 text-[15px] dark:text-gray-300">
+          <div className="font-semibold dark:text-gray-100">{author},</div>
+          <div className="text-gray-500 dark:text-gray-400">{jobTitle}</div>
         </div>
       </footer>
     </Link>

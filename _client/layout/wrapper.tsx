@@ -67,7 +67,7 @@ export const Wrapper: FC<PropsWithChildren<SectionProps>> = ({
         ? <div
             className={clsx(
               "pointer-events-none absolute left-0 bottom-0 -z-10 h-full w-full select-none",
-              bgBlur && "border-y border-slate-200 backdrop-blur-md backdrop-saturate-200",
+              bgBlur && "border-y border-gray-200 backdrop-blur-md backdrop-saturate-200",
               bgClassName
             )}
             style={{ background, height: bgHeight, opacity: bgOpacity }}

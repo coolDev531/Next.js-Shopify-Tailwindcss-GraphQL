@@ -62,9 +62,7 @@ const App: FC<AppProps> = ({ pageProps, Component }) => {
             openGraph={SEO.openGraph}
           />
           {/*<Header />*/}
-          <main className="min-h-[calc(100vh-300px)] [&_section]:relative">
-            <Component {...pageProps} />
-          </main>
+          <Component {...pageProps} />
         </ThemeProvider>
       </LoadInitialData>
     </ContextProviders>

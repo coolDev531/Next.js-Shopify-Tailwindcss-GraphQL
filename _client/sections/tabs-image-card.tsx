@@ -42,7 +42,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
                     "w-12 h-12 mb-4",
                     block.id === activateTab
                       ? "text-sky-500 dark:text-sky-400 [--svg-active-opacity:0.1] [--svg-active-fill:currentColor]"
-                      : "text-slate-300 group-hover:text-slate-500/60 dark:text-slate-600 dark:group-hover:text-slate-300/60"
+                      : "text-gray-300 group-hover:text-gray-500/60 dark:text-gray-600 dark:group-hover:text-gray-300/60"
                   )
                 )}
               </figure>
@@ -90,10 +90,10 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
               )}
             >
               <div className="mb-24 flex flex-col">
-                <section className="xl:mt-18 relative z-10 rounded-lg bg-white px-6 py-5 shadow-xl ring-1 ring-slate-900/5 dark:bg-dark-card">
-                  <div className="pointer-events-none absolute inset-x-0 inset-y-5 border-t border-b border-slate-100 dark:border-slate-700/60" />
-                  <div className="pointer-events-none absolute inset-x-6 inset-y-0 border-l border-r border-slate-100 dark:border-slate-700/60" />
-                  <div className="bg-slate-100 py-6 px-6 dark:bg-slate-900/50 sm:py-9">
+                <section className="xl:mt-18 relative z-10 rounded-lg bg-white px-6 py-5 shadow-xl ring-1 ring-gray-900/5 dark:bg-dark-card">
+                  <div className="pointer-events-none absolute inset-x-0 inset-y-5 border-t border-b border-gray-100 dark:border-gray-700/60" />
+                  <div className="pointer-events-none absolute inset-x-6 inset-y-0 border-l border-r border-gray-100 dark:border-gray-700/60" />
+                  <div className="bg-gray-100 py-6 px-6 dark:bg-gray-900/50 sm:py-9">
                     <header className="">
                       <h3 className="heading-base">{block.settings.title}</h3>
                     </header>
@@ -127,26 +127,26 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
                   </div>
                 </section>
               </div>
-              <section className="-mt-24 flex flex-col justify-center rounded-xl bg-slate-900 px-1 pb-1 pt-3 shadow-2xl drop-shadow-2xl d:bg-dark-card ">
-                <header className="-mx-1 grid grid-cols-[50px_1fr_50px] items-center border-b border-slate-500/30 px-3 pb-2">
+              <section className="-mt-24 flex flex-col justify-center rounded-xl bg-gray-900 px-1 pb-1 pt-3 shadow-2xl drop-shadow-2xl d:bg-dark-card ">
+                <header className="-mx-1 grid grid-cols-[50px_1fr_50px] items-center border-b border-gray-500/30 px-3 pb-2">
                   <i className="flex gap-1.5">
                     <button
                       tabIndex={-1}
                       aria-hidden="true"
-                      className="h-3 w-3 rounded-full bg-slate-700 transition-colors h:bg-[#EC6A5F]"
+                      className="h-3 w-3 rounded-full bg-gray-700 transition-colors h:bg-[#EC6A5F]"
                     ></button>
                     <button
                       tabIndex={-1}
                       aria-hidden="true"
-                      className="h-3 w-3 rounded-full bg-slate-700 transition-colors h:bg-[#F4BF50]"
+                      className="h-3 w-3 rounded-full bg-gray-700 transition-colors h:bg-[#F4BF50]"
                     ></button>
                     <button
                       tabIndex={-1}
                       aria-hidden="true"
-                      className="h-3 w-3 rounded-full bg-slate-700 transition-colors h:bg-[#61C454]"
+                      className="h-3 w-3 rounded-full bg-gray-700 transition-colors h:bg-[#61C454]"
                     ></button>
                   </i>
-                  <h4 className="color select-none text-center text-[13px] leading-none tracking-wide text-slate-500">
+                  <h4 className="color select-none text-center text-[13px] leading-none tracking-wide text-gray-500">
                     {block.settings.tab_title}
                   </h4>
                   <div className="flex justify-end"></div>

@@ -1,9 +1,9 @@
 import { verifyWebhookHmac } from "_server/shopify/webhooks/verifyWebhookHmac";
 import { webhookReceivedHeaders } from "_server/shopify/webhooks/webhook";
 import { IncomingHttpHeaders } from "http";
-import getRawBody from "raw-body";
 
 import type { NextApiRequest, NextApiResponse } from "next";
+import getRawBody from "raw-body";
 import { _Product } from "shopify-typed-node-api/dist/clients/rest/request_types";
 
 export const Webhooks = async (

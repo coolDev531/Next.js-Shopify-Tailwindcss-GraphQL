@@ -14,7 +14,7 @@ export const Header: FC<HeaderSection> = ({ id, type, settings, blocks }) => {
   return (
     <>
       <div className="h-[65px] opacity-0"></div>
-      <header className="fixed top-0 right-0 left-0 z-50 h-header bg-white/75 backdrop-blur-lg dark:bg-slate-900">
+      <header className="fixed top-0 right-0 left-0 z-50 h-header bg-white/75 backdrop-blur-lg dark:bg-gray-900">
         <div
           className="pointer-events-none absolute inset-0 z-20 border-b border-solid border-gray-200 shadow-sm dark:border-gray-700 dark:shadow-white/[0.05]"
           aria-hidden="true"
@@ -49,7 +49,7 @@ function VersionBadge() {
 }
 
 function NavDividerDesktop() {
-  return <div className="my-auto hidden h-6 w-px bg-slate-200 dark:bg-gray-700 md:block" />;
+  return <div className="my-auto hidden h-6 w-px bg-gray-200 dark:bg-gray-700 md:block" />;
 }
 
 function NavSettingsDesktop() {
@@ -58,7 +58,7 @@ function NavSettingsDesktop() {
       <LightDarkSwitcher />
 
       <Link
-        className="flex h-8 w-8 items-center justify-center rounded transition-colors duration-75 hfa:bg-slate-200 hfa:text-slate-900 dark:hfa:bg-dark-card dark:hfa:text-white"
+        className="flex h-8 w-8 items-center justify-center rounded transition-colors duration-75 hfa:bg-gray-200 hfa:text-gray-900 dark:hfa:bg-dark-card dark:hfa:text-white"
         href={SEO.github}
         referrerPolicy="no-referrer"
         target="_blank"
@@ -69,7 +69,7 @@ function NavSettingsDesktop() {
       {/*<Popover className="relative">
         {({ close, open }) => (
           <>
-            <Popover.Button className="flex h-8 w-8 items-center justify-center rounded text-xl hfa:text-slate-900 dark:hfa:text-white">
+            <Popover.Button className="flex h-8 w-8 items-center justify-center rounded text-xl hfa:text-gray-900 dark:hfa:text-white">
               <span className="sr-only">Open user menu</span>
               <BsThreeDotsVertical />
             </Popover.Button>
@@ -90,7 +90,7 @@ function NavSettingsDesktop() {
                   {HEADER.profile.map(({ name, href }, index) => (
                     <NextLink key={name + index} href={href}>
                       <a
-                        className="block py-2 px-4 pr-10 text-sm hfa:bg-slate-100 dark:hfa:bg-gray-700/40"
+                        className="block py-2 px-4 pr-10 text-sm hfa:bg-gray-100 dark:hfa:bg-gray-700/40"
                         onClick={() => close()}
                       >
                         {name}

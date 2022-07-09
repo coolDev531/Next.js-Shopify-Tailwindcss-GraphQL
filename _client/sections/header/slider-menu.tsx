@@ -46,7 +46,7 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
             <Link
               href={product.url}
               key={`feature-${link.handle}-${product.id}`}
-              className="group w-[300px] snap-start rounded-md p-4 hfa:bg-slate-50 f:ring-2 f:ring-sky-400 f:ring-offset-2 dark:hfa:bg-slate-700/30"
+              className="group w-[300px] snap-start rounded-md p-4 hfa:bg-gray-50 f:ring-2 f:ring-sky-400 f:ring-offset-2 dark:hfa:bg-gray-700/30"
             >
               <figure className="relative mb-4 aspect-1 h-[90px] w-[90px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
                 {product.featured_media && (
@@ -76,7 +76,7 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
       {scrollIndex !== 0
         ? <button
             tabIndex={-1}
-            className="absolute top-[calc(310px)] left-4 hidden items-center justify-center rounded-full border border-slate-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-slate-50/90 dark:border-slate-700 dark:bg-dark-card sm:flex sm:flex"
+            className="absolute top-[calc(310px)] left-4 hidden items-center justify-center rounded-full border border-gray-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-gray-50/90 dark:border-gray-700 dark:bg-dark-card sm:flex sm:flex"
             onClick={(e) => handleManualScroll(-1)}
           >
             <HeroIcon name="ChevronLeftIcon" className="h-4 w-4" />
@@ -85,7 +85,7 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
       {scrollIndex < maxIndex - 1
         ? <button
             tabIndex={-1}
-            className="absolute top-[calc(310px)] right-4 hidden items-center justify-center rounded-full border border-slate-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-slate-50/90 dark:border-slate-700 dark:bg-dark-card sm:flex"
+            className="absolute top-[calc(310px)] right-4 hidden items-center justify-center rounded-full border border-gray-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-gray-50/90 dark:border-gray-700 dark:bg-dark-card sm:flex"
             onClick={(e) => handleManualScroll(1)}
           >
             <HeroIcon name="ChevronRightIcon" className="h-4 w-4" />

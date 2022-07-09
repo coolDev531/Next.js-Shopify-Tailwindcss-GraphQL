@@ -26,7 +26,7 @@ export const TabsFaq: FC<TabsFaqSection> = ({ id, settings, blocks, type }) => {
                       setActivateTab(block.id);
                     }}
                     className={clsx(
-                      "rounded-lg border border-slate-400 py-2 px-8",
+                      "rounded-lg border border-gray-400 py-2 px-8",
                       activateTab === block.id && "bg-pink-300 text-white"
                     )}
                   >

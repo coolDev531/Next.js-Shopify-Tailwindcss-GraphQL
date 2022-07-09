@@ -62,7 +62,7 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
         </div>
 
         <figure className={clsx("hidden h-full min-h-[480px] w-full ", "lg:block")}>
-          <div className="h-full rounded-xl bg-slate-900 p-3 shadow-2xl drop-shadow-2xl d:bg-dark-card">
+          <div className="h-full rounded-xl bg-gray-900 p-3 shadow-2xl drop-shadow-2xl d:bg-dark-card">
             <header
               className="mb-3 grid items-center"
               style={{ gridTemplateColumns: "50px 1fr 50px" }}
@@ -71,20 +71,20 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
                 <button
                   tabIndex={-1}
                   aria-hidden
-                  className="h-3 w-3 rounded-full bg-slate-700 transition-colors h:bg-[#EC6A5F]"
+                  className="h-3 w-3 rounded-full bg-gray-700 transition-colors h:bg-[#EC6A5F]"
                 />
                 <button
                   tabIndex={-1}
                   aria-hidden
-                  className="h-3 w-3 rounded-full bg-slate-700 transition-colors h:bg-[#F4BF50]"
+                  className="h-3 w-3 rounded-full bg-gray-700 transition-colors h:bg-[#F4BF50]"
                 />
                 <button
                   tabIndex={-1}
                   aria-hidden
-                  className="h-3 w-3 rounded-full bg-slate-700 transition-colors h:bg-[#61C454]"
+                  className="h-3 w-3 rounded-full bg-gray-700 transition-colors h:bg-[#61C454]"
                 />
               </i>
-              <h4 className="color select-none text-center text-[13px] leading-none tracking-wide text-slate-500"></h4>
+              <h4 className="color select-none text-center text-[13px] leading-none tracking-wide text-gray-500"></h4>
               <div className="flex justify-end">
                 <button
                   className="transition-colors hf:text-white"
@@ -95,7 +95,7 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
                 </button>
               </div>
             </header>
-            <div className="relative h-[calc(100%-28px)] before:absolute b:pointer-events-none b:bottom-0 b:z-10 b:h-12 b:w-full b:select-none b:bg-gradient-to-b b:from-transparent b:to-slate-900 d:b:to-dark-card">
+            <div className="relative h-[calc(100%-28px)] before:absolute b:pointer-events-none b:bottom-0 b:z-10 b:h-12 b:w-full b:select-none b:bg-gradient-to-b b:from-transparent b:to-gray-900 d:b:to-dark-card">
               <div className="scrollbar-none absolute inset-0 w-auto w-full overflow-y-scroll text-sm">
                 {blocks.map((block) => {
                   switch (block.type) {
@@ -106,7 +106,7 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
                             <h3 className="text-white">{block.settings.title}</h3>
                           </header>
                           <main
-                            className="text-slate-400/75"
+                            className="text-gray-400/75"
                             dangerouslySetInnerHTML={{ __html: block.settings.paragraph }}
                           />
                         </section>

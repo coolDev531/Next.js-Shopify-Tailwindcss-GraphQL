@@ -27,11 +27,11 @@ export const PortfolioMenu: FC<
                   alt="placeholder"
                   className="aspect-1 h-full w-full object-cover group-hover:opacity-75"
                 />
-                <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3 dark:bg-slate-900/80">
-                  <h3 className="mb-0.5 text-sm font-medium text-slate-900 dark:text-slate-200">
+                <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3 dark:bg-gray-900/80">
+                  <h3 className="mb-0.5 text-sm font-medium text-gray-900 dark:text-gray-200">
                     {props[`title_${key}`]}
                   </h3>
-                  <p className="text-xs text-slate-700 dark:text-slate-400">See more</p>
+                  <p className="text-xs text-gray-700 dark:text-gray-400">See more</p>
                 </div>
               </>
             </Link>
@@ -50,7 +50,7 @@ export const PortfolioMenu: FC<
                     <li key={subLink.handle}>
                       <Link
                         href={subLink.url}
-                        className="-m-1 flex rounded p-1 text-sm text-slate-500 hfa:text-sky-500 dark:text-slate-400 dark:hfa:text-sky-400"
+                        className="-m-1 flex rounded p-1 text-sm text-gray-500 hfa:text-sky-500 dark:text-gray-400 dark:hfa:text-sky-400"
                       >
                         {subLink.title}
                       </Link>

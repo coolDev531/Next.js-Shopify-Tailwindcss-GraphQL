@@ -77,7 +77,7 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
           {scrollIndex !== 0
             ? <button
                 tabIndex={-1}
-                className="absolute top-[calc(360px/2)] left-8 hidden items-center justify-center rounded-full border border-slate-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-slate-50/90 sm:flex"
+                className="absolute top-[calc(360px/2)] left-8 hidden items-center justify-center rounded-full border border-gray-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-gray-50/90 sm:flex"
                 onClick={(e) => handleManualScroll(-1)}
               >
                 <HeroIcon name="ChevronLeftIcon" className="h-6 w-6" />
@@ -86,7 +86,7 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
           {scrollIndex < maxIndex - 1
             ? <button
                 tabIndex={-1}
-                className="absolute top-[calc(360px/2)] right-8 hidden items-center justify-center rounded-full border border-slate-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-slate-50/90 sm:flex"
+                className="absolute top-[calc(360px/2)] right-8 hidden items-center justify-center rounded-full border border-gray-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-gray-50/90 sm:flex"
                 onClick={(e) => handleManualScroll(1)}
               >
                 <HeroIcon name="ChevronRightIcon" className="h-6 w-6" />

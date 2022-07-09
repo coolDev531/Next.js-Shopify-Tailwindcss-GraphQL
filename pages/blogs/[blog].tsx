@@ -1,22 +1,12 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
-import { useInitShopifyData } from "_client/hooks/use-shopify-data";
-import { renderSection } from "_client/sections/_render-section";
+import { Layout } from "_client/layout/layout";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
 import { getAllBlogs } from "_server/shopify/get-all-blogs";
-import { GetStaticPaths, GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType } from "next";
-import { FC, useEffect, useState } from "react";
-
-import { useRouter } from "next/router";
+import { GetStaticPaths, InferGetStaticPropsType } from "next";
+import { FC } from "react";
 
 export const Blog: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) => {
-  const router = useRouter();
-  const { blog } = router.query;
-
-  const { sections, global } = useInitShopifyData<typeof props.global, typeof props.sections>(
-    props
-  );
-
-  return <>{sections.map((section) => renderSection(section))}</>;
+  return <Layout sections={props.sections} global={props.global} />;
 };
 
 export default Blog;

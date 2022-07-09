@@ -1,7 +1,6 @@
 // eslint-disable-next-line @next/next/no-document-import-in-page
 import { Favicon } from "_client/layout/favicon";
-import { Font } from "_client/layout/font";
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Head, Html, Main, NextScript } from "next/document";
 
 class Root extends Document {
   render(): JSX.Element {
@@ -11,7 +10,7 @@ class Root extends Document {
           <Favicon />
           {/*<Font />*/}
         </Head>
-        <body className="min-h-screen overflow-x-hidden text-slate-600 d:text-slate-400 dark:bg-dark-bg">
+        <body>
           <Main />
           <NextScript />
         </body>

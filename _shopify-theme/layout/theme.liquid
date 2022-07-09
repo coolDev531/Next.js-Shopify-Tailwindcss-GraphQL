@@ -70,7 +70,6 @@
           sections.push(JSON.parse(scriptElement.textContent));
         });
 
-        console.log({ global, sections });
         themeEditorIframe?.contentWindow.postMessage({
             source: "theme-editor",
             topic: e.type,

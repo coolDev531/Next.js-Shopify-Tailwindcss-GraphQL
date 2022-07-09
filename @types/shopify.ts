@@ -1,3 +1,4 @@
+import { SettingsSchema } from "types/settings";
 import type settings from "../_shopify-theme/config/settings_data.json";
 
 type ShopifyHeader = {
@@ -777,6 +778,7 @@ export type _Color_liquid = {
   hue: number;
   lightness: number;
   red: number;
+  rgb: string;
   saturation: number;
 };
 
@@ -890,7 +892,7 @@ export type GlobalSettings = {
   linklists: _Linklist_liquid[];
   product: _Product_liquid_json;
   request: Request;
-  settings: /*ShopifySettings*/ /*Omit<typeof settings["current"], "sections" | "content_for_index">*/ any;
+  settings: SettingsSchema;
   shop: _Shop_liquid_json;
   template: string;
   title: string;

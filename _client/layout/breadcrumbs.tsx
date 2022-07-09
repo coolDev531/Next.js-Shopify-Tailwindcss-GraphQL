@@ -15,13 +15,13 @@ export const Breadcrumbs = () => {
               <Link
                 href={href}
                 className={clsx(
-                  "text-sm text-slate-400 hfa:text-slate-700 hfa:underline dark:hfa:text-slate-200",
-                  last && "text-slate-700 dark:text-slate-200"
+                  "text-sm text-gray-400 hfa:text-gray-700 hfa:underline dark:hfa:text-gray-200",
+                  last && "text-gray-700 dark:text-gray-200"
                 )}
               >
                 {title}
               </Link>
-              {!last ? <ChevronRightIcon className="h-3 text-slate-400" /> : null}
+              {!last ? <ChevronRightIcon className="h-3 text-gray-400" /> : null}
             </li>
           );
         })}

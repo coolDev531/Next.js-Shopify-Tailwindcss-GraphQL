@@ -106,11 +106,11 @@ export const DesktopNav: FC<{
                           className={clsx(
                             "nav-item relative flex h-full flex-1 py-4 text-sm",
                             open &&
-                              "before:absolute b:bottom-0 b:left-3 b:z-40 b:h-[2px] b:w-[calc(100%-24px)] b:bg-slate-900 dark:b:bg-slate-400 "
+                              "before:absolute b:bottom-0 b:left-3 b:z-40 b:h-[2px] b:w-[calc(100%-24px)] b:bg-gray-900 dark:b:bg-gray-400 "
                           )}
                         >
                           <Popover.Button
-                            className="flex h-full flex-1 items-center justify-center overflow-hidden rounded py-1 px-3 text-sm font-medium hfa:text-slate-900 dark:hfa:text-white"
+                            className="flex h-full flex-1 items-center justify-center overflow-hidden rounded py-1 px-3 text-sm font-medium hfa:text-gray-900 dark:hfa:text-white"
                             onFocus={handleNavFocus}
                           >
                             {link.title}
@@ -152,11 +152,11 @@ export const DesktopNav: FC<{
                           className={clsx(
                             "nav-item relative flex h-full flex-1 py-4 text-sm",
                             open &&
-                              "before:absolute b:bottom-0 b:left-3 b:z-40 b:h-[2px] b:w-[calc(100%-24px)] b:bg-slate-900 dark:b:bg-slate-400 "
+                              "before:absolute b:bottom-0 b:left-3 b:z-40 b:h-[2px] b:w-[calc(100%-24px)] b:bg-gray-900 dark:b:bg-gray-400 "
                           )}
                         >
                           <Popover.Button
-                            className="flex h-full flex-1 items-center justify-center overflow-hidden rounded py-1 px-3 text-sm font-medium hfa:text-slate-900 dark:hfa:text-white"
+                            className="flex h-full flex-1 items-center justify-center overflow-hidden rounded py-1 px-3 text-sm font-medium hfa:text-gray-900 dark:hfa:text-white"
                             onFocus={handleNavFocus}
                           >
                             {link.title}
@@ -195,12 +195,12 @@ export const DesktopNav: FC<{
               className={clsx(
                 "nav-item relative flex py-4 text-sm",
                 router.asPath.split(/[#?]/)[0] === link.url &&
-                  "before:absolute b:bottom-0 b:left-3 b:h-[2px] b:w-[calc(100%-24px)] b:bg-slate-900 dark:b:bg-slate-400 "
+                  "before:absolute b:bottom-0 b:left-3 b:h-[2px] b:w-[calc(100%-24px)] b:bg-gray-900 dark:b:bg-gray-400 "
               )}
             >
               <NextLink href={link.url}>
                 <a
-                  className="flex items-center justify-center overflow-hidden rounded py-1 px-3 text-sm font-medium hfa:text-slate-900 dark:hfa:text-white"
+                  className="flex items-center justify-center overflow-hidden rounded py-1 px-3 text-sm font-medium hfa:text-gray-900 dark:hfa:text-white"
                   onFocus={handleNavFocus}
                 >
                   {link.title}

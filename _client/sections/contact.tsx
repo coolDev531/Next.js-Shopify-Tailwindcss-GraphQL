@@ -27,8 +27,8 @@ export const BasicInput: FC<BasicInputProps> = ({
 }) => {
   const [error, setError] = useState(false);
   return (
-    <label className="relative" style={{ gridColumn: size === "half" ? "" : "span 2" }}>
-      <div className="mb-1.5 flex h-5 text-sm text-slate-700">
+    <label className={clsx("relative", size === "full" && "col-span-2")}>
+      <div className="mb-1.5 flex h-5 text-sm text-gray-700">
         {title}
         {required
           ? <span className="ml-1 text-red-600" aria-hidden>
@@ -42,10 +42,10 @@ export const BasicInput: FC<BasicInputProps> = ({
         autoComplete={autocomplete === "off" ? "off" : "on"}
         placeholder={placeholder}
         required={required}
-        className="w-full rounded border border-slate-200 py-2 px-3 text-sm text-slate-600 placeholder-slate-400/60 transition-all fa:border-slate-900 f:ring-transparent h:border-slate-400 f:h:border-slate-900"
+        className="w-full rounded border border-gray-200 py-2 px-3 text-sm text-gray-600 placeholder-gray-400/60 transition-all fa:border-gray-900 f:ring-transparent h:border-gray-400 f:h:border-gray-900"
       />
       {error
-        ? <div className="ml-2 mt-1 flex items-center text-[13px] text-red-600 text-slate-700">
+        ? <div className="ml-2 mt-1 flex items-center text-[13px] text-red-600 text-gray-700">
             <HeroIcon name="ExclamationCircleIcon" outline className="mr-1 h-4 w-4" />{" "}
             <span className="font-medium">Error:</span>
             {error_message}
@@ -72,7 +72,7 @@ export const TextareaInput: FC<TextareaInputProps> = ({
   const [error, setError] = useState(false);
   return (
     <label className="relative" style={{ gridColumn: size === "half" ? "" : "span 2" }}>
-      <div className="mb-1.5 flex h-5 text-sm text-slate-700">
+      <div className="mb-1.5 flex h-5 text-sm text-gray-700">
         {title}
         {required
           ? <span className="ml-1 text-red-600" aria-hidden>
@@ -86,10 +86,10 @@ export const TextareaInput: FC<TextareaInputProps> = ({
         autoComplete={autocomplete === "off" ? "off" : "on"}
         placeholder={placeholder}
         required={required}
-        className="w-full rounded border border-slate-200 py-2 px-3 text-sm text-slate-600 placeholder-slate-400/60 transition-colors fa:border-slate-900 f:ring-transparent h:border-slate-400 f:h:border-slate-900"
+        className="w-full rounded border border-gray-200 py-2 px-3 text-sm text-gray-600 placeholder-gray-400/60 transition-colors fa:border-gray-900 f:ring-transparent h:border-gray-400 f:h:border-gray-900"
       />
       {error
-        ? <div className="ml-2 mt-1 flex items-center text-[13px] text-red-600 text-slate-700">
+        ? <div className="ml-2 mt-1 flex items-center text-[13px] text-red-600 text-gray-700">
             <HeroIcon name="ExclamationCircleIcon" outline className="mr-1 h-4 w-4" />{" "}
             <span className="font-medium">Error:</span>
             {error_message}
@@ -117,8 +117,8 @@ export const AdvancedInput: FC<AdvancedInputProps> = ({
   const [selected, setSelected] = useState("Please Select");
 
   return (
-    <label className="relative" style={{ gridColumn: size === "half" ? "" : "span 2" }}>
-      <div className="mb-1.5 flex h-5 text-sm text-slate-700">
+    <label className={clsx("relative", size === "full" && "col-span-2")}>
+      <div className="mb-1.5 flex h-5 text-sm text-gray-700">
         {title}
         {required
           ? <span className="ml-1 text-red-600" aria-hidden>
@@ -160,9 +160,9 @@ export const AdvancedInput: FC<AdvancedInputProps> = ({
                     <div className="relative mt-1">
                       <Listbox.Button
                         className={clsx(
-                          "relative w-full cursor-default rounded border  bg-white py-2 pr-10 pl-3 text-left text-sm text-slate-600 transition-all hfva:outline-none hfva:ring-transparent fa:border-slate-900 h:border-slate-400 f:h:border-slate-900",
-                          open ? "border-slate-900 h:border-slate-900" : "border-slate-200",
-                          selected === "Please Select" ? "text-slate-400/60" : "text-slate-600"
+                          "relative w-full cursor-default rounded border  bg-white py-2 pr-10 pl-3 text-left text-sm text-gray-600 transition-all hfva:outline-none hfva:ring-transparent fa:border-gray-900 h:border-gray-400 f:h:border-gray-900",
+                          open ? "border-gray-900 h:border-gray-900" : "border-gray-200",
+                          selected === "Please Select" ? "text-gray-400/60" : "text-gray-600"
                         )}
                       >
                         <span className="block truncate">{selected}</span>
@@ -238,13 +238,20 @@ export const AdvancedInput: FC<AdvancedInputProps> = ({
                   </>
                 )}
               </Listbox>
-              <input hidden className="hidden" name={title} required={required} value={selected} />
+              <input
+                hidden
+                className="hidden"
+                name={title}
+                required={required}
+                value={selected}
+                readOnly
+              />
             </>
           ),
         }[type]
       }
       {error
-        ? <div className="ml-2 mt-1 flex items-center text-[13px] text-red-600 text-slate-700">
+        ? <div className="ml-2 mt-1 flex items-center text-[13px] text-red-600 text-gray-700">
             <HeroIcon name="ExclamationCircleIcon" outline className="mr-1 h-4 w-4" />{" "}
             <span className="font-medium">Error:</span>
             {error_message}
@@ -256,7 +263,7 @@ export const AdvancedInput: FC<AdvancedInputProps> = ({
 
 export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
   const [{ global }] = useShopifyData();
-  console.log(global.settings);
+
   const handleFormSubmit = useCallback(() => {}, []);
   return (
     <Wrapper maxWidth="base" paddingY="base">
@@ -276,7 +283,7 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
             {blocks.map((block) => {
               switch (block.type) {
                 case "separator":
-                  return <hr key={block.id} className="col-span-2 border-t border-slate-200" />;
+                  return <hr key={block.id} className="col-span-2 border-t border-gray-200" />;
                 case "basic":
                   return <BasicInput key={block.id} {...block.settings} blockId={block.id} />;
                 case "textarea":

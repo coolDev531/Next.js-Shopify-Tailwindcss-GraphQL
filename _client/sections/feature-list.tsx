@@ -27,7 +27,7 @@ export const FeatureList: FC<FeatureListSection> = ({ blocks, settings }) => {
                 return (
                   <section
                     key={block.id}
-                    className="group max-w-xs rounded-lg rounded-lg bg-slate-50 px-6 pb-8 text-center dark:bg-dark-card"
+                    className="group max-w-xs rounded-lg rounded-lg bg-gray-50 px-6 pb-8 text-center dark:bg-dark-card"
                   >
                     <header className="mb-2 -mt-6 flex flex-col items-center gap-4">
                       <figure className="mb-4 flex justify-center rounded-md bg-sky-500 p-2 text-white shadow-lg group-hfa:[--svg-active-opacity:0.4] group-hfa:[--svg-active-fill:currentColor]">

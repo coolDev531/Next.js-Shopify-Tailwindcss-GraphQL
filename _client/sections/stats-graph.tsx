@@ -55,7 +55,7 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
                 x2="900"
                 y2="359.5"
                 gradientUnits="userSpaceOnUse"
-                className="from-sky-500 to-slate-700 dark:from-sky-400"
+                className="from-sky-500 to-gray-700 dark:from-sky-400"
               >
                 <stop offset="0" stopColor="var(--tw-gradient-from)"></stop>
                 <stop offset="1" stopColor="var(--tw-gradient-to)"></stop>
@@ -75,10 +75,10 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
             return (
               <section key={block.id} className="py-3 md:px-8 md:py-0">
                 <header>
-                  <h3 className="mb-2 text-5xl font-medium tracking-tight text-slate-900 dark:text-slate-50">
+                  <h3 className="mb-2 text-5xl font-medium tracking-tight text-gray-900 dark:text-gray-50">
                     {block.settings.stat}
                   </h3>
-                  <h2 className="text-slate-500 dark:text-slate-400">
+                  <h2 className="text-gray-500 dark:text-gray-400">
                     {block.settings.descriptions}
                   </h2>
                 </header>

@@ -16,7 +16,7 @@ function findFiles(dir) {
 
       const fileContents = fs.readFileSync(`${dir}/${file.name}`, { encoding: "utf-8" });
 
-      if (file.name.match(/\.(ts|tsx|js|jsx)$/) && fileContents.includes("export")) {
+      if (file.name.match(/^[^_].*\.(ts|tsx|js|jsx)$/) && fileContents.includes("export")) {
         if (!acc[dir]) acc[dir] = [];
         acc[dir].push(`export * from "${dir}/${file.name.replace(/\.(ts|tsx|js|jsx)$/, "")}";`);
       }
@@ -65,6 +65,8 @@ const watchExports = () => {
 watch(path.join(process.cwd(), "_sections"), { recursive: true }, async (evt, name) => {
   if (!name.match(/\.(ts|tsx|s?css)$/)) return;
   if (name.match(/index\.ts/)) return;
+  if (name.match(/^_/)) return;
+
   watchExports();
   const startTime = Date.now();
 

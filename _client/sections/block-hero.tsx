@@ -34,7 +34,7 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
           <main>
             <Paragraph size="lg">{settings.paragraph}</Paragraph>
             <div className="mt-8">
-              <h3 className="mb-1 font-semibold text-slate-700 dark:text-slate-300">
+              <h3 className="mb-1 font-semibold text-gray-700 dark:text-gray-300">
                 {settings.list_title}
               </h3>
               <ul>
@@ -47,7 +47,7 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
                       <span className="mr-2 flex h-6 items-center leading-6 text-sky-500 dark:text-sky-400">
                         <CheckCircleIcon className="h-5" />
                       </span>
-                      <span className="leading-tight text-slate-500 dark:text-slate-400">{li}</span>
+                      <span className="leading-tight text-gray-500 dark:text-gray-400">{li}</span>
                     </li>
                   ))}
               </ul>

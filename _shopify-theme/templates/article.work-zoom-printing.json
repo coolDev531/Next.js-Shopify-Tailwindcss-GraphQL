@@ -74,7 +74,7 @@
             "paragraph": "<p>When we first took over the website, we first needed to understand the information and data that needed to be sorted through and migrated to the Shopify platform from Legacy  to Shopify. A big highlight for us was the number of products and multiple variables each product had. Our team did an extensive analysis and created a strategic plan that ensured the old website's SEO, content, and web rankings were kept intact.<\/p>",
             "list_title": "",
             "list": "<p>Organising product data<\/p><p>Migrate Images from Products, Categories<\/p><p>Customer data Migration<\/p><p>Product and Order information migration<\/p><p>Redirect all changed links<\/p><p>Content migration<\/p>",
-            "image": "shopify:\/\/shop_images\/sstore-migration.jpg",
+            "image": "shopify:\/\/shop_images\/analysis-_-migration.png",
             "aspect_desktop": "3-2",
             "fit_height": false,
             "aspect_mobile": "21-9",
@@ -89,10 +89,10 @@
             "paragraph": "<p>With the content migration complete and a strategic plan in place. Our team started developing the Shopify website. This was specifically tailored to our clients’ needs while taking to account the key functions and features that our clients required from their old website.<\/p>",
             "list_title": "",
             "list": "<p>Theme Coding & Implementation<\/p><p>Content structure update, for user experience optimization <\/p><p>Vend to Shopify integration<\/p><p>Shopify Apps Integration & Configuration<\/p><p>Payment & Shipping Zones Set-Up<\/p><p>Product & Inventory Set-Up<\/p><p>Shopify SEO Implementation and optimization<\/p>",
-            "image": "shopify:\/\/shop_images\/Lunalemon-pictures1_7c31068b-8036-4588-8fe1-ab064889243a.jpg",
-            "aspect_desktop": "3-2",
+            "image": "shopify:\/\/shop_images\/website-_-develoment_5bccbfd1-e201-4248-b767-4d34ba48cc22.png",
+            "aspect_desktop": "4-3",
             "fit_height": false,
-            "aspect_mobile": "16-9",
+            "aspect_mobile": "4-3",
             "position": "right"
           }
         },
@@ -104,10 +104,10 @@
             "paragraph": "",
             "list_title": "",
             "list": "",
-            "image": "shopify:\/\/shop_images\/businss-cards.jpg",
-            "aspect_desktop": "auto",
+            "image": "shopify:\/\/shop_images\/customizations.png",
+            "aspect_desktop": "4-3",
             "fit_height": false,
-            "aspect_mobile": "16-9",
+            "aspect_mobile": "4-3",
             "position": "left"
           }
         }

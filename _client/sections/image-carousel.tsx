@@ -109,7 +109,7 @@ export const ImageCarouselItem: FC<{
               pixelDensity={1.6}
             />
           : null}
-        <div className="absolute inset-x-0 bottom-0 flex h-14 items-center whitespace-nowrap bg-white/70 px-2 font-medium text-slate-900 opacity-0 transition-all group-hfa:opacity-100">
+        <div className="absolute inset-x-0 bottom-0 flex h-14 items-center whitespace-nowrap bg-white/70 px-2 font-medium text-gray-900 opacity-0 transition-all group-hfa:opacity-100">
           {title}
         </div>
       </figure>

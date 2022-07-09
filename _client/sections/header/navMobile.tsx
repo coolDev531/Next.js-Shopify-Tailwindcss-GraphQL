@@ -7,6 +7,7 @@ import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
 import { FC, Fragment, useCallback, useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import { useMountedState } from "react-use";
 import { HeaderBlocks } from "types/sections";
 import { _Linklist_liquid } from "types/shopify";
 
@@ -14,6 +15,7 @@ export const NavMobile: FC<{
   blocks: HeaderBlocks[];
   menu: _Linklist_liquid;
 }> = ({ blocks, menu }) => {
+  const isMount = useMountedState();
   const [menuSelected, setMenuSelected] = useState(blocks[0]?.id ?? "");
   const handleDropdownSelect = useCallback((blockId: string) => {
     if (menuSelected === blockId) {
@@ -24,6 +26,9 @@ export const NavMobile: FC<{
     }
   }, [menuSelected]);
 
+  if (isMount) {
+    return null;
+  }
   return (
     <nav className="ml-auto flex h-full items-center gap-1 px-2 md:hidden">
       <div className="z-50">
@@ -33,7 +38,7 @@ export const NavMobile: FC<{
       <Popover className="relative">
         {({ close }) => (
           <>
-            <Popover.Button className="flex h-8 w-8 items-center justify-center rounded text-xl hfa:text-slate-900 dark:hfa:text-white">
+            <Popover.Button className="flex h-8 w-8 items-center justify-center rounded text-xl hfa:text-gray-900 dark:hfa:text-white">
               <span className="sr-only">Open user menu</span>
               <BsThreeDotsVertical />
             </Popover.Button>
@@ -101,7 +106,7 @@ export const NavMobile: FC<{
                                           onClick={() => close()}
                                           href={product.url}
                                           key={`feature-${link.handle}-${product.id}`}
-                                          className="group w-[280px] snap-start rounded-md px-3 py-4 hfa:bg-slate-50 f:ring-2 f:ring-sky-400 f:ring-offset-2 dark:hfa:bg-slate-700/30"
+                                          className="group w-[280px] snap-start rounded-md px-3 py-4 hfa:bg-gray-50 f:ring-2 f:ring-sky-400 f:ring-offset-2 dark:hfa:bg-gray-700/30"
                                         >
                                           <figure className="relative mb-4 aspect-1 w-[140px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
                                             {product.featured_media && (
@@ -180,11 +185,11 @@ export const NavMobile: FC<{
                                                 alt="placeholder"
                                                 className="h-full object-cover group-hover:opacity-75"
                                               />
-                                              <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3 dark:bg-slate-900/80">
-                                                <h3 className="mb-0.5 text-sm font-medium text-slate-900 dark:text-slate-200">
+                                              <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3 dark:bg-gray-900/80">
+                                                <h3 className="mb-0.5 text-sm font-medium text-gray-900 dark:text-gray-200">
                                                   {block.settings[`title_${key}`]}
                                                 </h3>
-                                                <p className="text-xs text-slate-700 dark:text-slate-400">
+                                                <p className="text-xs text-gray-700 dark:text-gray-400">
                                                   See more
                                                 </p>
                                               </div>
@@ -203,11 +208,11 @@ export const NavMobile: FC<{
                                             key={subLink.handle}
                                             className="flex min-w-[calc(50%-8px)] max-w-[calc(50%-8px)] flex-col"
                                             style={{
-                                              marginTop: document.querySelector(
+                                              marginTop: document?.querySelector(
                                                 `.filler-${block.id}-${link.handle}-${index - 2}`
                                               )
                                                 ? `-${
-                                                    document.querySelector(
+                                                    document?.querySelector(
                                                       `.filler-${block.id}-${link.handle}-${
                                                         index - 2
                                                       }`
@@ -223,7 +228,7 @@ export const NavMobile: FC<{
                                                   <Link
                                                     onClick={() => close()}
                                                     href={subLink.url}
-                                                    className="-m-1 flex rounded p-1 text-sm text-slate-500 hfa:text-sky-500 dark:text-slate-400/90 dark:hfa:text-sky-400"
+                                                    className="-m-1 flex rounded p-1 text-sm text-gray-500 hfa:text-sky-500 dark:text-gray-400/90 dark:hfa:text-sky-400"
                                                   >
                                                     {subLink.title}
                                                   </Link>
@@ -251,7 +256,7 @@ export const NavMobile: FC<{
                         <li key={link.handle}>
                           <Link
                             href={link.url}
-                            className="flex rounded py-1 px-3 font-medium hfa:bg-slate-100 dark:text-slate-300 dark:hfa:bg-slate-700/50"
+                            className="flex rounded py-1 px-3 font-medium hfa:bg-gray-100 dark:text-gray-300 dark:hfa:bg-gray-700/50"
                           >
                             {link.title}
                           </Link>
@@ -274,10 +279,10 @@ export const DropdownButton = ({ handleDropdownSelect, menuSelected, title, id }
     <button
       onClick={() => handleDropdownSelect(id)}
       className={clsx(
-        "h-8 items-center rounded border-b-2 border-transparent py-1 pr-3 font-medium dark:text-slate-300",
+        "h-8 items-center rounded border-b-2 border-transparent py-1 pr-3 font-medium dark:text-gray-300",
         menuSelected === id
-          ? "ml-3 inline-flex rounded-none border-b-slate-300 h:border-b-slate-400 dark:border-b-slate-700 dark:h:border-b-slate-600"
-          : "flex flex-1 pl-3 h:bg-slate-100 dark:h:bg-slate-700/50"
+          ? "ml-3 inline-flex rounded-none border-b-gray-300 h:border-b-gray-400 dark:border-b-gray-700 dark:h:border-b-gray-600"
+          : "flex flex-1 pl-3 h:bg-gray-100 dark:h:bg-gray-700/50"
       )}
       style={{
         transition:

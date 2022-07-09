@@ -1,3 +1,4 @@
+import { useInitShopifyData } from "_client/hooks/use-shopify-data";
 import { useTooltipStore } from "_client/stores/tooltip-store";
 import { useRouter } from "next/router";
 import { FC, PropsWithChildren, useEffect, useState } from "react";
@@ -8,6 +9,8 @@ export const LoadInitialData: FC<PropsWithChildren<any>> = ({ children }) => {
   const [tooltip] = useTooltipStore();
   const [showTooltip, setShowTooltip] = useState(false);
   const router = useRouter();
+
+  useInitShopifyData();
 
   useMount(() => {
     setShowTooltip(true);
@@ -32,7 +35,7 @@ export const LoadInitialData: FC<PropsWithChildren<any>> = ({ children }) => {
             arrowColor="#fff"
             // globalEventOff="hide-global-tooltip"
             // possibleCustomEventsOff="hide-global-tooltip"
-            className="!bg-white !text-slate-600 !opacity-100 shadow-xl drop-shadow"
+            className="!bg-white !text-gray-600 !opacity-100 shadow-xl drop-shadow"
           />
         : null}
     </>

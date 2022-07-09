@@ -37,7 +37,7 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
       <div className="-mt-12 mb-16">
         <section>
           <header className="mb-4">
-            <h3 className="mb-1 font-semibold text-slate-700 dark:text-slate-300">
+            <h3 className="mb-1 font-semibold text-gray-700 dark:text-gray-300">
               {settings.title}
             </h3>
           </header>

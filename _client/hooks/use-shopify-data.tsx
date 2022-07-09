@@ -4,19 +4,8 @@ import { DehydratedState } from "react-query";
 import { Sections } from "types/sections";
 import { GlobalSettings } from "types/shopify";
 
-export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[]>(props: {
-  global: G;
-  sections: S;
-  trpcState?: DehydratedState;
-}) => {
+export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[]>() => {
   const [{ global, sections }, setShopifyData] = useShopifyData();
-
-  useEffect(() => {
-    setShopifyData({
-      global: props.global,
-      sections: props.sections,
-    });
-  }, [props.global, props.sections, setShopifyData]);
 
   const messageSectionSizes = useCallback(() => {
     window?.parent?.postMessage(

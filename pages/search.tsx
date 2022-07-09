@@ -1,18 +1,13 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
-import { useInitShopifyData } from "_client/hooks/use-shopify-data";
-import { renderSection } from "_client/sections/_render-section";
+import { Layout } from "_client/layout/layout";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
-import { GetStaticPropsContext, InferGetStaticPropsType } from "next";
-import { FC, useEffect, useState } from "react";
+import { InferGetStaticPropsType } from "next";
+import { FC } from "react";
 
 type IndexProps = {};
 
 export const Search: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) => {
-  const { sections, global } = useInitShopifyData<typeof props.global, typeof props.sections>(
-    props
-  );
-
-  return <>{sections.map((section) => renderSection(section))}</>;
+  return <Layout sections={props.sections} global={props.global} />;
 };
 
 export default Search;

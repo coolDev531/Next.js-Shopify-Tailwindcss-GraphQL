@@ -1,4 +1,5 @@
 import * as Sections from "_sections";
+import { settingsSchema } from "_sections/_settings_schema";
 import * as fs from "fs";
 import { ShopifySection, ShopifySettingsInput } from "types/shopify";
 import { capitalize } from "utils/capitalize";
@@ -109,58 +110,59 @@ function getSettingsType(setting: ShopifySettingsInput) {
 const getImports = (sections: { [T: string]: ShopifySection }) => {
   const localTypes = [];
 
+  const analyseSetting = (setting) => {
+    if (setting.type === "article") {
+      if (localTypes.includes("_Article_liquid")) return;
+      localTypes.push("_Article_liquid");
+    }
+    if (setting.type === "blog") {
+      if (localTypes.includes("_Blog_liquid")) return;
+      localTypes.push("_Blog_liquid");
+    }
+    if (setting.type === "collection") {
+      if (localTypes.includes("_Collection_liquid")) return;
+      localTypes.push("_Collection_liquid");
+    }
+    if (setting.type === "collection_list") {
+      if (localTypes.includes("_Collection_liquid")) return;
+      localTypes.push("_Collection_liquid");
+    }
+    if (setting.type === "color") {
+      if (localTypes.includes("_Color_liquid")) return;
+      localTypes.push("_Color_liquid");
+    }
+    if (setting.type === "image_picker") {
+      if (localTypes.includes("_Image_liquid")) return;
+      localTypes.push("_Image_liquid");
+    }
+    if (setting.type === "font_picker") {
+      if (localTypes.includes("_Font_liquid")) return;
+      localTypes.push("_Font_liquid");
+    }
+    if (setting.type === "link_list") {
+      if (localTypes.includes("_Linklist_liquid")) return;
+      localTypes.push("_Linklist_liquid");
+    }
+    if (setting.type === "page") {
+      if (localTypes.includes("_Page_liquid")) return;
+      localTypes.push("_Page_liquid");
+    }
+    if (setting.type === "product") {
+      if (localTypes.includes("_Product_liquid")) return;
+      localTypes.push("_Product_liquid");
+    }
+    if (setting.type === "product_list") {
+      if (localTypes.includes("_Product_liquid")) return;
+      localTypes.push("_Product_liquid");
+    }
+  };
+
   for (const key in sections) {
     const section = sections[key];
-    const analyseSetting = (setting) => {
-      if (setting.type === "article") {
-        if (localTypes.includes("_Article_liquid")) return;
-        localTypes.push("_Article_liquid");
-      }
-      if (setting.type === "blog") {
-        if (localTypes.includes("_Blog_liquid")) return;
-        localTypes.push("_Blog_liquid");
-      }
-      if (setting.type === "collection") {
-        if (localTypes.includes("_Collection_liquid")) return;
-        localTypes.push("_Collection_liquid");
-      }
-      if (setting.type === "collection_list") {
-        if (localTypes.includes("_Collection_liquid")) return;
-        localTypes.push("_Collection_liquid");
-      }
-      if (setting.type === "color") {
-        if (localTypes.includes("_Color_liquid")) return;
-        localTypes.push("_Color_liquid");
-      }
-      if (setting.type === "image_picker") {
-        if (localTypes.includes("_Image_liquid")) return;
-        localTypes.push("_Image_liquid");
-      }
-      if (setting.type === "font_picker") {
-        if (localTypes.includes("_Font_liquid")) return;
-        localTypes.push("_Font_liquid");
-      }
-      if (setting.type === "link_list") {
-        if (localTypes.includes("_Linklist_liquid")) return;
-        localTypes.push("_Linklist_liquid");
-      }
-      if (setting.type === "page") {
-        if (localTypes.includes("_Page_liquid")) return;
-        localTypes.push("_Page_liquid");
-      }
-      if (setting.type === "product") {
-        if (localTypes.includes("_Product_liquid")) return;
-        localTypes.push("_Product_liquid");
-      }
-      if (setting.type === "product_list") {
-        if (localTypes.includes("_Product_liquid")) return;
-        localTypes.push("_Product_liquid");
-      }
-    };
 
-    section.settings?.forEach(analyseSetting);
+    section.settings?.forEach(analyseSetting, localTypes);
     section.blocks?.forEach((block) => {
-      block.settings?.forEach(analyseSetting);
+      block.settings?.forEach(analyseSetting, localTypes);
     });
   }
 
@@ -342,5 +344,135 @@ export const generateSectionsTypes = () => {
 
   if (indexContentVerification !== finalContent) {
     fs.writeFileSync(`@types/sections.ts`, finalContent);
+  }
+};
+
+export const generateSettingTypes = () => {
+  const settings = settingsSchema.reduce((acc: ShopifySettingsInput[], group) => {
+    if (!("settings" in group)) return acc;
+
+    return [
+      ...acc,
+      ...((group.settings as any)
+        .filter((s) => s.type !== "header" && s.type !== "paragraph")
+        .sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0)) as ShopifySettingsInput[]),
+    ];
+  }, []);
+
+  const localTypes = [];
+  const analyseSetting = (setting) => {
+    if (setting.type === "article") {
+      if (localTypes.includes("_Article_liquid")) return;
+      localTypes.push("_Article_liquid");
+    }
+    if (setting.type === "blog") {
+      if (localTypes.includes("_Blog_liquid")) return;
+      localTypes.push("_Blog_liquid");
+    }
+    if (setting.type === "collection") {
+      if (localTypes.includes("_Collection_liquid")) return;
+      localTypes.push("_Collection_liquid");
+    }
+    if (setting.type === "collection_list") {
+      if (localTypes.includes("_Collection_liquid")) return;
+      localTypes.push("_Collection_liquid");
+    }
+    if (setting.type === "color") {
+      if (localTypes.includes("_Color_liquid")) return;
+      localTypes.push("_Color_liquid");
+    }
+    if (setting.type === "image_picker") {
+      if (localTypes.includes("_Image_liquid")) return;
+      localTypes.push("_Image_liquid");
+    }
+    if (setting.type === "font_picker") {
+      if (localTypes.includes("_Font_liquid")) return;
+      localTypes.push("_Font_liquid");
+    }
+    if (setting.type === "link_list") {
+      if (localTypes.includes("_Linklist_liquid")) return;
+      localTypes.push("_Linklist_liquid");
+    }
+    if (setting.type === "page") {
+      if (localTypes.includes("_Page_liquid")) return;
+      localTypes.push("_Page_liquid");
+    }
+    if (setting.type === "product") {
+      if (localTypes.includes("_Product_liquid")) return;
+      localTypes.push("_Product_liquid");
+    }
+    if (setting.type === "product_list") {
+      if (localTypes.includes("_Product_liquid")) return;
+      localTypes.push("_Product_liquid");
+    }
+  };
+
+  settings.forEach(analyseSetting);
+  const arr = [];
+  if (settings.length) {
+    arr.push(`export type SettingsSchema = {`);
+
+    arr.push(
+      settings
+        .map(
+          (setting) =>
+            `  /** Input type: ${setting.type} */\n  ` +
+            `${/[^\w_]/gi.test(setting.id) ? `"${setting.id}"` : `${setting.id}`}${getSettingsType(
+              setting
+            )};`
+        )
+        .sort((a, b) => {
+          const aX = a.split("\n")[1];
+          const bX = b.split("\n")[1];
+          if (aX.includes("?") && !bX.includes("?")) {
+            return 1;
+          } else if (!aX.includes("?") && bX.includes("?")) {
+            return -1;
+          } else if (aX > bX) {
+            return 1;
+          } else if (aX < bX) {
+            return -1;
+          } else {
+            return 0;
+          }
+        })
+        .join("\n")
+    );
+    arr.push(`};`);
+  }
+
+  const content = `import { ${localTypes.join(", ")} } from "types/shopify";\n\n${arr.join(
+    "\n"
+  )}\n`;
+
+  if (!fs.existsSync(`@types/settings.ts`)) {
+    fs.writeFileSync(`@types/settings.ts`, content);
+    return;
+  }
+
+  const indexContentVerification = fs.readFileSync(`@types/settings.ts`, {
+    encoding: "utf-8",
+  });
+
+  if (indexContentVerification !== content) {
+    fs.writeFileSync(`@types/settings.ts`, content);
+  }
+
+  if (!fs.existsSync(`${themeFolder}/config/settings_schema.json`)) {
+    fs.writeFileSync(
+      `${themeFolder}/config/settings_schema.json`,
+      JSON.stringify(settingsSchema, undefined, 2)
+    );
+  }
+
+  const contentVerification = fs.readFileSync(`${themeFolder}/config/settings_schema.json`, {
+    encoding: "utf-8",
+  });
+
+  if (contentVerification !== JSON.stringify(settingsSchema, undefined, 2)) {
+    fs.writeFileSync(
+      `${themeFolder}/config/settings_schema.json`,
+      JSON.stringify(settingsSchema, undefined, 2)
+    );
   }
 };
