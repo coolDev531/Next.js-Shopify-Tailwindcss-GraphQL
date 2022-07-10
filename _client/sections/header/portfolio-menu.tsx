@@ -19,6 +19,7 @@ export const PortfolioMenu: FC<
             >
               <>
                 <Image
+                  preload
                   width={`${props[`image_${key}`].width}`}
                   height={`${props[`image_${key}`].height}`}
                   maxWidth={257}

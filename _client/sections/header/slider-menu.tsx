@@ -51,6 +51,7 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
               <figure className="relative mb-4 aspect-1 h-[90px] w-[90px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
                 {product.featured_media && (
                   <Image
+                    preload
                     loading="eager"
                     height={product?.featured_media?.height}
                     width={product?.featured_media?.width}

@@ -8,7 +8,7 @@ import { FC } from "react";
 type IndexProps = {};
 
 export const _404: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) => {
-  console.log(props);
+  // console.log(props);
   return <Layout sections={props.sections} global={props.global} />;
 };
 

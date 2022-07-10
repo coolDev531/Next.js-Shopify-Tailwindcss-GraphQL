@@ -1,16 +1,50 @@
 import { Badge } from "_client/badge";
 import { ReactIcon } from "_client/dynamic-react-icon";
+import usePreloadImage from "_client/hooks/use-preload-image";
 import LightDarkSwitcher from "_client/light-dark-switch";
 import { Link } from "_client/link";
 import { DesktopNav } from "_client/sections/header/desktop-nav";
 import { NavMobile } from "_client/sections/header/navMobile";
 import { SEO } from "content/seo";
 import LunalemonLogo from "public/logo.svg";
-import { FC } from "react";
+import { FC, useEffect } from "react";
+import { useWindowSize } from "react-use";
 
 import { HeaderSection } from "types/sections";
 
 export const Header: FC<HeaderSection> = ({ id, type, settings, blocks }) => {
+  const preloadImage = usePreloadImage();
+  const { width } = useWindowSize();
+
+  useEffect(() => {
+    settings.menu?.links.map((link, i) => {
+      const block = blocks.find((block) => block.settings.handle === link.handle);
+      if (block) {
+        switch (block.type) {
+          case "dropdown_menu_features": {
+            block.settings.menu_items.map((product) => {
+              if (product.featured_media?.src) {
+                preloadImage({ src: product.featured_media.src, width: width > 640 ? 90 : 140 });
+              }
+            });
+            break;
+          }
+          case "dropdown_menu_portfolio": {
+            [1, 2].map((key) => {
+              if (block.settings[`image_${key}`]?.src) {
+                preloadImage({
+                  src: block.settings[`image_${key}`]?.src,
+                  width: width > 640 ? 257 : 330,
+                });
+              }
+            });
+            break;
+          }
+        }
+      }
+    });
+  }, [blocks, settings.menu?.links, preloadImage]);
+
   return (
     <>
       <div className="h-[65px] opacity-0"></div>

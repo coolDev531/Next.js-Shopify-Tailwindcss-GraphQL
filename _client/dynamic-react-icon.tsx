@@ -7,7 +7,6 @@ export type ReactIconProps = Omit<JSX.IntrinsicElements["svg"], "name"> & {
 };
 
 export const ReactIcon: FC<ReactIconProps> = ({ name, ...props }) => {
-  // console.log({ iconName: name });
   const Icon: ComponentType<JSX.IntrinsicElements["svg"]> = dynamic(
     () => {
       const asyncImport = {
@@ -16,9 +15,10 @@ export const ReactIcon: FC<ReactIconProps> = ({ name, ...props }) => {
         SiNextdotjs: import("@react-icons/all-files/si/SiNextDotJs"),
         SiTailwindcss: import("@react-icons/all-files/si/SiTailwindcss"),
         FiCopy: import("@react-icons/all-files/fi/FiCopy"),
-        FaFacebook: import("@react-icons/all-files/Fa/FaFacebook"),
-        FaGoogle: import("@react-icons/all-files/Fa/FaGoogle"),
-        FaInstagram: import("@react-icons/all-files/Fa/FaInstagram"),
+        FaFacebook: import("@react-icons/all-files/fa/FaFacebook"),
+        FaGoogle: import("@react-icons/all-files/fa/FaGoogle"),
+        FaInstagram: import("@react-icons/all-files/fa/FaInstagram"),
+        BsThreeDotsVertical: import("@react-icons/all-files/bs/BsThreeDotsVertical"),
       }[name];
       if (asyncImport) {
         return asyncImport.then((mod) => {

@@ -1,5 +1,5 @@
 import { ChevronRightIcon } from "@heroicons/react/solid";
-import { useBreadcrumbs } from "_client/hooks/useBreadcrumbs";
+import { useBreadcrumbs } from "_client/hooks/use-breadcrumbs";
 import { Link } from "_client/link";
 import clsx from "clsx";
 

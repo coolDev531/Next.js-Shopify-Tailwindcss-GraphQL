@@ -22,6 +22,7 @@ module.exports = withBundleAnalyzer({
       "avatars.githubusercontent.com",
       "cdn.shopify.com",
       "burst.shopifycdn.com",
+      "images.unsplash.com",
     ],
   },
   webpack: (config, { isServer, dev }) => {

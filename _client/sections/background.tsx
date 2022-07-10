@@ -42,7 +42,7 @@ export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
           }[settings.type]
         )}
         style={{
-          background: settings.color,
+          background: settings.color || "transparent",
           marginTop: `${settings.marginTop}px`,
           height: `${settings.height}px`,
         }}

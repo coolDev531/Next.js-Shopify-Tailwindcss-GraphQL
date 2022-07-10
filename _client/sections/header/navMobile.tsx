@@ -1,13 +1,13 @@
 import { Popover, Transition } from "@headlessui/react";
 import HeroIcon from "_client/dynamic-hero-icon";
 import { ReactIcon } from "_client/dynamic-react-icon";
+import { useIsMount } from "_client/hooks/use-is-mount";
 import { Image } from "_client/image";
 import LightDarkSwitcher from "_client/light-dark-switch";
 import { Link } from "_client/link";
 import { Paragraph } from "_client/typography/paragraph";
 import clsx from "clsx";
 import { FC, Fragment, useCallback, useState } from "react";
-import { useMountedState } from "react-use";
 import { HeaderBlocks } from "types/sections";
 import { _Linklist_liquid } from "types/shopify";
 
@@ -15,7 +15,8 @@ export const NavMobile: FC<{
   blocks: HeaderBlocks[];
   menu: _Linklist_liquid;
 }> = ({ blocks, menu }) => {
-  const isMount = useMountedState();
+  const isMount = useIsMount();
+
   const [menuSelected, setMenuSelected] = useState(blocks[0]?.id ?? "");
   const handleDropdownSelect = useCallback((blockId: string) => {
     if (menuSelected === blockId) {
@@ -26,15 +27,11 @@ export const NavMobile: FC<{
     }
   }, [menuSelected]);
 
-  if (isMount) {
-    return null;
-  }
   return (
     <nav className="ml-auto flex h-full items-center gap-1 px-2 md:hidden">
       <div className="z-50">
         <LightDarkSwitcher />
       </div>
-
       <Popover className="relative">
         {({ close }) => (
           <>
@@ -112,11 +109,12 @@ export const NavMobile: FC<{
                                             {product.featured_media && (
                                               <Image
                                                 loading="eager"
+                                                preload={true}
                                                 height={product?.featured_media?.height}
                                                 width={product?.featured_media?.width}
                                                 maxWidth={140}
                                                 priority
-                                                className="h-full object-cover"
+                                                className="h-full w-auto object-cover"
                                                 src={product?.featured_media?.src}
                                                 alt={product?.featured_media?.alt}
                                               />
@@ -177,9 +175,10 @@ export const NavMobile: FC<{
                                           >
                                             <>
                                               <Image
+                                                preload
                                                 width={`${block.settings[`image_${key}`].width}`}
                                                 height={`${block.settings[`image_${key}`].height}`}
-                                                maxWidth={300}
+                                                maxWidth={330}
                                                 priority
                                                 src={`${block.settings[`image_${key}`].src}`}
                                                 alt="placeholder"
@@ -207,19 +206,25 @@ export const NavMobile: FC<{
                                           <div
                                             key={subLink.handle}
                                             className="flex min-w-[calc(50%-8px)] max-w-[calc(50%-8px)] flex-col"
-                                            style={{
-                                              marginTop: document?.querySelector(
-                                                `.filler-${block.id}-${link.handle}-${index - 2}`
-                                              )
-                                                ? `-${
-                                                    document?.querySelector(
+                                            style={
+                                              !isMount
+                                                ? {
+                                                    marginTop: document?.querySelector(
                                                       `.filler-${block.id}-${link.handle}-${
                                                         index - 2
                                                       }`
-                                                    ).clientHeight
-                                                  }px`
-                                                : "0",
-                                            }}
+                                                    )
+                                                      ? `-${
+                                                          document?.querySelector(
+                                                            `.filler-${block.id}-${link.handle}-${
+                                                              index - 2
+                                                            }`
+                                                          ).clientHeight
+                                                        }px`
+                                                      : "0",
+                                                  }
+                                                : {}
+                                            }
                                           >
                                             <h3 className="heading-sm">{subLink.title}</h3>
                                             <ul className="flex flex-col gap-1">

@@ -33,6 +33,8 @@ export const Layout: FC<LayoutProps> = ({ sections, global }) => {
 
   const isDark = theme === "dark";
 
+  console.log("render");
+
   return (
     <ShopifyDataProvider init={{ sections, global }}>
       <ContextProviders>

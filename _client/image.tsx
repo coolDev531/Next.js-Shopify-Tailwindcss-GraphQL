@@ -1,6 +1,7 @@
+import usePreloadImage from "_client/hooks/use-preload-image";
 import { ImageProps } from "next/dist/client/future/image";
 import NextImage from "next/future/image";
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { SetRequired } from "type-fest";
 
 export const Image: FC<
@@ -8,13 +9,29 @@ export const Image: FC<
     maxHeight?: number;
     maxWidth?: number;
     pixelDensity?: number;
+    preload?: boolean;
   }
-> = ({ pixelDensity = 1, ...props }) => {
+> = ({ pixelDensity = 1, preload, ...props }) => {
+  const preloadImage = usePreloadImage();
+
   const { src, width, height, maxWidth, maxHeight, ...rest } = props;
+
+  const aspectRatio = +width / +height;
+
+  useEffect(() => {
+    if (src && typeof src === "string" && preload) {
+      preloadImage({
+        src,
+        quality: +props.quality || 75,
+        width: maxWidth ? maxWidth : maxHeight ? maxHeight * aspectRatio : +width,
+      });
+    }
+  }, [aspectRatio, maxHeight, maxWidth, preload, preloadImage, props.quality, src, width]);
+
   if (!src) {
     return null;
   }
-  const aspectRatio = +width / +height;
+
   return (
     <NextImage
       {...rest}
