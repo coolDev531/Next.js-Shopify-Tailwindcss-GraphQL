@@ -2,14 +2,14 @@ import { ReactIcon, ReactIconProps } from "_client/dynamic-react-icon";
 import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { Button } from "_client/typography/button";
-import { Paragraph } from "_client/typography/paragraph";
+import { Richtext } from "_client/typography/richtext";
 import { renderIcon } from "_sections/utils";
 import { FC } from "react";
 import { HeroWithFeaturesSection } from "types/sections";
 
 export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, blocks, type }) => {
   return (
-    <>
+    <div className="relative overflow-hidden">
       <div className="absolute inset-0 h-full w-full border-b border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-dark-bg" />
       <div className="absolute inset-y-0 hidden w-full min-w-[1360px] bg-[url('/images/bg-gradient-templates.png')] bg-[length:2000px_100%] bg-[position:calc(50%_+_220px)_-50px] bg-no-repeat lg:block" />
       <Wrapper maxWidth="xl" paddingY="base">
@@ -37,7 +37,7 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
               </div>
             </header>
             <main className="mt-4">
-              <Paragraph className="paragraph-base text-gray-600">{settings.paragraph}</Paragraph>
+              <Richtext className="paragraph-base text-gray-600">{settings.paragraph}</Richtext>
             </main>
             <footer className="mt-8 flex gap-4">
               {settings.cta1 && settings.cta1_link
@@ -173,9 +173,9 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
                     <h2 className="heading-xs">{block.settings.title}</h2>
                   </header>
                   <main className="mt-2">
-                    <Paragraph className="paragraph-sm leading-6 tracking-normal text-gray-700">
+                    <Richtext className="paragraph-sm leading-6 tracking-normal text-gray-700">
                       {block.settings.paragraph}
-                    </Paragraph>
+                    </Richtext>
                   </main>
                 </div>
               </section>
@@ -183,6 +183,6 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
           })}
         </div>
       </Wrapper>
-    </>
+    </div>
   );
 };

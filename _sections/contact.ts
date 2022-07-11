@@ -124,6 +124,11 @@ export const contact: ShopifySection<ContactSection> = {
       id: "submit_paragraph",
       label: "Submit Text",
     },
+    {
+      type: "richtext",
+      id: "success_paragraph",
+      label: "Success Text",
+    },
   ],
   blocks: [
     {

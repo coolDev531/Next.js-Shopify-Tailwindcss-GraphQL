@@ -31,7 +31,7 @@ export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
       <div
         id={`background-${id}`}
         className={clsx(
-          "pointer-events-none absolute inset-x-0 -z-10 ml-[50%] w-screen -translate-x-1/2 select-none",
+          "pointer-events-none absolute inset-x-0 -z-10 select-none",
           {
             all: "",
             mobile: "sm:hidden",

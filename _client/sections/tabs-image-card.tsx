@@ -2,7 +2,7 @@ import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
-import { Paragraph } from "_client/typography/paragraph";
+import { Richtext } from "_client/typography/richtext";
 import { renderIcon } from "_sections/utils";
 import clsx from "clsx";
 import img2 from "public/images/bg-gradient-dark.png";
@@ -17,7 +17,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
   );
 
   return (
-    <Wrapper maxWidth="xl" paddingY="base">
+    <Wrapper maxWidth="xl" paddingY="base" className="overflow-hidden">
       {blocks.map((block) => {
         return block.type === "heading"
           ? <div className="mb-12" key={`heading-${block.id}`}>
@@ -98,7 +98,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
                       <h3 className="heading-base">{block.settings.title}</h3>
                     </header>
                     <main className="">
-                      <Paragraph size="lg">{block.settings.paragraph}</Paragraph>
+                      <Richtext className="paragraph-lg">{block.settings.paragraph}</Richtext>
                     </main>
                     <footer
                       className={clsx(

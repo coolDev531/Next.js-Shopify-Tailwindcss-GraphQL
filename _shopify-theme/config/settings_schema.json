@@ -4,8 +4,8 @@
     "theme_name": "Shopify Theme",
     "theme_author": "Lunalemon",
     "theme_version": "1.0.0",
-    "theme_documentation_url": "http:\/\/lunalemon.dev\/",
-    "theme_support_url": "https:\/\/lunalemon.dev\/"
+    "theme_documentation_url": "http://lunalemon.dev/",
+    "theme_support_url": "https://lunalemon.dev/"
   },
   {
     "name": "Colors",
@@ -221,25 +221,25 @@
       {
         "type": "text",
         "id": "social_facebook",
-        "info": "https:\/\/www.facebook.com\/shopify",
+        "info": "https://www.facebook.com/shopify",
         "label": "Facebook"
       },
       {
         "type": "text",
         "id": "social_github",
-        "info": "https:\/\/github.com\/FelixTellmann",
+        "info": "https://github.com/FelixTellmann",
         "label": "Github"
       },
       {
         "type": "text",
         "id": "social_twitter",
-        "info": "https:\/\/twitter.com\/shopify",
+        "info": "https://twitter.com/shopify",
         "label": "Twitter"
       },
       {
         "type": "text",
         "id": "social_instagram",
-        "info": "https:\/\/instagram.com\/shopify",
+        "info": "https://instagram.com/shopify",
         "label": "Instagram"
       }
     ]

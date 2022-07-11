@@ -2,7 +2,7 @@ import { Background } from "_client/sections/background";
 import { BlockBlockquote } from "_client/sections/block-blockquote";
 import { BlockHero } from "_client/sections/block-hero";
 import { BlockImageText } from "_client/sections/block-image-text";
-import { Contact } from "_client/sections/contact";
+import { Contact } from "_client/sections/contact/contact";
 import { FeatureCarousel } from "_client/sections/feature-carousel";
 import { FeatureList } from "_client/sections/feature-list";
 import { Footer } from "_client/sections/footer";

@@ -7,7 +7,7 @@ import { cleanSvgIds } from "utils/clean-svg-ids";
 
 export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) => {
   return (
-    <Wrapper maxWidth="xl" paddingY="base">
+    <Wrapper maxWidth="xl" paddingY="base" className="overflow-hidden">
       <section>
         <header>
           <h3 className="heading-pre">{settings.pre_title}</h3>
@@ -24,7 +24,7 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
             return (
               <section
                 key={product.id}
-                className="min-w-[220px] select-none rounded-md border border-gray-200 bg-white p-3.5 transition-all hfa:border-gray-400/60 dark:border-gray-700/80 dark:bg-dark-card dark:hfa:border-gray-500/80"
+                className="min-w-[220px] select-none rounded-md border border-gray-200 bg-white p-3.5 transition-[border-color] hfa:border-gray-400/60 dark:border-gray-700/80 dark:bg-dark-card dark:hfa:border-gray-500/80"
               >
                 <header className="flex flex-col gap-2">
                   <figure

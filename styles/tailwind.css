@@ -52,9 +52,9 @@
     src: url('/fonts/BasierCircle-BoldItalic.woff2') format('woff2'), url('/fonts/BasierCircle-BoldItalic.woff') format('woff');
   }
 
-  :is(p,li):not(:is(.paragraph-sm,.paragraph-base,.paragraph-lg) > :is(p,li)) {
+/*  :is(p,li):not(:is(.paragraph-sm,.paragraph-base,.paragraph-lg) > :is(p,li)) {
     @apply text-slate-600
-  }
+  }*/
 }
 
 .color-gray--slate {

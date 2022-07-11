@@ -7,7 +7,7 @@ import { TabsProcessStepSection } from "types/sections";
 
 export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, blocks, type }) => {
   return (
-    <div className="mx-auto max-w-7xl px-8 py-16">
+    <div className="mx-auto max-w-7xl overflow-hidden px-8 py-16">
       <div className="grid gap-16" style={{ gridTemplateColumns: "420px 1fr" }}>
         <div>
           <section>

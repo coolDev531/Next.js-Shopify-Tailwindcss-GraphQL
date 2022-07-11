@@ -40,6 +40,7 @@ export const Layout: FC<LayoutProps> = ({ sections, global }) => {
       <ContextProviders>
         <style jsx global>{`
           :root {
+            /* Shopify Settings */
             --color-bg: ${global?.settings.color_bg?.rgb};
             --color-bg-dark: ${global?.settings.color_bg_dark?.rgb};
             --color-bg-secondary: ${global?.settings.color_bg_secondary?.rgb};
@@ -90,7 +91,7 @@ export const Layout: FC<LayoutProps> = ({ sections, global }) => {
         <main
           className={clsx(
             "page-settings",
-            "relative min-h-screen overflow-x-hidden text-gray-600 d:text-gray-400",
+            "relative min-h-screen text-gray-600 d:text-gray-400",
             "min-h-[calc(100vh-300px)] [&>:is(section,header,footer)]:relative",
             `color-gray--${global?.settings?.grayscale}`
           )}

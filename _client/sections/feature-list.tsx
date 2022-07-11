@@ -1,6 +1,6 @@
 import { Wrapper } from "_client/layout/wrapper";
 import { BlockHeading } from "_client/sections/block-heading";
-import { Paragraph } from "_client/typography/paragraph";
+import { Richtext } from "_client/typography/richtext";
 import { renderIcon } from "_sections/utils";
 import clsx from "clsx";
 import { FC } from "react";
@@ -8,7 +8,7 @@ import { FeatureListSection } from "types/sections";
 
 export const FeatureList: FC<FeatureListSection> = ({ blocks, settings }) => {
   return (
-    <Wrapper maxWidth="xl" paddingY="none">
+    <Wrapper maxWidth="xl" paddingY="none" className="overflow-hidden">
       <BlockHeading settings={settings} />
       <div className="-mx-8 mt-16 flex justify-center">
         <div
@@ -36,7 +36,7 @@ export const FeatureList: FC<FeatureListSection> = ({ blocks, settings }) => {
                       <h3 className="heading-base tracking-tight">{block.settings.title}</h3>
                     </header>
                     <main>
-                      <Paragraph size="sm">{block.settings.paragraph}</Paragraph>
+                      <Richtext className="paragraph-sm">{block.settings.paragraph}</Richtext>
                     </main>
                   </section>
                 );

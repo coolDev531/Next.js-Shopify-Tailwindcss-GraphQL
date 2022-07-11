@@ -68,6 +68,8 @@ export type ContactSection = {
     sub_title?: string;
     /** Input type: richtext */
     submit_paragraph?: `<p${string}</p>`;
+    /** Input type: richtext */
+    success_paragraph?: `<p${string}</p>`;
     /** Input type: text */
     title?: string;
   };

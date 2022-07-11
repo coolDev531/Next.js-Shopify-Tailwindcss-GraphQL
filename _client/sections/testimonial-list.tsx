@@ -10,9 +10,9 @@ export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, settin
   const { products, ...heading } = settings;
 
   return (
-    <Wrapper maxWidth="xl" paddingY="base">
+    <Wrapper maxWidth="xl" paddingY="base" className="overflow-hidden">
       <BlockHeading settings={heading} />
-      <div className="mt-4 grid grid-cols-2 gap-8">
+      <div className="mt-4 flex grid-cols-2 flex-col gap-8 sm:grid">
         {products?.map((product) => {
           const logo = product.metafields.find(
             ({ key }) => key === "logo"
@@ -77,7 +77,7 @@ export const TestimonialListItem = ({
     <Link
       href={link}
       key={`testimonial-${id}-${blockId}`}
-      className="min-w-[220px] select-none rounded-md border border-gray-200 bg-white p-6 transition-all hfa:border-gray-400/60 dark:border-gray-700/80 dark:bg-dark-card dark:hfa:border-gray-500/80"
+      className="min-w-[220px] select-none rounded-md border border-gray-200 bg-white p-6 transition-[border-color] hfa:border-gray-400/60 dark:border-gray-700/80 dark:bg-dark-card dark:hfa:border-gray-500/80"
     >
       <header>
         <figure className="relative h-10 grayscale-0">

@@ -3,7 +3,7 @@ import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
-import { Paragraph } from "_client/typography/paragraph";
+import { Richtext } from "_client/typography/richtext";
 import { FC, useCallback, useRef, useState } from "react";
 import { FeatureCarouselSection } from "types/sections";
 import { scrollToX } from "utils/scroll-to";
@@ -34,6 +34,7 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
     <Wrapper
       maxWidth="xl"
       paddingY="base"
+      className="overflow-hidden"
       // background={`url("/images/bg-gradient-light-180.jpg") top center no-repeat`}
       bgOpacity={0.6}
       bgHeight="calc(100% + 140px)"
@@ -117,7 +118,7 @@ export const FeatureCarouselItem = ({ id, href, image, title, description }) => 
         <h3 className="heading-sm">{title}</h3>
       </header>
       <main>
-        <Paragraph size="sm">{description}</Paragraph>
+        <Richtext className="paragraph-sm">{description}</Richtext>
       </main>
     </Link>
   );

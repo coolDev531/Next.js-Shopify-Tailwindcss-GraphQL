@@ -12,7 +12,10 @@ export const SpecList: FC<SpecListSection> = ({ id, blocks, type, settings }) =>
       paddingY="base"
       background={settings.color_bg}
       bgBlur={settings.blur_bg}
-      className={clsx(settings.color_toggle === "light" && "color-slate-inverted")}
+      className={clsx(
+        "overflow-hidden",
+        settings.color_toggle === "light" && "color-slate-inverted"
+      )}
     >
       {blocks.map((block) => {
         return block.type === "heading"

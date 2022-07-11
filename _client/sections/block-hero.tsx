@@ -2,14 +2,14 @@ import { CheckCircleIcon } from "@heroicons/react/solid";
 import { Image } from "_client/image";
 import { Breadcrumbs } from "_client/layout/breadcrumbs";
 import { Wrapper } from "_client/layout/wrapper";
-import { Paragraph } from "_client/typography/paragraph";
+import { Richtext } from "_client/typography/richtext";
 
 import { FC } from "react";
 import { HeroSection } from "types/sections";
 
 export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
   return (
-    <Wrapper maxWidth="xl" paddingY="base">
+    <Wrapper maxWidth="xl" paddingY="base" className="overflow-hidden">
       <div className="mx-auto -mt-4 max-w-lg">
         <figure className="relative mx-4 mb-8 aspect-1 lg:hidden">
           {settings.image
@@ -34,7 +34,7 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
             <h1 className="heading-2xl">{settings.title}</h1>
           </header>
           <main>
-            <Paragraph size="lg">{settings.paragraph}</Paragraph>
+            <Richtext className="paragraph-lg">{settings.paragraph}</Richtext>
             <div className="mt-8">
               <h3 className="mb-1 font-semibold text-gray-700 dark:text-gray-300">
                 {settings.list_title}

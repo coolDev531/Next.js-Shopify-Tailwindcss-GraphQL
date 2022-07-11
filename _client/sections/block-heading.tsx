@@ -1,5 +1,5 @@
 import { Button } from "_client/typography/button";
-import { Paragraph } from "_client/typography/paragraph";
+import { Richtext } from "_client/typography/richtext";
 import clsx from "clsx";
 import { FC } from "react";
 import { PartialBy } from "types/index";
@@ -32,7 +32,7 @@ export const BlockHeading: FC<PartialBy<HeadingSection, "type" | "id">> = ({ set
           <h2 className="heading-xl">{settings.title}</h2>
         </header>
         <main className="max-w-prose">
-          <Paragraph size="lg">{settings.paragraph}</Paragraph>
+          <Richtext className="paragraph-lg">{settings.paragraph}</Richtext>
         </main>
         <footer
           className={clsx(

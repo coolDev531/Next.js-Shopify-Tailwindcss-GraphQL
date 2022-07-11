@@ -5,7 +5,7 @@ import { useIsMount } from "_client/hooks/use-is-mount";
 import { Image } from "_client/image";
 import LightDarkSwitcher from "_client/light-dark-switch";
 import { Link } from "_client/link";
-import { Paragraph } from "_client/typography/paragraph";
+import { Richtext } from "_client/typography/richtext";
 import clsx from "clsx";
 import { FC, Fragment, useCallback, useState } from "react";
 import { HeaderBlocks } from "types/sections";
@@ -124,7 +124,9 @@ export const NavMobile: FC<{
                                             <h3 className="heading-sm">{product.title}</h3>
                                           </header>
                                           <main>
-                                            <Paragraph size="sm">{product.content}</Paragraph>
+                                            <Richtext className="paragraph-sm">
+                                              {product.content}
+                                            </Richtext>
                                           </main>
                                         </Link>
                                       );

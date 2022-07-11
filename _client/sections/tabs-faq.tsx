@@ -8,7 +8,7 @@ export const TabsFaq: FC<TabsFaqSection> = ({ id, settings, blocks, type }) => {
   );
 
   return (
-    <div className="mx-auto max-w-7xl px-8">
+    <div className="mx-auto max-w-7xl overflow-hidden px-8">
       <section className="mb-8">
         <header>
           <h1>{settings.title}</h1>

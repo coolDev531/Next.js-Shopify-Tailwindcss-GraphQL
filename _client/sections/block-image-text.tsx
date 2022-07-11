@@ -1,14 +1,14 @@
 import { CheckCircleIcon } from "@heroicons/react/solid";
 import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
-import { Paragraph } from "_client/typography/paragraph";
+import { Richtext } from "_client/typography/richtext";
 import clsx from "clsx";
 import { FC } from "react";
 import { ImageTextSection } from "types/sections";
 
 export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ settings }) => {
   return (
-    <Wrapper paddingY="none" maxWidth="xl">
+    <Wrapper paddingY="none" maxWidth="xl" className="overflow-hidden">
       <div className="flex grid-cols-2 flex-col-reverse gap-8 md:grid">
         {/*= =============== Text Content ================ */}
         <section
@@ -22,7 +22,7 @@ export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ s
             <h2 className="heading-xl">{settings.title}</h2>
           </header>
           <main>
-            <Paragraph>{settings.paragraph}</Paragraph>
+            <Richtext className="paragraph-base">{settings.paragraph}</Richtext>
             <div className="mt-8">
               <h3 className="mb-1 font-semibold text-gray-700 dark:text-gray-300">
                 {settings.list_title}
