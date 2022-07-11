@@ -152,9 +152,9 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
                   <div className="flex justify-end"></div>
                 </header>
                 {block.settings.image && (
-                  <figure className="aspect-w-4 aspect-h-3 relative aspect-og-image flex-1 select-none overflow-hidden rounded-b-lg rounded-t-sm">
+                  <figure className="aspect-w-4 aspect-h-3 relative aspect-og-image flex-1 select-none overflow-hidden overflow-hidden rounded-b-lg rounded-t-sm">
                     <Image
-                      className="object-cover"
+                      className="h-full w-full object-cover"
                       maxWidth={600}
                       width={block.settings.image.width}
                       height={block.settings.image.height}

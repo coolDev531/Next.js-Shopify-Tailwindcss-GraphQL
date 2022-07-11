@@ -35,6 +35,12 @@ export const Image: FC<
   return (
     <NextImage
       {...rest}
+      placeholder="blur"
+      blurDataURL={
+        typeof src === "string"
+          ? `/_next/image?url=${encodeURIComponent(src.replace(/^\/\//, "https://"))}&w=32&q=1`
+          : undefined
+      }
       src={typeof src === "string" ? src.replace(/^\/\//, "https://") : src}
       width={Math.round(
         +(maxWidth ? maxWidth : maxHeight ? maxHeight * aspectRatio : width) * pixelDensity
