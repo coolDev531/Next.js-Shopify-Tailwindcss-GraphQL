@@ -817,14 +817,6 @@ export type TabsProcessStepSection = {
   blocks: TabsProcessStepBlocks[];
   id: string;
   settings: {
-    /** Input type: text */
-    cta1?: string;
-    /** Input type: url */
-    cta1_link?: string;
-    /** Input type: text */
-    cta2?: string;
-    /** Input type: url */
-    cta2_link?: string;
     /** Input type: richtext */
     paragraph?: `<p${string}</p>`;
     /** Input type: text */

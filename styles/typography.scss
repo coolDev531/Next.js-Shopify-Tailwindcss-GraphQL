@@ -2,31 +2,31 @@
 
   /*= =============== HEADINGS ================ */
   .heading-3xl {
-    @apply mb-3 text-3xl font-bold lg:mb-4 lg:text-5xl xl:text-6xl text-gray-800 tracking-tighter dark:text-gray-50;
+    @apply mb-3 text-3xl font-bold lg:mb-4 lg:text-5xl xl:text-6xl text-gray-800 tracking-tighter dark:[--color-gray-800:var(--color-gray-50)];
   }
 
   .heading-2xl {
-    @apply mb-3 text-3xl font-bold lg:mb-4 lg:text-5xl xl:text-6xl text-gray-800 tracking-tighter dark:text-gray-50;
+    @apply mb-3 text-3xl font-bold lg:mb-4 lg:text-5xl xl:text-6xl text-gray-800 tracking-tighter dark:[--color-gray-800:var(--color-gray-50)];
   }
 
   .heading-xl {
-    @apply mb-3 text-3xl font-semibold sm:text-4xl lg:mb-4 text-gray-800 tracking-tight dark:text-gray-100;
+    @apply mb-3 text-3xl font-semibold sm:text-4xl lg:mb-4 text-gray-800 tracking-tight dark:[--color-gray-800:var(--color-gray-100)];
   }
 
   .heading-lg {
-    @apply mb-3 text-2xl font-semibold sm:text-3xl lg:mb-4 text-gray-800 tracking-tight dark:text-gray-100;
+    @apply mb-3 text-2xl font-semibold sm:text-3xl lg:mb-4 text-gray-800 tracking-tight dark:[--color-gray-800:var(--color-gray-100)];
   }
 
   .heading-base {
-    @apply mb-1 text-lg font-semibold text-gray-800 dark:text-gray-100;
+    @apply mb-1 text-lg font-semibold text-gray-800 dark:[--color-gray-800:var(--color-gray-100)];
   }
 
   .heading-sm {
-    @apply mb-1 font-semibold text-gray-700 dark:text-gray-200;
+    @apply mb-1 font-semibold text-gray-700  dark:[--color-gray-700:var(--color-gray-200)];
   }
 
   .heading-xs {
-    @apply mb-1 font-semibold text-gray-700 text-sm dark:text-gray-300;
+    @apply mb-1 font-semibold text-gray-700 text-sm dark:[--color-gray-700:var(--color-gray-300)];
   }
 
   .heading-pre {
@@ -35,15 +35,15 @@
 
   /*= =============== PARAGRAPH ================ */
   .paragraph-lg {
-    @apply max-w-xl tracking-tight leading-relaxed text-gray-500 [&>p+p]:mt-4 md:text-lg xl:max-w-2xl dark:text-gray-400;
+    @apply max-w-xl tracking-tight leading-relaxed text-gray-500 [&>p+p]:mt-4 md:text-lg xl:max-w-2xl dark:[--color-gray-500:var(--color-gray-400)];
   }
 
   .paragraph-base {
-    @apply max-w-xl tracking-tight leading-relaxed text-gray-500 [&>p+p]:mt-4 dark:text-gray-400
+    @apply max-w-xl tracking-tight leading-relaxed text-gray-500 [&>p+p]:mt-4 dark:[--color-gray-500:var(--color-gray-400)];
   }
 
   .paragraph-sm {
-    @apply max-w-xl tracking-tight leading-relaxed text-gray-500 [&>p+p]:mt-4 text-sm dark:text-gray-400;
+    @apply max-w-xl tracking-tight leading-relaxed text-gray-500 [&>p+p]:mt-4 text-sm dark:[--color-gray-500:var(--color-gray-400)];
   }
 
   .button, .button-secondary {
@@ -58,8 +58,7 @@
 
   .button-secondary {
     @apply bg-gray-400/[0.04] text-gray-600 backdrop-blur-md border border-accent/30 hfa:bg-gray-400/[0.07] hfa:border-accent/60 hfa:text-gray-900
-    dark:text-gray-400 dark:hfa:text-gray-100
-
+    dark:[--color-gray-600:var(--color-gray-400)] dark:hfa:[--color-gray-900:var(--color-gray-100)]
   }
 
   .form-label {

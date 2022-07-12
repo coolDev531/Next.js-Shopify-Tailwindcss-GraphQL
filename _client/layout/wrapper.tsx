@@ -3,7 +3,7 @@ import { Property } from "csstype";
 import { FC, PropsWithChildren } from "react";
 
 type SectionProps = {
-  maxWidth: "sm" | "base" | "xl" | "fullscreen";
+  maxWidth: "sm" | "base" | "xl" | "2xl" | "fullscreen";
   paddingY: "none" | "base" | "xl";
   background?: Property.Background<string | number>;
   bgBlur?: boolean;

@@ -24,34 +24,6 @@ export const tabsProcessStep: ShopifySection<TabsProcessStepSection> = {
       id: "paragraph",
       label: "Paragraph",
     },
-    {
-      type: "header",
-      content: "Primary Button",
-    },
-    {
-      type: "text",
-      id: "cta1",
-      label: "Text",
-    },
-    {
-      type: "url",
-      id: "cta1_link",
-      label: "Link",
-    },
-    {
-      type: "header",
-      content: "Secondary Button",
-    },
-    {
-      type: "text",
-      id: "cta2",
-      label: "Text",
-    },
-    {
-      type: "url",
-      id: "cta2_link",
-      label: "Link",
-    },
   ],
   blocks: [
     {
