@@ -3,7 +3,8 @@ import HeroIcon from "_client/dynamic-hero-icon";
 import { API } from "_client/hooks/use-trpc";
 
 import { Wrapper } from "_client/layout/wrapper";
-import { AdvancedInput } from "_client/sections/contact/advanced-input";
+import { GroupInput } from "_client/sections/contact/group-input";
+import { SelectInput } from "_client/sections/contact/select-input";
 import { BasicInput } from "_client/sections/contact/basic-input";
 import { TextareaInput } from "_client/sections/contact/textarea-input";
 import { useShopifyData } from "_client/stores/shopify-data-store";
@@ -88,7 +89,16 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
                     );
                   case "group":
                     return (
-                      <AdvancedInput
+                      <GroupInput
+                        key={block.id}
+                        {...block.settings}
+                        blockId={block.id}
+                        forceValidate={forceValidate}
+                      />
+                    );
+                  case "select":
+                    return (
+                      <SelectInput
                         key={block.id}
                         {...block.settings}
                         blockId={block.id}

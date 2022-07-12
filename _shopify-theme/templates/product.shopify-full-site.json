@@ -124,44 +124,40 @@
           }
         },
         "97fc1215-1e7d-43f7-ac5e-c0164aa766bf": {
-          "type": "group",
+          "type": "select",
           "settings": {
             "title": "How did you hear about us?",
             "required": true,
-            "type": "select",
             "options": "Google || Shopify || Referral || Facebook || Other",
             "error_message": "",
             "size": "half"
           }
         },
         "60abd486-9b4f-4231-96dc-4ea214a9dd54": {
-          "type": "group",
+          "type": "select",
           "settings": {
             "title": "Budget",
             "required": false,
-            "type": "select",
             "options": "less than R15,000 ||\nR15,000 - R25,000 ||\nR25,000 - R50,000 ||\nR50,000 - R75,000 ||\nR75,000 +",
             "error_message": "",
             "size": "half"
           }
         },
         "f120716b-1021-4356-a07d-829817edc95a": {
-          "type": "group",
+          "type": "select",
           "settings": {
             "title": "Timeline",
             "required": false,
-            "type": "select",
             "options": "Yesterday! ||\n2 Weeks ||\n2 - 4 Weeks ||\n4 - 8 Weeks ||\n+8 Weeks",
             "error_message": "",
             "size": "half"
           }
         },
         "f7ac8293-1bbe-4271-b4cd-c9abf0657f17": {
-          "type": "group",
+          "type": "select",
           "settings": {
             "title": "Current Platform",
             "required": false,
-            "type": "select",
             "options": "I don't have a site yet ||\nShopify ||\nBigCommerce ||\nMagento ||\nPrestaShop ||\nWooCommerce ||\nVolusion ||\nOther",
             "error_message": "",
             "size": "half"

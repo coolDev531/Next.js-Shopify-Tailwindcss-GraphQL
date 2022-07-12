@@ -123,9 +123,7 @@ export type ContactBlocks =
         /** Input type: checkbox */
         required: boolean;
         /** Input type: radio */
-        size: "half" | "full";
-        /** Input type: radio */
-        type: "radio" | "checkbox" | "select";
+        type: "radio" | "checkbox";
         /** Input type: textarea */
         error_message?: string;
         /** Input type: textarea */
@@ -134,6 +132,22 @@ export type ContactBlocks =
         title?: string;
       };
       type: "group";
+    }
+  | {
+      id: string;
+      settings: {
+        /** Input type: checkbox */
+        required: boolean;
+        /** Input type: radio */
+        size: "half" | "full";
+        /** Input type: textarea */
+        error_message?: string;
+        /** Input type: textarea */
+        options?: string;
+        /** Input type: text */
+        title?: string;
+      };
+      type: "select";
     }
   | {
       id: string;
