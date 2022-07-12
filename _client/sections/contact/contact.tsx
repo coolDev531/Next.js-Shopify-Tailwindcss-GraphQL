@@ -46,7 +46,7 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
 
   return (
     <Wrapper maxWidth="base" paddingY="base">
-      <header ref={scrollToRef}>
+      <header ref={scrollToRef} className="mb-16">
         <h1 className="heading-2xl">{settings.title}</h1>
         <h2 className="heading-lg font-normal">{settings.sub_title}</h2>
       </header>
