@@ -47,7 +47,7 @@
   }
 
   .button, .button-secondary {
-    @apply relative inline-flex items-center whitespace-nowrap py-3 px-4 rounded-md overflow-hidden
+    @apply relative inline-flex items-center whitespace-nowrap py-3 px-4 rounded-md overflow-hidden min-w-fit
     text-sm font-medium leading-4 duration-100 transition-all
     f:outline-none f:ring-2 f:ring-accent-contrast/80 f:ring-offset-2
   }

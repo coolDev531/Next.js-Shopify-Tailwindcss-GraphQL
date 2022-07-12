@@ -108,7 +108,7 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
                 }
               })}
             </main>
-            <footer className="flex items-center justify-between bg-accent px-6 py-8">
+            <footer className="flex items-center justify-between gap-1 bg-accent px-6 py-8">
               <Richtext className="text-accent-contrast [&_a]:underline">
                 {settings.submit_paragraph}
               </Richtext>

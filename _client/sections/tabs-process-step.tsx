@@ -179,8 +179,8 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
 export const TabsCarouselItem = ({ id, title, description, tabTitle, tabParagraph }) => {
   return (
     <div className="group snap-start f:ring-2 f:ring-sky-400 f:ring-offset-2">
-      <figure className="relative mb-4 aspect-1 w-[360px] overflow-hidden rounded shadow-lg transition-all">
-        <div className="h-full bg-gray-900 p-3 shadow-xl drop-shadow-2xl dark:bg-dark-card">
+      <figure className="relative mb-4 aspect-1 w-[300px] overflow-hidden rounded shadow-lg transition-all sm:w-[360px]">
+        <div className="h-full bg-gray-900 p-4 shadow-xl drop-shadow-2xl dark:bg-dark-card">
           <header className="mb-3 grid grid-cols-[50px_1fr_50px] items-center">
             <i className="flex gap-1.5">
               <button
@@ -202,9 +202,9 @@ export const TabsCarouselItem = ({ id, title, description, tabTitle, tabParagrap
             <h4 className="color select-none text-center text-[13px] leading-none tracking-wide text-gray-500"></h4>
             <div className="flex justify-end"></div>
           </header>
-          <div className="relative h-[calc(100%-28px)] before:absolute b:pointer-events-none b:bottom-0 b:z-10 b:h-12 b:w-full b:select-none b:bg-gradient-to-b b:from-transparent b:to-gray-900 d:b:to-dark-card">
+          <div className="relative h-[calc(100%-20px)] before:absolute b:pointer-events-none b:bottom-0 b:z-10 b:h-12 b:w-full b:select-none b:bg-gradient-to-b b:from-transparent b:to-gray-900 d:b:to-dark-card">
             <div className="scrollbar-none absolute inset-0 w-auto w-full overflow-y-scroll">
-              <section>
+              <section className="mb-10">
                 <header>
                   <h3 className="heading-base text-gray-100">{title}</h3>
                 </header>
