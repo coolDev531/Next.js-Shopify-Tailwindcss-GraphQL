@@ -33,7 +33,7 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
   }, [settings.animate, width]);
 
   return (
-    <Wrapper maxWidth="xl" paddingY="base" className="overflow-hidden">
+    <Wrapper maxWidth="xl" paddingY="base" overflowHidden>
       <div className="-mt-12 mb-16">
         <section>
           <header className="mb-4">

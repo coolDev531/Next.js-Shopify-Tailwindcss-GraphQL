@@ -8,7 +8,7 @@ import { ImageTextSection } from "types/sections";
 
 export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ settings }) => {
   return (
-    <Wrapper paddingY="none" maxWidth="xl" className="overflow-hidden">
+    <Wrapper paddingY="none" maxWidth="xl" overflowHidden>
       <div className="flex grid-cols-2 flex-col-reverse gap-8 md:grid">
         {/*= =============== Text Content ================ */}
         <section

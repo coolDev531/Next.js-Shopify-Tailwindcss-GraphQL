@@ -17,7 +17,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
   );
 
   return (
-    <Wrapper maxWidth="xl" paddingY="base" className="overflow-hidden">
+    <Wrapper maxWidth="xl" paddingY="base" overflowHidden>
       {blocks.map((block) => {
         return block.type === "heading"
           ? <div className="mb-12" key={`heading-${block.id}`}>

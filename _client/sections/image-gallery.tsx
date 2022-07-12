@@ -11,7 +11,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
   const inView = useInView(galleryRef, { amount: "some", once: true });
 
   return (
-    <Wrapper maxWidth="fullscreen" paddingY="base" className="overflow-hidden">
+    <Wrapper maxWidth="fullscreen" paddingY="base" overflowHidden>
       <div className="relative -mx-8 flex justify-center overflow-hidden" ref={galleryRef}>
         <figure className="absolute left-1/2 top-16 bottom-16 -z-20 -ml-[50vw] w-screen overflow-hidden bg-top bg-no-repeat">
           <Image

@@ -9,7 +9,7 @@ import { HeroSection } from "types/sections";
 
 export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
   return (
-    <Wrapper maxWidth="xl" paddingY="base" className="overflow-hidden">
+    <Wrapper maxWidth="xl" paddingY="base" overflowHidden>
       <div className="mx-auto -mt-4 max-w-lg">
         <figure className="relative mx-4 mb-8 aspect-1 lg:hidden">
           {settings.image

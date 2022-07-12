@@ -73,6 +73,9 @@
     fa:border-gray-900 dark:fa:border-gray-400
     h:border-gray-400 dark:h:border-gray-600
     f:h:border-gray-900 dark:f:h:border-gray-400
+  }
 
+  .card {
+    @apply rounded-md border border-gray-200 bg-bg p-3.5 transition-[border-color] hfa:border-gray-400/60 dark:border-gray-700/80 dark:bg-dark-card dark:hfa:border-gray-500/80
   }
 }

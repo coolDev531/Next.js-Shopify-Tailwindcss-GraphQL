@@ -12,7 +12,7 @@ export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, 
   const { position, cta1, cta1_link, cta2, cta2_link, paragraph, pre_title, title } = settings;
 
   return (
-    <Wrapper paddingY="base" maxWidth="xl" className="overflow-hidden">
+    <Wrapper paddingY="base" maxWidth="xl" overflowHidden>
       <BlockHeading
         key={`heading-${id}`}
         settings={{ position, cta1, cta1_link, cta2, cta2_link, paragraph, pre_title, title }}

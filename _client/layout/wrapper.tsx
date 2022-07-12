@@ -3,7 +3,7 @@ import { Property } from "csstype";
 import { FC, PropsWithChildren } from "react";
 
 type SectionProps = {
-  maxWidth: "sm" | "base" | "xl" | "2xl" | "fullscreen";
+  maxWidth: "sm" | "base" | "xl" | "fullscreen";
   paddingY: "none" | "base" | "xl";
   background?: Property.Background<string | number>;
   bgBlur?: boolean;
@@ -11,6 +11,7 @@ type SectionProps = {
   bgHeight?: Property.Height;
   bgOpacity?: Property.Opacity;
   className?: React.ComponentProps<"div">["className"];
+  overflowHidden?: boolean;
 };
 
 export const Wrapper: FC<PropsWithChildren<SectionProps>> = ({
@@ -23,6 +24,7 @@ export const Wrapper: FC<PropsWithChildren<SectionProps>> = ({
   children,
   className,
   bgClassName,
+  overflowHidden,
 }) => {
   const getContainerClasses = (container: SectionProps["maxWidth"]) => {
     switch (container) {
@@ -73,16 +75,29 @@ export const Wrapper: FC<PropsWithChildren<SectionProps>> = ({
             style={{ background, height: bgHeight, opacity: bgOpacity }}
           />
         : null}
-      <div
-        className={clsx(
-          "relative mx-auto",
-          getContainerClasses(maxWidth),
-          getPaddingClasses(paddingY),
-          className
-        )}
-      >
-        {children}
-      </div>
+      {overflowHidden
+        ? <div className="relative overflow-hidden">
+            <div
+              className={clsx(
+                "relative mx-auto",
+                getContainerClasses(maxWidth),
+                getPaddingClasses(paddingY),
+                className
+              )}
+            >
+              {children}
+            </div>
+          </div>
+        : <div
+            className={clsx(
+              "relative mx-auto",
+              getContainerClasses(maxWidth),
+              getPaddingClasses(paddingY),
+              className
+            )}
+          >
+            {children}
+          </div>}
     </>
   );
 };

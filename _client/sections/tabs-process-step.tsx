@@ -17,6 +17,7 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
   const [selected, setSelected] = useState(0);
   const scrollBlocksRef = useRef<HTMLElement[]>([]);
   const scrollContainerRef = useRef(null);
+  const mobileScrollContainerRef = useRef(null);
   const [scrollIndex, setScrollIndex] = useState(0);
 
   const handleSelect = useCallback((index: number) => {
@@ -31,15 +32,8 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
     scrollToY(250, totalHeight, scrollContainerRef.current);
   }, []);
 
-  const handleManualScroll = useCallback((index: number) => {
-    scrollContainerRef.current.classList.remove("snap-x");
-    scrollToX(250, 384 * (scrollIndex + index), scrollContainerRef.current, () => {
-      scrollContainerRef.current.classList.add("snap-x");
-    });
-  }, [scrollIndex]);
-
   const handleScrollEvent = useCallback((e) => {
-    const { scrollLeft } = scrollContainerRef.current;
+    const { scrollLeft } = mobileScrollContainerRef.current;
 
     setScrollIndex((current) => {
       if (Math.floor((scrollLeft + 384 / 2) / 384) === current) return current;
@@ -53,7 +47,7 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
       paddingY="base"
       bgOpacity={0.6}
       bgClassName="bg-[url('/images/bg-gradient-light-180.jpg')] dark:bg-[url('/images/bg-gradient-templates.png')] bg-top bg-no-repeat"
-      className="overflow-hidden"
+      overflowHidden
     >
       <div className="hidden grid-cols-[380px_1fr] gap-16 lg:grid xl:grid-cols-[440px_1fr]">
         <section>
@@ -161,7 +155,7 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
           <div
             className="scrollbar-none -my-2 grid snap-x snap-mandatory scroll-pl-[max(1rem,calc((100vw-80rem)/2+1rem))] auto-cols-min grid-flow-col-dense gap-6 overflow-x-scroll scroll-smooth py-2 pr-[max(1rem,min(calc((100vw-80rem)/2+80rem-360px-1rem),calc(100vw-360px-1rem+4px)))] pl-[max(1rem,calc((100vw-80rem)/2+1rem))] md:scroll-pl-[max(2rem,calc((100vw-80rem)/2+2rem))] md:pr-[max(2rem,min(calc((100vw-80rem)/2+80rem-360px-2rem),calc(100vw-360px-2rem+4px)))] md:pl-[max(2rem,calc((100vw-80rem)/2+2rem))]"
             onScroll={handleScrollEvent}
-            ref={scrollContainerRef}
+            ref={mobileScrollContainerRef}
           >
             {blocks.map((block) => {
               return (

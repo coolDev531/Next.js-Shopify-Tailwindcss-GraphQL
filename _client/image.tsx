@@ -19,12 +19,21 @@ export const Image: FC<
   const aspectRatio = +width / +height;
 
   useEffect(() => {
-    if (src && typeof src === "string" && preload) {
-      preloadImage({
-        src,
-        quality: +props.quality || 75,
-        width: maxWidth ? maxWidth : maxHeight ? maxHeight * aspectRatio : +width,
-      });
+    if (src && typeof src === "string") {
+      if (preload) {
+        preloadImage({
+          src,
+          quality: +props.quality || 75,
+          width: maxWidth ? maxWidth : maxHeight ? maxHeight * aspectRatio : +width,
+        });
+      }
+      if (!preload) {
+        preloadImage({
+          src,
+          quality: 1,
+          width: 32,
+        });
+      }
     }
   }, [aspectRatio, maxHeight, maxWidth, preload, preloadImage, props.quality, src, width]);
 
@@ -35,9 +44,9 @@ export const Image: FC<
   return (
     <NextImage
       {...rest}
-      placeholder="blur"
+      placeholder={!preload ? "blur" : undefined}
       blurDataURL={
-        typeof src === "string"
+        typeof src === "string" && !preload
           ? `/_next/image?url=${encodeURIComponent(src.replace(/^\/\//, "https://"))}&w=32&q=1`
           : undefined
       }

@@ -7,7 +7,7 @@ import { cleanSvgIds } from "utils/clean-svg-ids";
 
 export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) => {
   return (
-    <Wrapper maxWidth="xl" paddingY="base" className="overflow-hidden">
+    <Wrapper maxWidth="xl" paddingY="base" overflowHidden>
       <section>
         <header>
           <h3 className="heading-pre">{settings.pre_title}</h3>
@@ -22,10 +22,7 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
             ) as _Metafield_liquid_file_reference_force_generic;
 
             return (
-              <section
-                key={product.id}
-                className="min-w-[220px] select-none rounded-md border border-gray-200 bg-white p-3.5 transition-[border-color] hfa:border-gray-400/60 dark:border-gray-700/80 dark:bg-dark-card dark:hfa:border-gray-500/80"
-              >
+              <section key={product.id} className="card min-w-[220px] select-none">
                 <header className="flex flex-col gap-2">
                   <figure
                     className="relative flex h-10 w-28 bg-contain bg-left bg-no-repeat"
