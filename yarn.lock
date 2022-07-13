@@ -8032,10 +8032,10 @@ shell-quote@^1.6.1:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.3.tgz#aa40edac170445b9a431e17bb62c0b881b9c4123"
   integrity sha512-Vpfqwm4EnqGdlsBFNmHhxhElJYrdfcxPThu+ryKS5J8L/fhAwLazFZtq+S+TWZ9ANj2piSQLGj6NQg+lKPmxrw==
 
-shopify-ftp-access@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/shopify-ftp-access/-/shopify-ftp-access-3.0.3.tgz#ee516cf976a94b305e61ed42ac5b064436d5b2e7"
-  integrity sha512-6Rnd61huqSTmz9Us/2YXFHXENKJ1n88XD11R4oangiWeb0pSIm3yJd1cNy3wDMCfGGP/G3Kw4scYT14SCwaFVQ==
+shopify-ftp-access@^3.0.10:
+  version "3.0.10"
+  resolved "https://registry.yarnpkg.com/shopify-ftp-access/-/shopify-ftp-access-3.0.10.tgz#4a8680a79e3c5613cd18b5472f1bf31bb768cdec"
+  integrity sha512-6OPBdN0GlrFuhzCrLq7W67Z/WThSAJsFqFfjUo7V+2+OShDORKzdM0IFn9sSZNI/AwBCdxsG5eAK1mne29Ocgw==
   dependencies:
     "@types/node" "^18.0.0"
     chalk "4.1.2"

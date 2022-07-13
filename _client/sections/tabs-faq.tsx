@@ -43,13 +43,13 @@ export const FaqItem: FC<{ product: _Product_liquid }> = ({ product }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <button
-      className="card p-6 text-left"
-      onClick={() => {
-        setIsOpen((current) => !current);
-      }}
-    >
-      <header className="relative">
+    <section className="card p-6 text-left">
+      <button
+        className="relative block w-full text-left"
+        onClick={() => {
+          setIsOpen((current) => !current);
+        }}
+      >
         <h4 className="heading-base mb-0 mr-8">{product.title}</h4>
         <i
           className={clsx(
@@ -59,12 +59,12 @@ export const FaqItem: FC<{ product: _Product_liquid }> = ({ product }) => {
         >
           <HeroIcon name="ChevronRightIcon" className="h-7 w-7" />
         </i>
-      </header>
+      </button>
       <main
         className={clsx("overflow-hidden transition-all", isOpen ? "max-h-[600px]" : "max-h-0")}
       >
         <Richtext className="paragraph-base mt-4">{product.content}</Richtext>
       </main>
-    </button>
+    </section>
   );
 };
