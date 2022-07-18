@@ -1,0 +1,37 @@
+{% include "_section-content", type: "stats-graph" %}
+{% include "section_stats-graph" %}
+  
+{% schema %}
+{
+  "name": "Stats graph",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Statistic",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "text",
+          "id": "stat",
+          "label": "Statistic"
+        },
+        {
+          "type": "text",
+          "id": "descriptions",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Stats graph"
+    }
+  ]
+}
+{% endschema %} 

@@ -1,0 +1,491 @@
+{
+  "sections": {
+    "main": {
+      "type": "template-article",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "16540104123512b9a3": {
+      "type": "hero",
+      "settings": {
+        "pre_title": "Portfolio of Work",
+        "title": "Volkswagen",
+        "paragraph": "<p>Volkswagen Mossel Bay parts service offers high quality Genuine Volkswagen Parts. They pride themselves in consistency from years of excellent service. With a combination of hard work, dedication, and innovation, they always make sure to make their customers their number one priority. <\/p><p><\/p><p>We developed their website to highlight their parts service and custom built a search and filter function for their type of products.  <\/p>",
+        "list_title": "What we did:",
+        "list": "<p>Web Development<\/p><p>Custom Features Development <\/p><p>Custom Product setup<\/p>",
+        "image": "shopify:\/\/shop_images\/Volkswagen.png"
+      }
+    },
+    "1654079897751048da": {
+      "type": "stats-graph",
+      "blocks": {
+        "8457496c-859c-46a2-8653-4953e4e81a20": {
+          "type": "stat",
+          "settings": {
+            "stat": "4000+",
+            "descriptions": "Products & Variants"
+          }
+        },
+        "b206c8f8-78d7-4074-bae7-a25fdfa286ce": {
+          "type": "stat",
+          "settings": {
+            "stat": "241+",
+            "descriptions": "Collections"
+          }
+        },
+        "daf38169-f867-497d-b358-3af89c50830e": {
+          "type": "stat",
+          "settings": {
+            "stat": "100+",
+            "descriptions": "Brands"
+          }
+        }
+      },
+      "block_order": [
+        "8457496c-859c-46a2-8653-4953e4e81a20",
+        "b206c8f8-78d7-4074-bae7-a25fdfa286ce",
+        "daf38169-f867-497d-b358-3af89c50830e"
+      ],
+      "settings": {
+      }
+    },
+    "16541733016b2d4288": {
+      "type": "tabs-image-card",
+      "blocks": {
+        "a97114d1-2a70-40f3-9f0c-32751ea9b4ab": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "Custom Features",
+            "title": "We have worked with Volkswagen on some unique features",
+            "paragraph": "<p>Our team of Shopify web developers work closely with our<br\/>clients to create a selection of suitable options, and unique features that<br\/>perfectly represent their vision and needs.<\/p>",
+            "cta1": "Learn more",
+            "cta1_link": "##",
+            "cta2": "",
+            "cta2_link": "#",
+            "position": "left"
+          }
+        },
+        "2353a22b-85ba-4a79-9a1c-23bbf71d60d7": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Filter Function",
+            "tab_icon": "filters",
+            "title": "Custom filter & search function",
+            "paragraph": "<p>This custom filter function helps search for products based on the model, year, and trim of vehicle.<\/p>",
+            "cta1": "",
+            "cta1_link": "#",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/Lunalemon-picturesf_6354c51e-1174-4bb9-9b48-4dc9935bbfa6.jpg",
+            "image_link": ""
+          }
+        },
+        "5580bf76-a72e-4bfe-8d9d-a63518f96cc5": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Product set-up",
+            "tab_icon": "grid",
+            "title": "Product content set-up",
+            "paragraph": "<p>This ensured all products have a uniform content set-up that linked them to the filter function on the website. It also made identifying the product vehicle match easier for users. <\/p>",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/product-informatoin.jpg",
+            "image_link": ""
+          }
+        },
+        "d507e67a-14b7-473e-a024-ccb8262d029c": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_title": "Google rating integration",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "Google rating integration",
+            "paragraph": "<p>This integration helps increase the overall trust of visitors to the store by showcasing their live google ratings<\/p>",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/heart-02-shoreline.jpg",
+            "image_link": ""
+          }
+        },
+        "e3679b31-516e-4d8d-8463-58315b3dbaec": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_title": "Customized logo band",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "Customized logo band",
+            "paragraph": "<p>This custom built helped showcase the large amount of brands that kidsliving offers while highlighted the logos flawlessly into the shops home page <\/p>",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image_link": ""
+          }
+        },
+        "57ab776c-10cd-4f7c-8b42-5b73d6edd21a": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_title": "asdasdasd",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image_link": ""
+          }
+        },
+        "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_title": "123sadasdadsasd",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/ms-icon-310x310.png",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a97114d1-2a70-40f3-9f0c-32751ea9b4ab",
+        "2353a22b-85ba-4a79-9a1c-23bbf71d60d7",
+        "5580bf76-a72e-4bfe-8d9d-a63518f96cc5",
+        "d507e67a-14b7-473e-a024-ccb8262d029c",
+        "e3679b31-516e-4d8d-8463-58315b3dbaec",
+        "57ab776c-10cd-4f7c-8b42-5b73d6edd21a",
+        "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41"
+      ],
+      "settings": {
+      }
+    },
+    "16540846002974a6ff": {
+      "type": "story",
+      "disabled": true,
+      "blocks": {
+        "93e0ffb2-4809-45bb-88aa-7cf835fef608": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "Case in point",
+            "title": "Going from zero to hero",
+            "paragraph": "<p>How we overcome Kids Livings challenge on having ther product information on BigCommerce and on an ancient POS system to a all round solution with VEND and Shopify.<\/p>",
+            "cta1": "asdasdasd",
+            "cta1_link": "#",
+            "cta2": "asd",
+            "cta2_link": "#",
+            "position": "center"
+          }
+        },
+        "364ea5e8-5749-4d69-b8f0-528e5aab9c5b": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Continues communication & feedback",
+            "title": "",
+            "paragraph": "<p>Continuous development with regular meeting intervals discussing opportunities for growth and improvements. We take the time to understanding the clients’ products, customers, and overall needs.<\/p>",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
+            "position": "left"
+          }
+        },
+        "4729554a-b37a-42dd-b189-ab78ef716946": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "asd",
+            "title": "asd",
+            "paragraph": "<p>asd<\/p>",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
+            "position": "right"
+          }
+        }
+      },
+      "block_order": [
+        "93e0ffb2-4809-45bb-88aa-7cf835fef608",
+        "364ea5e8-5749-4d69-b8f0-528e5aab9c5b",
+        "4729554a-b37a-42dd-b189-ab78ef716946"
+      ],
+      "settings": {
+      }
+    },
+    "16540875305d711f9e": {
+      "type": "info-cards",
+      "settings": {
+        "pre_title": "Explore",
+        "title": "The tech we used:",
+        "content_list": [
+          "shopify",
+          "vend-pos"
+        ]
+      }
+    },
+    "1654092902cc4e4a33": {
+      "type": "logo-banner",
+      "settings": {
+        "title": "",
+        "products": [
+          "graphql",
+          "copy-of-css",
+          "eslint",
+          "postman",
+          "sendgrid",
+          "sass",
+          "vercel",
+          "windows-support",
+          "ios",
+          "amazon-web-services",
+          "github",
+          "google-analytics",
+          "google-tag-manager",
+          "grunt",
+          "gulp",
+          "typescript",
+          "shopify"
+        ],
+        "collection": "",
+        "height": 50,
+        "animate": false,
+        "animation_duration": 70
+      }
+    },
+    "16542555547186860a": {
+      "type": "spec-list",
+      "blocks": {
+        "c2a192bb-8b31-4125-b05c-744bda6883aa": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "",
+            "title": "More to expect when working with us...",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "position": "center"
+          }
+        },
+        "44fb2853-5096-4fa2-aca3-c29c975a4eba": {
+          "type": "list",
+          "settings": {
+            "icon1": "DesktopComputerIcon",
+            "text1": "Front-end features",
+            "icon2": "ColorSwatchIcon",
+            "text2": "Graphic Design",
+            "icon3": "MailIcon",
+            "text3": "Newsletter Marketing",
+            "icon4": "CloudIcon",
+            "text4": "",
+            "icon5": "CloudIcon",
+            "text5": "",
+            "icon6": "CloudIcon",
+            "text6": ""
+          }
+        },
+        "55701476-5010-4325-acd9-093e88bcc020": {
+          "type": "list",
+          "settings": {
+            "icon1": "ChatAlt2Icon",
+            "text1": "Social Media Management",
+            "icon2": "LightningBoltIcon",
+            "text2": "Product Research",
+            "icon3": "BadgeCheckIcon",
+            "text3": "Tech-support",
+            "icon4": "CloudIcon",
+            "text4": "",
+            "icon5": "CloudIcon",
+            "text5": "",
+            "icon6": "CloudIcon",
+            "text6": ""
+          }
+        },
+        "547189e6-16c7-44f5-9dea-7ab932e1e925": {
+          "type": "list",
+          "settings": {
+            "icon1": "SparklesIcon",
+            "text1": "Custom App Integrations",
+            "icon2": "UserGroupIcon",
+            "text2": "Ongoing Training",
+            "icon3": "CubeTransparentIcon",
+            "text3": "Data Management",
+            "icon4": "CloudIcon",
+            "text4": "",
+            "icon5": "CloudIcon",
+            "text5": "",
+            "icon6": "CloudIcon",
+            "text6": ""
+          }
+        }
+      },
+      "block_order": [
+        "c2a192bb-8b31-4125-b05c-744bda6883aa",
+        "44fb2853-5096-4fa2-aca3-c29c975a4eba",
+        "55701476-5010-4325-acd9-093e88bcc020",
+        "547189e6-16c7-44f5-9dea-7ab932e1e925"
+      ],
+      "settings": {
+        "color_bg": "linear-gradient(145deg, rgba(2, 77, 164, 1), rgba(1, 155, 199, 1) 100%)",
+        "blur_bg": true,
+        "color_toggle": "light"
+      }
+    },
+    "1654259533f54af287": {
+      "type": "blockquote",
+      "settings": {
+        "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloremque dolores illum laudantium molestias nemo quo! Animi asperiores assumenda commodi culpa eveniet excepturi fugit illo incidunt iusto nam possimus quidem quos recusandae saepe similique, ullam?",
+        "author": "Tom",
+        "job_title": "Kids Living, Managing Director",
+        "quotation_marks": true
+      }
+    },
+    "16542613555478f86d": {
+      "type": "image-gallery",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/collage-1_5421a744-0198-430a-89c9-7110bafb00f2.png",
+        "title1": "",
+        "image2": "shopify:\/\/shop_images\/collage-2_d1e231f6-3a5c-4c38-9bc8-c0635fc5111b.png",
+        "title2": "Graphic design",
+        "image3": "shopify:\/\/shop_images\/collage-3_41f6a64c-3ef6-46bd-9b80-842623cf86af.png",
+        "title3": "Gift Registry",
+        "image4": "shopify:\/\/shop_images\/collage-4_6d7c1f00-8eea-4828-bc8f-021fc0113a78.png",
+        "title4": "",
+        "image5": "shopify:\/\/shop_images\/collage-5_83a90cd9-00e5-43da-80e0-5e749506a79b.png",
+        "title5": "",
+        "image6": "shopify:\/\/shop_images\/collage-6_c63dc33a-f966-4301-8125-748e58f29d0a.png",
+        "title6": ""
+      }
+    },
+    "165426875321fe7fc5": {
+      "type": "feature-list",
+      "blocks": {
+        "7d9184d1-b917-43ab-a84e-dbce8b2d3989": {
+          "type": "feature",
+          "settings": {
+            "icon": "playful",
+            "title": "Website Analysis",
+            "paragraph": "<p>In depth testing for performance for key metrics such as speed, traffic, search engine optimization (SEO), and user experience.<\/p>",
+            "paragraph_old": "<p>Our team performs thorough site analysis to determine your website’s conversion opportunities, threats, weaknesses, and strengths. We run SEO audits, test your site speed and functionality, and analyse your site traffic. These methods allow us to improve your site usability and increase your site engagement and conversions.<\/p>"
+          }
+        },
+        "335efa5a-6e14-4f5f-9f46-3faad15cb6a8": {
+          "type": "feature",
+          "settings": {
+            "icon": "filters",
+            "title": "Conversion Rate Optimization",
+            "paragraph": "<p>From A\/B testing to UX analysis and design, we ensure all aspects of your website are optimized for conversion.<\/p>",
+            "paragraph_old": "<p>Our team focuses on optimizing your sites speed by eliminating unnecessary form fields, placing clear calls-to-action and simplifying your page navigations. We also perform A\/B testing to ensure all aspects of your website are optimized for conversion.<\/p>"
+          }
+        },
+        "976c1d3a-29d8-43f3-8c94-e23b9461c461": {
+          "type": "feature",
+          "settings": {
+            "icon": "transforms",
+            "title": "Preventative Maintenance",
+            "paragraph": "<p>Regular site maintenance is crucial to ensure your site is running at its optimum. We also do scheduled site check-ups with backups.<\/p>",
+            "paragraph_old": "<p>Regular site maintenance is crucial to ensure<br\/>your website is running at full capacity. We conduct scheduled site check-ups<br\/>to determine your website's key aspects that need improvement. Using the<br\/>analytics results, we develop strategies to enhance your site security, boost<br\/>your traffic and optimize your page experience.<\/p>"
+          }
+        },
+        "bf211802-1d16-4343-b21c-1a6d7af721c0": {
+          "type": "feature",
+          "settings": {
+            "icon": "typography",
+            "title": "Project Communication",
+            "paragraph": "<p>We take the time to regularly communicate to our clients keeping them updating on our processes and encourage feedback. <\/p>",
+            "paragraph_old": "<p>We focus on developing customized processes to fit your needs. We understand that each client is different and work in different ways. We take the time to regularly communicate to our clients keeping them updating on our processes and encourage feedback. For the convenience of our clients, our meetings\/communications are done via email, whatsapp or video conferencing.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7d9184d1-b917-43ab-a84e-dbce8b2d3989",
+        "335efa5a-6e14-4f5f-9f46-3faad15cb6a8",
+        "976c1d3a-29d8-43f3-8c94-e23b9461c461",
+        "bf211802-1d16-4343-b21c-1a6d7af721c0"
+      ],
+      "settings": {
+        "pre_title": "Continuous work for continuous results",
+        "title": "Support after Launch",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
+      }
+    },
+    "16543302228e17b41c": {
+      "type": "feature-carousel",
+      "settings": {
+        "pre_title": "Customize",
+        "title": "We offer a large range of unique customizations and add ons",
+        "paragraph": "",
+        "cta1": "See all",
+        "cta1_link": "shopify:\/\/pages\/shopify-sites",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "left",
+        "features": [
+          "shopify-customizations",
+          "shopify-full-sites",
+          "shopify-integration",
+          "shopify-seo-packages",
+          "shopify-website-maintenance"
+        ]
+      }
+    },
+    "1654332872499b00d2": {
+      "type": "image-carousel",
+      "settings": {
+        "pre_title": "Explore",
+        "title": "Checkout more of our work",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "products": [
+
+        ],
+        "collection": "portfolio",
+        "blog": "",
+        "animate": true,
+        "animation_duration": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16540104123512b9a3",
+    "1654079897751048da",
+    "16541733016b2d4288",
+    "16540846002974a6ff",
+    "16540875305d711f9e",
+    "1654092902cc4e4a33",
+    "16542555547186860a",
+    "1654259533f54af287",
+    "16542613555478f86d",
+    "165426875321fe7fc5",
+    "16543302228e17b41c",
+    "1654332872499b00d2"
+  ]
+}

@@ -1,6 +1,7 @@
+import { renderIcon } from "_client/icons";
 import { Wrapper } from "_client/layout/wrapper";
 import { BlockHeading } from "_client/sections/block-heading";
-import { renderIcon } from "_sections/utils";
+
 import clsx from "clsx";
 import { FC, Fragment } from "react";
 import { SpecListSection } from "types/sections";

@@ -4,6 +4,7 @@ const fs = require("fs");
 const axios = require("axios");
 require("dotenv").config();
 
+/*
 function findFiles(dir) {
   const files = fs.readdirSync(path.join(process.cwd(), dir), {
     encoding: "utf-8",
@@ -25,8 +26,9 @@ function findFiles(dir) {
     {}
   );
 }
+*/
 
-const processFolder = (folder) => {
+/*const processFolder = (folder) => {
   const fileContent = findFiles(folder);
 
   Object.entries(fileContent).forEach(([key, val]) => {
@@ -42,8 +44,9 @@ const processFolder = (folder) => {
       fs.writeFileSync(path.join(process.cwd(), `${key}/index.ts`), content);
     }
   });
-};
+};*/
 
+/*
 const watchExports = () => {
   const fileContent = findFiles("_sections");
   Object.entries(fileContent).forEach(([key, val]) => {
@@ -85,3 +88,4 @@ watch(path.join(process.cwd(), "_sections"), { recursive: true }, async (evt, na
 
   console.log(`Models updated: ${result.data} - ${Date.now() - startTime}ms`);
 });
+*/

@@ -1,5 +1,5 @@
 const fs = require("fs");
-
+/*
 const currentAssets = fs.readdirSync("development/assets");
 
 currentAssets.forEach((file) => {
@@ -19,10 +19,10 @@ const walk = function (dir) {
     file = `${dir}/${file}`;
     const stat = fs.statSync(file);
     if (stat && stat.isDirectory()) {
-      /* Recurse into a subdirectory */
+      /!* Recurse into a subdirectory *!/
       results = results.concat(walk(file));
     } else {
-      /* Is a file */
+      /!* Is a file *!/
       results.push(file);
     }
   });
@@ -37,4 +37,4 @@ exportedFiles.forEach((file) => {
     file,
     `development/assets/${file.replace(/^.export\//, "").replace(/\//gi, "-")}`
   );
-});
+});*/

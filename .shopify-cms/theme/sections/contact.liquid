@@ -1,0 +1,739 @@
+{% include "_section-content", type: "contact" %}
+{% include "section_contact" %}
+  
+{% schema %}
+{
+  "name": "Contact",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Intro"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "sub_title",
+      "label": "Sub Title"
+    },
+    {
+      "type": "header",
+      "content": "Info BLock"
+    },
+    {
+      "type": "text",
+      "id": "info_title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "info_paragraph",
+      "label": "Paragraph"
+    },
+    {
+      "type": "header",
+      "content": "Contact details"
+    },
+    {
+      "type": "text",
+      "id": "contact_title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "address",
+      "label": "Address"
+    },
+    {
+      "type": "richtext",
+      "id": "phone",
+      "label": "Phone"
+    },
+    {
+      "type": "richtext",
+      "id": "email",
+      "label": "Email"
+    },
+    {
+      "type": "richtext",
+      "id": "hours",
+      "label": "Hours"
+    },
+    {
+      "type": "header",
+      "content": "Form Footer"
+    },
+    {
+      "type": "richtext",
+      "id": "submit_paragraph",
+      "label": "Submit Text"
+    },
+    {
+      "type": "richtext",
+      "id": "success_paragraph",
+      "label": "Success Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "basic",
+      "name": "Basic Input",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required"
+        },
+        {
+          "type": "text",
+          "id": "placeholder",
+          "label": "Placeholder"
+        },
+        {
+          "type": "textarea",
+          "id": "error_message",
+          "label": "Validation Error"
+        },
+        {
+          "type": "select",
+          "id": "autocomplete",
+          "label": "Autocomplete",
+          "options": [
+            {
+              "value": "off",
+              "label": "off"
+            },
+            {
+              "value": "name",
+              "label": "name"
+            },
+            {
+              "value": "honorific-prefix",
+              "label": "honorific-prefix"
+            },
+            {
+              "value": "given-name",
+              "label": "given-name"
+            },
+            {
+              "value": "additional-name",
+              "label": "additional-name"
+            },
+            {
+              "value": "family-name",
+              "label": "family-name"
+            },
+            {
+              "value": "honorific-suffix",
+              "label": "honorific-suffix"
+            },
+            {
+              "value": "nickname",
+              "label": "nickname"
+            },
+            {
+              "value": "email",
+              "label": "email"
+            },
+            {
+              "value": "username",
+              "label": "username"
+            },
+            {
+              "value": "new-password",
+              "label": "new-password"
+            },
+            {
+              "value": "current-password",
+              "label": "current-password"
+            },
+            {
+              "value": "one-time-code",
+              "label": "one-time-code"
+            },
+            {
+              "value": "organization-title",
+              "label": "organization-title"
+            },
+            {
+              "value": "organization",
+              "label": "organization"
+            },
+            {
+              "value": "street-address",
+              "label": "street-address"
+            },
+            {
+              "value": "address-line1, address-line2, address-line3",
+              "label": "address-line1, address-line2, address-line3"
+            },
+            {
+              "value": "address-level4",
+              "label": "address-level4"
+            },
+            {
+              "value": "address-level3",
+              "label": "address-level3"
+            },
+            {
+              "value": "address-level2",
+              "label": "address-level2"
+            },
+            {
+              "value": "address-level1",
+              "label": "address-level1"
+            },
+            {
+              "value": "country",
+              "label": "country"
+            },
+            {
+              "value": "country-name",
+              "label": "country-name"
+            },
+            {
+              "value": "postal-code",
+              "label": "postal-code"
+            },
+            {
+              "value": "cc-name",
+              "label": "cc-name"
+            },
+            {
+              "value": "cc-given-name",
+              "label": "cc-given-name"
+            },
+            {
+              "value": "cc-additional-name",
+              "label": "cc-additional-name"
+            },
+            {
+              "value": "cc-family-name",
+              "label": "cc-family-name"
+            },
+            {
+              "value": "cc-number",
+              "label": "cc-number"
+            },
+            {
+              "value": "cc-exp",
+              "label": "cc-exp"
+            },
+            {
+              "value": "cc-exp-month",
+              "label": "cc-exp-month"
+            },
+            {
+              "value": "cc-exp-year",
+              "label": "cc-exp-year"
+            },
+            {
+              "value": "cc-csc",
+              "label": "cc-csc"
+            },
+            {
+              "value": "cc-type",
+              "label": "cc-type"
+            },
+            {
+              "value": "transaction-currency",
+              "label": "transaction-currency"
+            },
+            {
+              "value": "transaction-amount",
+              "label": "transaction-amount"
+            },
+            {
+              "value": "language",
+              "label": "language"
+            },
+            {
+              "value": "bday",
+              "label": "bday"
+            },
+            {
+              "value": "bday-day",
+              "label": "bday-day"
+            },
+            {
+              "value": "bday-month",
+              "label": "bday-month"
+            },
+            {
+              "value": "bday-year",
+              "label": "bday-year"
+            },
+            {
+              "value": "sex",
+              "label": "sex"
+            },
+            {
+              "value": "tel",
+              "label": "tel"
+            },
+            {
+              "value": "tel-country-code",
+              "label": "tel-country-code"
+            },
+            {
+              "value": "tel-national",
+              "label": "tel-national"
+            },
+            {
+              "value": "tel-area-code",
+              "label": "tel-area-code"
+            },
+            {
+              "value": "tel-local",
+              "label": "tel-local"
+            },
+            {
+              "value": "tel-extension",
+              "label": "tel-extension"
+            },
+            {
+              "value": "impp",
+              "label": "impp"
+            },
+            {
+              "value": "url",
+              "label": "url"
+            },
+            {
+              "value": "photo",
+              "label": "photo"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "type",
+          "label": "Type",
+          "options": [
+            {
+              "value": "text",
+              "label": "Text"
+            },
+            {
+              "value": "textarea",
+              "label": "Textarea"
+            },
+            {
+              "value": "email",
+              "label": "email"
+            },
+            {
+              "value": "password",
+              "label": "password"
+            },
+            {
+              "value": "number",
+              "label": "number"
+            },
+            {
+              "value": "tel",
+              "label": "Telephone"
+            },
+            {
+              "value": "url",
+              "label": "Url"
+            },
+            {
+              "value": "date",
+              "label": "Date"
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "id": "size",
+          "label": "Size",
+          "options": [
+            {
+              "value": "half",
+              "label": "Half"
+            },
+            {
+              "value": "full",
+              "label": "Full"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "textarea",
+      "name": "Textarea",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required"
+        },
+        {
+          "type": "text",
+          "id": "placeholder",
+          "label": "Placeholder"
+        },
+        {
+          "type": "textarea",
+          "id": "error_message",
+          "label": "Validation Error"
+        },
+        {
+          "type": "select",
+          "id": "autocomplete",
+          "label": "Autocomplete",
+          "options": [
+            {
+              "value": "off",
+              "label": "off"
+            },
+            {
+              "value": "name",
+              "label": "name"
+            },
+            {
+              "value": "honorific-prefix",
+              "label": "honorific-prefix"
+            },
+            {
+              "value": "given-name",
+              "label": "given-name"
+            },
+            {
+              "value": "additional-name",
+              "label": "additional-name"
+            },
+            {
+              "value": "family-name",
+              "label": "family-name"
+            },
+            {
+              "value": "honorific-suffix",
+              "label": "honorific-suffix"
+            },
+            {
+              "value": "nickname",
+              "label": "nickname"
+            },
+            {
+              "value": "email",
+              "label": "email"
+            },
+            {
+              "value": "username",
+              "label": "username"
+            },
+            {
+              "value": "new-password",
+              "label": "new-password"
+            },
+            {
+              "value": "current-password",
+              "label": "current-password"
+            },
+            {
+              "value": "one-time-code",
+              "label": "one-time-code"
+            },
+            {
+              "value": "organization-title",
+              "label": "organization-title"
+            },
+            {
+              "value": "organization",
+              "label": "organization"
+            },
+            {
+              "value": "street-address",
+              "label": "street-address"
+            },
+            {
+              "value": "address-line1, address-line2, address-line3",
+              "label": "address-line1, address-line2, address-line3"
+            },
+            {
+              "value": "address-level4",
+              "label": "address-level4"
+            },
+            {
+              "value": "address-level3",
+              "label": "address-level3"
+            },
+            {
+              "value": "address-level2",
+              "label": "address-level2"
+            },
+            {
+              "value": "address-level1",
+              "label": "address-level1"
+            },
+            {
+              "value": "country",
+              "label": "country"
+            },
+            {
+              "value": "country-name",
+              "label": "country-name"
+            },
+            {
+              "value": "postal-code",
+              "label": "postal-code"
+            },
+            {
+              "value": "cc-name",
+              "label": "cc-name"
+            },
+            {
+              "value": "cc-given-name",
+              "label": "cc-given-name"
+            },
+            {
+              "value": "cc-additional-name",
+              "label": "cc-additional-name"
+            },
+            {
+              "value": "cc-family-name",
+              "label": "cc-family-name"
+            },
+            {
+              "value": "cc-number",
+              "label": "cc-number"
+            },
+            {
+              "value": "cc-exp",
+              "label": "cc-exp"
+            },
+            {
+              "value": "cc-exp-month",
+              "label": "cc-exp-month"
+            },
+            {
+              "value": "cc-exp-year",
+              "label": "cc-exp-year"
+            },
+            {
+              "value": "cc-csc",
+              "label": "cc-csc"
+            },
+            {
+              "value": "cc-type",
+              "label": "cc-type"
+            },
+            {
+              "value": "transaction-currency",
+              "label": "transaction-currency"
+            },
+            {
+              "value": "transaction-amount",
+              "label": "transaction-amount"
+            },
+            {
+              "value": "language",
+              "label": "language"
+            },
+            {
+              "value": "bday",
+              "label": "bday"
+            },
+            {
+              "value": "bday-day",
+              "label": "bday-day"
+            },
+            {
+              "value": "bday-month",
+              "label": "bday-month"
+            },
+            {
+              "value": "bday-year",
+              "label": "bday-year"
+            },
+            {
+              "value": "sex",
+              "label": "sex"
+            },
+            {
+              "value": "tel",
+              "label": "tel"
+            },
+            {
+              "value": "tel-country-code",
+              "label": "tel-country-code"
+            },
+            {
+              "value": "tel-national",
+              "label": "tel-national"
+            },
+            {
+              "value": "tel-area-code",
+              "label": "tel-area-code"
+            },
+            {
+              "value": "tel-local",
+              "label": "tel-local"
+            },
+            {
+              "value": "tel-extension",
+              "label": "tel-extension"
+            },
+            {
+              "value": "impp",
+              "label": "impp"
+            },
+            {
+              "value": "url",
+              "label": "url"
+            },
+            {
+              "value": "photo",
+              "label": "photo"
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "lines",
+          "label": "Lines",
+          "default": 3,
+          "min": 2,
+          "max": 20,
+          "step": 1
+        },
+        {
+          "type": "radio",
+          "id": "size",
+          "label": "Size",
+          "options": [
+            {
+              "value": "half",
+              "label": "Half"
+            },
+            {
+              "value": "full",
+              "label": "Full"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Grouped Input",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required"
+        },
+        {
+          "type": "radio",
+          "id": "type",
+          "label": "Type",
+          "options": [
+            {
+              "value": "radio",
+              "label": "radio"
+            },
+            {
+              "value": "checkbox",
+              "label": "checkbox"
+            }
+          ]
+        },
+        {
+          "type": "textarea",
+          "id": "options",
+          "label": "Options",
+          "info": "|| seperated list"
+        },
+        {
+          "type": "textarea",
+          "id": "error_message",
+          "label": "Validation Error"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "name": "Select Input",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required"
+        },
+        {
+          "type": "textarea",
+          "id": "options",
+          "label": "Options",
+          "info": "|| seperated list"
+        },
+        {
+          "type": "textarea",
+          "id": "error_message",
+          "label": "Validation Error"
+        },
+        {
+          "type": "radio",
+          "id": "size",
+          "label": "Size",
+          "options": [
+            {
+              "value": "half",
+              "label": "Half"
+            },
+            {
+              "value": "full",
+              "label": "Full"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "separator",
+      "name": "Separator",
+      "settings": []
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact",
+      "settings": {
+        "title": "Get in Touch",
+        "sub_title": "Tell us how we can help and we’ll get in touch shortly.",
+        "info_title": "How can we help you?",
+        "info_paragraph": "<p>Feel free to contact us with any questions, projects or partnerships. <br/><br/>Want to have a online meeting instead? Request an appointment with us.<br/><br/>Prefer a cup of coffee and a chat face to face? Schedule an appointment with us in our Cape Town offices.</p>",
+        "contact_title": "Cape Town Office",
+        "address": "<p><a href=\"https://g.page/tellmann-cpt?share\" target=\"_blank\">21 Pepper Street <br/>3rd Floor - C/O Ademas Solutions<br/>Cape Town, 8001 <br/>South Africa</a></p>",
+        "email": "<p><a href=\"mailto:hello@lunalemon.dev\">hello@lunalemon.dev</a></p>",
+        "hours": "<p>Office Hours: 9:00 - 16:30</p>"
+      }
+    }
+  ]
+}
+{% endschema %} 

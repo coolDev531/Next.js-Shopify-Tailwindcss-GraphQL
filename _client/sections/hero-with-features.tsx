@@ -1,9 +1,10 @@
 import { ReactIcon, ReactIconProps } from "_client/dynamic-react-icon";
+import { renderIcon } from "_client/icons";
 import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { Button } from "_client/typography/button";
 import { Richtext } from "_client/typography/richtext";
-import { renderIcon } from "_sections/utils";
+
 import { FC } from "react";
 import { HeroWithFeaturesSection } from "types/sections";
 

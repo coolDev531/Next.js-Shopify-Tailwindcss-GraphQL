@@ -1,4 +1,3 @@
-import { generateSections, generateSectionsTypes, generateSettingTypes } from "_server/scripts/generate-sections";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 type RunScriptsFunction = (req: NextApiRequest, res: NextApiResponse) => Promise<void>;
@@ -8,9 +7,7 @@ export const RunScripts: RunScriptsFunction = async (req, res) => {
     return res.status(401).json("unauthorized");
   }
   try {
-    generateSections();
-    generateSectionsTypes();
-    generateSettingTypes();
+    console.log("asd");
   } catch (err) {
     console.log(err.message);
   }

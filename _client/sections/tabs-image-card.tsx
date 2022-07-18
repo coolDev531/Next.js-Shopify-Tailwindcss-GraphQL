@@ -1,9 +1,10 @@
+import { renderIcon } from "_client/icons";
 import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
 import { Richtext } from "_client/typography/richtext";
-import { renderIcon } from "_sections/utils";
+
 import clsx from "clsx";
 import img2 from "public/images/bg-gradient-dark.png";
 import img1 from "public/images/bg-gradient-light.jpg";

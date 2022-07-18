@@ -1,7 +1,8 @@
+import { renderIcon } from "_client/icons";
 import { Wrapper } from "_client/layout/wrapper";
 import { BlockHeading } from "_client/sections/block-heading";
 import { Richtext } from "_client/typography/richtext";
-import { renderIcon } from "_sections/utils";
+
 import clsx from "clsx";
 import { FC } from "react";
 import { FeatureListSection } from "types/sections";

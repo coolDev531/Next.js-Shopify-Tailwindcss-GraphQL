@@ -1,0 +1,458 @@
+{% include "_section-content", type: "hero-with-features" %}
+{% include "section_hero-with-features" %}
+  
+{% schema %}
+{
+  "name": "Hero with features",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "pre_title",
+      "label": "Pre header"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "product_list",
+      "id": "tech",
+      "label": "Tech Stack",
+      "limit": 3
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Paragraph"
+    },
+    {
+      "type": "header",
+      "content": "Primary Button"
+    },
+    {
+      "type": "text",
+      "id": "cta1",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "cta1_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Secondary Button"
+    },
+    {
+      "type": "text",
+      "id": "cta2",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "cta2_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image 3"
+    }
+  ],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "paragraph",
+          "label": "Paragraph"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "BadgeCheckIcon",
+              "label": "BadgeCheckIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "CameraIcon",
+              "label": "CameraIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "ChatAlt2Icon",
+              "label": "ChatAlt2Icon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "ColorSwatchIcon",
+              "label": "ColorSwatchIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "CloudIcon",
+              "label": "CloudIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "DesktopComputerIcon",
+              "label": "DesktopComputerIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "CubeTransparentIcon",
+              "label": "CubeTransparentIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "DeviceMobileIcon",
+              "label": "DeviceMobileIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "DeviceTabletIcon",
+              "label": "DeviceTabletIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "CursorClickIcon",
+              "label": "CursorClickIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "HeartIcon",
+              "label": "HeartIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "KeyIcon",
+              "label": "KeyIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "LightningBoltIcon",
+              "label": "LightningBoltIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "LinkIcon",
+              "label": "LinkIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "LightBulbIcon",
+              "label": "LightBulbIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "LockClosedIcon",
+              "label": "LockClosedIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "LockOpenIcon",
+              "label": "LockOpenIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "PaperAirplaneIcon",
+              "label": "PaperAirplaneIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "ShoppingBagIcon",
+              "label": "ShoppingBagIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "ShoppingCartIcon",
+              "label": "ShoppingCartIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "SparklesIcon",
+              "label": "SparklesIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "TagIcon",
+              "label": "TagIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "TruckIcon",
+              "label": "TruckIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "UserGroupIcon",
+              "label": "UserGroupIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "AnnotationIcon",
+              "label": "AnnotationIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "MailIcon",
+              "label": "MailIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "MailOpenIcon",
+              "label": "MailOpenIcon",
+              "group": "Hero Icons"
+            },
+            {
+              "value": "brutalist",
+              "label": "Brutalist",
+              "group": "TW Icons"
+            },
+            {
+              "value": "colors",
+              "label": "Colors",
+              "group": "TW Icons"
+            },
+            {
+              "value": "elegant",
+              "label": "Elegant",
+              "group": "TW Icons"
+            },
+            {
+              "value": "filters",
+              "label": "Filters",
+              "group": "TW Icons"
+            },
+            {
+              "value": "grid",
+              "label": "Grid",
+              "group": "TW Icons"
+            },
+            {
+              "value": "playful",
+              "label": "Playful",
+              "group": "TW Icons"
+            },
+            {
+              "value": "shadows",
+              "label": "Shadows",
+              "group": "TW Icons"
+            },
+            {
+              "value": "simple",
+              "label": "Simple",
+              "group": "TW Icons"
+            },
+            {
+              "value": "sizing",
+              "label": "Sizing",
+              "group": "TW Icons"
+            },
+            {
+              "value": "transforms",
+              "label": "Transforms",
+              "group": "TW Icons"
+            },
+            {
+              "value": "typography",
+              "label": "Typography",
+              "group": "TW Icons"
+            },
+            {
+              "value": "ui-avatar",
+              "label": "Ui-avatar.svg",
+              "group": "TW Icons"
+            },
+            {
+              "value": "ui-code",
+              "label": "Ui-code.svg",
+              "group": "TW Icons"
+            },
+            {
+              "value": "ui-cursor",
+              "label": "Ui-cursor.svg",
+              "group": "TW Icons"
+            },
+            {
+              "value": "ui-mobile",
+              "label": "Ui-mobile.svg",
+              "group": "TW Icons"
+            },
+            {
+              "value": "ui-responsive",
+              "label": "Ui-responsive.svg",
+              "group": "TW Icons"
+            },
+            {
+              "value": "ui-stack",
+              "label": "Ui-stack.svg",
+              "group": "TW Icons"
+            },
+            {
+              "value": "ui-1",
+              "label": "Ui-1.svg",
+              "group": "TW Icons"
+            },
+            {
+              "value": "ui-2",
+              "label": "Ui-2.svg",
+              "group": "TW Icons"
+            },
+            {
+              "value": "ui-3",
+              "label": "Ui-3.svg",
+              "group": "TW Icons"
+            },
+            {
+              "value": "ui-4",
+              "label": "Ui-4.svg",
+              "group": "TW Icons"
+            },
+            {
+              "value": "CalendarLight",
+              "label": "CalendarLight",
+              "group": "TW UI Icons"
+            },
+            {
+              "value": "ChatLight",
+              "label": "ChatLight",
+              "group": "TW UI Icons"
+            },
+            {
+              "value": "Code",
+              "label": "Code",
+              "group": "TW UI Icons"
+            },
+            {
+              "value": "DeliveryLight",
+              "label": "DeliveryLight",
+              "group": "TW UI Icons"
+            },
+            {
+              "value": "ExchangeSimple",
+              "label": "ExchangeSimple",
+              "group": "TW UI Icons"
+            },
+            {
+              "value": "FastCheckoutLight",
+              "label": "FastCheckoutLight",
+              "group": "TW UI Icons"
+            },
+            {
+              "value": "GiftCardLight",
+              "label": "GiftCardLight",
+              "group": "TW UI Icons"
+            },
+            {
+              "value": "PlanetLight",
+              "label": "PlanetLight",
+              "group": "TW UI Icons"
+            },
+            {
+              "value": "Resize",
+              "label": "Resize",
+              "group": "TW UI Icons"
+            },
+            {
+              "value": "ReturnsLight",
+              "label": "ReturnsLight",
+              "group": "TW UI Icons"
+            },
+            {
+              "value": "ShippingSimple",
+              "label": "ShippingSimple",
+              "group": "TW UI Icons"
+            },
+            {
+              "value": "Stack",
+              "label": "Stack",
+              "group": "TW UI Icons"
+            },
+            {
+              "value": "WarrantyLight",
+              "label": "WarrantyLight",
+              "group": "TW UI Icons"
+            },
+            {
+              "value": "WarrantySimple",
+              "label": "WarrantySimple",
+              "group": "TW UI Icons"
+            },
+            {
+              "value": "server-2",
+              "label": "Server 2",
+              "group": "Line Icons"
+            },
+            {
+              "value": "server-8",
+              "label": "Server 8",
+              "group": "Line Icons"
+            },
+            {
+              "value": "up-align-1-light",
+              "label": "Up Align 1 Light",
+              "group": "Line Icons"
+            },
+            {
+              "value": "columns-1-light",
+              "label": "columns-1-light",
+              "group": "Line Icons"
+            },
+            {
+              "value": "laptop-star-light",
+              "label": "laptop-star-light",
+              "group": "Line Icons"
+            },
+            {
+              "value": "squares-1-light",
+              "label": "squares-1-light",
+              "group": "Line Icons"
+            },
+            {
+              "value": "cubes-light",
+              "label": "cubes-light",
+              "group": "Line Icons"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero with features"
+    }
+  ]
+}
+{% endschema %} 

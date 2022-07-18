@@ -1,0 +1,38 @@
+{% include "_section-content", type: "faq" %}
+{% include "section_faq" %}
+  
+{% schema %}
+{
+  "name": "Faq",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "FAQ Category",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "product_list",
+          "id": "faq_items",
+          "label": "Questions"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Faq"
+    }
+  ]
+}
+{% endschema %} 

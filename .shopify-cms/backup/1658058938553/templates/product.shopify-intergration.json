@@ -1,0 +1,591 @@
+{
+  "sections": {
+    "main": {
+      "type": "template-product",
+      "settings": {
+      }
+    },
+    "16547615501aa86d63": {
+      "type": "heading",
+      "settings": {
+        "pre_title": "",
+        "title": "We create Shopify Ecommerce solutions.",
+        "paragraph": "<p>Wether you want to built a new ecommerce store, migrate from a different platform, or need to upgrade your current site. We are here to help you succeed.<\/p>",
+        "cta1": "asdasd",
+        "cta1_link": "#",
+        "cta2": "asdasd",
+        "cta2_link": "#",
+        "position": "center"
+      }
+    },
+    "16547615536da214ca": {
+      "type": "feature-list",
+      "blocks": {
+        "f01ae097-eee3-4c30-bdf5-1e5d61506b5e": {
+          "type": "feature",
+          "settings": {
+            "icon": "ColorSwatchIcon",
+            "title": "Benefit 1",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+          }
+        },
+        "6ae8fd1e-b2ee-4e23-be4b-e76c4131f2b7": {
+          "type": "feature",
+          "settings": {
+            "icon": "ColorSwatchIcon",
+            "title": "Benefit 2",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+          }
+        },
+        "2bd223e9-952a-4c7b-b098-afcae3728cc4": {
+          "type": "feature",
+          "settings": {
+            "icon": "ColorSwatchIcon",
+            "title": "Benefit 3",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+          }
+        },
+        "fef8d93c-5bdc-49a7-8de3-3ef0c0ecd90a": {
+          "type": "feature",
+          "settings": {
+            "icon": "ColorSwatchIcon",
+            "title": "Benefit 4",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "f01ae097-eee3-4c30-bdf5-1e5d61506b5e",
+        "6ae8fd1e-b2ee-4e23-be4b-e76c4131f2b7",
+        "2bd223e9-952a-4c7b-b098-afcae3728cc4",
+        "fef8d93c-5bdc-49a7-8de3-3ef0c0ecd90a"
+      ],
+      "settings": {
+      }
+    },
+    "165476159216c4ff5c": {
+      "type": "heading",
+      "settings": {
+        "pre_title": "Expert development",
+        "title": "We speak, eat, sleep Shopify",
+        "paragraph": "<p>We have extensive Shopify experience and have developed ecommerce stores and Apps for and with the ecosystem bla blaLorem ipsum dolor sit amet, consectetue<\/p>",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
+      }
+    },
+    "16547657217b1dfb71": {
+      "type": "feature-list",
+      "blocks": {
+        "5b1130c5-26d5-416e-8c0c-ec5b05b63ab1": {
+          "type": "feature",
+          "settings": {
+            "icon": "ColorSwatchIcon",
+            "title": "From Scratch",
+            "paragraph": "<p>You are looking for a<br\/>new site and haven’t got<br\/>a site already, or the<br\/>need to connect it to a<br\/>3rd par ty POS<\/p>"
+          }
+        },
+        "613b3423-00d0-40c1-a6c6-4295763917b9": {
+          "type": "feature",
+          "settings": {
+            "icon": "ColorSwatchIcon",
+            "title": "Upgrade",
+            "paragraph": "<p>You have an existing<br\/>Shopify store and want<br\/>to upgrade t he theme,<br\/>content structure, and<br\/>make more sales?<\/p>"
+          }
+        },
+        "f593e74c-72fe-4a2d-9dd4-eb0ff99ee28f": {
+          "type": "feature",
+          "settings": {
+            "icon": "ColorSwatchIcon",
+            "title": "Integrate",
+            "paragraph": "<p>You have an extisting<br\/>brick & mor tar store and<br\/>want to integrate your<br\/>back-end system into a<br\/>new Shopify store.<\/p>"
+          }
+        },
+        "03758003-6321-4a0c-8e54-8eab05c4a979": {
+          "type": "feature",
+          "settings": {
+            "icon": "ColorSwatchIcon",
+            "title": "Migration",
+            "paragraph": "<p>You want to change<br\/>your ecommerce platform<br\/>from WooCommerce,<br\/>Magento, Big-<br\/>Commerce or other?<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5b1130c5-26d5-416e-8c0c-ec5b05b63ab1",
+        "613b3423-00d0-40c1-a6c6-4295763917b9",
+        "f593e74c-72fe-4a2d-9dd4-eb0ff99ee28f",
+        "03758003-6321-4a0c-8e54-8eab05c4a979"
+      ],
+      "settings": {
+      }
+    },
+    "1654424131fb27794e": {
+      "type": "tabs-process-step",
+      "blocks": {
+        "16544241313b2fcafc-0": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 1 - Start",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
+            "title": "Incremental adoption",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+          }
+        },
+        "16544241313b2fcafc-1": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 2 - Move on",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
+            "title": "Incremental adoption",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+          }
+        },
+        "16544241313b2fcafc-2": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 3 - another one",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
+            "title": "Incremental adoption",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+          }
+        },
+        "16544241313b2fcafc-3": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 4 - Almost done",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
+            "title": "Incremental adoption",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+          }
+        },
+        "16544241313b2fcafc-4": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 5 - The end",
+            "tab_paragraph": "No need to override styles, no specificity wars.",
+            "title": "Incremental adoption",
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16544241313b2fcafc-0",
+        "16544241313b2fcafc-1",
+        "16544241313b2fcafc-2",
+        "16544241313b2fcafc-3",
+        "16544241313b2fcafc-4"
+      ],
+      "settings": {
+        "pre_title": "Developer experience to love",
+        "title": "Develop with an open, thought‑out API",
+        "paragraph": "<p>One of our main goals is to provide the best possible developer experience. Radix Primitives provides a fully-typed API. All components share a similar API, creating a consistent and predictable experience.<\/p>",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": ""
+      }
+    },
+    "1654762013d2c9eed0": {
+      "type": "story",
+      "blocks": {
+        "2a8dbc1e-9c29-40a3-8c79-6adc1d8fa95f": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "Get Started",
+            "title": "Ready to start your Shopify project?",
+            "paragraph": "<p>Get started now blurb, skip to quoting form challenge on<br\/>having ther product information on BigCommerce and on<br\/>max 4 lines for aestetics<\/p>",
+            "cta1": "123123",
+            "cta1_link": "",
+            "cta2": "123123123",
+            "cta2_link": "",
+            "position": "center"
+          }
+        },
+        "a0b070e8-45e6-47be-9d07-7f2371f7e8ea": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "",
+            "title": "asfafs",
+            "paragraph": "<p>afs<\/p>",
+            "image": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
+            "position": "left"
+          }
+        },
+        "1edc02ca-a844-4f5c-93fb-791e53248869": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "",
+            "title": "asfafs",
+            "paragraph": "<p>asfafs<\/p>",
+            "image": "shopify:\/\/shop_images\/Capturem.jpg",
+            "position": "right"
+          }
+        }
+      },
+      "block_order": [
+        "2a8dbc1e-9c29-40a3-8c79-6adc1d8fa95f",
+        "a0b070e8-45e6-47be-9d07-7f2371f7e8ea",
+        "1edc02ca-a844-4f5c-93fb-791e53248869"
+      ],
+      "settings": {
+      }
+    },
+    "1654761954c36d4db0": {
+      "type": "spec-list",
+      "blocks": {
+        "d81381f6-8f7c-4a6c-a10b-efbec7aa4a1d": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "",
+            "title": "",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "position": "center"
+          }
+        },
+        "2715d23f-8c0d-467c-a8e4-530f93488fd8": {
+          "type": "list",
+          "settings": {
+            "icon1": "ColorSwatchIcon",
+            "text1": "asdasd123",
+            "icon2": "ColorSwatchIcon",
+            "text2": "1231231",
+            "icon3": "ColorSwatchIcon",
+            "text3": "123123",
+            "icon4": "ColorSwatchIcon",
+            "text4": "23123",
+            "icon5": "ColorSwatchIcon",
+            "text5": "123123123",
+            "icon6": "ColorSwatchIcon",
+            "text6": ""
+          }
+        },
+        "160156e5-4ca4-41e5-a532-7ddb91831314": {
+          "type": "list",
+          "settings": {
+            "icon1": "ColorSwatchIcon",
+            "text1": "",
+            "icon2": "ColorSwatchIcon",
+            "text2": "",
+            "icon3": "ColorSwatchIcon",
+            "text3": "123123",
+            "icon4": "ColorSwatchIcon",
+            "text4": "12312",
+            "icon5": "ColorSwatchIcon",
+            "text5": "223123",
+            "icon6": "ColorSwatchIcon",
+            "text6": "123123321"
+          }
+        },
+        "a6f38bae-51d8-4fc2-a8c5-3067eb477ac2": {
+          "type": "list",
+          "settings": {
+            "icon1": "ColorSwatchIcon",
+            "text1": "123123",
+            "icon2": "ColorSwatchIcon",
+            "text2": "123123",
+            "icon3": "ColorSwatchIcon",
+            "text3": "12313213",
+            "icon4": "ColorSwatchIcon",
+            "text4": "1231231",
+            "icon5": "ColorSwatchIcon",
+            "text5": "123123123123",
+            "icon6": "ColorSwatchIcon",
+            "text6": "1123123132"
+          }
+        }
+      },
+      "block_order": [
+        "d81381f6-8f7c-4a6c-a10b-efbec7aa4a1d",
+        "2715d23f-8c0d-467c-a8e4-530f93488fd8",
+        "160156e5-4ca4-41e5-a532-7ddb91831314",
+        "a6f38bae-51d8-4fc2-a8c5-3067eb477ac2"
+      ],
+      "settings": {
+      }
+    },
+    "1654762016e3f34059": {
+      "type": "image-carousel",
+      "blocks": {
+        "a13e9dbc-0037-417b-b71b-028c4dbca922": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "Explore",
+            "title": "Sites we’ve built for our clients",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "position": "center"
+          }
+        },
+        "ae364fec-09a3-4835-8e51-4f2985e16021": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
+            "link": ""
+          }
+        },
+        "ab0bed14-ba1a-45c3-8577-773c343f0605": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shawl-6_1024x1024_2x_7e3ec59a-ce06-4c22-8791-d3beb1c5f0ea.jpg",
+            "link": ""
+          }
+        },
+        "55014a00-f9c8-4b34-9486-706c0e1905a4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Capture.jpg",
+            "link": ""
+          }
+        },
+        "3ed18e50-940f-4887-ae50-50fd2a4e4095": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021-September-Draft-Posts-_-Ads---WQ.jpg",
+            "link": ""
+          }
+        },
+        "c7fa4016-efc7-4e92-9dff-6a3cc73efa30": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021-September-Draft-Posts-_-Ads---WQ.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a13e9dbc-0037-417b-b71b-028c4dbca922",
+        "ae364fec-09a3-4835-8e51-4f2985e16021",
+        "ab0bed14-ba1a-45c3-8577-773c343f0605",
+        "55014a00-f9c8-4b34-9486-706c0e1905a4",
+        "3ed18e50-940f-4887-ae50-50fd2a4e4095",
+        "c7fa4016-efc7-4e92-9dff-6a3cc73efa30"
+      ],
+      "settings": {
+      }
+    },
+    "165476583906badf90": {
+      "type": "logo-banner",
+      "blocks": {
+        "351b615c-bd01-44ce-99fc-9e04af076f67": {
+          "type": "image",
+          "settings": {
+            "url": ""
+          }
+        },
+        "491e8a39-3583-43d4-9f0e-bc644176812a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/yarn-1_530x530_crop_top_2x_b0c839fc-8bfe-47d7-b418-1c69e5cf030b.jpg",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "351b615c-bd01-44ce-99fc-9e04af076f67",
+        "491e8a39-3583-43d4-9f0e-bc644176812a"
+      ],
+      "settings": {
+        "title": "Brands we've worked with",
+        "height": 40
+      }
+    },
+    "165476205467493fae": {
+      "type": "feature-carousel",
+      "blocks": {
+        "8ac6a320-e38a-4d40-98e7-7d52f972c073": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "Customize",
+            "title": "We offer a large range ofunique customizations and add ons",
+            "paragraph": "",
+            "cta1": "asfasf",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "position": "left"
+          }
+        },
+        "708e3dce-e55f-480b-be3b-7918cb42e3ac": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ford.jpg",
+            "title": "asfasf",
+            "paragraph": "asffasfas",
+            "link": ""
+          }
+        },
+        "03ff3d79-c4fd-4996-8717-e6468e6ca841": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/person-cuts-into-plate-of-pasta.jpg",
+            "title": "asfafs",
+            "paragraph": "afafafa",
+            "link": ""
+          }
+        },
+        "4d148a52-e035-41e3-9b64-316efeca43d6": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
+            "title": "aaffa",
+            "paragraph": "saffasfasafs",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "8ac6a320-e38a-4d40-98e7-7d52f972c073",
+        "708e3dce-e55f-480b-be3b-7918cb42e3ac",
+        "03ff3d79-c4fd-4996-8717-e6468e6ca841",
+        "4d148a52-e035-41e3-9b64-316efeca43d6"
+      ],
+      "settings": {
+      }
+    },
+    "1654765182e225ecd7": {
+      "type": "info-cards",
+      "blocks": {
+        "a33aac81-b0ab-416d-8648-5d2aefa586c3": {
+          "type": "info-card",
+          "settings": {
+            "title": "WooCommerce",
+            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
+            "svg": ""
+          }
+        },
+        "1798219d-9f25-4d34-b26b-caafad9c98e9": {
+          "type": "info-card",
+          "settings": {
+            "title": "Magento",
+            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
+            "svg": ""
+          }
+        },
+        "91e4b380-57f0-44b8-adb4-78bc6c0d52a9": {
+          "type": "info-card",
+          "settings": {
+            "title": "PrestaShop",
+            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
+            "svg": ""
+          }
+        },
+        "16dd06a5-a6b3-4d77-b01a-6bec5a3d389f": {
+          "type": "info-card",
+          "settings": {
+            "title": "Other?",
+            "paragraph": "<p>We do also, this, this this and that!<\/p>",
+            "svg": ""
+          }
+        }
+      },
+      "block_order": [
+        "a33aac81-b0ab-416d-8648-5d2aefa586c3",
+        "1798219d-9f25-4d34-b26b-caafad9c98e9",
+        "91e4b380-57f0-44b8-adb4-78bc6c0d52a9",
+        "16dd06a5-a6b3-4d77-b01a-6bec5a3d389f"
+      ],
+      "settings": {
+        "pre_title": "Migrations",
+        "title": "No matter what platform you come from,"
+      }
+    },
+    "1654765182e225ecd72": {
+      "type": "info-cards",
+      "blocks": {
+        "a33aac81-b0ab-416d-8648-5d2aefa586c32": {
+          "type": "info-card",
+          "settings": {
+            "title": "Vend POS",
+            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
+            "svg": ""
+          }
+        },
+        "1798219d-9f25-4d34-b26b-caafad9c98e92": {
+          "type": "info-card",
+          "settings": {
+            "title": "Dearsystems",
+            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
+            "svg": ""
+          }
+        },
+        "91e4b380-57f0-44b8-adb4-78bc6c0d52a92": {
+          "type": "info-card",
+          "settings": {
+            "title": "Erply",
+            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
+            "svg": ""
+          }
+        },
+        "16dd06a5-a6b3-4d77-b01a-6bec5a3d389f2": {
+          "type": "info-card",
+          "settings": {
+            "title": "Other?",
+            "paragraph": "<p>We do also, this, this this and that!<\/p>",
+            "svg": ""
+          }
+        }
+      },
+      "block_order": [
+        "a33aac81-b0ab-416d-8648-5d2aefa586c32",
+        "1798219d-9f25-4d34-b26b-caafad9c98e92",
+        "91e4b380-57f0-44b8-adb4-78bc6c0d52a92",
+        "16dd06a5-a6b3-4d77-b01a-6bec5a3d389f2"
+      ],
+      "settings": {
+        "pre_title": "Integrations",
+        "title": "or what back-end you want to use."
+      }
+    },
+    "165476560159b5ef3e": {
+      "type": "tabs-faq",
+      "blocks": {
+        "d68c2fff-950f-47fe-9c59-75d2d40d5ad8": {
+          "type": "category",
+          "settings": {
+            "title": "General",
+            "faq_items": "faq-general"
+          }
+        },
+        "cd33e95e-48af-4908-991a-572c49c76755": {
+          "type": "category",
+          "settings": {
+            "title": "Shopify",
+            "faq_items": "faq-shopify"
+          }
+        }
+      },
+      "block_order": [
+        "d68c2fff-950f-47fe-9c59-75d2d40d5ad8",
+        "cd33e95e-48af-4908-991a-572c49c76755"
+      ],
+      "settings": {
+        "title": "Frequentlyasked questions"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16547615501aa86d63",
+    "16547615536da214ca",
+    "165476159216c4ff5c",
+    "16547657217b1dfb71",
+    "1654424131fb27794e",
+    "1654762013d2c9eed0",
+    "1654761954c36d4db0",
+    "1654762016e3f34059",
+    "165476583906badf90",
+    "165476205467493fae",
+    "1654765182e225ecd7",
+    "1654765182e225ecd72",
+    "165476560159b5ef3e"
+  ]
+}
