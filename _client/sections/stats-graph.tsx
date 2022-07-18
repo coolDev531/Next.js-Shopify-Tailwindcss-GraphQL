@@ -1,6 +1,6 @@
 import { Wrapper } from "_client/layout/wrapper";
 import { FC } from "react";
-import { StatsGraphSection } from "types/sections";
+import { StatsGraphSection } from ".shopify-cms/typessections";
 
 export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGraphSection) => (
   <>

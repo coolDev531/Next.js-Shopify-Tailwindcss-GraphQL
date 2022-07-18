@@ -5,8 +5,8 @@ import { BlockHeading } from "_client/sections/block-heading";
 import clsx from "clsx";
 import { useRouter } from "next/router";
 import { FC } from "react";
-import { ImageCarouselSection } from "types/sections";
-import { _Image_liquid, _Media_liquid } from "types/shopify";
+import { ImageCarouselSection } from ".shopify-cms/typessections";
+import { _Image_liquid, _Media_liquid } from ".shopify-cms/typesshopify";
 
 export const ImageCarousel: FC<ImageCarouselSection> = ({ id, blocks, settings, type }) => {
   const { position, cta1, cta1_link, cta2, cta2_link, paragraph, pre_title, title } = settings;

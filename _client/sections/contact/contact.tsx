@@ -11,7 +11,7 @@ import { useShopifyData } from "_client/stores/shopify-data-store";
 import { Richtext } from "_client/typography/richtext";
 import { motion } from "framer-motion";
 import { FC, useCallback, useEffect, useRef, useState } from "react";
-import { ContactSection } from "types/sections";
+import { ContactSection } from ".shopify-cms/typessections";
 import { delay } from "utils/delay";
 import { scrollToY } from "utils/scroll-to";
 import { serializeForm } from "utils/serialize-form";

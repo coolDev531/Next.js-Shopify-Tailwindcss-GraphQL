@@ -1,7 +1,7 @@
 import HeroIcon from "_client/dynamic-hero-icon";
 import clsx from "clsx";
 import { FC, useCallback, useEffect, useRef, useState } from "react";
-import { ContactBlocks } from "types/sections";
+import { ContactBlocks } from ".shopify-cms/typessections";
 import validate from "validator";
 
 export type BasicInputProps = Extract<ContactBlocks, { type: "basic" }>["settings"] & {

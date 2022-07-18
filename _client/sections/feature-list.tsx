@@ -5,7 +5,7 @@ import { Richtext } from "_client/typography/richtext";
 
 import clsx from "clsx";
 import { FC } from "react";
-import { FeatureListSection } from "types/sections";
+import { FeatureListSection } from ".shopify-cms/typessections";
 
 export const FeatureList: FC<FeatureListSection> = ({ blocks, settings }) => {
   return (

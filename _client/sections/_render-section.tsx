@@ -21,7 +21,7 @@ import { TabsImageCard } from "_client/sections/tabs-image-card";
 import { TabsProcessStep } from "_client/sections/tabs-process-step";
 import { TeamList } from "_client/sections/team-list";
 import { TestimonialList } from "_client/sections/testimonial-list";
-import { Sections } from "types/sections";
+import { Sections } from ".shopify-cms/typessections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {

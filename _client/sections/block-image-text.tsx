@@ -4,7 +4,7 @@ import { Wrapper } from "_client/layout/wrapper";
 import { Richtext } from "_client/typography/richtext";
 import clsx from "clsx";
 import { FC } from "react";
-import { ImageTextSection } from "types/sections";
+import { ImageTextSection } from ".shopify-cms/typessections";
 
 export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ settings }) => {
   return (

@@ -6,7 +6,7 @@ import { Button } from "_client/typography/button";
 import { Richtext } from "_client/typography/richtext";
 
 import { FC } from "react";
-import { HeroWithFeaturesSection } from "types/sections";
+import { HeroWithFeaturesSection } from ".shopify-cms/typessections";
 
 export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, blocks, type }) => {
   return (

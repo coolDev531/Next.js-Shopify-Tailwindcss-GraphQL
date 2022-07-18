@@ -2,7 +2,7 @@ import { Listbox, Transition } from "@headlessui/react";
 import HeroIcon from "_client/dynamic-hero-icon";
 import clsx from "clsx";
 import { FC, Fragment, useCallback, useEffect, useRef, useState } from "react";
-import { ContactBlocks } from "types/sections";
+import { ContactBlocks } from ".shopify-cms/typessections";
 import validate from "validator";
 
 export type SelectInputProps = Extract<ContactBlocks, { type: "select" }>["settings"] & {

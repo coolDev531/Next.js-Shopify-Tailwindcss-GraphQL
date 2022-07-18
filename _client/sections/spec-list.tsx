@@ -4,7 +4,7 @@ import { BlockHeading } from "_client/sections/block-heading";
 
 import clsx from "clsx";
 import { FC, Fragment } from "react";
-import { SpecListSection } from "types/sections";
+import { SpecListSection } from ".shopify-cms/typessections";
 
 export const SpecList: FC<SpecListSection> = ({ id, blocks, type, settings }) => {
   return (

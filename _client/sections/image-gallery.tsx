@@ -4,7 +4,7 @@ import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
 import { motion, useInView } from "framer-motion";
 import { FC, useRef } from "react";
-import { ImageGallerySection } from "types/sections";
+import { ImageGallerySection } from ".shopify-cms/typessections";
 
 export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) => {
   const galleryRef = useRef();

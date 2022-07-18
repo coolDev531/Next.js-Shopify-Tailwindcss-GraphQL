@@ -1,7 +1,7 @@
 import { useShopifyData } from "_client/stores/shopify-data-store";
 import { useCallback, useEffect } from "react";
-import { Sections } from "types/sections";
-import { GlobalSettings } from "types/shopify";
+import { Sections } from ".shopify-cms/typessections";
+import { GlobalSettings } from ".shopify-cms/typesshopify";
 
 export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[]>() => {
   const [{ global, sections }, setShopifyData] = useShopifyData();

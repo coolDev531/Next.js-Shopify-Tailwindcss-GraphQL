@@ -8,8 +8,8 @@ import { Link } from "_client/link";
 import { Richtext } from "_client/typography/richtext";
 import clsx from "clsx";
 import { FC, Fragment, useCallback, useState } from "react";
-import { HeaderBlocks } from "types/sections";
-import { _Linklist_liquid } from "types/shopify";
+import { HeaderBlocks } from ".shopify-cms/typessections";
+import { _Linklist_liquid } from ".shopify-cms/typesshopify";
 
 export const NavMobile: FC<{
   blocks: HeaderBlocks[];

@@ -1,7 +1,7 @@
 import { Wrapper } from "_client/layout/wrapper";
 import { BlockHeading } from "_client/sections/block-heading";
 import { FC } from "react";
-import { HeadingSection } from "types/sections";
+import { HeadingSection } from ".shopify-cms/typessections";
 
 export const SectionHeading: FC<HeadingSection> = ({ settings }) => {
   return (

@@ -3,8 +3,8 @@ import { Wrapper } from "_client/layout/wrapper";
 import { Richtext } from "_client/typography/richtext";
 import clsx from "clsx";
 import { FC, useState } from "react";
-import { TabsFaqSection } from "types/sections";
-import { _Product_liquid } from "types/shopify";
+import { TabsFaqSection } from ".shopify-cms/typessections";
+import { _Product_liquid } from ".shopify-cms/typesshopify";
 
 export const TabsFaq: FC<TabsFaqSection> = ({ id, settings, blocks, type }) => {
   const [activateTab, setActivateTab] = useState(

@@ -4,8 +4,8 @@ import { useTooltipStore } from "_client/stores/tooltip-store";
 import clsx from "clsx";
 import { FC, forwardRef, useEffect, useRef, useState } from "react";
 import { useWindowSize } from "react-use";
-import { LogoBannerSection } from "types/sections";
-import { _Image_liquid, _Media_liquid } from "types/shopify";
+import { LogoBannerSection } from ".shopify-cms/typessections";
+import { _Image_liquid, _Media_liquid } from ".shopify-cms/typesshopify";
 import { cleanSvgIds } from "utils/clean-svg-ids";
 
 export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }) => {

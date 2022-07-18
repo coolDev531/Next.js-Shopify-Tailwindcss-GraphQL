@@ -10,7 +10,7 @@ import img2 from "public/images/bg-gradient-dark.png";
 import img1 from "public/images/bg-gradient-light.jpg";
 
 import { FC, useState } from "react";
-import { TabsImageCardSection } from "types/sections";
+import { TabsImageCardSection } from ".shopify-cms/typessections";
 
 export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) => {
   const [activateTab, setActivateTab] = useState(

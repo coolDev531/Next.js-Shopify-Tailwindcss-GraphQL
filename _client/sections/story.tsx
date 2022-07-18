@@ -2,7 +2,7 @@ import { Wrapper } from "_client/layout/wrapper";
 import { BlockHeading } from "_client/sections/block-heading";
 import { BlockImageText } from "_client/sections/block-image-text";
 import { FC } from "react";
-import { StorySection } from "types/sections";
+import { StorySection } from ".shopify-cms/typessections";
 
 export const Story: FC<StorySection> = ({ id, blocks, type }) => {
   return (

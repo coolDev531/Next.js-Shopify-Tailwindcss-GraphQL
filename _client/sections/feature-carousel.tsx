@@ -5,7 +5,7 @@ import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
 import { Richtext } from "_client/typography/richtext";
 import { FC, useCallback, useRef, useState } from "react";
-import { FeatureCarouselSection } from "types/sections";
+import { FeatureCarouselSection } from ".shopify-cms/typessections";
 import { scrollToX } from "utils/scroll-to";
 
 export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settings, type }) => {

@@ -8,8 +8,8 @@ import { ThemeProvider, useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import { SEO } from "pages/_app";
 import { FC } from "react";
-import { PageSettingsSection, Sections } from "types/sections";
-import { GlobalSettings } from "types/shopify";
+import { PageSettingsSection, Sections } from ".shopify-cms/typessections";
+import { GlobalSettings } from ".shopify-cms/typesshopify";
 
 type LayoutProps = { global: GlobalSettings; sections: Sections[] };
 

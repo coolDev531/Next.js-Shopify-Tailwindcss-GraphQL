@@ -1,6 +1,6 @@
 import HeroIcon from "_client/dynamic-hero-icon";
 import { FC, useCallback, useEffect, useRef, useState } from "react";
-import { ContactBlocks } from "types/sections";
+import { ContactBlocks } from ".shopify-cms/typessections";
 import validate from "validator";
 
 export type TextareaInputProps = Extract<ContactBlocks, { type: "textarea" }>["settings"] & {

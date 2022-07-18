@@ -1,0 +1,30 @@
+{
+  "sections": {
+    "16552869432a199433": {
+      "type": "test",
+      "settings": {
+        "page": "shopify-sites",
+        "blog": "tech",
+        "article": "tech\/shopify",
+        "product": "shopify",
+        "product_list": [
+          "shopify",
+          "shopify-customizations",
+          "shopify-full-sites"
+        ],
+        "collection": "faq-shopify",
+        "collection_list": [
+          "faq-general",
+          "faq-shopify"
+        ],
+        "links": "main-menu",
+        "color": "#ff9f9f",
+        "font2": "",
+        "font": "mono"
+      }
+    }
+  },
+  "order": [
+    "16552869432a199433"
+  ]
+}
