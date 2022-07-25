@@ -1,6 +1,6 @@
 {
   "development_server": "http://localhost:3000",
-  "deployment_server": "https://theme-development.vercel.app",
+  "deployment_server": "https://lunalemon.dev",
   "global_header_sections": [
     "header"
   ],

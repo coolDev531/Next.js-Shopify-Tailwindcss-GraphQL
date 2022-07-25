@@ -18,7 +18,7 @@
 
   <iframe id="theme-editor"
           style="width: 100%; height: 100%; overflow: hidden; position: absolute; top: 0; left:0; right: 0; bottom: 0; z-index: 10; min-height: 100vh"
-          src="https://theme-development.vercel.app{{ request.path }}"
+          src="https://lunalemon.dev{{ request.path }}"
           frameborder="0"></iframe>
 
   <script>
@@ -35,7 +35,7 @@
       console.log(e);
       themeEditorIframe.setAttribute('src', 'http://localhost:3000{{ request.path }}');
     }).catch(err => {
-      themeEditorIframe.setAttribute('src', 'https://theme-development.vercel.app{{ request.path }}');
+      themeEditorIframe.setAttribute('src', 'https://lunalemon.dev{{ request.path }}');
     });
 
     window.addEventListener('message', (e) => {
