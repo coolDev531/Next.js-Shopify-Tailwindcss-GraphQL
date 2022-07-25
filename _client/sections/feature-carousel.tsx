@@ -105,10 +105,10 @@ export const FeatureCarouselItem = ({ id, href, image, title, description }) => 
         {image && (
           <Image
             className="h-full object-cover"
-            width={image.width}
-            height={image.height}
+            width={image?.width}
+            height={image?.height}
             src={image?.src}
-            alt={image?.alt}
+            alt={image?.alt ?? title}
             maxWidth={500}
           />
         )}

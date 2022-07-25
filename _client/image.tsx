@@ -37,7 +37,7 @@ export const Image: FC<
     }
   }, [aspectRatio, maxHeight, maxWidth, preload, preloadImage, props.quality, src, width]);
 
-  if (!src) {
+  if (!src || src === "undefined") {
     return null;
   }
 

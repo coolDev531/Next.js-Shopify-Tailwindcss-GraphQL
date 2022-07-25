@@ -52,13 +52,16 @@ export const Link: FC<LinkProps> = ({
   return (
     <>
       {href && !isExternalUrl(href)
-        ? <NextLink {...nextLinkProps}>
+        ? <NextLink
+            {...nextLinkProps}
+            href={typeof href === "string" ? href.replace(/^\/products\//gi, "/") : href}
+          >
             <a onClick={handleClick} {...AnchorProps}>
               {children}
             </a>
           </NextLink>
         : <a
-            href={href}
+            href={typeof href === "string" ? href.replace(/^\/products\//gi, "/") : href}
             rel={AnchorProps?.target === "_blank" ? "noopener noreferrer" : undefined}
             onClick={onClick}
             {...AnchorProps}

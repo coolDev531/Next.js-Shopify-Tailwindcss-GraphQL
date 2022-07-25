@@ -44,7 +44,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     src={`${settings?.image1?.src}`}
                     width={settings?.image1?.width}
                     height={settings?.image1?.height}
-                    alt={settings?.image1?.alt}
+                    alt={settings?.image1?.alt ?? settings.title1}
                     maxWidth={300}
                   />
                 : <Image
@@ -72,7 +72,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     src={`${settings?.image2?.src}`}
                     width={settings?.image2?.width}
                     height={settings?.image2?.height}
-                    alt={settings?.image2?.alt}
+                    alt={settings?.image2?.alt ?? settings.title2}
                     maxWidth={600}
                   />
                 : <Image
@@ -100,7 +100,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     src={`${settings?.image3?.src}`}
                     width={settings?.image3?.width}
                     height={settings?.image3?.height}
-                    alt={settings?.image3?.alt}
+                    alt={settings?.image3?.alt ?? settings.title3}
                     maxWidth={350}
                   />
                 : <Image
@@ -130,7 +130,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     src={`${settings?.image4?.src}`}
                     width={settings?.image4?.width}
                     height={settings?.image4?.height}
-                    alt={settings?.image4?.alt}
+                    alt={settings?.image4?.alt ?? settings.title4}
                     maxWidth={520}
                   />
                 : <Image
@@ -158,7 +158,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     src={`${settings?.image5?.src}`}
                     width={settings?.image5?.width}
                     height={settings?.image5?.height}
-                    alt={settings?.image5?.alt}
+                    alt={settings?.image5?.alt ?? settings.title5}
                     maxWidth={500}
                   />
                 : <Image
@@ -186,7 +186,7 @@ export const ImageGallery: FC<ImageGallerySection> = ({ id, type, settings }) =>
                     src={`${settings?.image6?.src}`}
                     width={settings?.image6?.width}
                     height={settings?.image6?.height}
-                    alt={settings?.image6?.alt}
+                    alt={settings?.image6?.alt ?? settings.title6}
                     maxWidth={290}
                   />
                 : <Image

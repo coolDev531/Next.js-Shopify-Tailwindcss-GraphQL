@@ -142,7 +142,7 @@ export const LogoBannerItem: FC<{
       data-tip={title}
       style={{
         height: `${height}px`,
-        width: `${image.aspect_ratio * height}px`,
+        width: `${image?.aspect_ratio * height}px`,
       }}
     >
       {image && darkImage
@@ -150,18 +150,18 @@ export const LogoBannerItem: FC<{
             <Image
               priority
               className="h-full object-contain dark:hidden"
-              src={`${image.src}`}
-              width={image.width}
-              height={image.height}
+              src={`${image?.src}`}
+              width={image?.width}
+              height={image?.height}
               alt={title}
               maxHeight={height}
             />
             <Image
               priority
               className="hidden h-full object-contain dark:block"
-              src={`${darkImage.src}`}
-              width={darkImage.width}
-              height={darkImage.height}
+              src={`${darkImage?.src}`}
+              width={darkImage?.width}
+              height={darkImage?.height}
               alt={title}
               maxHeight={height}
             />
@@ -169,9 +169,9 @@ export const LogoBannerItem: FC<{
         : <Image
             priority
             className="h-full object-contain"
-            src={`${image.src}`}
-            width={image.width}
-            height={image.height}
+            src={`${image?.src}`}
+            width={image?.width}
+            height={image?.height}
             alt={title}
             maxHeight={height}
           />}

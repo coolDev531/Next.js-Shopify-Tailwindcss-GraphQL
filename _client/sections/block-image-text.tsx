@@ -73,10 +73,10 @@ export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ s
                 <Image
                   priority
                   className="h-full object-cover"
-                  width={settings.image.width}
-                  height={settings.image.height}
+                  width={settings.image?.width}
+                  height={settings.image?.height}
                   src={`${settings?.image?.src}`}
-                  alt={settings?.image?.alt}
+                  alt={settings?.image?.alt ?? settings.title}
                   maxWidth={512}
                 />
               </figure>

@@ -100,11 +100,11 @@ export const ImageCarouselItem: FC<{
       <figure className="relative isolate aspect-1 w-[200px] overflow-hidden rounded shadow-lg transition-shadow group-hfa:shadow">
         {image
           ? <Image
-              src={`${image.src}`}
+              src={`${image?.src}`}
               className="h-full object-cover"
-              width={image.width}
-              height={image.height}
-              alt={image.alt}
+              width={image?.width}
+              height={image?.height}
+              alt={image?.alt ?? title}
               maxWidth={200}
               pixelDensity={1.6}
             />

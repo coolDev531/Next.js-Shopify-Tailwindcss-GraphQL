@@ -7,13 +7,13 @@ import { DefaultSeo } from "next-seo";
 import { ThemeProvider, useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import { SEO } from "pages/_app";
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { PageSettingsSection, Sections } from ".shopify-cms/types/sections";
 import { GlobalSettings } from ".shopify-cms/types/shopify";
 
 type LayoutProps = { global: GlobalSettings; sections: Sections[] };
 
-function ThemeLayout() {
+const ThemeLayout = (props) => {
   const router = useRouter();
   const { theme } = useTheme();
   const [{ global, sections }, setShopifyData] = useShopifyData();
@@ -33,6 +33,10 @@ function ThemeLayout() {
     pageSettings?.settings.color_accent_secondary_contrast_dark;
 
   const isDark = theme === "dark";
+
+  useEffect(() => {
+    setShopifyData((current) => ({ ...current, sections: props.sections, global: props.global }));
+  }, [props.global, props.sections, setShopifyData]);
 
   return (
     <>
@@ -125,7 +129,7 @@ function ThemeLayout() {
       </main>
     </>
   );
-}
+};
 
 export const Layout: FC<LayoutProps> = ({ sections, global }) => {
   console.log("render");
@@ -134,7 +138,7 @@ export const Layout: FC<LayoutProps> = ({ sections, global }) => {
     <ShopifyDataProvider init={{ sections, global }}>
       <ContextProviders>
         <LoadInitialData>
-          <ThemeLayout />
+          <ThemeLayout sections={sections} global={global} />
         </LoadInitialData>
       </ContextProviders>
     </ShopifyDataProvider>

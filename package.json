@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "npm-run-all --parallel next:dev shopify-dev",
     "next:dev": "SET NEXT_PUBLIC_PORT=3000&& rimraf .next && next --port 3000",
-    "shopify-dev": "shopify-cms -d -b",
+    "shopify-dev": "shopify-cms -b",
     "build": "rimraf .next && next build",
     "build:start": "rimraf .next && next build --profile && next start",
     "start": "next start",

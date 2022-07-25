@@ -36,6 +36,7 @@ export const usePreloadImage: UsePreloadImageHook = () => {
     link.as = "image";
     link.imageSrcset = preloadSrcset;
     document.head.appendChild(link);
+    console.log(link);
     // new Image().src = preloadSrcset;
   }, [isMounted, preloadedImages, setPreloadedImages]);
 };

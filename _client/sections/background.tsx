@@ -51,10 +51,10 @@ export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
           ? <Image
               className="h-full w-full object-cover"
               style={{ opacity: settings.opacity / 100 }}
-              src={settings.image.src}
-              width={settings.image.width}
-              height={settings.image.height}
-              alt={settings.image.alt}
+              src={settings.image?.src}
+              width={settings.image?.width}
+              height={settings.image?.height}
+              alt={settings.image?.alt ?? "Background Blur Image"}
             />
           : null}
         {settings.svg
