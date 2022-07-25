@@ -1,8 +1,8 @@
 import { Image } from "_client/image";
 import { Link } from "_client/link";
 import { FC } from "react";
-import { HeaderBlocks } from ".shopify-cms/typessections";
-import { _Link_liquid } from ".shopify-cms/typesshopify";
+import { HeaderBlocks } from ".shopify-cms/types/sections";
+import { _Link_liquid } from ".shopify-cms/types/shopify";
 
 export const PortfolioMenu: FC<
   Extract<HeaderBlocks, { type: "dropdown_menu_portfolio" }>["settings"] & { links: _Link_liquid[] }

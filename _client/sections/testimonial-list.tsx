@@ -3,8 +3,8 @@ import { Wrapper } from "_client/layout/wrapper";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
 import { FC } from "react";
-import { TestimonialListSection } from ".shopify-cms/typessections";
-import { _Metafield_liquid_file_reference_force_image } from ".shopify-cms/typesshopify";
+import { TestimonialListSection } from ".shopify-cms/types/sections";
+import { _Metafield_liquid_file_reference_force_image } from ".shopify-cms/types/shopify";
 
 export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, settings, type }) => {
   const { products, ...heading } = settings;

@@ -1,7 +1,7 @@
 import { useShopifyData } from "_client/stores/shopify-data-store";
 import { useCallback, useEffect } from "react";
-import { Sections } from ".shopify-cms/typessections";
-import { GlobalSettings } from ".shopify-cms/typesshopify";
+import { Sections } from ".shopify-cms/types/sections";
+import { GlobalSettings } from ".shopify-cms/types/shopify";
 
 export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[]>() => {
   const [{ global, sections }, setShopifyData] = useShopifyData();
@@ -23,6 +23,7 @@ export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[
 
   const handleMessages = useCallback((e) => {
     if (e?.data?.source === "theme-editor") {
+      console.log(e.data);
       setShopifyData({ global: e.data.global, sections: e.data.sections });
 
       if (e.data.topic === "shopify:section:select") {

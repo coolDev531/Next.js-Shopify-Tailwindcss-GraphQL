@@ -40,13 +40,6 @@
             "stat": "100+",
             "descriptions": "Brands"
           }
-        },
-        "a11aa6c4-18d7-4b10-80c8-f926ccd20a5f": {
-          "type": "stat",
-          "settings": {
-            "stat": "",
-            "descriptions": ""
-          }
         }
       },
       "block_order": [

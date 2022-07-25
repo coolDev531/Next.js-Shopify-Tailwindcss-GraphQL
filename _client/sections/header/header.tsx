@@ -10,7 +10,7 @@ import LunalemonLogo from "public/logo.svg";
 import { FC, useEffect } from "react";
 import { useWindowSize } from "react-use";
 
-import { HeaderSection } from ".shopify-cms/typessections";
+import { HeaderSection } from ".shopify-cms/types/sections";
 
 export const Header: FC<HeaderSection> = ({ id, type, settings, blocks }) => {
   const preloadImage = usePreloadImage();

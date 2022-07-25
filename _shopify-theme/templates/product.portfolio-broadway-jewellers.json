@@ -197,7 +197,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Jewellery Customizer",
-            "tab_icon": "BadgeCheckIcon",
+            "tab_icon": "colors",
             "title": "Jewellery customizer",
             "paragraph": "<p>This Jewellery customizer helps users choose options to create their own personalized necklace, or bracelet by typing in their name, choosing the material, size, font style and language.<\/p>",
             "cta1": "",
@@ -212,7 +212,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Custom Filter Functionality",
-            "tab_icon": "BadgeCheckIcon",
+            "tab_icon": "grid",
             "title": "Custom Filter Functionality",
             "paragraph": "<p>This Custom Filter Functionality was built to filter through the products with specific features related to product colour, gender, materials, and water resistance options.<\/p>",
             "cta1": "",
@@ -227,7 +227,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Shopify to take-a-lot",
-            "tab_icon": "BadgeCheckIcon",
+            "tab_icon": "LinkIcon",
             "title": "Shopify to take-a-lot",
             "paragraph": "",
             "cta1": "",
@@ -242,7 +242,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Shopify to Courier guy",
-            "tab_icon": "BadgeCheckIcon",
+            "tab_icon": "TruckIcon",
             "title": "Shopify to Courier guy",
             "paragraph": "",
             "cta1": "",
@@ -257,7 +257,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Product review app",
-            "tab_icon": "BadgeCheckIcon",
+            "tab_icon": "AnnotationIcon",
             "title": "Product review app",
             "paragraph": "<p>This integration helps increase the overall trust of visitors to the<br\/>store and increases conversion by showcasing ratings of the particular product.<\/p>",
             "cta1": "",

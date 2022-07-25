@@ -1,10 +1,11 @@
 import { createRouter } from "_server/settings/create-router";
 import axios from "axios";
 import { JSDOM } from "jsdom";
-import { Sections } from "types/sections";
-import { GlobalSettings } from "types/shopify";
+
 import { JSONParse } from "utils/json-parse";
 import { z } from "zod";
+import { Sections } from ".shopify-cms/types/sections";
+import { GlobalSettings } from ".shopify-cms/types/shopify";
 
 export const fetchRouter = createRouter().query("shopify-content", {
   input: z.string(),

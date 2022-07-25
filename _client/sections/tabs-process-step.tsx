@@ -10,7 +10,7 @@ import clsx from "clsx";
 import { motion } from "framer-motion";
 import { FC, LegacyRef, useCallback, useRef, useState } from "react";
 
-import { TabsProcessStepSection } from ".shopify-cms/typessections";
+import { TabsProcessStepSection } from ".shopify-cms/types/sections";
 import { scrollToX, scrollToY } from "utils/scroll-to";
 
 export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, blocks, type }) => {

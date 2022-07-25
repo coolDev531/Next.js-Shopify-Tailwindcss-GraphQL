@@ -5,7 +5,7 @@ import { Wrapper } from "_client/layout/wrapper";
 import { Richtext } from "_client/typography/richtext";
 
 import { FC } from "react";
-import { HeroSection } from ".shopify-cms/typessections";
+import { HeroSection } from ".shopify-cms/types/sections";
 
 export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
   return (

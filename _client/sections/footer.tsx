@@ -3,7 +3,7 @@ import { ReactIcon } from "_client/dynamic-react-icon";
 import { Link } from "_client/link";
 import LunalemonLogo from "public/logo.svg";
 import { FC } from "react";
-import { FooterSection } from ".shopify-cms/typessections";
+import { FooterSection } from ".shopify-cms/types/sections";
 
 export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
   return (

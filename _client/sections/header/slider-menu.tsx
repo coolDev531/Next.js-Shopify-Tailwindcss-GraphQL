@@ -4,7 +4,7 @@ import { Link } from "_client/link";
 import { Richtext } from "_client/typography/richtext";
 import clsx from "clsx";
 import { useCallback, useRef, useState } from "react";
-import { _Link_liquid, _Product_liquid } from ".shopify-cms/typesshopify";
+import { _Link_liquid, _Product_liquid } from ".shopify-cms/types/shopify";
 import { scrollToX } from "utils/scroll-to";
 
 export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _Link_liquid }) => {

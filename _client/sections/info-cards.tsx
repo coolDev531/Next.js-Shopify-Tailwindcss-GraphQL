@@ -1,8 +1,8 @@
 import { Wrapper } from "_client/layout/wrapper";
 import { FC } from "react";
 import { stripHtml } from "string-strip-html";
-import { InfoCardsSection } from ".shopify-cms/typessections";
-import { _Metafield_liquid_file_reference_force_generic } from ".shopify-cms/typesshopify";
+import { InfoCardsSection } from ".shopify-cms/types/sections";
+import { _Metafield_liquid_file_reference_force_generic } from ".shopify-cms/types/shopify";
 import { cleanSvgIds } from "utils/clean-svg-ids";
 
 export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) => {

@@ -2,8 +2,9 @@ import { Button } from "_client/typography/button";
 import { Richtext } from "_client/typography/richtext";
 import clsx from "clsx";
 import { FC } from "react";
-import { PartialBy } from ".shopify-cms/typesindex";
-import { HeadingSection } from ".shopify-cms/typessections";
+import { PartialBy } from "types/index";
+
+import { HeadingSection } from ".shopify-cms/types/sections";
 
 export const BlockHeading: FC<PartialBy<HeadingSection, "type" | "id">> = ({ settings }) => {
   return (

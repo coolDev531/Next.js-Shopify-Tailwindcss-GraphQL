@@ -2,7 +2,7 @@ import { Image } from "_client/image";
 import { BlockHeading } from "_client/sections/block-heading";
 
 import { FC } from "react";
-import { TeamListSection } from ".shopify-cms/typessections";
+import { TeamListSection } from ".shopify-cms/types/sections";
 
 export const TeamList: FC<TeamListSection> = ({ id, blocks, type }) => {
   return (

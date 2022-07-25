@@ -6,8 +6,8 @@ import clsx from "clsx";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
 import { FC, FocusEventHandler, Fragment, MouseEventHandler, useCallback, useState } from "react";
-import { HeaderBlocks } from ".shopify-cms/typessections";
-import { _Linklist_liquid } from ".shopify-cms/typesshopify";
+import { HeaderBlocks } from ".shopify-cms/types/sections";
+import { _Linklist_liquid } from ".shopify-cms/types/shopify";
 import { getParentNodeByClass } from "utils/get-parent-node-by-class";
 
 export const DesktopNav: FC<{

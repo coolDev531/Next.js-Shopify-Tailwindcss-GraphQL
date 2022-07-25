@@ -45,7 +45,7 @@ export const getStaticProps = async ({ params }) => {
     `/products/${params.product}` as string
   );
 
-  // console.log('state', ssr.dehydrate());
+  console.log("state", ssg.dehydrate());
   return {
     props: {
       // trpcState: ssg.dehydrate(),

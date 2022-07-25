@@ -1,7 +1,7 @@
 import { Wrapper } from "_client/layout/wrapper";
 import clsx from "clsx";
 import { FC } from "react";
-import { BlockquoteSection } from ".shopify-cms/typessections";
+import { BlockquoteSection } from ".shopify-cms/types/sections";
 
 export const BlockBlockquote: FC<BlockquoteSection> = ({ id, settings, type }) => {
   return (

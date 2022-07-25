@@ -2,7 +2,7 @@ import { Image } from "_client/image";
 import clsx from "clsx";
 import svgToDataUri from "mini-svg-data-uri";
 import { FC } from "react";
-import { BackgroundSection } from ".shopify-cms/typessections";
+import { BackgroundSection } from ".shopify-cms/types/sections";
 
 export const Background: FC<BackgroundSection> = ({ blocks }) => {
   return (

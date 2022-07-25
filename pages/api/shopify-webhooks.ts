@@ -29,32 +29,29 @@ export const Webhooks = async (
     } = headers;
 
     if (!verifyWebhookHmac(hmac, bodyBuffer)) {
-      res.status(401).send("Unauthorized Access");
-      return;
+      return res.status(401).send("Unauthorized Access");
     }
     console.log(topic);
     switch (topic) {
       case "themes/update": {
         console.log("themes update");
-        res.status(200).send("success");
-        break;
+        return res.status(200).send("success");
       }
       case "products/update": {
         const product = body as _Product;
         console.log(product);
         await res.revalidate(`/products/${product.handle}`);
-        res.status(200).send("success");
-        break;
+        return res.status(200).send("success");
       }
       default: {
         console.log("could not find topic: ", topic);
-        res.status(200).send("success");
+        return res.status(200).send("success");
       }
     }
   } catch (err) {
     console.log(err);
     console.log(err.message);
-    res.status(500).send("Server Error");
+    return res.status(500).send("Server Error");
   }
 };
 
