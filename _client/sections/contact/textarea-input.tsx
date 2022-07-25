@@ -1,4 +1,4 @@
-import HeroIcon from "_client/dynamic-hero-icon";
+import { HeroIcon } from "_client/dynamic-hero-icon";
 import { FC, useCallback, useEffect, useRef, useState } from "react";
 import { ContactBlocks } from ".shopify-cms/types/sections";
 import validate from "validator";

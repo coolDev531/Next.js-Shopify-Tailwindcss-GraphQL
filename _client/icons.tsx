@@ -41,7 +41,7 @@ import Stack from "../public/icons/tw-ui-icons/stack.svg";
 import WarrantyLight from "../public/icons/tw-ui-icons/warranty-light.svg";
 import WarrantySimple from "../public/icons/tw-ui-icons/warranty-simple.svg";
 import { heroIcons, lineIcons, twIcons, twUiIcons } from "../shopify/utils/icons";
-import HeroIcon from "./dynamic-hero-icon";
+import { HeroIcon } from "./dynamic-hero-icon";
 
 export const renderIcon = (
   value:

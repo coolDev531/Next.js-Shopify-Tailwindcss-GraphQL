@@ -1,5 +1,5 @@
 import { Popover, Transition } from "@headlessui/react";
-import HeroIcon from "_client/dynamic-hero-icon";
+import { HeroIcon } from "_client/dynamic-hero-icon";
 import { PortfolioMenu } from "_client/sections/header/portfolio-menu";
 import { SliderMenu } from "_client/sections/header/slider-menu";
 import clsx from "clsx";

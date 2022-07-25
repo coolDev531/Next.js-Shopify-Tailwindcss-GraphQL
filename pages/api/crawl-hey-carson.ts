@@ -9,7 +9,7 @@ export const CrawlHeyCarson: CrawlHeyCarsonFunction = async (req, res) => {
   ).json();
 
   fs.writeFileSync("./hey-carson.json", JSON.stringify(data, null, 2));
-  res.status(200).json(data);
+  return res.status(200).json(data);
 };
 
 export default CrawlHeyCarson;

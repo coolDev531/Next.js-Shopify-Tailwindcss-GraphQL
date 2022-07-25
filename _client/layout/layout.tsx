@@ -72,6 +72,7 @@ function ThemeLayout() {
           --color-accent: var(--color-accent-dark);
           --color-accent-contrast: var(--color-accent-contrast-dark);
           --color-accent-secondary: var(--color-accent-secondary-dark);
+          --color-accent-secondary-contrast: var(--color-accent-secondary--contrast-dark);
         }
 
         .page-settings--color-accent {

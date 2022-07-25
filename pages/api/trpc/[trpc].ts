@@ -38,11 +38,11 @@ export default trpcNext.createNextApiHandler({
     if (ctx?.res && github && allOk && isQuery) {
       // cache request for 1 day + revalidate once every second
       const ONE_DAY_IN_SECONDS = 60 * 60 * 24;
-      return {
+      /*return {
         headers: {
           "cache-control": `s-maxage=${ONE_DAY_IN_SECONDS}`,
         },
-      };
+      };*/
     }
     return {};
   },

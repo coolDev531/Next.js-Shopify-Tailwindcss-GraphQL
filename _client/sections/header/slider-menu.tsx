@@ -1,4 +1,4 @@
-import HeroIcon from "_client/dynamic-hero-icon";
+import { HeroIcon } from "_client/dynamic-hero-icon";
 import { Image } from "_client/image";
 import { Link } from "_client/link";
 import { Richtext } from "_client/typography/richtext";

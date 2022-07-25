@@ -1,4 +1,4 @@
-import HeroIcon from "_client/dynamic-hero-icon";
+import { HeroIcon } from "_client/dynamic-hero-icon";
 import { ReactIcon } from "_client/dynamic-react-icon";
 import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";

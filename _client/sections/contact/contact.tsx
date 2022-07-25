@@ -1,5 +1,5 @@
 import { ButtonLoading } from "_client/button-loading";
-import HeroIcon from "_client/dynamic-hero-icon";
+import { HeroIcon } from "_client/dynamic-hero-icon";
 import { API } from "_client/hooks/use-trpc";
 
 import { Wrapper } from "_client/layout/wrapper";

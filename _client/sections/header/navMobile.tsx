@@ -1,5 +1,5 @@
 import { Popover, Transition } from "@headlessui/react";
-import HeroIcon from "_client/dynamic-hero-icon";
+import { HeroIcon } from "_client/dynamic-hero-icon";
 import { ReactIcon } from "_client/dynamic-react-icon";
 import { useIsMount } from "_client/hooks/use-is-mount";
 import { Image } from "_client/image";

@@ -595,6 +595,81 @@ export type PageSettingsSection = {
   type: "page-settings";
 };
 
+export type PricingSection = {
+  blocks: PricingBlocks[];
+  id: string;
+  settings: {
+    /** Input type: richtext */
+    paragraph?: `<p${string}</p>`;
+    /** Input type: text */
+    pre_title?: string;
+    /** Input type: text */
+    title?: string;
+  };
+  type: "pricing";
+};
+
+export type PricingBlocks = {
+  id: string;
+  settings: {
+    /** Input type: checkbox */
+    primary: boolean;
+    /** Input type: checkbox */
+    shadow: boolean;
+    /** Input type: color */
+    color_accent?: _Color_liquid;
+    /** Input type: color */
+    color_accent_contrast?: _Color_liquid;
+    /** Input type: color */
+    color_accent_contrast_dark?: _Color_liquid;
+    /** Input type: color */
+    color_accent_dark?: _Color_liquid;
+    /** Input type: color */
+    color_accent_secondary?: _Color_liquid;
+    /** Input type: color */
+    color_accent_secondary_contrast?: _Color_liquid;
+    /** Input type: color */
+    color_accent_secondary_contrast_dark?: _Color_liquid;
+    /** Input type: color */
+    color_accent_secondary_dark?: _Color_liquid;
+    /** Input type: text */
+    cta1?: string;
+    /** Input type: url */
+    cta1_link?: string;
+    /** Input type: text */
+    cta2?: string;
+    /** Input type: url */
+    cta2_link?: string;
+    /** Input type: text */
+    feature_10?: string;
+    /** Input type: text */
+    feature_1?: string;
+    /** Input type: text */
+    feature_2?: string;
+    /** Input type: text */
+    feature_3?: string;
+    /** Input type: text */
+    feature_4?: string;
+    /** Input type: text */
+    feature_5?: string;
+    /** Input type: text */
+    feature_6?: string;
+    /** Input type: text */
+    feature_7?: string;
+    /** Input type: text */
+    feature_8?: string;
+    /** Input type: text */
+    feature_9?: string;
+    /** Input type: text */
+    price?: string;
+    /** Input type: text */
+    subtitle?: string;
+    /** Input type: text */
+    title?: string;
+  };
+  type: "package";
+};
+
 export type SpecListSection = {
   blocks: SpecListBlocks[];
   id: string;
@@ -1003,6 +1078,7 @@ export type Sections =
   | InfoCardsSection
   | LogoBannerSection
   | PageSettingsSection
+  | PricingSection
   | SpecListSection
   | StatsGraphSection
   | StorySection

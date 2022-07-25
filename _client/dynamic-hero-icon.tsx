@@ -8,7 +8,7 @@ type HeroIconProps = {
   outline?: boolean;
 };
 
-const HeroIcon: FC<HeroIconProps> = ({ name, className = "", outline = false }) => {
+export const HeroIcon: FC<HeroIconProps> = ({ name, className = "", outline = false }) => {
   const Icon: ComponentType<{ className: string }> = outline
     ? dynamic(() => import("@heroicons/react/outline").then((mod) => mod[name]))
     : dynamic(() => import("@heroicons/react/solid").then((mod) => mod[name]));

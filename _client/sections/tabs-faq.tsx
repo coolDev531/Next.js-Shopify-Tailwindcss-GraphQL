@@ -1,4 +1,4 @@
-import HeroIcon from "_client/dynamic-hero-icon";
+import { HeroIcon } from "_client/dynamic-hero-icon";
 import { Wrapper } from "_client/layout/wrapper";
 import { Richtext } from "_client/typography/richtext";
 import clsx from "clsx";

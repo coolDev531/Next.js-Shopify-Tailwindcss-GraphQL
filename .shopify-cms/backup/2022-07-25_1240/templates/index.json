@@ -1,0 +1,47 @@
+{
+  "sections": {
+    "16552869432a199433": {
+      "type": "test",
+      "settings": {
+        "amazing": [
+
+        ]
+      }
+    },
+    "1658740480bb450054": {
+      "type": "pricing",
+      "blocks": {
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab": {
+          "type": "package",
+          "settings": {
+            "title": "Basic",
+            "price": "From R 18 500, -",
+            "subtitle": "For personal or small start-up ecommerce sites with a simple responsive design - based on a standard Shopify theme.",
+            "feature_1": "Basic Product Setup (5)",
+            "feature_2": "Basic Collection Setup (5)",
+            "feature_3": "Basic Navigation",
+            "feature_4": "Basic Pages Setup (homepage \/ contact \/ policies pages)",
+            "feature_5": "Settings setup",
+            "feature_6": "Shipping & Payments integration",
+            "feature_7": "Project Management throughout",
+            "feature_8": "",
+            "feature_9": "",
+            "feature_10": ""
+          }
+        }
+      },
+      "block_order": [
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab"
+      ],
+      "settings": {
+        "pre_title": "Full site packages",
+        "title": "Find a plan to power your projects.",
+        "paragraph": "<p>Get the best ecommerce store to suite your needs.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "16552869432a199433",
+    "1658740480bb450054"
+  ]
+}

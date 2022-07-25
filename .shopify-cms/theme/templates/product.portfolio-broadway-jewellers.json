@@ -3,8 +3,8 @@
     "1658737624a0199042": {
       "type": "page-settings",
       "settings": {
-        "color_accent": "",
-        "color_accent_contrast": "",
+        "color_accent": "#de980c",
+        "color_accent_contrast": "#ffffff",
         "color_accent_secondary": "",
         "color_accent_secondary_contrast": "",
         "color_accent_dark": "",

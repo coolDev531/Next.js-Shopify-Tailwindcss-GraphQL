@@ -1,4 +1,4 @@
-import HeroIcon from "_client/dynamic-hero-icon";
+import { HeroIcon } from "_client/dynamic-hero-icon";
 import { ReactIcon } from "_client/dynamic-react-icon";
 import { Link } from "_client/link";
 import LunalemonLogo from "public/logo.svg";

@@ -1,5 +1,5 @@
 import { Listbox, Transition } from "@headlessui/react";
-import HeroIcon from "_client/dynamic-hero-icon";
+import { HeroIcon } from "_client/dynamic-hero-icon";
 import clsx from "clsx";
 import { FC, Fragment, useCallback, useEffect, useRef, useState } from "react";
 import { ContactBlocks } from ".shopify-cms/types/sections";

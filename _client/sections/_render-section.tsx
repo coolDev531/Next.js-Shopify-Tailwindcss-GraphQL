@@ -13,6 +13,7 @@ import { ImageCarousel } from "_client/sections/image-carousel";
 import { ImageGallery } from "_client/sections/image-gallery";
 import { InfoCards } from "_client/sections/info-cards";
 import { LogoBanner } from "_client/sections/logo-banner";
+import { Pricing } from "_client/sections/pricing";
 import { SpecList } from "_client/sections/spec-list";
 import { StatsGraph } from "_client/sections/stats-graph";
 import { Story } from "_client/sections/story";
@@ -25,6 +26,12 @@ import { Sections } from ".shopify-cms/types/sections";
 
 export const renderSection = (section: Sections) => {
   switch (section.type) {
+    case "pricing":
+      return (
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <Pricing {...section} />
+        </section>
+      );
     case "page-settings":
       return null;
     case "contact":

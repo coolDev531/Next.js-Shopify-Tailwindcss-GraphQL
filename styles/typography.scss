@@ -17,7 +17,7 @@
     @apply mb-3 text-2xl font-semibold sm:text-3xl lg:mb-4 text-gray-800 tracking-tight dark:[--color-gray-800:var(--color-gray-100)];
   }
 
-  .heading-base {
+  .heading-base, .heading-md {
     @apply mb-1 text-lg font-semibold text-gray-800 dark:[--color-gray-800:var(--color-gray-100)];
   }
 
@@ -38,7 +38,7 @@
     @apply max-w-xl tracking-tight leading-relaxed text-gray-500 [&>p+p]:mt-4 md:text-lg xl:max-w-2xl dark:[--color-gray-500:var(--color-gray-400)];
   }
 
-  .paragraph-base {
+  .paragraph-base, .paragraph-md {
     @apply max-w-xl tracking-tight leading-relaxed text-gray-500 [&>p+p]:mt-4 dark:[--color-gray-500:var(--color-gray-400)];
   }
 
@@ -47,8 +47,8 @@
   }
 
   .button, .button-secondary {
-    @apply relative inline-flex items-center whitespace-nowrap py-3 px-4 rounded-md overflow-hidden min-w-fit
-    text-sm font-medium leading-4 duration-100 transition-all
+    @apply relative inline-flex items-center justify-center whitespace-nowrap py-3 px-4 rounded-md overflow-hidden min-w-fit
+    text-sm font-medium leading-4 duration-100 transition-all cursor-pointer
     f:outline-none f:ring-2 f:ring-accent-contrast/80 f:ring-offset-2
   }
 
