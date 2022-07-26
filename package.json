@@ -49,7 +49,7 @@
     "react-tooltip": "^4.2.21",
     "react-use": "^17.4.0",
     "sharp": "^0.30.7",
-    "shopify-cms": "^1.0.39",
+    "shopify-cms": "^1.0.40",
     "shopify-ftp-access": "^3.0.14",
     "shopify-typed-node-api": "^2.0.18",
     "short-uuid": "^4.2.0",

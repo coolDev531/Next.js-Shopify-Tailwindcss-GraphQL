@@ -110,23 +110,36 @@
     "16540875305d711f9e": {
       "type": "info-cards",
       "settings": {
-        "pre_title": "asdasd",
-        "title": "asdasdasd",
+        "pre_title": "Explore",
+        "title": "The tech we used:",
         "content_list": [
-
-        ]
+          "shopify"
+        ],
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 4
       }
     },
     "1654092902cc4e4a33": {
       "type": "logo-banner",
       "settings": {
-        "title": "",
+        "title": "Our development stack",
         "products": [
-
+          "copy-of-framer",
+          "shopify",
+          "copy-of-css",
+          "sass",
+          "tailwindcss",
+          "typescript",
+          "github"
         ],
-        "height": 40,
+        "collection": "",
+        "height": 50,
         "animate": false,
-        "animation_duration": 20
+        "animation_duration": 70,
+        "spacing": "custom",
+        "spacing_top": 0,
+        "spacing_bottom": 24
       }
     },
     "16541733016b2d4288": {
@@ -429,7 +442,6 @@
         "cta2_link": "",
         "position": "center",
         "features": [
-
         ]
       }
     },
@@ -445,7 +457,6 @@
         "cta2_link": "",
         "position": "center",
         "products": [
-
         ],
         "collection": "portfolio",
         "blog": "",

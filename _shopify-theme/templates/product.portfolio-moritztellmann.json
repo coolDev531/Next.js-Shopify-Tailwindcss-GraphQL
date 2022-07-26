@@ -233,37 +233,33 @@
         "pre_title": "Explore",
         "title": "The tech we used:",
         "content_list": [
-          "shopify",
-          "vend-pos"
-        ]
+          "shopify"
+        ],
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 4
       }
     },
     "1654092902cc4e4a33": {
       "type": "logo-banner",
       "settings": {
-        "title": "",
+        "title": "Our development stack",
         "products": [
-          "graphql",
+          "copy-of-framer",
+          "shopify",
           "copy-of-css",
-          "eslint",
-          "postman",
-          "sendgrid",
           "sass",
-          "vercel",
-          "windows-support",
-          "ios",
-          "amazon-web-services",
-          "github",
-          "google-analytics",
-          "google-tag-manager",
-          "grunt",
-          "gulp",
+          "tailwindcss",
           "typescript",
-          "shopify"
+          "github"
         ],
+        "collection": "",
         "height": 50,
         "animate": false,
-        "animation_duration": 70
+        "animation_duration": 70,
+        "spacing": "custom",
+        "spacing_top": 0,
+        "spacing_bottom": 24
       }
     },
     "16542555547186860a": {
@@ -461,7 +457,6 @@
         "cta2_link": "",
         "position": "center",
         "products": [
-
         ],
         "collection": "portfolio",
         "blog": "",
