@@ -1,4 +1,4 @@
-import { Button } from "_client/typography/button";
+import { Link } from "_client/link";
 import { Richtext } from "_client/typography/richtext";
 import clsx from "clsx";
 import { FC } from "react";
@@ -47,12 +47,14 @@ export const BlockHeading: FC<PartialBy<HeadingSection, "type" | "id">> = ({ set
           )}
         >
           {settings.cta1 && settings.cta1_link && (
-            <Button href={settings.cta1_link}>{settings.cta1}</Button>
+            <Link className="button" href={settings.cta1_link}>
+              {settings.cta1}
+            </Link>
           )}
           {settings.cta2 && settings.cta2_link && (
-            <Button href={settings.cta2_link} secondary>
+            <Link className="button-secondary" href={settings.cta2_link}>
               {settings.cta2}
-            </Button>
+            </Link>
           )}
         </footer>
       </section>

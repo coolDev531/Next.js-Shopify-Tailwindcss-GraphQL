@@ -10,21 +10,25 @@
     font-family: "Basier Circle";
     font-weight: 400;
     src: url('/fonts/BasierCircle-Regular.woff2') format('woff2'), url('/fonts/BasierCircle-Regular.woff') format('woff');
+    font-display: swap
   }
   @font-face {
     font-family: "Basier Circle";
     font-weight: 500;
     src: url('/fonts/BasierCircle-Medium.woff2') format('woff2'), url('/fonts/BasierCircle-Medium.woff') format('woff');
+    font-display: swap
   }
   @font-face {
     font-family: "Basier Circle";
     font-weight: 600;
     src: url('/fonts/BasierCircle-SemiBold.woff2') format('woff2'), url('/fonts/BasierCircle-SemiBold.woff') format('woff');
+    font-display: swap
   }
   @font-face {
     font-family: "Basier Circle";
     font-weight: 700;
     src: url('/fonts/BasierCircle-Bold.woff2') format('woff2'), url('/fonts/BasierCircle-Bold.woff') format('woff');
+    font-display: swap
   }
 
   @font-face {
@@ -32,24 +36,28 @@
     font-weight: 400;
     font-style: italic;
     src: url('/fonts/BasierCircle-Italic.woff2') format('woff2'), url('/fonts/BasierCircle-Italic.woff') format('woff');
+    font-display: swap
   }
   @font-face {
     font-family: "Basier Circle";
     font-weight: 500;
     font-style: italic;
     src: url('/fonts/BasierCircle-MediumItalic.woff2') format('woff2'), url('/fonts/BasierCircle-MediumItalic.woff') format('woff');
+    font-display: swap
   }
   @font-face {
     font-family: "Basier Circle";
     font-weight: 600;
     font-style: italic;
     src: url('/fonts/BasierCircle-SemiBoldItalic.woff2') format('woff2'), url('/fonts/BasierCircle-SemiBoldItalic.woff') format('woff');
+    font-display: swap
   }
   @font-face {
     font-family: "Basier Circle";
     font-weight: 700;
     font-style: italic;
     src: url('/fonts/BasierCircle-BoldItalic.woff2') format('woff2'), url('/fonts/BasierCircle-BoldItalic.woff') format('woff');
+    font-display: swap
   }
 
 /*  :is(p,li):not(:is(.paragraph-sm,.paragraph-base,.paragraph-lg) > :is(p,li)) {

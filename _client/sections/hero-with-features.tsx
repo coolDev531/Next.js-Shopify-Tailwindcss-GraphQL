@@ -2,7 +2,7 @@ import { ReactIcon, ReactIconProps } from "_client/dynamic-react-icon";
 import { renderIcon } from "_client/icons";
 import { Image } from "_client/image";
 import { Wrapper } from "_client/layout/wrapper";
-import { Button } from "_client/typography/button";
+import { Link } from "_client/link";
 import { Richtext } from "_client/typography/richtext";
 
 import { FC } from "react";
@@ -42,20 +42,20 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
             </main>
             <footer className="mt-8 flex gap-4">
               {settings.cta1 && settings.cta1_link
-                ? <Button href={settings.cta1_link}>
+                ? <Link className="button" href={settings.cta1_link}>
                     {settings.cta1}
                     <span aria-hidden="true" className="ml-2 inline-flex">
                       →
                     </span>
-                  </Button>
+                  </Link>
                 : null}
               {settings.cta2 && settings.cta2_link
-                ? <Button href={settings.cta2_link} secondary>
+                ? <Link href={settings.cta2_link} className="button-secondary">
                     {settings.cta2}
                     <span aria-hidden="true" className="ml-2 inline-flex">
                       →
                     </span>
-                  </Button>
+                  </Link>
                 : null}
             </footer>
           </section>

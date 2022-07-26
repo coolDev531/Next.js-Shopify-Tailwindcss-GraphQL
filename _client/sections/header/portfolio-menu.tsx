@@ -17,24 +17,22 @@ export const PortfolioMenu: FC<
               href={props[`link_${key}`]}
               className="group relative h-[257px] w-[257px] overflow-hidden rounded-lg"
             >
-              <>
-                <Image
-                  preload
-                  width={`${props[`image_${key}`].width}`}
-                  height={`${props[`image_${key}`].height}`}
-                  maxWidth={257}
-                  priority
-                  src={`${props[`image_${key}`].src}`}
-                  alt="placeholder"
-                  className="aspect-1 h-full w-full object-cover group-hover:opacity-75"
-                />
-                <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3 dark:bg-gray-900/80">
-                  <h3 className="mb-0.5 text-sm font-medium text-gray-900 dark:text-gray-200">
-                    {props[`title_${key}`]}
-                  </h3>
-                  <p className="text-xs text-gray-700 dark:text-gray-400">See more</p>
-                </div>
-              </>
+              <Image
+                preload
+                width={`${props[`image_${key}`].width}`}
+                height={`${props[`image_${key}`].height}`}
+                maxWidth={257}
+                priority
+                src={`${props[`image_${key}`].src}`}
+                alt="placeholder"
+                className="aspect-1 h-full w-full object-cover group-hover:opacity-75"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3 dark:bg-gray-900/80">
+                <h3 className="mb-0.5 text-sm font-medium text-gray-900 dark:text-gray-200">
+                  {props[`title_${key}`]}
+                </h3>
+                <p className="text-xs text-gray-700 dark:text-gray-400">See more</p>
+              </div>
             </Link>
           );
         }

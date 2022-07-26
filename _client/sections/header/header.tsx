@@ -68,7 +68,11 @@ export const Header: FC<HeaderSection> = ({ id, type, settings, blocks }) => {
 
 export const Logo = () => (
   <div className="z-50 flex items-center pl-2 pt-1 pb-2">
-    <Link href="/" className="flex h-full items-center [&_svg]:h-full [&_svg]:w-full">
+    <Link
+      href="/"
+      className="flex h-full items-center [&_svg]:h-full [&_svg]:w-full"
+      aria-label="Lunalemon Logo"
+    >
       <LunalemonLogo />
     </Link>
   </div>
@@ -97,6 +101,7 @@ function NavSettingsDesktop() {
         referrerPolicy="no-referrer"
         target="_blank"
         rel="noreferrer"
+        aria-label="Github"
       >
         <ReactIcon name="FaGithub" />
       </Link>

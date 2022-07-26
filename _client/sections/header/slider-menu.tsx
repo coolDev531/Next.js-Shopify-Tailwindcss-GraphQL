@@ -79,6 +79,7 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
             tabIndex={-1}
             className="absolute top-[calc(310px)] left-4 hidden items-center justify-center rounded-full border border-gray-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-gray-50/90 dark:border-gray-700 dark:bg-dark-card sm:flex sm:flex"
             onClick={(e) => handleManualScroll(-1)}
+            aria-label="scroll left"
           >
             <HeroIcon name="ChevronLeftIcon" className="h-4 w-4" />
           </button>
@@ -88,6 +89,7 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
             tabIndex={-1}
             className="absolute top-[calc(310px)] right-4 hidden items-center justify-center rounded-full border border-gray-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-gray-50/90 dark:border-gray-700 dark:bg-dark-card sm:flex"
             onClick={(e) => handleManualScroll(1)}
+            aria-label="scroll right"
           >
             <HeroIcon name="ChevronRightIcon" className="h-4 w-4" />
           </button>

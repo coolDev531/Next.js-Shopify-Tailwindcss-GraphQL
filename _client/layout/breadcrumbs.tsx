@@ -15,8 +15,8 @@ export const Breadcrumbs = () => {
               <Link
                 href={href}
                 className={clsx(
-                  "text-sm text-gray-400 hfa:text-gray-700 hfa:underline dark:hfa:text-gray-200",
-                  last && "text-gray-700 dark:text-gray-200"
+                  "text-sm text-gray-400 hfa:text-gray-700 hfa:underline dark:hfa:text-gray-300",
+                  last && "text-gray-700 dark:text-gray-300"
                 )}
               >
                 {title}

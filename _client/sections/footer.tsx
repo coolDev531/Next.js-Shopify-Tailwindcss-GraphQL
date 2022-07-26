@@ -54,7 +54,11 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
             })}
           </nav>
           <header className="mt-8 flex flex-col items-center sm:items-start">
-            <Link href="/" className="flex h-14 items-center [&_svg]:h-full [&_svg]:max-w-full ">
+            <Link
+              href="/"
+              className="flex h-14 items-center [&_svg]:h-full [&_svg]:max-w-full"
+              aria-label="Lunalemon Logo"
+            >
               <LunalemonLogo />
             </Link>
           </header>
@@ -68,6 +72,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                     href={settings.facebook}
                     target="_blank"
                     className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
+                    aria-label="Facebook"
                   >
                     <ReactIcon name="FaFacebook" />
                   </Link>
@@ -77,6 +82,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                     href={settings.github}
                     target="_blank"
                     className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
+                    aria-label="Github"
                   >
                     <ReactIcon name="FaGithub" />
                   </Link>
@@ -86,6 +92,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                     href={settings.google}
                     target="_blank"
                     className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
+                    aria-label="Google"
                   >
                     <ReactIcon name="FaGoogle" />
                   </Link>
@@ -95,6 +102,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                     href={settings.instagram}
                     target="_blank"
                     className="px-4 py-1 text-xl text-gray-500 transition-all hfa:text-accent dark:text-gray-400"
+                    aria-label="Instagram"
                   >
                     <ReactIcon name="FaInstagram" />
                   </Link>

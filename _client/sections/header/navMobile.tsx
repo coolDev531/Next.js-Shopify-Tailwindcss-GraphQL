@@ -58,6 +58,7 @@ export const NavMobile: FC<{
                   <button
                     className="absolute right-3 top-3 rounded p-1 sm:right-5"
                     onClick={() => close()}
+                    aria-label="close panel"
                   >
                     <HeroIcon name="XIcon" className="h-6 w-6" />
                   </button>
