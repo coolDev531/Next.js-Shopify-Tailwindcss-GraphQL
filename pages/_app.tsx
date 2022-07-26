@@ -1,11 +1,12 @@
 import { httpBatchLink } from "@trpc/client/links/httpBatchLink";
 import { withTRPC } from "@trpc/next";
+import { ThemeLayout } from "_client/layout/layout";
 
 import { ContextProviders } from "_client/stores/_context-providers";
 import { LoadInitialData } from "_client/stores/_load-initial-data";
+import { ShopifyDataProvider } from "_client/stores/shopify-data-store";
 import { AppRouter } from "_server/settings/api-routes";
 import { DefaultSeo } from "next-seo";
-import { ThemeProvider } from "next-themes";
 import { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { FC } from "react";
@@ -49,25 +50,25 @@ export const SEO = {
 
 const App: FC<AppProps> = ({ pageProps, Component }) => {
   const router = useRouter();
+  console.log("render");
 
   return (
-    <>
-      {/*<ContextProviders>
+    <ShopifyDataProvider init={{ sections: pageProps?.sections, global: pageProps?.global }}>
+      <ContextProviders>
         <LoadInitialData>
-          <ThemeProvider attribute="class">
-            <DefaultSeo
-              canonical={`${SEO.url}${router.asPath}`}
-              twitter={SEO.twitter}
-              title={SEO.title}
-              description={SEO.description}
-              openGraph={SEO.openGraph}
-            />*/}
-      {/*<Header />*/}
-      <Component {...pageProps} />
-      {/*</ThemeProvider>
+          <DefaultSeo
+            canonical={`${SEO.url}${router.asPath}`}
+            twitter={SEO.twitter}
+            title={SEO.title}
+            description={SEO.description}
+            openGraph={SEO.openGraph}
+          />
+          <ThemeLayout sections={pageProps?.sections} global={pageProps?.global} />
+
+          <Component {...pageProps} />
         </LoadInitialData>
-      </ContextProviders>*/}
-    </>
+      </ContextProviders>
+    </ShopifyDataProvider>
   );
 };
 

@@ -1,16 +1,10 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
-import { Layout } from "_client/layout/layout";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
 import * as fs from "fs";
-import { InferGetStaticPropsType } from "next";
-import { FC } from "react";
 
 type IndexProps = {};
 
-export const _404: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) => {
-  // console.log(props);
-  return <Layout sections={props.sections} global={props.global} />;
-};
+export const _404 = () => <></>;
 
 export default _404;
 

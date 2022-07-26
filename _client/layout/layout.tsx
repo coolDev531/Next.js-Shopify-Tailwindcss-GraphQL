@@ -13,7 +13,7 @@ import { GlobalSettings } from ".shopify-cms/types/shopify";
 
 type LayoutProps = { global: GlobalSettings; sections: Sections[] };
 
-const ThemeLayout = (props) => {
+export const ThemeLayout = (props) => {
   const router = useRouter();
   const { theme } = useTheme();
   const [{ global, sections }, setShopifyData] = useShopifyData();

@@ -1,18 +1,9 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
-import { Layout } from "_client/layout/layout";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
 import { getAllArticlesByBlogId } from "_server/shopify/get-all-articles-by-blog-id";
-import { GetStaticPaths, InferGetStaticPropsType } from "next";
+import { GetStaticPaths } from "next";
 
-import { useRouter } from "next/router";
-import { FC } from "react";
-
-export const Article: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) => {
-  const router = useRouter();
-  const { article } = router.query;
-
-  return <Layout sections={props.sections} global={props.global} />;
-};
+export const Article = () => <></>;
 
 export default Article;
 

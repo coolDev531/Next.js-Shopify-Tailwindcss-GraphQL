@@ -1,14 +1,9 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
-import { Layout } from "_client/layout/layout";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
-import { InferGetStaticPropsType } from "next";
-import { FC } from "react";
 
 type IndexProps = {};
 
-export const Index: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) => {
-  return <Layout sections={props.sections} global={props.global} />;
-};
+export const Index = () => <></>;
 
 export default Index;
 

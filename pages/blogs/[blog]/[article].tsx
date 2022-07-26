@@ -1,14 +1,9 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
-import { Layout } from "_client/layout/layout";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
 import { getAllArticles } from "_server/shopify/get-all-articles";
-import { GetStaticPaths, InferGetStaticPropsType } from "next";
+import { GetStaticPaths } from "next";
 
-import { FC } from "react";
-
-export const Article: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) => {
-  return <Layout sections={props.sections} global={props.global} />;
-};
+export const Article = () => <></>;
 
 export default Article;
 

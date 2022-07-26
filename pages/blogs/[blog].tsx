@@ -1,13 +1,9 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
-import { Layout } from "_client/layout/layout";
 import { apiRoutes, transformer } from "_server/settings/api-routes";
 import { getAllBlogs } from "_server/shopify/get-all-blogs";
-import { GetStaticPaths, InferGetStaticPropsType } from "next";
-import { FC } from "react";
+import { GetStaticPaths } from "next";
 
-export const Blog: FC<InferGetStaticPropsType<typeof getStaticProps>> = (props) => {
-  return <Layout sections={props.sections} global={props.global} />;
-};
+export const Blog = () => <></>;
 
 export default Blog;
 
