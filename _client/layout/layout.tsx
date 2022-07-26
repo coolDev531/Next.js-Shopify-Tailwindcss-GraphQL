@@ -118,27 +118,27 @@ export const ThemeLayout = (props) => {
 
         <ThemeProvider attribute="class">
           <NextSeo
-            title={`Lunalemon - Web Development | ${global.title} ${
+            title={`Lunalemon - Web Development | ${global?.title} ${
               global?.product?.type ? `| ${capitalize(global?.product?.type)}` : ""
             }`}
-            description={global.description}
+            description={global?.description}
             openGraph={{
               ...SEO.openGraph,
               type: "website",
               locale: "en_US",
               url: `${SEO.url}${router.asPath}`,
-              site_name: `Lunalemon - Web Development | ${global.title} ${
+              site_name: `Lunalemon - Web Development | ${global?.title} ${
                 global?.product?.type ? `| ${capitalize(global?.product?.type)}` : ""
               }`,
-              images: global.product?.featured_media
+              images: global?.product?.featured_media
                 ? [
                     {
-                      url: global.product?.featured_media?.src,
-                      alt: `Lunalemon - Web Development | ${global.title} ${
+                      url: global?.product?.featured_media?.src,
+                      alt: `Lunalemon - Web Development | ${global?.title} ${
                         global?.product?.type ? `| ${capitalize(global?.product?.type)}` : ""
                       }`,
-                      width: global.product?.featured_media?.width,
-                      height: global.product?.featured_media?.height,
+                      width: global?.product?.featured_media?.width,
+                      height: global?.product?.featured_media?.height,
                     },
                     ...SEO.openGraph.images,
                   ]

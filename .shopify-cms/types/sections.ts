@@ -539,12 +539,6 @@ export type ImageTextSection = {
     fit_height: boolean;
     /** Input type: radio */
     position: "left" | "right";
-    /** Input type: radio */
-    spacing: "none" | "sm" | "md" | "lg" | "custom";
-    /** Input type: range */
-    spacing_bottom: number;
-    /** Input type: range */
-    spacing_top: number;
     /** Input type: image_picker */
     image?: _Image_liquid;
     /** Input type: richtext */
