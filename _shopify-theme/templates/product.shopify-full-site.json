@@ -510,32 +510,6 @@
         "animation_duration": 20
       }
     },
-    "1654765182e225ecd7": {
-      "type": "info-cards",
-      "disabled": true,
-      "settings": {
-        "pre_title": "Migrations",
-        "title": "No matter what platform you come from,",
-        "content_list": [
-          "takealot",
-          "copy-of-shopify",
-          "vend-pos-1"
-        ]
-      }
-    },
-    "1654765182e225ecd72": {
-      "type": "info-cards",
-      "disabled": true,
-      "settings": {
-        "pre_title": "Integrations",
-        "title": "or what back-end you want to use.",
-        "content_list": [
-          "copy-of-shopify",
-          "takealot",
-          "shopify"
-        ]
-      }
-    },
     "165476560159b5ef3e": {
       "type": "tabs-faq",
       "disabled": true,
@@ -714,6 +688,228 @@
         "submit_paragraph": "<p>You can also email us directly at <a href=\"mailto:info@tellmann.co.za\">info@tellmann.co.za<\/a><\/p>",
         "success_paragraph": ""
       }
+    },
+    "1658740480bb450054": {
+      "type": "pricing",
+      "blocks": {
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab": {
+          "type": "package",
+          "settings": {
+            "title": "Basic",
+            "price": "From R 18 500, -",
+            "subtitle": "For personal or small start-up ecommerce sites with a simple responsive design - based on a standard Shopify theme.",
+            "cta1": "Book now",
+            "cta1_link": "",
+            "cta2": "Learn more",
+            "cta2_link": "",
+            "feature_1": "Basic Product Setup (5)",
+            "feature_2": "Basic Collection Setup (5)",
+            "feature_3": "Basic Navigation",
+            "feature_4": "Basic Pages Setup (homepage \/ contact \/ policies pages)",
+            "feature_5": "Settings setup",
+            "feature_6": "Shipping & Payments integration",
+            "feature_7": "Project Management throughout",
+            "feature_8": "",
+            "feature_9": "",
+            "feature_10": "",
+            "shadow": false,
+            "primary": false,
+            "color_accent": "#19222e",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        },
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab2": {
+          "type": "package",
+          "settings": {
+            "title": "Advanced",
+            "price": "From R 39 500, -",
+            "subtitle": "For personal or small start-up ecommerce sites with a simple responsive design - based on a standard Shopify theme.",
+            "cta1": "Book now",
+            "cta1_link": "",
+            "cta2": "Learn More",
+            "cta2_link": "",
+            "feature_1": "Basic Product Setup (5)",
+            "feature_2": "Basic Collection Setup (5)",
+            "feature_3": "Basic Navigation",
+            "feature_4": "Basic Pages Setup (homepage \/ contact \/ policies pages)",
+            "feature_5": "Settings setup",
+            "feature_6": "Shipping & Payments integration",
+            "feature_7": "Project Management throughout",
+            "feature_8": "",
+            "feature_9": "",
+            "feature_10": "",
+            "shadow": true,
+            "primary": true,
+            "color_accent": "#22c55e",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        },
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab3": {
+          "type": "package",
+          "settings": {
+            "title": "Pro",
+            "price": "From R 79 500, -",
+            "subtitle": "For personal or small start-up ecommerce sites with a simple responsive design - based on a standard Shopify theme.",
+            "cta1": "Book now",
+            "cta1_link": "",
+            "cta2": "Learn more",
+            "cta2_link": "",
+            "feature_1": "Basic Product Setup (5)",
+            "feature_2": "Basic Collection Setup (5)",
+            "feature_3": "Basic Navigation",
+            "feature_4": "Basic Pages Setup (homepage \/ contact \/ policies pages)",
+            "feature_5": "Settings setup",
+            "feature_6": "Shipping & Payments integration",
+            "feature_7": "Project Management throughout",
+            "feature_8": "",
+            "feature_9": "",
+            "feature_10": "",
+            "shadow": true,
+            "primary": false,
+            "color_accent": "",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        }
+      },
+      "block_order": [
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab",
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab2",
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab3"
+      ],
+      "settings": {
+        "pre_title": "Full site packages",
+        "title": "Find a plan to power your projects.",
+        "paragraph": "<p>Get the best ecommerce store to suite your needs.<\/p>"
+      }
+    },
+    "165875619337b05d8f": {
+      "type": "pricing",
+      "blocks": {
+        "7ab0a180-75c3-4a9e-b2f1-b8e0d5e47ead": {
+          "type": "package",
+          "settings": {
+            "title": "Basic Plan",
+            "price": "R3 900 pm",
+            "subtitle": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "feature_1": "6 Hours allocated - requests",
+            "feature_2": "Monthly Data Backups",
+            "feature_3": "Tech support (Domains, hosting, emails)",
+            "feature_4": "Website Support",
+            "feature_5": "Website Content Changes",
+            "feature_6": "Product \/ Collection Uploads",
+            "feature_7": "Basic Image Editing",
+            "feature_8": "Basic Consultation",
+            "feature_9": "",
+            "feature_10": "",
+            "shadow": false,
+            "primary": false,
+            "color_accent": "",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        },
+        "0e6e5529-7305-4974-a4f0-d0e6f36b8d0e": {
+          "type": "package",
+          "settings": {
+            "title": "Advanced Plan",
+            "price": "R7 000 pm",
+            "subtitle": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "feature_1": "12 Hours allocated - requests + strategy",
+            "feature_2": "Monthly Data Backups",
+            "feature_3": "All of the above plus",
+            "feature_4": "App Installations \/ Maintenance",
+            "feature_5": "SEO optimizations",
+            "feature_6": "Graphic Design",
+            "feature_7": "Website health check",
+            "feature_8": "Training",
+            "feature_9": "Strategy Consultation",
+            "feature_10": "",
+            "shadow": false,
+            "primary": false,
+            "color_accent": "",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        },
+        "9af80f30-eeb9-4c55-b292-d4290904ef23": {
+          "type": "package",
+          "settings": {
+            "title": "Growth Plan",
+            "price": "R10 000 pm",
+            "subtitle": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "feature_1": "20 Hours Allocated - requests + strategy",
+            "feature_2": "Daily Data Backups",
+            "feature_3": "Performance Improvement",
+            "feature_4": "Custom Feature development",
+            "feature_5": "Data conversion scripts",
+            "feature_6": "Monthly Analysis Report",
+            "feature_7": "Conversion Strategy & Suggestions",
+            "feature_8": "",
+            "feature_9": "",
+            "feature_10": "",
+            "shadow": false,
+            "primary": false,
+            "color_accent": "",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        }
+      },
+      "block_order": [
+        "7ab0a180-75c3-4a9e-b2f1-b8e0d5e47ead",
+        "0e6e5529-7305-4974-a4f0-d0e6f36b8d0e",
+        "9af80f30-eeb9-4c55-b292-d4290904ef23"
+      ],
+      "settings": {
+        "pre_title": "Website Maintenance packages",
+        "title": "Keep your existing shopify website up to date",
+        "paragraph": ""
+      }
     }
   },
   "order": [
@@ -731,9 +927,9 @@
     "1654761954c36d4db0",
     "165719846348099467",
     "165476583906badf90",
-    "1654765182e225ecd7",
-    "1654765182e225ecd72",
     "165476560159b5ef3e",
-    "1657266690e55b9106"
+    "1657266690e55b9106",
+    "1658740480bb450054",
+    "165875619337b05d8f"
   ]
 }

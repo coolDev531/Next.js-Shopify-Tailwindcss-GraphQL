@@ -94,10 +94,7 @@
             "aspect_desktop": "4-3",
             "fit_height": false,
             "aspect_mobile": "4-3",
-            "position": "left",
-            "spacing": "none",
-            "spacing_top": 0,
-            "spacing_bottom": 0
+            "position": "left"
           }
         },
         "4729554a-b37a-42dd-b189-ab78ef716946": {
@@ -112,10 +109,7 @@
             "aspect_desktop": "4-3",
             "fit_height": false,
             "aspect_mobile": "4-3",
-            "position": "right",
-            "spacing": "none",
-            "spacing_top": 0,
-            "spacing_bottom": 0
+            "position": "right"
           }
         },
         "d3a58043-2727-4644-8472-c959186be648": {
@@ -130,10 +124,7 @@
             "aspect_desktop": "4-3",
             "fit_height": false,
             "aspect_mobile": "4-3",
-            "position": "left",
-            "spacing": "none",
-            "spacing_top": 0,
-            "spacing_bottom": 0
+            "position": "left"
           }
         },
         "aa2d5baa-f85f-478a-a8bb-5b6aac4202a4": {
@@ -149,10 +140,7 @@
             "aspect_desktop": "1-1",
             "fit_height": true,
             "aspect_mobile": "16-9",
-            "position": "right",
-            "spacing": "md",
-            "spacing_top": 0,
-            "spacing_bottom": 0
+            "position": "right"
           }
         }
       },

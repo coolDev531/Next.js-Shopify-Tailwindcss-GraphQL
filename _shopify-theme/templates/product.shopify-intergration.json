@@ -1,8 +1,54 @@
 {
   "sections": {
-    "main": {
-      "type": "template-product",
+    "1656935895e67bca71": {
+      "type": "hero-with-features",
+      "blocks": {
+        "689e6e02-64ee-4082-adc0-5adbbcb4c9d7": {
+          "type": "feature",
+          "settings": {
+            "title": "Reach out",
+            "paragraph": "Have a question? or have a service you need. Choose an option that suites you or send us an enquiry. Our team is ready to get you started.",
+            "icon": "ui-1"
+          }
+        },
+        "8a2a41e9-564a-45c3-abac-f9443e19308f": {
+          "type": "feature",
+          "settings": {
+            "title": "Team Match",
+            "paragraph": "Based on your enquiry we will assign a dedicated project manager matched to assist you, they take the time to ensure your needs are taken care of.",
+            "icon": "ui-2"
+          }
+        },
+        "161fe8eb-8549-454a-8b98-b7ac8a2e64d1": {
+          "type": "feature",
+          "settings": {
+            "title": "Get started",
+            "paragraph": "You are in good hands. With your dedicated project manager, the sky is the limit, they will be there every step of the way to see that your project is complete.",
+            "icon": "ui-3"
+          }
+        }
+      },
+      "block_order": [
+        "689e6e02-64ee-4082-adc0-5adbbcb4c9d7",
+        "8a2a41e9-564a-45c3-abac-f9443e19308f",
+        "161fe8eb-8549-454a-8b98-b7ac8a2e64d1"
+      ],
       "settings": {
+        "pre_title": "Websites tailored to your needs",
+        "title": "We create Shopify Ecommerce solutions.",
+        "tech": [
+          "shopify",
+          "copy-of-node-js",
+          "tailwindcss"
+        ],
+        "paragraph": "<p>Wether you want to built a new ecommerce store, migrate from a different platform, or need to upgrade your current site. We are here to help you succeed.<\/p>",
+        "cta1": "Get started",
+        "cta1_link": "#",
+        "cta2": "Learn more",
+        "cta2_link": "#",
+        "image_1": "shopify:\/\/shop_images\/2.png",
+        "image_2": "shopify:\/\/shop_images\/1.png",
+        "image_3": "shopify:\/\/shop_images\/3.png"
       }
     },
     "16547615501aa86d63": {
@@ -121,6 +167,26 @@
       "settings": {
       }
     },
+    "165476583906badf90": {
+      "type": "logo-banner",
+      "settings": {
+        "title": "Brands we've worked with",
+        "products": [
+          "ford",
+          "kids-living",
+          "lunatag",
+          "volkswagen",
+          "zoom-printing",
+          "bushscarf",
+          "broadway-jewellers",
+          "moritz-tellmann"
+        ],
+        "collection": "",
+        "height": 40,
+        "animate": true,
+        "animation_duration": 20
+      }
+    },
     "1654424131fb27794e": {
       "type": "tabs-process-step",
       "blocks": {
@@ -180,11 +246,7 @@
       "settings": {
         "pre_title": "Developer experience to love",
         "title": "Develop with an open, thought‑out API",
-        "paragraph": "<p>One of our main goals is to provide the best possible developer experience. Radix Primitives provides a fully-typed API. All components share a similar API, creating a consistent and predictable experience.<\/p>",
-        "cta1": "",
-        "cta1_link": "",
-        "cta2": "",
-        "cta2_link": ""
+        "paragraph": "<p>One of our main goals is to provide the best possible developer experience. Radix Primitives provides a fully-typed API. All components share a similar API, creating a consistent and predictable experience.<\/p>"
       }
     },
     "1654762013d2c9eed0": {
@@ -309,242 +371,6 @@
       "settings": {
       }
     },
-    "1654762016e3f34059": {
-      "type": "image-carousel",
-      "blocks": {
-        "a13e9dbc-0037-417b-b71b-028c4dbca922": {
-          "type": "heading",
-          "settings": {
-            "pre_title": "Explore",
-            "title": "Sites we’ve built for our clients",
-            "paragraph": "",
-            "cta1": "",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "position": "center"
-          }
-        },
-        "ae364fec-09a3-4835-8e51-4f2985e16021": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
-            "link": ""
-          }
-        },
-        "ab0bed14-ba1a-45c3-8577-773c343f0605": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Shawl-6_1024x1024_2x_7e3ec59a-ce06-4c22-8791-d3beb1c5f0ea.jpg",
-            "link": ""
-          }
-        },
-        "55014a00-f9c8-4b34-9486-706c0e1905a4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Capture.jpg",
-            "link": ""
-          }
-        },
-        "3ed18e50-940f-4887-ae50-50fd2a4e4095": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2021-September-Draft-Posts-_-Ads---WQ.jpg",
-            "link": ""
-          }
-        },
-        "c7fa4016-efc7-4e92-9dff-6a3cc73efa30": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2021-September-Draft-Posts-_-Ads---WQ.jpg",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "a13e9dbc-0037-417b-b71b-028c4dbca922",
-        "ae364fec-09a3-4835-8e51-4f2985e16021",
-        "ab0bed14-ba1a-45c3-8577-773c343f0605",
-        "55014a00-f9c8-4b34-9486-706c0e1905a4",
-        "3ed18e50-940f-4887-ae50-50fd2a4e4095",
-        "c7fa4016-efc7-4e92-9dff-6a3cc73efa30"
-      ],
-      "settings": {
-      }
-    },
-    "165476583906badf90": {
-      "type": "logo-banner",
-      "blocks": {
-        "351b615c-bd01-44ce-99fc-9e04af076f67": {
-          "type": "image",
-          "settings": {
-            "url": ""
-          }
-        },
-        "491e8a39-3583-43d4-9f0e-bc644176812a": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/yarn-1_530x530_crop_top_2x_b0c839fc-8bfe-47d7-b418-1c69e5cf030b.jpg",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "351b615c-bd01-44ce-99fc-9e04af076f67",
-        "491e8a39-3583-43d4-9f0e-bc644176812a"
-      ],
-      "settings": {
-        "title": "Brands we've worked with",
-        "height": 40
-      }
-    },
-    "165476205467493fae": {
-      "type": "feature-carousel",
-      "blocks": {
-        "8ac6a320-e38a-4d40-98e7-7d52f972c073": {
-          "type": "heading",
-          "settings": {
-            "pre_title": "Customize",
-            "title": "We offer a large range ofunique customizations and add ons",
-            "paragraph": "",
-            "cta1": "asfasf",
-            "cta1_link": "",
-            "cta2": "",
-            "cta2_link": "",
-            "position": "left"
-          }
-        },
-        "708e3dce-e55f-480b-be3b-7918cb42e3ac": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ford.jpg",
-            "title": "asfasf",
-            "paragraph": "asffasfas",
-            "link": ""
-          }
-        },
-        "03ff3d79-c4fd-4996-8717-e6468e6ca841": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/person-cuts-into-plate-of-pasta.jpg",
-            "title": "asfafs",
-            "paragraph": "afafafa",
-            "link": ""
-          }
-        },
-        "4d148a52-e035-41e3-9b64-316efeca43d6": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
-            "title": "aaffa",
-            "paragraph": "saffasfasafs",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "8ac6a320-e38a-4d40-98e7-7d52f972c073",
-        "708e3dce-e55f-480b-be3b-7918cb42e3ac",
-        "03ff3d79-c4fd-4996-8717-e6468e6ca841",
-        "4d148a52-e035-41e3-9b64-316efeca43d6"
-      ],
-      "settings": {
-      }
-    },
-    "1654765182e225ecd7": {
-      "type": "info-cards",
-      "blocks": {
-        "a33aac81-b0ab-416d-8648-5d2aefa586c3": {
-          "type": "info-card",
-          "settings": {
-            "title": "WooCommerce",
-            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
-            "svg": ""
-          }
-        },
-        "1798219d-9f25-4d34-b26b-caafad9c98e9": {
-          "type": "info-card",
-          "settings": {
-            "title": "Magento",
-            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
-            "svg": ""
-          }
-        },
-        "91e4b380-57f0-44b8-adb4-78bc6c0d52a9": {
-          "type": "info-card",
-          "settings": {
-            "title": "PrestaShop",
-            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
-            "svg": ""
-          }
-        },
-        "16dd06a5-a6b3-4d77-b01a-6bec5a3d389f": {
-          "type": "info-card",
-          "settings": {
-            "title": "Other?",
-            "paragraph": "<p>We do also, this, this this and that!<\/p>",
-            "svg": ""
-          }
-        }
-      },
-      "block_order": [
-        "a33aac81-b0ab-416d-8648-5d2aefa586c3",
-        "1798219d-9f25-4d34-b26b-caafad9c98e9",
-        "91e4b380-57f0-44b8-adb4-78bc6c0d52a9",
-        "16dd06a5-a6b3-4d77-b01a-6bec5a3d389f"
-      ],
-      "settings": {
-        "pre_title": "Migrations",
-        "title": "No matter what platform you come from,"
-      }
-    },
-    "1654765182e225ecd72": {
-      "type": "info-cards",
-      "blocks": {
-        "a33aac81-b0ab-416d-8648-5d2aefa586c32": {
-          "type": "info-card",
-          "settings": {
-            "title": "Vend POS",
-            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
-            "svg": ""
-          }
-        },
-        "1798219d-9f25-4d34-b26b-caafad9c98e92": {
-          "type": "info-card",
-          "settings": {
-            "title": "Dearsystems",
-            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
-            "svg": ""
-          }
-        },
-        "91e4b380-57f0-44b8-adb4-78bc6c0d52a92": {
-          "type": "info-card",
-          "settings": {
-            "title": "Erply",
-            "paragraph": "<p>Some words to describe how this works better than a single line!<\/p>",
-            "svg": ""
-          }
-        },
-        "16dd06a5-a6b3-4d77-b01a-6bec5a3d389f2": {
-          "type": "info-card",
-          "settings": {
-            "title": "Other?",
-            "paragraph": "<p>We do also, this, this this and that!<\/p>",
-            "svg": ""
-          }
-        }
-      },
-      "block_order": [
-        "a33aac81-b0ab-416d-8648-5d2aefa586c32",
-        "1798219d-9f25-4d34-b26b-caafad9c98e92",
-        "91e4b380-57f0-44b8-adb4-78bc6c0d52a92",
-        "16dd06a5-a6b3-4d77-b01a-6bec5a3d389f2"
-      ],
-      "settings": {
-        "pre_title": "Integrations",
-        "title": "or what back-end you want to use."
-      }
-    },
     "165476560159b5ef3e": {
       "type": "tabs-faq",
       "blocks": {
@@ -570,10 +396,232 @@
       "settings": {
         "title": "Frequentlyasked questions"
       }
+    },
+    "1658740480bb450054": {
+      "type": "pricing",
+      "blocks": {
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab": {
+          "type": "package",
+          "settings": {
+            "title": "Basic",
+            "price": "From R 18 500, -",
+            "subtitle": "For personal or small start-up ecommerce sites with a simple responsive design - based on a standard Shopify theme.",
+            "cta1": "Book now",
+            "cta1_link": "",
+            "cta2": "Learn more",
+            "cta2_link": "",
+            "feature_1": "Basic Product Setup (5)",
+            "feature_2": "Basic Collection Setup (5)",
+            "feature_3": "Basic Navigation",
+            "feature_4": "Basic Pages Setup (homepage \/ contact \/ policies pages)",
+            "feature_5": "Settings setup",
+            "feature_6": "Shipping & Payments integration",
+            "feature_7": "Project Management throughout",
+            "feature_8": "",
+            "feature_9": "",
+            "feature_10": "",
+            "shadow": false,
+            "primary": false,
+            "color_accent": "#19222e",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        },
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab2": {
+          "type": "package",
+          "settings": {
+            "title": "Advanced",
+            "price": "From R 39 500, -",
+            "subtitle": "For personal or small start-up ecommerce sites with a simple responsive design - based on a standard Shopify theme.",
+            "cta1": "Book now",
+            "cta1_link": "",
+            "cta2": "Learn More",
+            "cta2_link": "",
+            "feature_1": "Basic Product Setup (5)",
+            "feature_2": "Basic Collection Setup (5)",
+            "feature_3": "Basic Navigation",
+            "feature_4": "Basic Pages Setup (homepage \/ contact \/ policies pages)",
+            "feature_5": "Settings setup",
+            "feature_6": "Shipping & Payments integration",
+            "feature_7": "Project Management throughout",
+            "feature_8": "",
+            "feature_9": "",
+            "feature_10": "",
+            "shadow": true,
+            "primary": true,
+            "color_accent": "#22c55e",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        },
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab3": {
+          "type": "package",
+          "settings": {
+            "title": "Pro",
+            "price": "From R 79 500, -",
+            "subtitle": "For personal or small start-up ecommerce sites with a simple responsive design - based on a standard Shopify theme.",
+            "cta1": "Book now",
+            "cta1_link": "",
+            "cta2": "Learn more",
+            "cta2_link": "",
+            "feature_1": "Basic Product Setup (5)",
+            "feature_2": "Basic Collection Setup (5)",
+            "feature_3": "Basic Navigation",
+            "feature_4": "Basic Pages Setup (homepage \/ contact \/ policies pages)",
+            "feature_5": "Settings setup",
+            "feature_6": "Shipping & Payments integration",
+            "feature_7": "Project Management throughout",
+            "feature_8": "",
+            "feature_9": "",
+            "feature_10": "",
+            "shadow": true,
+            "primary": false,
+            "color_accent": "",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        }
+      },
+      "block_order": [
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab",
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab2",
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab3"
+      ],
+      "settings": {
+        "pre_title": "Full site packages",
+        "title": "Find a plan to power your projects.",
+        "paragraph": "<p>Get the best ecommerce store to suite your needs.<\/p>"
+      }
+    },
+    "165875619337b05d8f": {
+      "type": "pricing",
+      "blocks": {
+        "7ab0a180-75c3-4a9e-b2f1-b8e0d5e47ead": {
+          "type": "package",
+          "settings": {
+            "title": "Basic Plan",
+            "price": "R3 900 pm",
+            "subtitle": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "feature_1": "6 Hours allocated - requests",
+            "feature_2": "Monthly Data Backups",
+            "feature_3": "Tech support (Domains, hosting, emails)",
+            "feature_4": "Website Support",
+            "feature_5": "Website Content Changes",
+            "feature_6": "Product \/ Collection Uploads",
+            "feature_7": "Basic Image Editing",
+            "feature_8": "Basic Consultation",
+            "feature_9": "",
+            "feature_10": "",
+            "shadow": false,
+            "primary": false,
+            "color_accent": "",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        },
+        "0e6e5529-7305-4974-a4f0-d0e6f36b8d0e": {
+          "type": "package",
+          "settings": {
+            "title": "Advanced Plan",
+            "price": "R7 000 pm",
+            "subtitle": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "feature_1": "12 Hours allocated - requests + strategy",
+            "feature_2": "Monthly Data Backups",
+            "feature_3": "All of the above plus",
+            "feature_4": "App Installations \/ Maintenance",
+            "feature_5": "SEO optimizations",
+            "feature_6": "Graphic Design",
+            "feature_7": "Website health check",
+            "feature_8": "Training",
+            "feature_9": "Strategy Consultation",
+            "feature_10": "",
+            "shadow": false,
+            "primary": false,
+            "color_accent": "",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        },
+        "9af80f30-eeb9-4c55-b292-d4290904ef23": {
+          "type": "package",
+          "settings": {
+            "title": "Growth Plan",
+            "price": "R10 000 pm",
+            "subtitle": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "feature_1": "20 Hours Allocated - requests + strategy",
+            "feature_2": "Daily Data Backups",
+            "feature_3": "Performance Improvement",
+            "feature_4": "Custom Feature development",
+            "feature_5": "Data conversion scripts",
+            "feature_6": "Monthly Analysis Report",
+            "feature_7": "Conversion Strategy & Suggestions",
+            "feature_8": "",
+            "feature_9": "",
+            "feature_10": "",
+            "shadow": false,
+            "primary": false,
+            "color_accent": "",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        }
+      },
+      "block_order": [
+        "7ab0a180-75c3-4a9e-b2f1-b8e0d5e47ead",
+        "0e6e5529-7305-4974-a4f0-d0e6f36b8d0e",
+        "9af80f30-eeb9-4c55-b292-d4290904ef23"
+      ],
+      "settings": {
+        "pre_title": "Website Maintenance packages",
+        "title": "Keep your existing shopify website up to date",
+        "paragraph": ""
+      }
     }
   },
   "order": [
-    "main",
+    "1656935895e67bca71",
     "16547615501aa86d63",
     "16547615536da214ca",
     "165476159216c4ff5c",
@@ -581,11 +629,9 @@
     "1654424131fb27794e",
     "1654762013d2c9eed0",
     "1654761954c36d4db0",
-    "1654762016e3f34059",
     "165476583906badf90",
-    "165476205467493fae",
-    "1654765182e225ecd7",
-    "1654765182e225ecd72",
-    "165476560159b5ef3e"
+    "165476560159b5ef3e",
+    "1658740480bb450054",
+    "165875619337b05d8f"
   ]
 }
