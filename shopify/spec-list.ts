@@ -1,3 +1,4 @@
+import { spacing } from "shopify/utils/spacing";
 import { header } from "./header";
 import { heading } from "./heading";
 import { icons } from "./utils/icons";
@@ -38,6 +39,7 @@ export const specList: ShopifySection = {
         },
       ],
     },
+    ...spacing,
   ],
   blocks: [
     {

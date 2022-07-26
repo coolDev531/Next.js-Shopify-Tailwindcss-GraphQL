@@ -1,4 +1,5 @@
 import { accentColors } from "shopify/utils/accentColors";
+import { spacing } from "shopify/utils/spacing";
 import { PricingSection } from "../.shopify-cms/types/sections";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
 
@@ -24,6 +25,7 @@ export const pricing: ShopifySection<PricingSection> = {
       id: "paragraph",
       label: "Paragraph",
     },
+    ...spacing,
   ],
   blocks: [
     {

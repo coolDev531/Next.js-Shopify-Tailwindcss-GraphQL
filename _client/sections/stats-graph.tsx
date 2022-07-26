@@ -2,7 +2,12 @@ import { Wrapper } from "_client/layout/wrapper";
 import { FC } from "react";
 import { StatsGraphSection } from ".shopify-cms/types/sections";
 
-export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGraphSection) => (
+export const StatsGraph: FC<StatsGraphSection> = ({
+  id,
+  blocks,
+  settings,
+  type,
+}: StatsGraphSection) => (
   <>
     <div className="relative overflow-x-clip">
       <div className="absolute left-1/2 bottom-0 -z-10 -ml-[50vw] h-full max-h-full w-screen">
@@ -69,7 +74,13 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
           <div className="absolute -left-[200px] -right-[200px] -bottom-[200px] -z-10 h-[700px] -rotate-12 bg-gradient-stats" />
         </div>
       </div>
-      <Wrapper paddingY="none" maxWidth="xl" className="overflow-x-clip overflow-y-visible">
+      <Wrapper
+        maxWidth="xl"
+        className="overflow-x-clip overflow-y-visible"
+        spacing={settings.spacing}
+        spacingTop={settings.spacing_top}
+        spacingBottom={settings.spacing_bottom}
+      >
         <div className="divide- flex flex-col pb-8 pt-16 md:-ml-8 md:flex-row md:items-center md:divide-x">
           {blocks.map((block) => {
             switch (block.type) {

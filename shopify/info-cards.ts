@@ -1,3 +1,4 @@
+import { spacing } from "shopify/utils/spacing";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
 
 export const infoCards: ShopifySection = {
@@ -22,6 +23,7 @@ export const infoCards: ShopifySection = {
       id: "content_list",
       label: "Tech Items",
     },
+    ...spacing,
   ],
   blocks: [
     {

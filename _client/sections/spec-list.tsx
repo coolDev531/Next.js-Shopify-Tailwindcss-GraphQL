@@ -10,7 +10,9 @@ export const SpecList: FC<SpecListSection> = ({ id, blocks, type, settings }) =>
   return (
     <Wrapper
       maxWidth="base"
-      paddingY="base"
+      spacing={settings.spacing}
+      spacingTop={settings.spacing_top}
+      spacingBottom={settings.spacing_bottom}
       background={settings.color_bg}
       bgBlur={settings.blur_bg}
       className={clsx(

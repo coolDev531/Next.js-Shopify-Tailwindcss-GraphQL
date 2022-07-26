@@ -1,3 +1,4 @@
+import { spacing } from "shopify/utils/spacing";
 import { TabsFaqSection } from "../.shopify-cms/types/sections";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
 
@@ -9,6 +10,7 @@ export const tabsFaq: ShopifySection<TabsFaqSection> = {
       id: "title",
       label: "Title",
     },
+    ...spacing,
   ],
   blocks: [
     {

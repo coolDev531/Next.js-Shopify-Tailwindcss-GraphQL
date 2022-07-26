@@ -1,6 +1,6 @@
 import { Background } from "_client/sections/background";
 import { BlockBlockquote } from "_client/sections/block-blockquote";
-import { BlockHero } from "_client/sections/block-hero";
+import { Hero } from "_client/sections/hero";
 import { BlockImageText } from "_client/sections/block-image-text";
 import { Contact } from "_client/sections/contact/contact";
 import { FeatureCarousel } from "_client/sections/feature-carousel";
@@ -157,7 +157,7 @@ export const renderSection = (section: Sections) => {
     case "hero":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <BlockHero key={section.id} {...section} />
+          <Hero key={section.id} {...section} />
         </section>
       );
     case "image-text":

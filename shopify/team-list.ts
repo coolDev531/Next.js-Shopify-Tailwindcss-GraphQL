@@ -1,10 +1,11 @@
+import { spacing } from "shopify/utils/spacing";
 import { heading } from "./heading";
 import { TeamListSection } from "../.shopify-cms/types/sections";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
 
 export const teamList: ShopifySection<TeamListSection> = {
   name: "Team list",
-  settings: [],
+  settings: [...spacing],
   blocks: [
     {
       type: "heading",

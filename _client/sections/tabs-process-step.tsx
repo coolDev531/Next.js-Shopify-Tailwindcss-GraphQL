@@ -44,7 +44,9 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
   return (
     <Wrapper
       maxWidth="xl"
-      paddingY="base"
+      spacing={settings.spacing}
+      spacingTop={settings.spacing_top}
+      spacingBottom={settings.spacing_bottom}
       bgOpacity={0.6}
       bgClassName="bg-[url('/images/bg-gradient-light-180.jpg')] dark:bg-[url('/images/bg-gradient-templates.png')] bg-top bg-no-repeat"
       overflowHidden

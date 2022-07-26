@@ -33,47 +33,49 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
   }, [settings.animate, width]);
 
   return (
-    <Wrapper maxWidth="xl" paddingY="base" overflowHidden>
-      <div className="-mt-12 mb-16">
-        <section>
-          <header className="mb-4">
-            <h3 className="mb-1 font-semibold text-gray-700 dark:text-gray-300">
-              {settings.title}
-            </h3>
-          </header>
-          <main
-            ref={containerRef}
-            className="relative flex overflow-hidden sm:left-1/2 sm:-ml-[50vw] sm:w-screen sm:pl-[max(32px,calc((100vw-80rem)/2+32px))]"
-            onMouseEnter={() => {
-              setTooltip(true);
-            }}
-            onMouseLeave={(e) => {
-              setTooltip(false);
-              setTimeout(() => setTooltip(true), 50);
+    <Wrapper
+      maxWidth="xl"
+      overflowHidden
+      spacing={settings.spacing}
+      spacingTop={settings.spacing_top}
+      spacingBottom={settings.spacing_bottom}
+    >
+      <section>
+        <header className="mb-4">
+          <h3 className="mb-1 font-semibold text-gray-700 dark:text-gray-300">{settings.title}</h3>
+        </header>
+        <main
+          ref={containerRef}
+          className="relative flex overflow-hidden sm:left-1/2 sm:-ml-[50vw] sm:w-screen sm:pl-[max(32px,calc((100vw-80rem)/2+32px))]"
+          onMouseEnter={() => {
+            setTooltip(true);
+          }}
+          onMouseLeave={(e) => {
+            setTooltip(false);
+            setTimeout(() => setTooltip(true), 50);
+          }}
+        >
+          <div
+            ref={animationContainerRef}
+            className="scrollbar-none s cale-100 flex overflow-x-scroll whitespace-nowrap transition-all hfa:animation-pause md:animate-slide md:overflow-visible"
+            style={{
+              animationDuration: `${settings.animation_duration}s`,
+              animationPlayState: animate ? "" : "paused",
             }}
           >
-            <div
-              ref={animationContainerRef}
-              className="scrollbar-none s cale-100 flex overflow-x-scroll whitespace-nowrap transition-all hfa:animation-pause md:animate-slide md:overflow-visible"
-              style={{
-                animationDuration: `${settings.animation_duration}s`,
-                animationPlayState: animate ? "" : "paused",
-              }}
-            >
-              <LogoBannerSlider settings={settings} blocks={blocks} ref={bannerRef} />
-              {animate
-                ? <LogoBannerSlider
-                    settings={settings}
-                    blocks={blocks}
-                    className="ml-12 !hidden md:!grid"
-                  />
-                : null}
-            </div>
-            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-[max(16px,calc((100vw-80rem)/2+16px))] bg-gradient-to-r from-transparent to-white dark:to-dark-bg sm:w-[max(32px,calc((100vw-80rem)/2+32px))] sm:from-transparent sm:via-white sm:to-white dark:sm:via-dark-bg dark:sm:to-dark-bg"></div>
-            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-[max(16px,calc((100vw-80rem)/2+16px))] bg-gradient-to-l from-transparent dark:to-dark-bg sm:w-[max(32px,calc((100vw-80rem)/2+32px))] sm:from-transparent sm:via-white sm:to-white dark:sm:via-dark-bg dark:sm:to-dark-bg"></div>
-          </main>
-        </section>
-      </div>
+            <LogoBannerSlider settings={settings} blocks={blocks} ref={bannerRef} />
+            {animate
+              ? <LogoBannerSlider
+                  settings={settings}
+                  blocks={blocks}
+                  className="ml-12 !hidden md:!grid"
+                />
+              : null}
+          </div>
+          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-[max(16px,calc((100vw-80rem)/2+16px))] bg-gradient-to-r from-transparent to-white dark:to-dark-bg sm:w-[max(32px,calc((100vw-80rem)/2+32px))] sm:from-transparent sm:via-white sm:to-white dark:sm:via-dark-bg dark:sm:to-dark-bg"></div>
+          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-[max(16px,calc((100vw-80rem)/2+16px))] bg-gradient-to-l from-transparent dark:to-dark-bg sm:w-[max(32px,calc((100vw-80rem)/2+32px))] sm:from-transparent sm:via-white sm:to-white dark:sm:via-dark-bg dark:sm:to-dark-bg"></div>
+        </main>
+      </section>
     </Wrapper>
   );
 };

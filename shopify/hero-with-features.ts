@@ -1,3 +1,4 @@
+import { spacing } from "shopify/utils/spacing";
 import { icons } from "./utils/icons";
 import { HeroWithFeaturesSection } from "../.shopify-cms/types/sections";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
@@ -77,6 +78,7 @@ export const heroWithFeatures: ShopifySection<HeroWithFeaturesSection> = {
       id: "image_3",
       label: "Image 3",
     },
+    ...spacing,
   ],
   max_blocks: 4,
   blocks: [

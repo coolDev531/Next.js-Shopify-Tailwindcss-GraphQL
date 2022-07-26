@@ -2,21 +2,39 @@ import clsx from "clsx";
 import { Property } from "csstype";
 import { FC, PropsWithChildren } from "react";
 
-type SectionProps = {
-  maxWidth: "sm" | "base" | "xl" | "fullscreen";
-  paddingY: "none" | "base" | "xl";
-  background?: Property.Background<string | number>;
-  bgBlur?: boolean;
-  bgClassName?: React.ComponentProps<"div">["className"];
-  bgHeight?: Property.Height;
-  bgOpacity?: Property.Opacity;
-  className?: React.ComponentProps<"div">["className"];
-  overflowHidden?: boolean;
-};
+type SectionProps =
+  | {
+      maxWidth: "sm" | "base" | "xl" | "fullscreen";
+      spacing: "none" | "sm" | "md" | "base" | "lg" | "xl";
+      background?: Property.Background<string | number>;
+      bgBlur?: boolean;
+      bgClassName?: React.ComponentProps<"div">["className"];
+      bgHeight?: Property.Height;
+      bgOpacity?: Property.Opacity;
+      className?: React.ComponentProps<"div">["className"];
+      overflowHidden?: boolean;
+      spacingBottom?: number;
+      spacingTop?: number;
+    }
+  | {
+      maxWidth: "sm" | "base" | "xl" | "fullscreen";
+      spacing: "custom";
+      spacingBottom: number;
+      spacingTop: number;
+      background?: Property.Background<string | number>;
+      bgBlur?: boolean;
+      bgClassName?: React.ComponentProps<"div">["className"];
+      bgHeight?: Property.Height;
+      bgOpacity?: Property.Opacity;
+      className?: React.ComponentProps<"div">["className"];
+      overflowHidden?: boolean;
+    };
 
 export const Wrapper: FC<PropsWithChildren<SectionProps>> = ({
   maxWidth,
-  paddingY,
+  spacing,
+  spacingTop,
+  spacingBottom,
   background,
   bgHeight,
   bgBlur,
@@ -46,10 +64,22 @@ export const Wrapper: FC<PropsWithChildren<SectionProps>> = ({
     }
   };
 
-  const getPaddingClasses = (padding: SectionProps["paddingY"]) => {
-    switch (padding) {
+  const getPaddingClasses = (spacing: SectionProps["spacing"]) => {
+    switch (spacing) {
+      case "custom": {
+        return "";
+      }
+      case "sm": {
+        return "py-8";
+      }
       case "base": {
         return "py-16";
+      }
+      case "md": {
+        return "py-16";
+      }
+      case "lg": {
+        return "py-32";
       }
       case "xl": {
         return "py-32";
@@ -81,9 +111,17 @@ export const Wrapper: FC<PropsWithChildren<SectionProps>> = ({
               className={clsx(
                 "relative mx-auto",
                 getContainerClasses(maxWidth),
-                getPaddingClasses(paddingY),
+                getPaddingClasses(spacing),
                 className
               )}
+              style={
+                spacing === "custom"
+                  ? {
+                      paddingTop: `${spacingTop * 4}px`,
+                      paddingBottom: `${spacingBottom * 4}px`,
+                    }
+                  : undefined
+              }
             >
               {children}
             </div>
@@ -92,7 +130,7 @@ export const Wrapper: FC<PropsWithChildren<SectionProps>> = ({
             className={clsx(
               "relative mx-auto",
               getContainerClasses(maxWidth),
-              getPaddingClasses(paddingY),
+              getPaddingClasses(spacing),
               className
             )}
           >

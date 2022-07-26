@@ -7,7 +7,7 @@ import { FooterSection } from ".shopify-cms/types/sections";
 
 export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
   return (
-    <footer id={id} className="mt-24">
+    <footer id={id} className="">
       <section className="border-y border-gray-200 bg-gray-100 dark:border-gray-700 dark:bg-dark-card">
         <div className="mx-auto max-w-7xl py-16 px-4 sm:px-8">
           <nav className="auto-cols-min grid-flow-col-dense justify-between gap-8 md:grid">

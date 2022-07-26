@@ -10,7 +10,13 @@ export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, settin
   const { products, ...heading } = settings;
 
   return (
-    <Wrapper maxWidth="xl" paddingY="base" overflowHidden>
+    <Wrapper
+      maxWidth="xl"
+      overflowHidden
+      spacing={settings.spacing}
+      spacingTop={settings.spacing_top}
+      spacingBottom={settings.spacing_bottom}
+    >
       <BlockHeading settings={heading} />
       <div className="mt-4 flex grid-cols-2 flex-col gap-8 sm:grid">
         {products?.map((product) => {

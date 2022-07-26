@@ -1,3 +1,4 @@
+import { spacing } from "shopify/utils/spacing";
 import { FeatureCarouselSection } from "../.shopify-cms/types/sections";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
 import { heading } from "./heading";
@@ -11,6 +12,7 @@ export const featureCarousel: ShopifySection<FeatureCarouselSection> = {
       id: "features",
       label: "Feature Items",
     },
+    ...spacing,
   ],
   blocks: [
     {

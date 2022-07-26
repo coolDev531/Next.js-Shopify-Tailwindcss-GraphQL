@@ -9,7 +9,13 @@ import { FeatureListSection } from ".shopify-cms/types/sections";
 
 export const FeatureList: FC<FeatureListSection> = ({ blocks, settings }) => {
   return (
-    <Wrapper maxWidth="xl" paddingY="none" overflowHidden>
+    <Wrapper
+      maxWidth="xl"
+      overflowHidden
+      spacing={settings.spacing}
+      spacingTop={settings.spacing_top}
+      spacingBottom={settings.spacing_bottom}
+    >
       <BlockHeading settings={settings} />
       <div className="mt-16 flex justify-center">
         <div

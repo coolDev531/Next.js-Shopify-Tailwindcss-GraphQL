@@ -33,7 +33,9 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
   return (
     <Wrapper
       maxWidth="xl"
-      paddingY="base"
+      spacing={settings.spacing}
+      spacingTop={settings.spacing_top}
+      spacingBottom={settings.spacing_bottom}
       overflowHidden
       bgOpacity={0.6}
       bgHeight="calc(100% + 140px)"

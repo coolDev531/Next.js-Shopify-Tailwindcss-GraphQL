@@ -7,7 +7,13 @@ import { cleanSvgIds } from "utils/clean-svg-ids";
 
 export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) => {
   return (
-    <Wrapper maxWidth="xl" paddingY="base" overflowHidden>
+    <Wrapper
+      maxWidth="xl"
+      overflowHidden
+      spacing={settings.spacing}
+      spacingTop={settings.spacing_top}
+      spacingBottom={settings.spacing_bottom}
+    >
       <section>
         <header>
           <h2 className="heading-pre">{settings.pre_title}</h2>

@@ -1,3 +1,4 @@
+import { spacing } from "shopify/utils/spacing";
 import { TabsProcessStepSection } from "../.shopify-cms/types/sections";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
 
@@ -24,6 +25,7 @@ export const tabsProcessStep: ShopifySection<TabsProcessStepSection> = {
       id: "paragraph",
       label: "Paragraph",
     },
+    ...spacing,
   ],
   blocks: [
     {

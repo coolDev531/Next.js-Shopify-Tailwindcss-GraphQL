@@ -12,7 +12,12 @@ export const TabsFaq: FC<TabsFaqSection> = ({ id, settings, blocks, type }) => {
   );
 
   return (
-    <Wrapper maxWidth="xl" paddingY="base">
+    <Wrapper
+      maxWidth="xl"
+      spacing={settings.spacing}
+      spacingTop={settings.spacing_top}
+      spacingBottom={settings.spacing_bottom}
+    >
       <section className="mb-8">
         <header>
           <h2 className="heading-2xl">{settings.title}</h2>

@@ -31,7 +31,13 @@ function mapAccentColors(settings: {
 
 export const Pricing: FC<PricingSection> = ({ id, settings, blocks, type }) => {
   return (
-    <Wrapper maxWidth="xl" paddingY="base" overflowHidden>
+    <Wrapper
+      maxWidth="xl"
+      overflowHidden
+      spacing={settings.spacing}
+      spacingTop={settings.spacing_top}
+      spacingBottom={settings.spacing_bottom}
+    >
       <section className="mb-8">
         <header>
           <h2 className="heading-pre">{settings.pre_title}</h2>

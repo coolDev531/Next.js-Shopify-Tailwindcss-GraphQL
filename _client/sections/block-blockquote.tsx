@@ -5,7 +5,13 @@ import { BlockquoteSection } from ".shopify-cms/types/sections";
 
 export const BlockBlockquote: FC<BlockquoteSection> = ({ id, settings, type }) => {
   return (
-    <Wrapper maxWidth="xl" paddingY="base" overflowHidden>
+    <Wrapper
+      maxWidth="xl"
+      spacing={settings.spacing}
+      spacingTop={settings.spacing_top}
+      spacingBottom={settings.spacing_bottom}
+      overflowHidden
+    >
       <figure className="relative mx-auto max-w-prose px-4">
         <div className="absolute inset-0 -z-20 flex h-[84%] select-none items-center justify-center">
           <div className="relative aspect-1 h-full rounded-[0_0_100%_0] bg-accent/10">

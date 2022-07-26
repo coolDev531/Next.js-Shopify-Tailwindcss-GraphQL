@@ -12,13 +12,19 @@ import img1 from "public/images/bg-gradient-light.jpg";
 import { FC, useState } from "react";
 import { TabsImageCardSection } from ".shopify-cms/types/sections";
 
-export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) => {
+export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, settings, type }) => {
   const [activateTab, setActivateTab] = useState(
     blocks.filter(({ type }) => type === "tab")[0]?.id
   );
 
   return (
-    <Wrapper maxWidth="xl" paddingY="base" overflowHidden>
+    <Wrapper
+      maxWidth="xl"
+      overflowHidden
+      spacing={settings.spacing}
+      spacingTop={settings.spacing_top}
+      spacingBottom={settings.spacing_bottom}
+    >
       {blocks.map((block) => {
         return block.type === "heading"
           ? <div className="mb-12" key={`heading-${block.id}`}>

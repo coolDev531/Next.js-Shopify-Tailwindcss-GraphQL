@@ -1,3 +1,4 @@
+import { spacing } from "shopify/utils/spacing";
 import { ContactSection } from "../.shopify-cms/types/sections";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
 
@@ -63,6 +64,11 @@ export const contact: ShopifySection<ContactSection> = {
       content: "Intro",
     },
     {
+      type: "checkbox",
+      id: "intro",
+      label: "Show Intro",
+    },
+    {
       type: "text",
       id: "title",
       label: "Title",
@@ -89,6 +95,11 @@ export const contact: ShopifySection<ContactSection> = {
     {
       type: "header",
       content: "Contact details",
+    },
+    {
+      type: "checkbox",
+      id: "contact",
+      label: "Show Contact Details",
     },
     {
       type: "text",
@@ -129,6 +140,7 @@ export const contact: ShopifySection<ContactSection> = {
       id: "success_paragraph",
       label: "Success Text",
     },
+    ...spacing,
   ],
   blocks: [
     {
@@ -363,7 +375,6 @@ export const contact: ShopifySection<ContactSection> = {
       settings: [],
     },
   ],
-
   presets: [
     {
       name: "Contact",

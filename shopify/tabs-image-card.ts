@@ -1,10 +1,11 @@
+import { spacing } from "shopify/utils/spacing";
 import { heading } from "./heading";
 import { icons } from "./utils/icons";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
 
 export const tabsImageCard: ShopifySection = {
   name: "Tabs image card",
-  settings: [],
+  settings: [...spacing],
   blocks: [
     {
       type: "heading",

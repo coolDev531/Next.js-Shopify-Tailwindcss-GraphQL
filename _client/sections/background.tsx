@@ -67,7 +67,7 @@ export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
               <img
                 alt="background"
                 aria-hidden
-                className="image mx-auto h-full"
+                className="image mx-auto h-full min-w-full"
                 src={svgToDataUri(settings.svg)}
               />
             </div>

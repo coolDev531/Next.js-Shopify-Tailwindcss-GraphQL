@@ -1,3 +1,4 @@
+import { spacing } from "shopify/utils/spacing";
 import { header } from "./header";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
 
@@ -54,6 +55,7 @@ export const logoBanner: ShopifySection = {
       step: 1,
       unit: "s",
     },
+    ...spacing,
   ],
   blocks: [
     {

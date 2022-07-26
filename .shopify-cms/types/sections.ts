@@ -36,6 +36,12 @@ export type BlockquoteSection = {
   settings: {
     /** Input type: checkbox */
     quotation_marks: boolean;
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: text */
     author?: string;
     /** Input type: text */
@@ -50,6 +56,16 @@ export type ContactSection = {
   blocks: ContactBlocks[];
   id: string;
   settings: {
+    /** Input type: checkbox */
+    contact: boolean;
+    /** Input type: checkbox */
+    intro: boolean;
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: richtext */
     address?: `<p${string}</p>`;
     /** Input type: text */
@@ -160,6 +176,12 @@ export type FeatureCarouselSection = {
   settings: {
     /** Input type: select */
     position: "left" | "center" | "right";
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: text */
     cta1?: string;
     /** Input type: url */
@@ -201,6 +223,12 @@ export type FeatureListSection = {
   settings: {
     /** Input type: select */
     position: "left" | "center" | "right";
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: text */
     cta1?: string;
     /** Input type: url */
@@ -340,6 +368,12 @@ export type HeroWithFeaturesSection = {
   blocks: HeroWithFeaturesBlocks[];
   id: string;
   settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: text */
     cta1?: string;
     /** Input type: url */
@@ -382,6 +416,12 @@ export type HeroWithFeaturesBlocks = {
 export type HeroSection = {
   id: string;
   settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: image_picker */
     image?: _Image_liquid;
     /** Input type: richtext */
@@ -408,6 +448,12 @@ export type ImageCarouselSection = {
     animation_duration: number;
     /** Input type: select */
     position: "left" | "center" | "right";
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: blog */
     blog?: _Blog_liquid;
     /** Input type: collection */
@@ -448,6 +494,12 @@ export type ImageCarouselBlocks = {
 export type ImageGallerySection = {
   id: string;
   settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: image_picker */
     image1?: _Image_liquid;
     /** Input type: image_picker */
@@ -487,6 +539,12 @@ export type ImageTextSection = {
     fit_height: boolean;
     /** Input type: radio */
     position: "left" | "right";
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: image_picker */
     image?: _Image_liquid;
     /** Input type: richtext */
@@ -507,6 +565,12 @@ export type InfoCardsSection = {
   blocks: InfoCardsBlocks[];
   id: string;
   settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: product_list */
     content_list?: _Product_liquid[];
     /** Input type: text */
@@ -540,6 +604,12 @@ export type LogoBannerSection = {
     animation_duration: number;
     /** Input type: range */
     height: number;
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: collection */
     collection?: _Collection_liquid;
     /** Input type: product_list */
@@ -599,6 +669,12 @@ export type PricingSection = {
   blocks: PricingBlocks[];
   id: string;
   settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: richtext */
     paragraph?: `<p${string}</p>`;
     /** Input type: text */
@@ -678,6 +754,12 @@ export type SpecListSection = {
     blur_bg: boolean;
     /** Input type: radio */
     color_toggle: "dark" | "light";
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: color_background */
     color_bg?: string;
   };
@@ -741,6 +823,14 @@ export type SpecListBlocks =
 export type StatsGraphSection = {
   blocks: StatsGraphBlocks[];
   id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+  };
   type: "stats-graph";
 };
 
@@ -760,6 +850,14 @@ export type StatsGraphBlocks = {
 export type StorySection = {
   blocks: StoryBlocks[];
   id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+  };
   type: "story";
 };
 
@@ -797,6 +895,12 @@ export type StoryBlocks =
         fit_height: boolean;
         /** Input type: radio */
         position: "left" | "right";
+        /** Input type: radio */
+        spacing: "none" | "sm" | "md" | "lg" | "custom";
+        /** Input type: range */
+        spacing_bottom: number;
+        /** Input type: range */
+        spacing_top: number;
         /** Input type: image_picker */
         image?: _Image_liquid;
         /** Input type: richtext */
@@ -817,6 +921,12 @@ export type TabsFaqSection = {
   blocks: TabsFaqBlocks[];
   id: string;
   settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: text */
     title?: string;
   };
@@ -837,6 +947,14 @@ export type TabsFaqBlocks = {
 export type TabsImageCardSection = {
   blocks: TabsImageCardBlocks[];
   id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+  };
   type: "tabs-image-card";
 };
 
@@ -894,6 +1012,12 @@ export type TabsProcessStepSection = {
   blocks: TabsProcessStepBlocks[];
   id: string;
   settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: richtext */
     paragraph?: `<p${string}</p>`;
     /** Input type: text */
@@ -922,6 +1046,14 @@ export type TabsProcessStepBlocks = {
 export type TeamListSection = {
   blocks: TeamListBlocks[];
   id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+  };
   type: "team-list";
 };
 
@@ -1026,6 +1158,12 @@ export type TestimonialListSection = {
   settings: {
     /** Input type: select */
     position: "left" | "center" | "right";
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
     /** Input type: text */
     cta1?: string;
     /** Input type: url */

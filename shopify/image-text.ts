@@ -1,3 +1,4 @@
+import { spacing } from "shopify/utils/spacing";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
 
 export const imageText: ShopifySection = {
@@ -149,6 +150,7 @@ export const imageText: ShopifySection = {
         },
       ],
     },
+    ...spacing,
   ],
   presets: [
     {

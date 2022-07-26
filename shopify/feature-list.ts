@@ -1,3 +1,4 @@
+import { spacing } from "shopify/utils/spacing";
 import { FeatureListSection } from "../.shopify-cms/types/sections";
 import { heading } from "./heading";
 import { icons } from "./utils/icons";
@@ -5,7 +6,7 @@ import { ShopifySection } from "../.shopify-cms/types/shopify";
 
 export const featureList: ShopifySection<FeatureListSection> = {
   name: "Feature list",
-  settings: [...heading.settings],
+  settings: [...heading.settings, ...spacing],
   max_blocks: 4,
   blocks: [
     {

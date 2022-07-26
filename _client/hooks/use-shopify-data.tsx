@@ -46,7 +46,7 @@ export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[
         }
       }
     }
-  }, [setShopifyData]);
+  }, [sections, setShopifyData]);
 
   useEffect(() => {
     window.addEventListener("message", handleMessages);
@@ -55,7 +55,22 @@ export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[
       window.removeEventListener("message", handleMessages);
       window.removeEventListener("resize", messageSectionSizes);
     };
-  }, [handleMessages, messageSectionSizes]);
+  }, [handleMessages, messageSectionSizes, sections]);
+
+  useEffect(() => {
+    window?.parent?.postMessage(
+      {
+        source: "theme-content",
+        topic: "resize",
+        totalHeight: document.body.clientHeight,
+        sections: sections?.map(({ id }) => ({
+          id,
+          height: document.getElementById(`section--${id}`)?.clientHeight ?? 0,
+        })),
+      },
+      "*"
+    );
+  }, [sections]);
 
   return { sections, global };
 };

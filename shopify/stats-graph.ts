@@ -1,8 +1,9 @@
+import { spacing } from "shopify/utils/spacing";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
 
 export const statsGraph: ShopifySection = {
   name: "Stats graph",
-  settings: [],
+  settings: [...spacing],
   blocks: [
     {
       type: "stat",

@@ -1,4 +1,7 @@
-export const accentColors = [
+import { Sections } from ".shopify-cms/types/sections";
+import { ShopifySection } from ".shopify-cms/types/shopify";
+
+export const accentColors: ShopifySection["settings"] = [
   {
     type: "header",
     content: "Accents",
@@ -47,4 +50,4 @@ export const accentColors = [
     id: "color_accent_secondary_contrast_dark",
     label: "Color_accent_secondary_contrast_dark",
   },
-] as const;
+];

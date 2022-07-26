@@ -7,9 +7,15 @@ import { Richtext } from "_client/typography/richtext";
 import { FC } from "react";
 import { HeroSection } from ".shopify-cms/types/sections";
 
-export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
+export const Hero: FC<HeroSection> = ({ id, settings, type }) => {
   return (
-    <Wrapper maxWidth="xl" paddingY="base" overflowHidden>
+    <Wrapper
+      maxWidth="xl"
+      overflowHidden
+      spacing={settings.spacing}
+      spacingTop={settings.spacing_top}
+      spacingBottom={settings.spacing_bottom}
+    >
       <div className="mx-auto -mt-4 max-w-lg">
         <figure className="relative mx-4 mb-8 aspect-1 lg:hidden">
           {settings.image

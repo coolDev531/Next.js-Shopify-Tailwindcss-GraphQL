@@ -1,3 +1,4 @@
+import { spacing } from "shopify/utils/spacing";
 import { BlockquoteSection } from "../.shopify-cms/types/sections";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
 
@@ -32,6 +33,7 @@ export const blockquote: ShopifySection<BlockquoteSection> = {
       id: "quotation_marks",
       label: "Show quotation marks",
     },
+    ...spacing,
   ],
   presets: [
     {

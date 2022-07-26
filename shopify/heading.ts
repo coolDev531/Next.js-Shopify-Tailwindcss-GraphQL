@@ -1,3 +1,4 @@
+import { spacing } from "shopify/utils/spacing";
 import { HeadingSection } from "../.shopify-cms/types/sections";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
 

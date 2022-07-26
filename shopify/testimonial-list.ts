@@ -1,3 +1,4 @@
+import { spacing } from "shopify/utils/spacing";
 import { heading } from "./heading";
 import { TestimonialListSection } from "../.shopify-cms/types/sections";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
@@ -12,6 +13,7 @@ export const testimonialList: ShopifySection<TestimonialListSection> = {
       label: "Products",
       limit: 2,
     },
+    ...spacing,
   ],
   blocks: [
     {

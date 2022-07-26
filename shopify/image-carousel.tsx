@@ -1,3 +1,4 @@
+import { spacing } from "shopify/utils/spacing";
 import { heading } from "./heading";
 import { ShopifySection } from "../.shopify-cms/types/shopify";
 
@@ -38,6 +39,7 @@ export const imageCarousel: ShopifySection = {
       step: 1,
       unit: "s",
     },
+    ...spacing,
   ],
   blocks: [
     {

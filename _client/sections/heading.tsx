@@ -5,7 +5,7 @@ import { HeadingSection } from ".shopify-cms/types/sections";
 
 export const SectionHeading: FC<HeadingSection> = ({ settings }) => {
   return (
-    <Wrapper paddingY="base" maxWidth="xl">
+    <Wrapper spacing="base" maxWidth="xl">
       <BlockHeading settings={settings} />
     </Wrapper>
   );
