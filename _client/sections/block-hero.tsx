@@ -30,8 +30,8 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
       <div className="grid-cols-2 gap-8 lg:grid">
         <section className="my-8 lg:pr-10">
           <header>
-            <h2 className="heading-pre">{settings.pre_title}</h2>
-            <h1 className="heading-2xl">{settings.title}</h1>
+            <h1 className="heading-pre">{settings.pre_title}</h1>
+            <h2 className="heading-2xl">{settings.title}</h2>
           </header>
           <main>
             <Richtext className="paragraph-lg">{settings.paragraph}</Richtext>

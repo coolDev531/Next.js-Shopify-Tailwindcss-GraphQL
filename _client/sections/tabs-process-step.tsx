@@ -52,8 +52,8 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
       <div className="hidden grid-cols-[380px_1fr] gap-16 lg:grid xl:grid-cols-[440px_1fr]">
         <section>
           <header>
-            <h3 className="heading-pre">{settings.pre_title}</h3>
-            <h2 className="heading-xl">{settings.title}</h2>
+            <h2 className="heading-pre">{settings.pre_title}</h2>
+            <h3 className="heading-xl">{settings.title}</h3>
             <Richtext className="paragraph-lg">{settings.paragraph}</Richtext>
           </header>
           <nav className="mt-8 flex flex-col gap-1">
@@ -147,8 +147,8 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
       {/* Mobile */}
       <div className="flex flex-col gap-8 lg:hidden">
         <header>
-          <h3 className="heading-pre">{settings.pre_title}</h3>
-          <h2 className="heading-xl">{settings.title}</h2>
+          <h2 className="heading-pre">{settings.pre_title}</h2>
+          <h3 className="heading-xl">{settings.title}</h3>
           <Richtext className="paragraph-lg">{settings.paragraph}</Richtext>
         </header>
         <div className="relative left-1/2 -ml-[50vw] w-screen">

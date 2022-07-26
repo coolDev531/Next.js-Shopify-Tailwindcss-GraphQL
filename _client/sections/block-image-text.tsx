@@ -18,8 +18,8 @@ export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ s
           )}
         >
           <header>
-            <h3 className="heading-pre">{settings.pre_title}</h3>
-            <h2 className="heading-xl">{settings.title}</h2>
+            <h2 className="heading-pre">{settings.pre_title}</h2>
+            <h3 className="heading-xl">{settings.title}</h3>
           </header>
           <main>
             <Richtext className="paragraph-base">{settings.paragraph}</Richtext>

@@ -34,8 +34,8 @@ export const Pricing: FC<PricingSection> = ({ id, settings, blocks, type }) => {
     <Wrapper maxWidth="xl" paddingY="base" overflowHidden>
       <section className="mb-8">
         <header>
-          <h3 className="heading-pre">{settings.pre_title}</h3>
-          <h2 className="heading-xl">{settings.title}</h2>
+          <h2 className="heading-pre">{settings.pre_title}</h2>
+          <h3 className="heading-xl">{settings.title}</h3>
         </header>
       </section>
       <div className="flex auto-cols-fr grid-flow-col flex-col gap-8 lg:grid">

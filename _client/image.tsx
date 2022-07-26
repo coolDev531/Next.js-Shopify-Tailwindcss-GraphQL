@@ -41,6 +41,7 @@ export const Image: FC<
     return null;
   }
 
+  console.log(src, typeof src === "string" ? src.replace(/^(http:)?\/\//, "https://") : src);
   return (
     <NextImage
       {...rest}

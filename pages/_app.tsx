@@ -49,23 +49,25 @@ export const SEO = {
 
 const App: FC<AppProps> = ({ pageProps, Component }) => {
   const router = useRouter();
-  console.log(pageProps);
+
   return (
-    <ContextProviders>
-      <LoadInitialData>
-        <ThemeProvider attribute="class">
-          <DefaultSeo
-            canonical={`${SEO.url}${router.asPath}`}
-            twitter={SEO.twitter}
-            title={SEO.title}
-            description={SEO.description}
-            openGraph={SEO.openGraph}
-          />
-          {/*<Header />*/}
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </LoadInitialData>
-    </ContextProviders>
+    <>
+      {/*<ContextProviders>
+        <LoadInitialData>
+          <ThemeProvider attribute="class">
+            <DefaultSeo
+              canonical={`${SEO.url}${router.asPath}`}
+              twitter={SEO.twitter}
+              title={SEO.title}
+              description={SEO.description}
+              openGraph={SEO.openGraph}
+            />*/}
+      {/*<Header />*/}
+      <Component {...pageProps} />
+      {/*</ThemeProvider>
+        </LoadInitialData>
+      </ContextProviders>*/}
+    </>
   );
 };
 
