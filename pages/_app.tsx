@@ -49,7 +49,7 @@ export const SEO = {
 
 const App: FC<AppProps> = ({ pageProps, Component }) => {
   const router = useRouter();
-
+  console.log(pageProps);
   return (
     <ContextProviders>
       <LoadInitialData>
