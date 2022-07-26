@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.lunalemon.dev
+
+# Sitemaps
+Sitemap: https://www.lunalemon.dev/sitemap.xml
