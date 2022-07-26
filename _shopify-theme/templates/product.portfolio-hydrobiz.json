@@ -1,9 +1,16 @@
 {
   "sections": {
-    "main": {
-      "type": "template-product",
-      "disabled": true,
+    "16588324053663a8e1": {
+      "type": "page-settings",
       "settings": {
+        "color_accent": "#fc1989",
+        "color_accent_contrast": "#ffffff",
+        "color_accent_secondary": "",
+        "color_accent_secondary_contrast": "",
+        "color_accent_dark": "#ec4899",
+        "color_accent_contrast_dark": "#ffffff",
+        "color_accent_secondary_dark": "",
+        "color_accent_secondary_contrast_dark": ""
       }
     },
     "16540104123512b9a3": {
@@ -26,21 +33,24 @@
         "8457496c-859c-46a2-8653-4953e4e81a20": {
           "type": "stat",
           "settings": {
-            "stat": "29 000+",
-            "descriptions": "Website Visitors"
+            "stat": "30 000+",
+            "title": "Monthly Sessions",
+            "descriptions": ""
           }
         },
         "b206c8f8-78d7-4074-bae7-a25fdfa286ce": {
           "type": "stat",
           "settings": {
-            "stat": "368+",
-            "descriptions": "Website Subscribers"
+            "stat": "10k",
+            "title": "Subscribers",
+            "descriptions": ""
           }
         },
         "daf38169-f867-497d-b358-3af89c50830e": {
           "type": "stat",
           "settings": {
-            "stat": "100+",
+            "stat": "422%",
+            "title": "Growth since 2017",
             "descriptions": "Brands"
           }
         }
@@ -51,6 +61,35 @@
         "daf38169-f867-497d-b358-3af89c50830e"
       ],
       "settings": {
+        "spacing": "none",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "16540846002974a6ff": {
+      "type": "story",
+      "blocks": {
+        "93e0ffb2-4809-45bb-88aa-7cf835fef608": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "The Brief",
+            "title": "Going from zero to hero",
+            "paragraph": "<p>We helped Aiko successfully launch their website, after having to rescue and put together from a half developed custom design from previous developers. We have worked closely to match their budget with a two-point plan, fixing their initial site and removing essential functionality for an accelerated launch, and a full custom design development.<\/p>",
+            "cta1": "",
+            "cta1_link": "#",
+            "cta2": "",
+            "cta2_link": "#",
+            "position": "center"
+          }
+        }
+      },
+      "block_order": [
+        "93e0ffb2-4809-45bb-88aa-7cf835fef608"
+      ],
+      "settings": {
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "1656933742c82a115d": {
@@ -63,10 +102,10 @@
             "type": "mobile_tablet",
             "color": "",
             "css": "",
-            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"1265\" height=\"1210\" style=\"margin-left: -400px\" viewbox=\"0 0 1265 1210\" fill=\"none\">\n  <g opacity=\"0.3\" filter=\"url(#filter0_f_577_931)\">\n    <path opacity=\"0.5\" d=\"M464.569 564.678C457.659 588.507 430.809 599.979 426.649 625.588C426.059 632.478 418.529 645.428 393.139 642.111C368.669 656.336 292.909 628.697 274.409 652.471C260.789 669.973 245.799 691.802 251.089 723.272C255.169 747.536 268.749 771.454 282.509 792.105C302.449 822.018 325.979 849.223 351.399 870.762C434.239 940.978 529.089 959.256 611.169 959.506C711.179 959.816 797.819 921.193 870.749 859.425C900.829 833.952 927.769 804.466 948.479 766.932C967.539 732.375 983.049 693.738 995.019 652.834C1010.27 600.763 1018.86 542.381 1012.47 479.216C1007.62 431.174 987.009 385.361 958.469 343.538C919.469 286.361 867.039 253.896 816.269 250.237C784.949 247.981 750.179 261.548 748.729 303.898C747.629 336.205 762.549 372.514 772.229 405.683C778.689 427.849 787.499 459.242 772.729 470.803C747.749 490.36 712.959 495.977 681.459 499.938C641.219 504.998 598.139 494.109 556.259 491.446C532.139 489.912 512.599 501.741 495.439 516.208C481.649 527.841 470.499 544.249 464.569 564.678Z\" fill=\"#FF1CF7\"><\/path>\n  <\/g>\n  <g opacity=\"0.3\" filter=\"url(#filter1_f_577_931)\">\n    <path opacity=\"0.5\" d=\"M800.033 564.678C806.943 588.507 833.793 599.979 837.953 625.588C838.543 632.478 846.073 645.428 871.463 642.111C895.933 656.336 971.693 628.697 990.193 652.471C1003.81 669.973 1018.8 691.802 1013.51 723.272C1009.43 747.536 995.853 771.454 982.093 792.105C962.153 822.018 938.623 849.223 913.203 870.762C830.363 940.978 735.513 959.256 653.433 959.506C553.423 959.816 466.783 921.193 393.853 859.425C363.773 833.952 336.833 804.466 316.123 766.932C297.063 732.375 281.553 693.738 269.583 652.834C254.333 600.763 245.743 542.381 252.133 479.216C256.983 431.174 277.593 385.361 306.133 343.538C345.133 286.361 397.563 253.896 448.333 250.237C479.653 247.981 514.423 261.548 515.873 303.898C516.973 336.205 502.053 372.514 492.373 405.683C485.913 427.849 477.103 459.242 491.873 470.803C516.853 490.36 551.643 495.977 583.143 499.938C623.383 504.998 666.463 494.109 708.343 491.446C732.463 489.912 752.003 501.741 769.163 516.208C782.953 527.841 794.103 544.249 800.033 564.678Z\" fill=\"#0070F3\"><\/path>\n  <\/g>\n  <defs>\n    <filter id=\"filter0_f_577_931\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n      <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>\n      <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>\n      <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_577_931\"><\/fegaussianblur>\n    <\/filter>\n    <filter id=\"filter1_f_577_931\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n      <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>\n      <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>\n      <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_577_931\"><\/fegaussianblur>\n    <\/filter>\n  <\/defs>\n<\/svg>",
+            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"1265\" height=\"1210\" viewbox=\"0 0 1265 1210\" fill=\"none\">   <g opacity=\"0.3\" filter=\"url(#filter0_f_577_931)\">     <path opacity=\"0.5\" d=\"M464.569 564.678C457.659 588.507 430.809 599.979 426.649 625.588C426.059 632.478 418.529 645.428 393.139 642.111C368.669 656.336 292.909 628.697 274.409 652.471C260.789 669.973 245.799 691.802 251.089 723.272C255.169 747.536 268.749 771.454 282.509 792.105C302.449 822.018 325.979 849.223 351.399 870.762C434.239 940.978 529.089 959.256 611.169 959.506C711.179 959.816 797.819 921.193 870.749 859.425C900.829 833.952 927.769 804.466 948.479 766.932C967.539 732.375 983.049 693.738 995.019 652.834C1010.27 600.763 1018.86 542.381 1012.47 479.216C1007.62 431.174 987.009 385.361 958.469 343.538C919.469 286.361 867.039 253.896 816.269 250.237C784.949 247.981 750.179 261.548 748.729 303.898C747.629 336.205 762.549 372.514 772.229 405.683C778.689 427.849 787.499 459.242 772.729 470.803C747.749 490.36 712.959 495.977 681.459 499.938C641.219 504.998 598.139 494.109 556.259 491.446C532.139 489.912 512.599 501.741 495.439 516.208C481.649 527.841 470.499 544.249 464.569 564.678Z\" fill=\"#FF1CF7\"><\/path>   <\/g>   <g opacity=\"0.3\" filter=\"url(#filter1_f_577_931)\">     <path opacity=\"0.5\" d=\"M800.033 564.678C806.943 588.507 833.793 599.979 837.953 625.588C838.543 632.478 846.073 645.428 871.463 642.111C895.933 656.336 971.693 628.697 990.193 652.471C1003.81 669.973 1018.8 691.802 1013.51 723.272C1009.43 747.536 995.853 771.454 982.093 792.105C962.153 822.018 938.623 849.223 913.203 870.762C830.363 940.978 735.513 959.256 653.433 959.506C553.423 959.816 466.783 921.193 393.853 859.425C363.773 833.952 336.833 804.466 316.123 766.932C297.063 732.375 281.553 693.738 269.583 652.834C254.333 600.763 245.743 542.381 252.133 479.216C256.983 431.174 277.593 385.361 306.133 343.538C345.133 286.361 397.563 253.896 448.333 250.237C479.653 247.981 514.423 261.548 515.873 303.898C516.973 336.205 502.053 372.514 492.373 405.683C485.913 427.849 477.103 459.242 491.873 470.803C516.853 490.36 551.643 495.977 583.143 499.938C623.383 504.998 666.463 494.109 708.343 491.446C732.463 489.912 752.003 501.741 769.163 516.208C782.953 527.841 794.103 544.249 800.033 564.678Z\" fill=\"#0070F3\"><\/path>   <\/g>   <defs>     <filter id=\"filter0_f_577_931\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">       <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>       <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>       <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_577_931\"><\/fegaussianblur>     <\/filter>     <filter id=\"filter1_f_577_931\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">       <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>       <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>       <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_577_931\"><\/fegaussianblur>     <\/filter>   <\/defs> <\/svg>",
             "opacity": 25,
-            "height": 800,
-            "marginTop": -1550
+            "height": 1200,
+            "marginTop": -800
           }
         },
         "7e5dd9f4-abbd-4ebf-8906-fe73f9f8438d": {
@@ -76,74 +115,38 @@
             "type": "desktop",
             "color": "",
             "css": "",
-            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"1265\" height=\"1210\" style=\"margin-left: 200px\" viewbox=\"0 0 1265 1210\" fill=\"none\">\n  <g opacity=\"0.3\" filter=\"url(#filter0_f_577_931)\">\n    <path opacity=\"0.5\" d=\"M464.569 564.678C457.659 588.507 430.809 599.979 426.649 625.588C426.059 632.478 418.529 645.428 393.139 642.111C368.669 656.336 292.909 628.697 274.409 652.471C260.789 669.973 245.799 691.802 251.089 723.272C255.169 747.536 268.749 771.454 282.509 792.105C302.449 822.018 325.979 849.223 351.399 870.762C434.239 940.978 529.089 959.256 611.169 959.506C711.179 959.816 797.819 921.193 870.749 859.425C900.829 833.952 927.769 804.466 948.479 766.932C967.539 732.375 983.049 693.738 995.019 652.834C1010.27 600.763 1018.86 542.381 1012.47 479.216C1007.62 431.174 987.009 385.361 958.469 343.538C919.469 286.361 867.039 253.896 816.269 250.237C784.949 247.981 750.179 261.548 748.729 303.898C747.629 336.205 762.549 372.514 772.229 405.683C778.689 427.849 787.499 459.242 772.729 470.803C747.749 490.36 712.959 495.977 681.459 499.938C641.219 504.998 598.139 494.109 556.259 491.446C532.139 489.912 512.599 501.741 495.439 516.208C481.649 527.841 470.499 544.249 464.569 564.678Z\" fill=\"#FF1CF7\"><\/path>\n  <\/g>\n  <g opacity=\"0.3\" filter=\"url(#filter1_f_577_931)\">\n    <path opacity=\"0.5\" d=\"M800.033 564.678C806.943 588.507 833.793 599.979 837.953 625.588C838.543 632.478 846.073 645.428 871.463 642.111C895.933 656.336 971.693 628.697 990.193 652.471C1003.81 669.973 1018.8 691.802 1013.51 723.272C1009.43 747.536 995.853 771.454 982.093 792.105C962.153 822.018 938.623 849.223 913.203 870.762C830.363 940.978 735.513 959.256 653.433 959.506C553.423 959.816 466.783 921.193 393.853 859.425C363.773 833.952 336.833 804.466 316.123 766.932C297.063 732.375 281.553 693.738 269.583 652.834C254.333 600.763 245.743 542.381 252.133 479.216C256.983 431.174 277.593 385.361 306.133 343.538C345.133 286.361 397.563 253.896 448.333 250.237C479.653 247.981 514.423 261.548 515.873 303.898C516.973 336.205 502.053 372.514 492.373 405.683C485.913 427.849 477.103 459.242 491.873 470.803C516.853 490.36 551.643 495.977 583.143 499.938C623.383 504.998 666.463 494.109 708.343 491.446C732.463 489.912 752.003 501.741 769.163 516.208C782.953 527.841 794.103 544.249 800.033 564.678Z\" fill=\"#0070F3\"><\/path>\n  <\/g>\n  <defs>\n    <filter id=\"filter0_f_577_931\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n      <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>\n      <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>\n      <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_577_931\"><\/fegaussianblur>\n    <\/filter>\n    <filter id=\"filter1_f_577_931\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n      <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>\n      <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>\n      <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_577_931\"><\/fegaussianblur>\n    <\/filter>\n  <\/defs>\n<\/svg>",
-            "opacity": 25,
-            "height": 800,
-            "marginTop": -1000
-          }
-        },
-        "0261dace-1ac9-42bd-8e15-df30c261373d": {
-          "type": "bg",
-          "settings": {
-            "title": "Shopify Dev M & T",
-            "type": "mobile_tablet",
-            "color": "",
-            "css": "",
-            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"1005\" style=\"margin-left: -400px\" height=\"1210\" viewbox=\"0 0 1265 1210\" fill=\"none\">\n  <g opacity=\"0.3\" filter=\"url(#filter0_f_583_655)\">\n    <path opacity=\"0.3\" d=\"M464.569 564.678C457.659 588.507 430.809 599.979 426.649 625.588C426.059 632.478 418.529 645.428 393.139 642.111C368.669 656.336 292.909 628.697 274.409 652.471C260.789 669.973 245.799 691.802 251.089 723.272C255.169 747.536 268.749 771.454 282.509 792.105C302.449 822.018 325.979 849.223 351.399 870.762C434.239 940.978 529.089 959.256 611.169 959.506C711.179 959.816 797.819 921.193 870.749 859.425C900.829 833.952 927.769 804.466 948.479 766.932C967.539 732.375 983.049 693.738 995.019 652.834C1010.27 600.763 1018.86 542.381 1012.47 479.216C1007.62 431.174 987.009 385.361 958.469 343.538C919.469 286.361 867.039 253.896 816.269 250.237C784.949 247.981 750.179 261.548 748.729 303.898C747.629 336.205 762.549 372.514 772.229 405.683C778.689 427.849 787.499 459.242 772.729 470.803C747.749 490.36 712.959 495.977 681.459 499.938C641.219 504.998 598.139 494.109 556.259 491.446C532.139 489.912 512.599 501.741 495.439 516.208C481.649 527.841 470.499 544.249 464.569 564.678Z\" fill=\"#FF1CF7\"><\/path>\n  <\/g>\n  <g opacity=\"0.3\" filter=\"url(#filter1_f_583_655)\">\n    <path opacity=\"0.3\" d=\"M800.033 564.678C806.943 588.507 833.793 599.979 837.953 625.588C838.543 632.478 846.073 645.428 871.463 642.111C895.933 656.336 971.693 628.697 990.193 652.471C1003.81 669.973 1018.8 691.802 1013.51 723.272C1009.43 747.536 995.853 771.454 982.093 792.105C962.153 822.018 938.623 849.223 913.203 870.762C830.363 940.978 735.513 959.256 653.433 959.506C553.423 959.816 466.783 921.193 393.853 859.425C363.773 833.952 336.833 804.466 316.123 766.932C297.063 732.375 281.553 693.738 269.583 652.834C254.333 600.763 245.743 542.381 252.133 479.216C256.983 431.174 277.593 385.361 306.133 343.538C345.133 286.361 397.563 253.896 448.333 250.237C479.653 247.981 514.423 261.548 515.873 303.898C516.973 336.205 502.053 372.514 492.373 405.683C485.913 427.849 477.103 459.242 491.873 470.803C516.853 490.36 551.643 495.977 583.143 499.938C623.383 504.998 666.463 494.109 708.343 491.446C732.463 489.912 752.003 501.741 769.163 516.208C782.953 527.841 794.103 544.249 800.033 564.678Z\" fill=\"#00F0FF\"><\/path>\n  <\/g>\n  <defs>\n    <filter id=\"filter0_f_583_655\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n      <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>\n      <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>\n      <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_583_655\"><\/fegaussianblur>\n    <\/filter>\n    <filter id=\"filter1_f_583_655\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n      <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>\n      <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>\n      <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_583_655\"><\/fegaussianblur>\n    <\/filter>\n  <\/defs>\n<\/svg>",
-            "opacity": 34,
-            "height": 800,
-            "marginTop": -2400
-          }
-        },
-        "897c612c-a391-4b3a-9998-1211804f92e6": {
-          "type": "bg",
-          "settings": {
-            "title": "Shopify Dev Desktop",
-            "type": "desktop",
-            "color": "",
-            "css": "",
-            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"1005\" style=\"margin-left: -400px\" height=\"1210\" viewbox=\"0 0 1265 1210\" fill=\"none\">\n  <g opacity=\"0.3\" filter=\"url(#filter0_f_583_655)\">\n    <path opacity=\"0.3\" d=\"M464.569 564.678C457.659 588.507 430.809 599.979 426.649 625.588C426.059 632.478 418.529 645.428 393.139 642.111C368.669 656.336 292.909 628.697 274.409 652.471C260.789 669.973 245.799 691.802 251.089 723.272C255.169 747.536 268.749 771.454 282.509 792.105C302.449 822.018 325.979 849.223 351.399 870.762C434.239 940.978 529.089 959.256 611.169 959.506C711.179 959.816 797.819 921.193 870.749 859.425C900.829 833.952 927.769 804.466 948.479 766.932C967.539 732.375 983.049 693.738 995.019 652.834C1010.27 600.763 1018.86 542.381 1012.47 479.216C1007.62 431.174 987.009 385.361 958.469 343.538C919.469 286.361 867.039 253.896 816.269 250.237C784.949 247.981 750.179 261.548 748.729 303.898C747.629 336.205 762.549 372.514 772.229 405.683C778.689 427.849 787.499 459.242 772.729 470.803C747.749 490.36 712.959 495.977 681.459 499.938C641.219 504.998 598.139 494.109 556.259 491.446C532.139 489.912 512.599 501.741 495.439 516.208C481.649 527.841 470.499 544.249 464.569 564.678Z\" fill=\"#FF1CF7\"><\/path>\n  <\/g>\n  <g opacity=\"0.3\" filter=\"url(#filter1_f_583_655)\">\n    <path opacity=\"0.3\" d=\"M800.033 564.678C806.943 588.507 833.793 599.979 837.953 625.588C838.543 632.478 846.073 645.428 871.463 642.111C895.933 656.336 971.693 628.697 990.193 652.471C1003.81 669.973 1018.8 691.802 1013.51 723.272C1009.43 747.536 995.853 771.454 982.093 792.105C962.153 822.018 938.623 849.223 913.203 870.762C830.363 940.978 735.513 959.256 653.433 959.506C553.423 959.816 466.783 921.193 393.853 859.425C363.773 833.952 336.833 804.466 316.123 766.932C297.063 732.375 281.553 693.738 269.583 652.834C254.333 600.763 245.743 542.381 252.133 479.216C256.983 431.174 277.593 385.361 306.133 343.538C345.133 286.361 397.563 253.896 448.333 250.237C479.653 247.981 514.423 261.548 515.873 303.898C516.973 336.205 502.053 372.514 492.373 405.683C485.913 427.849 477.103 459.242 491.873 470.803C516.853 490.36 551.643 495.977 583.143 499.938C623.383 504.998 666.463 494.109 708.343 491.446C732.463 489.912 752.003 501.741 769.163 516.208C782.953 527.841 794.103 544.249 800.033 564.678Z\" fill=\"#00F0FF\"><\/path>\n  <\/g>\n  <defs>\n    <filter id=\"filter0_f_583_655\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n      <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>\n      <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>\n      <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_583_655\"><\/fegaussianblur>\n    <\/filter>\n    <filter id=\"filter1_f_583_655\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n      <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>\n      <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>\n      <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_583_655\"><\/fegaussianblur>\n    <\/filter>\n  <\/defs>\n<\/svg>",
+            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"1265\" height=\"1210\" viewbox=\"0 0 1265 1210\" fill=\"none\">   <g opacity=\"0.3\" filter=\"url(#filter0_f_577_931)\">     <path opacity=\"0.5\" d=\"M464.569 564.678C457.659 588.507 430.809 599.979 426.649 625.588C426.059 632.478 418.529 645.428 393.139 642.111C368.669 656.336 292.909 628.697 274.409 652.471C260.789 669.973 245.799 691.802 251.089 723.272C255.169 747.536 268.749 771.454 282.509 792.105C302.449 822.018 325.979 849.223 351.399 870.762C434.239 940.978 529.089 959.256 611.169 959.506C711.179 959.816 797.819 921.193 870.749 859.425C900.829 833.952 927.769 804.466 948.479 766.932C967.539 732.375 983.049 693.738 995.019 652.834C1010.27 600.763 1018.86 542.381 1012.47 479.216C1007.62 431.174 987.009 385.361 958.469 343.538C919.469 286.361 867.039 253.896 816.269 250.237C784.949 247.981 750.179 261.548 748.729 303.898C747.629 336.205 762.549 372.514 772.229 405.683C778.689 427.849 787.499 459.242 772.729 470.803C747.749 490.36 712.959 495.977 681.459 499.938C641.219 504.998 598.139 494.109 556.259 491.446C532.139 489.912 512.599 501.741 495.439 516.208C481.649 527.841 470.499 544.249 464.569 564.678Z\" fill=\"#FF1CF7\"><\/path>   <\/g>   <g opacity=\"0.3\" filter=\"url(#filter1_f_577_931)\">     <path opacity=\"0.5\" d=\"M800.033 564.678C806.943 588.507 833.793 599.979 837.953 625.588C838.543 632.478 846.073 645.428 871.463 642.111C895.933 656.336 971.693 628.697 990.193 652.471C1003.81 669.973 1018.8 691.802 1013.51 723.272C1009.43 747.536 995.853 771.454 982.093 792.105C962.153 822.018 938.623 849.223 913.203 870.762C830.363 940.978 735.513 959.256 653.433 959.506C553.423 959.816 466.783 921.193 393.853 859.425C363.773 833.952 336.833 804.466 316.123 766.932C297.063 732.375 281.553 693.738 269.583 652.834C254.333 600.763 245.743 542.381 252.133 479.216C256.983 431.174 277.593 385.361 306.133 343.538C345.133 286.361 397.563 253.896 448.333 250.237C479.653 247.981 514.423 261.548 515.873 303.898C516.973 336.205 502.053 372.514 492.373 405.683C485.913 427.849 477.103 459.242 491.873 470.803C516.853 490.36 551.643 495.977 583.143 499.938C623.383 504.998 666.463 494.109 708.343 491.446C732.463 489.912 752.003 501.741 769.163 516.208C782.953 527.841 794.103 544.249 800.033 564.678Z\" fill=\"#0070F3\"><\/path>   <\/g>   <defs>     <filter id=\"filter0_f_577_931\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">       <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>       <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>       <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_577_931\"><\/fegaussianblur>     <\/filter>     <filter id=\"filter1_f_577_931\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">       <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>       <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>       <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_577_931\"><\/fegaussianblur>     <\/filter>   <\/defs> <\/svg>",
             "opacity": 22,
             "height": 800,
-            "marginTop": -1650
-          }
-        },
-        "639f7e31-4104-4a2b-b531-4bfd988edbd3": {
-          "type": "bg",
-          "settings": {
-            "title": "Analysis & Migration M & T",
-            "type": "mobile_tablet",
-            "color": "",
-            "css": "",
-            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"1265\" height=\"1210\" style=\"margin-left:-300px\" viewbox=\"0 0 1265 1210\" fill=\"none\">\n  <g opacity=\"0.3\" filter=\"url(#filter0_f_577_931)\">\n    <path opacity=\"0.5\" d=\"M464.569 564.678C457.659 588.507 430.809 599.979 426.649 625.588C426.059 632.478 418.529 645.428 393.139 642.111C368.669 656.336 292.909 628.697 274.409 652.471C260.789 669.973 245.799 691.802 251.089 723.272C255.169 747.536 268.749 771.454 282.509 792.105C302.449 822.018 325.979 849.223 351.399 870.762C434.239 940.978 529.089 959.256 611.169 959.506C711.179 959.816 797.819 921.193 870.749 859.425C900.829 833.952 927.769 804.466 948.479 766.932C967.539 732.375 983.049 693.738 995.019 652.834C1010.27 600.763 1018.86 542.381 1012.47 479.216C1007.62 431.174 987.009 385.361 958.469 343.538C919.469 286.361 867.039 253.896 816.269 250.237C784.949 247.981 750.179 261.548 748.729 303.898C747.629 336.205 762.549 372.514 772.229 405.683C778.689 427.849 787.499 459.242 772.729 470.803C747.749 490.36 712.959 495.977 681.459 499.938C641.219 504.998 598.139 494.109 556.259 491.446C532.139 489.912 512.599 501.741 495.439 516.208C481.649 527.841 470.499 544.249 464.569 564.678Z\" fill=\"#FF1CF7\"><\/path>\n  <\/g>\n  <g opacity=\"0.3\" filter=\"url(#filter1_f_577_931)\">\n    <path opacity=\"0.5\" d=\"M800.033 564.678C806.943 588.507 833.793 599.979 837.953 625.588C838.543 632.478 846.073 645.428 871.463 642.111C895.933 656.336 971.693 628.697 990.193 652.471C1003.81 669.973 1018.8 691.802 1013.51 723.272C1009.43 747.536 995.853 771.454 982.093 792.105C962.153 822.018 938.623 849.223 913.203 870.762C830.363 940.978 735.513 959.256 653.433 959.506C553.423 959.816 466.783 921.193 393.853 859.425C363.773 833.952 336.833 804.466 316.123 766.932C297.063 732.375 281.553 693.738 269.583 652.834C254.333 600.763 245.743 542.381 252.133 479.216C256.983 431.174 277.593 385.361 306.133 343.538C345.133 286.361 397.563 253.896 448.333 250.237C479.653 247.981 514.423 261.548 515.873 303.898C516.973 336.205 502.053 372.514 492.373 405.683C485.913 427.849 477.103 459.242 491.873 470.803C516.853 490.36 551.643 495.977 583.143 499.938C623.383 504.998 666.463 494.109 708.343 491.446C732.463 489.912 752.003 501.741 769.163 516.208C782.953 527.841 794.103 544.249 800.033 564.678Z\" fill=\"#0070F3\"><\/path>\n  <\/g>\n  <defs>\n    <filter id=\"filter0_f_577_931\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n      <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>\n      <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>\n      <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_577_931\"><\/fegaussianblur>\n    <\/filter>\n    <filter id=\"filter1_f_577_931\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n      <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>\n      <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>\n      <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_577_931\"><\/fegaussianblur>\n    <\/filter>\n  <\/defs>\n<\/svg>",
-            "opacity": 32,
-            "height": 350,
-            "marginTop": -3300
-          }
-        },
-        "27de3b95-0d3f-475a-bf96-abd5457aa978": {
-          "type": "bg",
-          "settings": {
-            "title": "Analysis & Migration Desktop",
-            "type": "desktop",
-            "color": "",
-            "css": "",
-            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"1265\" height=\"1210\" style=\"margin-left: 300px\" viewbox=\"0 0 1265 1210\" fill=\"none\">\n  <g opacity=\"0.3\" filter=\"url(#filter0_f_577_931)\">\n    <path opacity=\"0.5\" d=\"M464.569 564.678C457.659 588.507 430.809 599.979 426.649 625.588C426.059 632.478 418.529 645.428 393.139 642.111C368.669 656.336 292.909 628.697 274.409 652.471C260.789 669.973 245.799 691.802 251.089 723.272C255.169 747.536 268.749 771.454 282.509 792.105C302.449 822.018 325.979 849.223 351.399 870.762C434.239 940.978 529.089 959.256 611.169 959.506C711.179 959.816 797.819 921.193 870.749 859.425C900.829 833.952 927.769 804.466 948.479 766.932C967.539 732.375 983.049 693.738 995.019 652.834C1010.27 600.763 1018.86 542.381 1012.47 479.216C1007.62 431.174 987.009 385.361 958.469 343.538C919.469 286.361 867.039 253.896 816.269 250.237C784.949 247.981 750.179 261.548 748.729 303.898C747.629 336.205 762.549 372.514 772.229 405.683C778.689 427.849 787.499 459.242 772.729 470.803C747.749 490.36 712.959 495.977 681.459 499.938C641.219 504.998 598.139 494.109 556.259 491.446C532.139 489.912 512.599 501.741 495.439 516.208C481.649 527.841 470.499 544.249 464.569 564.678Z\" fill=\"#FF1CF7\"><\/path>\n  <\/g>\n  <g opacity=\"0.3\" filter=\"url(#filter1_f_577_931)\">\n    <path opacity=\"0.5\" d=\"M800.033 564.678C806.943 588.507 833.793 599.979 837.953 625.588C838.543 632.478 846.073 645.428 871.463 642.111C895.933 656.336 971.693 628.697 990.193 652.471C1003.81 669.973 1018.8 691.802 1013.51 723.272C1009.43 747.536 995.853 771.454 982.093 792.105C962.153 822.018 938.623 849.223 913.203 870.762C830.363 940.978 735.513 959.256 653.433 959.506C553.423 959.816 466.783 921.193 393.853 859.425C363.773 833.952 336.833 804.466 316.123 766.932C297.063 732.375 281.553 693.738 269.583 652.834C254.333 600.763 245.743 542.381 252.133 479.216C256.983 431.174 277.593 385.361 306.133 343.538C345.133 286.361 397.563 253.896 448.333 250.237C479.653 247.981 514.423 261.548 515.873 303.898C516.973 336.205 502.053 372.514 492.373 405.683C485.913 427.849 477.103 459.242 491.873 470.803C516.853 490.36 551.643 495.977 583.143 499.938C623.383 504.998 666.463 494.109 708.343 491.446C732.463 489.912 752.003 501.741 769.163 516.208C782.953 527.841 794.103 544.249 800.033 564.678Z\" fill=\"#0070F3\"><\/path>\n  <\/g>\n  <defs>\n    <filter id=\"filter0_f_577_931\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n      <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>\n      <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>\n      <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_577_931\"><\/fegaussianblur>\n    <\/filter>\n    <filter id=\"filter1_f_577_931\" x=\"0\" y=\"0\" width=\"1264.6\" height=\"1209.51\" filterunits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n      <feflood flood-opacity=\"0\" result=\"BackgroundImageFix\"><\/feflood>\n      <feblend mode=\"normal\" in=\"SourceGraphic\" in2=\"BackgroundImageFix\" result=\"shape\"><\/feblend>\n      <fegaussianblur stddeviation=\"125\" result=\"effect1_foregroundBlur_577_931\"><\/fegaussianblur>\n    <\/filter>\n  <\/defs>\n<\/svg>",
-            "opacity": 20,
-            "height": 800,
-            "marginTop": -2250
+            "marginTop": -500
           }
         }
       },
       "block_order": [
         "23b13c68-5ff6-4295-9c92-addc9e7599c9",
-        "7e5dd9f4-abbd-4ebf-8906-fe73f9f8438d",
-        "0261dace-1ac9-42bd-8e15-df30c261373d",
-        "897c612c-a391-4b3a-9998-1211804f92e6",
-        "639f7e31-4104-4a2b-b531-4bfd988edbd3",
-        "27de3b95-0d3f-475a-bf96-abd5457aa978"
+        "7e5dd9f4-abbd-4ebf-8906-fe73f9f8438d"
       ],
       "settings": {
+      }
+    },
+    "16542613555478f86d": {
+      "type": "image-gallery",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/collage-4.png",
+        "title1": "",
+        "image2": "shopify:\/\/shop_images\/COLLAGE-2.png",
+        "title2": "Graphic design",
+        "image3": "shopify:\/\/shop_images\/collage-6.png",
+        "title3": "Gift Registry",
+        "image4": "shopify:\/\/shop_images\/collage-5.png",
+        "title4": "",
+        "image5": "shopify:\/\/shop_images\/COLLAGE-3.png",
+        "title5": "",
+        "image6": "shopify:\/\/shop_images\/collage-1.png",
+        "title6": "",
+        "spacing": "none",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "16540875305d711f9e": {
@@ -295,33 +298,10 @@
       "settings": {
         "color_bg": "rgb(132 203 229 \/ 2%)",
         "blur_bg": true,
-        "color_toggle": "dark"
-      }
-    },
-    "1654259533f54af287": {
-      "type": "blockquote",
-      "settings": {
-        "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloremque dolores illum laudantium molestias nemo quo! Animi asperiores assumenda commodi culpa eveniet excepturi fugit illo incidunt iusto nam possimus quidem quos recusandae saepe similique, ullam?",
-        "author": "Tom",
-        "job_title": "Kids Living, Managing Director",
-        "quotation_marks": true
-      }
-    },
-    "16542613555478f86d": {
-      "type": "image-gallery",
-      "settings": {
-        "image1": "shopify:\/\/shop_images\/collage-4.png",
-        "title1": "",
-        "image2": "shopify:\/\/shop_images\/COLLAGE-2.png",
-        "title2": "Graphic design",
-        "image3": "shopify:\/\/shop_images\/collage-6.png",
-        "title3": "Gift Registry",
-        "image4": "shopify:\/\/shop_images\/collage-5.png",
-        "title4": "",
-        "image5": "shopify:\/\/shop_images\/COLLAGE-3.png",
-        "title5": "",
-        "image6": "shopify:\/\/shop_images\/collage-1.png",
-        "title6": ""
+        "color_toggle": "dark",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "165426875321fe7fc5": {
@@ -378,27 +358,10 @@
         "cta1_link": "",
         "cta2": "",
         "cta2_link": "",
-        "position": "center"
-      }
-    },
-    "16543302228e17b41c": {
-      "type": "feature-carousel",
-      "settings": {
-        "pre_title": "Customize",
-        "title": "We offer a large range of unique customizations and add ons",
-        "paragraph": "",
-        "cta1": "See all",
-        "cta1_link": "shopify:\/\/pages\/shopify-sites",
-        "cta2": "",
-        "cta2_link": "",
-        "position": "left",
-        "features": [
-          "shopify-customizations",
-          "shopify-full-sites",
-          "shopify-integration",
-          "shopify-seo-packages",
-          "shopify-website-maintenance"
-        ]
+        "position": "center",
+        "spacing": "custom",
+        "spacing_top": 24,
+        "spacing_bottom": 16
       }
     },
     "1654332872499b00d2": {
@@ -418,23 +381,49 @@
         "collection": "portfolio",
         "blog": "",
         "animate": true,
-        "animation_duration": 80
+        "animation_duration": 80,
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
+      }
+    },
+    "16543302228e17b41c": {
+      "type": "feature-carousel",
+      "settings": {
+        "pre_title": "Customize",
+        "title": "We offer a large range of unique customizations and add ons",
+        "paragraph": "",
+        "cta1": "See all",
+        "cta1_link": "shopify:\/\/pages\/shopify-sites",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "left",
+        "features": [
+          "shopify-customizations",
+          "shopify-full-sites",
+          "shopify-integration",
+          "shopify-seo-packages",
+          "shopify-website-maintenance"
+        ],
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     }
   },
   "order": [
-    "main",
+    "16588324053663a8e1",
     "16540104123512b9a3",
     "1654079897751048da",
+    "16540846002974a6ff",
     "1656933742c82a115d",
+    "16542613555478f86d",
     "16540875305d711f9e",
     "1654092902cc4e4a33",
     "16568814523f72d333",
     "16542555547186860a",
-    "1654259533f54af287",
-    "16542613555478f86d",
     "165426875321fe7fc5",
-    "16543302228e17b41c",
-    "1654332872499b00d2"
+    "1654332872499b00d2",
+    "16543302228e17b41c"
   ]
 }

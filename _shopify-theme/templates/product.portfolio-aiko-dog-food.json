@@ -304,19 +304,6 @@
         "spacing_bottom": 0
       }
     },
-    "1654259533f54af287": {
-      "type": "blockquote",
-      "disabled": true,
-      "settings": {
-        "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloremque dolores illum laudantium molestias nemo quo! Animi asperiores assumenda commodi culpa eveniet excepturi fugit illo incidunt iusto nam possimus quidem quos recusandae saepe similique, ullam?",
-        "author": "Tom",
-        "job_title": "Kids Living, Managing Director",
-        "quotation_marks": true,
-        "spacing": "md",
-        "spacing_top": 0,
-        "spacing_bottom": 0
-      }
-    },
     "165426875321fe7fc5": {
       "type": "feature-list",
       "blocks": {
@@ -435,7 +422,6 @@
     "1654092902cc4e4a33",
     "16568814523f72d333",
     "16542555547186860a",
-    "1654259533f54af287",
     "165426875321fe7fc5",
     "1654332872499b00d2",
     "16543302228e17b41c"

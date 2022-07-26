@@ -150,7 +150,6 @@ export const imageText: ShopifySection = {
         },
       ],
     },
-    ...spacing,
   ],
   presets: [
     {

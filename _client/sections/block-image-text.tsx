@@ -8,13 +8,7 @@ import { ImageTextSection } from ".shopify-cms/types/sections";
 
 export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ settings }) => {
   return (
-    <Wrapper
-      maxWidth="xl"
-      overflowHidden
-      spacing={settings.spacing}
-      spacingTop={settings.spacing_top}
-      spacingBottom={settings.spacing_bottom}
-    >
+    <Wrapper maxWidth="xl" overflowHidden spacing="none">
       <div className="flex grid-cols-2 flex-col-reverse gap-8 md:grid">
         {/*= =============== Text Content ================ */}
         <section
