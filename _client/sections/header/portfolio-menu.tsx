@@ -54,6 +54,7 @@ export const PortfolioMenu: FC<
                       <Link
                         href={subLink.url}
                         className="-m-1 flex rounded p-1 text-sm text-gray-500 hfa:text-accent dark:text-gray-400"
+                        onClick={() => closeNav()}
                       >
                         {subLink.title}
                       </Link>
