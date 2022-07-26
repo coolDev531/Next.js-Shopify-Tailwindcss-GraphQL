@@ -7,7 +7,15 @@ import { useCallback, useRef, useState } from "react";
 import { _Link_liquid, _Product_liquid } from ".shopify-cms/types/shopify";
 import { scrollToX } from "utils/scroll-to";
 
-export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _Link_liquid }) => {
+export const SliderMenu = ({
+  items,
+  link,
+  closeNav,
+}: {
+  closeNav: () => void;
+  items: _Product_liquid[];
+  link: _Link_liquid;
+}) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const maxIndex = items.length;
   const [scrollIndex, setScrollIndex] = useState(0);
@@ -47,6 +55,7 @@ export const SliderMenu = ({ items, link }: { items: _Product_liquid[]; link: _L
               href={product.url}
               key={`feature-${link.handle}-${product.id}`}
               className="group w-[300px] snap-start rounded-md p-4 hfa:bg-gray-50 f:ring-2 f:ring-sky-400 f:ring-offset-2 dark:hfa:bg-gray-700/30"
+              onClick={() => closeNav()}
             >
               <figure className="relative mb-4 aspect-1 h-[90px] w-[90px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
                 {product.featured_media && (

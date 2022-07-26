@@ -100,7 +100,7 @@ export const DesktopNav: FC<{
               case "dropdown_menu_features": {
                 return (
                   <Popover key={block.id}>
-                    {({ open }) => (
+                    {({ open, close }) => (
                       <>
                         <div
                           className={clsx(
@@ -133,7 +133,11 @@ export const DesktopNav: FC<{
                           leaveTo="opacity-0 -translate-y-1"
                         >
                           <Popover.Panel className="absolute inset-x-0 top-0 -z-10 hidden transform overflow-hidden bg-white pt-[65px] shadow-lg focus-visible:outline-none dark:bg-dark-bg dark:shadow-white/10 md:block">
-                            <SliderMenu items={block.settings.menu_items} link={link} />
+                            <SliderMenu
+                              items={block.settings.menu_items}
+                              link={link}
+                              closeNav={close}
+                            />
                           </Popover.Panel>
                         </Transition>
                       </>
@@ -146,7 +150,7 @@ export const DesktopNav: FC<{
               case "dropdown_menu_portfolio":
                 return (
                   <Popover key={block.id}>
-                    {({ open }) => (
+                    {({ open, close }) => (
                       <>
                         <div
                           className={clsx(
@@ -179,7 +183,11 @@ export const DesktopNav: FC<{
                           leaveTo="opacity-0 -translate-y-1"
                         >
                           <Popover.Panel className="absolute inset-x-0 top-0 -z-10 hidden transform overflow-hidden bg-white pt-[65px] shadow-lg focus-visible:outline-none dark:bg-dark-bg dark:shadow-white/10 md:block">
-                            <PortfolioMenu {...block.settings} links={link.links} />
+                            <PortfolioMenu
+                              {...block.settings}
+                              links={link.links}
+                              closeNav={close}
+                            />
                           </Popover.Panel>
                         </Transition>
                       </>

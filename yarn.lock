@@ -8659,10 +8659,10 @@ shell-quote@^1.6.1:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.3.tgz#aa40edac170445b9a431e17bb62c0b881b9c4123"
   integrity sha512-Vpfqwm4EnqGdlsBFNmHhxhElJYrdfcxPThu+ryKS5J8L/fhAwLazFZtq+S+TWZ9ANj2piSQLGj6NQg+lKPmxrw==
 
-shopify-cms@^1.0.36:
-  version "1.0.36"
-  resolved "https://registry.yarnpkg.com/shopify-cms/-/shopify-cms-1.0.36.tgz#ad259c194034deea02d4fca42d9c869bfea63532"
-  integrity sha512-WpSZfyRBXaAnuQjK6Ef7ddsurar6OMFe0ia8xHSWc6H4AHX7UV8aeiGbkxa8GIckLFzgOcXkRht+YapF2BGjww==
+shopify-cms@^1.0.37:
+  version "1.0.37"
+  resolved "https://registry.yarnpkg.com/shopify-cms/-/shopify-cms-1.0.37.tgz#01e71c081cfd84865c41939885ae7d25d685e10e"
+  integrity sha512-HRi2xUCxSvSpHb0/zKAiZgMhUBvzOQ4BMZbD81/Cfq5dS4eumwDmkX0zGf0nMDD5W5IoaL5hAhxIHc1TI+GpVA==
   dependencies:
     "@swc/core" "^1.2.218"
     "@swc/helpers" "^0.4.3"

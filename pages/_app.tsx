@@ -31,7 +31,7 @@ export const SEO = {
   },
   openGraph: {
     type: "website",
-    locale: "en_IE",
+    locale: "en_US",
     url: "https://lunalemon.dev",
     site_name: "Lunalemon.dev",
     title: "Lunalemon - Web Development",
@@ -50,13 +50,14 @@ export const SEO = {
 
 const App: FC<AppProps> = ({ pageProps, Component }) => {
   const router = useRouter();
-  console.log("render");
+  console.log(router.asPath);
 
   return (
     <ShopifyDataProvider init={{ sections: pageProps?.sections, global: pageProps?.global }}>
       <ContextProviders>
         <LoadInitialData>
           <DefaultSeo
+            {...SEO}
             canonical={`${SEO.url}${router.asPath}`}
             twitter={SEO.twitter}
             title={SEO.title}

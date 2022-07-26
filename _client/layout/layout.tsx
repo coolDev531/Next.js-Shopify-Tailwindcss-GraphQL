@@ -3,11 +3,12 @@ import { ContextProviders } from "_client/stores/_context-providers";
 import { LoadInitialData } from "_client/stores/_load-initial-data";
 import { ShopifyDataProvider, useShopifyData } from "_client/stores/shopify-data-store";
 import clsx from "clsx";
-import { DefaultSeo } from "next-seo";
+import { DefaultSeo, NextSeo } from "next-seo";
 import { ThemeProvider, useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import { SEO } from "pages/_app";
 import { FC, useEffect } from "react";
+import { capitalize } from "utils/capitalize";
 import { PageSettingsSection, Sections } from ".shopify-cms/types/sections";
 import { GlobalSettings } from ".shopify-cms/types/shopify";
 
@@ -116,12 +117,33 @@ export const ThemeLayout = (props) => {
         <div className="user-select-none absolute inset-0 -z-[100] h-full w-full bg-bg"></div>
 
         <ThemeProvider attribute="class">
-          <DefaultSeo
-            canonical={`${SEO.url}${router.asPath}`}
-            twitter={SEO.twitter}
-            title={SEO.title}
-            description={SEO.description}
-            openGraph={SEO.openGraph}
+          <NextSeo
+            title={`Lunalemon - Web Development | ${global.title} ${
+              global?.product?.type ? `| ${capitalize(global?.product?.type)}` : ""
+            }`}
+            description={global.description}
+            openGraph={{
+              ...SEO.openGraph,
+              type: "website",
+              locale: "en_US",
+              url: `${SEO.url}${router.asPath}`,
+              site_name: `Lunalemon - Web Development | ${global.title} ${
+                global?.product?.type ? `| ${capitalize(global?.product?.type)}` : ""
+              }`,
+              images: global.product?.featured_media
+                ? [
+                    {
+                      url: global.product?.featured_media?.src,
+                      alt: `Lunalemon - Web Development | ${global.title} ${
+                        global?.product?.type ? `| ${capitalize(global?.product?.type)}` : ""
+                      }`,
+                      width: global.product?.featured_media?.width,
+                      height: global.product?.featured_media?.height,
+                    },
+                    ...SEO.openGraph.images,
+                  ]
+                : SEO.openGraph.images,
+            }}
           />
 
           {sections?.map((section) => renderSection(section))}

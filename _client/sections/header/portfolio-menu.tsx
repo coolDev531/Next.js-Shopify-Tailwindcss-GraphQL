@@ -5,8 +5,11 @@ import { HeaderBlocks } from ".shopify-cms/types/sections";
 import { _Link_liquid } from ".shopify-cms/types/shopify";
 
 export const PortfolioMenu: FC<
-  Extract<HeaderBlocks, { type: "dropdown_menu_portfolio" }>["settings"] & { links: _Link_liquid[] }
-> = ({ handle, links, ...props }) => {
+  Extract<HeaderBlocks, { type: "dropdown_menu_portfolio" }>["settings"] & {
+    closeNav: () => void;
+    links: _Link_liquid[];
+  }
+> = ({ handle, links, closeNav, ...props }) => {
   return (
     <div className="mx-auto flex max-w-7xl gap-8 px-4 py-16 sm:px-8">
       {[1, 2].map((key) => {
@@ -16,6 +19,7 @@ export const PortfolioMenu: FC<
               key={props[`title_${key}`]}
               href={props[`link_${key}`]}
               className="group relative h-[257px] w-[257px] overflow-hidden rounded-lg"
+              onClick={() => closeNav()}
             >
               <Image
                 preload
