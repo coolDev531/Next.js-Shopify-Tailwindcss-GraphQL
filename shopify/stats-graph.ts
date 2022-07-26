@@ -19,8 +19,13 @@ export const statsGraph: ShopifySection = {
         },
         {
           type: "text",
+          id: "title",
+          label: "Title",
+        },
+        {
+          type: "text",
           id: "descriptions",
-          label: "Description",
+          label: "Descriptions",
         },
       ],
     },

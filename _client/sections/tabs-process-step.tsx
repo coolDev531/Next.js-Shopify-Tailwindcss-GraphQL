@@ -112,6 +112,7 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
                   className="transition-colors hf:text-white"
                   onClick={(e) => console.log(e)}
                   type="button"
+                  aria-label="Copy Content"
                 >
                   <ReactIcon name="FiCopy" />
                 </button>

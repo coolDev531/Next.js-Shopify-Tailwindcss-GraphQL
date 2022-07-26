@@ -80,9 +80,7 @@ export const StatsGraph: FC<StatsGraphSection> = ({ id, blocks, type }: StatsGra
                       <h3 className="mb-2 text-5xl font-medium tracking-tight text-gray-900 dark:text-gray-50">
                         {block.settings.stat}
                       </h3>
-                      <h2 className="text-gray-500 dark:text-gray-400">
-                        {block.settings.descriptions}
-                      </h2>
+                      <h2 className="text-gray-500 dark:text-gray-400">{block.settings.title}</h2>
                     </header>
                   </section>
                 );

@@ -751,6 +751,8 @@ export type StatsGraphBlocks = {
     descriptions?: string;
     /** Input type: text */
     stat?: string;
+    /** Input type: text */
+    title?: string;
   };
   type: "stat";
 };
