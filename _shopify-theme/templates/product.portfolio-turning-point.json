@@ -13,7 +13,10 @@
         "title": "Turning Point",
         "paragraph": "<p>Ballet and Dancewear company focusing on handmade and high-end dance wear with modern styles and designs. Always dedicated to design products that Suit-Your-Body. We have joined Turning Points team to help migrate their site from Wordpress to a much more user-friendly Shopify site.<\/p>",
         "list": "<p>What we did (services):<br\/>•\tWeb Development<br\/>•\tCustom Features Development <br\/>•\tCustom App Integrations<br\/><br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/turning_point.jpg"
+        "image": "shopify:\/\/shop_images\/turning_point.jpg",
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
       }
     },
     "1654079897751048da": {
@@ -442,6 +445,7 @@
         "cta2_link": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",

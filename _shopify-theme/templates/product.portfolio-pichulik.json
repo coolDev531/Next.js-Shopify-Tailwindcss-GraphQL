@@ -13,7 +13,10 @@
         "title": "Pichulik",
         "paragraph": "<p>PICHULIK is an women run, ethical jewellery Atelier based in Cape Town, South Africa. Rooted in Africa, and inspired by ancient traditions and cultures around the world, PICHULIK seeks to impart sacred feminine wisdom through its unique and intentional designs.<\/p><p><\/p><p>We have worked with Pichulik to take their existing Shopify store into an International site & local site and developed a custom navigation to improve their user experience.<br\/>We have worked on the project in partnership with Thinn who has handled their POS integration and account management.<br\/><\/p>",
         "list": "<p>What we did (services):<br\/>•\tWeb Development<br\/>•\tCustom Features Development <br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/Capture1.jpg"
+        "image": "shopify:\/\/shop_images\/Capture1.jpg",
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
       }
     },
     "1654079897751048da": {
@@ -442,6 +445,7 @@
         "cta2_link": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",

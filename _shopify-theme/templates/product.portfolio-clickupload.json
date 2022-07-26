@@ -14,7 +14,10 @@
         "paragraph": "<p>ClickUpload enables your store to let customers upload files to their orders. The app supports all file types and sizes. All files are linked to the order and can be downloaded easily.<\/p>",
         "list_title": "App features:",
         "list": "<p>File uploads<\/p><p>Supports all file types<\/p><p>Enables file & size restriction <\/p><p>Enables sample file upload<\/p>",
-        "image": "shopify:\/\/shop_images\/Hero_80fae443-dfd6-493e-bdd6-5f7c50790ed5.png"
+        "image": "shopify:\/\/shop_images\/Hero_80fae443-dfd6-493e-bdd6-5f7c50790ed5.png",
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
       }
     },
     "1654079897751048da": {
@@ -510,6 +513,7 @@
         "cta2_link": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",

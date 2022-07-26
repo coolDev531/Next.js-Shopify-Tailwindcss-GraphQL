@@ -21,7 +21,10 @@
         "paragraph": "<p>Volkswagen Mossel Bay parts service offers high quality Genuine Volkswagen Parts. They pride themselves in consistency from years of excellent service. With a combination of hard work, dedication, and innovation, they always make sure to make their customers their number one priority. <\/p><p><\/p><p>We developed their website to highlight their parts service and custom built a search and filter function for their type of products.  <\/p>",
         "list_title": "What we did:",
         "list": "<p>Web Development<\/p><p>Custom Features Development <\/p><p>Custom Product setup<\/p>",
-        "image": "shopify:\/\/shop_images\/Volkswagen.png"
+        "image": "shopify:\/\/shop_images\/Volkswagen.png",
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
       }
     },
     "1654079897751048da": {
@@ -418,6 +421,7 @@
         "paragraph": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",

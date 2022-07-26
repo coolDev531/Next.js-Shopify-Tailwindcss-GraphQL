@@ -14,7 +14,10 @@
         "paragraph": "<p>Lunatag helps you \"Tell a story through your pictures\"<br\/>The focus is to make shopping easy for visitors on your website by highlighting your products through images.<br\/><\/p>",
         "list_title": "App features",
         "list": "<p>Picture tagging function<\/p><p>Automatic picture detection <\/p><p>easily search for products to tag<\/p><p>Picture tagging in multiple pages<\/p><p>Custom the tag design<\/p>",
-        "image": "shopify:\/\/shop_images\/Hero_334b94a9-3c12-40b2-a6e0-56310121da12.png"
+        "image": "shopify:\/\/shop_images\/Hero_334b94a9-3c12-40b2-a6e0-56310121da12.png",
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
       }
     },
     "1654079897751048da": {
@@ -510,6 +513,7 @@
         "cta2_link": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",

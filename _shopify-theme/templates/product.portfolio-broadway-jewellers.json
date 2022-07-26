@@ -21,7 +21,10 @@
         "paragraph": "<p>Broadway Jewellers provides a wide range of branded watches, Jewellery and accessories. They strive every day to earn the confidence and trust of their clients by exceeding their expectations of quality, service, and value. <\/p><p><\/p><p>Our work with Broadway Jewellers starting with migrating their site form WordPress to Shopify, we also covered an array of aspects from inventory management, digital marketing, SEO web solutions, web design upgrade to custom API solutions.<\/p>",
         "list_title": "What we did:",
         "list": "<p>Store Migration <\/p><p>Shopify Web Development<\/p><p>Custom Features Development<\/p><p>Custom App Integrations<\/p><p>Monthly SEO & Site maintenance support<\/p>",
-        "image": "shopify:\/\/shop_images\/image-mock---Liz.png"
+        "image": "shopify:\/\/shop_images\/image-mock---Liz.png",
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
       }
     },
     "1654079897751048da": {
@@ -495,6 +498,7 @@
         "cta2_link": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",

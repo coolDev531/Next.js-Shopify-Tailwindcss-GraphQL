@@ -14,7 +14,10 @@
         "paragraph": "<p>Hydrobiz is a Cape Town based company that supplies professional horticulture equipment and consumables. <\/p><p><br\/>We have worked with Hydrobiz in successfully upgrading their Shopify Website covering aspects from inventory management, web development, and integrating their website to DEAR POS system. <br\/><\/p>",
         "list_title": "What we did:",
         "list": "<p>Store design update<\/p><p>Shopify Web Development <\/p><p>Shopify to DEAR intergration <\/p><p><\/p>",
-        "image": "shopify:\/\/shop_images\/Hero-blue.png"
+        "image": "shopify:\/\/shop_images\/Hero-blue.png",
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
       }
     },
     "1654079897751048da": {
@@ -410,6 +413,7 @@
         "cta2_link": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",

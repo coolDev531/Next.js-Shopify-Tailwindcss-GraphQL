@@ -13,7 +13,10 @@
         "title": "MindOverMatter",
         "paragraph": "<p>The Mind over Matter Foundation (Non-profit Company K2021991397) was formed with the intention of providing help for those with cancer who cannot afford the latest and most advanced technologies and healthcare services, which are currently only available in the private sector.<\/p><p><\/p><p>We have worked with the Mind Over Matter foundation in 2021 to create a complete new Shopify experience, where the ecommerce functionality is primarily used to support Sponsorship for the foundation. Part of the site is a complete custom builder to allow sponsors to send Merchandise to their list of donors. We have created the site on an accelerated timeframe to suit the Mind Over Matters launch date.<\/p>",
         "list": "<p>What we did (services):<br\/>•\tWeb Development<br\/>•\tCustom theme editing<br\/>•\tCustom App Integrations<br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/271695288_209918818020486_1978859092656950454_n.jpg"
+        "image": "shopify:\/\/shop_images\/271695288_209918818020486_1978859092656950454_n.jpg",
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
       }
     },
     "1654079897751048da": {
@@ -443,6 +446,7 @@
         "cta2_link": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",

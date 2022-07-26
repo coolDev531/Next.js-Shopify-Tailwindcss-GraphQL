@@ -14,7 +14,10 @@
         "paragraph": "<p>Est. 2016, Bush Scarf focuses on quality handwoven bamboo and mohair scarves. Locally made and proudly South African, the scarves express beauty, elegancy, and simplicity through the vivid and strong colour tones in their designs.<br\/><br\/>We worked with Bushscarf in successfully developing their Shopify Website covering aspects from product photography, product image editing and product content creation.<br\/><\/p>",
         "list_title": "What we did:",
         "list": "<p>Web Development<\/p><p>Custom theme editing <\/p><p>Product content creation<\/p>",
-        "image": "shopify:\/\/shop_images\/image-mock---Liz_24e9bb52-7041-4820-b08d-e352eb3f5751.png"
+        "image": "shopify:\/\/shop_images\/image-mock---Liz_24e9bb52-7041-4820-b08d-e352eb3f5751.png",
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
       }
     },
     "1654079897751048da": {
@@ -442,6 +445,7 @@
         "cta2_link": "",
         "position": "center",
         "features": [
+
         ]
       }
     },
@@ -457,6 +461,7 @@
         "cta2_link": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",

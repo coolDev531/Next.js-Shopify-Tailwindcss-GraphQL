@@ -14,7 +14,10 @@
         "paragraph": "<p>Ford is committed to ensuring that you enjoy the best performance and safety - year after year. We take pride in supplying high quality replacement parts. All Genuine Ford Parts are engineered and tested to ensure that they meet your vehicle performance requirements.<br\/><br\/>We developed their website to highlight their parts service and custom built a search and filter function for their type of products.  <br\/><\/p>",
         "list_title": "What we did:",
         "list": "<p>Web Development<\/p><p>Custom Features Development <\/p><p>Custom Product setup<\/p>",
-        "image": "shopify:\/\/shop_images\/image-mock---Liz_42ca6191-5954-4533-87b1-7022f9ae7d40.png"
+        "image": "shopify:\/\/shop_images\/image-mock---Liz_42ca6191-5954-4533-87b1-7022f9ae7d40.png",
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
       }
     },
     "1654079897751048da": {
@@ -533,6 +536,7 @@
         "cta2_link": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",

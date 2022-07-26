@@ -14,7 +14,10 @@
         "paragraph": "<p>Waraq is a health and beauty brand that focuses on sustainable health and while encouraging a beauty positive lifestyle.<\/p><p><br\/>We worked with Mortiz Tellman in successfully developing his Shopify website to accommodate and structure large amount of content, covering aspects from UX friendly flow, minimalistic design, while setting up the website to be compatible for both German and English.<br\/><\/p>",
         "list_title": "What we did:",
         "list": "<p>Web Development<\/p><p>Custom theme editing <\/p><p>Product content & editing<\/p><p>Multilingual Website (English & German)<\/p>",
-        "image": "shopify:\/\/shop_images\/hero_54238c6d-b03d-4813-84be-93c06b462eae.png"
+        "image": "shopify:\/\/shop_images\/hero_54238c6d-b03d-4813-84be-93c06b462eae.png",
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
       }
     },
     "1654079897751048da": {
@@ -457,6 +460,7 @@
         "cta2_link": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",

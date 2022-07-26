@@ -14,7 +14,10 @@
         "paragraph": "<p>Waraq is a health and beauty brand that focuses on sustainable health and while encouraging a beauty positive lifestyle.<\/p><p><\/p><p>We worked with Waraq in successfully developing their Shopify Website covering aspects from product image editing and<br\/>content creation.<\/p>",
         "list_title": "What we did:",
         "list": "<p>Web Development<\/p><p>Custom theme editing<\/p><p>Product image editing<\/p>",
-        "image": "shopify:\/\/shop_images\/hero_780a6c73-c87d-45b2-ac8b-3dcff5ffc189.png"
+        "image": "shopify:\/\/shop_images\/hero_780a6c73-c87d-45b2-ac8b-3dcff5ffc189.png",
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
       }
     },
     "1654079897751048da": {
@@ -461,6 +464,7 @@
         "cta2_link": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",

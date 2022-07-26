@@ -22,8 +22,8 @@
         "list_title": "What we did:",
         "list": "<p>Site repairs<\/p><p>Custom development<\/p><p>Custom App Integrations<\/p>",
         "image": "shopify:\/\/shop_images\/aiko-hero.png",
-        "spacing": "md",
-        "spacing_top": 0,
+        "spacing": "custom",
+        "spacing_top": 16,
         "spacing_bottom": 0
       }
     },
@@ -389,6 +389,7 @@
         "cta2_link": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",

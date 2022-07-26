@@ -14,7 +14,10 @@
         "paragraph": "<p>Inspired by the beautiful diversity of Pan-African cultures. Featuring Vibrant colours and textures that melt into designs in a modern way. Run by a wonderful husband and wife team. We have worked with Matsidiso to refine their sites design and got onboard for custom development and helped them to take their store into international markets.<\/p>",
         "list_title": "",
         "list": "<p>What we did (services):<br\/>•\tCustom app development<br\/>•\tInternationalization<br\/>•\tCustom design<br\/><br\/><\/p>",
-        "image": "shopify:\/\/shop_images\/matsidiso.jpg"
+        "image": "shopify:\/\/shop_images\/matsidiso.jpg",
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
       }
     },
     "1654079897751048da": {
@@ -456,6 +459,7 @@
         "cta2_link": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",

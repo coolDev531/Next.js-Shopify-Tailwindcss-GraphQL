@@ -14,7 +14,10 @@
         "paragraph": "<p>Founded in 2003, ZOOM PRINTING is a one-stop-shop for all printing needs at unbelievable prices. The pricing model is built on providing the highest possible quality for an affordable price.<\/p><p>We have worked with ZOOM PRINTING in successfully migrating their store from Legacy to Shopify covering aspects from inventory management, web development, custom product set-up. <br\/><\/p>",
         "list_title": "What we did:",
         "list": "<p>Store Migration<\/p><p>Shopify Web Development<\/p><p>Custom Features Development<\/p>",
-        "image": "shopify:\/\/shop_images\/hero_65be0268-ca03-4a31-91f8-d7dda809c9ed.png"
+        "image": "shopify:\/\/shop_images\/hero_65be0268-ca03-4a31-91f8-d7dda809c9ed.png",
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 0
       }
     },
     "1654079897751048da": {
@@ -471,6 +474,7 @@
         "cta2_link": "",
         "position": "center",
         "products": [
+
         ],
         "collection": "portfolio",
         "blog": "",
