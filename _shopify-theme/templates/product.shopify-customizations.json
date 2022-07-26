@@ -1,58 +1,13 @@
 {
   "sections": {
-    "1656935895e67bca71": {
-      "type": "hero-with-features",
-      "blocks": {
-        "689e6e02-64ee-4082-adc0-5adbbcb4c9d7": {
-          "type": "feature",
-          "settings": {
-            "title": "Reach out",
-            "paragraph": "Have a question? or have a service you need. Choose an option that suites you or send us an enquiry. Our team is ready to get you started.",
-            "icon": "ui-1"
-          }
-        },
-        "8a2a41e9-564a-45c3-abac-f9443e19308f": {
-          "type": "feature",
-          "settings": {
-            "title": "Team Match",
-            "paragraph": "Based on your enquiry we will assign a dedicated project manager matched to assist you, they take the time to ensure your needs are taken care of.",
-            "icon": "ui-2"
-          }
-        },
-        "161fe8eb-8549-454a-8b98-b7ac8a2e64d1": {
-          "type": "feature",
-          "settings": {
-            "title": "Get started",
-            "paragraph": "You are in good hands. With your dedicated project manager, the sky is the limit, they will be there every step of the way to see that your project is complete.",
-            "icon": "ui-3"
-          }
-        }
-      },
-      "block_order": [
-        "689e6e02-64ee-4082-adc0-5adbbcb4c9d7",
-        "8a2a41e9-564a-45c3-abac-f9443e19308f",
-        "161fe8eb-8549-454a-8b98-b7ac8a2e64d1"
-      ],
+    "main": {
+      "type": "template-product",
       "settings": {
-        "pre_title": "Websites tailored to your needs",
-        "title": "We create Shopify Ecommerce solutions.",
-        "tech": [
-          "shopify",
-          "copy-of-node-js",
-          "tailwindcss"
-        ],
-        "paragraph": "<p>Wether you want to built a new ecommerce store, migrate from a different platform, or need to upgrade your current site. We are here to help you succeed.<\/p>",
-        "cta1": "Get started",
-        "cta1_link": "#",
-        "cta2": "Learn more",
-        "cta2_link": "#",
-        "image_1": "shopify:\/\/shop_images\/2.png",
-        "image_2": "shopify:\/\/shop_images\/1.png",
-        "image_3": "shopify:\/\/shop_images\/3.png"
       }
     },
     "16547615501aa86d63": {
       "type": "heading",
+      "disabled": true,
       "settings": {
         "pre_title": "",
         "title": "We create Shopify Ecommerce solutions.",
@@ -66,13 +21,15 @@
     },
     "16547615536da214ca": {
       "type": "feature-list",
+      "disabled": true,
       "blocks": {
         "f01ae097-eee3-4c30-bdf5-1e5d61506b5e": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Benefit 1",
-            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>",
+            "paragraph_old": ""
           }
         },
         "6ae8fd1e-b2ee-4e23-be4b-e76c4131f2b7": {
@@ -80,7 +37,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Benefit 2",
-            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>",
+            "paragraph_old": ""
           }
         },
         "2bd223e9-952a-4c7b-b098-afcae3728cc4": {
@@ -88,7 +46,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Benefit 3",
-            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>",
+            "paragraph_old": ""
           }
         },
         "fef8d93c-5bdc-49a7-8de3-3ef0c0ecd90a": {
@@ -96,7 +55,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Benefit 4",
-            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>",
+            "paragraph_old": ""
           }
         }
       },
@@ -107,10 +67,22 @@
         "fef8d93c-5bdc-49a7-8de3-3ef0c0ecd90a"
       ],
       "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "165476159216c4ff5c": {
       "type": "heading",
+      "disabled": true,
       "settings": {
         "pre_title": "Expert development",
         "title": "We speak, eat, sleep Shopify",
@@ -124,13 +96,15 @@
     },
     "16547657217b1dfb71": {
       "type": "feature-list",
+      "disabled": true,
       "blocks": {
         "5b1130c5-26d5-416e-8c0c-ec5b05b63ab1": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "From Scratch",
-            "paragraph": "<p>You are looking for a<br\/>new site and haven’t got<br\/>a site already, or the<br\/>need to connect it to a<br\/>3rd par ty POS<\/p>"
+            "paragraph": "<p>You are looking for a<br\/>new site and haven’t got<br\/>a site already, or the<br\/>need to connect it to a<br\/>3rd par ty POS<\/p>",
+            "paragraph_old": ""
           }
         },
         "613b3423-00d0-40c1-a6c6-4295763917b9": {
@@ -138,7 +112,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Upgrade",
-            "paragraph": "<p>You have an existing<br\/>Shopify store and want<br\/>to upgrade t he theme,<br\/>content structure, and<br\/>make more sales?<\/p>"
+            "paragraph": "<p>You have an existing<br\/>Shopify store and want<br\/>to upgrade t he theme,<br\/>content structure, and<br\/>make more sales?<\/p>",
+            "paragraph_old": ""
           }
         },
         "f593e74c-72fe-4a2d-9dd4-eb0ff99ee28f": {
@@ -146,7 +121,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Integrate",
-            "paragraph": "<p>You have an extisting<br\/>brick & mor tar store and<br\/>want to integrate your<br\/>back-end system into a<br\/>new Shopify store.<\/p>"
+            "paragraph": "<p>You have an extisting<br\/>brick & mor tar store and<br\/>want to integrate your<br\/>back-end system into a<br\/>new Shopify store.<\/p>",
+            "paragraph_old": ""
           }
         },
         "03758003-6321-4a0c-8e54-8eab05c4a979": {
@@ -154,7 +130,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Migration",
-            "paragraph": "<p>You want to change<br\/>your ecommerce platform<br\/>from WooCommerce,<br\/>Magento, Big-<br\/>Commerce or other?<\/p>"
+            "paragraph": "<p>You want to change<br\/>your ecommerce platform<br\/>from WooCommerce,<br\/>Magento, Big-<br\/>Commerce or other?<\/p>",
+            "paragraph_old": ""
           }
         }
       },
@@ -165,26 +142,59 @@
         "03758003-6321-4a0c-8e54-8eab05c4a979"
       ],
       "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
-    "165476583906badf90": {
-      "type": "logo-banner",
+    "1654762013d2c9eed0": {
+      "type": "story",
+      "blocks": {
+        "2a8dbc1e-9c29-40a3-8c79-6adc1d8fa95f": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "Get Started",
+            "title": "Ready to start your Shopify project?",
+            "paragraph": "<p>Get started now blurb, skip to quoting form challenge on<br\/>having ther product information on BigCommerce and on<br\/>max 4 lines for aestetics<\/p>",
+            "cta1": "123123",
+            "cta1_link": "",
+            "cta2": "123123123",
+            "cta2_link": "",
+            "position": "center"
+          }
+        },
+        "a0b070e8-45e6-47be-9d07-7f2371f7e8ea": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "",
+            "title": "asfafs",
+            "paragraph": "<p>afs<\/p>",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
+            "position": "left"
+          }
+        }
+      },
+      "block_order": [
+        "2a8dbc1e-9c29-40a3-8c79-6adc1d8fa95f",
+        "a0b070e8-45e6-47be-9d07-7f2371f7e8ea"
+      ],
       "settings": {
-        "title": "Brands we've worked with",
-        "products": [
-          "ford",
-          "kids-living",
-          "lunatag",
-          "volkswagen",
-          "zoom-printing",
-          "bushscarf",
-          "broadway-jewellers",
-          "moritz-tellmann"
-        ],
-        "collection": "",
-        "height": 40,
-        "animate": true,
-        "animation_duration": 20
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "1654424131fb27794e": {
@@ -246,52 +256,38 @@
       "settings": {
         "pre_title": "Developer experience to love",
         "title": "Develop with an open, thought‑out API",
-        "paragraph": "<p>One of our main goals is to provide the best possible developer experience. Radix Primitives provides a fully-typed API. All components share a similar API, creating a consistent and predictable experience.<\/p>"
+        "paragraph": "<p>One of our main goals is to provide the best possible developer experience. Radix Primitives provides a fully-typed API. All components share a similar API, creating a consistent and predictable experience.<\/p>",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
-    "1654762013d2c9eed0": {
+    "16588460534ec9a41f": {
       "type": "story",
       "blocks": {
-        "2a8dbc1e-9c29-40a3-8c79-6adc1d8fa95f": {
-          "type": "heading",
-          "settings": {
-            "pre_title": "Get Started",
-            "title": "Ready to start your Shopify project?",
-            "paragraph": "<p>Get started now blurb, skip to quoting form challenge on<br\/>having ther product information on BigCommerce and on<br\/>max 4 lines for aestetics<\/p>",
-            "cta1": "123123",
-            "cta1_link": "",
-            "cta2": "123123123",
-            "cta2_link": "",
-            "position": "center"
-          }
-        },
-        "a0b070e8-45e6-47be-9d07-7f2371f7e8ea": {
+        "27d733af-62fc-410a-b4f0-da2412ea5d75": {
           "type": "image-text",
           "settings": {
-            "pre_title": "",
-            "title": "asfafs",
-            "paragraph": "<p>afs<\/p>",
-            "image": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
-            "position": "left"
-          }
-        },
-        "1edc02ca-a844-4f5c-93fb-791e53248869": {
-          "type": "image-text",
-          "settings": {
-            "pre_title": "",
-            "title": "asfafs",
-            "paragraph": "<p>asfafs<\/p>",
-            "image": "shopify:\/\/shop_images\/Capturem.jpg",
+            "pre_title": "why work with us",
+            "title": "",
+            "paragraph": "",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/collage-3_62012f18-4e9a-433c-9b86-8f053071afd9.png",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
             "position": "right"
           }
         }
       },
       "block_order": [
-        "2a8dbc1e-9c29-40a3-8c79-6adc1d8fa95f",
-        "a0b070e8-45e6-47be-9d07-7f2371f7e8ea",
-        "1edc02ca-a844-4f5c-93fb-791e53248869"
+        "27d733af-62fc-410a-b4f0-da2412ea5d75"
       ],
       "settings": {
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "1654761954c36d4db0": {
@@ -369,10 +365,106 @@
         "a6f38bae-51d8-4fc2-a8c5-3067eb477ac2"
       ],
       "settings": {
+        "color_bg": "",
+        "blur_bg": true,
+        "color_toggle": "dark",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1654762016e3f34059": {
+      "type": "image-carousel",
+      "disabled": true,
+      "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "products": [
+
+        ],
+        "collection": "",
+        "blog": "",
+        "animate": false,
+        "animation_duration": 20,
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "165476583906badf90": {
+      "type": "logo-banner",
+      "disabled": true,
+      "settings": {
+        "title": "Brands we've worked with",
+        "products": [
+
+        ],
+        "collection": "",
+        "height": 40,
+        "animate": false,
+        "animation_duration": 20,
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "165476205467493fae": {
+      "type": "feature-carousel",
+      "disabled": true,
+      "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "features": [
+
+        ],
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1654765182e225ecd7": {
+      "type": "info-cards",
+      "disabled": true,
+      "settings": {
+        "pre_title": "Migrations",
+        "title": "No matter what platform you come from,",
+        "content_list": [
+
+        ],
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1654765182e225ecd72": {
+      "type": "info-cards",
+      "disabled": true,
+      "settings": {
+        "pre_title": "Integrations",
+        "title": "or what back-end you want to use.",
+        "content_list": [
+
+        ],
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "165476560159b5ef3e": {
       "type": "tabs-faq",
+      "disabled": true,
       "blocks": {
         "d68c2fff-950f-47fe-9c59-75d2d40d5ad8": {
           "type": "category",
@@ -394,141 +486,33 @@
         "cd33e95e-48af-4908-991a-572c49c76755"
       ],
       "settings": {
-        "title": "Frequentlyasked questions"
+        "title": "Frequentlyasked questions",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
-    "1658740480bb450054": {
+    "165884615510ae5bcc": {
       "type": "pricing",
       "blocks": {
-        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab": {
+        "a3abe88e-f462-48a9-967e-1177e06b7111": {
           "type": "package",
           "settings": {
-            "title": "Basic",
-            "price": "From R 18 500, -",
-            "subtitle": "For personal or small start-up ecommerce sites with a simple responsive design - based on a standard Shopify theme.",
-            "cta1": "Book now",
-            "cta1_link": "",
-            "cta2": "Learn more",
-            "cta2_link": "",
-            "feature_1": "Basic Product Setup (5)",
-            "feature_2": "Basic Collection Setup (5)",
-            "feature_3": "Basic Navigation",
-            "feature_4": "Basic Pages Setup (homepage \/ contact \/ policies pages)",
-            "feature_5": "Settings setup",
-            "feature_6": "Shipping & Payments integration",
-            "feature_7": "Project Management throughout",
-            "feature_8": "",
-            "feature_9": "",
-            "feature_10": "",
-            "shadow": false,
-            "primary": false,
-            "color_accent": "#19222e",
-            "color_accent_contrast": "",
-            "color_accent_secondary": "",
-            "color_accent_secondary_contrast": "",
-            "color_accent_dark": "",
-            "color_accent_contrast_dark": "",
-            "color_accent_secondary_dark": "",
-            "color_accent_secondary_contrast_dark": ""
-          }
-        },
-        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab2": {
-          "type": "package",
-          "settings": {
-            "title": "Advanced",
-            "price": "From R 39 500, -",
-            "subtitle": "For personal or small start-up ecommerce sites with a simple responsive design - based on a standard Shopify theme.",
-            "cta1": "Book now",
-            "cta1_link": "",
-            "cta2": "Learn More",
-            "cta2_link": "",
-            "feature_1": "Basic Product Setup (5)",
-            "feature_2": "Basic Collection Setup (5)",
-            "feature_3": "Basic Navigation",
-            "feature_4": "Basic Pages Setup (homepage \/ contact \/ policies pages)",
-            "feature_5": "Settings setup",
-            "feature_6": "Shipping & Payments integration",
-            "feature_7": "Project Management throughout",
-            "feature_8": "",
-            "feature_9": "",
-            "feature_10": "",
-            "shadow": true,
-            "primary": true,
-            "color_accent": "#22c55e",
-            "color_accent_contrast": "",
-            "color_accent_secondary": "",
-            "color_accent_secondary_contrast": "",
-            "color_accent_dark": "",
-            "color_accent_contrast_dark": "",
-            "color_accent_secondary_dark": "",
-            "color_accent_secondary_contrast_dark": ""
-          }
-        },
-        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab3": {
-          "type": "package",
-          "settings": {
-            "title": "Pro",
-            "price": "From R 79 500, -",
-            "subtitle": "For personal or small start-up ecommerce sites with a simple responsive design - based on a standard Shopify theme.",
-            "cta1": "Book now",
-            "cta1_link": "",
-            "cta2": "Learn more",
-            "cta2_link": "",
-            "feature_1": "Basic Product Setup (5)",
-            "feature_2": "Basic Collection Setup (5)",
-            "feature_3": "Basic Navigation",
-            "feature_4": "Basic Pages Setup (homepage \/ contact \/ policies pages)",
-            "feature_5": "Settings setup",
-            "feature_6": "Shipping & Payments integration",
-            "feature_7": "Project Management throughout",
-            "feature_8": "",
-            "feature_9": "",
-            "feature_10": "",
-            "shadow": true,
-            "primary": false,
-            "color_accent": "",
-            "color_accent_contrast": "",
-            "color_accent_secondary": "",
-            "color_accent_secondary_contrast": "",
-            "color_accent_dark": "",
-            "color_accent_contrast_dark": "",
-            "color_accent_secondary_dark": "",
-            "color_accent_secondary_contrast_dark": ""
-          }
-        }
-      },
-      "block_order": [
-        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab",
-        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab2",
-        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab3"
-      ],
-      "settings": {
-        "pre_title": "Full site packages",
-        "title": "Find a plan to power your projects.",
-        "paragraph": "<p>Get the best ecommerce store to suite your needs.<\/p>"
-      }
-    },
-    "165875619337b05d8f": {
-      "type": "pricing",
-      "blocks": {
-        "7ab0a180-75c3-4a9e-b2f1-b8e0d5e47ead": {
-          "type": "package",
-          "settings": {
-            "title": "Basic Plan",
-            "price": "R3 900 pm",
+            "title": "package 1",
+            "price": "",
             "subtitle": "",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
             "cta2_link": "",
-            "feature_1": "6 Hours allocated - requests",
-            "feature_2": "Monthly Data Backups",
-            "feature_3": "Tech support (Domains, hosting, emails)",
-            "feature_4": "Website Support",
-            "feature_5": "Website Content Changes",
-            "feature_6": "Product \/ Collection Uploads",
-            "feature_7": "Basic Image Editing",
-            "feature_8": "Basic Consultation",
+            "feature_1": "",
+            "feature_2": "",
+            "feature_3": "",
+            "feature_4": "",
+            "feature_5": "",
+            "feature_6": "",
+            "feature_7": "",
+            "feature_8": "",
             "feature_9": "",
             "feature_10": "",
             "shadow": false,
@@ -543,25 +527,25 @@
             "color_accent_secondary_contrast_dark": ""
           }
         },
-        "0e6e5529-7305-4974-a4f0-d0e6f36b8d0e": {
+        "d313753f-ae1b-4460-bf44-b834d1a71ff5": {
           "type": "package",
           "settings": {
-            "title": "Advanced Plan",
-            "price": "R7 000 pm",
+            "title": "package 2",
+            "price": "",
             "subtitle": "",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
             "cta2_link": "",
-            "feature_1": "12 Hours allocated - requests + strategy",
-            "feature_2": "Monthly Data Backups",
-            "feature_3": "All of the above plus",
-            "feature_4": "App Installations \/ Maintenance",
-            "feature_5": "SEO optimizations",
-            "feature_6": "Graphic Design",
-            "feature_7": "Website health check",
-            "feature_8": "Training",
-            "feature_9": "Strategy Consultation",
+            "feature_1": "",
+            "feature_2": "",
+            "feature_3": "",
+            "feature_4": "",
+            "feature_5": "",
+            "feature_6": "",
+            "feature_7": "",
+            "feature_8": "",
+            "feature_9": "",
             "feature_10": "",
             "shadow": false,
             "primary": false,
@@ -575,23 +559,23 @@
             "color_accent_secondary_contrast_dark": ""
           }
         },
-        "9af80f30-eeb9-4c55-b292-d4290904ef23": {
+        "201db167-a5ca-4b27-bcb8-1c8c1789a45a": {
           "type": "package",
           "settings": {
-            "title": "Growth Plan",
-            "price": "R10 000 pm",
+            "title": "package 3",
+            "price": "",
             "subtitle": "",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
             "cta2_link": "",
-            "feature_1": "20 Hours Allocated - requests + strategy",
-            "feature_2": "Daily Data Backups",
-            "feature_3": "Performance Improvement",
-            "feature_4": "Custom Feature development",
-            "feature_5": "Data conversion scripts",
-            "feature_6": "Monthly Analysis Report",
-            "feature_7": "Conversion Strategy & Suggestions",
+            "feature_1": "",
+            "feature_2": "",
+            "feature_3": "",
+            "feature_4": "",
+            "feature_5": "",
+            "feature_6": "",
+            "feature_7": "",
             "feature_8": "",
             "feature_9": "",
             "feature_10": "",
@@ -609,29 +593,58 @@
         }
       },
       "block_order": [
-        "7ab0a180-75c3-4a9e-b2f1-b8e0d5e47ead",
-        "0e6e5529-7305-4974-a4f0-d0e6f36b8d0e",
-        "9af80f30-eeb9-4c55-b292-d4290904ef23"
+        "a3abe88e-f462-48a9-967e-1177e06b7111",
+        "d313753f-ae1b-4460-bf44-b834d1a71ff5",
+        "201db167-a5ca-4b27-bcb8-1c8c1789a45a"
       ],
       "settings": {
-        "pre_title": "Website Maintenance packages",
-        "title": "Keep your existing shopify website up to date",
-        "paragraph": ""
+        "pre_title": "hi",
+        "title": "hi",
+        "paragraph": "<p>hi <\/p>",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1658846220d253a713": {
+      "type": "contact",
+      "settings": {
+        "intro": false,
+        "title": "Get in Touch",
+        "sub_title": "Tell us how we can help and we’ll get in touch shortly.",
+        "info_title": "How can we help you?",
+        "info_paragraph": "<p>Feel free to contact us with any questions, projects or partnerships. <br\/><br\/>Want to have a online meeting instead? Request an appointment with us.<br\/><br\/>Prefer a cup of coffee and a chat face to face? Schedule an appointment with us in our Cape Town offices.<\/p>",
+        "contact": false,
+        "contact_title": "Cape Town Office",
+        "address": "<p><a href=\"https:\/\/g.page\/tellmann-cpt?share\" target=\"_blank\">21 Pepper Street <br\/>3rd Floor - C\/O Ademas Solutions<br\/>Cape Town, 8001 <br\/>South Africa<\/a><\/p>",
+        "phone": "",
+        "email": "<p><a href=\"mailto:hello@lunalemon.dev\">hello@lunalemon.dev<\/a><\/p>",
+        "hours": "<p>Office Hours: 9:00 - 16:30<\/p>",
+        "submit_paragraph": "",
+        "success_paragraph": "",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     }
   },
   "order": [
-    "1656935895e67bca71",
+    "main",
     "16547615501aa86d63",
     "16547615536da214ca",
     "165476159216c4ff5c",
     "16547657217b1dfb71",
-    "1654424131fb27794e",
     "1654762013d2c9eed0",
+    "1654424131fb27794e",
+    "16588460534ec9a41f",
     "1654761954c36d4db0",
+    "1654762016e3f34059",
     "165476583906badf90",
+    "165476205467493fae",
+    "1654765182e225ecd7",
+    "1654765182e225ecd72",
     "165476560159b5ef3e",
-    "1658740480bb450054",
-    "165875619337b05d8f"
+    "165884615510ae5bcc",
+    "1658846220d253a713"
   ]
 }

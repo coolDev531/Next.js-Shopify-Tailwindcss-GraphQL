@@ -48,11 +48,15 @@
         "cta2_link": "#",
         "image_1": "shopify:\/\/shop_images\/2.png",
         "image_2": "shopify:\/\/shop_images\/1.png",
-        "image_3": "shopify:\/\/shop_images\/3.png"
+        "image_3": "shopify:\/\/shop_images\/3.png",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "16547615501aa86d63": {
       "type": "heading",
+      "disabled": true,
       "settings": {
         "pre_title": "",
         "title": "We create Shopify Ecommerce solutions.",
@@ -66,13 +70,15 @@
     },
     "16547615536da214ca": {
       "type": "feature-list",
+      "disabled": true,
       "blocks": {
         "f01ae097-eee3-4c30-bdf5-1e5d61506b5e": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Benefit 1",
-            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>",
+            "paragraph_old": ""
           }
         },
         "6ae8fd1e-b2ee-4e23-be4b-e76c4131f2b7": {
@@ -80,7 +86,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Benefit 2",
-            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>",
+            "paragraph_old": ""
           }
         },
         "2bd223e9-952a-4c7b-b098-afcae3728cc4": {
@@ -88,7 +95,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Benefit 3",
-            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>",
+            "paragraph_old": ""
           }
         },
         "fef8d93c-5bdc-49a7-8de3-3ef0c0ecd90a": {
@@ -96,7 +104,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Benefit 4",
-            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>"
+            "paragraph": "<p>Each component is its own independently versioned package, so new components can be added alongside your existing code. No need to disrupt feature work with a huge rewrite⁠—you can start small and add more components one by one.<\/p>",
+            "paragraph_old": ""
           }
         }
       },
@@ -107,10 +116,22 @@
         "fef8d93c-5bdc-49a7-8de3-3ef0c0ecd90a"
       ],
       "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "165476159216c4ff5c": {
       "type": "heading",
+      "disabled": true,
       "settings": {
         "pre_title": "Expert development",
         "title": "We speak, eat, sleep Shopify",
@@ -124,13 +145,15 @@
     },
     "16547657217b1dfb71": {
       "type": "feature-list",
+      "disabled": true,
       "blocks": {
         "5b1130c5-26d5-416e-8c0c-ec5b05b63ab1": {
           "type": "feature",
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "From Scratch",
-            "paragraph": "<p>You are looking for a<br\/>new site and haven’t got<br\/>a site already, or the<br\/>need to connect it to a<br\/>3rd par ty POS<\/p>"
+            "paragraph": "<p>You are looking for a<br\/>new site and haven’t got<br\/>a site already, or the<br\/>need to connect it to a<br\/>3rd par ty POS<\/p>",
+            "paragraph_old": ""
           }
         },
         "613b3423-00d0-40c1-a6c6-4295763917b9": {
@@ -138,7 +161,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Upgrade",
-            "paragraph": "<p>You have an existing<br\/>Shopify store and want<br\/>to upgrade t he theme,<br\/>content structure, and<br\/>make more sales?<\/p>"
+            "paragraph": "<p>You have an existing<br\/>Shopify store and want<br\/>to upgrade t he theme,<br\/>content structure, and<br\/>make more sales?<\/p>",
+            "paragraph_old": ""
           }
         },
         "f593e74c-72fe-4a2d-9dd4-eb0ff99ee28f": {
@@ -146,7 +170,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Integrate",
-            "paragraph": "<p>You have an extisting<br\/>brick & mor tar store and<br\/>want to integrate your<br\/>back-end system into a<br\/>new Shopify store.<\/p>"
+            "paragraph": "<p>You have an extisting<br\/>brick & mor tar store and<br\/>want to integrate your<br\/>back-end system into a<br\/>new Shopify store.<\/p>",
+            "paragraph_old": ""
           }
         },
         "03758003-6321-4a0c-8e54-8eab05c4a979": {
@@ -154,7 +179,8 @@
           "settings": {
             "icon": "ColorSwatchIcon",
             "title": "Migration",
-            "paragraph": "<p>You want to change<br\/>your ecommerce platform<br\/>from WooCommerce,<br\/>Magento, Big-<br\/>Commerce or other?<\/p>"
+            "paragraph": "<p>You want to change<br\/>your ecommerce platform<br\/>from WooCommerce,<br\/>Magento, Big-<br\/>Commerce or other?<\/p>",
+            "paragraph_old": ""
           }
         }
       },
@@ -165,30 +191,22 @@
         "03758003-6321-4a0c-8e54-8eab05c4a979"
       ],
       "settings": {
-      }
-    },
-    "165476583906badf90": {
-      "type": "logo-banner",
-      "settings": {
-        "title": "Brands we've worked with",
-        "products": [
-          "ford",
-          "kids-living",
-          "lunatag",
-          "volkswagen",
-          "zoom-printing",
-          "bushscarf",
-          "broadway-jewellers",
-          "moritz-tellmann"
-        ],
-        "collection": "",
-        "height": 40,
-        "animate": true,
-        "animation_duration": 20
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "1654424131fb27794e": {
       "type": "tabs-process-step",
+      "disabled": true,
       "blocks": {
         "16544241313b2fcafc-0": {
           "type": "step",
@@ -246,7 +264,10 @@
       "settings": {
         "pre_title": "Developer experience to love",
         "title": "Develop with an open, thought‑out API",
-        "paragraph": "<p>One of our main goals is to provide the best possible developer experience. Radix Primitives provides a fully-typed API. All components share a similar API, creating a consistent and predictable experience.<\/p>"
+        "paragraph": "<p>One of our main goals is to provide the best possible developer experience. Radix Primitives provides a fully-typed API. All components share a similar API, creating a consistent and predictable experience.<\/p>",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "1654762013d2c9eed0": {
@@ -271,31 +292,29 @@
             "pre_title": "",
             "title": "asfafs",
             "paragraph": "<p>afs<\/p>",
+            "list_title": "",
+            "list": "",
             "image": "shopify:\/\/shop_images\/welcome-to-my-business.jpg",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
             "position": "left"
-          }
-        },
-        "1edc02ca-a844-4f5c-93fb-791e53248869": {
-          "type": "image-text",
-          "settings": {
-            "pre_title": "",
-            "title": "asfafs",
-            "paragraph": "<p>asfafs<\/p>",
-            "image": "shopify:\/\/shop_images\/Capturem.jpg",
-            "position": "right"
           }
         }
       },
       "block_order": [
         "2a8dbc1e-9c29-40a3-8c79-6adc1d8fa95f",
-        "a0b070e8-45e6-47be-9d07-7f2371f7e8ea",
-        "1edc02ca-a844-4f5c-93fb-791e53248869"
+        "a0b070e8-45e6-47be-9d07-7f2371f7e8ea"
       ],
       "settings": {
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "1654761954c36d4db0": {
       "type": "spec-list",
+      "disabled": true,
       "blocks": {
         "d81381f6-8f7c-4a6c-a10b-efbec7aa4a1d": {
           "type": "heading",
@@ -369,10 +388,41 @@
         "a6f38bae-51d8-4fc2-a8c5-3067eb477ac2"
       ],
       "settings": {
+        "color_bg": "",
+        "blur_bg": true,
+        "color_toggle": "dark",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "165476583906badf90": {
+      "type": "logo-banner",
+      "disabled": true,
+      "settings": {
+        "title": "Brands we've worked with",
+        "products": [
+          "ford",
+          "kids-living",
+          "lunatag",
+          "volkswagen",
+          "zoom-printing",
+          "bushscarf",
+          "broadway-jewellers",
+          "moritz-tellmann"
+        ],
+        "collection": "",
+        "height": 40,
+        "animate": true,
+        "animation_duration": 20,
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "165476560159b5ef3e": {
       "type": "tabs-faq",
+      "disabled": true,
       "blocks": {
         "d68c2fff-950f-47fe-9c59-75d2d40d5ad8": {
           "type": "category",
@@ -394,11 +444,15 @@
         "cd33e95e-48af-4908-991a-572c49c76755"
       ],
       "settings": {
-        "title": "Frequentlyasked questions"
+        "title": "Frequentlyasked questions",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "1658740480bb450054": {
       "type": "pricing",
+      "disabled": true,
       "blocks": {
         "5e3e9066-423d-4c37-b591-3d6ecf0e5bab": {
           "type": "package",
@@ -505,7 +559,10 @@
       "settings": {
         "pre_title": "Full site packages",
         "title": "Find a plan to power your projects.",
-        "paragraph": "<p>Get the best ecommerce store to suite your needs.<\/p>"
+        "paragraph": "<p>Get the best ecommerce store to suite your needs.<\/p>",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "165875619337b05d8f": {
@@ -616,7 +673,31 @@
       "settings": {
         "pre_title": "Website Maintenance packages",
         "title": "Keep your existing shopify website up to date",
-        "paragraph": ""
+        "paragraph": "",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1658845815e977526f": {
+      "type": "contact",
+      "settings": {
+        "intro": false,
+        "title": "Get in Touch",
+        "sub_title": "Tell us how we can help and we’ll get in touch shortly.",
+        "info_title": "How can we help you?",
+        "info_paragraph": "<p>Feel free to contact us with any questions, projects or partnerships. <br\/><br\/>Want to have a online meeting instead? Request an appointment with us.<br\/><br\/>Prefer a cup of coffee and a chat face to face? Schedule an appointment with us in our Cape Town offices.<\/p>",
+        "contact": false,
+        "contact_title": "Cape Town Office",
+        "address": "<p><a href=\"https:\/\/g.page\/tellmann-cpt?share\" target=\"_blank\">21 Pepper Street <br\/>3rd Floor - C\/O Ademas Solutions<br\/>Cape Town, 8001 <br\/>South Africa<\/a><\/p>",
+        "phone": "",
+        "email": "<p><a href=\"mailto:hello@lunalemon.dev\">hello@lunalemon.dev<\/a><\/p>",
+        "hours": "<p>Office Hours: 9:00 - 16:30<\/p>",
+        "submit_paragraph": "",
+        "success_paragraph": "",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     }
   },
@@ -632,6 +713,7 @@
     "165476583906badf90",
     "165476560159b5ef3e",
     "1658740480bb450054",
-    "165875619337b05d8f"
+    "165875619337b05d8f",
+    "1658845815e977526f"
   ]
 }
