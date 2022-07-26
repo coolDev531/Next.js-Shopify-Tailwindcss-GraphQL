@@ -21,7 +21,7 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
                 width={settings.image?.width}
                 height={settings.image?.height}
                 src={`${settings?.image?.src}`}
-                alt={settings?.image?.alt ?? settings.title}
+                alt={settings?.image?.alt || settings.title}
               />
             : null}
         </figure>
@@ -68,7 +68,7 @@ export const BlockHero: FC<HeroSection> = ({ id, settings, type }) => {
                 // width={settings.image?.width}
                 // height={settings.image?.height}
                 src={`${settings?.image?.src}`}
-                alt={settings?.image?.alt ?? settings.title}
+                alt={settings?.image?.alt || settings.title}
               />
             </figure>
           )}

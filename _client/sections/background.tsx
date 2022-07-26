@@ -55,7 +55,7 @@ export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
               src={settings.image?.src}
               width={settings.image?.width}
               height={settings.image?.height}
-              alt={settings.image?.alt ?? "Background Blur Image"}
+              alt={settings.image?.alt || "Background Blur Image"}
             />
           : null}
         {settings.svg

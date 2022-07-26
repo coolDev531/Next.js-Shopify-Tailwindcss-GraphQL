@@ -104,7 +104,7 @@ export const ImageCarouselItem: FC<{
               className="h-full object-cover"
               width={image?.width}
               height={image?.height}
-              alt={image?.alt ?? title}
+              alt={image?.alt || title}
               maxWidth={200}
               pixelDensity={1.6}
             />

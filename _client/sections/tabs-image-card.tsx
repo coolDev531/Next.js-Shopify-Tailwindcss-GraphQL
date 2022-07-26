@@ -160,7 +160,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, type }) =>
                       width={block.settings.image?.width}
                       height={block.settings.image?.height}
                       src={`${block?.settings?.image?.src}`}
-                      alt={block?.settings?.image?.alt ?? block.settings.title}
+                      alt={block?.settings?.image?.alt || block.settings.title}
                     />
                   </figure>
                 )}

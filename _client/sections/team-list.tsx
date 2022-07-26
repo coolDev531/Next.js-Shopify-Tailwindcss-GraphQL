@@ -25,7 +25,7 @@ export const TeamList: FC<TeamListSection> = ({ id, blocks, type }) => {
                         className="object-cover object-left"
                         width={block.settings.image?.width}
                         height={block.settings.image?.height}
-                        alt={block?.settings?.image?.alt ?? block.settings.name}
+                        alt={block?.settings?.image?.alt || block.settings.name}
                       />
                     : null}
                 </figure>

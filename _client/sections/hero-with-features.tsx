@@ -68,7 +68,7 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
                         className="h-[404px] w-[336px] object-cover"
                         priority
                         maxWidth={350}
-                        alt={settings.image_1.alt ?? settings.title}
+                        alt={settings.image_1.alt || settings.title}
                         src={settings.image_1.src}
                         width={settings.image_1.width}
                         height={settings.image_1.height}
@@ -102,7 +102,7 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
                         className="h-[404px] w-[336px] object-cover"
                         priority
                         maxWidth={350}
-                        alt={settings.image_2.alt ?? settings.title}
+                        alt={settings.image_2.alt || settings.title}
                         src={settings.image_2.src}
                         width={settings.image_2.width}
                         height={settings.image_2.height}
@@ -135,7 +135,7 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
                         className="h-[404px] w-[336px] object-cover"
                         priority
                         maxWidth={350}
-                        alt={settings.image_3.alt ?? settings.title}
+                        alt={settings.image_3.alt || settings.title}
                         src={settings.image_3.src}
                         width={settings.image_3.width}
                         height={settings.image_3.height}

@@ -1,0 +1,542 @@
+{
+  "sections": {
+    "main": {
+      "type": "template-product",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "16540104123512b9a3": {
+      "type": "hero",
+      "settings": {
+        "pre_title": "Portfolio of Work",
+        "title": "Clickupload App",
+        "paragraph": "<p>ClickUpload enables your store to let customers upload files to their orders. The app supports all file types and sizes. All files are linked to the order and can be downloaded easily.<\/p>",
+        "list_title": "App features:",
+        "list": "<p>File uploads<\/p><p>Supports all file types<\/p><p>Enables file & size restriction <\/p><p>Enables sample file upload<\/p>",
+        "image": "shopify:\/\/shop_images\/Hero_80fae443-dfd6-493e-bdd6-5f7c50790ed5.png"
+      }
+    },
+    "1654079897751048da": {
+      "type": "stats-graph",
+      "blocks": {
+        "8457496c-859c-46a2-8653-4953e4e81a20": {
+          "type": "stat",
+          "settings": {
+            "stat": "4000+",
+            "descriptions": "Products & Variants"
+          }
+        },
+        "b206c8f8-78d7-4074-bae7-a25fdfa286ce": {
+          "type": "stat",
+          "settings": {
+            "stat": "241+",
+            "descriptions": "Collections"
+          }
+        },
+        "daf38169-f867-497d-b358-3af89c50830e": {
+          "type": "stat",
+          "settings": {
+            "stat": "100+",
+            "descriptions": "Brands"
+          }
+        }
+      },
+      "block_order": [
+        "8457496c-859c-46a2-8653-4953e4e81a20",
+        "b206c8f8-78d7-4074-bae7-a25fdfa286ce",
+        "daf38169-f867-497d-b358-3af89c50830e"
+      ],
+      "settings": {
+      }
+    },
+    "16540846002974a6ff": {
+      "type": "story",
+      "blocks": {
+        "93e0ffb2-4809-45bb-88aa-7cf835fef608": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "Making each experience unique",
+            "title": "What Clickupload has to offer",
+            "paragraph": "",
+            "cta1": "View in App store",
+            "cta1_link": "#",
+            "cta2": "",
+            "cta2_link": "#",
+            "position": "center"
+          }
+        },
+        "364ea5e8-5749-4d69-b8f0-528e5aab9c5b": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Benefits and more",
+            "title": "App features",
+            "paragraph": "<p>We continuously work on developing and improving our Shopify Apps for the best experiene and benifits.<\/p>",
+            "list_title": "",
+            "list": "<p>Supports all file types<\/p><p>Choose to accept only certain file types<\/p><p>Preview uploaded images before adding products to the cart<\/p><p>Instant setup, no coding required<\/p><p>Quick product upload time<\/p><p>Files linked to order<\/p><p>Files are Achieved<\/p>",
+            "image": "shopify:\/\/shop_images\/app-features.png",
+            "aspect_desktop": "4-3",
+            "fit_height": false,
+            "aspect_mobile": "4-3",
+            "position": "left"
+          }
+        },
+        "4729554a-b37a-42dd-b189-ab78ef716946": {
+          "type": "image-text",
+          "disabled": true,
+          "settings": {
+            "pre_title": "asd",
+            "title": "asd",
+            "paragraph": "<p>asd<\/p>",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
+            "position": "right"
+          }
+        }
+      },
+      "block_order": [
+        "93e0ffb2-4809-45bb-88aa-7cf835fef608",
+        "364ea5e8-5749-4d69-b8f0-528e5aab9c5b",
+        "4729554a-b37a-42dd-b189-ab78ef716946"
+      ],
+      "settings": {
+      }
+    },
+    "165649211691c194a3": {
+      "type": "feature-list",
+      "blocks": {
+        "a02af2ed-336d-423f-8f68-91de824f1842": {
+          "type": "feature",
+          "settings": {
+            "icon": "BadgeCheckIcon",
+            "title": "File Display",
+            "paragraph": "<p>Uploaded files are displayed on your cart and checkout pages. Preview images before checking out.<\/p>",
+            "paragraph_old": ""
+          }
+        },
+        "4771f38f-9a2b-4559-907d-453a33727191": {
+          "type": "feature",
+          "settings": {
+            "icon": "BadgeCheckIcon",
+            "title": "Unlimited upload fields",
+            "paragraph": "<p>You can add as many upload fields as you wish. This can be created based on specific products or collections.<\/p>",
+            "paragraph_old": ""
+          }
+        },
+        "ae559d7a-9df9-42a3-95ff-94b4cf928844": {
+          "type": "feature",
+          "settings": {
+            "icon": "BadgeCheckIcon",
+            "title": "Manage file restrictions",
+            "paragraph": "<p>You can limit the type of files as well as the size that customers can upload. Have more control of the files you need.<\/p>",
+            "paragraph_old": ""
+          }
+        },
+        "9a4d8a7f-af6e-4d79-a8ed-e5b49922b910": {
+          "type": "feature",
+          "settings": {
+            "icon": "BadgeCheckIcon",
+            "title": "Customize your App",
+            "paragraph": "<p>Design your app to complement the colours, font, and look of your theme. All texts are easy to modify.<\/p>",
+            "paragraph_old": ""
+          }
+        }
+      },
+      "block_order": [
+        "a02af2ed-336d-423f-8f68-91de824f1842",
+        "4771f38f-9a2b-4559-907d-453a33727191",
+        "ae559d7a-9df9-42a3-95ff-94b4cf928844",
+        "9a4d8a7f-af6e-4d79-a8ed-e5b49922b910"
+      ],
+      "settings": {
+      }
+    },
+    "16540875305d711f9e": {
+      "type": "info-cards",
+      "settings": {
+        "pre_title": "Explore",
+        "title": "The tech we used:",
+        "content_list": [
+          "shopify",
+          "vend-pos"
+        ]
+      }
+    },
+    "1654092902cc4e4a33": {
+      "type": "logo-banner",
+      "settings": {
+        "title": "",
+        "products": [
+          "graphql",
+          "copy-of-css",
+          "eslint",
+          "postman",
+          "sendgrid",
+          "sass",
+          "vercel",
+          "windows-support",
+          "ios",
+          "amazon-web-services",
+          "github",
+          "google-analytics",
+          "google-tag-manager",
+          "grunt",
+          "gulp",
+          "typescript",
+          "shopify"
+        ],
+        "height": 50,
+        "animate": false,
+        "animation_duration": 70
+      }
+    },
+    "16541733016b2d4288": {
+      "type": "tabs-image-card",
+      "disabled": true,
+      "blocks": {
+        "a97114d1-2a70-40f3-9f0c-32751ea9b4ab": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "Custom builder",
+            "title": "",
+            "paragraph": "<p>asdasd<\/p>",
+            "cta1": "asd",
+            "cta1_link": "##",
+            "cta2": "asdasd",
+            "cta2_link": "#",
+            "position": "left"
+          }
+        },
+        "2353a22b-85ba-4a79-9a1c-23bbf71d60d7": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Custom filter & search function",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "Custom filter & search function",
+            "paragraph": "<p>This custom filter function helps search for products based on the model, year, and trim of vehicle.<\/p>",
+            "cta1": "asdasd",
+            "cta1_link": "#",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "image_link": ""
+          }
+        },
+        "5580bf76-a72e-4bfe-8d9d-a63518f96cc5": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Product content set-up",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "Product content set-up",
+            "paragraph": "<p>This helped all products have a uniform content set and that linked to the filter function on the website. <\/p>",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/ampersand-01-classic.jpg",
+            "image_link": ""
+          }
+        },
+        "d507e67a-14b7-473e-a024-ccb8262d029c": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_title": "Google rating integration",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "Google rating integration",
+            "paragraph": "<p>This integration helps increase the overall trust of visitors to the store by showcasing their live google ratings<\/p>",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/heart-02-shoreline.jpg",
+            "image_link": ""
+          }
+        },
+        "e3679b31-516e-4d8d-8463-58315b3dbaec": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_title": "Customized logo band",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "Customized logo band",
+            "paragraph": "<p>This custom built helped showcase the large amount of brands that kidsliving offers while highlighted the logos flawlessly into the shops home page <\/p>",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image_link": ""
+          }
+        },
+        "57ab776c-10cd-4f7c-8b42-5b73d6edd21a": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_title": "asdasdasd",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image_link": ""
+          }
+        },
+        "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "tab_title": "123sadasdadsasd",
+            "tab_icon": "BadgeCheckIcon",
+            "title": "",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "image": "shopify:\/\/shop_images\/ms-icon-310x310.png",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a97114d1-2a70-40f3-9f0c-32751ea9b4ab",
+        "2353a22b-85ba-4a79-9a1c-23bbf71d60d7",
+        "5580bf76-a72e-4bfe-8d9d-a63518f96cc5",
+        "d507e67a-14b7-473e-a024-ccb8262d029c",
+        "e3679b31-516e-4d8d-8463-58315b3dbaec",
+        "57ab776c-10cd-4f7c-8b42-5b73d6edd21a",
+        "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41"
+      ],
+      "settings": {
+      }
+    },
+    "16542555547186860a": {
+      "type": "spec-list",
+      "blocks": {
+        "c2a192bb-8b31-4125-b05c-744bda6883aa": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "More then just a E-commerce platform, Shopify has so much to offer",
+            "title": "Why choose Shopify?",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "position": "center"
+          }
+        },
+        "44fb2853-5096-4fa2-aca3-c29c975a4eba": {
+          "type": "list",
+          "settings": {
+            "icon1": "DesktopComputerIcon",
+            "text1": "Easy to use",
+            "icon2": "ColorSwatchIcon",
+            "text2": "Great support",
+            "icon3": "MailIcon",
+            "text3": "Great collection of themes",
+            "icon4": "CloudIcon",
+            "text4": "Multi-payment gateway integration",
+            "icon5": "CloudIcon",
+            "text5": "",
+            "icon6": "CloudIcon",
+            "text6": ""
+          }
+        },
+        "55701476-5010-4325-acd9-093e88bcc020": {
+          "type": "list",
+          "settings": {
+            "icon1": "ChatAlt2Icon",
+            "text1": "Across-channel selling",
+            "icon2": "LightningBoltIcon",
+            "text2": "Analytics reporting",
+            "icon3": "BadgeCheckIcon",
+            "text3": "Built-in cart abandonment feature",
+            "icon4": "CloudIcon",
+            "text4": "Full HTML and CSS editing abilities",
+            "icon5": "CloudIcon",
+            "text5": "",
+            "icon6": "CloudIcon",
+            "text6": ""
+          }
+        },
+        "547189e6-16c7-44f5-9dea-7ab932e1e925": {
+          "type": "list",
+          "settings": {
+            "icon1": "SparklesIcon",
+            "text1": "Optimized for SEO",
+            "icon2": "UserGroupIcon",
+            "text2": "Tracking & maintaining customer data",
+            "icon3": "CubeTransparentIcon",
+            "text3": "Affordable & scalable",
+            "icon4": "CloudIcon",
+            "text4": "Integrations made easy",
+            "icon5": "CloudIcon",
+            "text5": "",
+            "icon6": "CloudIcon",
+            "text6": ""
+          }
+        }
+      },
+      "block_order": [
+        "c2a192bb-8b31-4125-b05c-744bda6883aa",
+        "44fb2853-5096-4fa2-aca3-c29c975a4eba",
+        "55701476-5010-4325-acd9-093e88bcc020",
+        "547189e6-16c7-44f5-9dea-7ab932e1e925"
+      ],
+      "settings": {
+        "color_bg": "linear-gradient(145deg, rgba(2, 77, 164, 1), rgba(1, 155, 199, 1) 100%)",
+        "color_toggle": "light"
+      }
+    },
+    "1654259533f54af287": {
+      "type": "blockquote",
+      "disabled": true,
+      "settings": {
+        "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloremque dolores illum laudantium molestias nemo quo! Animi asperiores assumenda commodi culpa eveniet excepturi fugit illo incidunt iusto nam possimus quidem quos recusandae saepe similique, ullam?",
+        "author": "Tom",
+        "job_title": "Kids Living, Managing Director",
+        "quotation_marks": true
+      }
+    },
+    "16542613555478f86d": {
+      "type": "image-gallery",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/collage-1_b9feeba0-4fb1-4766-9ac8-f6cd9c583dd1.png",
+        "title1": "",
+        "image2": "shopify:\/\/shop_images\/collage-2_0841a366-b617-4e18-a14e-3ba014af2b15.png",
+        "title2": "Graphic design",
+        "image3": "shopify:\/\/shop_images\/collage-3_426d5f6e-8722-43ae-bff9-f7cbd881133b.png",
+        "title3": "Gift Registry",
+        "image4": "shopify:\/\/shop_images\/collage-4_5faba9c7-b080-4709-97d5-321b2a09dcfb.png",
+        "title4": "",
+        "image5": "shopify:\/\/shop_images\/collage-5_431f574f-4dac-451b-aea7-ea3b38142161.png",
+        "title5": "",
+        "image6": "shopify:\/\/shop_images\/collage-6_388f2f58-953b-48fa-9037-bf8003cb1cf4.png",
+        "title6": ""
+      }
+    },
+    "165426875321fe7fc5": {
+      "type": "feature-list",
+      "disabled": true,
+      "blocks": {
+        "7d9184d1-b917-43ab-a84e-dbce8b2d3989": {
+          "type": "feature",
+          "settings": {
+            "icon": "playful",
+            "title": "Website Analysis",
+            "paragraph": "<p>In depth testing for performance for key metrics such as speed, traffic, search engine optimization (SEO), and user experience.<\/p>",
+            "paragraph_old": "<p>Our team performs thorough site analysis to determine your website’s conversion opportunities, threats, weaknesses, and strengths. We run SEO audits, test your site speed and functionality, and analyse your site traffic. These methods allow us to improve your site usability and increase your site engagement and conversions.<\/p>"
+          }
+        },
+        "335efa5a-6e14-4f5f-9f46-3faad15cb6a8": {
+          "type": "feature",
+          "settings": {
+            "icon": "filters",
+            "title": "Conversion Rate Optimization",
+            "paragraph": "<p>From A\/B testing to UX analysis and design, we ensure all aspects of your website are optimized for conversion.<\/p>",
+            "paragraph_old": "<p>Our team focuses on optimizing your sites speed by eliminating unnecessary form fields, placing clear calls-to-action and simplifying your page navigations. We also perform A\/B testing to ensure all aspects of your website are optimized for conversion.<\/p>"
+          }
+        },
+        "976c1d3a-29d8-43f3-8c94-e23b9461c461": {
+          "type": "feature",
+          "settings": {
+            "icon": "transforms",
+            "title": "Preventative Maintenance",
+            "paragraph": "<p>Regular site maintenance is crucial to ensure your site is running at its optimum. We also do scheduled site check-ups with backups.<\/p>",
+            "paragraph_old": "<p>Regular site maintenance is crucial to ensure<br\/>your website is running at full capacity. We conduct scheduled site check-ups<br\/>to determine your website's key aspects that need improvement. Using the<br\/>analytics results, we develop strategies to enhance your site security, boost<br\/>your traffic and optimize your page experience.<\/p>"
+          }
+        },
+        "bf211802-1d16-4343-b21c-1a6d7af721c0": {
+          "type": "feature",
+          "settings": {
+            "icon": "typography",
+            "title": "Project Communication",
+            "paragraph": "<p>We take the time to regularly communicate to our clients keeping them updating on our processes and encourage feedback. <\/p>",
+            "paragraph_old": "<p>We focus on developing customized processes to fit your needs. We understand that each client is different and work in different ways. We take the time to regularly communicate to our clients keeping them updating on our processes and encourage feedback. For the convenience of our clients, our meetings\/communications are done via email, whatsapp or video conferencing.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7d9184d1-b917-43ab-a84e-dbce8b2d3989",
+        "335efa5a-6e14-4f5f-9f46-3faad15cb6a8",
+        "976c1d3a-29d8-43f3-8c94-e23b9461c461",
+        "bf211802-1d16-4343-b21c-1a6d7af721c0"
+      ],
+      "settings": {
+        "pre_title": "Continuous work for continuous results",
+        "title": "Support after Launch",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
+      }
+    },
+    "16543302228e17b41c": {
+      "type": "feature-carousel",
+      "settings": {
+        "pre_title": "Customize",
+        "title": "We offer a large range of unique customizations and add ons",
+        "paragraph": "",
+        "cta1": "See all",
+        "cta1_link": "shopify:\/\/pages\/shopify-sites",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "left",
+        "features": [
+          "shopify-customizations",
+          "shopify-full-sites",
+          "shopify-integration",
+          "shopify-seo-packages",
+          "shopify-website-maintenance"
+        ]
+      }
+    },
+    "1654332872499b00d2": {
+      "type": "image-carousel",
+      "settings": {
+        "pre_title": "Explore",
+        "title": "Checkout more of our work",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "products": [
+
+        ],
+        "collection": "portfolio",
+        "blog": "",
+        "animate": true,
+        "animation_duration": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16540104123512b9a3",
+    "1654079897751048da",
+    "16540846002974a6ff",
+    "165649211691c194a3",
+    "16540875305d711f9e",
+    "1654092902cc4e4a33",
+    "16541733016b2d4288",
+    "16542555547186860a",
+    "1654259533f54af287",
+    "16542613555478f86d",
+    "165426875321fe7fc5",
+    "16543302228e17b41c",
+    "1654332872499b00d2"
+  ]
+}

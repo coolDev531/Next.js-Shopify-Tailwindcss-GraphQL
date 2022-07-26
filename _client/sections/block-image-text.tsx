@@ -76,7 +76,7 @@ export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ s
                   width={settings.image?.width}
                   height={settings.image?.height}
                   src={`${settings?.image?.src}`}
-                  alt={settings?.image?.alt ?? settings.title}
+                  alt={settings?.image?.alt || settings.title}
                   maxWidth={512}
                 />
               </figure>

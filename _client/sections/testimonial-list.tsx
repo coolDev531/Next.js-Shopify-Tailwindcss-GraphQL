@@ -52,7 +52,7 @@ export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, settin
               blockId={block.id}
               link={block.settings.link}
               logo={block.settings.image}
-              imageAlt={block.settings.image?.alt ?? block.settings.author}
+              imageAlt={block.settings.image?.alt || block.settings.author}
               logoDark={undefined}
               testimonial={block.settings.quote}
               author={block.settings.author}
@@ -92,7 +92,7 @@ export const TestimonialListItem = ({
                   maxHeight={200}
                   width={logo?.value?.width}
                   height={logo?.value?.height}
-                  alt={logo?.value?.alt ?? imageAlt}
+                  alt={logo?.value?.alt || imageAlt}
                 />
                 <Image
                   src={`${logoDark?.value?.src}`}
@@ -100,7 +100,7 @@ export const TestimonialListItem = ({
                   maxHeight={200}
                   width={logoDark?.value?.width}
                   height={logoDark?.value?.height}
-                  alt={logoDark?.value?.alt ?? imageAlt}
+                  alt={logoDark?.value?.alt || imageAlt}
                 />
               </>
             : logo
@@ -110,7 +110,7 @@ export const TestimonialListItem = ({
                 maxHeight={200}
                 width={logo?.value?.width}
                 height={logo?.value?.height}
-                alt={logo?.value?.alt ?? imageAlt}
+                alt={logo?.value?.alt || imageAlt}
               />
             : null}
         </figure>
