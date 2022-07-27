@@ -89,7 +89,22 @@ export const ThemeLayout = (props) => {
           --color-bg-secondary: var(--color-bg-secondary-dark);
           --color-card: var(--color-card-dark);
           --color-accent: var(--color-accent-dark);
+          --color-accent-contrast: var(--color-accent-contrast-dark);
           --color-accent-secondary: var(--color-accent-secondary-dark);
+          --color-accent-secondary-contrast: var(--color-accent-secondary--contrast-dark);
+        }
+      `}</style>
+      <style jsx global>{`
+        .page-settings {
+          --color-accent: ${color_accent?.rgb};
+          --color-accent-contrast: ${color_accent_contrast?.rgb};
+          --color-accent-secondary: ${color_accent_secondary?.rgb};
+          --color-accent-secondary-contrast: ${color_accent_secondary_contrast?.rgb};
+
+          --color-accent-dark: ${color_accent_dark?.rgb};
+          --color-accent-contrast-dark: ${color_accent_contrast_dark?.rgb};
+          --color-accent-secondary-dark: ${color_accent_secondary_dark?.rgb};
+          --color-accent-secondary--contrast-dark: ${color_accent_secondary_contrast_dark?.rgb};
         }
       `}</style>
       <main
@@ -99,20 +114,6 @@ export const ThemeLayout = (props) => {
           "min-h-[calc(100vh-300px)] [&>:is(section,header,footer)]:relative",
           `color-gray--${global?.settings?.grayscale}`
         )}
-        style={{
-          "--color-accent": isDark
-            ? color_accent_dark?.rgb ?? color_accent?.rgb
-            : color_accent?.rgb,
-          "--color-accent-contrast": isDark
-            ? color_accent_contrast_dark?.rgb ?? color_accent_contrast?.rgb
-            : color_accent_contrast?.rgb,
-          "--color-accent-secondary": isDark
-            ? color_accent_secondary_dark?.rgb ?? color_accent_secondary?.rgb
-            : color_accent_secondary?.rgb,
-          "--color-accent-secondary-contrast": isDark
-            ? color_accent_secondary_contrast_dark?.rgb ?? color_accent_secondary_contrast?.rgb
-            : color_accent_secondary_contrast?.rgb,
-        }}
       >
         <div className="user-select-none absolute inset-0 -z-[100] h-full w-full bg-bg"></div>
 
