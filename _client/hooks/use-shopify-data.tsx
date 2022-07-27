@@ -23,6 +23,7 @@ export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[
 
   const handleMessages = useCallback((e) => {
     if (e?.data?.source === "theme-editor") {
+      document.body.classList.add("overflow-hidden");
       console.log(e.data);
       setShopifyData({ global: e.data.global, sections: e.data.sections });
 

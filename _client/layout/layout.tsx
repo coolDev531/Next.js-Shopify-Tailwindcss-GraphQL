@@ -96,15 +96,29 @@ export const ThemeLayout = (props) => {
       `}</style>
       <style jsx global>{`
         .page-settings {
-          --color-accent: ${color_accent?.rgb};
-          --color-accent-contrast: ${color_accent_contrast?.rgb};
-          --color-accent-secondary: ${color_accent_secondary?.rgb};
-          --color-accent-secondary-contrast: ${color_accent_secondary_contrast?.rgb};
+          ${color_accent?.rgb ? `--color-accent: ${color_accent.rgb};` : ""};
+          ${color_accent_contrast?.rgb
+            ? `--color-accent-contrast: ${color_accent_contrast.rgb};` +
+              `--color-accent-contrast-dark: ${color_accent_contrast.rgb};`
+            : ""};
+          ${color_accent_secondary?.rgb
+            ? `--color-accent-secondary: ${color_accent_secondary.rgb};`
+            : ""};
+          ${color_accent_secondary_contrast?.rgb
+            ? `--color-accent-secondary-contrast: ${color_accent_secondary_contrast.rgb};` +
+              `--color-accent-secondary-contrast-dark: ${color_accent_secondary_contrast.rgb};`
+            : ""};
 
-          --color-accent-dark: ${color_accent_dark?.rgb};
-          --color-accent-contrast-dark: ${color_accent_contrast_dark?.rgb};
-          --color-accent-secondary-dark: ${color_accent_secondary_dark?.rgb};
-          --color-accent-secondary--contrast-dark: ${color_accent_secondary_contrast_dark?.rgb};
+          ${color_accent_dark?.rgb ? `--color-accent-dark: ${color_accent_dark.rgb};` : ""};
+          ${color_accent_contrast_dark?.rgb
+            ? `--color-accent-contrast-dark: ${color_accent_contrast_dark.rgb};`
+            : ""};
+          ${color_accent_secondary_dark?.rgb
+            ? `--color-accent-secondary-dark: ${color_accent_secondary_dark.rgb};`
+            : ""};
+          ${color_accent_secondary_contrast_dark?.rgb
+            ? `--color-accent-secondary--contrast-dark: ${color_accent_secondary_contrast_dark.rgb};`
+            : ""};
         }
       `}</style>
       <main
