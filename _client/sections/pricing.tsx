@@ -70,7 +70,7 @@ export const Pricing: FC<PricingSection> = ({ id, settings, blocks, type }) => {
               <hr className="-mx-8 border-t border-b-gray-200" />
               <main className="pt-8">
                 <ul className="flex flex-col gap-4">
-                  {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
+                  {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((i) => (
                     <PricingListItem key={i} feature={block.settings[`feature_${i}`]} />
                   ))}
                 </ul>

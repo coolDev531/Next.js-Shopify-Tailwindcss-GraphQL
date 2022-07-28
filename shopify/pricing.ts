@@ -134,6 +134,31 @@ export const pricing: ShopifySection<PricingSection> = {
           label: "Feature_10",
         },
         {
+          type: "text",
+          id: "feature_11",
+          label: "Feature_11",
+        },
+        {
+          type: "text",
+          id: "feature_12",
+          label: "Feature_12",
+        },
+        {
+          type: "text",
+          id: "feature_13",
+          label: "Feature_13",
+        },
+        {
+          type: "text",
+          id: "feature_14",
+          label: "Feature_14",
+        },
+        {
+          type: "text",
+          id: "feature_15",
+          label: "Feature_15",
+        },
+        {
           type: "header",
           content: "Settings",
         },

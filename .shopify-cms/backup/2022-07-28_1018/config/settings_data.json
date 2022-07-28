@@ -1,0 +1,106 @@
+{
+  "current": {
+    "grayscale": "slate",
+    "color_bg": "#ffffff",
+    "color_bg_dark": "#0e131f",
+    "color_bg_secondary": "#f8fafc",
+    "color_bg_secondary_dark": "#1b212e",
+    "color_bg_card": "#f1f5f9",
+    "color_bg_card_dark": "#19222e",
+    "color_accent": "#0ea5e9",
+    "color_accent_contrast": "#ffffff",
+    "color_accent_secondary": "#ec4899",
+    "color_accent_secondary_contrast": "#ffffff",
+    "color_accent_dark": "#38bdf8",
+    "color_accent_contrast_dark": "#ffffff",
+    "color_accent_secondary_dark": "#f472b6",
+    "color_accent_secondary_contrast_dark": "#ffffff",
+    "color_success": "#22c55e",
+    "color_info": "#38bdf8",
+    "color_warning": "#f59e0b",
+    "color_danger": "#fc0000",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "3eba0d05-a30d-4f8f-8100-2a973c7326b4": {
+            "type": "dropdown_menu_features",
+            "settings": {
+              "handle": "services",
+              "menu_items": [
+                "shopify-full-sites",
+                "shopify-customizations",
+                "shopify-integration",
+                "shopify-seo-packages",
+                "shopify-website-maintenance"
+              ]
+            }
+          },
+          "3798ff69-22ec-4cf7-b4b7-296c9633d9f6": {
+            "type": "dropdown_menu_portfolio",
+            "settings": {
+              "handle": "work",
+              "title_1": "Lunatag App",
+              "link_1": "shopify:\/\/products\/lunatag",
+              "image_1": "shopify:\/\/shop_images\/small-business-interior.jpg",
+              "title_2": "Kids Living",
+              "link_2": "shopify:\/\/products\/kids-living",
+              "image_2": "shopify:\/\/shop_images\/baby-nursery-supplies.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "3eba0d05-a30d-4f8f-8100-2a973c7326b4",
+          "3798ff69-22ec-4cf7-b4b7-296c9633d9f6"
+        ],
+        "settings": {
+          "menu": "main-menu"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1dcbdbd3-b480-492d-ae3c-bf15cb8acbbd": {
+            "type": "menu",
+            "settings": {
+              "menu": "sitemap"
+            }
+          },
+          "39ed7bb5-9f05-48a0-9295-134b9ad06d3e": {
+            "type": "menu",
+            "settings": {
+              "menu": "shopify"
+            }
+          },
+          "b8412f8e-dc8e-4945-b955-f9546d41fbe2": {
+            "type": "menu",
+            "settings": {
+              "menu": "tools"
+            }
+          },
+          "296fbdfd-3e24-4f02-bc4c-673b11f36cb7": {
+            "type": "menu",
+            "settings": {
+              "menu": "support"
+            }
+          }
+        },
+        "block_order": [
+          "1dcbdbd3-b480-492d-ae3c-bf15cb8acbbd",
+          "39ed7bb5-9f05-48a0-9295-134b9ad06d3e",
+          "b8412f8e-dc8e-4945-b955-f9546d41fbe2",
+          "296fbdfd-3e24-4f02-bc4c-673b11f36cb7"
+        ],
+        "settings": {
+          "facebook": "#",
+          "github": "#",
+          "instagram": "#",
+          "google": "#"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}
