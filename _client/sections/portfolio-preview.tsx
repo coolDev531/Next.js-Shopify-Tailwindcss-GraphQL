@@ -54,14 +54,14 @@ export const PortfolioPreview: FC<PortfolioPreviewSection> = ({ id, settings, bl
                       height={product.featured_media.height}
                       className="h-full w-full object-cover"
                     />
-                    <figcaption className="transition-linear absolute inset-0 flex items-center justify-center bg-gray-900/60 backdrop-blur-sm transition-all group-hfa:bg-transparent group-hfa:backdrop-blur-none">
+                    <figcaption className="transition-linear absolute inset-0 flex items-center justify-center bg-gray-900/20 backdrop-blur-sm transition-all group-hfa:bg-transparent group-hfa:backdrop-blur-none">
                       <Image
                         alt={logo.alt ?? product.title}
                         src={logo.src}
                         width={logo.width}
                         height={logo.height}
-                        maxHeight={80}
-                        className="max-h-[50%] max-w-[80%] drop-shadow-xl transition-opacity group-hfa:opacity-0"
+                        maxWidth={300}
+                        className="h-auto max-h-[34%] w-auto max-w-[200px] drop-shadow-xl transition-opacity group-hfa:opacity-0"
                       />
                       <span className="sr-only">{product.title}</span>
                     </figcaption>
@@ -73,6 +73,7 @@ export const PortfolioPreview: FC<PortfolioPreviewSection> = ({ id, settings, bl
         {products.length > 6
           ? <footer className="mt-12 flex items-center justify-center">
               <button
+                type="button"
                 className="button-secondary"
                 onClick={() => setShowAll((current) => !current)}
               >
