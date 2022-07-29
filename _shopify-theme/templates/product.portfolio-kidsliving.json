@@ -89,7 +89,7 @@
             "title": "Analysis & Migration",
             "paragraph": "<p>When we first took over the website, we first needed to understand the information and data that needed to be sorted through and migrated to the Shopify platform from BigCommerce. Our team did an extensive analysis and created a strategic plan that ensured the old website's SEO, content, and web rankings were kept intact taking into account a VEND to Shopify integration.<\/p>",
             "list_title": "",
-            "list": "<p>Organising product data<\/p><p>Migrate Images from Products, Categories, Blog Description<\/p><p>Customer data Migration<\/p><p>Product and Order information migration<\/p><p>Vend to Shopify integration <\/p><p>Redirect all changed links<\/p><p>Content migration<\/p>",
+            "list": "",
             "image": "shopify:\/\/shop_images\/story-1_5f7095e5-cf53-4e8c-b209-65dcc6f5f286.png",
             "aspect_desktop": "4-3",
             "fit_height": false,
@@ -104,7 +104,7 @@
             "title": "Shopify web development",
             "paragraph": "<p>With the migration complete and a strategic plan in place. Our team started developing the Shopify website. This was specifically tailored to our clients’ needs while taking to account the key functions and features that our clients required from their old website.<\/p>",
             "list_title": "",
-            "list": "<p>Theme Coding & Implementation<\/p><p>Content structure update, for user experience optimization <\/p><p>Vend to Shopify integration<\/p><p>Shopify Apps Integration & Configuration<\/p><p>Payment & Shipping Zones Set-Up<\/p><p>Product & Inventory Set-Up<\/p><p>Shopify SEO Implementation and optimization<\/p>",
+            "list": "",
             "image": "shopify:\/\/shop_images\/story-2_f0e1e16f-7188-4d77-a011-5cc622392b33.png",
             "aspect_desktop": "4-3",
             "fit_height": false,
@@ -117,9 +117,9 @@
           "settings": {
             "pre_title": "Continuous work for continuous results",
             "title": "Site maintenance & SEO",
-            "paragraph": "<p>With the website successfully launched and live to the public, our team gets to work on creating monthly plans on improving and optimization our client’s website. They continually use and develop cutting-edge SEO tools and crawling software to identify and analyze technical SEO factors that needs to be addressed. They also work on product content research and creation. Consistently working on the website and keeping up to date with the ever-evolving online environment.<\/p>",
+            "paragraph": "<p>With the website successfully launched and live to the public, our team gets to work on creating monthly plans on improving and optimization our client’s website. They continually use and develop cutting-edge SEO tools and crawling software to identify and analyze technical SEO factors that needs to be addressed. They also work on product content research and creation. <\/p>",
             "list_title": "",
-            "list": "<p>Website data backup<\/p><p>Stand by for website queries or requests <\/p><p>Website updates and customizations <\/p><p>Evaluating current keyword rankings<\/p><p>Identifying and creating quality links<\/p><p>Content research & creation <\/p><p>Product content quality analysis and update<\/p>",
+            "list": "",
             "image": "shopify:\/\/shop_images\/story-3.png",
             "aspect_desktop": "4-3",
             "fit_height": false,
@@ -287,7 +287,7 @@
             "tab_title": "Mega menu",
             "tab_icon": "grid",
             "title": "Mega menu & custom brand section",
-            "paragraph": "<p>This custom build was created to organize a large amount of product categories in a user friendly manner. Highlight was also given on the brands, organising them Alphabetically while showcases the top popular brands.<\/p>",
+            "paragraph": "<p>This custom build was created to organize a large amount of product categories in a user friendly manner. Highlight was given on the brands, organising them Alphabetically while showcases their top popular brands.<\/p>",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
@@ -317,7 +317,7 @@
             "tab_title": "Lunatag",
             "tab_icon": "brutalist",
             "title": "Lunatag Integration",
-            "paragraph": "<p>We developed a public shopify for Kids Living as our primary customer. We've been highly involved in creating marketing artwork & designs for the website and we've incorporated Lunatag to make products stand out from images.<\/p>",
+            "paragraph": "<p>Lunatag is a public app developed by our team. This integration helps users shop for products through pictures anywhere on the website. Ideal for shopping the look.<\/p>",
             "cta1": "Read more",
             "cta1_link": "shopify:\/\/blogs\/work\/lunatag-app-development",
             "cta2": "",
@@ -346,7 +346,10 @@
         "pre_title": "Explore",
         "title": "The tech we used:",
         "content_list": [
-          "shopify"
+          "shopify",
+          "vend-pos",
+          "uafrica",
+          "vercel"
         ],
         "spacing": "custom",
         "spacing_top": 16,
@@ -358,13 +361,14 @@
       "settings": {
         "title": "Our development stack",
         "products": [
-          "copy-of-framer",
           "shopify",
           "copy-of-css",
           "sass",
-          "tailwindcss",
           "typescript",
-          "github"
+          "facebook",
+          "sendgrid",
+          "windows-support",
+          "ios"
         ],
         "collection": "",
         "height": 50,

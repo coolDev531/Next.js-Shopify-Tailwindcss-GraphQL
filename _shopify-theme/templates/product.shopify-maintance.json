@@ -1,5 +1,18 @@
 {
   "sections": {
+    "165908667095db4aba": {
+      "type": "page-settings",
+      "settings": {
+        "color_accent": "#22c55e",
+        "color_accent_contrast": "#ffffff",
+        "color_accent_secondary": "",
+        "color_accent_secondary_contrast": "",
+        "color_accent_dark": "#ecca07",
+        "color_accent_contrast_dark": "#000000",
+        "color_accent_secondary_dark": "",
+        "color_accent_secondary_contrast_dark": ""
+      }
+    },
     "1656935895e67bca71": {
       "type": "hero-with-features",
       "disabled": true,
@@ -58,14 +71,35 @@
     "165476159216c4ff5c": {
       "type": "heading",
       "settings": {
-        "pre_title": "Expert development",
-        "title": "We speak, eat, sleep Shopify",
-        "paragraph": "<p>We have extensive Shopify experience and have developed ecommerce stores and solutions for our clients worldwide. Whether you want to built a new ecommerce store, migrate, or help with your current store. We are here to help you succeed. <\/p>",
+        "pre_title": "Continuous work for continuous results",
+        "title": "Site maintenance & SEO forgrowth",
+        "paragraph": "<p>We have extensive Shopify experience and have maintained and upgraded ecommerce stores for our clients worldwide. Whether you are looking for a once of solution or a monthly plan. We are here to help you succeed.<\/p>",
         "cta1": "",
         "cta1_link": "",
         "cta2": "",
         "cta2_link": "",
         "position": "center"
+      }
+    },
+    "1659086609d43c00c6": {
+      "type": "stats-graph",
+      "blocks": {
+        "eb582cd4-7139-435c-95ca-ce10f96556d6": {
+          "type": "stat",
+          "settings": {
+            "stat": "123",
+            "title": "",
+            "descriptions": ""
+          }
+        }
+      },
+      "block_order": [
+        "eb582cd4-7139-435c-95ca-ce10f96556d6"
+      ],
+      "settings": {
+        "spacing": "custom",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "1654762013d2c9eed0": {
@@ -74,15 +108,15 @@
         "1edc02ca-a844-4f5c-93fb-791e53248869": {
           "type": "image-text",
           "settings": {
-            "pre_title": "Choosing the right plateform",
-            "title": "Why we choose Shopify",
-            "paragraph": "<p>Over 1 million merchants across 175 countries agree with us and trust Shopify to run their stores. Here's why we think it's the right platform for you too...<\/p>",
+            "pre_title": "Essential for success",
+            "title": "Why site maintenance?",
+            "paragraph": "<p>Regular site maintenance is crucial to ensure your site is running optimally and customers are enjoying their user experience. Our team are on standby for any requests or challenges faced with your website, while creating monthly plans on improving and optimizating your Store. <\/p>",
             "list_title": "",
-            "list": "<p>Easy to use<\/p><p>Great support<\/p><p>Multi-payment gateway integration<\/p><p><\/p><p>Tracking and maintaining customer data<\/p><p>Across-channel selling<\/p><p>Analytics reporting<\/p><p>Built-in cart abandonment feature<\/p><p>Optimized for SEO, easily customizable keywords<\/p><p>Integrations made easy<\/p>",
-            "image": "shopify:\/\/shop_images\/why-shopify_ba49a8c5-1677-4827-953c-608d381d73cc.png",
-            "aspect_desktop": "4-3",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/maintainace_7929f7f1-302a-4eee-a473-bd0d674e62a7.png",
+            "aspect_desktop": "auto",
             "fit_height": false,
-            "aspect_mobile": "21-9",
+            "aspect_mobile": "16-9",
             "position": "right"
           }
         }
@@ -103,19 +137,19 @@
           "type": "package",
           "settings": {
             "title": "Basic",
-            "price": "From R 18 500, -",
+            "price": "From R3 900 pm -",
             "subtitle": "For personal or small start-up ecommerce sites with a simple responsive design.",
             "cta1": "Book now",
             "cta1_link": "",
             "cta2": "Learn more",
             "cta2_link": "",
-            "feature_1": "Basic Product Setup (5)",
-            "feature_2": "Basic Collection Setup (5)",
-            "feature_3": "Basic Navigation",
-            "feature_4": "Basic Pages Setup (homepage \/ contact \/ policies pages)",
-            "feature_5": "Settings setup",
-            "feature_6": "Shipping & Payments integration",
-            "feature_7": "Basic Training",
+            "feature_1": "6 Hours allocated - requests",
+            "feature_2": "Tech support (Domains, hosting, emails)",
+            "feature_3": "Website Support",
+            "feature_4": "Website Content Changes",
+            "feature_5": "Basic Image Editing",
+            "feature_6": "Basic Consultation",
+            "feature_7": "",
             "feature_8": "",
             "feature_9": "",
             "feature_10": "",
@@ -140,22 +174,22 @@
           "type": "package",
           "settings": {
             "title": "Advanced",
-            "price": "From R 39 500, -",
+            "price": "From R8 500 pm, -",
             "subtitle": "For professional or medium size ecommerce sites with a unique responsive design.",
             "cta1": "Book now",
             "cta1_link": "",
             "cta2": "Learn More",
             "cta2_link": "",
-            "feature_1": "Everything in Basic, plus",
-            "feature_2": "Custom Page set-up (About, Shipping, Blog, FAQ etc.)",
-            "feature_3": "Advanced Navigation",
-            "feature_4": "Basic Pages Setup (homepage \/ contact \/ policies pages)",
-            "feature_5": "Basic SEO",
-            "feature_6": "Social Links Integration",
-            "feature_7": "Newsletter & customer database integration",
-            "feature_8": "Up to 10 collections",
-            "feature_9": "Basic Graphic Design Allocation",
-            "feature_10": "Advanced Training",
+            "feature_1": "12 Hours allocated - requests + strategy",
+            "feature_2": "Monthly Data Backups",
+            "feature_3": "Everything in Basic, plus",
+            "feature_4": "App Installations \/ Maintenance",
+            "feature_5": "SEO optimizations",
+            "feature_6": "Graphic Design",
+            "feature_7": "Website health check",
+            "feature_8": "Training",
+            "feature_9": "Strategy Consultation",
+            "feature_10": "",
             "feature_11": "",
             "feature_12": "",
             "feature_13": "",
@@ -177,22 +211,22 @@
           "type": "package",
           "settings": {
             "title": "Pro",
-            "price": "From R 79 500, -",
+            "price": "From R 14 600, -",
             "subtitle": "For well established or large size ecommerce sites with a custom responsive design.",
             "cta1": "Book now",
             "cta1_link": "",
             "cta2": "Learn more",
             "cta2_link": "",
-            "feature_1": "Everything in Standard, plus",
-            "feature_2": "Premium pages (3 extra pages with custom layouts)",
-            "feature_3": "Advanced Products set-up (Metafield integrations)",
-            "feature_4": "Advanced collection set-up",
-            "feature_5": "Advanced SEO setup",
-            "feature_6": "Custom Navigation",
-            "feature_7": "Email automation setup",
-            "feature_8": "Facebook & instagram Shop Integration",
-            "feature_9": "Google Merchant Integration",
-            "feature_10": "Reviews Integration",
+            "feature_1": "20 Hours Allocated - requests + strategy",
+            "feature_2": "Weekly Data Backups",
+            "feature_3": "Everything in Advanced, plus",
+            "feature_4": "Performance Improvement",
+            "feature_5": "Custom Feature development",
+            "feature_6": "Data conversion scripts",
+            "feature_7": "Monthly Analysis Report",
+            "feature_8": "Conversion Strategy & Suggestions",
+            "feature_9": "Keyword Research and Tracking",
+            "feature_10": "Theme updates",
             "feature_11": "",
             "feature_12": "",
             "feature_13": "",
@@ -217,74 +251,9 @@
         "5e3e9066-423d-4c37-b591-3d6ecf0e5bab3"
       ],
       "settings": {
-        "pre_title": "Full site packages",
+        "pre_title": "Monthly website maintanace package",
         "title": "Find a plan that suites your needs.",
         "paragraph": "<p>Get the best ecommerce store to suite your needs.<\/p>",
-        "spacing": "md",
-        "spacing_top": 0,
-        "spacing_bottom": 0
-      }
-    },
-    "1654424131fb27794e": {
-      "type": "tabs-process-step",
-      "blocks": {
-        "16544241313b2fcafc-0": {
-          "type": "step",
-          "settings": {
-            "tab_title": "Step 1 - Introduction & strategy phase",
-            "tab_paragraph": "Lets get started",
-            "title": "Introduction & strategy phase",
-            "paragraph": "<p>This is when we take the time to understand your vision & needs. We are all ears and ready to make your vision and ideas a reality. At this phase the more informatoin you share with us the better. We then put together a plan of action, specific to your requirements.<\/p>"
-          }
-        },
-        "16544241313b2fcafc-1": {
-          "type": "step",
-          "settings": {
-            "tab_title": "Step 2 - Feedback stage",
-            "tab_paragraph": "Refining the vision",
-            "title": "Feedback stage",
-            "paragraph": "<p>We are dedicated in building your perfect website and encourage feedback throughout the project. We put together the proposed  mock-ups, and layouts for your website. During this phase you and our team work on and refine the layouts until you are happy with the results.<\/p>"
-          }
-        },
-        "16544241313b2fcafc-2": {
-          "type": "step",
-          "settings": {
-            "tab_title": "Step 3 - Development stage",
-            "tab_paragraph": "Building in motion",
-            "title": "Development stage",
-            "paragraph": "<p>Our team gets to work on turning your vision into reality. Wether its a store migration, website upgrate or a totally new website. Our team is on it. Ensuring that the development runs smoothly and effectively while keeping you updated throughout the process. <\/p>"
-          }
-        },
-        "16544241313b2fcafc-3": {
-          "type": "step",
-          "settings": {
-            "tab_title": "Step 4 - Review Stage",
-            "tab_paragraph": "Putting everything together",
-            "title": "Review Stage",
-            "paragraph": "<p>This phase is critical. Our team goes over the final round of revisions to get everything just right before we launch your site. We go over any changes and adjustments needed encouraging feedback throughout the process. Once every is a go, we move on to our next and final stage.<\/p>"
-          }
-        },
-        "16544241313b2fcafc-4": {
-          "type": "step",
-          "settings": {
-            "tab_title": "Step 5 - Launch",
-            "tab_paragraph": "Pop the bubblies!",
-            "title": "Website Launch",
-            "paragraph": "<p>All the hard work leads up to this, where we hand over your fully functional, ready to sell, Shopify site. Our team guides you through the website launch process, ensuring that everything is functional and ready for you to start selling right away. <\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "16544241313b2fcafc-0",
-        "16544241313b2fcafc-1",
-        "16544241313b2fcafc-2",
-        "16544241313b2fcafc-3",
-        "16544241313b2fcafc-4"
-      ],
-      "settings": {
-        "pre_title": "Partners in your online success",
-        "title": "We are here every step of the way",
-        "paragraph": "<p>Our main aim is to develop your powerful website optimized for success. When working with us, you are matched with a designated project manager to ensure all your project needs are taken care of from start to finish.<\/p>",
         "spacing": "md",
         "spacing_top": 0,
         "spacing_bottom": 0
@@ -298,11 +267,11 @@
           "settings": {
             "pre_title": "Shopify experts & partners",
             "title": "Why work with us",
-            "paragraph": "<p><strong>Certified Shopify partner:<\/strong> Luna Lemon is a part of the<br\/>Shopify development community with extensive Shopify experience and expertise.<br\/><strong>Provide an all-in-one solution: <\/strong>We handle everything in-house,<br\/>from developing and designing to grow and maintaining your Shopify store.<br\/><strong>Customized themes to fit your needs: <\/strong>We provide custom theme design that will convert visitors into buyers.<br\/><strong>Dedicated project manager:<\/strong> We provide a dedicated point of<br\/>contact at Luna Lemon to guide you through discovery, design, training, and final site launch.<br\/><strong>Experts in eCommerce optimization:<\/strong> In addition to being expert web developers, our SEO Specialists are equipt optimize your online store for better rankings and growth.<\/p>",
+            "paragraph": "<p><strong>Certified Shopify partner:<\/strong> Luna Lemon is a part of the<br\/>Shopify development community with extensive Shopify experience and expertise.<br\/><strong>Provide an all-in-one solution: <\/strong>We handle everything in-house,<br\/>from developing and designing to growing and maintaining your Shopify store.<br\/><strong>Customized themes to fit your needs: <\/strong>We provide custom theme design that will convert visitors into buyers.<br\/><strong>Dedicated project manager:<\/strong> We provide a dedicated point of<br\/>contact at Luna Lemon to guide you through discovery, design, training, and final site launch.<br\/><strong>Experts in eCommerce optimization:<\/strong> In addition to being expert web developers, our SEO Specialists are equipt optimize your online store for better rankings and growth.<\/p>",
             "list_title": "",
             "list": "",
             "image": "shopify:\/\/shop_images\/why-work-with-us.png",
-            "aspect_desktop": "auto",
+            "aspect_desktop": "4-3",
             "fit_height": false,
             "aspect_mobile": "16-9",
             "position": "left"
@@ -543,11 +512,12 @@
     }
   },
   "order": [
+    "165908667095db4aba",
     "1656935895e67bca71",
     "165476159216c4ff5c",
+    "1659086609d43c00c6",
     "1654762013d2c9eed0",
     "1658740480bb450054",
-    "1654424131fb27794e",
     "16587554309243208c",
     "1656930716ec9b0e94",
     "165719846348099467",

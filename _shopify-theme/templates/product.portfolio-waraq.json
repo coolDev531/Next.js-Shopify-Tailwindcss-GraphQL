@@ -3,11 +3,11 @@
     "16588324053663a8e1": {
       "type": "page-settings",
       "settings": {
-        "color_accent": "#e6744b",
+        "color_accent": "#074975",
         "color_accent_contrast": "#ffffff",
         "color_accent_secondary": "rgba(0,0,0,0)",
         "color_accent_secondary_contrast": "",
-        "color_accent_dark": "",
+        "color_accent_dark": "#0fd6d6",
         "color_accent_contrast_dark": "",
         "color_accent_secondary_dark": "",
         "color_accent_secondary_contrast_dark": ""
@@ -16,9 +16,9 @@
     "16540104123512b9a3": {
       "type": "hero",
       "settings": {
-        "pre_title": "Portfolio of Work",
+        "pre_title": "Shopify Web Development",
         "title": "Waraq",
-        "paragraph": "<p>Waraq is a health and beauty brand that focuses on sustainable health and while encouraging a beauty positive lifestyle.<\/p><p><\/p><p>We worked with Waraq in successfully developing their Shopify Website covering aspects from product image editing and<br\/>content creation.<\/p>",
+        "paragraph": "<p>Waraq is a health and beauty brand that focuses on sustainable health while encouraging a beauty positive lifestyle.<\/p><p><\/p>",
         "list_title": "What we did:",
         "list": "<p>Web Development<\/p><p>Custom theme editing<\/p><p>Product image editing<\/p>",
         "image": "shopify:\/\/shop_images\/hero_780a6c73-c87d-45b2-ac8b-3dcff5ffc189.png",
@@ -33,7 +33,7 @@
         "b206c8f8-78d7-4074-bae7-a25fdfa286ce": {
           "type": "stat",
           "settings": {
-            "stat": "6 Weeks",
+            "stat": "4 Weeks",
             "title": "From start to launch",
             "descriptions": ""
           }
@@ -41,16 +41,16 @@
         "8457496c-859c-46a2-8653-4953e4e81a20": {
           "type": "stat",
           "settings": {
-            "stat": "30+",
-            "title": "Theme sections",
+            "stat": "6",
+            "title": "Photoshoots",
             "descriptions": ""
           }
         },
         "daf38169-f867-497d-b358-3af89c50830e": {
           "type": "stat",
           "settings": {
-            "stat": "100+",
-            "title": "Happy dogs",
+            "stat": "2 Apps",
+            "title": "Custom developed",
             "descriptions": ""
           }
         }
@@ -73,8 +73,8 @@
           "type": "heading",
           "settings": {
             "pre_title": "The Brief",
-            "title": "Going from zero to hero",
-            "paragraph": "<p>We helped Aiko successfully launch their website, after having to rescue and put together from a half developed custom design from previous developers. We have worked closely to match their budget with a two-point plan, fixing their initial site and removing essential functionality for an accelerated launch, and a full custom design development.<\/p>",
+            "title": "From challenge to solution",
+            "paragraph": "<p>We worked with Waraq in successfully developing their Shopify Website covering aspects from product image editing and<br\/>content research and creation.<\/p>",
             "cta1": "",
             "cta1_link": "#",
             "cta2": "",
@@ -143,7 +143,10 @@
         "image5": "shopify:\/\/shop_images\/collage-5_14e73dd3-4c3b-497e-92fd-6c5ddfaea922.png",
         "title5": "",
         "image6": "shopify:\/\/shop_images\/collage-6_7b10175d-984d-4f03-9a1e-f093a5fa068d.png",
-        "title6": ""
+        "title6": "",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "16540875305d711f9e": {
@@ -152,7 +155,10 @@
         "pre_title": "Explore",
         "title": "The tech we used:",
         "content_list": [
-          "shopify"
+          "shopify",
+          "vend-pos",
+          "uafrica",
+          "takealot-1"
         ],
         "spacing": "custom",
         "spacing_top": 16,
@@ -164,18 +170,24 @@
       "settings": {
         "title": "Our development stack",
         "products": [
-          "copy-of-framer",
           "shopify",
           "copy-of-css",
           "sass",
-          "tailwindcss",
           "typescript",
-          "github"
+          "github",
+          "copy-of-node-js",
+          "vercel",
+          "react"
         ],
         "collection": "",
         "height": 50,
+        "style": "slider",
         "animate": false,
         "animation_duration": 70,
+        "minItems": 2,
+        "maxItems": 5,
+        "paddingY": 8,
+        "paddingX": 8,
         "spacing": "custom",
         "spacing_top": 0,
         "spacing_bottom": 24

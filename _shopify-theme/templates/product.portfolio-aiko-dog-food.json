@@ -3,12 +3,12 @@
     "16588324053663a8e1": {
       "type": "page-settings",
       "settings": {
-        "color_accent": "#e6744b",
+        "color_accent": "#33c18a",
         "color_accent_contrast": "#ffffff",
         "color_accent_secondary": "rgba(0,0,0,0)",
         "color_accent_secondary_contrast": "",
-        "color_accent_dark": "",
-        "color_accent_contrast_dark": "",
+        "color_accent_dark": "#6ff0be",
+        "color_accent_contrast_dark": "#ffffff",
         "color_accent_secondary_dark": "",
         "color_accent_secondary_contrast_dark": ""
       }
@@ -72,9 +72,9 @@
         "93e0ffb2-4809-45bb-88aa-7cf835fef608": {
           "type": "heading",
           "settings": {
-            "pre_title": "The Brief",
-            "title": "Going from zero to hero",
-            "paragraph": "<p>We helped Aiko successfully launch their website, after having to rescue and put together from a half developed custom design from previous developers. We have worked closely to match their budget with a two-point plan, fixing their initial site and removing essential functionality for an accelerated launch, and a full custom design development.<\/p>",
+            "pre_title": "Case in point",
+            "title": "From challenge to solution",
+            "paragraph": "<p>We helped Aiko successfully launch their fully custom developed website. When we took over the website, it was half developed and had a lot of issues which was their biggest challange. Our team worked closely to match their budget with a two-point plan, fixing their initial site and removing essential functionality for an accelerated launch, as well as a full custom design development.<\/p>",
             "cta1": "",
             "cta1_link": "#",
             "cta2": "",
@@ -177,8 +177,13 @@
         ],
         "collection": "",
         "height": 50,
+        "style": "slider",
         "animate": false,
         "animation_duration": 70,
+        "minItems": 2,
+        "maxItems": 5,
+        "paddingY": 8,
+        "paddingX": 8,
         "spacing": "custom",
         "spacing_top": 0,
         "spacing_bottom": 24

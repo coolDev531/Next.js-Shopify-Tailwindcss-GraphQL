@@ -3,11 +3,11 @@
     "16588324053663a8e1": {
       "type": "page-settings",
       "settings": {
-        "color_accent": "#fc1989",
+        "color_accent": "#10aeec",
         "color_accent_contrast": "#ffffff",
         "color_accent_secondary": "",
         "color_accent_secondary_contrast": "",
-        "color_accent_dark": "#ec4899",
+        "color_accent_dark": "#10aeec",
         "color_accent_contrast_dark": "#ffffff",
         "color_accent_secondary_dark": "",
         "color_accent_secondary_contrast_dark": ""
@@ -16,9 +16,9 @@
     "16540104123512b9a3": {
       "type": "hero",
       "settings": {
-        "pre_title": "Portfolio of Work",
+        "pre_title": "Shopify Website Development",
         "title": "Hydrobiz",
-        "paragraph": "<p>Hydrobiz is a Cape Town based company that supplies professional horticulture equipment and consumables. <\/p><p><br\/>We have worked with Hydrobiz in successfully upgrading their Shopify Website covering aspects from inventory management, web development, and integrating their website to DEAR POS system. <br\/><\/p>",
+        "paragraph": "<p>Hydrobiz is a Cape Town based company that supplies professional horticulture equipment and consumables. <\/p><p><br\/><\/p>",
         "list_title": "What we did:",
         "list": "<p>Store design update<\/p><p>Shopify Web Development <\/p><p>Shopify to DEAR intergration <\/p><p><\/p>",
         "image": "shopify:\/\/shop_images\/Hero-blue.png",
@@ -33,7 +33,7 @@
         "8457496c-859c-46a2-8653-4953e4e81a20": {
           "type": "stat",
           "settings": {
-            "stat": "30 000+",
+            "stat": "10 000+",
             "title": "Monthly Sessions",
             "descriptions": ""
           }
@@ -41,16 +41,16 @@
         "b206c8f8-78d7-4074-bae7-a25fdfa286ce": {
           "type": "stat",
           "settings": {
-            "stat": "10k",
-            "title": "Subscribers",
+            "stat": "200%",
+            "title": "Conversion rate increase",
             "descriptions": ""
           }
         },
         "daf38169-f867-497d-b358-3af89c50830e": {
           "type": "stat",
           "settings": {
-            "stat": "422%",
-            "title": "Growth since 2017",
+            "stat": "1400+",
+            "title": "Products",
             "descriptions": "Brands"
           }
         }
@@ -72,9 +72,9 @@
         "93e0ffb2-4809-45bb-88aa-7cf835fef608": {
           "type": "heading",
           "settings": {
-            "pre_title": "The Brief",
-            "title": "Going from zero to hero",
-            "paragraph": "<p>We helped Aiko successfully launch their website, after having to rescue and put together from a half developed custom design from previous developers. We have worked closely to match their budget with a two-point plan, fixing their initial site and removing essential functionality for an accelerated launch, and a full custom design development.<\/p>",
+            "pre_title": "Building for success",
+            "title": "From vision to reality",
+            "paragraph": "<p>We have worked with Hydrobiz in successfully upgrading their Shopify Website covering aspects from inventory management, web development, and integrating their website to DEAR POS system. <\/p>",
             "cta1": "",
             "cta1_link": "#",
             "cta2": "",
@@ -155,7 +155,8 @@
         "pre_title": "Explore",
         "title": "The tech we used:",
         "content_list": [
-          "shopify"
+          "shopify",
+          "dear"
         ],
         "spacing": "custom",
         "spacing_top": 16,
@@ -167,18 +168,24 @@
       "settings": {
         "title": "Our development stack",
         "products": [
-          "copy-of-framer",
-          "shopify",
           "copy-of-css",
           "sass",
           "tailwindcss",
           "typescript",
-          "github"
+          "github",
+          "copy-of-node-js",
+          "react",
+          "react-query"
         ],
         "collection": "",
         "height": 50,
+        "style": "slider",
         "animate": false,
         "animation_duration": 70,
+        "minItems": 2,
+        "maxItems": 5,
+        "paddingY": 8,
+        "paddingX": 8,
         "spacing": "custom",
         "spacing_top": 0,
         "spacing_bottom": 24

@@ -4,7 +4,8 @@ import { Wrapper } from "_client/layout/wrapper";
 import { Link } from "_client/link";
 import { BlockHeading } from "_client/sections/block-heading";
 import { Richtext } from "_client/typography/richtext";
-import { FC, useCallback, useRef, useState } from "react";
+import { FC, useCallback, useEffect, useRef, useState } from "react";
+import { useWindowSize } from "react-use";
 import { FeatureCarouselSection } from ".shopify-cms/types/sections";
 import { scrollToX } from "utils/scroll-to";
 
@@ -13,13 +14,26 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const maxIndex = blocks.length + settings.features.length;
   const [scrollIndex, setScrollIndex] = useState(0);
+  const [showNextButton, setShowNextButton] = useState(false);
+  const windowSize = useWindowSize();
 
   const handleManualScroll = useCallback((index: number) => {
     scrollContainerRef.current.classList.remove("snap-x");
     scrollToX(250, 384 * (scrollIndex + index), scrollContainerRef.current, () => {
       scrollContainerRef.current.classList.add("snap-x");
     });
-  }, [scrollIndex]);
+    setTimeout(
+      () => {
+        if (window) {
+          const maxRight = (
+            scrollContainerRef.current.lastChild as Element
+          )?.getBoundingClientRect().right;
+          setShowNextButton((current) => maxRight + 25 > windowSize.width);
+        }
+      },
+      250
+    );
+  }, [scrollIndex, windowSize.width]);
 
   const handleScrollEvent = useCallback((e) => {
     const { scrollLeft } = scrollContainerRef.current;
@@ -29,6 +43,14 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
       return Math.floor((scrollLeft + 384 / 2) / 384);
     });
   }, []);
+
+  useEffect(() => {
+    if (window) {
+      const maxRight = (scrollContainerRef.current.lastChild as Element)?.getBoundingClientRect()
+        .right;
+      setShowNextButton((current) => maxRight + 25 > windowSize.width);
+    }
+  }, [windowSize.width]);
 
   return (
     <Wrapper
@@ -86,7 +108,7 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
                 <HeroIcon name="ChevronLeftIcon" className="h-6 w-6" />
               </button>
             : null}
-          {scrollIndex < maxIndex - 1
+          {showNextButton && scrollIndex < maxIndex - 1
             ? <button
                 tabIndex={-1}
                 className="absolute top-[calc(360px/2)] right-8 hidden items-center justify-center rounded-full border border-gray-300 bg-white p-2 shadow transition-all hover:-translate-y-0.5 hfa:bg-gray-50/90 sm:flex"

@@ -7,8 +7,8 @@
         "color_accent_contrast": "#ffffff",
         "color_accent_secondary": "",
         "color_accent_secondary_contrast": "",
-        "color_accent_dark": "",
-        "color_accent_contrast_dark": "",
+        "color_accent_dark": "#f1ce08",
+        "color_accent_contrast_dark": "#1b212e",
         "color_accent_secondary_dark": "",
         "color_accent_secondary_contrast_dark": ""
       }
@@ -33,24 +33,24 @@
         "b206c8f8-78d7-4074-bae7-a25fdfa286ce": {
           "type": "stat",
           "settings": {
-            "stat": "6 Weeks",
-            "title": "From start to launch",
+            "stat": "2000+",
+            "title": "Watches & jewelers",
             "descriptions": ""
           }
         },
         "8457496c-859c-46a2-8653-4953e4e81a20": {
           "type": "stat",
           "settings": {
-            "stat": "30+",
-            "title": "Theme sections",
+            "stat": "3",
+            "title": "Custom Apps",
             "descriptions": ""
           }
         },
         "daf38169-f867-497d-b358-3af89c50830e": {
           "type": "stat",
           "settings": {
-            "stat": "100+",
-            "title": "Happy dogs",
+            "stat": "510%",
+            "title": "Annual growth",
             "descriptions": ""
           }
         }
@@ -74,7 +74,7 @@
           "settings": {
             "pre_title": "Case in point",
             "title": "From problem to solution",
-            "paragraph": "<p>How we overcome Broadway Jewellers challenges to migrate their store from WordPress to Shopify and having an updated store design and content flow to showcase their large amount of inventory. We continuously worked with them to increase site visits, engagement, and product purchases. <br\/><\/p>",
+            "paragraph": "<p>How we overcame Broadway Jewellers challenges to migrate their store from WordPress to Shopify,  having an updated store design and content flow to showcase their large amount of inventory. We continuously worked with them to increase site visits, engagement, and product purchases. <br\/><\/p>",
             "cta1": "Develop your website",
             "cta1_link": "#",
             "cta2": "Explore all services",
@@ -102,9 +102,9 @@
           "settings": {
             "pre_title": "Continuous work for continuous results",
             "title": "SEO & Site Maintenance",
-            "paragraph": "<p>After a successful website build and launch. We worked on optimizing their websites and a monthly maintenance plan. Our team worked on creating monthly plans on improving and optimization our client’s website. They continually use and develop cutting-edge SEO tools and crawling software to identify and analyze technical SEO factors that needs to be addressed. They also worked on product content research and creation. Consistently working on the website and keeping up to date with the ever-evolving online environment.<\/p>",
+            "paragraph": "<p>After a successful website build and launch. We worked on optimizing their websites SEO and monthly maintenance. Our team worked on creating monthly plans on improving and optimization our client’s website. They continually use and develop cutting-edge SEO tools and crawling software to identify and analyze technical SEO factors that needs to be addressed. They also worked on product content research and creation. <\/p>",
             "list_title": "",
-            "list": "<p>Website data backup<\/p><p>Stand by for website queries or requests <\/p><p>Website updates and customizations <\/p><p>Evaluating current keyword rankings<\/p><p>Identifying and creating quality links<\/p><p>Content research & creation <\/p><p>Product content quality analysis and update<\/p>",
+            "list": "",
             "image": "shopify:\/\/shop_images\/seo-and-site-maintenance.png",
             "aspect_desktop": "4-3",
             "fit_height": false,
@@ -119,7 +119,7 @@
             "title": "Google & Social Media Ads",
             "paragraph": "<p>When we first took over the client’s social ad campaigns, one of the biggest challenges was finding the people interested in its products. The company’s target audience of jewellery and watches was so broad at that time. Our team performed several campaign audits and market analyses to quickly determine the client’s ideal target market, drive website purchases and deliver a solid return. <\/p>",
             "list_title": "",
-            "list": "<p>Audience AB testing <\/p><p>Promoting highest-priority products<\/p><p>Monthly ad goals and review<\/p><p>Special occasions & dates campaigns<\/p><p>Product placement ads<\/p>",
+            "list": "",
             "image": "shopify:\/\/shop_images\/Google-and-social-media-ads.png",
             "aspect_desktop": "4-3",
             "fit_height": false,
@@ -152,6 +152,9 @@
         "0006cd19-f0fe-42e3-a223-964cdd22172a"
       ],
       "settings": {
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "1656933742c82a115d": {
@@ -329,7 +332,7 @@
             "tab_title": "Product review app",
             "tab_icon": "AnnotationIcon",
             "title": "Product review app",
-            "paragraph": "<p>This integration helps increase the overall trust of visitors to the<br\/>store and increases conversion by showcasing ratings of the particular product.<\/p>",
+            "paragraph": "<p>This integration helps increase the overall trust of visitors to the store and increases conversion by showcasing ratings of the particular product.<\/p>",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
@@ -365,6 +368,9 @@
         "4ad0bc66-ca57-4e98-9199-8a2ec3eb3b41"
       ],
       "settings": {
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "16540875305d711f9e": {
@@ -373,7 +379,10 @@
         "pre_title": "Explore",
         "title": "The tech we used:",
         "content_list": [
-          "shopify"
+          "shopify",
+          "vend-pos",
+          "takealot-1",
+          "uafrica"
         ],
         "spacing": "custom",
         "spacing_top": 16,
@@ -385,13 +394,15 @@
       "settings": {
         "title": "Our development stack",
         "products": [
-          "copy-of-framer",
           "shopify",
           "copy-of-css",
           "sass",
           "tailwindcss",
           "typescript",
-          "github"
+          "github",
+          "uafrica",
+          "vercel",
+          "facebook"
         ],
         "collection": "",
         "height": 50,

@@ -3,7 +3,7 @@
     "16588324053663a8e1": {
       "type": "page-settings",
       "settings": {
-        "color_accent": "#e6744b",
+        "color_accent": "#f9891e",
         "color_accent_contrast": "#ffffff",
         "color_accent_secondary": "rgba(0,0,0,0)",
         "color_accent_secondary_contrast": "",
@@ -16,9 +16,9 @@
     "16540104123512b9a3": {
       "type": "hero",
       "settings": {
-        "pre_title": "Portfolio of Work",
+        "pre_title": "Shopify Website Development",
         "title": "Bush Scarf",
-        "paragraph": "<p>Est. 2016, Bush Scarf focuses on quality handwoven bamboo and mohair scarves. Locally made and proudly South African, the scarves express beauty, elegancy, and simplicity through the vivid and strong colour tones in their designs.<br\/><br\/>We worked with Bushscarf in successfully developing their Shopify Website covering aspects from product photography, product image editing and product content creation.<br\/><\/p>",
+        "paragraph": "<p>Est. 2016, Bush Scarf focuses on quality handwoven bamboo and mohair scarves. Locally made and proudly South African, the scarves express beauty, elegancy, and simplicity through the vivid and strong colour tones in their designs.<br\/><\/p>",
         "list_title": "What we did:",
         "list": "<p>Web Development<\/p><p>Custom theme editing <\/p><p>Product content creation<\/p>",
         "image": "shopify:\/\/shop_images\/image-mock---Liz_24e9bb52-7041-4820-b08d-e352eb3f5751.png",
@@ -72,9 +72,9 @@
         "93e0ffb2-4809-45bb-88aa-7cf835fef608": {
           "type": "heading",
           "settings": {
-            "pre_title": "The Brief",
-            "title": "Going from zero to hero",
-            "paragraph": "<p>We helped Aiko successfully launch their website, after having to rescue and put together from a half developed custom design from previous developers. We have worked closely to match their budget with a two-point plan, fixing their initial site and removing essential functionality for an accelerated launch, and a full custom design development.<\/p>",
+            "pre_title": "Building for Succces",
+            "title": "From vision to reality",
+            "paragraph": "<p>We worked with Bushscarf in successfully developing their Shopify Website covering aspects from product photography, product image editing and product content creation.<\/p>",
             "cta1": "",
             "cta1_link": "#",
             "cta2": "",
@@ -167,18 +167,21 @@
       "settings": {
         "title": "Our development stack",
         "products": [
-          "copy-of-framer",
           "shopify",
           "copy-of-css",
           "sass",
-          "tailwindcss",
-          "typescript",
-          "github"
+          "gulp",
+          "webpack"
         ],
         "collection": "",
         "height": 50,
+        "style": "slider",
         "animate": false,
         "animation_duration": 70,
+        "minItems": 2,
+        "maxItems": 5,
+        "paddingY": 8,
+        "paddingX": 8,
         "spacing": "custom",
         "spacing_top": 0,
         "spacing_bottom": 24

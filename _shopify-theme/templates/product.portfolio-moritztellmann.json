@@ -3,11 +3,11 @@
     "16588324053663a8e1": {
       "type": "page-settings",
       "settings": {
-        "color_accent": "#e6744b",
+        "color_accent": "#434343",
         "color_accent_contrast": "#ffffff",
         "color_accent_secondary": "rgba(0,0,0,0)",
         "color_accent_secondary_contrast": "",
-        "color_accent_dark": "",
+        "color_accent_dark": "#94a9b7",
         "color_accent_contrast_dark": "",
         "color_accent_secondary_dark": "",
         "color_accent_secondary_contrast_dark": ""
@@ -16,9 +16,9 @@
     "16540104123512b9a3": {
       "type": "hero",
       "settings": {
-        "pre_title": "Portfolio of Work",
+        "pre_title": "Shopify Website Development",
         "title": "Moritz Tellmann",
-        "paragraph": "<p>Waraq is a health and beauty brand that focuses on sustainable health and while encouraging a beauty positive lifestyle.<\/p><p><br\/>We worked with Mortiz Tellman in successfully developing his Shopify website to accommodate and structure large amount of content, covering aspects from UX friendly flow, minimalistic design, while setting up the website to be compatible for both German and English.<br\/><\/p>",
+        "paragraph": "",
         "list_title": "What we did:",
         "list": "<p>Web Development<\/p><p>Custom theme editing <\/p><p>Product content & editing<\/p><p>Multilingual Website (English & German)<\/p>",
         "image": "shopify:\/\/shop_images\/hero_54238c6d-b03d-4813-84be-93c06b462eae.png",
@@ -33,7 +33,7 @@
         "b206c8f8-78d7-4074-bae7-a25fdfa286ce": {
           "type": "stat",
           "settings": {
-            "stat": "6 Weeks",
+            "stat": "4 Weeks",
             "title": "From start to launch",
             "descriptions": ""
           }
@@ -41,16 +41,16 @@
         "8457496c-859c-46a2-8653-4953e4e81a20": {
           "type": "stat",
           "settings": {
-            "stat": "30+",
-            "title": "Theme sections",
+            "stat": "2",
+            "title": "Languages",
             "descriptions": ""
           }
         },
         "daf38169-f867-497d-b358-3af89c50830e": {
           "type": "stat",
           "settings": {
-            "stat": "100+",
-            "title": "Happy dogs",
+            "stat": "20+",
+            "title": "Unique sections",
             "descriptions": ""
           }
         }
@@ -72,9 +72,9 @@
         "93e0ffb2-4809-45bb-88aa-7cf835fef608": {
           "type": "heading",
           "settings": {
-            "pre_title": "The Brief",
-            "title": "Going from zero to hero",
-            "paragraph": "<p>We helped Aiko successfully launch their website, after having to rescue and put together from a half developed custom design from previous developers. We have worked closely to match their budget with a two-point plan, fixing their initial site and removing essential functionality for an accelerated launch, and a full custom design development.<\/p>",
+            "pre_title": "Building for Success",
+            "title": "From vision to reality",
+            "paragraph": "<p>We worked with Mortiz Tellman in successfully developing his Shopify website to accommodate and structure large amount of content, covering aspects from UX friendly flow, minimalistic design, while setting up the website to be compatible for both German and English.<\/p>",
             "cta1": "",
             "cta1_link": "#",
             "cta2": "",
@@ -143,7 +143,10 @@
         "image5": "shopify:\/\/shop_images\/collage-5_d5a4bdd9-401e-4220-9bb6-b360e025545b.png",
         "title5": "",
         "image6": "shopify:\/\/shop_images\/collage-6_615b1771-f91a-4fe0-9bdc-99c2d9048fd3.png",
-        "title6": ""
+        "title6": "",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "16540875305d711f9e": {
@@ -164,18 +167,23 @@
       "settings": {
         "title": "Our development stack",
         "products": [
-          "copy-of-framer",
           "shopify",
           "copy-of-css",
           "sass",
-          "tailwindcss",
           "typescript",
-          "github"
+          "github",
+          "graphql",
+          "node-js"
         ],
         "collection": "",
         "height": 50,
+        "style": "slider",
         "animate": false,
         "animation_duration": 70,
+        "minItems": 2,
+        "maxItems": 5,
+        "paddingY": 8,
+        "paddingX": 8,
         "spacing": "custom",
         "spacing_top": 0,
         "spacing_bottom": 24
