@@ -9,6 +9,89 @@ import { _Image_liquid, _Media_liquid } from ".shopify-cms/types/shopify";
 import { cleanSvgIds } from "utils/clean-svg-ids";
 
 export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }) => {
+  switch (settings.style) {
+    case "slider":
+      return <LogoBannerSlider {...{ id, settings, blocks, type }} />;
+    case "grid":
+      return <LogoBannerGrid {...{ id, settings, blocks, type }} />;
+  }
+};
+
+export const LogoBannerGrid: FC<LogoBannerSection> = ({ id, settings, blocks, type }) => {
+  const [tooltip, setTooltip] = useTooltipStore();
+  const products = settings.collection?.products ?? settings.products ?? [];
+  return (
+    <Wrapper
+      maxWidth="xl"
+      overflowHidden
+      spacing={settings.spacing}
+      spacingTop={settings.spacing_top}
+      spacingBottom={settings.spacing_bottom}
+    >
+      <section>
+        <header className="mb-4">
+          <h3 className="mb-1 font-semibold text-gray-700 dark:text-gray-300">{settings.title}</h3>
+        </header>
+        <main
+          className="grid border-t border-l border-gray-200"
+          style={{
+            gridTemplateColumns: `repeat(auto-fit, minmax(min(100%/${settings.minItems}, max(160px, 100%/${settings.maxItems})), 1fr)`,
+          }}
+        >
+          {products
+            ?.filter(
+              (p) =>
+                p.metafields.find(({ key }) => key === "logo") ||
+                p.metafields.find(({ key }) => key === "logo_dark") ||
+                p.featured_media
+            )
+            ?.map((product) => (
+              <div
+                key={product.id}
+                className="flex items-center justify-center border-b border-r border-gray-200"
+                style={{ padding: `${settings.paddingY * 4}px ${settings.paddingX * 4}px` }}
+              >
+                <LogoBannerSliderItem
+                  height={settings.height}
+                  title={product.title}
+                  image={
+                    (product.metafields.find(({ key }) => key === "logo")
+                      ?.value as _Image_liquid) ?? product.featured_media
+                  }
+                  darkImage={
+                    product.metafields.find(({ key }) => key === "logo_dark")
+                      ?.value as _Image_liquid
+                  }
+                />
+              </div>
+            ))}
+          {blocks.map((block) => {
+            switch (block.type) {
+              case "manual-image":
+                return block.settings.image
+                  ? <LogoBannerSliderItem
+                      key={block.id}
+                      height={settings.height}
+                      title={block.settings.title}
+                      image={block.settings.image}
+                    />
+                  : null;
+              case "manual-svg":
+                return (
+                  <figure
+                    key={block.id}
+                    dangerouslySetInnerHTML={{ __html: cleanSvgIds(block.settings.svg, block.id) }}
+                  />
+                );
+            }
+          })}
+        </main>
+      </section>
+    </Wrapper>
+  );
+};
+
+export const LogoBannerSlider: FC<LogoBannerSection> = ({ id, settings, blocks, type }) => {
   const [tooltip, setTooltip] = useTooltipStore();
   const containerRef = useRef<HTMLDivElement>();
   const bannerRef = useRef<HTMLDivElement>();
@@ -63,9 +146,9 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
               animationPlayState: animate ? "" : "paused",
             }}
           >
-            <LogoBannerSlider settings={settings} blocks={blocks} ref={bannerRef} />
+            <LogoBannerSliderRow settings={settings} blocks={blocks} ref={bannerRef} />
             {animate
-              ? <LogoBannerSlider
+              ? <LogoBannerSliderRow
                   settings={settings}
                   blocks={blocks}
                   className="ml-12 !hidden md:!grid"
@@ -80,7 +163,7 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
   );
 };
 
-export const LogoBannerSlider = forwardRef<
+export const LogoBannerSliderRow = forwardRef<
   HTMLDivElement,
   Omit<LogoBannerSection, "id" | "type"> & { className?: string }
 >(({ settings, blocks, className }, ref) => {
@@ -95,7 +178,7 @@ export const LogoBannerSlider = forwardRef<
             p.featured_media
         )
         ?.map((product) => (
-          <LogoBannerItem
+          <LogoBannerSliderItem
             key={product.id}
             height={settings.height}
             title={product.title}
@@ -112,7 +195,7 @@ export const LogoBannerSlider = forwardRef<
         switch (block.type) {
           case "manual-image":
             return block.settings.image
-              ? <LogoBannerItem
+              ? <LogoBannerSliderItem
                   key={block.id}
                   height={settings.height}
                   title={block.settings.title}
@@ -132,7 +215,7 @@ export const LogoBannerSlider = forwardRef<
   );
 });
 
-export const LogoBannerItem: FC<{
+export const LogoBannerSliderItem: FC<{
   height: number;
   image: _Image_liquid | _Media_liquid;
   title: string;

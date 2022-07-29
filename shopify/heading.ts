@@ -14,7 +14,6 @@ export const heading: ShopifySection<HeadingSection> = {
       id: "pre_title",
       label: "Pre header",
     },
-
     {
       type: "text",
       id: "title",

@@ -41,6 +41,26 @@
       "unit": "px"
     },
     {
+      "type": "radio",
+      "id": "style",
+      "label": "Style",
+      "default": "slider",
+      "options": [
+        {
+          "value": "slider",
+          "label": "Slider"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Slider Specific Settings"
+    },
+    {
       "type": "checkbox",
       "id": "animate",
       "label": "Show slide animation"
@@ -54,6 +74,52 @@
       "max": 100,
       "step": 1,
       "unit": "s"
+    },
+    {
+      "type": "paragraph",
+      "content": "Grid Specific Settings"
+    },
+    {
+      "type": "range",
+      "id": "minItems",
+      "label": "Min per row",
+      "default": 2,
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "unit": "ea"
+    },
+    {
+      "type": "range",
+      "id": "maxItems",
+      "label": "Max per row",
+      "default": 5,
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "ea"
+    },
+    {
+      "type": "range",
+      "id": "paddingY",
+      "label": "PaddingY",
+      "info": "4px steps",
+      "default": 8,
+      "min": 0,
+      "max": 32,
+      "step": 1,
+      "unit": "p"
+    },
+    {
+      "type": "range",
+      "id": "paddingX",
+      "label": "PaddingX",
+      "info": "4px steps",
+      "default": 8,
+      "min": 0,
+      "max": 32,
+      "step": 1,
+      "unit": "p"
     },
     {
       "type": "header",

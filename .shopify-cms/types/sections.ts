@@ -598,12 +598,22 @@ export type LogoBannerSection = {
     animation_duration: number;
     /** Input type: range */
     height: number;
+    /** Input type: range */
+    maxItems: number;
+    /** Input type: range */
+    minItems: number;
+    /** Input type: range */
+    paddingX: number;
+    /** Input type: range */
+    paddingY: number;
     /** Input type: radio */
     spacing: "none" | "sm" | "md" | "lg" | "custom";
     /** Input type: range */
     spacing_bottom: number;
     /** Input type: range */
     spacing_top: number;
+    /** Input type: radio */
+    style: "slider" | "grid";
     /** Input type: collection */
     collection?: _Collection_liquid;
     /** Input type: product_list */
@@ -659,6 +669,35 @@ export type PageSettingsSection = {
   type: "page-settings";
 };
 
+export type PortfolioPreviewSection = {
+  blocks: PortfolioPreviewBlocks[];
+  id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+    /** Input type: collection */
+    collection?: _Collection_liquid;
+    /** Input type: richtext */
+    paragraph?: `<p${string}</p>`;
+    /** Input type: text */
+    pre_title?: string;
+    /** Input type: product_list */
+    products?: _Product_liquid[];
+    /** Input type: text */
+    title?: string;
+  };
+  type: "portfolio-preview";
+};
+
+export type PortfolioPreviewBlocks = {
+  id: string;
+  type: "manual-item";
+};
+
 export type PricingSection = {
   blocks: PricingBlocks[];
   id: string;
@@ -712,6 +751,16 @@ export type PricingBlocks = {
     cta2_link?: string;
     /** Input type: text */
     feature_10?: string;
+    /** Input type: text */
+    feature_11?: string;
+    /** Input type: text */
+    feature_12?: string;
+    /** Input type: text */
+    feature_13?: string;
+    /** Input type: text */
+    feature_14?: string;
+    /** Input type: text */
+    feature_15?: string;
     /** Input type: text */
     feature_1?: string;
     /** Input type: text */
@@ -1206,6 +1255,7 @@ export type Sections =
   | InfoCardsSection
   | LogoBannerSection
   | PageSettingsSection
+  | PortfolioPreviewSection
   | PricingSection
   | SpecListSection
   | StatsGraphSection
