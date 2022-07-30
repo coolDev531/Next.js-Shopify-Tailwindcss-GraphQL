@@ -12,6 +12,7 @@ type SectionProps =
       bgHeight?: Property.Height;
       bgOpacity?: Property.Opacity;
       className?: React.ComponentProps<"div">["className"];
+      id?: string;
       overflowHidden?: boolean;
       spacingBottom?: number;
       spacingTop?: number;
@@ -27,10 +28,12 @@ type SectionProps =
       bgHeight?: Property.Height;
       bgOpacity?: Property.Opacity;
       className?: React.ComponentProps<"div">["className"];
+      id?: string;
       overflowHidden?: boolean;
     };
 
 export const Wrapper: FC<PropsWithChildren<SectionProps>> = ({
+  id,
   maxWidth,
   spacing,
   spacingTop,
@@ -106,7 +109,7 @@ export const Wrapper: FC<PropsWithChildren<SectionProps>> = ({
           />
         : null}
       {overflowHidden
-        ? <div className="relative overflow-hidden">
+        ? <div className="relative overflow-hidden" id={id}>
             <div
               className={clsx(
                 "relative mx-auto",
@@ -127,6 +130,7 @@ export const Wrapper: FC<PropsWithChildren<SectionProps>> = ({
             </div>
           </div>
         : <div
+            id={id}
             className={clsx(
               "relative mx-auto",
               getContainerClasses(maxWidth),

@@ -42,7 +42,7 @@ export const SelectInput: FC<SelectInputProps> = ({
   }, [forceValidate, validateInput]);
 
   return (
-    <label className={clsx("relative", size === "full" && "col-span-2")}>
+    <label className={clsx("relative", size === "full" && "col-span-2")} id={`block--${blockId}`}>
       <div className="form-label">
         {title}
         {required

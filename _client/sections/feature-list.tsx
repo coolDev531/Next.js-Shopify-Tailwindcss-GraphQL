@@ -30,6 +30,7 @@ export const FeatureList: FC<FeatureListSection> = ({ blocks, settings }) => {
         >
           {blocks.map((block) => (
             <section
+              id={`block--${block.id}`}
               key={block.id}
               className="card group min-w-[240px] max-w-xs px-3.5 pb-6 text-center"
             >

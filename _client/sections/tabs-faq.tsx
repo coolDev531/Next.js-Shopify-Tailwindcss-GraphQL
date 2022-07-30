@@ -26,6 +26,7 @@ export const TabsFaq: FC<TabsFaqSection> = ({ id, settings, blocks, type }) => {
       <div className="flex flex-col gap-16">
         {blocks.map((block) => (
           <section
+            id={`block--${block.id}`}
             key={`faq-${block.id}`}
             className="relative flex flex-col md:grid md:grid-cols-[240px_1fr] md:gap-8 lg:grid-cols-[320px_1fr] lg:gap-12"
           >

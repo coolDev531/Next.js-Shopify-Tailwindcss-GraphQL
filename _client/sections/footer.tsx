@@ -14,7 +14,11 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
             {blocks.map((block) => {
               if (block.settings.menu) {
                 return (
-                  <nav key={block.id} className="border-b border-b-gray-300 md:border-none ">
+                  <nav
+                    key={block.id}
+                    className="border-b border-b-gray-300 md:border-none"
+                    id={`block--${block.id}`}
+                  >
                     <input
                       type="checkbox"
                       hidden

@@ -22,7 +22,7 @@ export type BackgroundBlockProps = {
 
 export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
   return (
-    <>
+    <div id={`block--${id}`}>
       <style jsx>{`
         [id="background-${id}"] {
           ${settings.css}
@@ -73,6 +73,6 @@ export const BackgroundBlock: FC<BackgroundBlockProps> = ({ id, settings }) => {
             </div>
           : null}
       </div>
-    </>
+    </div>
   );
 };

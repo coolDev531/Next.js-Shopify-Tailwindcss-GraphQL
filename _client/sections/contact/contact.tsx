@@ -73,7 +73,13 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
               {blocks.map((block) => {
                 switch (block.type) {
                   case "separator":
-                    return <hr key={block.id} className="col-span-2 border-t border-gray-200" />;
+                    return (
+                      <hr
+                        key={block.id}
+                        className="col-span-2 border-t border-gray-200"
+                        id={`block--${block.id}`}
+                      />
+                    );
                   case "basic":
                     return (
                       <BasicInput

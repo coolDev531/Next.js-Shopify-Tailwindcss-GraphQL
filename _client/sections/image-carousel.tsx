@@ -81,17 +81,14 @@ export const ImageCarouselSlider: FC<
           title={product.title}
         />
       ))}
-      {blocks.map((block) => {
-        if (block.type !== "manual-image") return null;
-        return (
-          <ImageCarouselItem
-            key={`image-${block.id}`}
-            href={"#" ?? block.settings.link.replace(/\/blogs/gi, "")}
-            image={block.settings.image}
-            title={block.settings.title}
-          />
-        );
-      })}
+      {blocks.map((block) => (
+        <ImageCarouselItem
+          key={`image-${block.id}`}
+          href={"#" ?? block.settings.link.replace(/\/blogs/gi, "")}
+          image={block.settings.image}
+          title={block.settings.title}
+        />
+      ))}
     </div>
   );
 };

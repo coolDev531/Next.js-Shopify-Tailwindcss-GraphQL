@@ -6,9 +6,9 @@ import clsx from "clsx";
 import { FC } from "react";
 import { ImageTextSection } from ".shopify-cms/types/sections";
 
-export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ settings }) => {
+export const BlockImageText: FC<ImageTextSection & { section?: boolean }> = ({ id, settings }) => {
   return (
-    <Wrapper maxWidth="xl" overflowHidden spacing="none">
+    <Wrapper maxWidth="xl" overflowHidden spacing="none" id={`block--${id}`}>
       <div className="flex grid-cols-2 flex-col-reverse gap-8 md:grid">
         {/*= =============== Text Content ================ */}
         <section

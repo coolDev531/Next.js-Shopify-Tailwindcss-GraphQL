@@ -38,6 +38,7 @@ export const TabsImageCard: FC<TabsImageCardSection> = ({ id, blocks, settings, 
 
           return (
             <button
+              id={`block--${block.id}`}
               className="group flex min-w-[6rem] flex-col items-center"
               key={`tab-${block.id}`}
               onClick={() => setActivateTab(block.id)}

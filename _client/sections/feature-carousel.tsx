@@ -84,19 +84,16 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
                 description={product.content}
               />
             ))}
-            {blocks.map((block) => {
-              if (block.type !== "manual-feature") return null;
-              return (
-                <FeatureCarouselItem
-                  key={`feature-${id}-${block.id}`}
-                  id={block.id}
-                  href={block.settings.link}
-                  image={block.settings.image}
-                  title={block.settings.title}
-                  description={block.settings.paragraph}
-                />
-              );
-            })}
+            {blocks.map((block) => (
+              <FeatureCarouselItem
+                key={`feature-${id}-${block.id}`}
+                id={block.id}
+                href={block.settings.link}
+                image={block.settings.image}
+                title={block.settings.title}
+                description={block.settings.paragraph}
+              />
+            ))}
           </div>
           {scrollIndex !== 0
             ? <button
@@ -126,7 +123,11 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
 
 export const FeatureCarouselItem = ({ id, href, image, title, description }) => {
   return (
-    <Link href={href} className="group snap-start f:ring-2 f:ring-sky-400 f:ring-offset-2">
+    <Link
+      href={href}
+      className="group snap-start f:ring-2 f:ring-sky-400 f:ring-offset-2"
+      id={`block--${id}`}
+    >
       <figure className="relative mb-4 aspect-1 w-[360px] overflow-hidden rounded shadow-lg transition-all group-hfa:shadow-sm">
         {image && (
           <Image

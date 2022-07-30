@@ -37,7 +37,11 @@ export const TextareaInput: FC<TextareaInputProps> = ({
   }, [forceValidate, validateInput]);
 
   return (
-    <label className="relative" style={{ gridColumn: size === "half" ? "" : "span 2" }}>
+    <label
+      className="relative"
+      style={{ gridColumn: size === "half" ? "" : "span 2" }}
+      id={`block--${blockId}`}
+    >
       <div className="form-label">
         {title}
         {required

@@ -82,21 +82,16 @@ export const StatsGraph: FC<StatsGraphSection> = ({
         spacingBottom={settings.spacing_bottom}
       >
         <div className="divide- flex flex-col pb-8 pt-16 md:-ml-8 md:flex-row md:items-center md:divide-x">
-          {blocks.map((block) => {
-            switch (block.type) {
-              case "stat":
-                return (
-                  <section key={block.id} className="py-3 md:px-8 md:py-0">
-                    <header>
-                      <h3 className="mb-2 text-5xl font-medium tracking-tight text-gray-900 dark:text-gray-50">
-                        {block.settings.stat}
-                      </h3>
-                      <h2 className="text-gray-500 dark:text-gray-400">{block.settings.title}</h2>
-                    </header>
-                  </section>
-                );
-            }
-          })}
+          {blocks.map((block) => (
+            <section key={block.id} className="py-3 md:px-8 md:py-0" id={`block--${block.id}`}>
+              <header>
+                <h3 className="mb-2 text-5xl font-medium tracking-tight text-gray-900 dark:text-gray-50">
+                  {block.settings.stat}
+                </h3>
+                <h2 className="text-gray-500 dark:text-gray-400">{block.settings.title}</h2>
+              </header>
+            </section>
+          ))}
         </div>
       </Wrapper>
     </div>

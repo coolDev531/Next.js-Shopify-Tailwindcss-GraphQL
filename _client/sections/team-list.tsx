@@ -16,7 +16,7 @@ export const TeamList: FC<TeamListSection> = ({ id, blocks, type }) => {
         {blocks.map((block) => {
           if (block.type !== "team_member") return null;
           return (
-            <section key={`team-${block.id}`}>
+            <section key={`team-${block.id}`} id={`block--${block.id}`}>
               <header className="mb-4 flex justify-center">
                 <figure className="relative h-44 w-44 overflow-hidden rounded-full">
                   {block.settings.image

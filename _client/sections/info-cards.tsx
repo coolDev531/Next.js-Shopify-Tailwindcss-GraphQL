@@ -71,31 +71,26 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
               </section>
             );
           })}
-          {blocks.map((block) => {
-            switch (block.type) {
-              case "manual-info-card": {
-                return (
-                  <section
-                    key={block.id}
-                    className="w-[200px] rounded-md border border-gray-300 bg-white p-4 shadow-md "
-                  >
-                    <header className="flex flex-col gap-2">
-                      <figure
-                        className="[&>svg]:h-8[&>svg]:w-8"
-                        dangerouslySetInnerHTML={{
-                          __html: cleanSvgIds(block.settings.svg, block.id),
-                        }}
-                      />
-                      <h3>{block.settings.title}</h3>
-                    </header>
-                    <main className="text-[15px] tracking-tight">
-                      <p>{stripHtml(block.settings.paragraph).result}</p>
-                    </main>
-                  </section>
-                );
-              }
-            }
-          })}
+          {blocks.map((block) => (
+            <section
+              id={`block--${block.id}`}
+              key={block.id}
+              className="w-[200px] rounded-md border border-gray-300 bg-white p-4 shadow-md "
+            >
+              <header className="flex flex-col gap-2">
+                <figure
+                  className="[&>svg]:h-8[&>svg]:w-8"
+                  dangerouslySetInnerHTML={{
+                    __html: cleanSvgIds(block.settings.svg, block.id),
+                  }}
+                />
+                <h3>{block.settings.title}</h3>
+              </header>
+              <main className="text-[15px] tracking-tight">
+                <p>{stripHtml(block.settings.paragraph).result}</p>
+              </main>
+            </section>
+          ))}
         </div>
       </div>
     </Wrapper>

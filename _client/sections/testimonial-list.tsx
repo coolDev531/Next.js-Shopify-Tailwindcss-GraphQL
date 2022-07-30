@@ -48,24 +48,20 @@ export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, settin
             />
           );
         })}
-        {blocks.map((block) => {
-          if (block.type !== "testimonial") return null;
-
-          return (
-            <TestimonialListItem
-              key={block.id}
-              id={id}
-              blockId={block.id}
-              link={block.settings.link}
-              logo={block.settings.image}
-              imageAlt={block.settings.image?.alt || block.settings.author}
-              logoDark={undefined}
-              testimonial={block.settings.quote}
-              author={block.settings.author}
-              jobTitle={block.settings.job_title}
-            />
-          );
-        })}
+        {blocks.map((block) => (
+          <TestimonialListItem
+            key={block.id}
+            id={id}
+            blockId={block.id}
+            link={block.settings.link}
+            logo={block.settings.image}
+            imageAlt={block.settings.image?.alt || block.settings.author}
+            logoDark={undefined}
+            testimonial={block.settings.quote}
+            author={block.settings.author}
+            jobTitle={block.settings.job_title}
+          />
+        ))}
       </div>
     </Wrapper>
   );
@@ -84,6 +80,7 @@ export const TestimonialListItem = ({
 }) => {
   return (
     <Link
+      id={`block--${id}`}
       href={link}
       key={`testimonial-${id}-${blockId}`}
       className="min-w-[220px] select-none rounded-md border border-gray-200 bg-white p-6 transition-[border-color] hfa:border-gray-400/60 dark:border-gray-700/80 dark:bg-dark-card dark:hfa:border-gray-500/80"

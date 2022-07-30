@@ -11,11 +11,23 @@ export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[
       {
         source: "theme-content",
         topic: "resize",
-        totalHeight: document.body.clientHeight,
-        sections: sections?.map(({ id }) => ({
-          id,
-          height: document.getElementById(`section--${id}`)?.clientHeight ?? 0,
-        })),
+        totalHeight: document.body.clientHeight + 30,
+        sections: sections?.map(({ id, ...section }) => {
+          const blocks = [];
+          if ("blocks" in section) {
+            section.blocks.forEach(({ id: blockId }) => {
+              blocks.push({
+                id: blockId,
+                rect: document.getElementById(`block--${blockId}`)?.getBoundingClientRect(),
+              });
+            });
+          }
+          return {
+            id,
+            height: document.getElementById(`section--${id}`)?.clientHeight ?? 0,
+            blocks,
+          };
+        }),
       },
       "*"
     );
@@ -31,11 +43,23 @@ export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[
         {
           source: "theme-content",
           topic: "resize",
-          totalHeight: document.body.clientHeight,
-          sections: sections?.map(({ id }) => ({
-            id,
-            height: document.getElementById(`section--${id}`)?.clientHeight ?? 0,
-          })),
+          totalHeight: document.body.clientHeight + 30,
+          sections: sections?.map(({ id, ...section }) => {
+            const blocks = [];
+            if ("blocks" in section) {
+              section.blocks.forEach(({ id: blockId }) => {
+                blocks.push({
+                  id: blockId,
+                  rect: document.getElementById(`block--${blockId}`)?.getBoundingClientRect(),
+                });
+              });
+            }
+            return {
+              id,
+              height: document.getElementById(`section--${id}`)?.clientHeight ?? 0,
+              blocks,
+            };
+          }),
         },
         "*"
       );
@@ -64,10 +88,22 @@ export const useInitShopifyData = <G extends GlobalSettings, S extends Sections[
         source: "theme-content",
         topic: "resize",
         totalHeight: document.body.clientHeight,
-        sections: sections?.map(({ id }) => ({
-          id,
-          height: document.getElementById(`section--${id}`)?.clientHeight ?? 0,
-        })),
+        sections: sections?.map(({ id, ...section }) => {
+          const blocks = [];
+          if ("blocks" in section) {
+            section.blocks.forEach(({ id: blockId }) => {
+              blocks.push({
+                id: blockId,
+                rect: document.getElementById(`block--${blockId}`)?.getBoundingClientRect(),
+              });
+            });
+          }
+          return {
+            id,
+            height: document.getElementById(`section--${id}`)?.clientHeight ?? 0,
+            blocks,
+          };
+        }),
       },
       "*"
     );

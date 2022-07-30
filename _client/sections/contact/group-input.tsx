@@ -39,7 +39,7 @@ export const GroupInput: FC<GroupInputProps> = ({
   }, [forceValidate, validateInput]);
 
   return (
-    <label className={clsx("relative", "col-span-2")}>
+    <label className={clsx("relative", "col-span-2")} id={`block--${blockId}`}>
       <div className="form-label">
         {title}
         {required

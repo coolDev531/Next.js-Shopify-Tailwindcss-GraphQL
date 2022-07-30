@@ -99,7 +99,7 @@ export const DesktopNav: FC<{
             switch (block.type) {
               case "dropdown_menu_features": {
                 return (
-                  <Popover key={block.id}>
+                  <Popover key={block.id} id={`block--${block.id}`}>
                     {({ open, close }) => (
                       <>
                         <div
@@ -146,10 +146,10 @@ export const DesktopNav: FC<{
                 );
               }
               case "dropdown_menu_carousel":
-                return <div key={block.id}></div>;
+                return <div key={block.id} id={`block--${block.id}`}></div>;
               case "dropdown_menu_portfolio":
                 return (
-                  <Popover key={block.id}>
+                  <Popover key={block.id} id={`block--${block.id}`}>
                     {({ open, close }) => (
                       <>
                         <div

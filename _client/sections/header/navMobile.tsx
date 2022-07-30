@@ -70,6 +70,7 @@ export const NavMobile: FC<{
                           case "dropdown_menu_features": {
                             return (
                               <li
+                                id={`block--${block.id}`}
                                 key={link.handle}
                                 className={clsx(
                                   " min-h-[32px]",
@@ -138,10 +139,11 @@ export const NavMobile: FC<{
                             );
                           }
                           case "dropdown_menu_carousel":
-                            return <div key={block.id}></div>;
+                            return <div key={block.id} id={`block--${block.id}`}></div>;
                           case "dropdown_menu_portfolio":
                             return (
                               <li
+                                id={`block--${block.id}`}
                                 key={link.handle}
                                 className={clsx(
                                   " min-h-[32px]",

@@ -165,7 +165,7 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
         <div className="relative mx-auto grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:auto-cols-fr lg:grid-flow-col">
           {blocks.map((block) => {
             return (
-              <section key={`block-${block.id}`} className="group flex">
+              <section key={`block-${block.id}`} id={`block--${block.id}`} className="group flex">
                 <div className="p-0.5">
                   {block.settings.icon
                     ? renderIcon(

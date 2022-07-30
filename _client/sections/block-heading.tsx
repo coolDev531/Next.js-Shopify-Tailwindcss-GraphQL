@@ -6,9 +6,10 @@ import { PartialBy } from "types/index";
 
 import { HeadingSection } from ".shopify-cms/types/sections";
 
-export const BlockHeading: FC<PartialBy<HeadingSection, "type" | "id">> = ({ settings }) => {
+export const BlockHeading: FC<PartialBy<HeadingSection, "type" | "id">> = ({ id, settings }) => {
   return (
     <div
+      id={`block--${id}`}
       className={clsx(
         "flex",
         {

@@ -59,29 +59,24 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
             <Richtext className="paragraph-lg">{settings.paragraph}</Richtext>
           </header>
           <nav className="mt-8 flex flex-col gap-1">
-            {blocks.map((block, index) => {
-              switch (block.type) {
-                case "step": {
-                  return (
-                    <button
-                      key={`tab-${block.id}`}
-                      className={clsx(
-                        "rounded-md p-3 text-left backdrop-blur-lg transition-all duration-100 hfva:ring-0 hfva:ring-offset-0",
-                        selected === index
-                          ? "translate-y-0 bg-white/60 shadow-lg shadow-bg-dark/10 dark:bg-white/[0.08]"
-                          : "hfa:-translate-y-[0.2rem] hfa:bg-white/60 hfa:shadow-lg hfa:shadow-bg-dark/10 dark:hfa:bg-white/[0.08]"
-                      )}
-                      onClick={() => handleSelect(index)}
-                    >
-                      <h3 className="heading-sm">{block.settings.tab_title}</h3>
-                      <p className="paragraph-base leading-tight tracking-tight text-gray-500/80">
-                        {block.settings.tab_paragraph}
-                      </p>
-                    </button>
-                  );
-                }
-              }
-            })}
+            {blocks.map((block, index) => (
+              <button
+                id={`block--${block.id}`}
+                key={`tab-${block.id}`}
+                className={clsx(
+                  "rounded-md p-3 text-left backdrop-blur-lg transition-all duration-100 hfva:ring-0 hfva:ring-offset-0",
+                  selected === index
+                    ? "translate-y-0 bg-white/60 shadow-lg shadow-bg-dark/10 dark:bg-white/[0.08]"
+                    : "hfa:-translate-y-[0.2rem] hfa:bg-white/60 hfa:shadow-lg hfa:shadow-bg-dark/10 dark:hfa:bg-white/[0.08]"
+                )}
+                onClick={() => handleSelect(index)}
+              >
+                <h3 className="heading-sm">{block.settings.tab_title}</h3>
+                <p className="paragraph-base leading-tight tracking-tight text-gray-500/80">
+                  {block.settings.tab_paragraph}
+                </p>
+              </button>
+            ))}
           </nav>
         </section>
 
@@ -181,7 +176,7 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
 
 export const TabsCarouselItem = ({ id, title, description, tabTitle, tabParagraph }) => {
   return (
-    <div className="group snap-start f:ring-2 f:ring-sky-400 f:ring-offset-2">
+    <div className="group snap-start f:ring-2 f:ring-sky-400 f:ring-offset-2" id={`block--${id}`}>
       <figure className="relative mb-4 aspect-1 w-[300px] overflow-hidden rounded shadow-lg transition-all sm:w-[360px]">
         <div className="h-full bg-gray-900 p-4 shadow-xl drop-shadow-2xl dark:bg-dark-card">
           <header className="mb-3 grid grid-cols-[50px_1fr_50px] items-center">

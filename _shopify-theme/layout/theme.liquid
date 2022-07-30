@@ -42,12 +42,26 @@
         switch (e.data.topic) {
           case "resize" : {
             themeEditorIframe.style.height = `${e.data.totalHeight}px`;
-            e.data.sections.forEach(({ id, height }) => {
+
+            e.data.sections.forEach(({ id, height, blocks }) => {
               const sectionElement = document.getElementById(`shopify-section-${id}`);
               if (sectionElement) {
-                sectionElement.style.position = 'relative';
+                sectionElement.style.position = 'static';
                 sectionElement.style.height = `${height}px`;
               }
+              blocks?.forEach(({ id, rect }) => {
+                const blockElement = document.getElementById(`block--${id}`);
+                if (blockElement && rect) {
+                  blockElement.style.display = "block";
+                  blockElement.style.position = "absolute";
+                  blockElement.style.width = rect.width + "px";
+                  blockElement.style.height = rect.height + "px";
+                  blockElement.style.top = rect.top + "px";
+                  blockElement.style.left = rect.left + "px";
+                  blockElement.style.bottom = rect.bottom + "px";
+                  blockElement.style.right = rect.right + "px";
+                }
+              });
             });
             break;
           }
