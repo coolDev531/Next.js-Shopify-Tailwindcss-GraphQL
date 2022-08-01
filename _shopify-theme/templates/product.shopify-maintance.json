@@ -72,7 +72,7 @@
       "type": "heading",
       "settings": {
         "pre_title": "Continuous work for continuous results",
-        "title": "Site maintenance & SEO forgrowth",
+        "title": "Site maintenance & SEO",
         "paragraph": "<p>We have extensive Shopify experience and have maintained and upgraded ecommerce stores for our clients worldwide. Whether you are looking for a once of solution or a monthly plan. We are here to help you succeed.<\/p>",
         "cta1": "",
         "cta1_link": "",
@@ -87,7 +87,7 @@
         "eb582cd4-7139-435c-95ca-ce10f96556d6": {
           "type": "stat",
           "settings": {
-            "stat": "123",
+            "stat": "",
             "title": "",
             "descriptions": ""
           }
@@ -346,8 +346,13 @@
         ],
         "collection": "",
         "height": 40,
+        "style": "slider",
         "animate": true,
         "animation_duration": 20,
+        "minItems": 2,
+        "maxItems": 5,
+        "paddingY": 8,
+        "paddingX": 8,
         "spacing": "md",
         "spacing_top": 0,
         "spacing_bottom": 0

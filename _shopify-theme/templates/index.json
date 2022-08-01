@@ -41,14 +41,14 @@
           "copy-of-node-js",
           "tailwindcss"
         ],
-        "paragraph": "<p>Wether you want to built a new ecommerce store, migrate from a different platform, or need to upgrade your current site. We are here to help you succeed.<\/p>",
+        "paragraph": "<p>Whether you want to built a new ecommerce store, migrate from a different platform, or need to upgrade your current site. We are here to help you succeed.<\/p>",
         "cta1": "Get started",
-        "cta1_link": "#",
+        "cta1_link": "shopify:\/\/products\/shopify-full-sites",
         "cta2": "Learn more",
         "cta2_link": "#",
-        "image_1": "shopify:\/\/shop_images\/2.png",
-        "image_2": "shopify:\/\/shop_images\/1.png",
-        "image_3": "shopify:\/\/shop_images\/3.png",
+        "image_1": "shopify:\/\/shop_images\/Screen-shot-1.jpg",
+        "image_2": "shopify:\/\/shop_images\/screen-shot-2.jpg",
+        "image_3": "shopify:\/\/shop_images\/1.png",
         "spacing": "md",
         "spacing_top": 0,
         "spacing_bottom": 0
@@ -157,7 +157,7 @@
         "height": 40,
         "style": "slider",
         "animate": true,
-        "animation_duration": 70,
+        "animation_duration": 90,
         "minItems": 2,
         "maxItems": 5,
         "paddingY": 8,
@@ -165,6 +165,34 @@
         "spacing": "custom",
         "spacing_top": 0,
         "spacing_bottom": 24
+      }
+    },
+    "16587554309243208c": {
+      "type": "story",
+      "blocks": {
+        "409dde1f-174f-42cd-a0d2-af9f7b9b8ad5": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Shopify experts & partners",
+            "title": "Why work with us",
+            "paragraph": "<p><strong>Certified Shopify partner:<\/strong>Luna Lemon is a part of the<br\/>Shopify development community with extensive Shopify experience and expertise.<br\/><strong>Provide an all-in-one solution:<\/strong>We handle everything in-house,<br\/>from developing and designing to growing and maintaining your Shopify store.<br\/><strong>Customized themes to fit your needs:<\/strong>We provide custom theme design that will convert visitors into buyers.<br\/><strong>Dedicated project manager:<\/strong>We provide a dedicated point of<br\/>contact at Luna Lemon to guide you through discovery, design, training, and final site launch.<br\/><strong>Experts in eCommerce optimization:<\/strong>In addition to being expert web developers, our SEO Specialists are equipt optimize your online store for better rankings and growth.<\/p>",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/why-work-with-us.png",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
+            "position": "left"
+          }
+        }
+      },
+      "block_order": [
+        "409dde1f-174f-42cd-a0d2-af9f7b9b8ad5"
+      ],
+      "settings": {
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
       }
     },
     "1659100571ce4c9324": {
@@ -217,34 +245,6 @@
         "spacing_bottom": 0
       }
     },
-    "16587554309243208c": {
-      "type": "story",
-      "blocks": {
-        "409dde1f-174f-42cd-a0d2-af9f7b9b8ad5": {
-          "type": "image-text",
-          "settings": {
-            "pre_title": "Shopify experts & partners",
-            "title": "Why work with us",
-            "paragraph": "<p><strong>Certified Shopify partner:<\/strong>Luna Lemon is a part of the<br\/>Shopify development community with extensive Shopify experience and expertise.<br\/><strong>Provide an all-in-one solution:<\/strong>We handle everything in-house,<br\/>from developing and designing to growing and maintaining your Shopify store.<br\/><strong>Customized themes to fit your needs:<\/strong>We provide custom theme design that will convert visitors into buyers.<br\/><strong>Dedicated project manager:<\/strong>We provide a dedicated point of<br\/>contact at Luna Lemon to guide you through discovery, design, training, and final site launch.<br\/><strong>Experts in eCommerce optimization:<\/strong>In addition to being expert web developers, our SEO Specialists are equipt optimize your online store for better rankings and growth.<\/p>",
-            "list_title": "",
-            "list": "",
-            "image": "shopify:\/\/shop_images\/why-work-with-us.png",
-            "aspect_desktop": "auto",
-            "fit_height": false,
-            "aspect_mobile": "16-9",
-            "position": "left"
-          }
-        }
-      },
-      "block_order": [
-        "409dde1f-174f-42cd-a0d2-af9f7b9b8ad5"
-      ],
-      "settings": {
-        "spacing": "md",
-        "spacing_top": 0,
-        "spacing_bottom": 0
-      }
-    },
     "165719846348099467": {
       "type": "testimonial-list",
       "settings": {
@@ -257,8 +257,8 @@
         "cta2_link": "",
         "position": "left",
         "products": [
-          "kids-living",
-          "hydrobiz"
+          "broadway-jewellers",
+          "volkswagen"
         ],
         "spacing": "custom",
         "spacing_top": 16,
@@ -464,9 +464,9 @@
     "165693105620682646",
     "1659080056351f97d5",
     "1659095162e3e45728",
+    "16587554309243208c",
     "1659100571ce4c9324",
     "1656930716ec9b0e94",
-    "16587554309243208c",
     "165719846348099467",
     "165476583906badf90",
     "1657266690e55b9106"

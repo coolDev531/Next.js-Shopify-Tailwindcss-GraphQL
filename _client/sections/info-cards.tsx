@@ -39,7 +39,7 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
                           className="relative flex h-10 w-28 bg-contain bg-left bg-no-repeat dark:hidden"
                           style={{
                             backgroundImage: `url(${
-                              svgImage?.value?.url.replace(/^(http:)?\/\//, "https://") ??
+                              svgImage?.value?.url?.replace(/^(http:)?\/\//, "https://") ??
                               product.featured_image.replace(/^(http:)?\/\//, "https://")
                             })`,
                           }}
@@ -58,7 +58,7 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
                         className="relative flex h-10 w-28 bg-contain bg-left bg-no-repeat"
                         style={{
                           backgroundImage: `url(${
-                            svgImage?.value?.url.replace(/^(http:)?\/\//, "https://") ??
+                            svgImage?.value?.url?.replace(/^(http:)?\/\//, "https://") ??
                             product.featured_image.replace(/^(http:)?\/\//, "https://")
                           })`,
                         }}

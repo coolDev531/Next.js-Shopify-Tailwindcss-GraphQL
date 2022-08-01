@@ -68,6 +68,14 @@
         "position": "center"
       }
     },
+    "1659353214eca2faf3": {
+      "type": "stats-graph",
+      "settings": {
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
     "1654762013d2c9eed0": {
       "type": "story",
       "blocks": {
@@ -89,11 +97,11 @@
         "a0b070e8-45e6-47be-9d07-7f2371f7e8ea": {
           "type": "image-text",
           "settings": {
-            "pre_title": "Moving shop",
-            "title": "What is Store migration?",
-            "paragraph": "<p>Store migration is the process of moving data such as products, orders, customers, collections, images, manufacturers, etc. from one eCommerce platform to another.<\/p><p>When working with migrations our aim is to understand the important data and functionality needed to be sorted and migrated to the Shopify platform. Our team does an extensive analysis and creates a strategic plan that ensured the migration goes smoothly accounting for the old website's SEO, content, and web rankings. <\/p><p><br\/><\/p>",
+            "pre_title": "Moving plateforms",
+            "title": "What is included",
+            "paragraph": "<p>Our team is ready to Migrate your store to Shopify. An extensive analysis and strategic plan ensures your migration goes smoothly accounting for your website's SEO, content, and web rankings. <\/p>",
             "list_title": "",
-            "list": "",
+            "list": "<p>Product Migration <\/p><p>Category Migration<\/p><p>Customer Migration<\/p><p>Order Migration <\/p><p>Page Content Migration<\/p><p>Blog Migration<\/p><p>Setting Up Domains<\/p><p>Configuring Shipping Method <\/p><p>Configuring Payment Gateway<\/p>",
             "image": "shopify:\/\/shop_images\/migration.png",
             "aspect_desktop": "auto",
             "fit_height": false,
@@ -114,6 +122,7 @@
     },
     "1658924915dfca04e4": {
       "type": "spec-list",
+      "disabled": true,
       "blocks": {
         "42fa52cd-2d01-402b-889f-971536fdbacf": {
           "type": "heading",
@@ -208,7 +217,7 @@
             "cta1_link": "",
             "cta2": "Learn more",
             "cta2_link": "",
-            "feature_1": "Basic Analysis & Migration (as mentioned above)",
+            "feature_1": "Basic Analysis & Migration",
             "feature_2": "Product Setup",
             "feature_3": "Collections Setup",
             "feature_4": "Basic Pages Setup (homepage \/ contact \/ policies pages)",
@@ -245,7 +254,7 @@
             "cta1_link": "",
             "cta2": "Learn More",
             "cta2_link": "",
-            "feature_1": "Advanced Analysis & Migration (mentioned above)",
+            "feature_1": "Advanced Analysis & Migration",
             "feature_2": "Everything in Basic, Plus",
             "feature_3": "Advanced Navigation",
             "feature_4": "Pages Setup (homepage \/ contact \/ policies pages)",
@@ -476,8 +485,13 @@
         ],
         "collection": "",
         "height": 40,
+        "style": "slider",
         "animate": true,
         "animation_duration": 20,
+        "minItems": 2,
+        "maxItems": 5,
+        "paddingY": 8,
+        "paddingX": 8,
         "spacing": "md",
         "spacing_top": 0,
         "spacing_bottom": 0
@@ -644,6 +658,7 @@
   "order": [
     "1656935895e67bca71",
     "165476159216c4ff5c",
+    "1659353214eca2faf3",
     "1654762013d2c9eed0",
     "1658924915dfca04e4",
     "1658740480bb450054",

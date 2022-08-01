@@ -116,7 +116,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
         </div>
       </section>
       <section className="flex h-16 items-center justify-center dark:text-gray-300">
-        Made with 🍋 by Lunalemon
+        Made by Lunalemon 🍋
       </section>
     </footer>
   );

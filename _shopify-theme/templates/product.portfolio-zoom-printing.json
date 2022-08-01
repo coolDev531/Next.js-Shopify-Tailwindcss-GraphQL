@@ -325,26 +325,6 @@
         "spacing_bottom": 4
       }
     },
-    "16542613555478f86d": {
-      "type": "image-gallery",
-      "settings": {
-        "image1": "shopify:\/\/shop_images\/collage-1_84bb9c31-e003-4896-87b9-196472a04802.png",
-        "title1": "",
-        "image2": "shopify:\/\/shop_images\/colage-2.png",
-        "title2": "Graphic design",
-        "image3": "shopify:\/\/shop_images\/collage-3_62012f18-4e9a-433c-9b86-8f053071afd9.png",
-        "title3": "Gift Registry",
-        "image4": "shopify:\/\/shop_images\/collage-4_58524c34-dcda-42ce-84ce-5cf44bba5f55.png",
-        "title4": "",
-        "image5": "shopify:\/\/shop_images\/collage-5_cd6d5907-9fc7-4dc4-95c9-da16387ebc72.png",
-        "title5": "",
-        "image6": "shopify:\/\/shop_images\/xollage-6.png",
-        "title6": "",
-        "spacing": "custom",
-        "spacing_top": 0,
-        "spacing_bottom": 26
-      }
-    },
     "16540875305d711f9e": {
       "type": "info-cards",
       "settings": {
@@ -383,6 +363,26 @@
         "spacing": "custom",
         "spacing_top": 0,
         "spacing_bottom": 24
+      }
+    },
+    "16542613555478f86d": {
+      "type": "image-gallery",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/collage-1_84bb9c31-e003-4896-87b9-196472a04802.png",
+        "title1": "",
+        "image2": "shopify:\/\/shop_images\/colage-2.png",
+        "title2": "",
+        "image3": "shopify:\/\/shop_images\/collage-3_62012f18-4e9a-433c-9b86-8f053071afd9.png",
+        "title3": "",
+        "image4": "shopify:\/\/shop_images\/collage-4_58524c34-dcda-42ce-84ce-5cf44bba5f55.png",
+        "title4": "",
+        "image5": "shopify:\/\/shop_images\/collage-5_cd6d5907-9fc7-4dc4-95c9-da16387ebc72.png",
+        "title5": "",
+        "image6": "shopify:\/\/shop_images\/xollage-6.png",
+        "title6": "",
+        "spacing": "custom",
+        "spacing_top": 0,
+        "spacing_bottom": 26
       }
     },
     "16568814523f72d333": {
@@ -619,9 +619,9 @@
     "16540846002974a6ff",
     "1656933742c82a115d",
     "16541733016b2d4288",
-    "16542613555478f86d",
     "16540875305d711f9e",
     "1654092902cc4e4a33",
+    "16542613555478f86d",
     "16568814523f72d333",
     "16542555547186860a",
     "165426875321fe7fc5",

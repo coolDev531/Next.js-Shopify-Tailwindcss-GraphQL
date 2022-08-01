@@ -16,7 +16,7 @@
     "16540104123512b9a3": {
       "type": "hero",
       "settings": {
-        "pre_title": "Portfolio of Work",
+        "pre_title": "Shopify App Development",
         "title": "Clickupload App",
         "paragraph": "<p>ClickUpload enables your store to let customers upload files to their orders. The app supports all file types and sizes. All files are linked to the order and can be downloaded easily.<\/p>",
         "list_title": "App features:",
@@ -204,6 +204,26 @@
         "spacing_bottom": 24
       }
     },
+    "16542613555478f86d": {
+      "type": "image-gallery",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/collage-1_b9feeba0-4fb1-4766-9ac8-f6cd9c583dd1.png",
+        "title1": "",
+        "image2": "shopify:\/\/shop_images\/collage-2_0841a366-b617-4e18-a14e-3ba014af2b15.png",
+        "title2": "",
+        "image3": "shopify:\/\/shop_images\/collage-3_426d5f6e-8722-43ae-bff9-f7cbd881133b.png",
+        "title3": "",
+        "image4": "shopify:\/\/shop_images\/collage-4_5faba9c7-b080-4709-97d5-321b2a09dcfb.png",
+        "title4": "",
+        "image5": "shopify:\/\/shop_images\/collage-5_431f574f-4dac-451b-aea7-ea3b38142161.png",
+        "title5": "",
+        "image6": "shopify:\/\/shop_images\/collage-6_388f2f58-953b-48fa-9037-bf8003cb1cf4.png",
+        "title6": "",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
     "16568814523f72d333": {
       "type": "background",
       "blocks": {
@@ -384,26 +404,6 @@
         "spacing_bottom": 0
       }
     },
-    "16542613555478f86d": {
-      "type": "image-gallery",
-      "settings": {
-        "image1": "shopify:\/\/shop_images\/collage-1_b9feeba0-4fb1-4766-9ac8-f6cd9c583dd1.png",
-        "title1": "",
-        "image2": "shopify:\/\/shop_images\/collage-2_0841a366-b617-4e18-a14e-3ba014af2b15.png",
-        "title2": "Graphic design",
-        "image3": "shopify:\/\/shop_images\/collage-3_426d5f6e-8722-43ae-bff9-f7cbd881133b.png",
-        "title3": "Gift Registry",
-        "image4": "shopify:\/\/shop_images\/collage-4_5faba9c7-b080-4709-97d5-321b2a09dcfb.png",
-        "title4": "",
-        "image5": "shopify:\/\/shop_images\/collage-5_431f574f-4dac-451b-aea7-ea3b38142161.png",
-        "title5": "",
-        "image6": "shopify:\/\/shop_images\/collage-6_388f2f58-953b-48fa-9037-bf8003cb1cf4.png",
-        "title6": "",
-        "spacing": "md",
-        "spacing_top": 0,
-        "spacing_bottom": 0
-      }
-    },
     "1654332872499b00d2": {
       "type": "image-carousel",
       "settings": {
@@ -459,10 +459,10 @@
     "1656933742c82a115d",
     "16540875305d711f9e",
     "1654092902cc4e4a33",
+    "16542613555478f86d",
     "16568814523f72d333",
     "16542555547186860a",
     "165649211691c194a3",
-    "16542613555478f86d",
     "1654332872499b00d2",
     "16543302228e17b41c"
   ]

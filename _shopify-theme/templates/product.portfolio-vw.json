@@ -98,9 +98,9 @@
         "image1": "shopify:\/\/shop_images\/collage-1_5421a744-0198-430a-89c9-7110bafb00f2.png",
         "title1": "",
         "image2": "shopify:\/\/shop_images\/collage-2_d1e231f6-3a5c-4c38-9bc8-c0635fc5111b.png",
-        "title2": "Graphic design",
+        "title2": "",
         "image3": "shopify:\/\/shop_images\/collage-3_41f6a64c-3ef6-46bd-9b80-842623cf86af.png",
-        "title3": "Gift Registry",
+        "title3": "",
         "image4": "shopify:\/\/shop_images\/collage-4_6d7c1f00-8eea-4828-bc8f-021fc0113a78.png",
         "title4": "",
         "image5": "shopify:\/\/shop_images\/collage-5_83a90cd9-00e5-43da-80e0-5e749506a79b.png",
@@ -281,7 +281,9 @@
         "pre_title": "Explore",
         "title": "The tech we used:",
         "content_list": [
-          "shopify"
+          "shopify",
+          "uafrica",
+          "peach-payments"
         ],
         "spacing": "custom",
         "spacing_top": 16,

@@ -299,10 +299,10 @@
         "d507e67a-14b7-473e-a024-ccb8262d029c": {
           "type": "tab",
           "settings": {
-            "tab_title": "Shopify to take-a-lot",
+            "tab_title": "Shopify Takealot App",
             "tab_icon": "LinkIcon",
-            "title": "Shopify to take-a-lot",
-            "paragraph": "",
+            "title": "Shopify Takealot Integration",
+            "paragraph": "<p>We've created a custom App to syncronize data between Shopify and Takealot in real-time, ensuring that prices and inventory levels are always up-to-date.<\/p>",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
@@ -314,10 +314,10 @@
         "e3679b31-516e-4d8d-8463-58315b3dbaec": {
           "type": "tab",
           "settings": {
-            "tab_title": "Shopify to Courier guy",
+            "tab_title": "Shopify CourierGuy",
             "tab_icon": "TruckIcon",
-            "title": "Shopify to Courier guy",
-            "paragraph": "",
+            "title": "Shopify CourierGuy Integration",
+            "paragraph": "<p>We've created a custom App to syncronize data between Shopify and Courier Guy to get live shipping rates and automatically fulfill orders based on a set of unique requirements.<\/p>",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
@@ -329,9 +329,9 @@
         "57ab776c-10cd-4f7c-8b42-5b73d6edd21a": {
           "type": "tab",
           "settings": {
-            "tab_title": "Product review app",
+            "tab_title": "Product Reviews",
             "tab_icon": "AnnotationIcon",
-            "title": "Product review app",
+            "title": "Product Reviews Integration",
             "paragraph": "<p>This integration helps increase the overall trust of visitors to the store and increases conversion by showcasing ratings of the particular product.<\/p>",
             "cta1": "",
             "cta1_link": "",
@@ -406,8 +406,13 @@
         ],
         "collection": "",
         "height": 50,
+        "style": "slider",
         "animate": false,
         "animation_duration": 70,
+        "minItems": 2,
+        "maxItems": 5,
+        "paddingY": 8,
+        "paddingX": 8,
         "spacing": "custom",
         "spacing_top": 0,
         "spacing_bottom": 24
@@ -419,9 +424,9 @@
         "image1": "shopify:\/\/shop_images\/watch-1--collage.png",
         "title1": "",
         "image2": "shopify:\/\/shop_images\/home-paage-collage-1.png",
-        "title2": "Graphic design",
+        "title2": "",
         "image3": "shopify:\/\/shop_images\/image-mock---Liz_6d5c8621-dfec-4982-b7bb-9afa83d8c72a.png",
-        "title3": "Gift Registry",
+        "title3": "",
         "image4": "shopify:\/\/shop_images\/collage-3-home-page.png",
         "title4": "",
         "image5": "shopify:\/\/shop_images\/diseal-collage-2.png",
@@ -553,6 +558,18 @@
         "spacing_bottom": 0
       }
     },
+    "1659356690206c3958": {
+      "type": "blockquote",
+      "settings": {
+        "quote": "Excellent service! Very responsive. Would HIGHLY recommend for all of your Shopify customization needs! The level of service is top notch. I've worked with dozens of independent Shopify consultants and these guys have been by far the best.",
+        "author": "Farzana Bhorat",
+        "job_title": "Marketing Manager",
+        "quotation_marks": true,
+        "spacing": "custom",
+        "spacing_top": 24,
+        "spacing_bottom": 8
+      }
+    },
     "165426875321fe7fc5": {
       "type": "feature-list",
       "blocks": {
@@ -672,6 +689,7 @@
     "16542613555478f86d",
     "16568814523f72d333",
     "16542555547186860a",
+    "1659356690206c3958",
     "165426875321fe7fc5",
     "1654332872499b00d2",
     "16543302228e17b41c"
