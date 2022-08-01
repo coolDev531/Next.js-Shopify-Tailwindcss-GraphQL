@@ -39,7 +39,7 @@ export const GroupInput: FC<GroupInputProps> = ({
   }, [forceValidate, validateInput]);
 
   return (
-    <label className={clsx("relative", "col-span-2")} id={`block--${blockId}`}>
+    <div className={clsx("relative", "col-span-2")} id={`block--${blockId}`}>
       <div className="form-label">
         {title}
         {required
@@ -86,6 +86,6 @@ export const GroupInput: FC<GroupInputProps> = ({
             {error_message || "Please enter a valid value."}
           </div>
         : null}
-    </label>
+    </div>
   );
 };
