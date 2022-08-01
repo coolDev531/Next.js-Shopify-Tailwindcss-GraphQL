@@ -461,12 +461,12 @@
         "cta2_link": "",
         "position": "left",
         "products": [
-          "kids-living",
-          "hydrobiz"
+          "broadway-jewellers",
+          "volkswagen"
         ],
-        "spacing": "md",
-        "spacing_top": 0,
-        "spacing_bottom": 0
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 8
       }
     },
     "165476583906badf90": {

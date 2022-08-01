@@ -16,7 +16,7 @@
     "16540104123512b9a3": {
       "type": "hero",
       "settings": {
-        "pre_title": "Portfolio of Work",
+        "pre_title": "Shopify Website Migration",
         "title": "Broadway Jewellers",
         "paragraph": "<p>Broadway Jewellers provides a wide range of branded watches, Jewellery and accessories. They strive every day to earn the confidence and trust of their clients by exceeding their expectations of quality, service, and value. <\/p><p><\/p><p>Our work with Broadway Jewellers starting with migrating their site form WordPress to Shopify, we also covered an array of aspects from inventory management, digital marketing, SEO web solutions, web design upgrade to custom API solutions.<\/p>",
         "list_title": "What we did:",
@@ -258,7 +258,7 @@
           "settings": {
             "pre_title": "Custom Features",
             "title": "We have worked with Broadway Jewellers on a number of unique features",
-            "paragraph": "<p>Our team of Shopify web developers work closely with our clients to<br\/>create a selection of suitable options, and unique features that perfectly<br\/>represent their vision and needs.<\/p>",
+            "paragraph": "<p>Our team work closely with our clients to create a selection of suitable options, and unique features that perfectly represent their vision and needs.<\/p>",
             "cta1": "",
             "cta1_link": "##",
             "cta2": "",
@@ -656,11 +656,11 @@
     "16543302228e17b41c": {
       "type": "feature-carousel",
       "settings": {
-        "pre_title": "Customize",
-        "title": "We offer a large range of unique customizations and add ons",
+        "pre_title": "Find a service that suites you",
+        "title": "Explore our range of Shopify Services",
         "paragraph": "",
         "cta1": "See all",
-        "cta1_link": "shopify:\/\/pages\/shopify-sites",
+        "cta1_link": "",
         "cta2": "",
         "cta2_link": "",
         "position": "left",

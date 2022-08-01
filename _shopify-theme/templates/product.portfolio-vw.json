@@ -16,7 +16,7 @@
     "16540104123512b9a3": {
       "type": "hero",
       "settings": {
-        "pre_title": "Portfolio of Work",
+        "pre_title": "Shopify Website Development",
         "title": "Volkswagen",
         "paragraph": "<p>Volkswagen Mossel Bay offers high quality Genuine Volkswagen Parts. They pride themselves in consistency from years of excellent service. With a combination of hard work, dedication, and innovation, they always make sure to make their customers their number one priority. <\/p><p><\/p>",
         "list_title": "What we did:",
@@ -157,7 +157,7 @@
           "settings": {
             "pre_title": "Custom Features",
             "title": "We have worked with Volkswagen on some unique features",
-            "paragraph": "<p>Our team work closely with our<br\/>clients to create a selection of suitable options, and unique features that perfectly represent their vision and needs.<\/p>",
+            "paragraph": "<p>Our team work closely with our clients to create a selection of suitable options, and unique features that perfectly represent their vision and needs.<\/p>",
             "cta1": "",
             "cta1_link": "",
             "cta2": "",
@@ -523,11 +523,11 @@
     "16543302228e17b41c": {
       "type": "feature-carousel",
       "settings": {
-        "pre_title": "Customize",
-        "title": "We offer a large range of unique customizations and add ons",
+        "pre_title": "Find a service that suites you",
+        "title": "Explore our range of Shopify Services",
         "paragraph": "",
-        "cta1": "See all",
-        "cta1_link": "shopify:\/\/pages\/shopify-sites",
+        "cta1": "",
+        "cta1_link": "",
         "cta2": "",
         "cta2_link": "",
         "position": "left",

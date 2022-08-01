@@ -16,7 +16,7 @@
     "16540104123512b9a3": {
       "type": "hero",
       "settings": {
-        "pre_title": "Portfolio of Work",
+        "pre_title": "Shopify Website Development",
         "title": "Ford",
         "paragraph": "<p>Ford is committed to ensuring that you enjoy the best performance and safety - year after year. We take pride in supplying high quality replacement parts. All Genuine Ford Parts are engineered and tested to ensure that they meet your vehicle performance requirements.<\/p>",
         "list_title": "What we did:",
@@ -538,11 +538,11 @@
     "16543302228e17b41c": {
       "type": "feature-carousel",
       "settings": {
-        "pre_title": "Customize",
-        "title": "We offer a large range of unique customizations and add ons",
+        "pre_title": "Find a service that suites you",
+        "title": "Explore our range of Shopify Services",
         "paragraph": "",
-        "cta1": "See all",
-        "cta1_link": "shopify:\/\/pages\/shopify-sites",
+        "cta1": "",
+        "cta1_link": "",
         "cta2": "",
         "cta2_link": "",
         "position": "left",

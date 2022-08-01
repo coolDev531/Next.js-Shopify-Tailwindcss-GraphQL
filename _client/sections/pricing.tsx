@@ -50,7 +50,7 @@ export const Pricing: FC<PricingSection> = ({ id, settings, blocks, type }) => {
             id={`block--${block.id}`}
             key={block.id}
             className={clsx(
-              "relative rounded-xl border border-gray-200 p-8",
+              "relative mb-auto rounded-xl border border-gray-200 p-8",
               block.settings.shadow && "shadow-xl",
               block.settings.primary &&
                 "border border-transparent [background:linear-gradient(rgb(var(--color-bg)),rgb(var(--color-bg)))_padding-box,linear-gradient(90deg,#ec6192,#ec4c34,#ffbd2b,#ebde56,#57c754,#53a1eb)_border-box]"

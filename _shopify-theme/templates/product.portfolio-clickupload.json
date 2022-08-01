@@ -19,7 +19,7 @@
         "pre_title": "Shopify App Development",
         "title": "Clickupload App",
         "paragraph": "<p>ClickUpload enables your store to let customers upload files to their orders. The app supports all file types and sizes. All files are linked to the order and can be downloaded easily.<\/p>",
-        "list_title": "App features:",
+        "list_title": "More about Clickupload:",
         "list": "<p>File uploads<\/p><p>Supports all file types<\/p><p>Enables file & size restriction <\/p><p>Enables sample file upload<\/p>",
         "image": "shopify:\/\/shop_images\/Hero_80fae443-dfd6-493e-bdd6-5f7c50790ed5.png",
         "spacing": "custom",
@@ -392,7 +392,7 @@
       ],
       "settings": {
         "pre_title": "",
-        "title": "",
+        "title": "Clickupload Highlights",
         "paragraph": "",
         "cta1": "",
         "cta1_link": "",
