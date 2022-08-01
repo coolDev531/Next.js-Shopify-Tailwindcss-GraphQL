@@ -36,12 +36,11 @@ export const getStaticProps = async ({ params }) => {
     `/products/${params.product}` as string
   );
 
-  console.log("state", ssg.dehydrate());
   return {
     props: {
       // trpcState: ssg.dehydrate(),
       ...data,
     },
-    revalidate: 150,
+    revalidate: 60,
   };
 };
