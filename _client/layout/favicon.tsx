@@ -14,7 +14,7 @@ export const Favicon: FC = ({}) => {
       <link href="/favicon/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" />
       <link href="/favicon/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
       <link href="/favicon/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
-      {/*<link href="/favicon/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png" />*/}
+      <link href="/favicon/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png" />
       <link href="/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
       <link href="/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png" />
       <link href="/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
