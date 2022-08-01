@@ -1,0 +1,672 @@
+{
+  "sections": {
+    "1656935895e67bca71": {
+      "type": "hero-with-features",
+      "disabled": true,
+      "blocks": {
+        "689e6e02-64ee-4082-adc0-5adbbcb4c9d7": {
+          "type": "feature",
+          "settings": {
+            "title": "Reach out",
+            "paragraph": "Have a question? or have a service you need. Choose an option that suites you or send us an enquiry. Our team is ready to get you started.",
+            "icon": "ui-1"
+          }
+        },
+        "8a2a41e9-564a-45c3-abac-f9443e19308f": {
+          "type": "feature",
+          "settings": {
+            "title": "Team Match",
+            "paragraph": "Based on your enquiry we will assign a dedicated project manager matched to assist you, they take the time to ensure your needs are taken care of.",
+            "icon": "ui-2"
+          }
+        },
+        "161fe8eb-8549-454a-8b98-b7ac8a2e64d1": {
+          "type": "feature",
+          "settings": {
+            "title": "Get started",
+            "paragraph": "You are in good hands. With your dedicated project manager, the sky is the limit, they will be there every step of the way to see that your project is complete.",
+            "icon": "ui-3"
+          }
+        }
+      },
+      "block_order": [
+        "689e6e02-64ee-4082-adc0-5adbbcb4c9d7",
+        "8a2a41e9-564a-45c3-abac-f9443e19308f",
+        "161fe8eb-8549-454a-8b98-b7ac8a2e64d1"
+      ],
+      "settings": {
+        "pre_title": "Websites tailored to your needs",
+        "title": "We create Shopify Ecommerce solutions.",
+        "tech": [
+          "shopify",
+          "copy-of-node-js",
+          "tailwindcss"
+        ],
+        "paragraph": "<p>Wether you want to built a new ecommerce store, migrate from a different platform, or need to upgrade your current site. We are here to help you succeed.<\/p>",
+        "cta1": "Get started",
+        "cta1_link": "#",
+        "cta2": "Learn more",
+        "cta2_link": "#",
+        "image_1": "shopify:\/\/shop_images\/2.png",
+        "image_2": "shopify:\/\/shop_images\/1.png",
+        "image_3": "shopify:\/\/shop_images\/3.png",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "165476159216c4ff5c": {
+      "type": "heading",
+      "settings": {
+        "pre_title": "Shopify Store Migrations",
+        "title": "Starting the journey to success",
+        "paragraph": "<p>We have extensive Shopify experience and have migrated ecommerce stores from multiple plate forms to Shopify for our clients worldwide. Whether you want to build a new ecommerce store, migrate, or help with your current store. We are here to help you succeed.<\/p>",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
+      }
+    },
+    "1659353214eca2faf3": {
+      "type": "stats-graph",
+      "settings": {
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1654762013d2c9eed0": {
+      "type": "story",
+      "blocks": {
+        "1edc02ca-a844-4f5c-93fb-791e53248869": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Choosing the right plateform",
+            "title": "Why we choose Shopify",
+            "paragraph": "<p>Over 1 million merchants across 175 countries agree with us and trust Shopify to run their stores. Here's why we think it's the right platform for you too...<\/p>",
+            "list_title": "",
+            "list": "<p>Easy to use<\/p><p>Great support<\/p><p>Multi-payment gateway integration<\/p><p><\/p><p>Tracking and maintaining customer data<\/p><p>Across-channel selling<\/p><p>Analytics reporting<\/p><p>Built-in cart abandonment feature<\/p><p>Optimized for SEO, easily customizable keywords<\/p><p>Integrations made easy<\/p>",
+            "image": "shopify:\/\/shop_images\/why-shopify_ba49a8c5-1677-4827-953c-608d381d73cc.png",
+            "aspect_desktop": "4-3",
+            "fit_height": false,
+            "aspect_mobile": "4-3",
+            "position": "right"
+          }
+        },
+        "a0b070e8-45e6-47be-9d07-7f2371f7e8ea": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Moving plateforms",
+            "title": "What is included",
+            "paragraph": "<p>Our team is ready to Migrate your store to Shopify. An extensive analysis and strategic plan ensures your migration goes smoothly accounting for your website's SEO, content, and web rankings. <\/p>",
+            "list_title": "",
+            "list": "<p>Product Migration <\/p><p>Category Migration<\/p><p>Customer Migration<\/p><p>Order Migration <\/p><p>Page Content Migration<\/p><p>Blog Migration<\/p><p>Setting Up Domains<\/p><p>Configuring Shipping Method <\/p><p>Configuring Payment Gateway<\/p>",
+            "image": "shopify:\/\/shop_images\/migration.png",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
+            "position": "left"
+          }
+        }
+      },
+      "block_order": [
+        "1edc02ca-a844-4f5c-93fb-791e53248869",
+        "a0b070e8-45e6-47be-9d07-7f2371f7e8ea"
+      ],
+      "settings": {
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1658924915dfca04e4": {
+      "type": "spec-list",
+      "disabled": true,
+      "blocks": {
+        "42fa52cd-2d01-402b-889f-971536fdbacf": {
+          "type": "heading",
+          "settings": {
+            "pre_title": "",
+            "title": "Analysis & Migration",
+            "paragraph": "",
+            "cta1": "",
+            "cta1_link": "",
+            "cta2": "",
+            "cta2_link": "",
+            "position": "center"
+          }
+        },
+        "d8219779-0cbc-458b-83b6-b67fa043616a": {
+          "type": "list",
+          "settings": {
+            "icon1": "BadgeCheckIcon",
+            "text1": "Data structure blueprint",
+            "icon2": "BadgeCheckIcon",
+            "text2": "Product data Organisation",
+            "icon3": "BadgeCheckIcon",
+            "text3": "Images migration from Products,Categories",
+            "icon4": "BadgeCheckIcon",
+            "text4": "",
+            "icon5": "BadgeCheckIcon",
+            "text5": "",
+            "icon6": "BadgeCheckIcon",
+            "text6": ""
+          }
+        },
+        "92dfaed9-24a3-40c4-b510-1cdb65691877": {
+          "type": "list",
+          "settings": {
+            "icon1": "BadgeCheckIcon",
+            "text1": "Customer data Migration",
+            "icon2": "BadgeCheckIcon",
+            "text2": "Order information migration",
+            "icon3": "BadgeCheckIcon",
+            "text3": "Shopify to 3rd party integration",
+            "icon4": "BadgeCheckIcon",
+            "text4": "",
+            "icon5": "BadgeCheckIcon",
+            "text5": "",
+            "icon6": "BadgeCheckIcon",
+            "text6": ""
+          }
+        },
+        "b9ac4e5b-c810-406a-81f5-ac84ad3dc89e": {
+          "type": "list",
+          "settings": {
+            "icon1": "BadgeCheckIcon",
+            "text1": "Redirecting all changed links",
+            "icon2": "BadgeCheckIcon",
+            "text2": "Shopify Store development",
+            "icon3": "BadgeCheckIcon",
+            "text3": "Blog migration",
+            "icon4": "BadgeCheckIcon",
+            "text4": "",
+            "icon5": "BadgeCheckIcon",
+            "text5": "",
+            "icon6": "BadgeCheckIcon",
+            "text6": ""
+          }
+        }
+      },
+      "block_order": [
+        "42fa52cd-2d01-402b-889f-971536fdbacf",
+        "d8219779-0cbc-458b-83b6-b67fa043616a",
+        "92dfaed9-24a3-40c4-b510-1cdb65691877",
+        "b9ac4e5b-c810-406a-81f5-ac84ad3dc89e"
+      ],
+      "settings": {
+        "color_bg": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 248, 219, 1) 86%)",
+        "blur_bg": true,
+        "color_toggle": "dark",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1658740480bb450054": {
+      "type": "pricing",
+      "blocks": {
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab": {
+          "type": "package",
+          "settings": {
+            "title": "Basic",
+            "price": "From R 23 500, -",
+            "subtitle": "For a small size website migration with a basic data structure and design upgrade.  ",
+            "cta1": "Book now",
+            "cta1_link": "",
+            "cta2": "Learn more",
+            "cta2_link": "",
+            "feature_1": "Basic Analysis & Migration",
+            "feature_2": "Product Setup",
+            "feature_3": "Collections Setup",
+            "feature_4": "Basic Pages Setup (homepage \/ contact \/ policies pages)",
+            "feature_5": "Basic Navigation",
+            "feature_6": "Shipping & Payments integration",
+            "feature_7": "Basic Training",
+            "feature_8": "",
+            "feature_9": "",
+            "feature_10": "",
+            "feature_11": "",
+            "feature_12": "",
+            "feature_13": "",
+            "feature_14": "",
+            "feature_15": "",
+            "shadow": false,
+            "primary": false,
+            "color_accent": "#19222e",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        },
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab2": {
+          "type": "package",
+          "settings": {
+            "title": "Advanced",
+            "price": "From R 44 500, -",
+            "subtitle": "For medium size website migration with advanced data structure and design upgrade.",
+            "cta1": "Book now",
+            "cta1_link": "",
+            "cta2": "Learn More",
+            "cta2_link": "",
+            "feature_1": "Advanced Analysis & Migration",
+            "feature_2": "Everything in Basic, Plus",
+            "feature_3": "Advanced Navigation",
+            "feature_4": "Pages Setup (homepage \/ contact \/ policies pages)",
+            "feature_5": "SEO setup",
+            "feature_6": "Social Links Integration",
+            "feature_7": "Newsletter & customer database integration",
+            "feature_8": "Pages set-up (About, Shipping, Blog, FAQ etc.)",
+            "feature_9": "Graphic Design Allocation",
+            "feature_10": "",
+            "feature_11": "",
+            "feature_12": "",
+            "feature_13": "",
+            "feature_14": "",
+            "feature_15": "",
+            "shadow": true,
+            "primary": true,
+            "color_accent": "#22c55e",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        },
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab3": {
+          "type": "package",
+          "settings": {
+            "title": "Pro",
+            "price": "From R 84 500, -",
+            "subtitle": "For large size website migration with custom data structure and design upgrade.",
+            "cta1": "Book now",
+            "cta1_link": "",
+            "cta2": "Learn more",
+            "cta2_link": "",
+            "feature_1": "Custom Analysis & Migration",
+            "feature_2": "Everything in Advance, plus",
+            "feature_3": "Premium pages (3 extra pages with custom layouts)",
+            "feature_4": "Custom collection set-up",
+            "feature_5": "Custom Products set-up (Metafield integrations)",
+            "feature_6": "Custom Navigation",
+            "feature_7": "Email automation setup",
+            "feature_8": "Facebook Shop Integration",
+            "feature_9": "Google Merchant Integration",
+            "feature_10": "Reviews Integration",
+            "feature_11": "Custom SEO setup",
+            "feature_12": "Courier integration",
+            "feature_13": "Instagram Integration",
+            "feature_14": "Advanced Training",
+            "feature_15": "",
+            "shadow": true,
+            "primary": false,
+            "color_accent": "",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        }
+      },
+      "block_order": [
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab",
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab2",
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab3"
+      ],
+      "settings": {
+        "pre_title": "Site Migration packages",
+        "title": "Find a plan that suites your needs.",
+        "paragraph": "<p>Get the best ecommerce store to suite your needs.<\/p>",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1654424131fb27794e": {
+      "type": "tabs-process-step",
+      "blocks": {
+        "16544241313b2fcafc-0": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 1 - Introduction & strategy phase",
+            "tab_paragraph": "Lets get started",
+            "title": "Introduction & strategy phase",
+            "paragraph": "<p>This is when we take the time to understand your vision & needs. We are all ears and ready to make your vision and ideas a reality. At this phase the more informatoin you share with us the better. We then put together a plan of action, specific to your requirements.<\/p>"
+          }
+        },
+        "16544241313b2fcafc-1": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 2 - Feedback stage",
+            "tab_paragraph": "Refining the vision",
+            "title": "Feedback stage",
+            "paragraph": "<p>We are dedicated in building your perfect website and encourage feedback throughout the project. We put together the proposed  mock-ups, and layouts for your website. During this phase you and our team work on and refine the layouts until you are happy with the results.<\/p>"
+          }
+        },
+        "16544241313b2fcafc-2": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 3 - Development stage",
+            "tab_paragraph": "Building in motion",
+            "title": "Development stage",
+            "paragraph": "<p>Our team gets to work on turning your vision into reality. Wether its a store migration, website upgrate or a totally new website. Our team is on it. Ensuring that the development runs smoothly and effectively while keeping you updated throughout the process. <\/p>"
+          }
+        },
+        "16544241313b2fcafc-3": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 4 - Review Stage",
+            "tab_paragraph": "Putting everything together",
+            "title": "Review Stage",
+            "paragraph": "<p>This phase is critical. Our team goes over the final round of revisions to get everything just right before we launch your site. We go over any changes and adjustments needed encouraging feedback throughout the process. Once every is a go, we move on to our next and final stage.<\/p>"
+          }
+        },
+        "16544241313b2fcafc-4": {
+          "type": "step",
+          "settings": {
+            "tab_title": "Step 5 - Launch",
+            "tab_paragraph": "Pop the bubblies!",
+            "title": "Website Launch",
+            "paragraph": "<p>All the hard work leads up to this, where we hand over your fully functional, ready to sell, Shopify site. Our team guides you through the website launch process, ensuring that everything is functional and ready for you to start selling right away. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16544241313b2fcafc-0",
+        "16544241313b2fcafc-1",
+        "16544241313b2fcafc-2",
+        "16544241313b2fcafc-3",
+        "16544241313b2fcafc-4"
+      ],
+      "settings": {
+        "pre_title": "Partners in your online success",
+        "title": "We are here every step of the way",
+        "paragraph": "<p>Our main aim is to develop your powerful website optimized for success. When working with us, you are matched with a designated project manager to ensure all your project needs are taken care of from start to finish.<\/p>",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "16587554309243208c": {
+      "type": "story",
+      "blocks": {
+        "409dde1f-174f-42cd-a0d2-af9f7b9b8ad5": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Shopify experts & partners",
+            "title": "Why work with us",
+            "paragraph": "<p><strong>Certified Shopify partner:<\/strong> Luna Lemon is a part of the<br\/>Shopify development community with extensive Shopify experience and expertise.<br\/><strong>Provide an all-in-one solution: <\/strong>We handle everything in-house,<br\/>from developing and designing to growing and maintaining your Shopify store.<br\/><strong>Customized themes to fit your needs: <\/strong>We provide custom theme design that will convert visitors into buyers.<br\/><strong>Dedicated project manager:<\/strong> We provide a dedicated point of<br\/>contact at Luna Lemon to guide you through discovery, design, training, and final site launch.<br\/><strong>Experts in eCommerce optimization:<\/strong> In addition to being expert web developers, our SEO Specialists are equipt optimize your online store for better rankings and growth.<\/p>",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/why-work-with-us.png",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
+            "position": "left"
+          }
+        }
+      },
+      "block_order": [
+        "409dde1f-174f-42cd-a0d2-af9f7b9b8ad5"
+      ],
+      "settings": {
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1656930716ec9b0e94": {
+      "type": "image-carousel",
+      "settings": {
+        "pre_title": "Creating successfull E-commerce solutions",
+        "title": "Companies we've worked with",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "products": [
+
+        ],
+        "collection": "portfolio",
+        "blog": "",
+        "animate": false,
+        "animation_duration": 20,
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "165719846348099467": {
+      "type": "testimonial-list",
+      "settings": {
+        "pre_title": "Case studies",
+        "title": "World-class teams use Lunalemon to power their products",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "left",
+        "products": [
+          "kids-living",
+          "hydrobiz"
+        ],
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "165476583906badf90": {
+      "type": "logo-banner",
+      "settings": {
+        "title": "Brands we've worked with",
+        "products": [
+          "ford",
+          "kids-living",
+          "lunatag",
+          "volkswagen",
+          "zoom-printing",
+          "bushscarf",
+          "broadway-jewellers",
+          "moritz-tellmann"
+        ],
+        "collection": "",
+        "height": 40,
+        "style": "slider",
+        "animate": true,
+        "animation_duration": 20,
+        "minItems": 2,
+        "maxItems": 5,
+        "paddingY": 8,
+        "paddingX": 8,
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1657266690e55b9106": {
+      "type": "contact",
+      "blocks": {
+        "42e82933-e349-4a4c-81a8-5da291e48962": {
+          "type": "basic",
+          "settings": {
+            "title": "Name",
+            "required": true,
+            "placeholder": "Tim Cook",
+            "error_message": "Please enter your name",
+            "autocomplete": "name",
+            "type": "text",
+            "size": "half"
+          }
+        },
+        "90306a64-3f29-46e8-b954-d24b8aa10d18": {
+          "type": "basic",
+          "settings": {
+            "title": "Email",
+            "required": true,
+            "placeholder": "tim@apple.com",
+            "error_message": "Please enter a valid Email",
+            "autocomplete": "email",
+            "type": "email",
+            "size": "half"
+          }
+        },
+        "e88f55e8-5335-4d0b-9085-e2c482654028": {
+          "type": "basic",
+          "settings": {
+            "title": "Company",
+            "required": false,
+            "placeholder": "Apple inc",
+            "error_message": "",
+            "autocomplete": "organization",
+            "type": "text",
+            "size": "half"
+          }
+        },
+        "8864dbfe-02e6-4cd1-ac53-83ef30c589ca": {
+          "type": "basic",
+          "settings": {
+            "title": "Current website",
+            "required": false,
+            "placeholder": "www.apple.com",
+            "error_message": "",
+            "autocomplete": "url",
+            "type": "url",
+            "size": "half"
+          }
+        },
+        "5c5de0a9-de3d-4fa5-98bd-1805d95b099d": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "3b0ac2ec-be2b-4610-83d0-7513bb52d604": {
+          "type": "group",
+          "settings": {
+            "title": "Interest",
+            "required": false,
+            "type": "checkbox",
+            "options": "Basic Shopify Site ||\n  Pro Shopify Site ||\nPro+ Shopify Site ||\n  Vend POS Integration ||\n  Migrating Site ||\n  App Integrations ||\n  Maintenance Plan ||\nE-Mail Marketing ||\n  Custom Design ||\n  Custom Functionality ||\n  Page Review & Analysis ||\n  Sales Channel Setup ||\n  Support ||\n  General Question",
+            "error_message": ""
+          }
+        },
+        "b321a0df-2831-47dc-9a73-dda9e2b7debc": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "97fc1215-1e7d-43f7-ac5e-c0164aa766bf": {
+          "type": "select",
+          "settings": {
+            "title": "How did you hear about us?",
+            "required": true,
+            "options": "Google || Shopify || Referral || Facebook || Other",
+            "error_message": "",
+            "size": "half"
+          }
+        },
+        "60abd486-9b4f-4231-96dc-4ea214a9dd54": {
+          "type": "select",
+          "settings": {
+            "title": "Budget",
+            "required": false,
+            "options": "less than R15,000 ||\nR15,000 - R25,000 ||\nR25,000 - R50,000 ||\nR50,000 - R75,000 ||\nR75,000 +",
+            "error_message": "",
+            "size": "half"
+          }
+        },
+        "f120716b-1021-4356-a07d-829817edc95a": {
+          "type": "select",
+          "settings": {
+            "title": "Timeline",
+            "required": false,
+            "options": "Yesterday! ||\n2 Weeks ||\n2 - 4 Weeks ||\n4 - 8 Weeks ||\n+8 Weeks",
+            "error_message": "",
+            "size": "half"
+          }
+        },
+        "f7ac8293-1bbe-4271-b4cd-c9abf0657f17": {
+          "type": "select",
+          "settings": {
+            "title": "Current Platform",
+            "required": false,
+            "options": "I don't have a site yet ||\nShopify ||\nBigCommerce ||\nMagento ||\nPrestaShop ||\nWooCommerce ||\nVolusion ||\nOther",
+            "error_message": "",
+            "size": "half"
+          }
+        },
+        "bbd38c5e-5644-49f7-874e-c13418ef227c": {
+          "type": "textarea",
+          "settings": {
+            "title": "Message",
+            "required": true,
+            "placeholder": "",
+            "error_message": "",
+            "autocomplete": "off",
+            "lines": 4,
+            "size": "full"
+          }
+        }
+      },
+      "block_order": [
+        "42e82933-e349-4a4c-81a8-5da291e48962",
+        "90306a64-3f29-46e8-b954-d24b8aa10d18",
+        "e88f55e8-5335-4d0b-9085-e2c482654028",
+        "8864dbfe-02e6-4cd1-ac53-83ef30c589ca",
+        "5c5de0a9-de3d-4fa5-98bd-1805d95b099d",
+        "3b0ac2ec-be2b-4610-83d0-7513bb52d604",
+        "b321a0df-2831-47dc-9a73-dda9e2b7debc",
+        "97fc1215-1e7d-43f7-ac5e-c0164aa766bf",
+        "60abd486-9b4f-4231-96dc-4ea214a9dd54",
+        "f120716b-1021-4356-a07d-829817edc95a",
+        "f7ac8293-1bbe-4271-b4cd-c9abf0657f17",
+        "bbd38c5e-5644-49f7-874e-c13418ef227c"
+      ],
+      "settings": {
+        "intro": false,
+        "title": "Lets get started",
+        "sub_title": "Tell us more about your project",
+        "info_title": "Have some questions?",
+        "info_paragraph": "<p>Reach us directly on: ✉️<\/p><p><strong>Email<\/strong><\/p><p><br\/>Want to have a online meeting instead? Request an appointment with us on: <strong>(booking system?)<\/strong><\/p><p><br\/><\/p>",
+        "contact": false,
+        "contact_title": "Cape Town Office",
+        "address": "<p><a href=\"https:\/\/g.page\/tellmann-cpt?share\" target=\"_blank\">21 Pepper Street <br\/>3rd Floor - C\/O Ademas Solutions<br\/>Cape Town, 8001 <br\/>South Africa<\/a><\/p>",
+        "phone": "",
+        "email": "<p><a href=\"mailto:hello@lunalemon.dev\">hello@lunalemon.dev<\/a><\/p>",
+        "hours": "<p>Office Hours: 9:00 - 16:30<\/p>",
+        "submit_paragraph": "<p>You can also email us directly at <a href=\"mailto:info@tellmann.co.za\">info@tellmann.co.za<\/a><\/p>",
+        "success_paragraph": "",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "1656935895e67bca71",
+    "165476159216c4ff5c",
+    "1659353214eca2faf3",
+    "1654762013d2c9eed0",
+    "1658924915dfca04e4",
+    "1658740480bb450054",
+    "1654424131fb27794e",
+    "16587554309243208c",
+    "1656930716ec9b0e94",
+    "165719846348099467",
+    "165476583906badf90",
+    "1657266690e55b9106"
+  ]
+}
