@@ -1,4 +1,4 @@
-import { useShopifyData } from "_client/stores/shopify-data-store";
+import { useShopifyData } from ".shopify-cms/hooks/shopify-cms";
 import { useCallback, useEffect } from "react";
 import { Sections } from ".shopify-cms/types/sections";
 import { GlobalSettings } from ".shopify-cms/types/shopify";

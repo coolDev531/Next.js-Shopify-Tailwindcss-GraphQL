@@ -10,7 +10,7 @@ export const LoadInitialData: FC<PropsWithChildren<any>> = ({ children }) => {
   const [showTooltip, setShowTooltip] = useState(false);
   const [_, setIsGloballyMounted] = useIsGloballyMounted();
 
-  useInitShopifyData();
+  // useInitShopifyData();
 
   useMount(() => {
     setShowTooltip(true);

@@ -1,16 +1,15 @@
 import { renderSection } from "_client/sections/_render-section";
-import { ContextProviders } from "_client/stores/_context-providers";
-import { LoadInitialData } from "_client/stores/_load-initial-data";
-import { ShopifyDataProvider, useShopifyData } from "_client/stores/shopify-data-store";
+
 import clsx from "clsx";
-import { DefaultSeo, NextSeo } from "next-seo";
+import { NextSeo } from "next-seo";
 import { ThemeProvider, useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import { SEO } from "pages/_app";
-import { FC, useEffect } from "react";
+import { useEffect } from "react";
 import { capitalize } from "utils/capitalize";
 import { PageSettingsSection, Sections } from ".shopify-cms/types/sections";
 import { GlobalSettings } from ".shopify-cms/types/shopify";
+import { useShopifyData } from ".shopify-cms/hooks/shopify-cms";
 
 type LayoutProps = { global: GlobalSettings; sections: Sections[] };
 
@@ -168,19 +167,5 @@ export const ThemeLayout = (props) => {
         </ThemeProvider>
       </main>
     </>
-  );
-};
-
-export const Layout: FC<LayoutProps> = ({ sections, global }) => {
-  console.log("render");
-
-  return (
-    <ShopifyDataProvider init={{ sections, global }}>
-      <ContextProviders>
-        <LoadInitialData>
-          <ThemeLayout sections={sections} global={global} />
-        </LoadInitialData>
-      </ContextProviders>
-    </ShopifyDataProvider>
   );
 };

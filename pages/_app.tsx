@@ -4,7 +4,6 @@ import { ThemeLayout } from "_client/layout/layout";
 
 import { ContextProviders } from "_client/stores/_context-providers";
 import { LoadInitialData } from "_client/stores/_load-initial-data";
-import { ShopifyDataProvider } from "_client/stores/shopify-data-store";
 import { AppRouter } from "_server/settings/api-routes";
 import { DefaultSeo } from "next-seo";
 import { AppProps } from "next/app";
@@ -14,6 +13,7 @@ import "styles/tailwind.css";
 import "styles/theme.scss";
 import "styles/utils.scss";
 import superjson from "superjson";
+import { ShopifyCms } from ".shopify-cms/hooks/shopify-cms";
 
 export const SEO = {
   title: "Lunalemon - Web Development",
@@ -53,7 +53,8 @@ const App: FC<AppProps> = ({ pageProps, Component }) => {
   console.log(router.asPath);
 
   return (
-    <ShopifyDataProvider init={{ sections: pageProps?.sections, global: pageProps?.global }}>
+    <ShopifyCms global={pageProps?.global} sections={pageProps?.sections}>
+      {/*<ShopifyDataProvider init={{ sections: pageProps?.sections, global: pageProps?.global }}>*/}
       <ContextProviders>
         <LoadInitialData>
           <DefaultSeo
@@ -69,7 +70,8 @@ const App: FC<AppProps> = ({ pageProps, Component }) => {
           <Component {...pageProps} />
         </LoadInitialData>
       </ContextProviders>
-    </ShopifyDataProvider>
+      {/*</ShopifyDataProvider>*/}
+    </ShopifyCms>
   );
 };
 

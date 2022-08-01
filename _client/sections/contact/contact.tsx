@@ -7,7 +7,7 @@ import { GroupInput } from "_client/sections/contact/group-input";
 import { SelectInput } from "_client/sections/contact/select-input";
 import { BasicInput } from "_client/sections/contact/basic-input";
 import { TextareaInput } from "_client/sections/contact/textarea-input";
-import { useShopifyData } from "_client/stores/shopify-data-store";
+import { useShopifyData } from ".shopify-cms/hooks/shopify-cms";
 import { Richtext } from "_client/typography/richtext";
 import { motion } from "framer-motion";
 import { FC, useCallback, useEffect, useRef, useState } from "react";
