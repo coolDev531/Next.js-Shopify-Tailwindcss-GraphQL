@@ -22,7 +22,6 @@ export const Hero: FC<HeroSection> = ({ id, settings, type }) => {
             ? <Image
                 maxWidth={600}
                 pixelDensity={1}
-                priority
                 className="object-contain"
                 width={settings.image?.width}
                 height={settings.image?.height}
@@ -67,7 +66,6 @@ export const Hero: FC<HeroSection> = ({ id, settings, type }) => {
           {settings.image && (
             <figure className="relative h-full min-h-[600px] overflow-visible">
               <Image
-                priority
                 className="block min-w-[600px]"
                 width={600}
                 height={600 * settings.image?.aspect_ratio}

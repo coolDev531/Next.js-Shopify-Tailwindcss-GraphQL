@@ -71,7 +71,6 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
                   {settings.image_1
                     ? <Image
                         className="h-[404px] w-[336px] object-cover"
-                        priority
                         maxWidth={350}
                         alt={settings.image_1.alt || settings.title}
                         src={settings.image_1.src}
@@ -80,7 +79,6 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
                       />
                     : <Image
                         className="h-[404px] w-[336px] object-cover"
-                        priority
                         src="https:///cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-collection-4.png?format=webp"
                         alt="space filler"
                         width={336}
@@ -105,7 +103,6 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
                   {settings.image_2
                     ? <Image
                         className="h-[404px] w-[336px] object-cover"
-                        priority
                         maxWidth={350}
                         alt={settings.image_2.alt || settings.title}
                         src={settings.image_2.src}
@@ -114,7 +111,6 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
                       />
                     : <Image
                         className="h-[404px] w-[336px] object-cover"
-                        priority
                         src="https:///cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-collection-2.png?format=webp"
                         alt="space filler"
                         width={336}
@@ -138,7 +134,6 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
                   {settings.image_3
                     ? <Image
                         className="h-[404px] w-[336px] object-cover"
-                        priority
                         maxWidth={350}
                         alt={settings.image_3.alt || settings.title}
                         src={settings.image_3.src}
@@ -147,7 +142,6 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
                       />
                     : <Image
                         className="h-[404px] w-[336px] object-cover"
-                        priority
                         src="https:///cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-collection-1.png?format=webp"
                         alt="space filler"
                         width={336}
