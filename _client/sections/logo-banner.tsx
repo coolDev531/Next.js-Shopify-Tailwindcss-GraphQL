@@ -233,7 +233,6 @@ export const LogoBannerSliderItem: FC<{
       {image && darkImage
         ? <>
             <Image
-              priority
               className="h-full object-contain dark:hidden"
               src={`${image?.src}`}
               width={image?.width}
@@ -242,7 +241,6 @@ export const LogoBannerSliderItem: FC<{
               maxHeight={height}
             />
             <Image
-              priority
               className="hidden h-full object-contain dark:block"
               src={`${darkImage?.src}`}
               width={darkImage?.width}
@@ -252,7 +250,6 @@ export const LogoBannerSliderItem: FC<{
             />
           </>
         : <Image
-            priority
             className="h-full object-contain"
             src={`${image?.src}`}
             width={image?.width}
