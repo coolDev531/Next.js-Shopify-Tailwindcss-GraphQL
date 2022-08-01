@@ -61,7 +61,7 @@ export const FeatureCarousel: FC<FeatureCarouselSection> = ({ id, blocks, settin
       overflowHidden
       bgOpacity={0.6}
       bgHeight="calc(100% + 140px)"
-      bgClassName="bg-[url('/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbg-gradient-light.2a25f0af.jpg&w=1200&q=20')] dark:bg-[url('/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbg-gradient-darkpng.74768a0b.png&w=1200&q=20')] bg-top bg-no-repeat"
+      bgClassName="bg-[url('/_next/image?url=%2Fimages%2Fbg-gradient-light.jpg&w=1200&q=20')] dark:bg-[url('/_next/image?url=%2Fimages%2Fbg-gradient-darkpng.png&w=1200&q=20')] bg-top bg-no-repeat"
     >
       <div className="flex flex-col gap-8">
         <BlockHeading

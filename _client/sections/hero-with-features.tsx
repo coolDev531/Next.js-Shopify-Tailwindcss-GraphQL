@@ -12,7 +12,7 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
   return (
     <div className="relative overflow-hidden">
       <div className="absolute inset-0 h-full w-full border-b border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-dark-bg" />
-      <div className="absolute inset-y-0 hidden w-full min-w-[1360px] bg-[url('/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbg-gradient-templates.0fc06eb1.png&w=1200&q=10')] bg-[length:2000px_100%] bg-[position:calc(50%_+_220px)_-50px] bg-no-repeat lg:block" />
+      <div className="absolute inset-y-0 hidden w-full min-w-[1360px] bg-[url('/_next/image?url=%2Fimages%2Fbg-gradient-templates.png&w=1200&q=10')] bg-[length:2000px_100%] bg-[position:calc(50%_+_220px)_-50px] bg-no-repeat lg:block" />
       <Wrapper
         maxWidth="xl"
         spacing={settings.spacing}
