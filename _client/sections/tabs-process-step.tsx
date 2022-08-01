@@ -48,7 +48,7 @@ export const TabsProcessStep: FC<TabsProcessStepSection> = ({ id, settings, bloc
       spacingTop={settings.spacing_top}
       spacingBottom={settings.spacing_bottom}
       bgOpacity={0.6}
-      bgClassName="bg-[url('/_next/image?url%2Fimages%2Fbg-gradient-light.jpg&w=1200&q=20')] dark:bg-[url('/_next/image?url=%2Fimages%2Fbg-gradient-darkpng.png&w=1200&q=20')] bg-top bg-no-repeat"
+      bgClassName="bg-[url('/_next/image?url%2Fimages%2Fbg-gradient-light.jpg&w=1200&q=20')] dark:bg-[url('/_next/image?url=%2Fimages%2Fbg-gradient-darkpng.png&w=1200&q=20')] bg-top bg-no-repeat bg-[length:3800px_auto]"
       overflowHidden
     >
       <div className="hidden grid-cols-[380px_1fr] gap-16 lg:grid xl:grid-cols-[440px_1fr]">
