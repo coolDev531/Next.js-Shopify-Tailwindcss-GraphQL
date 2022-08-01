@@ -80,7 +80,7 @@ export const TestimonialListItem = ({
 }) => {
   return (
     <Link
-      id={`block--${id}`}
+      id={blockId ? `block--${blockId}` : null}
       href={link}
       key={`testimonial-${id}-${blockId}`}
       className="min-w-[220px] select-none rounded-md border border-gray-200 bg-white p-6 transition-[border-color] hfa:border-gray-400/60 dark:border-gray-700/80 dark:bg-dark-card dark:hfa:border-gray-500/80"

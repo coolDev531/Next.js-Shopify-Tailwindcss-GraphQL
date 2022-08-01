@@ -9,7 +9,7 @@ import { HeadingSection } from ".shopify-cms/types/sections";
 export const BlockHeading: FC<PartialBy<HeadingSection, "type" | "id">> = ({ id, settings }) => {
   return (
     <div
-      id={`block--${id}`}
+      id={id ? `block--${id}` : null}
       className={clsx(
         "flex",
         {
