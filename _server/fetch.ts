@@ -10,14 +10,8 @@ import { GlobalSettings } from ".shopify-cms/types/shopify";
 export const fetchRouter = createRouter().query("shopify-content", {
   input: z.string(),
   resolve: async ({ input }) => {
-    try {
-      console.log({ input });
-      const data = await axios({
-        url: `https://liquix-theme-dev.myshopify.com${input}`,
-        method: "Get",
-      });
-
-      const document = new JSDOM(data.data);
+    const parseShopifyData = (documentString: string) => {
+      const document = new JSDOM(documentString);
       const global: GlobalSettings = JSONParse(
         document.window.document.querySelector("[data-global]").textContent
       );
@@ -27,18 +21,18 @@ export const fetchRouter = createRouter().query("shopify-content", {
       });
 
       return { global, sections };
+    };
+
+    try {
+      console.log({ input });
+      const data = await (await fetch(`https://liquix-theme-dev.myshopify.com${input}`)).text();
+
+      return parseShopifyData(data);
     } catch (err) {
+      console.log(err);
       if (err.response.status === 404 && input === "/404") {
         const { data } = err.response;
-        const document = new JSDOM(data);
-        const global: GlobalSettings = JSONParse(
-          document.window.document.querySelector("[data-global]").textContent
-        );
-        const sections: Sections[] = [];
-        document.window.document.querySelectorAll("[data-section]").forEach((scriptElement) => {
-          sections.push(JSONParse(scriptElement.textContent));
-        });
-        return { global, sections };
+        return parseShopifyData(data);
       }
       console.log(err.message);
     }

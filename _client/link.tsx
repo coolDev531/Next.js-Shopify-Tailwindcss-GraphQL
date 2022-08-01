@@ -35,6 +35,7 @@ export const Link: FC<LinkProps> = ({
       e.preventDefault();
       e.stopPropagation();
 
+      console.log({ href });
       window?.parent?.postMessage(
         {
           source: "theme-content",
