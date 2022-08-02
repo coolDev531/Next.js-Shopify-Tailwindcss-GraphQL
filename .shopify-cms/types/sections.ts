@@ -1134,51 +1134,131 @@ export type TeamListBlocks =
 
 export type Template_404Section = {
   id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+  };
   type: "template-404";
 };
 
 export type TemplateSearchSection = {
   id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+  };
   type: "template-search";
 };
 
 export type TemplateArticleSection = {
   id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+  };
   type: "template-article";
 };
 
 export type TemplateBlogSection = {
   id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+  };
   type: "template-blog";
 };
 
 export type TemplateCartSection = {
   id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+  };
   type: "template-cart";
 };
 
 export type TemplateCollectionSection = {
   id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+  };
   type: "template-collection";
 };
 
 export type TemplateListCollectionsSection = {
   id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+  };
   type: "template-list-collections";
 };
 
 export type TemplatePageSection = {
   id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+  };
   type: "template-page";
 };
 
 export type TemplatePasswordSection = {
   id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+  };
   type: "template-password";
 };
 
 export type TemplateProductSection = {
   id: string;
+  settings: {
+    /** Input type: radio */
+    spacing: "none" | "sm" | "md" | "lg" | "custom";
+    /** Input type: range */
+    spacing_bottom: number;
+    /** Input type: range */
+    spacing_top: number;
+  };
   type: "template-product";
 };
 

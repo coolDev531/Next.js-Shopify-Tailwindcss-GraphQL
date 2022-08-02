@@ -22,6 +22,7 @@ import { TabsFaq } from "_client/sections/tabs-faq";
 import { TabsImageCard } from "_client/sections/tabs-image-card";
 import { TabsProcessStep } from "_client/sections/tabs-process-step";
 import { TeamList } from "_client/sections/team-list";
+import { TemplatePage } from "_client/sections/template-page";
 import { TestimonialList } from "_client/sections/testimonial-list";
 import { Sections } from ".shopify-cms/types/sections";
 
@@ -98,7 +99,7 @@ export const renderSection = (section: Sections) => {
     case "feature-carousel":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <FeatureCarousel key={section.id} {...section} />
+          <FeatureCarousel {...section} />
         </section>
       );
     case "feature-list":
@@ -110,79 +111,79 @@ export const renderSection = (section: Sections) => {
     case "image-gallery":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <ImageGallery key={section.id} {...section} />
+          <ImageGallery {...section} />
         </section>
       );
     case "blockquote":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <BlockBlockquote key={section.id} {...section} />
+          <BlockBlockquote {...section} />
         </section>
       );
     case "spec-list":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <SpecList key={section.id} {...section} />
+          <SpecList {...section} />
         </section>
       );
     case "tabs-image-card":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <TabsImageCard key={section.id} {...section} />
+          <TabsImageCard {...section} />
         </section>
       );
     case "logo-banner":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <LogoBanner key={section.id} {...section} />
+          <LogoBanner {...section} />
         </section>
       );
     case "info-cards":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <InfoCards key={section.id} {...section} />
+          <InfoCards {...section} />
         </section>
       );
     case "footer":
       return (
         <footer key={section.id} className={section.type} id={`section--${section.id}`}>
-          <Footer key={section.id} {...section} />
+          <Footer {...section} />
         </footer>
       );
     case "header":
       return (
         <header key={section.id} className={section.type} id={`section--${section.id}`}>
-          <Header key={section.id} {...section} />
+          <Header {...section} />
         </header>
       );
     case "heading":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <SectionHeading key={section.id} {...section} />
+          <SectionHeading {...section} />
         </section>
       );
     case "hero":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <Hero key={section.id} {...section} />
+          <Hero {...section} />
         </section>
       );
     case "image-text":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <BlockImageText key={section.id} {...section} />
+          <BlockImageText {...section} />
         </section>
       );
     case "stats-graph":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <StatsGraph key={section.id} {...section} />
+          <StatsGraph {...section} />
         </section>
       );
     case "story":
       return (
         <section key={section.id} className={section.type} id={`section--${section.id}`}>
-          <Story key={section.id} {...section} />
+          <Story {...section} />
         </section>
       );
     case "template-404":
@@ -211,7 +212,9 @@ export const renderSection = (section: Sections) => {
       );
     case "template-page":
       return (
-        <section key={section.id} className={section.type} id={`section--${section.id}`}></section>
+        <section key={section.id} className={section.type} id={`section--${section.id}`}>
+          <TemplatePage {...section} />
+        </section>
       );
     case "template-password":
       return (
