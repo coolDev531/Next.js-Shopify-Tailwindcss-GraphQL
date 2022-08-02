@@ -60,14 +60,18 @@ export const Link: FC<LinkProps> = ({
               {children}
             </a>
           </NextLink>
-        : <a
+        : href
+        ? <a
             href={typeof href === "string" ? href.replace(/^\/products\//gi, "/") : href}
             rel={AnchorProps?.target === "_blank" ? "noopener noreferrer" : undefined}
             onClick={onClick}
             {...AnchorProps}
           >
             {children}
-          </a>}
+          </a>
+        : <span onClick={onClick} {...AnchorProps}>
+            {children}
+          </span>}
     </>
   );
 };
