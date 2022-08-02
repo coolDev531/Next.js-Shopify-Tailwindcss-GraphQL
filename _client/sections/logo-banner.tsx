@@ -33,7 +33,7 @@ export const LogoBannerGrid: FC<LogoBannerSection> = ({ id, settings, blocks, ty
           <h3 className="mb-1 font-semibold text-gray-700 dark:text-gray-300">{settings.title}</h3>
         </header>
         <main
-          className="grid border-t border-l border-gray-200"
+          className="grid border-t border-l border-gray-200 dark:border-gray-800"
           style={{
             gridTemplateColumns: `repeat(auto-fit, minmax(min(100%/${settings.minItems}, max(160px, 100%/${settings.maxItems})), 1fr)`,
           }}
@@ -48,7 +48,7 @@ export const LogoBannerGrid: FC<LogoBannerSection> = ({ id, settings, blocks, ty
             ?.map((product) => (
               <div
                 key={product.id}
-                className="flex items-center justify-center border-b border-r border-gray-200"
+                className="flex items-center justify-center border-b border-r border-gray-200 dark:border-gray-800"
                 style={{ padding: `${settings.paddingY * 4}px ${settings.paddingX * 4}px` }}
               >
                 <LogoBannerSliderItem
@@ -223,7 +223,7 @@ export const LogoBannerSliderItem: FC<{
 }> = ({ title, image, height, darkImage }) => {
   return (
     <figure
-      className="relative w-full cursor-pointer opacity-60 grayscale transition-all hfa:opacity-100 hfa:grayscale-0 dark:opacity-80 dark:brightness-125 dark:contrast-150 dark:hfa:opacity-100 dark:hfa:contrast-100"
+      className="relative flex w-full cursor-pointer justify-center opacity-60 grayscale transition-all hfa:opacity-100 hfa:grayscale-0 dark:opacity-80 dark:brightness-125 dark:contrast-150 dark:hfa:opacity-100 dark:hfa:contrast-100"
       data-tip={title}
       style={{
         height: `${height}px`,

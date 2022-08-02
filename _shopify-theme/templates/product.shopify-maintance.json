@@ -310,26 +310,6 @@
         "spacing_bottom": 0
       }
     },
-    "165719846348099467": {
-      "type": "testimonial-list",
-      "settings": {
-        "pre_title": "Case studies",
-        "title": "World-class teams use Lunalemon to power their products",
-        "paragraph": "",
-        "cta1": "",
-        "cta1_link": "",
-        "cta2": "",
-        "cta2_link": "",
-        "position": "left",
-        "products": [
-          "broadway-jewellers",
-          "volkswagen"
-        ],
-        "spacing": "custom",
-        "spacing_top": 16,
-        "spacing_bottom": 8
-      }
-    },
     "165476583906badf90": {
       "type": "logo-banner",
       "settings": {
@@ -353,9 +333,9 @@
         "maxItems": 5,
         "paddingY": 8,
         "paddingX": 8,
-        "spacing": "md",
+        "spacing": "custom",
         "spacing_top": 0,
-        "spacing_bottom": 0
+        "spacing_bottom": 24
       }
     },
     "1657266690e55b9106": {
@@ -500,6 +480,7 @@
         "intro": false,
         "title": "Lets get started",
         "sub_title": "Tell us more about your project",
+        "info": true,
         "info_title": "Have some questions?",
         "info_paragraph": "<p>Reach us directly on: ✉️<\/p><p><strong>Email<\/strong><\/p><p><br\/>Want to have a online meeting instead? Request an appointment with us on: <strong>(booking system?)<\/strong><\/p><p><br\/><\/p>",
         "contact": false,
@@ -525,7 +506,6 @@
     "1658740480bb450054",
     "16587554309243208c",
     "1656930716ec9b0e94",
-    "165719846348099467",
     "165476583906badf90",
     "1657266690e55b9106"
   ]

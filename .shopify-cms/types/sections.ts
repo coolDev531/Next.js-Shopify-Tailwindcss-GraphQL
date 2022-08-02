@@ -1203,6 +1203,8 @@ export type TestimonialListSection = {
     spacing_bottom: number;
     /** Input type: range */
     spacing_top: number;
+    /** Input type: checkbox */
+    with_link: boolean;
     /** Input type: text */
     cta1?: string;
     /** Input type: url */

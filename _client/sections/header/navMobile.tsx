@@ -54,7 +54,7 @@ export const NavMobile: FC<{
               leaveTo="transform opacity-0 scale-95"
             >
               <Popover.Panel className="fixed inset-0 z-30">
-                <nav className="relative m-1 overflow-hidden rounded bg-white px-2 pt-16 pb-10 shadow dark:bg-dark-bg sm:px-3 sm:px-7">
+                <nav className="relative m-1 overflow-hidden rounded bg-white px-2 pt-16 pb-10 shadow dark:border dark:border-gray-700 dark:bg-card dark:shadow-none sm:px-3 sm:px-7">
                   <button
                     className="absolute right-3 top-3 rounded p-1 sm:right-5"
                     onClick={() => close()}
@@ -189,7 +189,7 @@ export const NavMobile: FC<{
                                                 alt="placeholder"
                                                 className="h-full object-cover group-hover:opacity-75"
                                               />
-                                              <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3 dark:bg-gray-900/80">
+                                              <div className="absolute inset-x-0 bottom-0 bg-white/70 py-4 px-3 dark:bg-gray-900/50">
                                                 <h3 className="mb-0.5 text-sm font-medium text-gray-900 dark:text-gray-200">
                                                   {block.settings[`title_${key}`]}
                                                 </h3>

@@ -43,7 +43,9 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
               </div>
             </header>
             <main className="mt-4">
-              <Richtext className="paragraph-base text-gray-600">{settings.paragraph}</Richtext>
+              <Richtext className="paragraph-base text-gray-600 dark:text-gray-300">
+                {settings.paragraph}
+              </Richtext>
             </main>
             <footer className="mt-8 flex gap-4">
               {settings.cta1 && settings.cta1_link
@@ -173,7 +175,7 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
                     <h2 className="heading-xs">{block.settings.title}</h2>
                   </header>
                   <main className="mt-2">
-                    <Richtext className="paragraph-sm leading-6 tracking-normal text-gray-700">
+                    <Richtext className="paragraph-sm leading-6 tracking-normal text-gray-700 dark:text-gray-400">
                       {block.settings.paragraph}
                     </Richtext>
                   </main>

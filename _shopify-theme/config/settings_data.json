@@ -26,7 +26,7 @@
           "3eba0d05-a30d-4f8f-8100-2a973c7326b4": {
             "type": "dropdown_menu_features",
             "settings": {
-              "handle": "services",
+              "handle": "pricing",
               "menu_items": [
                 "shopify-full-sites",
                 "shopify-customizations",
@@ -42,10 +42,10 @@
               "handle": "work",
               "title_1": "Lunatag App",
               "link_1": "shopify:\/\/products\/lunatag",
-              "image_1": "shopify:\/\/shop_images\/small-business-interior.jpg",
+              "image_1": "shopify:\/\/shop_images\/Luna-tag.jpg",
               "title_2": "Kids Living",
               "link_2": "shopify:\/\/products\/kids-living",
-              "image_2": "shopify:\/\/shop_images\/baby-nursery-supplies.jpg"
+              "image_2": "shopify:\/\/shop_images\/Luna-Lemon-image4_ef054ee7-f82e-4e38-ad35-e1b3d3960815.jpg"
             }
           }
         },
@@ -92,10 +92,147 @@
           "296fbdfd-3e24-4f02-bc4c-673b11f36cb7"
         ],
         "settings": {
-          "facebook": "#",
-          "github": "#",
-          "instagram": "#",
-          "google": "#"
+          "facebook": "https:\/\/www.facebook.com\/Lunalemon.dev",
+          "github": "https:\/\/github.com\/luna-lemon",
+          "instagram": "https:\/\/www.instagram.com\/lunalemon.dev",
+          "google": "https:\/\/g.page\/r\/CdssFwfkia74EBA"
+        }
+      },
+      "contact": {
+        "type": "contact",
+        "blocks": {
+          "42e82933-e349-4a4c-81a8-5da291e48962": {
+            "type": "basic",
+            "settings": {
+              "title": "Name",
+              "required": true,
+              "placeholder": "Tim Cook",
+              "error_message": "Please enter your name",
+              "autocomplete": "name",
+              "type": "text",
+              "size": "half"
+            }
+          },
+          "90306a64-3f29-46e8-b954-d24b8aa10d18": {
+            "type": "basic",
+            "settings": {
+              "title": "Email",
+              "required": true,
+              "placeholder": "tim@apple.com",
+              "error_message": "Please enter a valid Email",
+              "autocomplete": "email",
+              "type": "email",
+              "size": "half"
+            }
+          },
+          "e88f55e8-5335-4d0b-9085-e2c482654028": {
+            "type": "basic",
+            "settings": {
+              "title": "Company",
+              "required": true,
+              "placeholder": "Apple inc",
+              "error_message": "",
+              "autocomplete": "organization",
+              "type": "text",
+              "size": "half"
+            }
+          },
+          "8864dbfe-02e6-4cd1-ac53-83ef30c589ca": {
+            "type": "basic",
+            "settings": {
+              "title": "Current website",
+              "required": false,
+              "placeholder": "www.apple.com",
+              "error_message": "",
+              "autocomplete": "url",
+              "type": "url",
+              "size": "half"
+            }
+          },
+          "5c5de0a9-de3d-4fa5-98bd-1805d95b099d": {
+            "type": "separator",
+            "disabled": true,
+            "settings": {
+            }
+          },
+          "97fc1215-1e7d-43f7-ac5e-c0164aa766bf": {
+            "type": "select",
+            "settings": {
+              "title": "Select Service",
+              "required": true,
+              "options": "Shopify Web Development || Shopify Web Migration || Shopify Website Maintenance",
+              "error_message": "",
+              "size": "half"
+            }
+          },
+          "60abd486-9b4f-4231-96dc-4ea214a9dd54": {
+            "type": "select",
+            "settings": {
+              "title": "Select package",
+              "required": true,
+              "options": "Basic ||\nAdvanced ||\nPro",
+              "error_message": "",
+              "size": "half"
+            }
+          },
+          "3b0ac2ec-be2b-4610-83d0-7513bb52d604": {
+            "type": "group",
+            "settings": {
+              "title": "More options",
+              "required": false,
+              "type": "checkbox",
+              "options": "App Integrations ||\n  Custom Design ||\n  Custom Functionality ||\n  Website Audit",
+              "error_message": ""
+            }
+          },
+          "b321a0df-2831-47dc-9a73-dda9e2b7debc": {
+            "type": "separator",
+            "settings": {
+            }
+          },
+          "bbd38c5e-5644-49f7-874e-c13418ef227c": {
+            "type": "textarea",
+            "settings": {
+              "title": "Message",
+              "required": false,
+              "placeholder": "You can provide more information about your project here. The more information the better, if you have a certain budget, timeline or special request don’t hesitant to highlight it.   \n\nOur team is all ears and looking forward to working with you.",
+              "error_message": "",
+              "autocomplete": "off",
+              "lines": 6,
+              "size": "full"
+            }
+          }
+        },
+        "block_order": [
+          "42e82933-e349-4a4c-81a8-5da291e48962",
+          "90306a64-3f29-46e8-b954-d24b8aa10d18",
+          "e88f55e8-5335-4d0b-9085-e2c482654028",
+          "8864dbfe-02e6-4cd1-ac53-83ef30c589ca",
+          "5c5de0a9-de3d-4fa5-98bd-1805d95b099d",
+          "97fc1215-1e7d-43f7-ac5e-c0164aa766bf",
+          "60abd486-9b4f-4231-96dc-4ea214a9dd54",
+          "3b0ac2ec-be2b-4610-83d0-7513bb52d604",
+          "b321a0df-2831-47dc-9a73-dda9e2b7debc",
+          "bbd38c5e-5644-49f7-874e-c13418ef227c"
+        ],
+        "settings": {
+          "intro": true,
+          "title": "Let's get started",
+          "sub_title": "Tell us more about your project",
+          "info": true,
+          "info_title": "Looking for something specific?",
+          "info_paragraph": "<p>\n  For bookings or questions contact us at: <a href=\"mailto:hello@lunalemon.dev\" target=\"_blank\">hello@lunalemon.dev</a>\n</p>\n<p>\n  For Accounts or Project enquiries:<br />\n  <a href=\"mailto:accounts@lunalemon.dev\" target=\"_blank\" title=\"mailto:accounts@lunalemon.dev\">accounts@lunalemon.dev</a>\n</p>\n<p>\n  For Marketing & Sales:<br />\n  <a href=\"mailto:sales@lunalemon.dev\" target=\"_blank\" title=\"mailto:sales@lunalemon.dev\">sales@lunalemon.dev</a>\n</p>\n<p>\n  For App Support and enquiries:<br />\n  <a href=\"mailto:support@lunalemon.dev\" target=\"_blank\" title=\"mailto:support@lunalemon.dev\">support@lunalemon.dev</a>\n</p>",
+          "contact": false,
+          "contact_title": "Cape Town HQ",
+          "address": "<p><a href=\"https:\/\/g.page\/tellmann-cpt?share\" target=\"_blank\">21 Pepper Street <br\/>Cape Town, 8001 <br\/>South Africa<\/a><\/p>",
+          "phone": "",
+          "email": "",
+          "hours": "<p>Office Hours: 9:00 - 16:30<\/p><p>Mondays to Fridays<\/p><p>Closed on Public holidays<\/p>",
+          "submit_paragraph": "<p>Prefer to contact us directly? Email us at <a href=\"mailto:hello@lunalemon.dev\" title=\"mailto:hello@lunalemon.dev\">hello@lunalemon.dev<\/a><\/p>",
+          "success_paragraph": "",
+          "spacing": "md",
+          "spacing_top": 0,
+          "spacing_bottom": 0
         }
       }
     },

@@ -69,9 +69,9 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
             ref={formRef}
             autoComplete="on"
             onSubmit={handleFormSubmit}
-            className=" w-full max-w-[720px] rounded-md shadow-2xl dark:shadow-gray-300/20"
+            className=" w-full max-w-[720px] rounded-md shadow-2xl dark:border dark:border-gray-700 dark:shadow-none"
           >
-            <main className="flex grid-cols-2 flex-col gap-6 rounded-t-md bg-bg p-6 sm:grid">
+            <main className="flex grid-cols-2 flex-col gap-6 rounded-t-md bg-bg p-6 dark:bg-card sm:grid">
               {blocks.map((block) => {
                 switch (block.type) {
                   case "separator":
@@ -149,7 +149,9 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
           {settings.info
             ? <section className="flex-1">
                 <h3 className="heading-lg">{settings.info_title}</h3>
-                <Richtext className="paragraph-base">{settings.info_paragraph}</Richtext>
+                <Richtext className="paragraph-base prose dark:prose-dark">
+                  {settings.info_paragraph}
+                </Richtext>
               </section>
             : null}
 

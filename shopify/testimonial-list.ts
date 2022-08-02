@@ -13,6 +13,12 @@ export const testimonialList: ShopifySection<TestimonialListSection> = {
       label: "Products",
       limit: 2,
     },
+    {
+      type: "checkbox",
+      id: "with_link",
+      label: "With_link",
+      default: false,
+    },
     ...spacing,
   ],
   blocks: [

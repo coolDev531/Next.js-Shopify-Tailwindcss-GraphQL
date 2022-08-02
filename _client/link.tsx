@@ -31,11 +31,10 @@ export const Link: FC<LinkProps> = ({
   };
 
   const handleClick = useCallback((e) => {
-    if (window.self !== window.top) {
+    if (window.self !== window.top && href) {
       e.preventDefault();
       e.stopPropagation();
 
-      console.log({ href });
       window?.parent?.postMessage(
         {
           source: "theme-content",

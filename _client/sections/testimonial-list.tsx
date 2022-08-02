@@ -45,6 +45,7 @@ export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, settin
               testimonial={testimonial}
               author={author}
               jobTitle={jobTitle}
+              with_link={settings.with_link}
             />
           );
         })}
@@ -60,6 +61,7 @@ export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, settin
             testimonial={block.settings.quote}
             author={block.settings.author}
             jobTitle={block.settings.job_title}
+            with_link={settings.with_link}
           />
         ))}
       </div>
@@ -77,13 +79,14 @@ export const TestimonialListItem = ({
   author,
   jobTitle,
   imageAlt,
+  with_link,
 }) => {
   return (
     <Link
       id={blockId ? `block--${blockId}` : null}
-      href={link}
+      href={with_link ? link : undefined}
       key={`testimonial-${id}-${blockId}`}
-      className="min-w-[220px] select-none rounded-md border border-gray-200 bg-white p-6 transition-[border-color] hfa:border-gray-400/60 dark:border-gray-700/80 dark:bg-dark-card dark:hfa:border-gray-500/80"
+      className="mb-auto min-w-[220px] select-none rounded-md border border-gray-200 bg-white p-6 transition-[border-color] hfa:border-gray-400/60 dark:border-gray-700/80 dark:bg-dark-card dark:hfa:border-gray-500/80"
     >
       <header>
         <figure className="relative h-10 grayscale-0">
@@ -119,7 +122,7 @@ export const TestimonialListItem = ({
         </figure>
       </header>
       <blockquote className="mt-2 dark:text-gray-100">{testimonial}</blockquote>
-      <footer className="mt-3 flex items-center gap-2">
+      <footer className="mt-4 flex items-center gap-2">
         <figure className="relative flex aspect-1 h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-accent/50 text-[13px] font-medium text-white">
           {author?.match(/(\w+[^\w]*)/gi).map((match) => {
             return match.charAt(0).toUpperCase();
