@@ -67,6 +67,7 @@ export const contact: ShopifySection<ContactSection> = {
       type: "checkbox",
       id: "intro",
       label: "Show Intro",
+      default: true,
     },
     {
       type: "text",
@@ -80,7 +81,13 @@ export const contact: ShopifySection<ContactSection> = {
     },
     {
       type: "header",
-      content: "Info BLock",
+      content: "Info Block",
+    },
+    {
+      type: "checkbox",
+      id: "info",
+      label: "Show Info Block",
+      default: true,
     },
     {
       type: "text",
@@ -100,6 +107,7 @@ export const contact: ShopifySection<ContactSection> = {
       type: "checkbox",
       id: "contact",
       label: "Show Contact Details",
+      default: true,
     },
     {
       type: "text",
@@ -244,7 +252,7 @@ export const contact: ShopifySection<ContactSection> = {
           label: "Required",
         },
         {
-          type: "text",
+          type: "textarea",
           id: "placeholder",
           label: "Placeholder",
         },

@@ -29,6 +29,29 @@
             src="https://lunalemon.dev{{ request.path }}"
             frameborder="0">
     </iframe>
+
+    <script>
+      const sessionUrl = sessionStorage.getItem('shopify-cms-url') ?? "http://localhost:3000"
+      const themeEditorIframe = document.getElementById("theme-editor");
+      themeEditorIframe.setAttribute('src', `${sessionUrl}{{ request.path }}`)
+
+      if (sessionUrl === `http://localhost:3000`) {
+        fetch('http://localhost:3000{{ request.path }}', { method: "HEAD" }).catch(err => {
+          themeEditorIframe.setAttribute('src', 'https://lunalemon.dev{{ request.path }}');
+          sessionStorage.setItem('shopify-cms-url', `https://lunalemon.dev`)
+        });
+      }
+
+      if (sessionUrl !== `http://localhost:3000`) {
+        fetch('http://localhost:3000{{ request.path }}', { method: "HEAD" }).then((e) => {
+          themeEditorIframe.setAttribute('src', 'http://localhost:3000{{ request.path }}');
+          sessionStorage.setItem('shopify-cms-url', `http://localhost:3000`)
+        }).catch(err => {
+          sessionStorage.setItem('shopify-cms-url', `https://lunalemon.dev`)
+        });
+      }
+    </script>
+
   {% endif %}
 
   {% if request.design_mode %}

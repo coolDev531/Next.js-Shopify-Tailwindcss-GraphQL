@@ -51,12 +51,14 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
       spacingTop={settings.spacing_top}
       spacingBottom={settings.spacing_bottom}
     >
-      <header ref={scrollToRef} className="mb-16">
-        <h1 className="heading-2xl">{settings.title}</h1>
-        <h2 className="heading-lg font-normal">{settings.sub_title}</h2>
-      </header>
-      <main className="relative mt-12 grid-cols-[1fr_320px] gap-12 lg:grid">
-        <div className="-mx-4 -mt-4 -mt-16 overflow-hidden px-4 pt-4 pb-16 sm:-mx-8 sm:px-8">
+      {settings.intro
+        ? <header ref={scrollToRef} className="mb-16">
+            <h1 className="heading-2xl">{settings.title}</h1>
+            <h2 className="heading-lg font-normal">{settings.sub_title}</h2>
+          </header>
+        : null}
+      <main className="relative mt-12 grid-cols-[1fr_320px] gap-12  lg:grid">
+        <div className="-mx-4 -mt-4 -mt-16 px-4 pt-4 pb-16 sm:-mx-8 sm:px-8">
           <motion.form
             animate={
               contact.data === "success"
@@ -67,9 +69,9 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
             ref={formRef}
             autoComplete="on"
             onSubmit={handleFormSubmit}
-            className=" w-full max-w-[720px] overflow-hidden rounded-md shadow-2xl dark:shadow-gray-300/20"
+            className=" w-full max-w-[720px] rounded-md shadow-2xl dark:shadow-gray-300/20"
           >
-            <main className="flex grid-cols-2 flex-col gap-6 bg-bg p-6 sm:grid">
+            <main className="flex grid-cols-2 flex-col gap-6 rounded-t-md bg-bg p-6 sm:grid">
               {blocks.map((block) => {
                 switch (block.type) {
                   case "separator":
@@ -119,7 +121,7 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
                 }
               })}
             </main>
-            <footer className="flex items-center justify-between gap-1 bg-accent px-6 py-8">
+            <footer className="flex items-center justify-between gap-1 rounded-b-md bg-accent px-6 py-8">
               <Richtext className="text-accent-contrast [&_a]:underline">
                 {settings.submit_paragraph}
               </Richtext>
@@ -134,7 +136,7 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
                 initial={{ opacity: 0, y: "100%" }}
                 animate={{ opacity: 100, y: 0 }}
                 transition={{ duration: 0.2, ease: "easeInOut", delay: 0.4 }}
-                className="my-16 w-full max-w-[720px] overflow-hidden rounded-md bg-white p-6 py-10 shadow-xl"
+                className="my-16 w-full max-w-[720px] rounded-md bg-white p-6 py-10 shadow-xl"
               >
                 <Richtext className="heading-base m-0 text-gray-800">
                   {settings.success_paragraph || "🤗 Thank you for your message"}
@@ -144,25 +146,30 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
         </div>
 
         <div className="sticky top-16 flex h-fit flex-col gap-12 py-10 md:flex-row lg:flex-col lg:py-16">
-          <section className="flex-1">
-            <h3 className="heading-lg">{settings.info_title}</h3>
-            <Richtext className="paragraph-base">{settings.info_paragraph}</Richtext>
-          </section>
-          <section className="flex flex-1 flex-col gap-2">
-            <h3 className="heading-lg">{settings.contact_title}</h3>
-            <div className="flex">
-              <HeroIcon name="LocationMarkerIcon" outline className="mr-4 h-6 w-6" />
-              <Richtext className="paragraph-base">{settings.address}</Richtext>
-            </div>
-            <div className="flex">
-              <HeroIcon name="MailIcon" outline className="mr-4 h-6 w-6" />
-              <Richtext className="paragraph-base">{settings.email}</Richtext>
-            </div>
-            <div className="flex">
-              <HeroIcon name="ClockIcon" outline className="mr-4 h-6 w-6" />
-              <Richtext className="paragraph-base">{settings.hours}</Richtext>
-            </div>
-          </section>
+          {settings.info
+            ? <section className="flex-1">
+                <h3 className="heading-lg">{settings.info_title}</h3>
+                <Richtext className="paragraph-base">{settings.info_paragraph}</Richtext>
+              </section>
+            : null}
+
+          {settings.contact
+            ? <section className="flex flex-1 flex-col gap-2">
+                <h3 className="heading-lg">{settings.contact_title}</h3>
+                <div className="flex">
+                  <HeroIcon name="LocationMarkerIcon" outline className="mr-4 h-6 w-6" />
+                  <Richtext className="paragraph-base">{settings.address}</Richtext>
+                </div>
+                <div className="flex">
+                  <HeroIcon name="MailIcon" outline className="mr-4 h-6 w-6" />
+                  <Richtext className="paragraph-base">{settings.email}</Richtext>
+                </div>
+                <div className="flex">
+                  <HeroIcon name="ClockIcon" outline className="mr-4 h-6 w-6" />
+                  <Richtext className="paragraph-base">{settings.hours}</Richtext>
+                </div>
+              </section>
+            : null}
         </div>
       </main>
     </Wrapper>

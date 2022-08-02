@@ -59,6 +59,8 @@ export type ContactSection = {
     /** Input type: checkbox */
     contact: boolean;
     /** Input type: checkbox */
+    info: boolean;
+    /** Input type: checkbox */
     intro: boolean;
     /** Input type: radio */
     spacing: "none" | "sm" | "md" | "lg" | "custom";
@@ -126,7 +128,7 @@ export type ContactBlocks =
         size: "half" | "full";
         /** Input type: textarea */
         error_message?: string;
-        /** Input type: text */
+        /** Input type: textarea */
         placeholder?: string;
         /** Input type: text */
         title?: string;
