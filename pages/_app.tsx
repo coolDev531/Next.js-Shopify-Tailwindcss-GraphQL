@@ -39,7 +39,7 @@ export const SEO = {
       "International Shopify Web design studio - We create Shopify Ecommerce solutions - Empowering independent business owners everywhere.",
     images: [
       {
-        url: "https://lunalemon.dev/images/twitter.jpg",
+        url: "https://lunalemon.dev/images/og-image.jpg",
         alt: "Lunalemon - Web Development",
         width: 1600,
         height: 900,
