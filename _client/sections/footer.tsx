@@ -26,6 +26,7 @@ export const Footer: FC<FooterSection> = ({ id, settings, blocks, type }) => {
                       className="peer hidden"
                     />
                     <label
+                      tabIndex={0}
                       htmlFor={`${block.id}-${block.settings.menu.handle}`}
                       className="peer-checked:[&_svg]:rotate-180"
                     >
