@@ -221,7 +221,7 @@
           "sub_title": "Tell us more about your project",
           "info": true,
           "info_title": "Looking for something specific?",
-          "info_paragraph": "<p>\n  For bookings or questions contact us at:<br /> <a href=\"mailto:hello@lunalemon.dev\" target=\"_blank\">hello@lunalemon.dev</a>\n</p>\n<p>\n  For Accounts or Project enquiries:<br />\n  <a href=\"mailto:accounts@lunalemon.dev\" target=\"_blank\" title=\"mailto:accounts@lunalemon.dev\">accounts@lunalemon.dev</a>\n</p>\n<p>\n  For Marketing & Sales:<br />\n  <a href=\"mailto:sales@lunalemon.dev\" target=\"_blank\" title=\"mailto:sales@lunalemon.dev\">sales@lunalemon.dev</a>\n</p>\n<p>\n  For App Support and enquiries:<br />\n  <a href=\"mailto:support@lunalemon.dev\" target=\"_blank\" title=\"mailto:support@lunalemon.dev\">support@lunalemon.dev</a>\n</p>",
+          "info_paragraph": "<p>For bookings or questions contact us at:<br /><a href=\"mailto:hello@lunalemon.dev\" target=\"_blank\">hello@lunalemon.dev</a></p><p>For Accounts or Project enquiries:<br /><a href=\"mailto:accounts@lunalemon.dev\" target=\"_blank\" title=\"mailto:accounts@lunalemon.dev\">accounts@lunalemon.dev</a></p><p>For Marketing & Sales:<br /><a href=\"mailto:sales@lunalemon.dev\" target=\"_blank\" title=\"mailto:sales@lunalemon.dev\">sales@lunalemon.dev</a></p><p>For App Support and enquiries:<br /><a href=\"mailto:support@lunalemon.dev\" target=\"_blank\" title=\"mailto:support@lunalemon.dev\">support@lunalemon.dev</a></p>",
           "contact": false,
           "contact_title": "Cape Town HQ",
           "address": "<p><a href=\"https:\/\/g.page\/tellmann-cpt?share\" target=\"_blank\">21 Pepper Street <br\/>Cape Town, 8001 <br\/>South Africa<\/a><\/p>",
