@@ -1,0 +1,474 @@
+{
+  "sections": {
+    "1656935895e67bca71": {
+      "type": "hero-with-features",
+      "blocks": {
+        "689e6e02-64ee-4082-adc0-5adbbcb4c9d7": {
+          "type": "feature",
+          "settings": {
+            "title": "Reach out",
+            "paragraph": "Have a question? or have a service you need. Choose an option that suites you or send us an enquiry. Our team is ready to get you started.",
+            "icon": "ui-1"
+          }
+        },
+        "8a2a41e9-564a-45c3-abac-f9443e19308f": {
+          "type": "feature",
+          "settings": {
+            "title": "Team Match",
+            "paragraph": "Based on your enquiry you will be assigned a dedicated project manager to assist you, they ensure all your project needs are taken care of.",
+            "icon": "ui-2"
+          }
+        },
+        "161fe8eb-8549-454a-8b98-b7ac8a2e64d1": {
+          "type": "feature",
+          "settings": {
+            "title": "Get started",
+            "paragraph": "You are in good hands. With your dedicated project manager, the sky is the limit, they will be there every step of the way to see that your project is complete.",
+            "icon": "ui-3"
+          }
+        }
+      },
+      "block_order": [
+        "689e6e02-64ee-4082-adc0-5adbbcb4c9d7",
+        "8a2a41e9-564a-45c3-abac-f9443e19308f",
+        "161fe8eb-8549-454a-8b98-b7ac8a2e64d1"
+      ],
+      "settings": {
+        "pre_title": "Websites tailored to your needs",
+        "title": "We create Shopify Ecommerce solutions.",
+        "tech": [
+          "shopify",
+          "copy-of-node-js",
+          "tailwindcss"
+        ],
+        "paragraph": "<p>Whether you want to built a new ecommerce store, migrate from a different platform, or need to upgrade your current site. We are here to help you succeed.<\/p>",
+        "cta1": "Get started",
+        "cta1_link": "shopify:\/\/products\/shopify-full-sites",
+        "cta2": "Contact us",
+        "cta2_link": "#",
+        "image_1": "shopify:\/\/shop_images\/Screen-shot-1.jpg",
+        "image_2": "shopify:\/\/shop_images\/screen-shot-2.jpg",
+        "image_3": "shopify:\/\/shop_images\/1.png",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "165476159216c4ff5c": {
+      "type": "heading",
+      "settings": {
+        "pre_title": "Expert development",
+        "title": "We speak, eat, sleep Shopify",
+        "paragraph": "<p>We have extensive Shopify experience and have developed ecommerce stores and solutions for our clients worldwide.Wether you want to built a new ecommerce store, migrate, or help with our current store. We are here to help you succeed. <\/p>",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
+      }
+    },
+    "165693105620682646": {
+      "type": "feature-carousel",
+      "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "features": [
+          "shopify-customizations",
+          "shopify-full-sites",
+          "shopify-integration",
+          "shopify-seo-packages",
+          "shopify-website-maintenance"
+        ],
+        "spacing": "custom",
+        "spacing_top": 8,
+        "spacing_bottom": 24
+      }
+    },
+    "1659080056351f97d5": {
+      "type": "info-cards",
+      "settings": {
+        "pre_title": "Content Management System",
+        "title": "Keep your data syncronized",
+        "content_list": [
+          "shopify",
+          "vend-pos",
+          "erply",
+          "dear",
+          "vercel"
+        ],
+        "spacing": "custom",
+        "spacing_top": 32,
+        "spacing_bottom": 4
+      }
+    },
+    "1659095162e3e45728": {
+      "type": "logo-banner",
+      "settings": {
+        "title": "Our development skills",
+        "products": [
+          "copy-of-css",
+          "css",
+          "javascript",
+          "typescript",
+          "react",
+          "graphql",
+          "node-js",
+          "copy-of-node-js",
+          "postgresql",
+          "prisma",
+          "mdx",
+          "sass",
+          "tailwindcss",
+          "framer",
+          "github",
+          "amazon-web-services",
+          "firebase",
+          "eslint",
+          "copy-of-framer",
+          "headless-ui",
+          "react-query",
+          "redis",
+          "swc",
+          "three-js",
+          "turborepo",
+          "vite",
+          "webpack",
+          "amp",
+          "ios",
+          "babel",
+          "grunt",
+          "gulp",
+          "jsdom",
+          "jest",
+          "mysql",
+          "postcss",
+          "prettier",
+          "postman",
+          "remix-js",
+          "yarn"
+        ],
+        "collection": "",
+        "height": 40,
+        "style": "slider",
+        "animate": true,
+        "animation_duration": 90,
+        "minItems": 2,
+        "maxItems": 5,
+        "paddingY": 8,
+        "paddingX": 8,
+        "spacing": "custom",
+        "spacing_top": 0,
+        "spacing_bottom": 24
+      }
+    },
+    "16587554309243208c": {
+      "type": "story",
+      "blocks": {
+        "409dde1f-174f-42cd-a0d2-af9f7b9b8ad5": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Shopify experts & partners",
+            "title": "Why work with us",
+            "paragraph": "<p><strong>Certified Shopify partner:<\/strong>Luna Lemon is a part of the<br\/>Shopify development community with extensive Shopify experience and expertise.<br\/><strong>Provide an all-in-one solution:<\/strong>We handle everything in-house,<br\/>from developing and designing to growing and maintaining your Shopify store.<br\/><strong>Customized themes to fit your needs:<\/strong>We provide custom theme design that will convert visitors into buyers.<br\/><strong>Dedicated project manager:<\/strong>We provide a dedicated point of<br\/>contact at Luna Lemon to guide you through discovery, design, training, and final site launch.<br\/><strong>Experts in eCommerce optimization:<\/strong>In addition to being expert web developers, our SEO Specialists are equipt optimize your online store for better rankings and growth.<\/p>",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/why-work-with-us.png",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
+            "position": "left"
+          }
+        }
+      },
+      "block_order": [
+        "409dde1f-174f-42cd-a0d2-af9f7b9b8ad5"
+      ],
+      "settings": {
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1659100571ce4c9324": {
+      "type": "portfolio-preview",
+      "settings": {
+        "pre_title": "",
+        "title": "Checkout our portfolio",
+        "paragraph": "",
+        "products": [
+          "aiko",
+          "broadway-jewellers",
+          "bushscarf",
+          "click-upload",
+          "ford",
+          "hydrobiz",
+          "kids-living",
+          "lunatag",
+          "moritz-tellmann",
+          "volkswagen",
+          "waraq-health",
+          "zoom-printing"
+        ],
+        "collection": "",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1656930716ec9b0e94": {
+      "type": "image-carousel",
+      "disabled": true,
+      "settings": {
+        "pre_title": "Creating successfull E-commerce solutions",
+        "title": "Companies we've worked with",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "products": [
+
+        ],
+        "collection": "portfolio",
+        "blog": "",
+        "animate": false,
+        "animation_duration": 20,
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "165719846348099467": {
+      "type": "testimonial-list",
+      "settings": {
+        "pre_title": "Case studies",
+        "title": "World-class teams use Lunalemon to power their products",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "left",
+        "products": [
+          "broadway-jewellers",
+          "volkswagen"
+        ],
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 8
+      }
+    },
+    "165476583906badf90": {
+      "type": "logo-banner",
+      "settings": {
+        "title": "Brands we've worked with",
+        "products": [
+          "helly-hansen",
+          "kids-living",
+          "zoom-printing",
+          "aiko",
+          "hydrobiz",
+          "thinn",
+          "ford",
+          "volkswagen",
+          "turning-point",
+          "pichulik",
+          "suitable",
+          "matsidiso",
+          "alphabetpix",
+          "mind-over-matter",
+          "bushscarf"
+        ],
+        "collection": "",
+        "height": 80,
+        "style": "grid",
+        "animate": true,
+        "animation_duration": 20,
+        "minItems": 2,
+        "maxItems": 5,
+        "paddingY": 10,
+        "paddingX": 10,
+        "spacing": "custom",
+        "spacing_top": 0,
+        "spacing_bottom": 24
+      }
+    },
+    "1657266690e55b9106": {
+      "type": "contact",
+      "blocks": {
+        "42e82933-e349-4a4c-81a8-5da291e48962": {
+          "type": "basic",
+          "settings": {
+            "title": "Name",
+            "required": true,
+            "placeholder": "Tim Cook",
+            "error_message": "Please enter your name",
+            "autocomplete": "name",
+            "type": "text",
+            "size": "half"
+          }
+        },
+        "90306a64-3f29-46e8-b954-d24b8aa10d18": {
+          "type": "basic",
+          "settings": {
+            "title": "Email",
+            "required": true,
+            "placeholder": "tim@apple.com",
+            "error_message": "Please enter a valid Email",
+            "autocomplete": "email",
+            "type": "email",
+            "size": "half"
+          }
+        },
+        "e88f55e8-5335-4d0b-9085-e2c482654028": {
+          "type": "basic",
+          "settings": {
+            "title": "Company",
+            "required": false,
+            "placeholder": "Apple inc",
+            "error_message": "",
+            "autocomplete": "organization",
+            "type": "text",
+            "size": "half"
+          }
+        },
+        "8864dbfe-02e6-4cd1-ac53-83ef30c589ca": {
+          "type": "basic",
+          "settings": {
+            "title": "Current website",
+            "required": false,
+            "placeholder": "www.apple.com",
+            "error_message": "",
+            "autocomplete": "url",
+            "type": "url",
+            "size": "half"
+          }
+        },
+        "5c5de0a9-de3d-4fa5-98bd-1805d95b099d": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "3b0ac2ec-be2b-4610-83d0-7513bb52d604": {
+          "type": "group",
+          "settings": {
+            "title": "Interest",
+            "required": false,
+            "type": "checkbox",
+            "options": "Basic Shopify Site ||\n  Pro Shopify Site ||\nPro+ Shopify Site ||\n  Vend POS Integration ||\n  Migrating Site ||\n  App Integrations ||\n  Maintenance Plan ||\nE-Mail Marketing ||\n  Custom Design ||\n  Custom Functionality ||\n  Page Review & Analysis ||\n  Sales Channel Setup ||\n  Support ||\n  General Question",
+            "error_message": ""
+          }
+        },
+        "b321a0df-2831-47dc-9a73-dda9e2b7debc": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "97fc1215-1e7d-43f7-ac5e-c0164aa766bf": {
+          "type": "select",
+          "settings": {
+            "title": "How did you hear about us?",
+            "required": true,
+            "options": "Google || Shopify || Referral || Facebook || Other",
+            "error_message": "",
+            "size": "half"
+          }
+        },
+        "60abd486-9b4f-4231-96dc-4ea214a9dd54": {
+          "type": "select",
+          "settings": {
+            "title": "Budget",
+            "required": false,
+            "options": "less than R15,000 ||\nR15,000 - R25,000 ||\nR25,000 - R50,000 ||\nR50,000 - R75,000 ||\nR75,000 +",
+            "error_message": "",
+            "size": "half"
+          }
+        },
+        "f120716b-1021-4356-a07d-829817edc95a": {
+          "type": "select",
+          "settings": {
+            "title": "Timeline",
+            "required": false,
+            "options": "Yesterday! ||\n2 Weeks ||\n2 - 4 Weeks ||\n4 - 8 Weeks ||\n+8 Weeks",
+            "error_message": "",
+            "size": "half"
+          }
+        },
+        "f7ac8293-1bbe-4271-b4cd-c9abf0657f17": {
+          "type": "select",
+          "settings": {
+            "title": "Current Platform",
+            "required": false,
+            "options": "I don't have a site yet ||\nShopify ||\nBigCommerce ||\nMagento ||\nPrestaShop ||\nWooCommerce ||\nVolusion ||\nOther",
+            "error_message": "",
+            "size": "half"
+          }
+        },
+        "bbd38c5e-5644-49f7-874e-c13418ef227c": {
+          "type": "textarea",
+          "settings": {
+            "title": "Message",
+            "required": true,
+            "placeholder": "",
+            "error_message": "",
+            "autocomplete": "off",
+            "lines": 4,
+            "size": "full"
+          }
+        }
+      },
+      "block_order": [
+        "42e82933-e349-4a4c-81a8-5da291e48962",
+        "90306a64-3f29-46e8-b954-d24b8aa10d18",
+        "e88f55e8-5335-4d0b-9085-e2c482654028",
+        "8864dbfe-02e6-4cd1-ac53-83ef30c589ca",
+        "5c5de0a9-de3d-4fa5-98bd-1805d95b099d",
+        "3b0ac2ec-be2b-4610-83d0-7513bb52d604",
+        "b321a0df-2831-47dc-9a73-dda9e2b7debc",
+        "97fc1215-1e7d-43f7-ac5e-c0164aa766bf",
+        "60abd486-9b4f-4231-96dc-4ea214a9dd54",
+        "f120716b-1021-4356-a07d-829817edc95a",
+        "f7ac8293-1bbe-4271-b4cd-c9abf0657f17",
+        "bbd38c5e-5644-49f7-874e-c13418ef227c"
+      ],
+      "settings": {
+        "intro": false,
+        "title": "Get in Touch",
+        "sub_title": "Tell us how we can help and we’ll get in touch shortly.",
+        "info_title": "How can we help you?",
+        "info_paragraph": "<p>Feel free to contact us with any questions, projects or partnerships. <br\/><br\/>Want to have a online meeting instead? Request an appointment with us.<br\/><br\/>Prefer a cup of coffee and a chat face to face? Schedule an appointment with us in our Cape Town offices.<\/p>",
+        "contact": false,
+        "contact_title": "Cape Town Office",
+        "address": "<p><a href=\"https:\/\/g.page\/tellmann-cpt?share\" target=\"_blank\">21 Pepper Street <br\/>3rd Floor - C\/O Ademas Solutions<br\/>Cape Town, 8001 <br\/>South Africa<\/a><\/p>",
+        "phone": "",
+        "email": "<p><a href=\"mailto:hello@lunalemon.dev\">hello@lunalemon.dev<\/a><\/p>",
+        "hours": "<p>Office Hours: 9:00 - 16:30<\/p>",
+        "submit_paragraph": "<p>You can also email us directly at <a href=\"mailto:info@tellmann.co.za\">info@tellmann.co.za<\/a><\/p>",
+        "success_paragraph": "",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "1656935895e67bca71",
+    "165476159216c4ff5c",
+    "165693105620682646",
+    "1659080056351f97d5",
+    "1659095162e3e45728",
+    "16587554309243208c",
+    "1659100571ce4c9324",
+    "1656930716ec9b0e94",
+    "165719846348099467",
+    "165476583906badf90",
+    "1657266690e55b9106"
+  ]
+}
