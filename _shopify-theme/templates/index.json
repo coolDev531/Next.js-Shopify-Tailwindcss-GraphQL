@@ -42,10 +42,10 @@
           "tailwindcss"
         ],
         "paragraph": "<p>Whether you want to built a new ecommerce store, migrate from a different platform, or need to upgrade your current site. We are here to help you succeed.<\/p>",
-        "cta1": "Get started",
+        "cta1": "Get a new website",
         "cta1_link": "shopify:\/\/products\/shopify-full-sites",
-        "cta2": "Contact us",
-        "cta2_link": "#",
+        "cta2": "Contact us directly",
+        "cta2_link": "mailto:hello@lunalemon.dev",
         "image_1": "shopify:\/\/shop_images\/Screen-shot-1.jpg",
         "image_2": "shopify:\/\/shop_images\/screen-shot-2.jpg",
         "image_3": "shopify:\/\/shop_images\/1.png",

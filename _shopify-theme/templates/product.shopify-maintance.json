@@ -139,10 +139,10 @@
             "title": "Basic",
             "price": "From R3 900 pm -",
             "subtitle": "For personal or small start-up ecommerce sites with a simple responsive design.",
-            "cta1": "Book now",
-            "cta1_link": "",
-            "cta2": "Learn more",
-            "cta2_link": "",
+            "cta1": "Get started",
+            "cta1_link": "#section--contact",
+            "cta2": "Contact us",
+            "cta2_link": "mailto:hello@lunalemon.dev",
             "feature_1": "6 Hours allocated - requests",
             "feature_2": "Tech support (Domains, hosting, emails)",
             "feature_3": "Website Support",
@@ -176,10 +176,10 @@
             "title": "Advanced",
             "price": "From R8 500 pm, -",
             "subtitle": "For professional or medium size ecommerce sites with a unique responsive design.",
-            "cta1": "Book now",
-            "cta1_link": "",
-            "cta2": "Learn More",
-            "cta2_link": "",
+            "cta1": "Get started",
+            "cta1_link": "#section--contact",
+            "cta2": "Contact us",
+            "cta2_link": "mailto:hello@lunalemon.dev",
             "feature_1": "12 Hours allocated - requests + strategy",
             "feature_2": "Monthly Data Backups",
             "feature_3": "Everything in Basic, plus",
@@ -213,10 +213,10 @@
             "title": "Pro",
             "price": "From R 14 600, -",
             "subtitle": "For well established or large size ecommerce sites with a custom responsive design.",
-            "cta1": "Book now",
-            "cta1_link": "",
-            "cta2": "Learn more",
-            "cta2_link": "",
+            "cta1": "Get started",
+            "cta1_link": "#section--contact",
+            "cta2": "Contact us",
+            "cta2_link": "mailto:hello@lunalemon.dev",
             "feature_1": "20 Hours Allocated - requests + strategy",
             "feature_2": "Weekly Data Backups",
             "feature_3": "Everything in Advanced, plus",
@@ -337,164 +337,6 @@
         "spacing_top": 0,
         "spacing_bottom": 24
       }
-    },
-    "1657266690e55b9106": {
-      "type": "contact",
-      "blocks": {
-        "42e82933-e349-4a4c-81a8-5da291e48962": {
-          "type": "basic",
-          "settings": {
-            "title": "Name",
-            "required": true,
-            "placeholder": "Tim Cook",
-            "error_message": "Please enter your name",
-            "autocomplete": "name",
-            "type": "text",
-            "size": "half"
-          }
-        },
-        "90306a64-3f29-46e8-b954-d24b8aa10d18": {
-          "type": "basic",
-          "settings": {
-            "title": "Email",
-            "required": true,
-            "placeholder": "tim@apple.com",
-            "error_message": "Please enter a valid Email",
-            "autocomplete": "email",
-            "type": "email",
-            "size": "half"
-          }
-        },
-        "e88f55e8-5335-4d0b-9085-e2c482654028": {
-          "type": "basic",
-          "settings": {
-            "title": "Company",
-            "required": false,
-            "placeholder": "Apple inc",
-            "error_message": "",
-            "autocomplete": "organization",
-            "type": "text",
-            "size": "half"
-          }
-        },
-        "8864dbfe-02e6-4cd1-ac53-83ef30c589ca": {
-          "type": "basic",
-          "settings": {
-            "title": "Current website",
-            "required": false,
-            "placeholder": "www.apple.com",
-            "error_message": "",
-            "autocomplete": "url",
-            "type": "url",
-            "size": "half"
-          }
-        },
-        "5c5de0a9-de3d-4fa5-98bd-1805d95b099d": {
-          "type": "separator",
-          "settings": {
-          }
-        },
-        "3b0ac2ec-be2b-4610-83d0-7513bb52d604": {
-          "type": "group",
-          "settings": {
-            "title": "Interest",
-            "required": false,
-            "type": "checkbox",
-            "options": "Basic Shopify Site ||\n  Pro Shopify Site ||\nPro+ Shopify Site ||\n  Vend POS Integration ||\n  Migrating Site ||\n  App Integrations ||\n  Maintenance Plan ||\nE-Mail Marketing ||\n  Custom Design ||\n  Custom Functionality ||\n  Page Review & Analysis ||\n  Sales Channel Setup ||\n  Support ||\n  General Question",
-            "error_message": ""
-          }
-        },
-        "b321a0df-2831-47dc-9a73-dda9e2b7debc": {
-          "type": "separator",
-          "settings": {
-          }
-        },
-        "97fc1215-1e7d-43f7-ac5e-c0164aa766bf": {
-          "type": "select",
-          "settings": {
-            "title": "How did you hear about us?",
-            "required": true,
-            "options": "Google || Shopify || Referral || Facebook || Other",
-            "error_message": "",
-            "size": "half"
-          }
-        },
-        "60abd486-9b4f-4231-96dc-4ea214a9dd54": {
-          "type": "select",
-          "settings": {
-            "title": "Budget",
-            "required": false,
-            "options": "less than R15,000 ||\nR15,000 - R25,000 ||\nR25,000 - R50,000 ||\nR50,000 - R75,000 ||\nR75,000 +",
-            "error_message": "",
-            "size": "half"
-          }
-        },
-        "f120716b-1021-4356-a07d-829817edc95a": {
-          "type": "select",
-          "settings": {
-            "title": "Timeline",
-            "required": false,
-            "options": "Yesterday! ||\n2 Weeks ||\n2 - 4 Weeks ||\n4 - 8 Weeks ||\n+8 Weeks",
-            "error_message": "",
-            "size": "half"
-          }
-        },
-        "f7ac8293-1bbe-4271-b4cd-c9abf0657f17": {
-          "type": "select",
-          "settings": {
-            "title": "Current Platform",
-            "required": false,
-            "options": "I don't have a site yet ||\nShopify ||\nBigCommerce ||\nMagento ||\nPrestaShop ||\nWooCommerce ||\nVolusion ||\nOther",
-            "error_message": "",
-            "size": "half"
-          }
-        },
-        "bbd38c5e-5644-49f7-874e-c13418ef227c": {
-          "type": "textarea",
-          "settings": {
-            "title": "Message",
-            "required": true,
-            "placeholder": "",
-            "error_message": "",
-            "autocomplete": "off",
-            "lines": 4,
-            "size": "full"
-          }
-        }
-      },
-      "block_order": [
-        "42e82933-e349-4a4c-81a8-5da291e48962",
-        "90306a64-3f29-46e8-b954-d24b8aa10d18",
-        "e88f55e8-5335-4d0b-9085-e2c482654028",
-        "8864dbfe-02e6-4cd1-ac53-83ef30c589ca",
-        "5c5de0a9-de3d-4fa5-98bd-1805d95b099d",
-        "3b0ac2ec-be2b-4610-83d0-7513bb52d604",
-        "b321a0df-2831-47dc-9a73-dda9e2b7debc",
-        "97fc1215-1e7d-43f7-ac5e-c0164aa766bf",
-        "60abd486-9b4f-4231-96dc-4ea214a9dd54",
-        "f120716b-1021-4356-a07d-829817edc95a",
-        "f7ac8293-1bbe-4271-b4cd-c9abf0657f17",
-        "bbd38c5e-5644-49f7-874e-c13418ef227c"
-      ],
-      "settings": {
-        "intro": false,
-        "title": "Lets get started",
-        "sub_title": "Tell us more about your project",
-        "info": true,
-        "info_title": "Have some questions?",
-        "info_paragraph": "<p>Reach us directly on: ✉️<\/p><p><strong>Email<\/strong><\/p><p><br\/>Want to have a online meeting instead? Request an appointment with us on: <strong>(booking system?)<\/strong><\/p><p><br\/><\/p>",
-        "contact": false,
-        "contact_title": "Cape Town Office",
-        "address": "<p><a href=\"https:\/\/g.page\/tellmann-cpt?share\" target=\"_blank\">21 Pepper Street <br\/>3rd Floor - C\/O Ademas Solutions<br\/>Cape Town, 8001 <br\/>South Africa<\/a><\/p>",
-        "phone": "",
-        "email": "<p><a href=\"mailto:hello@lunalemon.dev\">hello@lunalemon.dev<\/a><\/p>",
-        "hours": "<p>Office Hours: 9:00 - 16:30<\/p>",
-        "submit_paragraph": "<p>You can also email us directly at <a href=\"mailto:info@tellmann.co.za\">info@tellmann.co.za<\/a><\/p>",
-        "success_paragraph": "",
-        "spacing": "md",
-        "spacing_top": 0,
-        "spacing_bottom": 0
-      }
     }
   },
   "order": [
@@ -506,7 +348,6 @@
     "1658740480bb450054",
     "16587554309243208c",
     "1656930716ec9b0e94",
-    "165476583906badf90",
-    "1657266690e55b9106"
+    "165476583906badf90"
   ]
 }

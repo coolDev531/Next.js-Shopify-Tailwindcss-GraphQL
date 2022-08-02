@@ -66,33 +66,6 @@
         "spacing_bottom": 0
       }
     },
-    "16540846002974a6ff": {
-      "type": "story",
-      "disabled": true,
-      "blocks": {
-        "93e0ffb2-4809-45bb-88aa-7cf835fef608": {
-          "type": "heading",
-          "settings": {
-            "pre_title": "The Brief",
-            "title": "Going from zero to hero",
-            "paragraph": "<p>We helped Aiko successfully launch their website, after having to rescue and put together from a half developed custom design from previous developers. We have worked closely to match their budget with a two-point plan, fixing their initial site and removing essential functionality for an accelerated launch, and a full custom design development.<\/p>",
-            "cta1": "",
-            "cta1_link": "#",
-            "cta2": "",
-            "cta2_link": "#",
-            "position": "center"
-          }
-        }
-      },
-      "block_order": [
-        "93e0ffb2-4809-45bb-88aa-7cf835fef608"
-      ],
-      "settings": {
-        "spacing": "md",
-        "spacing_top": 0,
-        "spacing_bottom": 0
-      }
-    },
     "1656933742c82a115d": {
       "type": "background",
       "disabled": true,
@@ -137,10 +110,10 @@
         "pre_title": "The Brief",
         "title": "From vision to reality",
         "paragraph": "<p>We developed their website to highlight their parts service offering and custom built a search and filter function for their specific products.<\/p>",
-        "cta1": "",
-        "cta1_link": "",
-        "cta2": "",
-        "cta2_link": "",
+        "cta1": "Develop your website",
+        "cta1_link": "shopify:\/\/products\/shopify-full-sites",
+        "cta2": "Contact us directly",
+        "cta2_link": "mailto:hello@lunalemon.dev",
         "position": "center"
       }
     },
@@ -173,8 +146,8 @@
             "pre_title": "Custom Features",
             "title": "We have worked with Ford on some unique features",
             "paragraph": "<p>Our team work closely with our clients to create a selection of suitable options, and unique features that perfectly represent their vision and needs.<\/p>",
-            "cta1": "Learn more",
-            "cta1_link": "##",
+            "cta1": "Contact us",
+            "cta1_link": "mailto:hello@lunalemon.dev",
             "cta2": "",
             "cta2_link": "#",
             "position": "left"
@@ -502,10 +475,10 @@
         "pre_title": "Continuous work for continuous results",
         "title": "Support after Launch",
         "paragraph": "",
-        "cta1": "",
-        "cta1_link": "",
-        "cta2": "",
-        "cta2_link": "",
+        "cta1": "Website maintenance",
+        "cta1_link": "shopify:\/\/products\/shopify-website-maintenance",
+        "cta2": "Contact us",
+        "cta2_link": "mailto:hello@lunalemon.dev",
         "position": "center",
         "spacing": "md",
         "spacing_top": 0,
@@ -563,7 +536,6 @@
     "16588324053663a8e1",
     "16540104123512b9a3",
     "1654079897751048da",
-    "16540846002974a6ff",
     "1656933742c82a115d",
     "1659101631d5cd7d66",
     "16542613555478f86d",

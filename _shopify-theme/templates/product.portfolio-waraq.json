@@ -75,10 +75,10 @@
             "pre_title": "The Brief",
             "title": "From challenge to solution",
             "paragraph": "<p>We worked with Waraq in successfully developing their Shopify Website covering aspects from product image editing and<br\/>content research and creation.<\/p>",
-            "cta1": "",
-            "cta1_link": "#",
-            "cta2": "",
-            "cta2_link": "#",
+            "cta1": "Develop your website",
+            "cta1_link": "shopify:\/\/products\/shopify-full-sites",
+            "cta2": "Contact us directly",
+            "cta2_link": "mailto:hello@lunalemon.dev",
             "position": "center"
           }
         }
@@ -363,10 +363,10 @@
         "pre_title": "Continuous work for continuous results",
         "title": "Support after Launch",
         "paragraph": "",
-        "cta1": "Lean more",
+        "cta1": "Website maintenance",
         "cta1_link": "shopify:\/\/products\/shopify-website-maintenance",
-        "cta2": "",
-        "cta2_link": "",
+        "cta2": "Contact us",
+        "cta2_link": "mailto:hello@lunalemon.dev",
         "position": "center",
         "spacing": "custom",
         "spacing_top": 24,

@@ -75,10 +75,10 @@
             "pre_title": "Case in point",
             "title": "From problem to solution",
             "paragraph": "<p>How we overcame Broadway Jewellers challenges to migrate their store from WordPress to Shopify,  having an updated store design and content flow to showcase their large amount of inventory. We continuously worked with them to increase site visits, engagement, and product purchases. <br\/><\/p>",
-            "cta1": "Develop your website",
-            "cta1_link": "#",
-            "cta2": "Explore all services",
-            "cta2_link": "#",
+            "cta1": "Migrate your website",
+            "cta1_link": "shopify:\/\/products\/shopify-customizations",
+            "cta2": "Contact us directly",
+            "cta2_link": "mailto:hello@lunalemon.dev",
             "position": "center"
           }
         },
@@ -259,8 +259,8 @@
             "pre_title": "Custom Features",
             "title": "We have worked with Broadway Jewellers on a number of unique features",
             "paragraph": "<p>Our team work closely with our clients to create a selection of suitable options, and unique features that perfectly represent their vision and needs.<\/p>",
-            "cta1": "",
-            "cta1_link": "##",
+            "cta1": "Contact us",
+            "cta1_link": "mailto:hello@lunalemon.dev",
             "cta2": "",
             "cta2_link": "#",
             "position": "left"
@@ -560,6 +560,7 @@
     },
     "1659356690206c3958": {
       "type": "blockquote",
+      "disabled": true,
       "settings": {
         "quote": "Excellent service! Very responsive. Would HIGHLY recommend for all of your Shopify customization needs! The level of service is top notch. I've worked with dozens of independent Shopify consultants and these guys have been by far the best.",
         "author": "Farzana Bhorat",
@@ -620,10 +621,10 @@
         "pre_title": "Continuous work for continuous results",
         "title": "Support after Launch",
         "paragraph": "",
-        "cta1": "",
-        "cta1_link": "",
-        "cta2": "",
-        "cta2_link": "",
+        "cta1": "Website maintenance",
+        "cta1_link": "shopify:\/\/products\/shopify-website-maintenance",
+        "cta2": "Contact us",
+        "cta2_link": "mailto:hello@lunalemon.dev",
         "position": "center",
         "spacing": "md",
         "spacing_top": 0,
