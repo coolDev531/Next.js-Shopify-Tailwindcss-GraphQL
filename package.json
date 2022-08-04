@@ -1,6 +1,6 @@
 {
   "name": "flex",
-  "version": "1.0.36",
+  "version": "1.0.37",
   "license": "MIT",
   "scripts": {
     "dev": "npm-run-all --parallel next:dev shopify-dev",
