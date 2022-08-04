@@ -23,7 +23,7 @@ export const formRouter = createRouter().mutation("contact", {
 
       const mailer = (input) => {
         const message = {
-          from: `TELLMANN.co.za --- CONTACT FORM - <contact-form@tellmann.co.za>`,
+          from: `TELLMANN.co.za --- CONTACT FORM - <contact-form@lunalemon.dev>`,
           to: `${process.env.MAIL_CONTACT_FORM_RECEIVER}`,
           subject: `CONTACT-FORM --- Lunalemon.dev`,
           text: input.body,
