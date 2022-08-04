@@ -139,7 +139,7 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
                 className="my-16 w-full max-w-[720px] rounded-md bg-white p-6 py-10 shadow-xl"
               >
                 <Richtext className="heading-base m-0 text-gray-800">
-                  {settings.success_paragraph || "🤗 Thank you for your message"}
+                  {settings.success_paragraph || "Thank you for your message 🍋"}
                 </Richtext>
               </motion.div>
             : null}

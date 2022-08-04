@@ -82,7 +82,7 @@ export default withTRPC<AppRouter>({
         typeof window !== "undefined"
           ? "/api/trpc"
           : process.env.NEXT_PUBLIC_VERCEL_URL
-          ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/trpc`
+          ? `https://lunalemon.dev/api/trpc`
           : `http://localhost:${process.env.NEXT_PUBLIC_PORT ?? 3000}/api/trpc`,
       links: [
         /*loggerLink({
@@ -92,7 +92,7 @@ export default withTRPC<AppRouter>({
         }),*/
         httpBatchLink({
           url: process.env.NEXT_PUBLIC_VERCEL_URL
-            ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/trpc`
+            ? `https://lunalemon.dev/api/trpc`
             : `http://localhost:${process.env.NEXT_PUBLIC_PORT ?? 3000}/api/trpc`,
         }),
       ],

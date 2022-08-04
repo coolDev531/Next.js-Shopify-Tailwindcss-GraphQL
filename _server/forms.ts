@@ -36,7 +36,6 @@ export const formRouter = createRouter().mutation("contact", {
         });
       };
 
-      console.log({ transporter });
       await mailer(input);
       return "success";
     } catch (err) {
