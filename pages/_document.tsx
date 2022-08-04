@@ -45,7 +45,8 @@ class Root extends Document {
             
           `}
           </Script>
-          <Script id="tawk-script" strategy="afterInteractive">
+          <meta name="facebook-domain-verification" content="nx9pdarv30g8lya3yi5m5m9ubej7xw" />
+          <Script id="facebook-pixel" strategy="afterInteractive">
             {`<!-- Meta Pixel Code -->
               !function (f, b, e, v, n, t, s) {
                 if (f.fbq) return; 
