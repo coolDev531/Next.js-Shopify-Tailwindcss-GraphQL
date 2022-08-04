@@ -9,6 +9,7 @@ export const formRouter = createRouter().mutation("contact", {
   }),
   resolve: async ({ input }) => {
     try {
+      console.log({ input });
       const transporter = createTransport({
         host: "smtp.tellmann.co.za",
         port: 587,
@@ -35,6 +36,7 @@ export const formRouter = createRouter().mutation("contact", {
         });
       };
 
+      console.log({ transporter });
       await mailer(input);
       return "success";
     } catch (err) {
