@@ -1,0 +1,316 @@
+{
+  "sections": {
+    "1656935895e67bca71": {
+      "type": "hero-with-features",
+      "blocks": {
+        "689e6e02-64ee-4082-adc0-5adbbcb4c9d7": {
+          "type": "feature",
+          "settings": {
+            "title": "Reach out",
+            "paragraph": "Have a question? or have a service you need. Choose an option that suites you or send us an enquiry. Our team is ready to get you started.",
+            "icon": "ui-1"
+          }
+        },
+        "8a2a41e9-564a-45c3-abac-f9443e19308f": {
+          "type": "feature",
+          "settings": {
+            "title": "Team Match",
+            "paragraph": "Based on your enquiry you will be assigned a dedicated project manager to assist you, they ensure all your project needs are taken care of.",
+            "icon": "ui-2"
+          }
+        },
+        "161fe8eb-8549-454a-8b98-b7ac8a2e64d1": {
+          "type": "feature",
+          "settings": {
+            "title": "Get started",
+            "paragraph": "You are in good hands. With your dedicated project manager, the sky is the limit, they will be there every step of the way to see that your project is complete.",
+            "icon": "ui-3"
+          }
+        }
+      },
+      "block_order": [
+        "689e6e02-64ee-4082-adc0-5adbbcb4c9d7",
+        "8a2a41e9-564a-45c3-abac-f9443e19308f",
+        "161fe8eb-8549-454a-8b98-b7ac8a2e64d1"
+      ],
+      "settings": {
+        "pre_title": "Websites tailored to your needs",
+        "title": "We create Shopify Ecommerce solutions.",
+        "tech": [
+          "shopify",
+          "copy-of-node-js",
+          "tailwindcss"
+        ],
+        "paragraph": "<p>Whether you want to built a new ecommerce store, migrate from a different platform, or need to upgrade your current site. We are here to help you succeed.<\/p>",
+        "cta1": "Get a new website",
+        "cta1_link": "shopify:\/\/products\/shopify-full-sites",
+        "cta2": "Contact us directly",
+        "cta2_link": "mailto:hello@lunalemon.dev",
+        "image_1": "shopify:\/\/shop_images\/Screen-shot-1.jpg",
+        "image_2": "shopify:\/\/shop_images\/screen-shot-2.jpg",
+        "image_3": "shopify:\/\/shop_images\/1.png",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "165476159216c4ff5c": {
+      "type": "heading",
+      "settings": {
+        "pre_title": "Expert development",
+        "title": "We speak, eat, sleep Shopify",
+        "paragraph": "<p>We have extensive Shopify experience and have developed ecommerce stores and solutions for our clients worldwide.Wether you want to built a new ecommerce store, migrate, or help with our current store. We are here to help you succeed. <\/p>",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
+      }
+    },
+    "165693105620682646": {
+      "type": "feature-carousel",
+      "settings": {
+        "pre_title": "",
+        "title": "",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "features": [
+          "shopify-customizations",
+          "shopify-full-sites",
+          "shopify-integration",
+          "shopify-seo-packages",
+          "shopify-website-maintenance"
+        ],
+        "spacing": "custom",
+        "spacing_top": 8,
+        "spacing_bottom": 24
+      }
+    },
+    "1659080056351f97d5": {
+      "type": "info-cards",
+      "settings": {
+        "pre_title": "Content Management System",
+        "title": "Keep your data syncronized",
+        "content_list": [
+          "shopify",
+          "vend-pos",
+          "erply",
+          "dear",
+          "vercel"
+        ],
+        "spacing": "custom",
+        "spacing_top": 32,
+        "spacing_bottom": 4
+      }
+    },
+    "1659095162e3e45728": {
+      "type": "logo-banner",
+      "settings": {
+        "title": "Our development skills",
+        "products": [
+          "copy-of-css",
+          "css",
+          "javascript",
+          "typescript",
+          "react",
+          "graphql",
+          "node-js",
+          "copy-of-node-js",
+          "postgresql",
+          "prisma",
+          "mdx",
+          "sass",
+          "tailwindcss",
+          "framer",
+          "github",
+          "amazon-web-services",
+          "firebase",
+          "eslint",
+          "copy-of-framer",
+          "headless-ui",
+          "react-query",
+          "redis",
+          "swc",
+          "three-js",
+          "turborepo",
+          "vite",
+          "webpack",
+          "amp",
+          "ios",
+          "babel",
+          "grunt",
+          "gulp",
+          "jsdom",
+          "jest",
+          "mysql",
+          "postcss",
+          "prettier",
+          "postman",
+          "remix-js",
+          "yarn"
+        ],
+        "collection": "",
+        "height": 40,
+        "style": "slider",
+        "animate": true,
+        "animation_duration": 90,
+        "minItems": 2,
+        "maxItems": 5,
+        "paddingY": 8,
+        "paddingX": 8,
+        "spacing": "custom",
+        "spacing_top": 0,
+        "spacing_bottom": 24
+      }
+    },
+    "16587554309243208c": {
+      "type": "story",
+      "blocks": {
+        "409dde1f-174f-42cd-a0d2-af9f7b9b8ad5": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Shopify experts & partners",
+            "title": "Why work with us",
+            "paragraph": "<p><strong>Certified Shopify partner:<\/strong>Luna Lemon is a part of the<br\/>Shopify development community with extensive Shopify experience and expertise.<br\/><strong>Provide an all-in-one solution:<\/strong>We handle everything in-house,<br\/>from developing and designing to growing and maintaining your Shopify store.<br\/><strong>Customized themes to fit your needs:<\/strong>We provide custom theme design that will convert visitors into buyers.<br\/><strong>Dedicated project manager:<\/strong>We provide a dedicated point of<br\/>contact at Luna Lemon to guide you through discovery, design, training, and final site launch.<br\/><strong>Experts in eCommerce optimization:<\/strong>In addition to being expert web developers, our SEO Specialists are equipt optimize your online store for better rankings and growth.<\/p>",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/why-work-with-us.png",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
+            "position": "left"
+          }
+        }
+      },
+      "block_order": [
+        "409dde1f-174f-42cd-a0d2-af9f7b9b8ad5"
+      ],
+      "settings": {
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1659100571ce4c9324": {
+      "type": "portfolio-preview",
+      "settings": {
+        "pre_title": "",
+        "title": "Checkout our portfolio",
+        "paragraph": "",
+        "products": [
+          "aiko",
+          "broadway-jewellers",
+          "bushscarf",
+          "click-upload",
+          "ford",
+          "hydrobiz",
+          "kids-living",
+          "lunatag",
+          "moritz-tellmann",
+          "volkswagen",
+          "waraq-health",
+          "zoom-printing"
+        ],
+        "collection": "",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1656930716ec9b0e94": {
+      "type": "image-carousel",
+      "disabled": true,
+      "settings": {
+        "pre_title": "Creating successfull E-commerce solutions",
+        "title": "Companies we've worked with",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "products": [
+
+        ],
+        "collection": "portfolio",
+        "blog": "",
+        "animate": false,
+        "animation_duration": 20,
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "165719846348099467": {
+      "type": "testimonial-list",
+      "settings": {
+        "pre_title": "What our clients say",
+        "title": "World-class teams use Lunalemon to power their websites.",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "left",
+        "products": [
+          "zoom-printing",
+          "suitable"
+        ],
+        "spacing": "custom",
+        "spacing_top": 16,
+        "spacing_bottom": 8
+      }
+    },
+    "165476583906badf90": {
+      "type": "logo-banner",
+      "settings": {
+        "title": "Brands we've worked with",
+        "products": [
+          "helly-hansen",
+          "kids-living",
+          "zoom-printing",
+          "aiko",
+          "hydrobiz",
+          "thinn",
+          "ford",
+          "volkswagen",
+          "turning-point",
+          "pichulik",
+          "suitable",
+          "matsidiso",
+          "alphabetpix",
+          "mind-over-matter",
+          "bushscarf"
+        ],
+        "collection": "",
+        "height": 80,
+        "style": "grid",
+        "animate": true,
+        "animation_duration": 20,
+        "minItems": 2,
+        "maxItems": 5,
+        "paddingY": 10,
+        "paddingX": 10,
+        "spacing": "custom",
+        "spacing_top": 0,
+        "spacing_bottom": 24
+      }
+    }
+  },
+  "order": [
+    "1656935895e67bca71",
+    "165476159216c4ff5c",
+    "165693105620682646",
+    "1659080056351f97d5",
+    "1659095162e3e45728",
+    "16587554309243208c",
+    "1659100571ce4c9324",
+    "1656930716ec9b0e94",
+    "165719846348099467",
+    "165476583906badf90"
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "sections": {
+    "165908667095db4aba": {
+      "type": "page-settings",
+      "settings": {
+        "color_accent": "#22c55e",
+        "color_accent_contrast": "#ffffff",
+        "color_accent_secondary": "",
+        "color_accent_secondary_contrast": "",
+        "color_accent_dark": "#ecca07",
+        "color_accent_contrast_dark": "#000000",
+        "color_accent_secondary_dark": "",
+        "color_accent_secondary_contrast_dark": ""
+      }
+    },
+    "1656935895e67bca71": {
+      "type": "hero-with-features",
+      "disabled": true,
+      "blocks": {
+        "689e6e02-64ee-4082-adc0-5adbbcb4c9d7": {
+          "type": "feature",
+          "settings": {
+            "title": "Reach out",
+            "paragraph": "Have a question? or have a service you need. Choose an option that suites you or send us an enquiry. Our team is ready to get you started.",
+            "icon": "ui-1"
+          }
+        },
+        "8a2a41e9-564a-45c3-abac-f9443e19308f": {
+          "type": "feature",
+          "settings": {
+            "title": "Team Match",
+            "paragraph": "Based on your enquiry we will assign a dedicated project manager matched to assist you, they take the time to ensure your needs are taken care of.",
+            "icon": "ui-2"
+          }
+        },
+        "161fe8eb-8549-454a-8b98-b7ac8a2e64d1": {
+          "type": "feature",
+          "settings": {
+            "title": "Get started",
+            "paragraph": "You are in good hands. With your dedicated project manager, the sky is the limit, they will be there every step of the way to see that your project is complete.",
+            "icon": "ui-3"
+          }
+        }
+      },
+      "block_order": [
+        "689e6e02-64ee-4082-adc0-5adbbcb4c9d7",
+        "8a2a41e9-564a-45c3-abac-f9443e19308f",
+        "161fe8eb-8549-454a-8b98-b7ac8a2e64d1"
+      ],
+      "settings": {
+        "pre_title": "Websites tailored to your needs",
+        "title": "We create Shopify Ecommerce solutions.",
+        "tech": [
+          "shopify",
+          "copy-of-node-js",
+          "tailwindcss"
+        ],
+        "paragraph": "<p>Wether you want to built a new ecommerce store, migrate from a different platform, or need to upgrade your current site. We are here to help you succeed.<\/p>",
+        "cta1": "Get started",
+        "cta1_link": "#",
+        "cta2": "Learn more",
+        "cta2_link": "#",
+        "image_1": "shopify:\/\/shop_images\/2.png",
+        "image_2": "shopify:\/\/shop_images\/1.png",
+        "image_3": "shopify:\/\/shop_images\/3.png",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "165476159216c4ff5c": {
+      "type": "heading",
+      "settings": {
+        "pre_title": "Continuous work for continuous results",
+        "title": "Site maintenance & SEO",
+        "paragraph": "<p>We have extensive Shopify experience and have maintained and upgraded ecommerce stores for our clients worldwide. Whether you are looking for a once of solution or a monthly plan. We are here to help you succeed.<\/p>",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center"
+      }
+    },
+    "1659086609d43c00c6": {
+      "type": "stats-graph",
+      "blocks": {
+        "eb582cd4-7139-435c-95ca-ce10f96556d6": {
+          "type": "stat",
+          "settings": {
+            "stat": "",
+            "title": "",
+            "descriptions": ""
+          }
+        }
+      },
+      "block_order": [
+        "eb582cd4-7139-435c-95ca-ce10f96556d6"
+      ],
+      "settings": {
+        "spacing": "custom",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1654762013d2c9eed0": {
+      "type": "story",
+      "blocks": {
+        "1edc02ca-a844-4f5c-93fb-791e53248869": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Essential for success",
+            "title": "Why site maintenance?",
+            "paragraph": "<p>Regular site maintenance is crucial to ensure your site is running optimally and customers are enjoying their user experience. Our team are on standby for any requests or challenges faced with your website, while creating monthly plans on improving and optimizating your Store. <\/p>",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/maintainace_7929f7f1-302a-4eee-a473-bd0d674e62a7.png",
+            "aspect_desktop": "auto",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
+            "position": "right"
+          }
+        }
+      },
+      "block_order": [
+        "1edc02ca-a844-4f5c-93fb-791e53248869"
+      ],
+      "settings": {
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1658740480bb450054": {
+      "type": "pricing",
+      "blocks": {
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab": {
+          "type": "package",
+          "settings": {
+            "title": "Basic",
+            "price": "From R3 900 pm -",
+            "subtitle": "For personal or small start-up ecommerce sites with a simple responsive design.",
+            "cta1": "Get started",
+            "cta1_link": "#section--contact",
+            "cta2": "Contact us",
+            "cta2_link": "mailto:hello@lunalemon.dev",
+            "feature_1": "6 Hours allocated - requests",
+            "feature_2": "Tech support (Domains, hosting, emails)",
+            "feature_3": "Website Support",
+            "feature_4": "Website Content Changes",
+            "feature_5": "Basic Image Editing",
+            "feature_6": "Basic Consultation",
+            "feature_7": "",
+            "feature_8": "",
+            "feature_9": "",
+            "feature_10": "",
+            "feature_11": "",
+            "feature_12": "",
+            "feature_13": "",
+            "feature_14": "",
+            "feature_15": "",
+            "shadow": false,
+            "primary": false,
+            "color_accent": "#19222e",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        },
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab2": {
+          "type": "package",
+          "settings": {
+            "title": "Advanced",
+            "price": "From R8 500 pm, -",
+            "subtitle": "For professional or medium size ecommerce sites with a unique responsive design.",
+            "cta1": "Get started",
+            "cta1_link": "#section--contact",
+            "cta2": "Contact us",
+            "cta2_link": "mailto:hello@lunalemon.dev",
+            "feature_1": "12 Hours allocated - requests + strategy",
+            "feature_2": "Monthly Data Backups",
+            "feature_3": "Everything in Basic, plus",
+            "feature_4": "App Installations \/ Maintenance",
+            "feature_5": "SEO optimizations",
+            "feature_6": "Graphic Design",
+            "feature_7": "Website health check",
+            "feature_8": "Training",
+            "feature_9": "Strategy Consultation",
+            "feature_10": "",
+            "feature_11": "",
+            "feature_12": "",
+            "feature_13": "",
+            "feature_14": "",
+            "feature_15": "",
+            "shadow": true,
+            "primary": true,
+            "color_accent": "#22c55e",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        },
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab3": {
+          "type": "package",
+          "settings": {
+            "title": "Pro",
+            "price": "From R 14 600, -",
+            "subtitle": "For well established or large size ecommerce sites with a custom responsive design.",
+            "cta1": "Get started",
+            "cta1_link": "#section--contact",
+            "cta2": "Contact us",
+            "cta2_link": "mailto:hello@lunalemon.dev",
+            "feature_1": "20 Hours Allocated - requests + strategy",
+            "feature_2": "Weekly Data Backups",
+            "feature_3": "Everything in Advanced, plus",
+            "feature_4": "Performance Improvement",
+            "feature_5": "Custom Feature development",
+            "feature_6": "Data conversion scripts",
+            "feature_7": "Monthly Analysis Report",
+            "feature_8": "Conversion Strategy & Suggestions",
+            "feature_9": "Keyword Research and Tracking",
+            "feature_10": "Theme updates",
+            "feature_11": "",
+            "feature_12": "",
+            "feature_13": "",
+            "feature_14": "",
+            "feature_15": "",
+            "shadow": true,
+            "primary": false,
+            "color_accent": "",
+            "color_accent_contrast": "",
+            "color_accent_secondary": "",
+            "color_accent_secondary_contrast": "",
+            "color_accent_dark": "",
+            "color_accent_contrast_dark": "",
+            "color_accent_secondary_dark": "",
+            "color_accent_secondary_contrast_dark": ""
+          }
+        }
+      },
+      "block_order": [
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab",
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab2",
+        "5e3e9066-423d-4c37-b591-3d6ecf0e5bab3"
+      ],
+      "settings": {
+        "pre_title": "Monthly website maintanace package",
+        "title": "Find a plan that suites your needs.",
+        "paragraph": "<p>Get the best ecommerce store to suite your needs.<\/p>",
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "16587554309243208c": {
+      "type": "story",
+      "blocks": {
+        "409dde1f-174f-42cd-a0d2-af9f7b9b8ad5": {
+          "type": "image-text",
+          "settings": {
+            "pre_title": "Shopify experts & partners",
+            "title": "Why work with us",
+            "paragraph": "<p><strong>Certified Shopify partner:<\/strong> Luna Lemon is a part of the<br\/>Shopify development community with extensive Shopify experience and expertise.<br\/><strong>Provide an all-in-one solution: <\/strong>We handle everything in-house,<br\/>from developing and designing to growing and maintaining your Shopify store.<br\/><strong>Customized themes to fit your needs: <\/strong>We provide custom theme design that will convert visitors into buyers.<br\/><strong>Dedicated project manager:<\/strong> We provide a dedicated point of<br\/>contact at Luna Lemon to guide you through discovery, design, training, and final site launch.<br\/><strong>Experts in eCommerce optimization:<\/strong> In addition to being expert web developers, our SEO Specialists are equipt optimize your online store for better rankings and growth.<\/p>",
+            "list_title": "",
+            "list": "",
+            "image": "shopify:\/\/shop_images\/why-work-with-us.png",
+            "aspect_desktop": "4-3",
+            "fit_height": false,
+            "aspect_mobile": "16-9",
+            "position": "left"
+          }
+        }
+      },
+      "block_order": [
+        "409dde1f-174f-42cd-a0d2-af9f7b9b8ad5"
+      ],
+      "settings": {
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "1656930716ec9b0e94": {
+      "type": "image-carousel",
+      "settings": {
+        "pre_title": "Creating successfull E-commerce solutions",
+        "title": "Companies we've worked with",
+        "paragraph": "",
+        "cta1": "",
+        "cta1_link": "",
+        "cta2": "",
+        "cta2_link": "",
+        "position": "center",
+        "products": [
+
+        ],
+        "collection": "portfolio",
+        "blog": "",
+        "animate": false,
+        "animation_duration": 20,
+        "spacing": "md",
+        "spacing_top": 0,
+        "spacing_bottom": 0
+      }
+    },
+    "165476583906badf90": {
+      "type": "logo-banner",
+      "settings": {
+        "title": "Brands we've worked with",
+        "products": [
+          "ford",
+          "kids-living",
+          "lunatag",
+          "volkswagen",
+          "zoom-printing",
+          "bushscarf",
+          "broadway-jewellers",
+          "moritz-tellmann"
+        ],
+        "collection": "",
+        "height": 40,
+        "style": "slider",
+        "animate": true,
+        "animation_duration": 20,
+        "minItems": 2,
+        "maxItems": 5,
+        "paddingY": 8,
+        "paddingX": 8,
+        "spacing": "custom",
+        "spacing_top": 0,
+        "spacing_bottom": 24
+      }
+    }
+  },
+  "order": [
+    "165908667095db4aba",
+    "1656935895e67bca71",
+    "165476159216c4ff5c",
+    "1659086609d43c00c6",
+    "1654762013d2c9eed0",
+    "1658740480bb450054",
+    "16587554309243208c",
+    "1656930716ec9b0e94",
+    "165476583906badf90"
+  ]
+}
