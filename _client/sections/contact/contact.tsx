@@ -15,6 +15,7 @@ import { ContactSection } from ".shopify-cms/types/sections";
 import { delay } from "utils/delay";
 import { scrollToY } from "utils/scroll-to";
 import { serializeForm } from "utils/serialize-form";
+import { event } from "nextjs-google-analytics";
 
 export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
   const [{ global }] = useShopifyData();
@@ -27,6 +28,11 @@ export const Contact: FC<ContactSection> = ({ id, settings, blocks, type }) => {
     e.preventDefault();
 
     setForceValidate(() => true);
+
+    event("submit_form", {
+      category: "Contact",
+      label: serializeForm(formRef.current)?.email[0],
+    });
 
     await delay(10);
     const isValid = formRef.current?.querySelectorAll(`[data-form-error="true"]`)?.length === 0;

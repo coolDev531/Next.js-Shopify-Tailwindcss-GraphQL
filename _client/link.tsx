@@ -1,6 +1,8 @@
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
+import { event } from "nextjs-google-analytics";
 import { AnchorHTMLAttributes, FC, useCallback } from "react";
 import { isExternalUrl } from "utils/is-external-url";
+import { serializeForm } from "utils/serialize-form";
 
 export type LinkProps = AnchorHTMLAttributes<any> & NextLinkProps;
 
@@ -49,6 +51,19 @@ export const Link: FC<LinkProps> = ({
     }
   }, [href, onClick]);
 
+  const handleExternalClick = useCallback((e) => {
+    if (/^mailto:/.test(href)) {
+      event("submit_form", {
+        category: "Email",
+        label: href.replace("mailto:", ""),
+      });
+    }
+
+    if (onClick) {
+      onClick(e);
+    }
+  }, [href, onClick]);
+
   return (
     <>
       {href && !isExternalUrl(href)
@@ -64,7 +79,7 @@ export const Link: FC<LinkProps> = ({
         ? <a
             href={typeof href === "string" ? href.replace(/^\/products\//gi, "/") : href}
             rel={AnchorProps?.target === "_blank" ? "noopener noreferrer" : undefined}
-            onClick={onClick}
+            onClick={handleExternalClick}
             {...AnchorProps}
           >
             {children}
