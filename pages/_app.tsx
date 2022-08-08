@@ -6,8 +6,10 @@ import { ContextProviders } from "_client/stores/_context-providers";
 import { LoadInitialData } from "_client/stores/_load-initial-data";
 import { AppRouter } from "_server/settings/api-routes";
 import { DefaultSeo } from "next-seo";
+import type { NextWebVitalsMetric } from "next/app";
 import { AppProps } from "next/app";
 import { useRouter } from "next/router";
+import { event, GoogleAnalytics, usePageViews } from "nextjs-google-analytics";
 import { FC } from "react";
 import "styles/tailwind.css";
 import "styles/theme.scss";
@@ -48,30 +50,42 @@ export const SEO = {
   },
 };
 
+export function reportWebVitals({ id, name, label, value }: NextWebVitalsMetric) {
+  event(name, {
+    category: label === "web-vital" ? "Web Vitals" : "Next.js custom metric",
+    value: Math.round(name === "CLS" ? value * 1000 : value), // values must be integers
+    label: id, // id unique to current page load
+    nonInteraction: true, // avoids affecting bounce rate.
+  });
+}
+
 const App: FC<AppProps> = ({ pageProps, Component }) => {
   const router = useRouter();
-  console.log(router.asPath);
+  usePageViews();
 
   return (
-    <ShopifyCms global={pageProps?.global} sections={pageProps?.sections}>
-      {/*<ShopifyDataProvider init={{ sections: pageProps?.sections, global: pageProps?.global }}>*/}
-      <ContextProviders>
-        <LoadInitialData>
-          <DefaultSeo
-            {...SEO}
-            canonical={`${SEO.url}${router.asPath}`}
-            twitter={SEO.twitter}
-            title={SEO.title}
-            description={SEO.description}
-            openGraph={SEO.openGraph}
-          />
-          <ThemeLayout sections={pageProps?.sections} global={pageProps?.global} />
+    <>
+      <GoogleAnalytics strategy="lazyOnload" />
+      <ShopifyCms global={pageProps?.global} sections={pageProps?.sections}>
+        {/*<ShopifyDataProvider init={{ sections: pageProps?.sections, global: pageProps?.global }}>*/}
+        <ContextProviders>
+          <LoadInitialData>
+            <DefaultSeo
+              {...SEO}
+              canonical={`${SEO.url}${router.asPath}`}
+              twitter={SEO.twitter}
+              title={SEO.title}
+              description={SEO.description}
+              openGraph={SEO.openGraph}
+            />
+            <ThemeLayout sections={pageProps?.sections} global={pageProps?.global} />
 
-          <Component {...pageProps} />
-        </LoadInitialData>
-      </ContextProviders>
-      {/*</ShopifyDataProvider>*/}
-    </ShopifyCms>
+            <Component {...pageProps} />
+          </LoadInitialData>
+        </ContextProviders>
+        {/*</ShopifyDataProvider>*/}
+      </ShopifyCms>
+    </>
   );
 };
 
