@@ -1,8 +1,6 @@
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
-import { event } from "nextjs-google-analytics";
 import { AnchorHTMLAttributes, FC, useCallback } from "react";
 import { isExternalUrl } from "utils/is-external-url";
-import { serializeForm } from "utils/serialize-form";
 
 export type LinkProps = AnchorHTMLAttributes<any> & NextLinkProps;
 
@@ -52,18 +50,10 @@ export const Link: FC<LinkProps> = ({
   }, [href, onClick]);
 
   const handleExternalClick = useCallback((e) => {
-    if (/^mailto:/.test(href)) {
-      console.log("google contact event");
-      event("contact", {
-        category: "email",
-        label: href.replace("mailto:", ""),
-      });
-    }
-
     if (onClick) {
       onClick(e);
     }
-  }, [href, onClick]);
+  }, [onClick]);
 
   return (
     <>

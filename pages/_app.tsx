@@ -10,7 +10,7 @@ import type { NextWebVitalsMetric } from "next/app";
 import { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { event, GoogleAnalytics, usePageViews } from "nextjs-google-analytics";
-import { FC } from "react";
+import { FC, useCallback, useEffect } from "react";
 import "styles/tailwind.css";
 import "styles/theme.scss";
 import "styles/utils.scss";
@@ -62,6 +62,26 @@ export function reportWebVitals({ id, name, label, value }: NextWebVitalsMetric)
 const App: FC<AppProps> = ({ pageProps, Component }) => {
   const router = useRouter();
   usePageViews();
+
+  const emitEmailEvents = useCallback((e) => {
+    console.log(e, e.target.href.replace("mailto:", ""));
+    event("contact", {
+      category: "Email",
+      label: e.target.href.replace("mailto:", ""),
+    });
+  }, []);
+
+  useEffect(() => {
+    document.querySelectorAll("[href*=mailto]").forEach((el) => {
+      el.addEventListener("click", emitEmailEvents);
+    });
+
+    return () => {
+      document.querySelectorAll("[href*=mailto]").forEach((el) => {
+        el.removeEventListener("click", emitEmailEvents);
+      });
+    };
+  }, [emitEmailEvents, router.asPath]);
 
   return (
     <>
