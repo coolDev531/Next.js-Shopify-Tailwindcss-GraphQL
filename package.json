@@ -1,6 +1,6 @@
 {
   "name": "lunalemon.dev",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "license": "MIT",
   "scripts": {
     "dev": "npm-run-all --parallel next:dev shopify-dev",
