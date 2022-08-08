@@ -53,8 +53,9 @@ export const Link: FC<LinkProps> = ({
 
   const handleExternalClick = useCallback((e) => {
     if (/^mailto:/.test(href)) {
-      event("submit_form", {
-        category: "Email",
+      console.log("google contact event");
+      event("contact", {
+        category: "email",
         label: href.replace("mailto:", ""),
       });
     }
