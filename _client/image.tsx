@@ -44,7 +44,7 @@ export const Image: FC<
   return (
     <NextImage
       {...rest}
-      placeholder={!preload ? "blur" : undefined}
+      placeholder={!preload && (width > 40 || height > 40) ? "blur" : undefined}
       blurDataURL={
         typeof src === "string" && !preload
           ? `/_next/image?url=${encodeURIComponent(

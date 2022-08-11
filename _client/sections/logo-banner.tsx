@@ -20,6 +20,7 @@ export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }
 export const LogoBannerGrid: FC<LogoBannerSection> = ({ id, settings, blocks, type }) => {
   const [tooltip, setTooltip] = useTooltipStore();
   const products = settings.collection?.products ?? settings.products ?? [];
+
   return (
     <Wrapper
       maxWidth="xl"
@@ -39,12 +40,7 @@ export const LogoBannerGrid: FC<LogoBannerSection> = ({ id, settings, blocks, ty
           }}
         >
           {products
-            ?.filter(
-              (p) =>
-                p.metafields.find(({ key }) => key === "logo") ||
-                p.metafields.find(({ key }) => key === "logo_dark") ||
-                p.featured_media
-            )
+            ?.filter((p) => p.metafields["logo"] || p.metafields["logo_dark"] || p.featured_media)
             ?.map((product) => (
               <div
                 key={product.id}
@@ -55,13 +51,9 @@ export const LogoBannerGrid: FC<LogoBannerSection> = ({ id, settings, blocks, ty
                   height={settings.height}
                   title={product.title}
                   image={
-                    (product.metafields.find(({ key }) => key === "logo")
-                      ?.value as _Image_liquid) ?? product.featured_media
+                    (product.metafields["logo"]?.value as _Image_liquid) ?? product.featured_media
                   }
-                  darkImage={
-                    product.metafields.find(({ key }) => key === "logo_dark")
-                      ?.value as _Image_liquid
-                  }
+                  darkImage={product.metafields["logo_dark"]?.value as _Image_liquid}
                 />
               </div>
             ))}
@@ -171,24 +163,14 @@ export const LogoBannerSliderRow = forwardRef<
   return (
     <div className={clsx("grid auto-cols-max grid-flow-col-dense gap-12", className)} ref={ref}>
       {products
-        ?.filter(
-          (p) =>
-            p.metafields.find(({ key }) => key === "logo") ||
-            p.metafields.find(({ key }) => key === "logo_dark") ||
-            p.featured_media
-        )
+        ?.filter((p) => p.metafields["logo"] || p.metafields["logo_dark"] || p.featured_media)
         ?.map((product) => (
           <LogoBannerSliderItem
             key={product.id}
             height={settings.height}
             title={product.title}
-            image={
-              (product.metafields.find(({ key }) => key === "logo")?.value as _Image_liquid) ??
-              product.featured_media
-            }
-            darkImage={
-              product.metafields.find(({ key }) => key === "logo_dark")?.value as _Image_liquid
-            }
+            image={(product.metafields["logo"]?.value as _Image_liquid) ?? product.featured_media}
+            darkImage={product.metafields["logo_dark"]?.value as _Image_liquid}
           />
         ))}
       {blocks.map((block) => {

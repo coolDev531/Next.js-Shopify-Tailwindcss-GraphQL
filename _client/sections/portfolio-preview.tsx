@@ -8,16 +8,10 @@ import { _Metafield_liquid_file_reference_image } from ".shopify-cms/types/shopi
 export const PortfolioPreview: FC<PortfolioPreviewSection> = ({ id, settings, blocks, type }) => {
   const products =
     settings.collection?.products?.filter(
-      (p) =>
-        p.featured_media &&
-        (p.metafields.find(({ key }) => key === "logo") ||
-          p.metafields.find(({ key }) => key === "logo_dark"))
+      (p) => p.featured_media && (p.metafields["logo"] || p.metafields["logo_dark"])
     ) ??
     settings.products?.filter(
-      (p) =>
-        p.featured_media &&
-        (p.metafields.find(({ key }) => key === "logo") ||
-          p.metafields.find(({ key }) => key === "logo_dark"))
+      (p) => p.featured_media && (p.metafields["logo"] || p.metafields["logo_dark"])
     ) ??
     [];
 
@@ -40,9 +34,8 @@ export const PortfolioPreview: FC<PortfolioPreviewSection> = ({ id, settings, bl
           {products
             ?.filter((p, i) => i < 6 || showAll)
             .map((product) => {
-              const logo = (product.metafields.find(({ key }) => key === "logo_dark")?.value ||
-                product.metafields.find(({ key }) => key === "logo")
-                  ?.value) as _Metafield_liquid_file_reference_image;
+              const logo = (product.metafields["logo_dark"]?.value ||
+                product.metafields["logo"]?.value) as _Metafield_liquid_file_reference_image;
 
               return (
                 <Link key={product.id} href={product.url} className="group">

@@ -26,7 +26,7 @@ export const HeroWithFeatures: FC<HeroWithFeaturesSection> = ({ id, settings, bl
               <h2 className="heading-2xl">{settings.title}</h2>
               <div className="mt-4 flex flex-wrap gap-6">
                 {settings.tech.map((product) => {
-                  const icon = product.metafields.find(({ key }) => key === "react_icon")?.value;
+                  const icon = product.metafields["react_icon"]?.value;
                   if (icon) {
                     return (
                       <figure

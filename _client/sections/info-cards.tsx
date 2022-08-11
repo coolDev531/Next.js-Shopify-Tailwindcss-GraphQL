@@ -23,12 +23,11 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
       <div className="relative sm:left-1/2 sm:-ml-[50vw] sm:w-screen sm:pl-[max(32px,calc((100vw-80rem)/2+32px))]">
         <div className="scrollbar-none grid gap-4 overflow-x-scroll sm:auto-cols-min sm:grid-flow-col-dense">
           {settings.content_list.map((product) => {
-            const svgImage = product.metafields.find(
-              ({ key }) => key === "logo"
-            ) as _Metafield_liquid_file_reference_force_generic;
+            const svgImage = product.metafields[
+              "logo"
+            ] as _Metafield_liquid_file_reference_force_generic;
 
-            const darkLogo = product.metafields.find(({ key }) => key === "logo_dark")
-              ?.value as _Image_liquid;
+            const darkLogo = product.metafields["logo_dark"]?.value as _Image_liquid;
 
             return (
               <section key={product.id} className="card min-w-[220px] select-none">

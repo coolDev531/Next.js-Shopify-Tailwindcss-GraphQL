@@ -20,18 +20,13 @@ export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, settin
       <BlockHeading settings={heading} />
       <div className="mt-4 flex grid-cols-2 flex-col gap-8 sm:grid">
         {products?.map((product) => {
-          const logo = product.metafields.find(
-            ({ key }) => key === "logo"
-          ) as _Metafield_liquid_file_reference_force_image;
-          const logoDark = product.metafields.find(
-            ({ key }) => key === "logo_dark"
-          ) as _Metafield_liquid_file_reference_force_image;
-          const testimonial = product.metafields.find(({ key }) => key === "testimonial")
-            ?.value as string;
-          const author = product.metafields.find(({ key }) => key === "contact_person")
-            ?.value as string;
-          const jobTitle = product.metafields.find(({ key }) => key === "job_title")
-            ?.value as string;
+          const logo = product.metafields["logo"] as _Metafield_liquid_file_reference_force_image;
+          const logoDark = product.metafields[
+            "logo_dark"
+          ] as _Metafield_liquid_file_reference_force_image;
+          const testimonial = product.metafields["testimonial"]?.value as string;
+          const author = product.metafields["contact_person"]?.value as string;
+          const jobTitle = product.metafields["job_title"]?.value as string;
 
           return (
             <TestimonialListItem

@@ -1,0 +1,154 @@
+
+{
+  "id": "template--14255313911863__165719846348099467",
+  "type": "testimonial-list",
+  "settings":{
+      "pre_title": "What our clients say",
+      "title": "World-class teams use Lunalemon to power their websites.",
+      "paragraph": "",
+      "cta1": "",
+      "cta1_link": null,
+      "cta2": "",
+      "cta2_link": null,
+      "position": "left","products":[{
+  "available": true,
+  "collections": [{"id":263401406519,"handle":"portfolio","title":"Portfolio","updated_at":"2022-07-29T16:41:43+02:00","body_html":"","published_at":"2022-07-05T10:05:59+02:00","sort_order":"best-selling","template_suffix":"","disjunctive":false,"rules":[{"column":"type","relation":"equals","condition":"portfolio"}],"published_scope":"web"}],
+  "compare_at_price": null,
+  "compare_at_price_max": 0,
+  "compare_at_price_min": 0,
+  "compare_at_price_varies": false,
+  "content": "\u003cspan\u003eHow we helped this printing company \u003c\/span\u003e\u003cspan\u003ein successfully migrating their store from Legacy to Shopify covering aspects from inventory management, web development, custom product set-up.\u003c\/span\u003e",
+  "created_at": "2022-07-05T09:44:33+0200",
+  "description": "\u003cspan\u003eHow we helped this printing company \u003c\/span\u003e\u003cspan\u003ein successfully migrating their store from Legacy to Shopify covering aspects from inventory management, web development, custom product set-up.\u003c\/span\u003e",
+  "featured_image": "\/\/cdn.shopify.com\/s\/files\/1\/2196\/3483\/products\/sstore-migration.jpg?v=1657007084",
+  "featured_media": {"alt":null,"id":21541359779895,"position":1,"preview_image":{"aspect_ratio":1.174,"height":1209,"width":1419,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2196\/3483\/products\/sstore-migration.jpg?v=1657007084"},"aspect_ratio":1.174,"height":1209,"media_type":"image","src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2196\/3483\/products\/sstore-migration.jpg?v=1657007084","width":1419},
+  "handle": "zoom-printing",
+  "id": 6674309775415,
+  "images": ["\/\/cdn.shopify.com\/s\/files\/1\/2196\/3483\/products\/sstore-migration.jpg?v=1657007084"],
+  "media": [{"alt":null,"id":21541359779895,"position":1,"preview_image":{"aspect_ratio":1.174,"height":1209,"width":1419,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2196\/3483\/products\/sstore-migration.jpg?v=1657007084"},"aspect_ratio":1.174,"height":1209,"media_type":"image","src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2196\/3483\/products\/sstore-migration.jpg?v=1657007084","width":1419}],
+  "metafields":{"contact_personSteve K ":{
+      "type": "single_line_text_field",
+      "value": "Steve K "
+      },"job_titleManaging Director":{
+      "type": "single_line_text_field",
+      "value": "Managing Director"
+      },"logogid://shopify/MediaImage/21541361156151":{
+      "type": "file_reference",
+      "value": {"alt":null,"id":21541361156151,"position":null,"preview_image":{"aspect_ratio":2.778,"height":360,"width":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2196\/3483\/files\/logo-tight-large_7c9e9999-3dc8-40ca-935f-c851265c90c9_2x_1.png?v=1657007120"},"aspect_ratio":2.778,"height":360,"media_type":"image","src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2196\/3483\/files\/logo-tight-large_7c9e9999-3dc8-40ca-935f-c851265c90c9_2x_1.png?v=1657007120","width":1000}
+      },"logo_darkgid://shopify/MediaImage/21605720490039":{
+      "type": "file_reference",
+      "value": {"alt":null,"id":21605720490039,"position":null,"preview_image":{"aspect_ratio":2.5,"height":320,"width":800,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2196\/3483\/files\/Artboard_95_copy_8.png?v=1659105512"},"aspect_ratio":2.5,"height":320,"media_type":"image","src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2196\/3483\/files\/Artboard_95_copy_8.png?v=1659105512","width":800}
+      },"testimonialWe experienced excellent service right from the start. They are highly responsive and ready to get to the job done. I would personally recommend them for all your Shopify website needs. I have worked with a lot of independent Shopify consultants and agencies, and I would like to highlight that these guys are the best that I have worked with by far. ":{
+      "type": "multi_line_text_field",
+      "value": "We experienced excellent service right from the start. They are highly responsive and ready to get to the job done. I would personally recommend them for all your Shopify website needs. I have worked with a lot of independent Shopify consultants and agencies, and I would like to highlight that these guys are the best that I have worked with by far. "
+      }{,
+  "options": ["Title"],
+  "price": 0,
+  "price_max": 0,
+  "price_min": 0,
+  "price_varies": false,
+  "published_at": "2022-07-05T09:44:33+0200",
+  "tags": [],
+  "template_suffix": "portfolio-zoom-printing",
+  "title": "Zoom Printing",
+  "type": "portfolio",
+  "url": "\/products\/zoom-printing",
+  "variants": [{
+  "available": true,
+  "barcode": "",
+  "compare_at_price": null,
+  "featured_media": null,
+  "id": 39801138806839,
+  "image": null,
+  "inventory_management": null,
+  "inventory_policy": "deny",
+  "inventory_quantity": 0,
+  "metafields":{{,
+  "options": ["Default Title"],
+  "option1": "Default Title",
+  "option2": null,
+  "option3": null,
+  "price": 0,
+  "requires_shipping": false,
+  "sku": "",
+  "taxable": false,
+  "title": "Default Title",
+  "url": "\/products\/zoom-printing?variant=39801138806839",
+  "weight": 0
+  }],
+  "vendor": "Liquix Theme Dev"
+  },{
+  "available": true,
+  "collections": [],
+  "compare_at_price": null,
+  "compare_at_price_max": 0,
+  "compare_at_price_min": 0,
+  "compare_at_price_varies": false,
+  "content": "",
+  "created_at": "2022-07-29T16:41:19+0200",
+  "description": "",
+  "featured_image": null,
+  "featured_media": null,
+  "handle": "suitable",
+  "id": 6689662468151,
+  "images": [],
+  "media": [],
+  "metafields":{"contact_personNilesh Cara":{
+      "type": "single_line_text_field",
+      "value": "Nilesh Cara"
+      },"job_titleOwner ":{
+      "type": "single_line_text_field",
+      "value": "Owner "
+      },"logogid://shopify/MediaImage/21605720784951":{
+      "type": "file_reference",
+      "value": {"alt":null,"id":21605720784951,"position":null,"preview_image":{"aspect_ratio":2.5,"height":320,"width":800,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2196\/3483\/files\/Artboard_95_copy_22.png?v=1659105512"},"aspect_ratio":2.5,"height":320,"media_type":"image","src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2196\/3483\/files\/Artboard_95_copy_22.png?v=1659105512","width":800}
+      },"logo_darkgid://shopify/MediaImage/21605720948791":{
+      "type": "file_reference",
+      "value": {"alt":null,"id":21605720948791,"position":null,"preview_image":{"aspect_ratio":2.5,"height":320,"width":800,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2196\/3483\/files\/Artboard_95_copy_20.png?v=1659105512"},"aspect_ratio":2.5,"height":320,"media_type":"image","src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2196\/3483\/files\/Artboard_95_copy_20.png?v=1659105512","width":800}
+      },"testimonialThe Lunalemon team is efficient and professional. They helped us successfully launch our site on budget and on schedule. They also provided top-quality service while keeping us in the loop with the progress of our project. They are my go-to team for anything Shopify related.  ":{
+      "type": "multi_line_text_field",
+      "value": "The Lunalemon team is efficient and professional. They helped us successfully launch our site on budget and on schedule. They also provided top-quality service while keeping us in the loop with the progress of our project. They are my go-to team for anything Shopify related.  "
+      }{,
+  "options": ["Title"],
+  "price": 0,
+  "price_max": 0,
+  "price_min": 0,
+  "price_varies": false,
+  "published_at": "2022-07-29T16:41:19+0200",
+  "tags": [],
+  "template_suffix": "",
+  "title": "Suitable",
+  "type": "Brands",
+  "url": "\/products\/suitable",
+  "variants": [{
+  "available": true,
+  "barcode": "",
+  "compare_at_price": null,
+  "featured_media": null,
+  "id": 39845230739511,
+  "image": null,
+  "inventory_management": null,
+  "inventory_policy": "deny",
+  "inventory_quantity": 0,
+  "metafields":{{,
+  "options": ["Default Title"],
+  "option1": "Default Title",
+  "option2": null,
+  "option3": null,
+  "price": 0,
+  "requires_shipping": false,
+  "sku": "",
+  "taxable": false,
+  "title": "Default Title",
+  "url": "\/products\/suitable?variant=39845230739511",
+  "weight": 0
+  }],
+  "vendor": "Liquix Theme Dev"
+  }],
+      "with_link": false,
+      "spacing": "custom",
+      "spacing_top": 16,
+      "spacing_bottom": 8},
+  "blocks": [],
+  "global": false
+}
