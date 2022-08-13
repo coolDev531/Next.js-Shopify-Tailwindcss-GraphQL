@@ -20,13 +20,11 @@ export const TestimonialList: FC<TestimonialListSection> = ({ id, blocks, settin
       <BlockHeading settings={heading} />
       <div className="mt-4 flex grid-cols-2 flex-col gap-8 sm:grid">
         {products?.map((product) => {
-          const logo = product.metafields["logo"] as _Metafield_liquid_file_reference_force_image;
-          const logoDark = product.metafields[
-            "logo_dark"
-          ] as _Metafield_liquid_file_reference_force_image;
-          const testimonial = product.metafields["testimonial"]?.value as string;
-          const author = product.metafields["contact_person"]?.value as string;
-          const jobTitle = product.metafields["job_title"]?.value as string;
+          const logo = product.metafields.logo;
+          const logoDark = product.metafields.logo_dark;
+          const testimonial = product.metafields.testimonial;
+          const author = product.metafields.contact_person;
+          const jobTitle = product.metafields.job_title;
 
           return (
             <TestimonialListItem
@@ -88,30 +86,30 @@ export const TestimonialListItem = ({
           {logo && logoDark
             ? <>
                 <Image
-                  src={`${logo?.value?.src}`}
+                  src={`${logo?.src}`}
                   className="h-full w-auto object-contain dark:hidden"
                   maxHeight={200}
-                  width={logo?.value?.width}
-                  height={logo?.value?.height}
-                  alt={logo?.value?.alt || imageAlt}
+                  width={logo?.width}
+                  height={logo?.height}
+                  alt={logo?.alt || imageAlt}
                 />
                 <Image
-                  src={`${logoDark?.value?.src}`}
+                  src={`${logoDark?.src}`}
                   className="hidden h-full w-auto object-contain dark:block"
                   maxHeight={200}
-                  width={logoDark?.value?.width}
-                  height={logoDark?.value?.height}
-                  alt={logoDark?.value?.alt || imageAlt}
+                  width={logoDark?.width}
+                  height={logoDark?.height}
+                  alt={logoDark?.alt || imageAlt}
                 />
               </>
             : logo
             ? <Image
-                src={`${logo?.value?.src}`}
+                src={`${logo?.src}`}
                 className="h-full w-auto object-contain"
                 maxHeight={200}
-                width={logo?.value?.width}
-                height={logo?.value?.height}
-                alt={logo?.value?.alt || imageAlt}
+                width={logo?.width}
+                height={logo?.height}
+                alt={logo?.alt || imageAlt}
               />
             : null}
         </figure>

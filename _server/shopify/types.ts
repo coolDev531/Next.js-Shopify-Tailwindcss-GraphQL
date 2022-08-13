@@ -10,106 +10,30 @@ export type Scalars = {
   Boolean: boolean;
   Int: number;
   Float: number;
-  /**
-   * An Amazon Web Services Amazon Resource Name (ARN), including the Region and account ID.
-   * For more information, refer to [Amazon Resource Names](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html).
-   */
   ARN: any;
-  /**
-   * Represents an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)-encoded date string.
-   * For example, September 7, 2019 is represented as `"2019-07-16"`.
-   *
-   */
   Date: any;
-  /**
-   * Represents an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)-encoded date and time string.
-   * For example, 3:30 pm on September 7, 2019 in the time zone of UTC (Coordinated Universal Time) is
-   * represented as `"2019-09-07T15:50:00Z`".
-   *
-   */
   DateTime: any;
-  /**
-   * A signed decimal number, which supports arbitrary precision and is serialized as a string.
-   *
-   * Example values: `"29.99"`, `"29.999"`.
-   *
-   */
   Decimal: any;
-  /**
-   * A string containing a strict subset of HTML code. Non-allowed tags will be stripped out.
-   * Allowed tags:
-   * * `a` (allowed attributes: `href`)
-   * * `b`
-   * * `br`
-   * * `em`
-   * * `i`
-   * * `strong`
-   * * `u`
-   * Use [HTML](https://shopify.dev/api/admin-graphql/latest/scalars/HTML) instead if you need to
-   * include other HTML tags.
-   *
-   * Example value: `"Your current domain is <strong>johns-apparel.myshopify.com</strong>."`
-   *
-   */
   FormattedString: any;
-  /**
-   * A string containing HTML code. Refer to the [HTML spec](https://html.spec.whatwg.org/#elements-3) for a
-   * complete list of HTML elements.
-   *
-   * Example value: `"<p>Grey cotton knit sweater.</p>"`.
-   *
-   */
   HTML: any;
-  /**
-   * A [JSON](https://www.json.org/json-en.html) object.
-   *
-   * Example value:
-   * `{
-   *   "product": {
-   *     "id": "gid://shopify/Product/1346443542550",
-   *     "title": "White T-shirt",
-   *     "options": [{
-   *       "name": "Size",
-   *       "values": ["M", "L"]
-   *     }]
-   *   }
-   * }`
-   *
-   */
   JSON: any;
-  /** A monetary value string without a currency symbol or code. Example value: `"100.57"`. */
   Money: any;
-  /**
-   * Represents a unique identifier in the Storefront API. A `StorefrontID` value can be used wherever an ID is expected in the Storefront API.
-   *
-   * Example value: `"Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEwMDc5Nzg1MTAw"`.
-   *
-   */
   StorefrontID: any;
-  /**
-   * Represents an [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986) and
-   * [RFC 3987](https://datatracker.ietf.org/doc/html/rfc3987)-compliant URI string.
-   *
-   * For example, `"https://johns-apparel.myshopify.com"` is a valid URL. It includes a scheme (`https`) and a host
-   * (`johns-apparel.myshopify.com`).
-   *
-   */
   URL: any;
-  /**
-   * An unsigned 64-bit integer. Represents whole numeric values between 0 and 2^64 - 1 encoded as a string of base-10 digits.
-   *
-   * Example value: `"50"`.
-   *
-   */
   UnsignedInt64: any;
-  /**
-   * Time between UTC time and a location's observed time, in the format `"+HH:MM"` or `"-HH:MM"`.
-   *
-   * Example value: `"-07:00"`.
-   *
-   */
   UtcOffset: any;
 };
+
+/** Possible types of app developer. */
+export type AppDeveloperType =
+  /** Indicates the app developer works directly for a Merchant. */
+  | 'MERCHANT'
+  /** Indicates the app developer is a Partner. */
+  | 'PARTNER'
+  /** Indicates the app developer is Shopify. */
+  | 'SHOPIFY'
+  /** Indicates the app developer is unknown. It is not categorized as any of the other developer types. */
+  | 'UNKNOWN';
 
 /**
  * The possible categories of an app installation, based on their purpose
@@ -161,6 +85,17 @@ export type AppPricingInterval =
   /** The app subscription bills the shop every 30 days. */
   | 'EVERY_30_DAYS';
 
+/** The public-facing category for an app. */
+export type AppPublicCategory =
+  /** The app's public category is [custom](https://shopify.dev/apps/distribution#capabilities-and-requirements). */
+  | 'CUSTOM'
+  /** The app's public category is other. An app is in this category if it's not classified under any of the other app types (private, public, or custom). */
+  | 'OTHER'
+  /** The app's public category is [private](https://shopify.dev/apps/distribution#deprecated-app-types). */
+  | 'PRIVATE'
+  /** The app's public category is [public](https://shopify.dev/apps/distribution#capabilities-and-requirements). */
+  | 'PUBLIC';
+
 /**
  * The approval status of the app purchase.
  *
@@ -185,6 +120,8 @@ export type AppPurchaseStatus =
 
 /** Instructs the app subscription to generate a fixed charge on a recurring basis. The frequency is specified by the billing interval. */
 export type AppRecurringPricingInput = {
+  /** The discount applied to the subscription for a given number of billing intervals. */
+  discount?: InputMaybe<AppSubscriptionDiscountInput>;
   /** How often the app subscription generates a charge. */
   interval?: InputMaybe<AppPricingInterval>;
   /** The amount to be charged to the store every billing interval. The only permitted currency code is USD. */
@@ -246,11 +183,50 @@ export type AppRevenueAttributionType =
   /** Other app revenue collection type. */
   | 'OTHER';
 
+/**
+ * Specifies a discount to the recurring pricing portion of a subscription over a number of billing intervals.
+ *
+ */
+export type AppSubscriptionDiscountInput = {
+  /**
+   * The total number of billing intervals to which the discount will be applied.
+   * The discount will be applied to an indefinite number of billing intervals if this value is left blank.
+   *
+   */
+  durationLimitInIntervals?: InputMaybe<Scalars['Int']>;
+  /** The value to be discounted every billing interval. */
+  value?: InputMaybe<AppSubscriptionDiscountValueInput>;
+};
+
+/** Specifies the value discounted every billing interval. */
+export type AppSubscriptionDiscountValueInput = {
+  /** The monetary value of a discount. */
+  amount?: InputMaybe<Scalars['Decimal']>;
+  /** The percentage value of a discount. */
+  percentage?: InputMaybe<Scalars['Float']>;
+};
+
 /** Allows an app to add more than one pricing plan to an app subscription. */
 export type AppSubscriptionLineItemInput = {
   /** The pricing model for the app subscription. */
   plan: AppPlanInput;
 };
+
+/** The replacement behavior when creating an app subscription for a merchant with an already existing app subscription. */
+export type AppSubscriptionReplacementBehavior =
+  /** Cancels the merchant's current app subscription immediately and replaces it with the newly created app subscription. */
+  | 'APPLY_IMMEDIATELY'
+  /** Defers canceling the merchant's current app subscription and applying the newly created app subscription until the start of the next billing cycle. */
+  | 'APPLY_ON_NEXT_BILLING_CYCLE'
+  /**
+   * Cancels the merchant's current app subscription immediately and replaces it with the newly created app subscription, with the exception of
+   * the following scenarios where replacing the current app subscription will be deferred until the start of the next billing cycle.
+   * 1) The current app subscription is annual and the newly created app subscription is also annual but is of a lesser value.
+   * 2) The current app subscription is annual and the newly created app subscription is monthly.
+   * 3) The current app subscription and the newly created app subscription are identical except for the `discount` value.
+   *
+   */
+  | 'STANDARD';
 
 /** The set of valid sort keys for the AppSubscription query. */
 export type AppSubscriptionSortKeys =
@@ -275,12 +251,21 @@ export type AppSubscriptionStatus =
   | 'CANCELLED'
   /** The app subscription was declined by the merchant. This is a terminal state. */
   | 'DECLINED'
-  /** The app subscription wasn't accepted within two days of being created. This is a terminal state. */
+  /** The app subscription wasn't approved by the merchant within two days of being created. This is a terminal state. */
   | 'EXPIRED'
   /** The app subscription is on hold due to non-payment. The subscription re-activates after payments resume. */
   | 'FROZEN'
   /** The app subscription is pending approval by the merchant. */
   | 'PENDING';
+
+/** Possible error codes that can be returned by `AppSubscriptionTrialExtendUserError`. */
+export type AppSubscriptionTrialExtendUserErrorCode =
+  /** The app subscription isn't active. */
+  | 'SUBSCRIPTION_NOT_ACTIVE'
+  /** The app subscription wasn't found. */
+  | 'SUBSCRIPTION_NOT_FOUND'
+  /** The trial isn't active. */
+  | 'TRIAL_NOT_ACTIVE';
 
 /** The set of valid sort keys for the AppTransaction query. */
 export type AppTransactionSortKeys =
@@ -336,6 +321,19 @@ export type AutomaticDiscountSortKeys =
    *
    */
   | 'RELEVANCE';
+
+/** The possible types for a badge. */
+export type BadgeType =
+  /** This badge has type `attention`. */
+  | 'ATTENTION'
+  /** This badge has type `default`. */
+  | 'DEFAULT'
+  /** This badge has type `info`. */
+  | 'INFO'
+  /** This badge has type `success`. */
+  | 'SUCCESS'
+  /** This badge has type `warning`. */
+  | 'WARNING';
 
 /** Possible error codes that can be returned by `BillingAttemptUserError`. */
 export type BillingAttemptUserErrorCode =
@@ -476,8 +474,6 @@ export type CollectionInput = {
   privateMetafields?: InputMaybe<Array<PrivateMetafieldInput>>;
   /** Initial list of collection products. Only valid with `productCreate` and without rules. */
   products?: InputMaybe<Array<Scalars['ID']>>;
-  /** Initial list of collection publications. Only valid with `productCreate`. This argument is deprecated: Use PublishablePublish instead. */
-  publications?: InputMaybe<Array<CollectionPublicationInput>>;
   /**
    * Indicates whether a redirect is required after a new handle has been provided.
    * If true, then the old handle is redirected to the new one automatically.
@@ -501,10 +497,6 @@ export type CollectionInput = {
 
 /** Specifies the publications to which a collection will be published. */
 export type CollectionPublicationInput = {
-  /** This argument is deprecated: Use publicationId instead. */
-  channelHandle?: InputMaybe<Scalars['String']>;
-  /** The ID of the channel. This argument is deprecated: Use publicationId instead. */
-  channelId?: InputMaybe<Scalars['ID']>;
   /** The ID of the publication. */
   publicationId?: InputMaybe<Scalars['ID']>;
 };
@@ -517,27 +509,32 @@ export type CollectionPublishInput = {
   id: Scalars['ID'];
 };
 
-/** Specifies the property of a product being used to populate the smart collection. */
+/** Specifies the attribute of a product being used to populate the smart collection. */
 export type CollectionRuleColumn =
-  /** The `is_price_reduced` attribute, which is a Boolean type evaluated as `true` if a product has a `compare_at_price` set on any of its variants. */
+  /**
+   * An attribute evaluated based on the `compare_at_price` attribute of the product's variants.
+   * With `is_set` relation, the rule matches products with at least one variant with `compare_at_price` set.
+   * With `is_not_set` relation, the rule matches matches products with at least one variant with `compare_at_price` not set.
+   *
+   */
   | 'IS_PRICE_REDUCED'
-  /** The `tag` attribute. */
+  /** The [`tag`](https://shopify.dev/api/admin-graphql/latest/objects/Product#field-product-producttype) attribute. */
   | 'TAG'
-  /** The `title` attribute. */
+  /** The [`title`](https://shopify.dev/api/admin-graphql/latest/objects/Product#field-product-title) attribute. */
   | 'TITLE'
-  /** The `type` attribute. */
+  /** The [`type`](https://shopify.dev/api/admin-graphql/latest/objects/Product#field-product-producttype) attribute. */
   | 'TYPE'
-  /** The `variant_compare_at_price` attribute. */
+  /** The [`variant_compare_at_price`](https://shopify.dev/api/admin-graphql/latest/objects/ProductVariant#field-productvariant-compareatprice) attribute. */
   | 'VARIANT_COMPARE_AT_PRICE'
-  /** The `variant_inventory` attribute. */
+  /** The [`variant_inventory`](https://shopify.dev/api/admin-graphql/latest/objects/ProductVariant#field-productvariant-inventoryquantity) attribute. */
   | 'VARIANT_INVENTORY'
-  /** The `variant_price` attribute. */
+  /** The [`variant_price`](https://shopify.dev/api/admin-graphql/latest/objects/ProductVariant#field-productvariant-price) attribute. */
   | 'VARIANT_PRICE'
-  /** The `variant_title` attribute. */
+  /** The [`variant_title`](https://shopify.dev/api/admin-graphql/latest/objects/ProductVariant#field-productvariant-title) attribute. */
   | 'VARIANT_TITLE'
-  /** The `variant_weight` attribute. */
+  /** The [`variant_weight`](https://shopify.dev/api/admin-graphql/latest/objects/ProductVariant#field-productvariant-weight) attribute. */
   | 'VARIANT_WEIGHT'
-  /** The `vendor` attribute. */
+  /** The [`vendor`](https://shopify.dev/api/admin-graphql/latest/objects/Product#field-product-vendor) attribute. */
   | 'VENDOR';
 
 /** Specifies a rule to associate with a collection. */
@@ -553,7 +550,7 @@ export type CollectionRuleInput = {
   relation: CollectionRuleRelation;
 };
 
-/** Specifies the relationship between the `column` and the condition. */
+/** Specifies the relationship between the `column` and the `condition`. */
 export type CollectionRuleRelation =
   /** The attribute contains the condition. */
   | 'CONTAINS'
@@ -563,9 +560,9 @@ export type CollectionRuleRelation =
   | 'EQUALS'
   /** The attribute is greater than the condition. */
   | 'GREATER_THAN'
-  /** The attribute is not set. */
+  /** The attribute is not set (equal to `null`). */
   | 'IS_NOT_SET'
-  /** The attribute is set. */
+  /** The attribute is set (not equal to `null`). */
   | 'IS_SET'
   /** The attribute is less than the condition. */
   | 'LESS_THAN'
@@ -580,7 +577,7 @@ export type CollectionRuleRelation =
 export type CollectionRuleSetInput = {
   /**
    * Whether products must match any or all of the rules to be included in the collection.
-   * If true, then products must match one or more of the rules to be included in the collection.
+   * If true, then products must match at least one of the rules to be included in the collection.
    * If false, then products must match all of the rules to be included in the collection.
    *
    */
@@ -637,7 +634,13 @@ export type ContextualPricingContext = {
   country?: InputMaybe<CountryCode>;
 };
 
-/** ISO 3166-1 alpha-2 country codes with some differences. */
+/**
+ * The code designating a country/region, which generally follows ISO 3166-1 alpha-2 guidelines.
+ * If a territory doesn't have a country code value in the `CountryCode` enum, then it might be considered a subdivision
+ * of another country. For example, the territories associated with Spain are represented by the country code `ES`,
+ * and the territories associated with the United States of America are represented by the country code `US`.
+ *
+ */
 export type CountryCode =
   /** Ascension Island. */
   | 'AC'
@@ -1430,6 +1433,8 @@ export type CurrencyCode =
   | 'SSP'
   /** Sao Tome And Principe Dobra (STD). */
   | 'STD'
+  /** Sao Tome And Principe Dobra (STN). */
+  | 'STN'
   /** Syrian Pound (SYP). */
   | 'SYP'
   /** Swazi Lilangeni (SZL). */
@@ -1462,6 +1467,8 @@ export type CurrencyCode =
   | 'UYU'
   /** Uzbekistan som (UZS). */
   | 'UZS'
+  /** Venezuelan Bolivares (VED). */
+  | 'VED'
   /** Venezuelan Bolivares (VEF). */
   | 'VEF'
   /** Venezuelan Bolivares (VES). */
@@ -1511,20 +1518,147 @@ export type CustomerDeleteInput = {
   id: Scalars['ID'];
 };
 
+/**
+ * Possible marketing states for the customer’s email address.
+ *
+ */
+export type CustomerEmailAddressMarketingState =
+  /**
+   * The customer’s email address marketing state is invalid.
+   *
+   */
+  | 'INVALID'
+  /**
+   * The customer is not subscribed to email marketing.
+   *
+   */
+  | 'NOT_SUBSCRIBED'
+  /**
+   * The customer is in the process of subscribing to email marketing.
+   *
+   */
+  | 'PENDING'
+  /**
+   * The customer is subscribed to email marketing.
+   *
+   */
+  | 'SUBSCRIBED'
+  /**
+   * The customer is not subscribed to email marketing but was previously subscribed.
+   *
+   */
+  | 'UNSUBSCRIBED';
+
+/**
+ * The different levels related to whether a customer has opted in to having their opened emails tracked.
+ *
+ */
+export type CustomerEmailAddressOpenTrackingLevel =
+  /**
+   * The customer has opted in to having their open emails tracked.
+   *
+   */
+  | 'OPTED_IN'
+  /**
+   * The customer has opted out of having their open emails tracked.
+   *
+   */
+  | 'OPTED_OUT'
+  /**
+   * The customer has not specified whether they want to opt in or out of having their open emails tracked.
+   *
+   */
+  | 'UNKNOWN';
+
+/**
+ * Information that describes when a customer consented to
+ *         receiving marketing material by email.
+ */
+export type CustomerEmailMarketingConsentInput = {
+  /**
+   * The latest date and time when the customer consented or objected to
+   *           receiving marketing material by email.
+   */
+  consentUpdatedAt?: InputMaybe<Scalars['DateTime']>;
+  /** The customer opt-in level at the time of subscribing to marketing material. */
+  marketingOptInLevel?: InputMaybe<CustomerMarketingOptInLevel>;
+  /**
+   * The current marketing state associated with the customer's email.
+   *           If the customer doesn't have an email, then this field is `null`.
+   */
+  marketingState: CustomerEmailMarketingState;
+};
+
+/**
+ * The email consent information to update for a given customer ID.
+ *
+ */
+export type CustomerEmailMarketingConsentUpdateInput = {
+  /** The ID of the customer for which to update the email marketing consent information. The customer must have a unique email address associated to the record. If not, add the email address using the `customerUpdate` mutation first. */
+  customerId: Scalars['ID'];
+  /** The marketing consent information when the customer consented to receiving marketing material by email. */
+  emailMarketingConsent: CustomerEmailMarketingConsentInput;
+};
+
+/** Possible error codes that can be returned by `CustomerEmailMarketingConsentUpdateUserError`. */
+export type CustomerEmailMarketingConsentUpdateUserErrorCode =
+  /** The input value isn't included in the list. */
+  | 'INCLUSION'
+  /** Unexpected internal error happened. */
+  | 'INTERNAL_ERROR'
+  /** The input value is invalid. */
+  | 'INVALID'
+  /** Missing a required argument. */
+  | 'MISSING_ARGUMENT';
+
+/**
+ * The possible email marketing states for a customer.
+ *
+ */
+export type CustomerEmailMarketingState =
+  /**
+   * The customer’s email address marketing state is invalid.
+   *
+   */
+  | 'INVALID'
+  /**
+   * The customer isn't subscribed to email marketing.
+   *
+   */
+  | 'NOT_SUBSCRIBED'
+  /**
+   * The customer is in the process of subscribing to email marketing.
+   *
+   */
+  | 'PENDING'
+  /**
+   * The customer's personal data is erased. This value is internally-set and read-only.
+   *
+   */
+  | 'REDACTED'
+  /**
+   * The customer is subscribed to email marketing.
+   *
+   */
+  | 'SUBSCRIBED'
+  /**
+   * The customer isn't currently subscribed to email marketing but was previously subscribed.
+   *
+   */
+  | 'UNSUBSCRIBED';
+
 /** Provides the fields and values to use when creating or updating a customer. */
 export type CustomerInput = {
-  /** Whether the customer has consented to receive marketing material by email. This argument is deprecated: Use `emailMarketingConsent` instead in API versions 2022-04 and higher. */
-  acceptsMarketing?: InputMaybe<Scalars['Boolean']>;
-  /**
-   * The date and time when the customer consented or objected to receiving marketing
-   * material by email.
-   *  This argument is deprecated: Use `emailMarketingConsent` instead in API versions 2022-04 and higher.
-   */
-  acceptsMarketingUpdatedAt?: InputMaybe<Scalars['DateTime']>;
   /** The addresses for a customer. */
   addresses?: InputMaybe<Array<MailingAddressInput>>;
   /** The unique email address of the customer. */
   email?: InputMaybe<Scalars['String']>;
+  /**
+   * Information that describes when the customer consented to receiving marketing
+   *         material by email. The `email` field is required when creating a customer with email marketing
+   *         consent information.
+   */
+  emailMarketingConsent?: InputMaybe<CustomerEmailMarketingConsentInput>;
   /** The customer's first name. */
   firstName?: InputMaybe<Scalars['String']>;
   /** The ID of the customer to update. */
@@ -1533,12 +1667,6 @@ export type CustomerInput = {
   lastName?: InputMaybe<Scalars['String']>;
   /** The customer's locale. */
   locale?: InputMaybe<Scalars['String']>;
-  /**
-   * The marketing subscription opt-in level used when the customer consented to receiving
-   * marketing material by email.
-   *  This argument is deprecated: Use `emailMarketingConsent` instead in API versions 2022-04 and higher.
-   */
-  marketingOptInLevel?: InputMaybe<CustomerMarketingOptInLevel>;
   /** Additional metafields to associate to the customer. */
   metafields?: InputMaybe<Array<MetafieldInput>>;
   /** A note about the customer. */
@@ -1569,7 +1697,7 @@ export type CustomerInput = {
 };
 
 /**
- * The possible values for the marketing subscription opt in level enabled at the time the customer consented to receive marketing information.
+ * The possible values for the marketing subscription opt-in level enabled at the time the customer consented to receive marketing information.
  *
  * The levels are defined by [the M3AAWG best practices guideline
  *   document](https://www.m3aawg.org/sites/maawg/files/news/M3AAWG_Senders_BCP_Ver3-2015-02.pdf).
@@ -1611,10 +1739,12 @@ export type CustomerPaymentMethodGetUpdateUrlUserErrorCode =
  */
 export type CustomerPaymentMethodRemoteInput = {
   /**
-   * Input containing the fields for a remote authorize net customer profile.
+   * The input fields for a remote authorize net customer profile.
    *
    */
   authorizeNetCustomerPaymentProfile?: InputMaybe<RemoteAuthorizeNetCustomerPaymentProfileInput>;
+  /** The input fields for a remote Braintree customer profile. */
+  braintreePaymentMethod?: InputMaybe<RemoteBraintreePaymentMethodInput>;
   /**
    * Input containing the fields for a remote stripe payment method.
    *
@@ -1626,6 +1756,8 @@ export type CustomerPaymentMethodRemoteInput = {
 export type CustomerPaymentMethodRemoteUserErrorCode =
   /** Authorize.net is not enabled for subscriptions. */
   | 'AUTHORIZE_NET_NOT_ENABLED_FOR_SUBSCRIPTIONS'
+  /** Braintree is not enabled for subscriptions. */
+  | 'BRAINTREE_NOT_ENABLED_FOR_SUBSCRIPTIONS'
   /** Exactly one remote reference is required. */
   | 'EXACTLY_ONE_REMOTE_REFERENCE_REQUIRED'
   /** The input value is invalid. */
@@ -1641,10 +1773,20 @@ export type CustomerPaymentMethodRevocationReason =
   | 'AUTHORIZE_NET_GATEWAY_NOT_ENABLED'
   /** Authorize.net did not return any payment methods. Make sure that the correct Authorize.net account is linked. */
   | 'AUTHORIZE_NET_RETURNED_NO_PAYMENT_METHOD'
+  /** Failed to contact Braintree API. */
+  | 'BRAINTREE_API_AUTHENTICATION_ERROR'
+  /** The Braintree payment gateway is not enabled. */
+  | 'BRAINTREE_GATEWAY_NOT_ENABLED'
+  /** The Braintree payment method type should be a credit card or Apple Pay card. */
+  | 'BRAINTREE_PAYMENT_METHOD_NOT_CARD'
+  /** Braintree returned no payment methods. Make sure the correct Braintree account is linked. */
+  | 'BRAINTREE_RETURNED_NO_PAYMENT_METHOD'
   /** The credit card failed to update. */
   | 'FAILED_TO_UPDATE_CREDIT_CARD'
   /** The payment method was manually revoked. */
   | 'MANUALLY_REVOKED'
+  /** The payment method was replaced with an existing payment method. The associated contracts have been migrated to the other payment method. */
+  | 'MERGED'
   /** Failed to contact the Stripe API. */
   | 'STRIPE_API_AUTHENTICATION_ERROR'
   /** Invalid request. Failed to retrieve payment method from Stripe. */
@@ -1664,6 +1806,24 @@ export type CustomerPaymentMethodUserErrorCode =
   | 'PRESENT'
   /** The input value is already taken. */
   | 'TAKEN';
+
+/** The valid tiers for the predicted spend of a customer with a shop. */
+export type CustomerPredictedSpendTier =
+  /**
+   * The customer's spend is higher than the 70th percentile of the shop's customer sales.
+   *
+   */
+  | 'HIGH'
+  /**
+   * The customer's spend is lower than the 10th percentile of the shop's customer sales, including customers who didn't repurchase.
+   *
+   */
+  | 'LOW'
+  /**
+   * The customer's spend is between the 10th and 70th percentile of the shop's customer sales.
+   *
+   */
+  | 'MEDIUM';
 
 /**
  * The possible product subscription states for a customer, as defined by the customer's subscription contracts.
@@ -1741,7 +1901,7 @@ export type CustomerSmsMarketingConsentInput = {
    */
   consentUpdatedAt?: InputMaybe<Scalars['DateTime']>;
   /**
-   * The marketing subscription opt in level set when the customer consented to receive marketing information.
+   * The marketing subscription opt-in level that was set when the customer consented to receive marketing information.
    *
    */
   marketingOptInLevel?: InputMaybe<CustomerMarketingOptInLevel>;
@@ -1793,6 +1953,8 @@ export type CustomerSmsMarketingState =
 
 /** The set of valid sort keys for the Customer query. */
 export type CustomerSortKeys =
+  /** Sort by the `created_at` value. */
+  | 'CREATED_AT'
   /** Sort by the `id` value. */
   | 'ID'
   /** Sort by the `last_order_date` value. */
@@ -1842,6 +2004,31 @@ export type DayOfTheWeek =
   /** Wednesday. */
   | 'WEDNESDAY';
 
+/** Possible error codes that can be returned by `DelegateAccessTokenCreateUserError`. */
+export type DelegateAccessTokenCreateUserErrorCode =
+  /** The parent access token can't be a delegate token. */
+  | 'DELEGATE_ACCESS_TOKEN'
+  /** The access scope can't be empty. */
+  | 'EMPTY_ACCESS_SCOPE'
+  /** The delegate token can't expire after the parent token. */
+  | 'EXPIRES_AFTER_PARENT'
+  /** The expires_in value must be greater than 0. */
+  | 'NEGATIVE_EXPIRES_IN'
+  /** Persistence failed. */
+  | 'PERSISTENCE_FAILED'
+  /** The parent access token can't have a refresh token. */
+  | 'REFRESH_TOKEN'
+  /** Unknown scopes. */
+  | 'UNKNOWN_SCOPES';
+
+/** The input fields for a delegate access token. */
+export type DelegateAccessTokenInput = {
+  /** The list of scopes that will be delegated to the new access token. */
+  delegateAccessScope: Array<Scalars['String']>;
+  /** The amount of time, in seconds, after which the delegate access token is no longer valid. */
+  expiresIn?: InputMaybe<Scalars['Int']>;
+};
+
 /** The set of valid sort keys for the DeletionEvent query. */
 export type DeletionEventSortKeys =
   /** Sort by the `created_at` value. */
@@ -1874,7 +2061,7 @@ export type DeliveryConditionOperator =
   /** The condition will check if the field is less than or equal to the criterion. */
   | 'LESS_THAN_OR_EQUAL_TO';
 
-/** Input fields to specify a country. */
+/** The input fields to specify a country. */
 export type DeliveryCountryInput = {
   /** The country code of the country in the ISO 3166-1 alpha-2 format. */
   code?: InputMaybe<CountryCode>;
@@ -2098,30 +2285,32 @@ export type DiscountApplicationAllocationMethod =
   /** The value is specifically applied onto a particular line. */
   | 'ONE';
 
-/** The method by which the discount's value is allocated onto its entitled lines. */
+/** The level at which the discount's value is applied. */
 export type DiscountApplicationLevel =
   /**
-   * The discount was applied at the line level.
+   * The discount is applied at the line level.
    * Line level discounts are factored into the discountedUnitPriceSet on line items.
    *
    */
   | 'LINE'
   /**
-   * The discount was applied at the order level.
+   * The discount is applied at the order level.
    * Order level discounts are not factored into the discountedUnitPriceSet on line items.
    *
    */
   | 'ORDER';
 
 /**
- * Which lines on the order that the discount is allocated over, of the type
- * defined by the Discount Application's target_type.
+ * The lines on the order to which the discount is applied, of the type defined by
+ * the discount application's `targetType`. For example, the value `ENTITLED`, combined with a `targetType` of
+ * `LINE_ITEM`, applies the discount on all line items that are entitled to the discount.
+ * The value `ALL`, combined with a `targetType` of `SHIPPING_LINE`, applies the discount on all shipping lines.
  *
  */
 export type DiscountApplicationTargetSelection =
   /** The discount is allocated onto all the lines. */
   | 'ALL'
-  /** The discount is allocated onto only the lines it is entitled for. */
+  /** The discount is allocated onto only the lines that it's entitled for. */
   | 'ENTITLED'
   /** The discount is allocated onto explicitly chosen lines. */
   | 'EXPLICIT';
@@ -2136,9 +2325,27 @@ export type DiscountApplicationTargetType =
   /** The discount applies onto shipping lines. */
   | 'SHIPPING_LINE';
 
-/** Specifies input field to create or update automatic basic discount. */
+/** The input fields to create an app discount. */
+export type DiscountAutomaticAppInput = {
+  /** Determines which discount classes the discount can combine with. */
+  combinesWith?: InputMaybe<DiscountCombinesWithInput>;
+  /** The date and time when the discount ends. For open-ended discounts, use `null`. */
+  endsAt?: InputMaybe<Scalars['DateTime']>;
+  /** The ID of the function providing the app discount type. */
+  functionId?: InputMaybe<Scalars['String']>;
+  /** Additional metafields to associate to the discount. */
+  metafields?: InputMaybe<Array<MetafieldInput>>;
+  /** The date and time when the discount starts. */
+  startsAt?: InputMaybe<Scalars['DateTime']>;
+  /** The title of the discount. */
+  title?: InputMaybe<Scalars['String']>;
+};
+
+/** The input that's used to create or update an automatic basic discount. */
 export type DiscountAutomaticBasicInput = {
-  /** The qualifying items in an order, the quantity of each one, and the total value of the discount. */
+  /** Determines which discount classes the discount can combine with. */
+  combinesWith?: InputMaybe<DiscountCombinesWithInput>;
+  /** Information about the qualifying items and their discount. */
   customerGets?: InputMaybe<DiscountCustomerGetsInput>;
   /** The date and time when the discount ends. For open-ended discounts, use `null`. */
   endsAt?: InputMaybe<Scalars['DateTime']>;
@@ -2150,8 +2357,10 @@ export type DiscountAutomaticBasicInput = {
   title?: InputMaybe<Scalars['String']>;
 };
 
-/** Specifies input field to create or update automatic bogo discount. */
+/** Specifies input field to create or update an automatic Buy X, Get Y (BXGY) discount. */
 export type DiscountAutomaticBxgyInput = {
+  /** Determines which discount classes the discount can combine with. */
+  combinesWith?: InputMaybe<DiscountCombinesWithInput>;
   /** The qualifying items and the quantity of each one that the customer has to buy to be eligible for the discount. */
   customerBuys?: InputMaybe<DiscountCustomerBuysInput>;
   /** The qualifying items in an order, the quantity of each one, and the total value of the discount. */
@@ -2166,12 +2375,47 @@ export type DiscountAutomaticBxgyInput = {
   usesPerOrderLimit?: InputMaybe<Scalars['UnsignedInt64']>;
 };
 
-/** Specifies input field to create or update code basic discount. */
+/** The class of the discount for combining purposes. */
+export type DiscountClass =
+  /** Combined as an order discount. */
+  | 'ORDER'
+  /** Combined as a product discount. */
+  | 'PRODUCT'
+  /** Combined as a shipping discount. */
+  | 'SHIPPING';
+
+/** The input fields to create a code app discount. */
+export type DiscountCodeAppInput = {
+  /** Whether the discount can be applied only once per customer. */
+  appliesOncePerCustomer?: InputMaybe<Scalars['Boolean']>;
+  /** The code to use the discount. */
+  code?: InputMaybe<Scalars['String']>;
+  /** Determines which discount classes the discount can combine with. */
+  combinesWith?: InputMaybe<DiscountCombinesWithInput>;
+  /** The customers that can use the discount. */
+  customerSelection?: InputMaybe<DiscountCustomerSelectionInput>;
+  /** The date and time when the discount ends. For open-ended discounts, use `null`. */
+  endsAt?: InputMaybe<Scalars['DateTime']>;
+  /** The ID of the function providing the app discount type. */
+  functionId?: InputMaybe<Scalars['String']>;
+  /** Additional metafields to associate to the discount. */
+  metafields?: InputMaybe<Array<MetafieldInput>>;
+  /** The date and time when the discount starts. */
+  startsAt?: InputMaybe<Scalars['DateTime']>;
+  /** The title of the discount. */
+  title?: InputMaybe<Scalars['String']>;
+  /** The maximum number of times that the discount can be used. For open-ended discounts, use `null`. */
+  usageLimit?: InputMaybe<Scalars['Int']>;
+};
+
+/** The input field to create or update a basic code discount. */
 export type DiscountCodeBasicInput = {
   /** Whether the discount can be applied only once per customer. */
   appliesOncePerCustomer?: InputMaybe<Scalars['Boolean']>;
   /** The code to use the discount. */
   code?: InputMaybe<Scalars['String']>;
+  /** Determines which discount classes the discount can combine with. */
+  combinesWith?: InputMaybe<DiscountCombinesWithInput>;
   /** The qualifying items in an order, the quantity of each one, and the total value of the discount. */
   customerGets?: InputMaybe<DiscountCustomerGetsInput>;
   /** The customers that can use the discount. */
@@ -2196,11 +2440,13 @@ export type DiscountCodeBxgyInput = {
   appliesOncePerCustomer?: InputMaybe<Scalars['Boolean']>;
   /** The code to use the discount. */
   code?: InputMaybe<Scalars['String']>;
+  /** Determines which discount classes the discount can combine with. */
+  combinesWith?: InputMaybe<DiscountCombinesWithInput>;
   /** The qualifying items and the quantity of each one that the customer has to buy to be eligible for the discount. */
   customerBuys?: InputMaybe<DiscountCustomerBuysInput>;
-  /** The qualifying items in an order, the quantity of each one, and the total value of the discount. */
+  /** The qualifying items that will be discounted, the quantity of each one, and the total value of the discount. */
   customerGets?: InputMaybe<DiscountCustomerGetsInput>;
-  /** The customers that can use the discount. */
+  /** The customers that are eligible to use the discount. */
   customerSelection?: InputMaybe<DiscountCustomerSelectionInput>;
   /** The date and time when the discount ends. For open-ended discounts, use `null`. */
   endsAt?: InputMaybe<Scalars['DateTime']>;
@@ -2224,7 +2470,9 @@ export type DiscountCodeFreeShippingInput = {
   appliesOncePerCustomer?: InputMaybe<Scalars['Boolean']>;
   /** The code to use the discount. */
   code?: InputMaybe<Scalars['String']>;
-  /** The customers that can use the discount. */
+  /** Determines which discount classes the shipping discount can combine with. */
+  combinesWith?: InputMaybe<DiscountCombinesWithInput>;
+  /** The customers that are eligible to use the discount. */
   customerSelection?: InputMaybe<DiscountCustomerSelectionInput>;
   /** A list of destinations where the discount will apply. */
   destination?: InputMaybe<DiscountShippingDestinationSelectionInput>;
@@ -2267,6 +2515,16 @@ export type DiscountCollectionsInput = {
   remove?: InputMaybe<Array<Scalars['ID']>>;
 };
 
+/** Determines which discount classes the discount can combine with. */
+export type DiscountCombinesWithInput = {
+  /** Combines with order discounts. */
+  orderDiscounts?: InputMaybe<Scalars['Boolean']>;
+  /** Combines with product discounts. */
+  productDiscounts?: InputMaybe<Scalars['Boolean']>;
+  /** Combines with shipping discounts. */
+  shippingDiscounts?: InputMaybe<Scalars['Boolean']>;
+};
+
 /** Specifies a list of countries to add or remove from the free shipping discount. */
 export type DiscountCountriesInput = {
   /** The country codes to add to the list of countries where the discount applies. */
@@ -2277,7 +2535,7 @@ export type DiscountCountriesInput = {
   remove?: InputMaybe<Array<CountryCode>>;
 };
 
-/** Specifies the prerequisite items and prerequisite quantity. */
+/** The prerequisite items and quantity for the discount. */
 export type DiscountCustomerBuysInput = {
   /** The IDs of items that the customer buys. The items can be either collections or products. */
   items?: InputMaybe<DiscountItemsInput>;
@@ -2285,9 +2543,9 @@ export type DiscountCustomerBuysInput = {
   value?: InputMaybe<DiscountCustomerBuysValueInput>;
 };
 
-/** Specifies the prerequisite quantity for the discount. */
+/** The prerequisite quantity or the minimum purchase amount required for the discount. */
 export type DiscountCustomerBuysValueInput = {
-  /** The prerequisite purchase amount required for the discount to be applicable. */
+  /** The prerequisite minimum purchase amount required for the discount to be applicable. */
   amount?: InputMaybe<Scalars['Decimal']>;
   /** The quantity of prerequisite items. */
   quantity?: InputMaybe<Scalars['UnsignedInt64']>;
@@ -2315,11 +2573,11 @@ export type DiscountCustomerGetsValueInput = {
   percentage?: InputMaybe<Scalars['Float']>;
 };
 
-/** Specifies which customer saved searches to add to or remove from the discount. */
-export type DiscountCustomerSavedSearchesInput = {
-  /** A list of customer saved searches to add to the current list of customer saved searches. */
+/** Specifies which customer segments to add to or remove from the discount. */
+export type DiscountCustomerSegmentsInput = {
+  /** A list of customer segments to add to the current list of customer segments. */
   add?: InputMaybe<Array<Scalars['ID']>>;
-  /** A list of customer saved searches to remove from the current list of customer saved searches. */
+  /** A list of customer segments to remove from the current list of customer segments. */
   remove?: InputMaybe<Array<Scalars['ID']>>;
 };
 
@@ -2327,6 +2585,8 @@ export type DiscountCustomerSavedSearchesInput = {
 export type DiscountCustomerSelectionInput = {
   /** Whether all customers can use this discount. */
   all?: InputMaybe<Scalars['Boolean']>;
+  /** The list of customer segment IDs to add or remove from the list of customer segments. */
+  customerSegments?: InputMaybe<DiscountCustomerSegmentsInput>;
   /** The list of customer IDs to add or remove from the list of customers. */
   customers?: InputMaybe<DiscountCustomersInput>;
 };
@@ -2357,7 +2617,7 @@ export type DiscountErrorCode =
   | 'DUPLICATE'
   /** The input value should be equal to the value allowed. */
   | 'EQUAL_TO'
-  /** The exceeded maximum allowed value. */
+  /** The value exceeded the maximum allowed value. */
   | 'EXCEEDED_MAX'
   /** The input value should be greater than the minimum allowed value. */
   | 'GREATER_THAN'
@@ -2371,10 +2631,14 @@ export type DiscountErrorCode =
   | 'INTERNAL_ERROR'
   /** The input value is invalid. */
   | 'INVALID'
+  /** The `combinesWith` settings are invalid for the discount class. */
+  | 'INVALID_COMBINES_WITH_FOR_DISCOUNT_CLASS'
   /** The input value should be less than the maximum value allowed. */
   | 'LESS_THAN'
   /** The input value should be less than or equal to the maximum value allowed. */
   | 'LESS_THAN_OR_EQUAL_TO'
+  /** The active period overlaps with too many other app-provided discounts. There's a limit on the number of app discounts that can be active at any given time. */
+  | 'MAX_APP_DISCOUNTS'
   /** Specify a minimum subtotal or a quantity, but not both. */
   | 'MINIMUM_SUBTOTAL_AND_QUANTITY_RANGE_BOTH_PRESENT'
   /** Missing a required argument. */
@@ -2392,7 +2656,7 @@ export type DiscountErrorCode =
   /** The value is outside of the allowed range. */
   | 'VALUE_OUTSIDE_RANGE';
 
-/** Specifies the items attached to a discount. */
+/** The items attached to a discount. You can specify the discount items by product ID or collection ID. */
 export type DiscountItemsInput = {
   /** Whether all items should be selected. */
   all?: InputMaybe<Scalars['Boolean']>;
@@ -2402,13 +2666,13 @@ export type DiscountItemsInput = {
   products?: InputMaybe<DiscountProductsInput>;
 };
 
-/** Specifies the quantity minimum requirements for a discount. */
+/** The minimum quantity required for the discount. */
 export type DiscountMinimumQuantityInput = {
   /** The minimum quantity of items that's required for the discount to be applied. */
   greaterThanOrEqualToQuantity?: InputMaybe<Scalars['UnsignedInt64']>;
 };
 
-/** Specifies the quantity or subtotal minimum requirements for a discount. */
+/** The minimum quantity or subtotal required for a discount. */
 export type DiscountMinimumRequirementInput = {
   /** The minimum required quantity. */
   quantity?: InputMaybe<DiscountMinimumQuantityInput>;
@@ -2416,7 +2680,7 @@ export type DiscountMinimumRequirementInput = {
   subtotal?: InputMaybe<DiscountMinimumSubtotalInput>;
 };
 
-/** Specifies the subtotal minimum requirements for a discount. */
+/** The minimum subtotal required for a discount. */
 export type DiscountMinimumSubtotalInput = {
   /** The minimum subtotal that's required for the discount to be applied. */
   greaterThanOrEqualToSubtotal?: InputMaybe<Scalars['Decimal']>;
@@ -2442,19 +2706,19 @@ export type DiscountProductsInput = {
   productsToRemove?: InputMaybe<Array<Scalars['ID']>>;
 };
 
-/** Specifies the code attached to a discount. */
+/** The redeem code to attach to a discount. */
 export type DiscountRedeemCodeInput = {
-  /** The code of a discount. */
+  /** The code that a customer can use at checkout to receive the associated discount. */
   code: Scalars['String'];
 };
 
-/** The page type where shareable URL lands. */
+/** The type of page where a shareable discount URL lands. */
 export type DiscountShareableUrlTargetType =
-  /** The collection page type. */
+  /** The URL lands on a collection page. */
   | 'COLLECTION'
-  /** The home page type. */
+  /** The URL lands on a home page. */
   | 'HOME'
-  /** The product page type. */
+  /** The URL lands on a product page. */
   | 'PRODUCT';
 
 /** Specifies the destinations where the free shipping discount will be applied. */
@@ -2465,6 +2729,27 @@ export type DiscountShippingDestinationSelectionInput = {
   countries?: InputMaybe<DiscountCountriesInput>;
 };
 
+/** The set of valid sort keys for the Discount query. */
+export type DiscountSortKeys =
+  /** Sort by the `created_at` value. */
+  | 'CREATED_AT'
+  /** Sort by the `ends_at` value. */
+  | 'ENDS_AT'
+  /** Sort by the `id` value. */
+  | 'ID'
+  /**
+   * Sort by relevance to the search terms when the `query` parameter is specified on the connection.
+   * Don't use this sort key when no search query is specified.
+   *
+   */
+  | 'RELEVANCE'
+  /** Sort by the `starts_at` value. */
+  | 'STARTS_AT'
+  /** Sort by the `title` value. */
+  | 'TITLE'
+  /** Sort by the `updated_at` value. */
+  | 'UPDATED_AT';
+
 /** The status of the discount. */
 export type DiscountStatus =
   /** The discount is active. */
@@ -2474,19 +2759,34 @@ export type DiscountStatus =
   /** The discount is scheduled. */
   | 'SCHEDULED';
 
-/** The type of line a subscription discount is applied on. */
+/** The type of line (line item or shipping line) on an order that the subscription discount is applicable towards. */
 export type DiscountTargetType =
-  /** Line item. */
+  /** The discount applies onto line items. */
   | 'LINE_ITEM'
-  /** Shipping line. */
+  /** The discount applies onto shipping lines. */
   | 'SHIPPING_LINE';
 
-/** The original type of the discount. */
+/** The type of the subscription discount. */
 export type DiscountType =
   /** Code discount type. */
   | 'CODE_DISCOUNT'
   /** Manual discount type. */
   | 'MANUAL';
+
+/** Possible error codes that can be returned by `DisputeEvidenceUpdateUserError`. */
+export type DisputeEvidenceUpdateUserErrorCode =
+  /** Dispute evidence could not be found. */
+  | 'DISPUTE_EVIDENCE_NOT_FOUND'
+  /** Evidence already accepted. */
+  | 'EVIDENCE_ALREADY_ACCEPTED'
+  /** Evidence past due date. */
+  | 'EVIDENCE_PAST_DUE_DATE'
+  /** Combined files size is too large. */
+  | 'FILES_SIZE_EXCEEDED_LIMIT'
+  /** The input value is invalid. */
+  | 'INVALID'
+  /** Individual file size is too large. */
+  | 'TOO_LARGE';
 
 /** The possible statuses of a dispute. */
 export type DisputeStatus =
@@ -2508,6 +2808,8 @@ export type DisputeType =
 export type DraftOrderAppliedDiscountInput = {
   /**
    * The applied amount of the discount.
+   * If the type of the discount is fixed amount, then this is the fixed dollar amount.
+   * If the type is percentage, then this is the subtotal multiplied by the percentage.
    *
    */
   amount?: InputMaybe<Scalars['Money']>;
@@ -2612,6 +2914,17 @@ export type DraftOrderInput = {
    */
   shippingLine?: InputMaybe<ShippingLineInput>;
   /**
+   * The source of the checkout.
+   *           To use this field for sales attribution, you must register the channels that your app is managing.
+   *           You can register the channels that your app is managing by completing
+   *           [this Google Form](https://docs.google.com/forms/d/e/1FAIpQLScmVTZRQNjOJ7RD738mL1lGeFjqKVe_FM2tO9xsm21QEo5Ozg/viewform?usp=sf_link).
+   *           After you've submitted your request, you need to wait for your request to be processed by Shopify.
+   *           You can find a list of your channels in the Partner Dashboard, in your app's Marketplace extension.
+   *           You need to specify the handle as the `source_name` value in your request.
+   *           The handle is the channel that the order was placed from.
+   */
+  sourceName?: InputMaybe<Scalars['String']>;
+  /**
    * A comma separated list of tags that have been added to the draft order.
    *
    */
@@ -2642,8 +2955,6 @@ export type DraftOrderLineItemInput = {
    *
    */
   customAttributes?: InputMaybe<Array<AttributeInput>>;
-  /** The weight in grams. This value is ignored when `variantId` is provided. This argument is deprecated: Use `weight` instead. */
-  grams?: InputMaybe<Scalars['Int']>;
   /** The price without any discounts applied. This value is ignored when `variantId` is provided. */
   originalUnitPrice?: InputMaybe<Scalars['Money']>;
   /**
@@ -2755,16 +3066,19 @@ export type FileContentType =
   /** A Shopify-hosted generic file. */
   | 'FILE'
   /** A Shopify hosted image. */
-  | 'IMAGE';
+  | 'IMAGE'
+  /** A Shopify-hosted video file. It's recommended to use this type for all video files. */
+  | 'VIDEO';
 
 /** The input fields that are required to create a file object. */
 export type FileCreateInput = {
-  /** The alt text associated with the file. */
+  /** The alternative text description of the file. */
   alt?: InputMaybe<Scalars['String']>;
-  /** The file content type. */
+  /** The file content type. If omitted, then Shopify will attempt to determine the content type during file processing. */
   contentType?: InputMaybe<FileContentType>;
   /**
-   * An external URL or a signed upload URL of the file object.
+   * An external URL (for images only) or a
+   * [staged upload URL](https://shopify.dev/api/admin-graphql/latest/mutations/stageduploadscreate).
    *
    */
   originalSource: Scalars['String'];
@@ -2865,10 +3179,17 @@ export type FileStatus =
 
 /** The input fields that are required to update a file object. */
 export type FileUpdateInput = {
-  /** The alt text associated with the file. */
+  /** The alternative text description of the file. */
   alt?: InputMaybe<Scalars['String']>;
-  /** The file to update. */
+  /** The ID of the file to be updated. */
   id: Scalars['ID'];
+  /**
+   * The source from which to update the media preview image.
+   * May be an external URL or a
+   * [staged upload URL](https://shopify.dev/api/admin-graphql/latest/mutations/stageduploadscreate).
+   *
+   */
+  previewImageSource?: InputMaybe<Scalars['String']>;
 };
 
 /** Possible error codes that can be returned by `FilesUserError`. */
@@ -2887,6 +3208,8 @@ export type FilesErrorCode =
   | 'INVALID_QUERY'
   /** At least one argument is required. */
   | 'MISSING_ARGUMENTS'
+  /** Exceeded the limit of non-image media per shop. */
+  | 'NON_IMAGE_MEDIA_PER_SHOP_LIMIT_EXCEEDED'
   /** Specify one argument: search, IDs, or deleteAll. */
   | 'TOO_MANY_ARGUMENTS'
   /** The file type is not supported. */
@@ -2976,45 +3299,9 @@ export type FulfillmentHoldReason =
   /** The fulfillment hold is applied because inventory is out of stock. */
   | 'INVENTORY_OUT_OF_STOCK'
   /** The fulfillment hold is applied for another reason. */
-  | 'OTHER';
-
-/** The input fields used to create a fulfillment. */
-export type FulfillmentInput = {
-  /** The order line items to be fulfilled. */
-  lineItems?: InputMaybe<Array<FulfillmentLineItemInput>>;
-  /** The ID of the location from which the line items will be fulfilled. */
-  locationId: Scalars['ID'];
-  /**
-   * Whether the customer is notified when the fulfillment is created.
-   * If `true`, then a notification is sent when the fulfillment is created.
-   *
-   */
-  notifyCustomer?: InputMaybe<Scalars['Boolean']>;
-  /** The ID of the order to be fulfilled. */
-  orderId: Scalars['ID'];
-  /**
-   * The address at which the fulfillment occurred.
-   * Typically this is the address of a warehouse or a fulfillment center.
-   *
-   */
-  originAddress?: InputMaybe<FulfillmentOriginAddressInput>;
-  /** A reference to the [ShippingMethod](https://shopify.dev/api/admin-graphql/latest/objects/shippingmethod) code, for example `FREE_SHIPPING`. */
-  shippingMethod?: InputMaybe<Scalars['String']>;
-  /** The name of the tracking company. */
-  trackingCompany?: InputMaybe<Scalars['String']>;
-  /** Tracking numbers associated with the fulfillment. */
-  trackingNumbers?: InputMaybe<Array<Scalars['String']>>;
-  /** The URLs to track the fulfillment. */
-  trackingUrls?: InputMaybe<Array<Scalars['String']>>;
-};
-
-/** The input fields used to include a line item from an order in a fulfillment. */
-export type FulfillmentLineItemInput = {
-  /** The ID of the line item. */
-  id: Scalars['ID'];
-  /** The quantity of the line item to be fulfilled. */
-  quantity?: InputMaybe<Scalars['Int']>;
-};
+  | 'OTHER'
+  /** The fulfillment hold is applied because of an unknown delivery date. */
+  | 'UNKNOWN_DELIVERY_DATE';
 
 /** The actions that can be taken on a fulfillment order. */
 export type FulfillmentOrderAction =
@@ -3112,9 +3399,22 @@ export type FulfillmentOrderMerchantRequestKind =
    */
   | 'FULFILLMENT_REQUEST';
 
+/** The reason for a fulfillment order rejection. */
+export type FulfillmentOrderRejectionReason =
+  /** The fulfillment order was rejected because of an incorrect address. */
+  | 'INCORRECT_ADDRESS'
+  /** The fulfillment order was rejected because of an ineligible product. */
+  | 'INELIGIBLE_PRODUCT'
+  /** The fulfillment order was rejected because inventory is out of stock. */
+  | 'INVENTORY_OUT_OF_STOCK'
+  /** The fulfillment order was rejected for another reason. */
+  | 'OTHER'
+  /** The fulfillment order was rejected because of an undeliverable destination. */
+  | 'UNDELIVERABLE_DESTINATION';
+
 /** Possible error codes that can be returned by `FulfillmentOrderReleaseHoldUserError`. */
 export type FulfillmentOrderReleaseHoldUserErrorCode =
-  /** The fulfillment order was not found. */
+  /** The fulfillment order wasn't found. */
   | 'FULFILLMENT_ORDER_NOT_FOUND';
 
 /** The request status of a fulfillment order. */
@@ -3182,6 +3482,11 @@ export type FulfillmentOrderStatus =
   /** The fulfillment order is deferred and will be ready for fulfillment after the date and time specified in `fulfill_at`. */
   | 'SCHEDULED';
 
+/** Possible error codes that can be returned by `FulfillmentOrdersSetFulfillmentDeadlineUserError`. */
+export type FulfillmentOrdersSetFulfillmentDeadlineUserErrorCode =
+  /** The fulfillment orders could not be found. */
+  | 'FULFILLMENT_ORDERS_NOT_FOUND';
+
 /** The input fields used to include the address at which the fulfillment occurred. Typically the address of a warehouse or a fulfillment center. */
 export type FulfillmentOriginAddressInput = {
   /** The street address of the fulfillment location. */
@@ -3234,8 +3539,12 @@ export type FulfillmentTrackingInput = {
   company?: InputMaybe<Scalars['String']>;
   /** The tracking number of the fulfillment. */
   number?: InputMaybe<Scalars['String']>;
+  /** The tracking numbers of the fulfillment, if there are multiple. */
+  numbers?: InputMaybe<Array<Scalars['String']>>;
   /** The URL to track the fulfillment. */
   url?: InputMaybe<Scalars['URL']>;
+  /** The URLs to track the fulfillment, if there are multiple. */
+  urls?: InputMaybe<Array<Scalars['URL']>>;
 };
 
 /** The input fields used to create a fulfillment from fulfillment orders. */
@@ -3378,18 +3687,25 @@ export type ImageInput = {
   altText?: InputMaybe<Scalars['String']>;
   /** A globally-unique identifier. */
   id?: InputMaybe<Scalars['ID']>;
-  /** The URL of the image. May be a signed upload URL. */
+  /** The URL of the image. May be a staged upload URL. */
   src?: InputMaybe<Scalars['String']>;
 };
 
 /**
  * The available options for transforming an image.
  *
- * All transformation options are considered "best-effort". Any transformation that the original image type doesn't support will be ignored.
+ * All transformation options are considered best effort. Any transformation that the original image type doesn't support will be ignored.
  *
  */
 export type ImageTransformInput = {
-  /** Crop the image according to the specified region. */
+  /**
+   * The region of the image to remain after cropping.
+   * Must be used in conjunction with the `maxWidth` and/or `maxHeight` fields, where the `maxWidth` and `maxHeight` aren't equal.
+   * The `crop` argument should coincide with the smaller value. A smaller `maxWidth` indicates a `LEFT` or `RIGHT` crop, while
+   * a smaller `maxHeight` indicates a `TOP` or `BOTTOM` crop. For example, `{ maxWidth: 5, maxHeight: 10, crop: LEFT }` will result
+   * in an image with a width of 5 and height of 10, where the right side of the image is removed.
+   *
+   */
   crop?: InputMaybe<CropRegion>;
   /**
    * Image height in pixels between 1 and 5760.
@@ -3412,6 +3728,14 @@ export type ImageTransformInput = {
    *
    */
   scale?: InputMaybe<Scalars['Int']>;
+};
+
+/** The incoming line item. */
+export type IncomingRequestLineItemInput = {
+  /** The ID of the rejected line item. */
+  fulfillmentOrderLineItemId: Scalars['ID'];
+  /** The rejection message of the line item. */
+  message?: InputMaybe<Scalars['String']>;
 };
 
 /** Specifies the items and their adjustments. */
@@ -3530,14 +3854,10 @@ export type MailingAddressInput = {
    *
    */
   company?: InputMaybe<Scalars['String']>;
-  /** The name of the country. This argument is deprecated: Use `countryCode` instead. */
-  country?: InputMaybe<Scalars['String']>;
   /** The two-letter code for the country of the address. */
   countryCode?: InputMaybe<CountryCode>;
   /** The first name of the customer. */
   firstName?: InputMaybe<Scalars['String']>;
-  /** This argument is deprecated: Not needed for 90% of mutations, and provided separately where it is needed. */
-  id?: InputMaybe<Scalars['ID']>;
   /** The last name of the customer. */
   lastName?: InputMaybe<Scalars['String']>;
   /**
@@ -3547,8 +3867,6 @@ export type MailingAddressInput = {
    *
    */
   phone?: InputMaybe<Scalars['String']>;
-  /** The region of the address, such as the province, state, or district. This argument is deprecated: Use `provinceCode` instead. */
-  province?: InputMaybe<Scalars['String']>;
   /**
    * The code for the region of the address, such as the province, state, or district.
    * For example QC for Quebec, Canada.
@@ -3557,6 +3875,196 @@ export type MailingAddressInput = {
   provinceCode?: InputMaybe<Scalars['String']>;
   /** The zip or postal code of the address. */
   zip?: InputMaybe<Scalars['String']>;
+};
+
+/** The input fields required to create a market. */
+export type MarketCreateInput = {
+  /**
+   * Whether the market is enabled to receive visitors and sales. If  a Boolean
+   * isn't provided, then the
+   * market is enabled by default if all included regions have shipping rates, and disabled if
+   * any regions don't have shipping rates.
+   *
+   * **Note**: Regions in inactive markets can't be selected on the storefront or in checkout.
+   *
+   */
+  enabled?: InputMaybe<Scalars['Boolean']>;
+  /**
+   * The name of the market. Not shown to customers.
+   *
+   */
+  name: Scalars['String'];
+  /**
+   * The regions to be included in the market. Each region can only be included in one market at
+   * a time.
+   *
+   */
+  regions: Array<MarketRegionCreateInput>;
+};
+
+/** The input fields used to update the currency settings of a market. */
+export type MarketCurrencySettingsUpdateInput = {
+  /**
+   * The currency which this market’s prices are defined in, and the
+   * currency which its customers must use if local currencies are disabled.
+   *
+   */
+  baseCurrency?: InputMaybe<CurrencyCode>;
+  /**
+   * Whether or not local currencies are enabled. If enabled, then prices will
+   * be converted to give each customer the best experience based on their
+   * region. If disabled, then all customers in this market will see prices
+   * in the market's base currency.
+   *
+   */
+  localCurrencies?: InputMaybe<Scalars['Boolean']>;
+};
+
+/** Possible error codes that can be returned by `MarketCurrencySettingsUserError`. */
+export type MarketCurrencySettingsUserErrorCode =
+  /** The currency settings of the given market cannot be changed because the market manager has exclusive control of pricing. */
+  | 'MANAGED_MARKET'
+  /** The specified market wasn't found. */
+  | 'MARKET_NOT_FOUND'
+  /** The shop's payment gateway does not support enabling more than one currency. */
+  | 'MULTIPLE_CURRENCIES_NOT_SUPPORTED'
+  /** Can't enable or disable local currencies on a single country market. */
+  | 'NO_LOCAL_CURRENCIES_ON_SINGLE_COUNTRY_MARKET'
+  /** The primary market must use the shop currency. */
+  | 'PRIMARY_MARKET_USES_SHOP_CURRENCY'
+  /** The specified currency is not supported. */
+  | 'UNSUPPORTED_CURRENCY';
+
+/** Defines input options for creating a market region. Exactly one option is required. */
+export type MarketRegionCreateInput = {
+  /** A country code for the region. */
+  countryCode: CountryCode;
+};
+
+/** The input fields used to update a market. */
+export type MarketUpdateInput = {
+  /**
+   * Whether the market is enabled to receive visitors and sales. **Note**: Regions in
+   * inactive markets cannot be selected on the storefront or in checkout.
+   *
+   */
+  enabled?: InputMaybe<Scalars['Boolean']>;
+  /**
+   * The name of the market. Not shown to customers.
+   *
+   */
+  name?: InputMaybe<Scalars['String']>;
+};
+
+/** Possible error codes that can be returned by `MarketUserError`. */
+export type MarketUserErrorCode =
+  /** The input value is blank. */
+  | 'BLANK'
+  /** Can't add regions to the primary market. */
+  | 'CANNOT_ADD_REGIONS_TO_PRIMARY_MARKET'
+  /** Can't add the web presence to the primary market. */
+  | 'CANNOT_ADD_WEB_PRESENCE_TO_PRIMARY_MARKET'
+  /** Can't delete the only region in a market. */
+  | 'CANNOT_DELETE_ONLY_REGION'
+  /** Can't delete the primary market. */
+  | 'CANNOT_DELETE_PRIMARY_MARKET'
+  /** Can't delete the primary market's web presence. */
+  | 'CANNOT_DELETE_PRIMARY_MARKET_WEB_PRESENCE'
+  /** Can't disable the primary market. */
+  | 'CANNOT_DISABLE_PRIMARY_MARKET'
+  /** Can't pass both `subfolderSuffix` and `domainId`. */
+  | 'CANNOT_HAVE_SUBFOLDER_AND_DOMAIN'
+  /** Can't set default locale to null. */
+  | 'CANNOT_SET_DEFAULT_LOCALE_TO_NULL'
+  /** Domain was not found. */
+  | 'DOMAIN_NOT_FOUND'
+  /** Duplicates found in languages. */
+  | 'DUPLICATE_LANGUAGES'
+  /** The input value is invalid. */
+  | 'INVALID'
+  /** The market wasn't found. */
+  | 'MARKET_NOT_FOUND'
+  /** No languages selected. */
+  | 'NO_LANGUAGES'
+  /** The primary market must use the primary domain. */
+  | 'PRIMARY_MARKET_MUST_USE_PRIMARY_DOMAIN'
+  /** The market region wasn't found. */
+  | 'REGION_NOT_FOUND'
+  /** Cannot add region-specific language. */
+  | 'REGION_SPECIFIC_LANGUAGE'
+  /** One of `subfolderSuffix` or `domainId` is required. */
+  | 'REQUIRES_DOMAIN_OR_SUBFOLDER'
+  /** Exactly one input option is required. */
+  | 'REQUIRES_EXACTLY_ONE_OPTION'
+  /** Can't have more than 50 markets. */
+  | 'SHOP_REACHED_MARKETS_LIMIT'
+  /** Can't create subfolders if the primary domain is a country code top-level domain (ccTLDs). */
+  | 'SUBFOLDER_NOT_ALLOWED_FOR_CCTLD_DOMAINS'
+  /** The subfolder suffix must contain only letters. */
+  | 'SUBFOLDER_SUFFIX_MUST_CONTAIN_ONLY_LETTERS'
+  /** The input value is already taken. */
+  | 'TAKEN'
+  /** The input value is too long. */
+  | 'TOO_LONG'
+  /** The input value is too short. */
+  | 'TOO_SHORT'
+  /** The language isn't published to the store. */
+  | 'UNPUBLISHED_LANGUAGE'
+  /** Can't add unsupported country or region. */
+  | 'UNSUPPORTED_COUNTRY_REGION'
+  /** The market web presence wasn't found. */
+  | 'WEB_PRESENCE_NOT_FOUND';
+
+/** The input fields used to create a web presence for a market. */
+export type MarketWebPresenceCreateInput = {
+  /**
+   * The alternate locales for the market’s web presence.
+   *
+   */
+  alternateLocales?: InputMaybe<Array<Scalars['String']>>;
+  /**
+   * The default locale for the market’s web presence.
+   *
+   */
+  defaultLocale: Scalars['String'];
+  /**
+   * The web presence's domain ID. This field must be `null` if the `subfolderSuffix` isn't `null`.
+   *
+   */
+  domainId?: InputMaybe<Scalars['ID']>;
+  /**
+   * The market-specific suffix of the subfolders defined by the web presence.
+   * For example: in `/en-us`, the subfolder suffix is `us`.
+   * Only ASCII characters are allowed. This field must be `null` if the `domainId` isn't `null`.
+   *
+   */
+  subfolderSuffix?: InputMaybe<Scalars['String']>;
+};
+
+/** The input fields used to update a web presence for a market. */
+export type MarketWebPresenceUpdateInput = {
+  /**
+   * The alternate locales for the market’s web presence.
+   *
+   */
+  alternateLocales?: InputMaybe<Array<Scalars['String']>>;
+  /**
+   * The default locale for the market’s web presence.
+   *
+   */
+  defaultLocale?: InputMaybe<Scalars['String']>;
+  /**
+   * The web presence's domain ID. This field must be null if `subfolderSuffix` is not null.
+   *
+   */
+  domainId?: InputMaybe<Scalars['ID']>;
+  /**
+   * The market-specific suffix of the subfolders defined by the web presence.
+   * Example: in `/en-us` the subfolder suffix is `us`.
+   * Only ASCII characters are allowed. This field must be null if `domainId` is not null.
+   *
+   */
+  subfolderSuffix?: InputMaybe<Scalars['String']>;
 };
 
 /** This type combines budget amount and its marketing budget type. */
@@ -3659,12 +4167,8 @@ export type MarketingActivityStatusBadgeType =
 
 /** Specifies the input fields required to update a marketing activity. */
 export type MarketingActivityUpdateInput = {
-  /** The cumulative amount spent on the marketing activity. This argument is deprecated: Use `MarketingEngagementCreate.MarketingEngagementInput.adSpend` GraphQL to send the ad spend. */
-  adSpend?: InputMaybe<MoneyInput>;
   /** The budget for the marketing activity. */
   budget?: InputMaybe<MarketingActivityBudgetInput>;
-  /** Encoded context provided by Shopify during the update marketing activity callback. This argument is deprecated: This context is no longer needed by Shopify in the callback. */
-  context?: InputMaybe<Scalars['String']>;
   /**
    * Error messages generated when the app was trying to complete this activity.
    * Learn more about the
@@ -3977,6 +4481,13 @@ export type MediaWarningCode =
   /** 3D model physical size might be invalid. The dimensions of your model are very small. Consider reviewing your model to ensure they are correct. */
   | 'MODEL_SMALL_PHYSICAL_SIZE';
 
+/** The class of the discount for combining purposes. */
+export type MerchandiseDiscountClass =
+  /** Combined as an order discount. */
+  | 'ORDER'
+  /** Combined as a product discount. */
+  | 'PRODUCT';
+
 /** Possible error codes that can be returned by `MetafieldDefinitionCreateUserError`. */
 export type MetafieldDefinitionCreateUserErrorCode =
   /** A duplicate option. */
@@ -3985,6 +4496,8 @@ export type MetafieldDefinitionCreateUserErrorCode =
   | 'INCLUSION'
   /** The input value is invalid. */
   | 'INVALID'
+  /** A field contains an invalid character. */
+  | 'INVALID_CHARACTER'
   /** An invalid option. */
   | 'INVALID_OPTION'
   /** The maximum limit of definitions per owner type has exceeded. */
@@ -4013,7 +4526,9 @@ export type MetafieldDefinitionDeleteUserErrorCode =
   /** Definition not found. */
   | 'NOT_FOUND'
   /** The input value needs to be blank. */
-  | 'PRESENT';
+  | 'PRESENT'
+  /** Deleting a reference type metafield definition requires deletion of its associated metafields. */
+  | 'REFERENCE_TYPE_DELETION_ERROR';
 
 /**
  * Specifies the input fields that are required to create a metafield definition.
@@ -4041,6 +4556,8 @@ export type MetafieldDefinitionInput = {
    *
    */
   validations?: InputMaybe<Array<MetafieldDefinitionValidationInput>>;
+  /** Whether metafields for the definition are visible using the Storefront API. */
+  visibleToStorefrontApi?: InputMaybe<Scalars['Boolean']>;
 };
 
 /** Possible error codes that can be returned by `MetafieldDefinitionPinUserError`. */
@@ -4104,6 +4621,8 @@ export type MetafieldDefinitionUpdateInput = {
   ownerType: MetafieldOwnerType;
   /** Whether to pin the metafield definition. */
   pin?: InputMaybe<Scalars['Boolean']>;
+  /** Whether metafields for the definition are visible using the Storefront API. */
+  visibleToStorefrontApi?: InputMaybe<Scalars['Boolean']>;
 };
 
 /** Possible error codes that can be returned by `MetafieldDefinitionUpdateUserError`. */
@@ -4187,6 +4706,8 @@ export type MetafieldInput = {
 
 /** Possible types of a metafield's owner resource. */
 export type MetafieldOwnerType =
+  /** The Api Permission metafield owner type. */
+  | 'API_PERMISSION'
   /** The Article metafield owner type. */
   | 'ARTICLE'
   /** The Blog metafield owner type. */
@@ -4195,6 +4716,8 @@ export type MetafieldOwnerType =
   | 'COLLECTION'
   /** The Customer metafield owner type. */
   | 'CUSTOMER'
+  /** The Discount metafield owner type. */
+  | 'DISCOUNT'
   /** The Draft Order metafield owner type. */
   | 'DRAFTORDER'
   /** The Order metafield owner type. */
@@ -4274,6 +4797,8 @@ export type MetafieldsSetInput = {
 
 /** Possible error codes that can be returned by `MetafieldsSetUserError`. */
 export type MetafieldsSetUserErrorCode =
+  /** ApiPermission metafields can only be created or updated by the app owner. */
+  | 'APP_NOT_AUTHORIZED'
   /** The input value is blank. */
   | 'BLANK'
   /** The input value isn't included in the list. */
@@ -4366,6 +4891,11 @@ export type OrderCloseInput = {
   id: Scalars['ID'];
 };
 
+/** Possible error codes that can be returned by `OrderCreateMandatePaymentUserError`. */
+export type OrderCreateMandatePaymentUserErrorCode =
+  /** Errors for mandate payment on order. */
+  | 'ORDER_MANDATE_PAYMENT_ERROR_CODE';
+
 /** Represents the order's current financial status. */
 export type OrderDisplayFinancialStatus =
   /** Displayed as **Authorized**. */
@@ -4452,6 +4982,31 @@ export type OrderOpenInput = {
   /** The ID of the order to open. */
   id: Scalars['ID'];
 };
+
+/** The type of a payment status. */
+export type OrderPaymentStatusResult =
+  /** The payment is authorized. */
+  | 'AUTHORIZED'
+  /** The payment is captured. */
+  | 'CAPTURED'
+  /** There was an error initiating the payment. */
+  | 'ERROR'
+  /** The payment is still being processed. */
+  | 'PROCESSING'
+  /** The payment is in purchased status. */
+  | 'PURCHASED'
+  /** Redirect required. */
+  | 'REDIRECT_REQUIRED'
+  /** The payment is refunded. */
+  | 'REFUNDED'
+  /** Payment can be retried. */
+  | 'RETRYABLE'
+  /** The payment succeeded. */
+  | 'SUCCESS'
+  /** Status is unknown. */
+  | 'UNKNOWN'
+  /** The payment is voided. */
+  | 'VOIDED';
 
 /** The likelihood that an order is fraudulent. */
 export type OrderRiskLevel =
@@ -4673,9 +5228,9 @@ export type PaymentTermsInput = {
 
 /** The type of a payment terms or a payment terms template. */
 export type PaymentTermsType =
-  /** The payment terms or payment terms template is fixed type. */
+  /** The payment terms or payment terms template is a fixed type. It's due on a specified date. */
   | 'FIXED'
-  /** The payment terms or payment terms template is net type. */
+  /** The payment terms or payment terms template is a net type. It's due a number of days after issue. */
   | 'NET'
   /** The payment terms or payment terms template is due on receipt. */
   | 'RECEIPT'
@@ -4704,14 +5259,11 @@ export type PaypalExpressSubscriptionsGatewayStatus =
   /** The status is pending. */
   | 'PENDING';
 
-/** Provides the fields and values to use when updating a price list parent adjustment. */
+/** The input fields to set a price list adjustment. */
 export type PriceListAdjustmentInput = {
   /** The type of price adjustment, such as percentage increase or decrease. */
   type: PriceListAdjustmentType;
-  /**
-   * The value of the price adjustment, where positive numbers reduce
-   *                the prices and negative numbers increase them.
-   */
+  /** The value of the price adjustment as specified by the `type`. */
   value: Scalars['Float'];
 };
 
@@ -4722,23 +5274,27 @@ export type PriceListAdjustmentType =
   /** Percentage increase type. Prices will have a higher value. */
   | 'PERCENTAGE_INCREASE';
 
-/** Represents a set of facts about the customer used to determine price list eligibility. For example, you can specify the country code so that the price list only applies to customers visiting from a specific country. */
+/**
+ * The input field used to filter price lists based on context.
+ * For example, you can specify the country code so that the filtered price lists only apply to customers visiting from a specific country.
+ *
+ */
 export type PriceListContext = {
-  /** The code for the country that the price list applies to. */
+  /** The code of the country that the price list applies to. */
   country?: InputMaybe<CountryCode>;
 };
 
-/** The context that the price list applies to. */
+/**
+ * The input fields to set the context that a price list applies to.
+ * For example, the price list might apply to a specific market.
+ *
+ */
 export type PriceListContextRuleInput = {
-  /**
-   * The code for the country that the price list applies to. You can only specify one country code.
-   * Use `marketId` as of version 2022-04 instead.
-   *
-   */
-  countries?: InputMaybe<Array<CountryCode>>;
+  /** The market that this price list applies to. */
+  marketId?: InputMaybe<Scalars['ID']>;
 };
 
-/** Provides the fields and values to use when creating a price list. */
+/** The input fields to create a price list. */
 export type PriceListCreateInput = {
   /** A set of facts about the customer used to determine price list eligibility. */
   contextRule?: InputMaybe<PriceListContextRuleInput>;
@@ -4750,15 +5306,15 @@ export type PriceListCreateInput = {
   parent: PriceListParentCreateInput;
 };
 
-/** Provides the fields and values to use when creating a price list parent adjustment. */
+/** The input fields to create a price list adjustment. */
 export type PriceListParentCreateInput = {
-  /** Provides the fields and values to use when updating a price list parent adjustment. */
+  /** The relative adjustments to other prices. */
   adjustment: PriceListAdjustmentInput;
 };
 
-/** Relative adjustments to other prices. */
+/** The input fields used to update a price list's adjustment. */
 export type PriceListParentUpdateInput = {
-  /** Provides the fields and values to use when updating a price list parent adjustment. */
+  /** The relative adjustments to other prices.. */
   adjustment: PriceListAdjustmentInput;
 };
 
@@ -4773,13 +5329,13 @@ export type PriceListPriceInput = {
 };
 
 /**
- * Represents the origin of a price, either fixed (defined on the price list)
- *         or relative (calculated using an adjustment via a price list parent configuration).
+ * Represents the origin of a price, either fixed (defined on the price list) or relative (calculated using a price list adjustment configuration).
+ *
  */
 export type PriceListPriceOriginType =
   /** The price is defined on the price list. */
   | 'FIXED'
-  /** The price is relative to the parent price list. */
+  /** The price is relative to the adjustment type and value. */
   | 'RELATIVE';
 
 /** Possible error codes that can be returned by `PriceListPriceUserError`. */
@@ -4808,11 +5364,11 @@ export type PriceListSortKeys =
    */
   | 'RELEVANCE';
 
-/** Provides the fields and values to use when updating a price list. */
+/** The input fields used to update a price list. */
 export type PriceListUpdateInput = {
-  /** A set of facts about buyer context used to determine price list eligibility. */
+  /** A set of facts about the customer used to determine price list eligibility. */
   contextRule?: InputMaybe<PriceListContextRuleInput>;
-  /** The three-letter code for fixed prices associated with this price list. */
+  /** The three-letter currency code for fixed prices associated with this price list. */
   currency?: InputMaybe<CurrencyCode>;
   /** The unique name of the price list, used as a human-readable identifier. */
   name?: InputMaybe<Scalars['String']>;
@@ -4826,15 +5382,29 @@ export type PriceListUserErrorCode =
   | 'CONTEXT_RULE_COUNTRIES_LIMIT'
   /** A price list for this country is already taken. */
   | 'CONTEXT_RULE_COUNTRY_TAKEN'
+  /** Only one context rule option may be specified. */
+  | 'CONTEXT_RULE_LIMIT_ONE_OPTION'
   /** Cannot save the price list with context rule because the limit of context rules per shop was reached. */
   | 'CONTEXT_RULE_LIMIT_REACHED'
+  /** The specified market wasn't found. */
+  | 'CONTEXT_RULE_MARKET_NOT_FOUND'
+  /** A price list for this market is already taken. */
+  | 'CONTEXT_RULE_MARKET_TAKEN'
   /** A country in a context rule must use a valid currency. */
   | 'COUNTRY_CURRENCY_MISMATCH'
   /** A price list’s currency must be of the pricing rule’s country. */
   | 'CURRENCY_COUNTRY_MISMATCH'
-  /** The adjustment value must be a positive value and not be greater than 100% for PERCENTAGE_DECREASE and not be greater than 1000% for PERCENTAGE_INCREASE. */
+  /** A price list’s currency must be the market currency. */
+  | 'CURRENCY_MARKET_MISMATCH'
+  /** The price list currency is not supported by the shop's payment gateway. */
+  | 'CURRENCY_NOT_SUPPORTED'
+  /** The adjustment value must be a positive value and not be greater than 100% for `type` `PERCENTAGE_DECREASE` and not be greater than 1000% for `type` `PERCENTAGE_INCREASE`. */
   | 'INVALID_ADJUSTMENT_VALUE'
-  /** The PriceList specified does not exist. */
+  /** The context rule's market does not use the price list currency. */
+  | 'MARKET_CURRENCY_MISMATCH'
+  /** Cannot create price list for a primary market. */
+  | 'PRICE_LIST_NOT_ALLOWED_FOR_PRIMARY_MARKET'
+  /** The specified price list doesn't exist. */
   | 'PRICE_LIST_NOT_FOUND'
   /** The input value is already taken. */
   | 'TAKEN';
@@ -4854,6 +5424,8 @@ export type PriceRuleCustomerSelectionInput = {
   customerIdsToRemove?: InputMaybe<Array<Scalars['ID']>>;
   /** Whether the price rule applies to all customers. */
   forAllCustomers?: InputMaybe<Scalars['Boolean']>;
+  /** List of customer segments that contain the customers to whom the price rule applies. No single customer IDs may be present. */
+  segmentIds?: InputMaybe<Array<Scalars['ID']>>;
 };
 
 /** Specifies the input fields to manipulate a discount code. */
@@ -4864,40 +5436,63 @@ export type PriceRuleDiscountCodeInput = {
 
 /** Specifies the quantity of prerequisite items required for the price rule to be applicable, compared to quantity of entitled items. */
 export type PriceRuleEntitlementToPrerequisiteQuantityRatioInput = {
-  /** The quantity of entitlements in the ratio. */
+  /** The quantity of entitled items in the ratio. */
   entitlementQuantity?: InputMaybe<Scalars['Int']>;
-  /** The quantity of prerequisites in the ratio. */
+  /** The quantity of prerequisite items in the ratio. */
   prerequisiteQuantity?: InputMaybe<Scalars['Int']>;
 };
 
 /** Possible error codes that could be returned by a price rule mutation. */
 export type PriceRuleErrorCode =
-  /** The allocation method must be "across" for the provided target selection. */
+  /** The allocation method must be `ACROSS` for the provided target selection. */
   | 'ALLOCATION_METHOD_MUST_BE_ACROSS_FOR_GIVEN_TARGET_SELECTION'
   /** The discount must apply on either one-time purchase or subscription items, or both. */
   | 'APPLIES_ON_NOTHING'
   /** The input value is blank. */
   | 'BLANK'
+  /** Invalid BOGO target selection. */
   | 'BOGO_INVALID_TARGET_SELECTION'
+  /** Invalid BOGO target type. */
   | 'BOGO_INVALID_TARGET_TYPE'
+  /** Invalid BOGO value type. */
   | 'BOGO_INVALID_VALUE_TYPE'
+  /** Can't use both prerequisite customers and saved search. */
   | 'BOTH_CUSTOMER_AND_SAVED_SEARCH_PREREQUISITES_SELECTED'
+  /** Can't have both prerequisite customers and prerequisite segments. */
+  | 'BOTH_CUSTOMER_AND_SEGMENT_PREREQUISITES_SELECTED'
+  /** Can't have both saved searches and segments prerequisites. */
+  | 'BOTH_SAVED_SEARCH_AND_SEGMENT_PREREQUISITES_SELECTED'
+  /** Can't entitle collections in combination with product variants or products. */
   | 'CANNOT_ENTITLE_COLLECTIONS_WITH_PRODUCTS_OR_VARIANTS'
+  /** Can't use collections as a prequisite in combination with product variants or products. */
   | 'CANNOT_PREREQUISITE_COLLECTION_WITH_PRODUCT_OR_VARIANTS'
+  /** The customer prerequisites exceeded the maximum number. */
   | 'CUSTOMER_PREREQUISITES_EXCEEDED_MAX'
+  /** Invalid customer prerequisites selection. */
   | 'CUSTOMER_PREREQUISITES_INVALID_SELECTION'
+  /** Customer prerequisites are missing. */
   | 'CUSTOMER_PREREQUISITES_MISSING'
-  /** Duplicate customer prerequisite id present. */
+  /** A duplicate customer prerequisite ID exists. */
   | 'CUSTOMER_PREREQUISITE_DUPLICATE'
+  /** A duplicate customer saved search exists. */
   | 'CUSTOMER_SAVED_SEARCH_DUPLICATE'
+  /** The customer saved search exceeded the maximum number. */
   | 'CUSTOMER_SAVED_SEARCH_EXCEEDED_MAX'
+  /** Invalid customer saved search. */
   | 'CUSTOMER_SAVED_SEARCH_INVALID'
+  /** The customer segment prerequisites exceeded the maximum number. */
+  | 'CUSTOMER_SEGMENT_EXCEEDED_MAX'
+  /** The customer segment prerequisite ID is invalid. */
+  | 'CUSTOMER_SEGMENT_INVALID'
+  /** A duplicate customer segment prerequisite ID exists. */
+  | 'CUSTOMER_SEGMENT_PREREQUISITE_DUPLICATE'
+  /** A duplicate discount code exists. */
   | 'DISCOUNT_CODE_DUPLICATE'
   /** The discount end date must be after the start date. */
   | 'END_DATE_BEFORE_START_DATE'
   /** The input value should be equal to the value allowed. */
   | 'EQUAL_TO'
-  /** Exceeding the maximum number is allowed. */
+  /** Can't exceed the maximum number. */
   | 'EXCEEDED_MAX'
   /** The input value should be greater than the minimum allowed value. */
   | 'GREATER_THAN'
@@ -4907,28 +5502,51 @@ export type PriceRuleErrorCode =
   | 'INTERNAL_ERROR'
   /** The input value is invalid. */
   | 'INVALID'
+  /** The target type is invalid when defining a prerequisite shipping price range. */
   | 'INVALID_TARGET_TYPE_PREREQUISITE_SHIPPING_PRICE_RANGE'
+  /** Can't add the same collection twice. */
   | 'ITEM_ENTITLEMENTS_DUPLICATE_COLLECTION'
+  /** Can't add the same product twice. */
   | 'ITEM_ENTITLEMENTS_DUPLICATE_PRODUCT'
+  /** Can't add the same collection twice. */
   | 'ITEM_ENTITLEMENTS_DUPLICATE_VARIANT'
+  /** Can't exceed the maximum number of collection entitlements. */
   | 'ITEM_ENTITLEMENTS_EXCEEDED_MAX_COLLECTION'
+  /** Can't exceed the maximum number of product entitlements. */
   | 'ITEM_ENTITLEMENTS_EXCEEDED_MAX_PRODUCT'
+  /** Can't exceed the maximum number of variant entitlements. */
   | 'ITEM_ENTITLEMENTS_EXCEEDED_MAX_VARIANT'
+  /** Invalid collection. */
   | 'ITEM_ENTITLEMENTS_INVALID_COLLECTION'
+  /** Invalid product. */
   | 'ITEM_ENTITLEMENTS_INVALID_PRODUCT'
+  /** Invalid combination of target type and selection. */
   | 'ITEM_ENTITLEMENTS_INVALID_TARGET_TYPE_OR_SELECTION'
+  /** Invalid variant. */
   | 'ITEM_ENTITLEMENTS_INVALID_VARIANT'
+  /** Entitlements are missing. */
   | 'ITEM_ENTITLEMENTS_MISSING'
+  /** Invalid entitlement type. */
   | 'ITEM_ENTITLEMENT_INVALID_TYPE'
+  /** Can't add the same collection twice. */
   | 'ITEM_PREREQUISITES_DUPLICATE_COLLECTION'
+  /** Can't add the same product twice. */
   | 'ITEM_PREREQUISITES_DUPLICATE_PRODUCT'
+  /** Can't add the same variant twice. */
   | 'ITEM_PREREQUISITES_DUPLICATE_VARIANT'
+  /** Can't exceed the maximum number of item prerequisites. */
   | 'ITEM_PREREQUISITES_EXCEEDED_MAX'
+  /** Invalid collection. */
   | 'ITEM_PREREQUISITES_INVALID_COLLECTION'
+  /** Invalid product. */
   | 'ITEM_PREREQUISITES_INVALID_PRODUCT'
+  /** Invalid type. */
   | 'ITEM_PREREQUISITES_INVALID_TYPE'
+  /** Invalid variant. */
   | 'ITEM_PREREQUISITES_INVALID_VARIANT'
+  /** Item prerequisites must have at least one item prerequisite if the prerequisite quantity ratio is defined. */
   | 'ITEM_PREREQUISITES_MISSING'
+  /** Item prerequisites must be empty if the prerequisite quantity ratio isn't defined. */
   | 'ITEM_PREREQUISITES_MUST_BE_EMPTY'
   /** The input value should be less than the maximum value allowed. */
   | 'LESS_THAN'
@@ -4936,23 +5554,29 @@ export type PriceRuleErrorCode =
   | 'LESS_THAN_OR_EQUAL_TO'
   /** Missing a required argument. */
   | 'MISSING_ARGUMENT'
-  /** The recurring cycle limit must be 1 when a discount does not apply on subscription items. */
+  /** The recurring cycle limit must be 1 when a discount doesn't apply on subscription items. */
   | 'MULTIPLE_RECURRING_CYCLE_LIMIT_FOR_NON_SUBSCRIPTION_ITEMS'
   /** Only one of the minimum subtotal or minimum quantity condition can be defined. */
   | 'PREREQUISITE_SUBTOTAL_AND_QUANTITY_RANGE_BOTH_PRESENT'
   /** The allocation limit must be a non-zero positive number. */
   | 'PRICE_RULE_ALLOCATION_LIMIT_IS_ZERO'
-  /** The allocation limit can only be set on buy-one-get-one type discounts. */
+  /** The allocation limit can only be set on Buy x, get y (BXGY) discounts. */
   | 'PRICE_RULE_ALLOCATION_LIMIT_ON_NON_BOGO'
   /** The number of discount codes in the shop has reached its limit. */
   | 'PRICE_RULE_EXCEEDED_MAX_DISCOUNT_CODE'
   /** The percentage value must be between 0 and -100. */
   | 'PRICE_RULE_PERCENTAGE_VALUE_OUTSIDE_RANGE'
+  /** A duplicate country code exists. */
   | 'SHIPPING_ENTITLEMENTS_DUPLICATE_COUNTRY'
+  /** Can't exceed the maximum number of entitlements. */
   | 'SHIPPING_ENTITLEMENTS_EXCEEDED_MAX'
+  /** The country is unknown. */
   | 'SHIPPING_ENTITLEMENTS_INVALID_COUNTRY'
+  /** Invalid target type or selection. */
   | 'SHIPPING_ENTITLEMENTS_INVALID_TARGET_TYPE_OR_SELECTION'
+  /** Missing entitlements. */
   | 'SHIPPING_ENTITLEMENTS_MISSING'
+  /** Unsupported destination type. */
   | 'SHIPPING_ENTITLEMENTS_UNSUPPORTED_DESTINATION_TYPE'
   /** The number of discounts in the shop has reached its limit. */
   | 'SHOP_EXCEEDED_MAX_PRICE_RULES'
@@ -4964,19 +5588,20 @@ export type PriceRuleErrorCode =
   | 'TOO_MANY_ARGUMENTS'
   /** The input value is too short. */
   | 'TOO_SHORT'
+  /** The variant is already entitled through a product. */
   | 'VARIANT_ALREADY_ENTITLED_THROUGH_PRODUCT';
 
-/** A list of features used by the price rule. */
+/** The list of features that can be supported by a price rule. */
 export type PriceRuleFeature =
   /** The price rule supports bulk discounts. */
   | 'BULK'
-  /** The price rule supports quantity BXGY discounts. */
+  /** The price rule supports Buy X, Get Y (BXGY) discounts. */
   | 'BUY_ONE_GET_ONE'
-  /** The price rule supports BXGY discounts using custom allocation limit. */
+  /** The price rule supports Buy X, Get Y (BXGY) discounts that specify a custom allocation limit. */
   | 'BUY_ONE_GET_ONE_WITH_ALLOCATION_LIMIT'
-  /** The price rule supports quantity discounts. */
+  /** The price rule supports discounts that require a quantity. */
   | 'QUANTITY_DISCOUNTS'
-  /** The price rule supports specific customers. */
+  /** The price rule targets specific customers. */
   | 'SPECIFIC_CUSTOMERS';
 
 /** Specifies the input fields to manipulate a price rule. */
@@ -4985,10 +5610,10 @@ export type PriceRuleInput = {
   allocationLimit?: InputMaybe<Scalars['Int']>;
   /** The method by which the price rule's value is allocated to its entitled items. */
   allocationMethod?: InputMaybe<PriceRuleAllocationMethod>;
+  /** Determines which discount classes the discount can combine with. */
+  combinesWith?: InputMaybe<DiscountCombinesWithInput>;
   /** The customers that can use this price rule. */
   customerSelection?: InputMaybe<PriceRuleCustomerSelectionInput>;
-  /** Quantity of prerequisite items required for the price rule to be applicable, compared to quantity of entitled items. This argument is deprecated: Use `prerequisiteToEntitlementQuantityRatio` instead. */
-  entitlementToPrerequisiteQuantityRatio?: InputMaybe<PriceRuleEntitlementToPrerequisiteQuantityRatioInput>;
   /** The items to which the price rule applies. */
   itemEntitlements?: InputMaybe<PriceRuleItemEntitlementsInput>;
   /** The items required for the price rule to be applicable. */
@@ -5056,9 +5681,9 @@ export type PriceRuleMoneyRangeInput = {
 
 /** Specifies the quantity of prerequisite items required for the price rule to be applicable, compared to quantity of entitled items. */
 export type PriceRulePrerequisiteToEntitlementQuantityRatioInput = {
-  /** The quantity of entitlements in the ratio. */
+  /** The quantity of entitled items in the ratio. */
   entitlementQuantity?: InputMaybe<Scalars['Int']>;
-  /** The quantity of prerequisites in the ratio. */
+  /** The quantity of prerequisite items in the ratio. */
   prerequisiteQuantity?: InputMaybe<Scalars['Int']>;
 };
 
@@ -5077,10 +5702,13 @@ export type PriceRuleQuantityRangeInput = {
   lessThanOrEqualTo?: InputMaybe<Scalars['Int']>;
 };
 
-/** Page type where shareable URL lands. */
+/** The type of page where a shareable price rule URL lands. */
 export type PriceRuleShareableUrlTargetType =
+  /** The URL lands on a collection page. */
   | 'COLLECTION'
+  /** The URL lands on a home page. */
   | 'HOME'
+  /** The URL lands on a product page. */
   | 'PRODUCT';
 
 /** Specifies the input fields to update a price rule shipping entitlement. */
@@ -5116,8 +5744,11 @@ export type PriceRuleSortKeys =
 
 /** The status of the price rule. */
 export type PriceRuleStatus =
+  /** The price rule is active. */
   | 'ACTIVE'
+  /** The price rule is expired. */
   | 'EXPIRED'
+  /** The price rule is scheduled. */
   | 'SCHEDULED';
 
 /** The type of lines (line_item or shipping_line) to which the price rule applies. */
@@ -5127,17 +5758,17 @@ export type PriceRuleTarget =
   /** The price rule applies to shipping lines. */
   | 'SHIPPING_LINE';
 
-/** A list of features used by the price rule. */
+/** The list of features that can be supported by a price rule. */
 export type PriceRuleTrait =
   /** The price rule supports bulk discounts. */
   | 'BULK'
-  /** The price rule supports quantity BXGY discounts. */
+  /** The price rule supports Buy X, Get Y (BXGY) discounts. */
   | 'BUY_ONE_GET_ONE'
-  /** The price rule supports BXGY discounts using custom allocation limit. */
+  /** The price rule supports Buy X, Get Y (BXGY) discounts that specify a custom allocation limit. */
   | 'BUY_ONE_GET_ONE_WITH_ALLOCATION_LIMIT'
-  /** The price rule supports quantity discounts. */
+  /** The price rule supports discounts that require a quantity. */
   | 'QUANTITY_DISCOUNTS'
-  /** The price rule supports specific customers. */
+  /** The price rule targets specific customers. */
   | 'SPECIFIC_CUSTOMERS';
 
 /** Specifies the input fields to update the validity period of a price rule. */
@@ -5263,8 +5894,6 @@ export type ProductImageSortKeys =
 
 /** Specifies the input fields required to create a product. */
 export type ProductInput = {
-  /** A description of the product. Supports HTML formatting. This argument is deprecated: Use `descriptionHtml` instead. */
-  bodyHtml?: InputMaybe<Scalars['String']>;
   /** The IDs of the collections that this product will be added to. */
   collectionsToJoin?: InputMaybe<Array<Scalars['ID']>>;
   /** The IDs of collections that will no longer include the product. */
@@ -5292,20 +5921,8 @@ export type ProductInput = {
   options?: InputMaybe<Array<Scalars['String']>>;
   /** The private metafields to associate with this product. */
   privateMetafields?: InputMaybe<Array<PrivateMetafieldInput>>;
-  /** A list of the channels where the product is published. This argument is deprecated: Use `PublishablePublish` instead. */
-  productPublications?: InputMaybe<Array<ProductPublicationInput>>;
   /** The product type specified by the merchant. */
   productType?: InputMaybe<Scalars['String']>;
-  /** A list of the channels where the product is published. This argument is deprecated: Use `PublishablePublish` instead. */
-  publications?: InputMaybe<Array<ProductPublicationInput>>;
-  /** Only products with an active status can be published. This argument is deprecated: Use `PublishablePublish` instead. */
-  publishDate?: InputMaybe<Scalars['DateTime']>;
-  /** Only products with an active status can be published. This argument is deprecated: Use `PublishablePublish` instead. */
-  publishOn?: InputMaybe<Scalars['DateTime']>;
-  /** Only products with an active status can be published. This argument is deprecated: Use `PublishablePublish` instead. */
-  published?: InputMaybe<Scalars['Boolean']>;
-  /** Only products with an active status can be published. This argument is deprecated: Use `PublishablePublish` instead. */
-  publishedAt?: InputMaybe<Scalars['DateTime']>;
   /**
    * Whether a redirect is required after a new handle has been provided.
    * If true, then the old handle is redirected to the new one automatically.
@@ -5347,10 +5964,6 @@ export type ProductMediaSortKeys =
 
 /** Specifies a publication to which a product will be published. */
 export type ProductPublicationInput = {
-  /** This argument is deprecated: Use publicationId instead. */
-  channelHandle?: InputMaybe<Scalars['String']>;
-  /** ID of the channel. This argument is deprecated: Use publicationId instead. */
-  channelId?: InputMaybe<Scalars['ID']>;
   /** ID of the publication. */
   publicationId?: InputMaybe<Scalars['ID']>;
   /** The date and time that the product was (or will be) published. */
@@ -5414,7 +6027,7 @@ export type ProductSortKeys =
 
 /** The possible product statuses. */
 export type ProductStatus =
-  /** The product is ready to sell and is available to customers on the online store, sales channels, and apps. By default, existing products are set to active. */
+  /** The product is ready to sell and can be published to sales channels and apps. Products with an active status aren't automatically published to sales channels, such as the online store, or apps. By default, existing products are set to active. */
   | 'ACTIVE'
   /** The product is no longer being sold and isn't available to customers on sales channels and apps. */
   | 'ARCHIVED'
@@ -5451,8 +6064,6 @@ export type ProductVariantInput = {
   barcode?: InputMaybe<Scalars['String']>;
   /** The compare-at price of the variant. */
   compareAtPrice?: InputMaybe<Scalars['Money']>;
-  /** The ID of the fulfillment service associated with the variant. */
-  fulfillmentServiceId?: InputMaybe<Scalars['ID']>;
   /** The Harmonized System Code (or HS Tariff Code) for the variant. */
   harmonizedSystemCode?: InputMaybe<Scalars['String']>;
   /** Specifies the product variant to update or create a new variant if absent. */
@@ -5466,11 +6077,6 @@ export type ProductVariantInput = {
   imageSrc?: InputMaybe<Scalars['String']>;
   /** Inventory Item associated with the variant, used for unit cost. */
   inventoryItem?: InputMaybe<InventoryItemInput>;
-  /**
-   * The fulfillment service that tracks the number of items in stock for the product variant. If you track the inventory yourself using the admin, then set the value to `shopify`. Valid values: `shopify` or the handle of a fulfillment service that has inventory management enabled.
-   *  This argument is deprecated: Use tracked attribute on `inventoryItem` instead.
-   */
-  inventoryManagement?: InputMaybe<ProductVariantInventoryManagement>;
   /** Whether customers are allowed to place an order for the product variant when it's out of stock. */
   inventoryPolicy?: InputMaybe<ProductVariantInventoryPolicy>;
   /** Create only field. The inventory quantities at each location where the variant is stocked. */
@@ -5500,8 +6106,6 @@ export type ProductVariantInput = {
   taxCode?: InputMaybe<Scalars['String']>;
   /** Whether the variant is taxable. */
   taxable?: InputMaybe<Scalars['Boolean']>;
-  /** This argument is deprecated: Variant title is not a writable field; it is generated from the selected variant options. */
-  title?: InputMaybe<Scalars['String']>;
   /** The weight of the variant. */
   weight?: InputMaybe<Scalars['Float']>;
   /** The unit of weight that's used to measure the variant. */
@@ -5612,8 +6216,6 @@ export type ProductVariantsBulkInput = {
   barcode?: InputMaybe<Scalars['String']>;
   /** The compare-at price of the variant. */
   compareAtPrice?: InputMaybe<Scalars['Money']>;
-  /** The ID of the fulfillment service associated with the variant. */
-  fulfillmentServiceId?: InputMaybe<Scalars['ID']>;
   /** The Harmonized System Code (or HS Tariff Code) for the variant. */
   harmonizedSystemCode?: InputMaybe<Scalars['String']>;
   /** Specifies the product variant to update or delete. */
@@ -5749,8 +6351,6 @@ export type PubSubWebhookSubscriptionUpdateUserErrorCode =
 
 /** Specifies the input fields required to publish a resource. */
 export type PublicationInput = {
-  /** ID of the channel. This argument is deprecated: Use publicationId instead. */
-  channelId?: InputMaybe<Scalars['ID']>;
   /** ID of the publication. */
   publicationId?: InputMaybe<Scalars['ID']>;
   /**
@@ -5834,6 +6434,23 @@ export type RemoteAuthorizeNetCustomerPaymentProfileInput = {
    *
    */
   customerProfileId: Scalars['String'];
+};
+
+/**
+ * The input fields for a remote Braintree customer payment profile.
+ *
+ */
+export type RemoteBraintreePaymentMethodInput = {
+  /**
+   * The `customer_id` value from the Braintree API.
+   *
+   */
+  customerId: Scalars['String'];
+  /**
+   * The `payment_method_token` value from the Braintree API.
+   *
+   */
+  paymentMethodToken?: InputMaybe<Scalars['String']>;
 };
 
 /**
@@ -5994,8 +6611,37 @@ export type SearchResultType =
   /** A URL redirect. */
   | 'URL_REDIRECT';
 
+/** The set of valid sort keys for the Segment query. */
+export type SegmentSortKeys =
+  /** Sort by the `creation_date` value. */
+  | 'CREATION_DATE'
+  /** Sort by the `id` value. */
+  | 'ID'
+  /** Sort by the `last_edit_date` value. */
+  | 'LAST_EDIT_DATE'
+  /**
+   * Sort by relevance to the search terms when the `query` parameter is specified on the connection.
+   * Don't use this sort key when no search query is specified.
+   *
+   */
+  | 'RELEVANCE';
+
 /** Specifies the input fields required to create or update a selling plan anchor. */
 export type SellingPlanAnchorInput = {
+  /**
+   * The cutoff day of the anchor.
+   *
+   * If `type` is WEEKDAY, then the value must be between 1-7. Shopify interprets
+   * the days of the week according to ISO 8601, where 1 is Monday.
+   *
+   * If `type` is MONTHDAY, then the value must be between 1-31.
+   *
+   * If `type` is YEARDAY, then the value must be `null`.
+   *
+   * This field should only be set if the cutoff field for the delivery policy is `null`.
+   *
+   */
+  cutoffDay?: InputMaybe<Scalars['Int']>;
   /**
    * The day of the anchor.
    *
@@ -6007,8 +6653,8 @@ export type SellingPlanAnchorInput = {
    */
   day?: InputMaybe<Scalars['Int']>;
   /**
-   * The month of the anchor. If type is different than YEARDAY, this field must be null, otherwise it must be
-   * between 1-12.
+   * The month of the anchor. If type is different than YEARDAY, then the value must
+   * be `null` or between 1-12.
    *
    */
   month?: InputMaybe<Scalars['Int']>;
@@ -6028,17 +6674,110 @@ export type SellingPlanAnchorType =
   /** Which days of the month and year, month between 1-12, and day between 1-31. */
   | 'YEARDAY';
 
-/** Specifies the input fields required to create or update a billing policy type. */
+/** The input fields that are required to create or update a billing policy type. */
 export type SellingPlanBillingPolicyInput = {
+  /** The fixed billing policy details. */
+  fixed?: InputMaybe<SellingPlanFixedBillingPolicyInput>;
   /** The recurring billing policy details. */
   recurring?: InputMaybe<SellingPlanRecurringBillingPolicyInput>;
 };
 
-/** Specifies the input fields to create or update a delivery policy. */
+/**
+ * The category of the selling plan. For the `OTHER` category,
+ *          you must fill out our [request form](https://docs.google.com/forms/d/e/1FAIpQLSeU18Xmw0Q61V8wdH-dfGafFqIBfRchQKUO8WAF3yJTvgyyZQ/viewform),
+ *          where we'll review your request for a new purchase option.
+ */
+export type SellingPlanCategory =
+  /** The selling plan is for anything not in one of the other categories. */
+  | 'OTHER'
+  /** The selling plan is for pre-orders. */
+  | 'PRE_ORDER'
+  /** The selling plan is for subscriptions. */
+  | 'SUBSCRIPTION'
+  /** The selling plan is for try before you buy purchases. */
+  | 'TRY_BEFORE_YOU_BUY';
+
+/** The input fields that are required to create or update a checkout charge. */
+export type SellingPlanCheckoutChargeInput = {
+  /** The checkout charge type defined by the policy. */
+  type?: InputMaybe<SellingPlanCheckoutChargeType>;
+  /** The checkout charge value defined by the policy. */
+  value?: InputMaybe<SellingPlanCheckoutChargeValueInput>;
+};
+
+/** The checkout charge when the full amount isn't charged at checkout. */
+export type SellingPlanCheckoutChargeType =
+  /** The checkout charge is a percentage of the product or variant price. */
+  | 'PERCENTAGE'
+  /** The checkout charge is a fixed price amount. */
+  | 'PRICE';
+
+/** The input fields required to create or update an checkout charge value. */
+export type SellingPlanCheckoutChargeValueInput = {
+  /** The fixed value for an checkout charge. */
+  fixedValue?: InputMaybe<Scalars['Decimal']>;
+  /** The percentage value. */
+  percentage?: InputMaybe<Scalars['Float']>;
+};
+
+/** The input fields that are required to create or update a delivery policy. */
 export type SellingPlanDeliveryPolicyInput = {
+  /** The fixed delivery policy details. */
+  fixed?: InputMaybe<SellingPlanFixedDeliveryPolicyInput>;
   /** The recurring delivery policy details. */
   recurring?: InputMaybe<SellingPlanRecurringDeliveryPolicyInput>;
 };
+
+/** The input fields required to create or update a fixed billing policy. */
+export type SellingPlanFixedBillingPolicyInput = {
+  /** The checkout charge policy for the selling plan. */
+  checkoutCharge?: InputMaybe<SellingPlanCheckoutChargeInput>;
+  /** The date and time to capture the full payment. */
+  remainingBalanceChargeExactTime?: InputMaybe<Scalars['DateTime']>;
+  /** The period after capturing the payment for the amount due (`remainingBalanceChargeTrigger`), and before capturing the full payment. Expressed as an ISO8601 duration. */
+  remainingBalanceChargeTimeAfterCheckout?: InputMaybe<Scalars['String']>;
+  /** When to capture the payment for the amount due. */
+  remainingBalanceChargeTrigger?: InputMaybe<SellingPlanRemainingBalanceChargeTrigger>;
+};
+
+/** The input fields required to create or update a fixed billing policy. */
+export type SellingPlanFixedDeliveryPolicyInput = {
+  /** The specific anchor dates upon which the delivery interval calculations should be made. */
+  anchors?: InputMaybe<Array<SellingPlanAnchorInput>>;
+  /** A buffer period for orders to be included in a cycle. */
+  cutoff?: InputMaybe<Scalars['Int']>;
+  /** The date and time when the fulfillment should trigger. */
+  fulfillmentExactTime?: InputMaybe<Scalars['DateTime']>;
+  /** What triggers the fulfillment. */
+  fulfillmentTrigger?: InputMaybe<SellingPlanFulfillmentTrigger>;
+  /** Whether the delivery policy is merchant or buyer-centric. */
+  intent?: InputMaybe<SellingPlanFixedDeliveryPolicyIntent>;
+  /** The pre-anchor behavior. */
+  preAnchorBehavior?: InputMaybe<SellingPlanFixedDeliveryPolicyPreAnchorBehavior>;
+};
+
+/** Possible intentions of a Delivery Policy. */
+export type SellingPlanFixedDeliveryPolicyIntent =
+  /**
+   * A merchant-centric delivery policy. Mark this delivery policy to define when the merchant should start fulfillment.
+   *
+   */
+  | 'FULFILLMENT_BEGIN';
+
+/** The fulfillment or delivery behavior of the first fulfillment when the orderis placed before the anchor. */
+export type SellingPlanFixedDeliveryPolicyPreAnchorBehavior =
+  /**
+   * Orders placed can be fulfilled / delivered immediately. Orders placed inside a cutoff can be fulfilled / delivered at the next anchor.
+   *
+   */
+  | 'ASAP'
+  /**
+   * Orders placed can be fulfilled / delivered at the next anchor date.
+   * Orders placed inside a cutoff will skip the next anchor and can be fulfilled /
+   * delivered at the following anchor.
+   *
+   */
+  | 'NEXT';
 
 /** Specifies the input fields required to create or update a fixed selling plan pricing policy. */
 export type SellingPlanFixedPricingPolicyInput = {
@@ -6049,6 +6788,17 @@ export type SellingPlanFixedPricingPolicyInput = {
   /** ID of the pricing policy. */
   id?: InputMaybe<Scalars['ID']>;
 };
+
+/** Describes what triggers fulfillment. */
+export type SellingPlanFulfillmentTrigger =
+  /** Use the anchor values to calculate fulfillment date. */
+  | 'ANCHOR'
+  /** As soon as possible. */
+  | 'ASAP'
+  /** At an exact time defined by the fulfillment_exact_time field. */
+  | 'EXACT_TIME'
+  /** Unknown. Usually to be determined in the future. */
+  | 'UNKNOWN';
 
 /** Specifies the input fields required to create or update a selling plan group. */
 export type SellingPlanGroupInput = {
@@ -6099,10 +6849,20 @@ export type SellingPlanGroupSortKeys =
 
 /** Possible error codes that can be returned by `SellingPlanGroupUserError`. */
 export type SellingPlanGroupUserErrorCode =
+  /** Billing and delivery policy types must be the same. */
+  | 'BILLING_AND_DELIVERY_POLICY_TYPES_MUST_BE_THE_SAME'
   /** The input value is blank. */
   | 'BLANK'
+  /** A fixed billing policy's checkout charge value and type must match. */
+  | 'CHECKOUT_CHARGE_VALUE_AND_TYPE_MUST_MATCH'
+  /** The input value should be equal to the value allowed. */
+  | 'EQUAL_TO'
   /** Could not add the resource to the selling plan group. */
   | 'ERROR_ADDING_RESOURCE_TO_GROUP'
+  /** A fixed billing policy's fulfillment_exact_time must not be present when the fulfillment_trigger isn't EXACT_TIME. */
+  | 'FULFILLMENT_EXACT_TIME_NOT_ALLOWED'
+  /** A fixed billing policy's fulfillment_exact_time can't be blank when the fulfillment_trigger is EXACT_TIME. */
+  | 'FULFILLMENT_EXACT_TIME_REQUIRED'
   /** The input value should be greater than the minimum allowed value. */
   | 'GREATER_THAN'
   /** The input value should be greater than or equal to the minimum value allowed. */
@@ -6111,6 +6871,8 @@ export type SellingPlanGroupUserErrorCode =
   | 'GROUP_COULD_NOT_BE_DELETED'
   /** Selling plan group does not exist. */
   | 'GROUP_DOES_NOT_EXIST'
+  /** The input value isn't included in the list. */
+  | 'INCLUSION'
   /** The input value is invalid. */
   | 'INVALID'
   /** The input value should be less than the maximum value allowed. */
@@ -6119,10 +6881,22 @@ export type SellingPlanGroupUserErrorCode =
   | 'LESS_THAN_OR_EQUAL_TO'
   /** The input value is not a number. */
   | 'NOT_A_NUMBER'
+  /** The record with the ID used as the input value couldn't be found. */
+  | 'NOT_FOUND'
+  /** Only one billing policy type can be defined. */
+  | 'ONLY_NEED_ONE_BILLING_POLICY_TYPE'
+  /** A fixed billing policy's checkout charge can have at most one value. */
+  | 'ONLY_NEED_ONE_CHECKOUT_CHARGE_VALUE'
+  /** Only one delivery policy type can be defined. */
+  | 'ONLY_NEED_ONE_DELIVERY_POLICY_TYPE'
   /** Only one pricing policy type can be defined. */
   | 'ONLY_NEED_ONE_PRICING_POLICY_TYPE'
   /** Only one pricing policy adjustment value type can be defined. */
   | 'ONLY_NEED_ONE_PRICING_POLICY_VALUE'
+  /** A selling plan can't have both fixed and recurring billing policies. */
+  | 'ONLY_ONE_OF_FIXED_OR_RECURRING_BILLING'
+  /** A selling plan can't have both fixed and recurring delivery policies. */
+  | 'ONLY_ONE_OF_FIXED_OR_RECURRING_DELIVERY'
   /** Selling plan does not exist. */
   | 'PLAN_DOES_NOT_EXIST'
   /** Selling plan ID must be specified to update. */
@@ -6135,8 +6909,24 @@ export type SellingPlanGroupUserErrorCode =
   | 'PRODUCT_DOES_NOT_EXIST'
   /** Product variant does not exist. */
   | 'PRODUCT_VARIANT_DOES_NOT_EXIST'
+  /** A fixed billing policy's remaining_balance_charge_exact_time must not be present when the remaining_balance_charge_trigger isn't EXACT_TIME. */
+  | 'REMAINING_BALANCE_CHARGE_EXACT_TIME_NOT_ALLOWED'
+  /** A fixed billing policy's remaining_balance_charge_exact_time can't be blank when the remaining_balance_charge_trigger is EXACT_TIME. */
+  | 'REMAINING_BALANCE_CHARGE_EXACT_TIME_REQUIRED'
+  /** A fixed billing policy's remaining_balance_charge_time_after_checkout must be present and greater than zero when the remaining_balance_charge_trigger is TIME_AFTER_CHECKOUT. */
+  | 'REMAINING_BALANCE_CHARGE_TIME_AFTER_CHECKOUT_MUST_BE_GREATER_THAN_ZERO'
+  /** A fixed billing policy's remaining_balance_charge_trigger can't be NO_REMAINING_BALANCE when the checkout_charge_type is PERCENTAGE and checkout_charge_value is less than 100. */
+  | 'REMAINING_BALANCE_CHARGE_TRIGGER_NO_REMAINING_BALANCE_ON_PARTIAL_PERCENTAGE_CHECKOUT_CHARGE'
+  /** A fixed billing policy's remaining_balance_charge_trigger can't be NO_REMAINING_BALANCE when the checkout_charge_type is PRICE. */
+  | 'REMAINING_BALANCE_CHARGE_TRIGGER_NO_REMAINING_BALANCE_ON_PRICE_CHECKOUT_CHARGE'
+  /** A fixed billing policy's remaining_balance_charge_trigger must be NO_REMAINING_BALANCE when the checkout_charge_type is PERCENTAGE and checkout_charge_value is 100. */
+  | 'REMAINING_BALANCE_CHARGE_TRIGGER_ON_FULL_CHECKOUT'
   /** The selling plan list provided contains 1 or more invalid IDs. */
   | 'RESOURCE_LIST_CONTAINS_INVALID_IDS'
+  /** A fixed delivery policy's anchors must not be present when the fulfillment_trigger isn't ANCHOR. */
+  | 'SELLING_PLAN_ANCHORS_NOT_ALLOWED'
+  /** A fixed delivery policy's anchors must be present when the fulfillment_trigger is ANCHOR. */
+  | 'SELLING_PLAN_ANCHORS_REQUIRED'
   /** Selling plan's billing and delivery policies anchors must be equal. */
   | 'SELLING_PLAN_BILLING_AND_DELIVERY_POLICY_ANCHORS_MUST_BE_EQUAL'
   /** Selling plan's billing cycle must be a multiple of delivery cycle. */
@@ -6153,6 +6943,8 @@ export type SellingPlanGroupUserErrorCode =
   | 'SELLING_PLAN_DUPLICATE_NAME'
   /** Cannot have multiple selling plans with the same options. */
   | 'SELLING_PLAN_DUPLICATE_OPTIONS'
+  /** A fixed selling plan can have at most one pricing policy. */
+  | 'SELLING_PLAN_FIXED_PRICING_POLICIES_LIMIT'
   /** Selling plan's billing policy max cycles must be greater than min cycles. */
   | 'SELLING_PLAN_MAX_CYCLES_MUST_BE_GREATER_THAN_MIN_CYCLES'
   /** Cannot define option2 on this selling plan as there's no label on the parent selling plan group. */
@@ -6169,21 +6961,29 @@ export type SellingPlanGroupUserErrorCode =
   | 'SELLING_PLAN_PRICING_POLICIES_MUST_CONTAIN_A_FIXED_PRICING_POLICY'
   /** The input value is already taken. */
   | 'TAKEN'
+  /** The input value is too big. */
+  | 'TOO_BIG'
   /** The input value is too long. */
   | 'TOO_LONG'
   /** The input value is too short. */
-  | 'TOO_SHORT';
+  | 'TOO_SHORT'
+  /** The input value is the wrong length. */
+  | 'WRONG_LENGTH';
 
 /** Specifies the input fields to create or update a selling plan. */
 export type SellingPlanInput = {
   /** Selling plan policy which describes the billing details. */
   billingPolicy?: InputMaybe<SellingPlanBillingPolicyInput>;
+  /** The category used to classify this selling plan for reporting purposes. */
+  category?: InputMaybe<SellingPlanCategory>;
   /** A selling plan policy which describes the delivery details. */
   deliveryPolicy?: InputMaybe<SellingPlanDeliveryPolicyInput>;
   /** Buyer facing string which describes the selling plan commitment. */
   description?: InputMaybe<Scalars['String']>;
   /** ID of the selling plan. */
   id?: InputMaybe<Scalars['ID']>;
+  /** A selling plan policy which describes the inventory details. */
+  inventoryPolicy?: InputMaybe<SellingPlanInventoryPolicyInput>;
   /** Buyer facing string which describes the selling plan content. */
   name?: InputMaybe<Scalars['String']>;
   /** The values of all options available on the selling plan. Selling plans are grouped together in Liquid when they are created by the same app, and have the same `selling_plan_group.name` and `selling_plan_group.options` values. */
@@ -6209,6 +7009,12 @@ export type SellingPlanInterval =
   /** Year interval. */
   | 'YEAR';
 
+/** The input fields required to create or update an inventory policy. */
+export type SellingPlanInventoryPolicyInput = {
+  /** When to reserve inventory for the order. The value must be ON_FULFILLMENT or ON_SALE. */
+  reserve?: InputMaybe<SellingPlanReserve>;
+};
+
 /** Represents a selling plan pricing policy adjustment type. */
 export type SellingPlanPricingPolicyAdjustmentType =
   /** Fixed amount off adjustment. */
@@ -6226,11 +7032,11 @@ export type SellingPlanPricingPolicyInput = {
   recurring?: InputMaybe<SellingPlanRecurringPricingPolicyInput>;
 };
 
-/** Specifies the input fields required to create or update a pricing policy adjustment value. */
+/** The input fields required to create or update a pricing policy adjustment value. */
 export type SellingPlanPricingPolicyValueInput = {
-  /** Defines fixed value for an fixed amount off or a new policy price. */
+  /** The fixed value for an fixed amount off or a new policy price. */
   fixedValue?: InputMaybe<Scalars['Decimal']>;
-  /** Defines percentage value. */
+  /** The percentage value. */
   percentage?: InputMaybe<Scalars['Float']>;
 };
 
@@ -6250,7 +7056,7 @@ export type SellingPlanRecurringBillingPolicyInput = {
 
 /** Specifies the input fields to create or update a recurring delivery policy. */
 export type SellingPlanRecurringDeliveryPolicyInput = {
-  /** Specific anchor dates upon which the delivery interval calculations should be made. */
+  /** The specific anchor dates upon which the delivery interval calculations should be made. */
   anchors?: InputMaybe<Array<SellingPlanAnchorInput>>;
   /** A buffer period for orders to be included in a cycle. */
   cutoff?: InputMaybe<Scalars['Int']>;
@@ -6260,11 +7066,11 @@ export type SellingPlanRecurringDeliveryPolicyInput = {
   interval?: InputMaybe<SellingPlanInterval>;
   /** The number of intervals between deliveries. */
   intervalCount?: InputMaybe<Scalars['Int']>;
-  /** The pre anchor behavior. It can be either: asap or next. */
+  /** The pre-anchor behavior. It can be either: asap or next. */
   preAnchorBehavior?: InputMaybe<SellingPlanRecurringDeliveryPolicyPreAnchorBehavior>;
 };
 
-/** Possible intentions of a Delivery Policy. */
+/** Whether the delivery policy is merchant or buyer-centric. */
 export type SellingPlanRecurringDeliveryPolicyIntent =
   /**
    * A merchant-centric delivery policy. Mark this delivery policy to define when the merchant should start fulfillment.
@@ -6272,16 +7078,16 @@ export type SellingPlanRecurringDeliveryPolicyIntent =
    */
   | 'FULFILLMENT_BEGIN';
 
-/** Possible fulfillment or delivery behaviors of the first fulfillment when the orderis placed before the anchor. */
+/** The fulfillment or delivery behaviors of the first fulfillment when the orderis placed before the anchor. */
 export type SellingPlanRecurringDeliveryPolicyPreAnchorBehavior =
   /**
-   * Orders placed can be fulfilled / delivered immediately. Orders placed inside a cutoff can be fulfilled / delivered at the next anchor.
+   * The orders placed can be fulfilled or delivered immediately. The orders placed inside a cutoff can be fulfilled or delivered at the next anchor.
    *
    */
   | 'ASAP'
   /**
-   * Orders placed can be fulfilled / delivered at the next anchor date.
-   * Orders placed inside a cutoff will skip the next anchor and can be fulfilled /
+   * The orders placed can be fulfilled or delivered at the next anchor date.
+   * The orders placed inside a cutoff will skip the next anchor and can be fulfilled or
    * delivered at the following anchor.
    *
    */
@@ -6298,6 +7104,27 @@ export type SellingPlanRecurringPricingPolicyInput = {
   /** ID of the pricing policy. */
   id?: InputMaybe<Scalars['ID']>;
 };
+
+/** When to capture the payment for the remaining amount due. */
+export type SellingPlanRemainingBalanceChargeTrigger =
+  /** At an exact time defined by the remaining_balance_charge_exact_time field. */
+  | 'EXACT_TIME'
+  /** When there's no remaining balance to be charged after checkout. */
+  | 'NO_REMAINING_BALANCE'
+  /** After the duration defined by the remaining_balance_charge_time_after_checkout field. */
+  | 'TIME_AFTER_CHECKOUT';
+
+/** When to reserve inventory for a selling plan. */
+export type SellingPlanReserve =
+  /** Reserve inventory when order is fulfilled. */
+  | 'ON_FULFILLMENT'
+  /** Reserve inventory at time of sale. */
+  | 'ON_SALE';
+
+/** The class of the discount for combining purposes. */
+export type ShippingDiscountClass =
+  /** Combined as a shipping discount. */
+  | 'SHIPPING';
 
 /** Specifies the shipping details for the order. */
 export type ShippingLineInput = {
@@ -6346,7 +7173,7 @@ export type ShopCustomerAccountsSetting =
  *
  */
 export type ShopLocaleInput = {
-  /** Specifies the published state of the locale. Only published locales are visible to the buyer. */
+  /** Whether the locale is published. Only published locales are visible to the buyer. */
   published?: InputMaybe<Scalars['Boolean']>;
 };
 
@@ -6397,6 +7224,67 @@ export type ShopifyPaymentsBankAccountStatus =
   | 'VALIDATED'
   /** Bank account validation was successful. */
   | 'VERIFIED';
+
+/** The possible dispute evidence file types. */
+export type ShopifyPaymentsDisputeEvidenceFileType =
+  /** Cancellation Policy File. */
+  | 'CANCELLATION_POLICY_FILE'
+  /** Customer Communication File. */
+  | 'CUSTOMER_COMMUNICATION_FILE'
+  /** Refund Policy File. */
+  | 'REFUND_POLICY_FILE'
+  /** Service Documentation File. */
+  | 'SERVICE_DOCUMENTATION_FILE'
+  /** Shipping Documentation File. */
+  | 'SHIPPING_DOCUMENTATION_FILE'
+  /** Uncategorized File. */
+  | 'UNCATEGORIZED_FILE';
+
+/** Specifies the input fields required to update a dispute evidence object. */
+export type ShopifyPaymentsDisputeEvidenceUpdateInput = {
+  /** Activity logs. */
+  accessActivityLog?: InputMaybe<Scalars['String']>;
+  /** Cancellation policy disclosure. */
+  cancellationPolicyDisclosure?: InputMaybe<Scalars['String']>;
+  /** Cancellation policy file. */
+  cancellationPolicyFile?: InputMaybe<ShopifyPaymentsDisputeFileUploadUpdateInput>;
+  /** Cancellation rebuttal. */
+  cancellationRebuttal?: InputMaybe<Scalars['String']>;
+  /** Customer communication file. */
+  customerCommunicationFile?: InputMaybe<ShopifyPaymentsDisputeFileUploadUpdateInput>;
+  /** Customer email address. */
+  customerEmailAddress?: InputMaybe<Scalars['String']>;
+  /** Customer first name. */
+  customerFirstName?: InputMaybe<Scalars['String']>;
+  /** Customer last name. */
+  customerLastName?: InputMaybe<Scalars['String']>;
+  /** Refund policy disclosure. */
+  refundPolicyDisclosure?: InputMaybe<Scalars['String']>;
+  /** Refund policy file. */
+  refundPolicyFile?: InputMaybe<ShopifyPaymentsDisputeFileUploadUpdateInput>;
+  /** Refund refusal explanation. */
+  refundRefusalExplanation?: InputMaybe<Scalars['String']>;
+  /** Service documentation file. */
+  serviceDocumentationFile?: InputMaybe<ShopifyPaymentsDisputeFileUploadUpdateInput>;
+  /** The shipping address associated with the dispute evidence. */
+  shippingAddress?: InputMaybe<MailingAddressInput>;
+  /** Shipping documentation file. */
+  shippingDocumentationFile?: InputMaybe<ShopifyPaymentsDisputeFileUploadUpdateInput>;
+  /** Whether to submit the evidence. */
+  submitEvidence?: InputMaybe<Scalars['Boolean']>;
+  /** Uncategorized file. */
+  uncategorizedFile?: InputMaybe<ShopifyPaymentsDisputeFileUploadUpdateInput>;
+  /** Uncategorized text. */
+  uncategorizedText?: InputMaybe<Scalars['String']>;
+};
+
+/** Specifies the input fields required to update a dispute file upload object. */
+export type ShopifyPaymentsDisputeFileUploadUpdateInput = {
+  /** Whether to delete this file upload. */
+  destroy?: InputMaybe<Scalars['Boolean']>;
+  /** The id of the file upload to be updated. */
+  id: Scalars['ID'];
+};
 
 /** The reason for the dispute provided by the cardholder's bank. */
 export type ShopifyPaymentsDisputeReason =
@@ -6480,40 +7368,129 @@ export type ShopifyPaymentsVerificationStatus =
   /** The verification has been verified. */
   | 'VERIFIED';
 
-/** Image to be uploaded. */
+/** Represents the fallback avatar image for a staff member. This is used only if the staff member has no avatar image. */
+export type StaffMemberDefaultImage =
+  /** Returns a default avatar image for the staff member. */
+  | 'DEFAULT'
+  /** Returns a URL that returns a 404 error if the image is not present. */
+  | 'NOT_FOUND'
+  /** Returns a transparent avatar image for the staff member. */
+  | 'TRANSPARENT';
+
+/** Represents access permissions for a staff member. */
+export type StaffMemberPermission =
+  /** The staff member can manage and install apps and channels. */
+  | 'APPLICATIONS'
+  /** The staff member can manage and install sales channels. */
+  | 'CHANNELS'
+  /** The staff member can view, create, update, and delete customers, and respond to customer messages in the Shopify Messaging API. */
+  | 'CUSTOMERS'
+  /** The staff member can view the Shopify Home page, which includes sales information and other shop data. */
+  | 'DASHBOARD'
+  /** The staff member can view, buy, and manage domains. */
+  | 'DOMAINS'
+  /** The staff member can create, update, and delete draft orders. */
+  | 'DRAFT_ORDERS'
+  /** The staff member can update orders. */
+  | 'EDIT_ORDERS'
+  /** The staff has the same permissions as the [store owner](https://shopify.dev/en/manual/your-account/staff-accounts/staff-permissions#store-owner-permissions) with some exceptions, such as modifying the account billing or deleting staff accounts. */
+  | 'FULL'
+  /** The staff member can view, create, issue, and export gift cards to a CSV file. */
+  | 'GIFT_CARDS'
+  /** The staff member can view and modify links and navigation menus. */
+  | 'LINKS'
+  /** The staff member can create, update, and delete locations where inventory is stocked or managed. */
+  | 'LOCATIONS'
+  /** The staff member can view and create discount codes and automatic discounts, and export discounts to a CSV file. */
+  | 'MARKETING'
+  /** The staff member can view, create, and automate marketing campaigns. */
+  | 'MARKETING_SECTION'
+  /** The staff member can view, create, update, delete, and cancel orders, and receive order notifications. The staff member can still create draft orders without this permission. */
+  | 'ORDERS'
+  /**
+   * The staff member can view the Overview and Live view pages,
+   *             which include sales information, and other shop and sales channels data.
+   */
+  | 'OVERVIEWS'
+  /** The staff member can view, create, update, publish, and delete blog posts and pages. */
+  | 'PAGES'
+  /** The staff member can pay for an order by using a vaulted card. */
+  | 'PAY_ORDERS_BY_VAULTED_CARD'
+  /** The staff member can view the preferences and configuration of a shop. */
+  | 'PREFERENCES'
+  /** The staff member can view, create, import, and update products, collections, and inventory. */
+  | 'PRODUCTS'
+  /** The staff member can view and create all reports, which includes sales information and other shop data. */
+  | 'REPORTS'
+  /** The staff member can view, update, and publish themes. */
+  | 'THEMES'
+  /** The staff member can view and create translations. */
+  | 'TRANSLATIONS';
+
+/**
+ * An image to be uploaded.
+ *
+ * Deprecated in favor of
+ * [StagedUploadInput](https://shopify.dev/api/admin-graphql/latest/objects/StagedUploadInput),
+ * which is used by the
+ * [stagedUploadsCreate mutation](https://shopify.dev/api/admin-graphql/latest/mutations/stagedUploadsCreate).
+ *
+ */
 export type StageImageInput = {
-  /** Image filename. */
+  /** The image filename. */
   filename: Scalars['String'];
-  /** HTTP method to be used by the Staged Upload. */
+  /** HTTP method to be used by the staged upload. */
   httpMethod?: InputMaybe<StagedUploadHttpMethodType>;
-  /** Image MIME type. */
+  /** The image MIME type. */
   mimeType: Scalars['String'];
-  /** Image resource. */
+  /** The image resource. */
   resource: StagedUploadTargetGenerateUploadResource;
 };
 
-/** Possible HTTP method of a staged upload target. */
+/**
+ * The possible HTTP methods that can be used when sending a request to upload a file using information from a
+ * [StagedMediaUploadTarget](https://shopify.dev/api/admin-graphql/latest/objects/StagedMediaUploadTarget).
+ *
+ */
 export type StagedUploadHttpMethodType =
   /** The POST HTTP method. */
   | 'POST'
   /** The PUT HTTP method. */
   | 'PUT';
 
-/** Media to be uploaded. */
+/** The information required to generate staged upload targets. */
 export type StagedUploadInput = {
-  /** Size of the file to upload, in bytes. This is required for VIDEO and MODEL_3D resources. */
+  /**
+   * The size of the file to upload, in bytes. This is required when the request's resource property is set to
+   * [VIDEO](https://shopify.dev/api/admin-graphql/latest/enums/StagedUploadTargetGenerateUploadResource#value-video)
+   * or [MODEL_3D](https://shopify.dev/api/admin-graphql/latest/enums/StagedUploadTargetGenerateUploadResource#value-model3d).
+   *
+   */
   fileSize?: InputMaybe<Scalars['UnsignedInt64']>;
-  /** Media filename. */
+  /** The file's name and extension. */
   filename: Scalars['String'];
-  /** HTTP method to be used by the Staged Upload. */
+  /**
+   * The HTTP method to be used when sending a request to upload the file using the returned staged
+   * upload target.
+   *
+   */
   httpMethod?: InputMaybe<StagedUploadHttpMethodType>;
-  /** Media MIME type. */
+  /** The file's MIME type. */
   mimeType: Scalars['String'];
-  /** Media resource. */
+  /** The file's intended Shopify resource type. */
   resource: StagedUploadTargetGenerateUploadResource;
 };
 
-/** Specifies the fields required to generate the URL and parameters needed to upload an asset to Shopify. */
+/**
+ * The required fields and parameters to generate the URL upload an"
+ * asset to Shopify.
+ *
+ * Deprecated in favor of
+ * [StagedUploadInput](https://shopify.dev/api/admin-graphql/latest/objects/StagedUploadInput),
+ * which is used by the
+ * [stagedUploadsCreate mutation](https://shopify.dev/api/admin-graphql/latest/mutations/stagedUploadsCreate).
+ *
+ */
 export type StagedUploadTargetGenerateInput = {
   /** The size of the file to upload, in bytes. */
   fileSize?: InputMaybe<Scalars['UnsignedInt64']>;
@@ -6529,25 +7506,86 @@ export type StagedUploadTargetGenerateInput = {
 
 /** The resource type to receive. */
 export type StagedUploadTargetGenerateUploadResource =
-  /** BulkOperation resource representation. */
+  /**
+   * Represents bulk mutation variables.
+   *
+   * For example, bulk mutation variables can be used for bulk operations using the
+   * [bulkOperationRunMutation mutation](https://shopify.dev/api/admin-graphql/latest/mutations/bulkOperationRunMutation).
+   *
+   */
   | 'BULK_MUTATION_VARIABLES'
-  /** A collection image. */
+  /**
+   * An image associated with a collection.
+   *
+   * For example, after uploading an image, you can use the
+   * [collectionUpdate mutation](https://shopify.dev/api/admin-graphql/latest/mutations/collectionUpdate)
+   * to add the image to a collection.
+   *
+   */
   | 'COLLECTION_IMAGE'
-  /** Merchandising::GenericFile resource representation. */
+  /**
+   * Represents any file other than HTML.
+   *
+   * For example, after uploading the file, you can add the file to the
+   * [Files page](https://shopify.com/admin/settings/files) in Shopify admin using the
+   * [fileCreate mutation](https://shopify.dev/api/admin-graphql/latest/mutations/fileCreate).
+   *
+   */
   | 'FILE'
-  /** Merchandising::Image resource representation. */
+  /**
+   * An image.
+   *
+   * For example, after uploading an image, you can add the image to a product using the
+   * [productCreateMedia mutation](https://shopify.dev/api/admin-graphql/latest/mutations/productCreateMedia)
+   * or to the [Files page](https://shopify.com/admin/settings/files) in Shopify admin using the
+   * [fileCreate mutation](https://shopify.dev/api/admin-graphql/latest/mutations/fileCreate).
+   *
+   */
   | 'IMAGE'
-  /** Merchandising::Model3d resource representation. */
+  /**
+   * A Shopify hosted 3d model.
+   *
+   * For example, after uploading the 3d model, you can add the 3d model to a product using the
+   * [productCreateMedia mutation](https://shopify.dev/api/admin-graphql/latest/mutations/productCreateMedia).
+   *
+   */
   | 'MODEL_3D'
-  /** A product image. */
+  /**
+   * An image that's associated with a product.
+   *
+   * For example, after uploading the image, you can add the image to a product using the
+   * [productCreateMedia mutation](https://shopify.dev/api/admin-graphql/latest/mutations/productCreateMedia).
+   *
+   */
   | 'PRODUCT_IMAGE'
-  /** A shop image. */
+  /**
+   * An image.
+   *
+   * For example, after uploading the image, you can add the image to the
+   * [Files page](https://shopify.com/admin/settings/files) in Shopify admin using the
+   * [fileCreate mutation](https://shopify.dev/api/admin-graphql/latest/mutations/fileCreate).
+   *
+   */
   | 'SHOP_IMAGE'
-  /** A timeline event. */
-  | 'TIMELINE'
-  /** RedirectImport resource representation. */
+  /**
+   * Represents a redirect CSV file.
+   *
+   * Example usage: This resource can be used for creating a
+   * [UrlRedirectImport](https://shopify.dev/api/admin-graphql/2022-04/objects/UrlRedirectImport)
+   * object for use in the
+   * [urlRedirectImportCreate mutation](https://shopify.dev/api/admin-graphql/latest/mutations/urlRedirectImportCreate).
+   *
+   */
   | 'URL_REDIRECT_IMPORT'
-  /** Merchandising::Video resource representation. */
+  /**
+   * A Shopify-hosted video.
+   *
+   * For example, after uploading the video, you can add the video to a product using the
+   * [productCreateMedia mutation](https://shopify.dev/api/admin-graphql/latest/mutations/productCreateMedia)
+   * or to the [Files page](https://shopify.com/admin/settings/files) in Shopify admin using the
+   * [fileCreate mutation](https://shopify.dev/api/admin-graphql/latest/mutations/fileCreate).
+   *
+   */
   | 'VIDEO';
 
 /** Possible error codes that can be returned by `StandardMetafieldDefinitionEnableUserError`. */
@@ -6587,6 +7625,8 @@ export type StorefrontAccessTokenInput = {
  *
  */
 export type SubscriptionBillingAttemptErrorCode =
+  /** The amount is too small. */
+  | 'AMOUNT_TOO_SMALL'
   /**
    * There was an error during the authentication.
    *
@@ -6603,6 +7643,8 @@ export type SubscriptionBillingAttemptErrorCode =
    *
    */
   | 'EXPIRED_PAYMENT_METHOD'
+  /** The billing agreement ID or the transaction ID for the customer's payment method is invalid. */
+  | 'INVALID_CUSTOMER_BILLING_AGREEMENT'
   /**
    * Payment method is invalid. Please update or create a new payment method.
    *
@@ -6610,11 +7652,15 @@ export type SubscriptionBillingAttemptErrorCode =
   | 'INVALID_PAYMENT_METHOD'
   /** The shipping address is either missing or invalid. */
   | 'INVALID_SHIPPING_ADDRESS'
+  /** A payment has already been made for this invoice. */
+  | 'INVOICE_ALREADY_PAID'
   /**
    * Payment method was declined by processor.
    *
    */
   | 'PAYMENT_METHOD_DECLINED'
+  /** Payment method cannot be used with the current payment gateway test mode configuration. */
+  | 'PAYMENT_METHOD_INCOMPATIBLE_WITH_GATEWAY_CONFIG'
   /**
    * Payment method was not found.
    *
@@ -6640,6 +7686,13 @@ export type SubscriptionBillingAttemptErrorCode =
 export type SubscriptionBillingAttemptInput = {
   /** A unique key generated by the client to avoid duplicate payments. For more information, refer to [Idempotent requests](https://shopify.dev/api/usage/idempotent-requests). */
   idempotencyKey: Scalars['String'];
+  /**
+   * The date and time used to calculate fulfillment intervals for a billing attempt that
+   * successfully completed after the current anchor date. To prevent fulfillment from being
+   * pushed to the next anchor date, this field can override the billing attempt date.
+   *
+   */
+  originTime?: InputMaybe<Scalars['DateTime']>;
 };
 
 /** Specifies the input fields for a Subscription Billing Policy. */
@@ -6703,7 +7756,7 @@ export type SubscriptionContractSubscriptionStatus =
  *
  */
 export type SubscriptionDeliveryMethodInput = {
-  /** Shipping delivery method input. */
+  /** The input fields for the shipping delivery method. */
   shipping?: InputMaybe<SubscriptionDeliveryMethodShippingInput>;
 };
 
@@ -6737,7 +7790,7 @@ export type SubscriptionDeliveryMethodShippingOptionInput = {
 
 /** Specifies the input fields for a Subscription Delivery Policy. */
 export type SubscriptionDeliveryPolicyInput = {
-  /** Specific anchor dates upon which the delivery interval calculations should be made. */
+  /** The specific anchor dates upon which the delivery interval calculations should be made. */
   anchors?: InputMaybe<Array<SellingPlanAnchorInput>>;
   /** The kind of interval that is associated with this schedule (e.g. Monthly, Weekly, etc). */
   interval: SellingPlanInterval;
@@ -6831,6 +7884,8 @@ export type SubscriptionDraftErrorCode =
 export type SubscriptionDraftInput = {
   /** The billing policy for the subscription contract. */
   billingPolicy?: InputMaybe<SubscriptionBillingPolicyInput>;
+  /** A list of the custom attributes added to the subscription contract. */
+  customAttributes?: InputMaybe<Array<AttributeInput>>;
   /** The delivery method for the subscription contract. */
   deliveryMethod?: InputMaybe<SubscriptionDeliveryMethodInput>;
   /** The delivery policy for the subscription contract. */
@@ -7006,32 +8061,111 @@ export type TaxExemption =
   /** This customer is exempt from specific taxes for holding a valid SUB_CONTRACTOR_EXEMPTION in Saskatchewan. */
   | 'CA_SK_SUB_CONTRACTOR_EXEMPTION'
   /** This customer is exempt from specific taxes for holding a valid STATUS_CARD_EXEMPTION in Canada. */
-  | 'CA_STATUS_CARD_EXEMPTION';
-
-/** Specifies the fields for tracking information. */
-export type TrackingInfoInput = {
-  /** The tracking number of the fulfillment. */
-  number?: InputMaybe<Scalars['String']>;
-  /** The URL to track the fulfillment. */
-  url?: InputMaybe<Scalars['String']>;
-};
-
-/** The input fields that specify all the possible fields for updating tracking information. */
-export type TrackingInfoUpdateInput = {
-  /**
-   * Whether the customer will be notified of this update and future updates for the fulfillment.
-   * If the field is left blank, then notifications won't be sent to the customer when the fulfillment is updated.
-   *
-   */
-  notifyCustomer?: InputMaybe<Scalars['Boolean']>;
-  /** The name of the tracking company. */
-  trackingCompany?: InputMaybe<Scalars['String']>;
-  /**
-   * Tracking information consisting of one or more tracking URLs and numbers associated with the fulfillment.
-   *
-   */
-  trackingDetails?: InputMaybe<Array<TrackingInfoInput>>;
-};
+  | 'CA_STATUS_CARD_EXEMPTION'
+  /** This customer is exempt from VAT for purchases within the EU that is shipping from outside of customer's country. */
+  | 'EU_REVERSE_CHARGE_EXEMPTION_RULE'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Alaska. */
+  | 'US_AK_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Alabama. */
+  | 'US_AL_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Arkansas. */
+  | 'US_AR_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Arizona. */
+  | 'US_AZ_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in California. */
+  | 'US_CA_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Colorado. */
+  | 'US_CO_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Connecticut. */
+  | 'US_CT_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Washington DC. */
+  | 'US_DC_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Delaware. */
+  | 'US_DE_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Florida. */
+  | 'US_FL_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Georgia. */
+  | 'US_GA_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Hawaii. */
+  | 'US_HI_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Iowa. */
+  | 'US_IA_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Idaho. */
+  | 'US_ID_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Illinois. */
+  | 'US_IL_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Indiana. */
+  | 'US_IN_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Kansas. */
+  | 'US_KS_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Kentucky. */
+  | 'US_KY_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Louisiana. */
+  | 'US_LA_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Massachusetts. */
+  | 'US_MA_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Maryland. */
+  | 'US_MD_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Maine. */
+  | 'US_ME_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Michigan. */
+  | 'US_MI_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Minnesota. */
+  | 'US_MN_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Missouri. */
+  | 'US_MO_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Mississippi. */
+  | 'US_MS_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Montana. */
+  | 'US_MT_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in North Carolina. */
+  | 'US_NC_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in North Dakota. */
+  | 'US_ND_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Nebraska. */
+  | 'US_NE_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in New Hampshire. */
+  | 'US_NH_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in New Jersey. */
+  | 'US_NJ_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in New Mexico. */
+  | 'US_NM_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Nevada. */
+  | 'US_NV_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in New York. */
+  | 'US_NY_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Ohio. */
+  | 'US_OH_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Oklahoma. */
+  | 'US_OK_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Oregon. */
+  | 'US_OR_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Pennsylvania. */
+  | 'US_PA_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Rhode Island. */
+  | 'US_RI_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in South Carolina. */
+  | 'US_SC_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in South Dakota. */
+  | 'US_SD_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Tennessee. */
+  | 'US_TN_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Texas. */
+  | 'US_TX_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Utah. */
+  | 'US_UT_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Virginia. */
+  | 'US_VA_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Vermont. */
+  | 'US_VT_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Washington. */
+  | 'US_WA_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Wisconsin. */
+  | 'US_WI_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in West Virginia. */
+  | 'US_WV_RESELLER_EXEMPTION'
+  /** This customer is exempt from specific taxes for holding a valid RESELLER_EXEMPTION in Wyoming. */
+  | 'US_WY_RESELLER_EXEMPTION';
 
 /** Specifies the type of resources that are translatable. */
 export type TranslatableResourceType =
@@ -7069,7 +8203,7 @@ export type TranslatableResourceType =
    *         Translatable fields: `name`.
    */
   | 'PRODUCT_OPTION'
-  /** An online store product variant. Translatable fields: `title`, `option1`, `option2`, `option3`. */
+  /** An online store product variant. Translatable fields: `title`, `option1`, `option2`, `option3`. The field `title` has been deprecated. */
   | 'PRODUCT_VARIANT'
   /** A shop. Translatable fields: `meta_title`, `meta_description`. */
   | 'SHOP'
@@ -7256,6 +8390,8 @@ export type WebhookSubscriptionSortKeys =
 export type WebhookSubscriptionTopic =
   /** The webhook topic for `app_purchases_one_time/update` events. Occurs whenever a one-time app charge is updated. */
   | 'APP_PURCHASES_ONE_TIME_UPDATE'
+  /** The webhook topic for `app_subscriptions/approaching_capped_amount` events. Occurs when the balance used on an app subscription crosses 90% of the capped amount. */
+  | 'APP_SUBSCRIPTIONS_APPROACHING_CAPPED_AMOUNT'
   /** The webhook topic for `app_subscriptions/update` events. Occurs whenever an app subscription is updated. */
   | 'APP_SUBSCRIPTIONS_UPDATE'
   /** The webhook topic for `app/uninstalled` events. Occurs whenever a shop has uninstalled the app. */
@@ -7366,19 +8502,25 @@ export type WebhookSubscriptionTopic =
   | 'LOCATIONS_DELETE'
   /** The webhook topic for `locations/update` events. Occurs whenever a location is updated. Requires the `read_locations` scope. */
   | 'LOCATIONS_UPDATE'
+  /** The webhook topic for `markets/create` events. Occurs when a new market is created. Requires the `read_markets` scope. */
+  | 'MARKETS_CREATE'
+  /** The webhook topic for `markets/delete` events. Occurs when a market is deleted. Requires the `read_markets` scope. */
+  | 'MARKETS_DELETE'
+  /** The webhook topic for `markets/update` events. Occurs when a market is updated. Requires the `read_markets` scope. */
+  | 'MARKETS_UPDATE'
   /** The webhook topic for `orders/cancelled` events. Occurs whenever an order is cancelled. Requires at least one of the following scopes: read_orders, read_marketplace_orders. */
   | 'ORDERS_CANCELLED'
   /** The webhook topic for `orders/create` events. Occurs whenever an order is created. Requires at least one of the following scopes: read_orders, read_marketplace_orders. */
   | 'ORDERS_CREATE'
   /** The webhook topic for `orders/delete` events. Occurs whenever an order is deleted. Requires the `read_orders` scope. */
   | 'ORDERS_DELETE'
-  /** The webhook topic for `orders/edited` events. Occurs whenever an order is edited. Requires the `read_orders` scope. */
+  /** The webhook topic for `orders/edited` events. Occurs whenever an order is edited. Requires at least one of the following scopes: read_orders, read_marketplace_orders. */
   | 'ORDERS_EDITED'
   /** The webhook topic for `orders/fulfilled` events. Occurs whenever an order is fulfilled. Requires at least one of the following scopes: read_orders, read_marketplace_orders. */
   | 'ORDERS_FULFILLED'
   /** The webhook topic for `orders/paid` events. Occurs whenever an order is paid. Requires at least one of the following scopes: read_orders, read_marketplace_orders. */
   | 'ORDERS_PAID'
-  /** The webhook topic for `orders/partially_fulfilled` events. Occurs whenever an order is partially fulfilled. Requires the `read_orders` scope. */
+  /** The webhook topic for `orders/partially_fulfilled` events. Occurs whenever an order is partially fulfilled. Requires at least one of the following scopes: read_orders, read_marketplace_orders. */
   | 'ORDERS_PARTIALLY_FULFILLED'
   /** The webhook topic for `orders/updated` events. Occurs whenever an order is updated. Requires at least one of the following scopes: read_orders, read_marketplace_orders. */
   | 'ORDERS_UPDATED'
@@ -7422,6 +8564,12 @@ export type WebhookSubscriptionTopic =
   | 'SCHEDULED_PRODUCT_LISTINGS_REMOVE'
   /** The webhook topic for `scheduled_product_listings/update` events. Occurs whenever a product's scheduled availability date changes. Requires the `read_product_listings` scope. */
   | 'SCHEDULED_PRODUCT_LISTINGS_UPDATE'
+  /** The webhook topic for `segments/create` events. Occurs whenever a segment is created. Requires the `read_customers` scope. */
+  | 'SEGMENTS_CREATE'
+  /** The webhook topic for `segments/delete` events. Occurs whenever a segment is deleted. Requires the `read_customers` scope. */
+  | 'SEGMENTS_DELETE'
+  /** The webhook topic for `segments/update` events. Occurs whenever a segment is updated. Requires the `read_customers` scope. */
+  | 'SEGMENTS_UPDATE'
   /** The webhook topic for `selling_plan_groups/create` events. Notifies when a SellingPlanGroup is created. Requires the `read_products` scope. */
   | 'SELLING_PLAN_GROUPS_CREATE'
   /** The webhook topic for `selling_plan_groups/delete` events. Notifies when a SellingPlanGroup is deleted. Requires the `read_products` scope. */
@@ -7489,3 +8637,10 @@ export type GetAppInstallationQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type GetAppInstallationQuery = { appInstallation?: { accessScopes: Array<{ handle: string }>, activeSubscriptions: Array<{ createdAt: any, currentPeriodEnd?: any | null, id: string, name: string, returnUrl: any, status: AppSubscriptionStatus, test: boolean, trialDays: number }> } | null };
+
+export type MetafieldDefinitionsQueryVariables = Exact<{
+  ownerType: MetafieldOwnerType;
+}>;
+
+
+export type MetafieldDefinitionsQuery = { metafieldDefinitions: { edges: Array<{ node: { name: string, key: string, type: { name: string } } }> } };

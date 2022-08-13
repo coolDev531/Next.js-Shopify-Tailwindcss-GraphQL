@@ -5,7 +5,7 @@ import clsx from "clsx";
 import { FC, forwardRef, useEffect, useRef, useState } from "react";
 import { useWindowSize } from "react-use";
 import { LogoBannerSection } from ".shopify-cms/types/sections";
-import { _Image_liquid, _Media_liquid } from ".shopify-cms/types/shopify";
+import { _Image_liquid, _Media_liquid, _Metafield_liquid_file_reference_image } from ".shopify-cms/types/shopify";
 import { cleanSvgIds } from "utils/clean-svg-ids";
 
 export const LogoBanner: FC<LogoBannerSection> = ({ id, settings, blocks, type }) => {
@@ -51,9 +51,10 @@ export const LogoBannerGrid: FC<LogoBannerSection> = ({ id, settings, blocks, ty
                   height={settings.height}
                   title={product.title}
                   image={
-                    (product.metafields["logo"]?.value as _Image_liquid) ?? product.featured_media
+                    (product.metafields.logo as _Metafield_liquid_file_reference_image) ??
+                    product.featured_media
                   }
-                  darkImage={product.metafields["logo_dark"]?.value as _Image_liquid}
+                  darkImage={product.metafields.logo_dark as _Metafield_liquid_file_reference_image}
                 />
               </div>
             ))}
@@ -169,8 +170,11 @@ export const LogoBannerSliderRow = forwardRef<
             key={product.id}
             height={settings.height}
             title={product.title}
-            image={(product.metafields["logo"]?.value as _Image_liquid) ?? product.featured_media}
-            darkImage={product.metafields["logo_dark"]?.value as _Image_liquid}
+            image={
+              (product.metafields.logo as _Metafield_liquid_file_reference_image) ??
+              product.featured_media
+            }
+            darkImage={product.metafields.logo_dark as _Metafield_liquid_file_reference_image}
           />
         ))}
       {blocks.map((block) => {
@@ -199,9 +203,9 @@ export const LogoBannerSliderRow = forwardRef<
 
 export const LogoBannerSliderItem: FC<{
   height: number;
-  image: _Image_liquid | _Media_liquid;
+  image: _Image_liquid | _Media_liquid | _Metafield_liquid_file_reference_image;
   title: string;
-  darkImage?: _Image_liquid | _Media_liquid;
+  darkImage?: _Image_liquid | _Media_liquid | _Metafield_liquid_file_reference_image;
 }> = ({ title, image, height, darkImage }) => {
   return (
     <figure

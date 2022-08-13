@@ -1,4 +1,4 @@
-{% include "_section-content", type: "contact" %}
+{% include "_section-global-content", type: "contact" %}
 {% include "section_contact" %}
   
 {% schema %}
@@ -8,6 +8,12 @@
     {
       "type": "header",
       "content": "Intro"
+    },
+    {
+      "type": "checkbox",
+      "id": "intro",
+      "label": "Show Intro",
+      "default": true
     },
     {
       "type": "text",
@@ -21,7 +27,13 @@
     },
     {
       "type": "header",
-      "content": "Info BLock"
+      "content": "Info Block"
+    },
+    {
+      "type": "checkbox",
+      "id": "info",
+      "label": "Show Info Block",
+      "default": true
     },
     {
       "type": "text",
@@ -36,6 +48,12 @@
     {
       "type": "header",
       "content": "Contact details"
+    },
+    {
+      "type": "checkbox",
+      "id": "contact",
+      "label": "Show Contact Details",
+      "default": true
     },
     {
       "type": "text",
@@ -75,6 +93,60 @@
       "type": "richtext",
       "id": "success_paragraph",
       "label": "Success Text"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "radio",
+      "id": "spacing",
+      "label": "Spacing",
+      "default": "md",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "sm",
+          "label": "Small (py-8)"
+        },
+        {
+          "value": "md",
+          "label": "Medium (py-16)"
+        },
+        {
+          "value": "lg",
+          "label": "Large (py-32)"
+        },
+        {
+          "value": "custom",
+          "label": "Custom"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "spacing_top",
+      "label": "Spacing_top",
+      "default": 0,
+      "min": 0,
+      "max": 64,
+      "step": 1,
+      "unit": "pt",
+      "info": "Requires Spacing = Custom"
+    },
+    {
+      "type": "range",
+      "id": "spacing_bottom",
+      "label": "Spacing_bottom",
+      "default": 0,
+      "min": 0,
+      "max": 64,
+      "step": 1,
+      "unit": "pb",
+      "info": "Requires Spacing = Custom"
     }
   ],
   "blocks": [
@@ -384,7 +456,7 @@
           "label": "Required"
         },
         {
-          "type": "text",
+          "type": "textarea",
           "id": "placeholder",
           "label": "Placeholder"
         },

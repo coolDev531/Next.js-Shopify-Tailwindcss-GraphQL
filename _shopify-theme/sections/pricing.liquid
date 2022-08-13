@@ -1,0 +1,284 @@
+{% include "_section-content", type: "pricing" %}
+{% include "section_pricing" %}
+  
+{% schema %}
+{
+  "name": "Pricing",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Header"
+    },
+    {
+      "type": "text",
+      "id": "pre_title",
+      "label": "Pre header"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Paragraph"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "radio",
+      "id": "spacing",
+      "label": "Spacing",
+      "default": "md",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "sm",
+          "label": "Small (py-8)"
+        },
+        {
+          "value": "md",
+          "label": "Medium (py-16)"
+        },
+        {
+          "value": "lg",
+          "label": "Large (py-32)"
+        },
+        {
+          "value": "custom",
+          "label": "Custom"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "spacing_top",
+      "label": "Spacing_top",
+      "default": 0,
+      "min": 0,
+      "max": 64,
+      "step": 1,
+      "unit": "pt",
+      "info": "Requires Spacing = Custom"
+    },
+    {
+      "type": "range",
+      "id": "spacing_bottom",
+      "label": "Spacing_bottom",
+      "default": 0,
+      "min": 0,
+      "max": 64,
+      "step": 1,
+      "unit": "pb",
+      "info": "Requires Spacing = Custom"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "package",
+      "name": "Package",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Header"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "type": "header",
+          "content": "Primary Button"
+        },
+        {
+          "type": "text",
+          "id": "cta1",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "cta1_link",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Secondary Button"
+        },
+        {
+          "type": "text",
+          "id": "cta2",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "cta2_link",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Features"
+        },
+        {
+          "type": "text",
+          "id": "feature_1",
+          "label": "Feature_1"
+        },
+        {
+          "type": "text",
+          "id": "feature_2",
+          "label": "Feature_2"
+        },
+        {
+          "type": "text",
+          "id": "feature_3",
+          "label": "Feature_3"
+        },
+        {
+          "type": "text",
+          "id": "feature_4",
+          "label": "Feature_4"
+        },
+        {
+          "type": "text",
+          "id": "feature_5",
+          "label": "Feature_5"
+        },
+        {
+          "type": "text",
+          "id": "feature_6",
+          "label": "Feature_6"
+        },
+        {
+          "type": "text",
+          "id": "feature_7",
+          "label": "Feature_7"
+        },
+        {
+          "type": "text",
+          "id": "feature_8",
+          "label": "Feature_8"
+        },
+        {
+          "type": "text",
+          "id": "feature_9",
+          "label": "Feature_9"
+        },
+        {
+          "type": "text",
+          "id": "feature_10",
+          "label": "Feature_10"
+        },
+        {
+          "type": "text",
+          "id": "feature_11",
+          "label": "Feature_11"
+        },
+        {
+          "type": "text",
+          "id": "feature_12",
+          "label": "Feature_12"
+        },
+        {
+          "type": "text",
+          "id": "feature_13",
+          "label": "Feature_13"
+        },
+        {
+          "type": "text",
+          "id": "feature_14",
+          "label": "Feature_14"
+        },
+        {
+          "type": "text",
+          "id": "feature_15",
+          "label": "Feature_15"
+        },
+        {
+          "type": "header",
+          "content": "Settings"
+        },
+        {
+          "type": "checkbox",
+          "id": "shadow",
+          "label": "Shadow"
+        },
+        {
+          "type": "checkbox",
+          "id": "primary",
+          "label": "Primary"
+        },
+        {
+          "type": "header",
+          "content": "Accents"
+        },
+        {
+          "type": "color",
+          "id": "color_accent",
+          "label": "Color_accent"
+        },
+        {
+          "type": "color",
+          "id": "color_accent_contrast",
+          "label": "Color_accent_contrast"
+        },
+        {
+          "type": "color",
+          "id": "color_accent_secondary",
+          "label": "Color_accent_secondary"
+        },
+        {
+          "type": "color",
+          "id": "color_accent_secondary_contrast",
+          "label": "Color_accent_secondary_contrast"
+        },
+        {
+          "type": "header",
+          "content": "Accents Dark"
+        },
+        {
+          "type": "color",
+          "id": "color_accent_dark",
+          "label": "Color_accent_dark"
+        },
+        {
+          "type": "color",
+          "id": "color_accent_contrast_dark",
+          "label": "Color_accent_contrast_dark"
+        },
+        {
+          "type": "color",
+          "id": "color_accent_secondary_dark",
+          "label": "Color_accent_secondary_dark"
+        },
+        {
+          "type": "color",
+          "id": "color_accent_secondary_contrast_dark",
+          "label": "Color_accent_secondary_contrast_dark"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pricing"
+    }
+  ]
+}
+{% endschema %} 

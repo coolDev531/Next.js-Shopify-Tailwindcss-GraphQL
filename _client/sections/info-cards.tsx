@@ -2,7 +2,7 @@ import { Wrapper } from "_client/layout/wrapper";
 import { FC } from "react";
 import { stripHtml } from "string-strip-html";
 import { InfoCardsSection } from ".shopify-cms/types/sections";
-import { _Image_liquid, _Metafield_liquid_file_reference_force_generic } from ".shopify-cms/types/shopify";
+import { _Image_liquid, _Metafield_liquid_file_reference_force_generic, _Metafield_liquid_file_reference_generic, _Metafield_liquid_file_reference_image } from ".shopify-cms/types/shopify";
 import { cleanSvgIds } from "utils/clean-svg-ids";
 
 export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) => {
@@ -23,11 +23,8 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
       <div className="relative sm:left-1/2 sm:-ml-[50vw] sm:w-screen sm:pl-[max(32px,calc((100vw-80rem)/2+32px))]">
         <div className="scrollbar-none grid gap-4 overflow-x-scroll sm:auto-cols-min sm:grid-flow-col-dense">
           {settings.content_list.map((product) => {
-            const svgImage = product.metafields[
-              "logo"
-            ] as _Metafield_liquid_file_reference_force_generic;
-
-            const darkLogo = product.metafields["logo_dark"]?.value as _Image_liquid;
+            const svgImage = product.metafields.logo as _Metafield_liquid_file_reference_generic;
+            const darkLogo = product.metafields.logo_dark as _Metafield_liquid_file_reference_image;
 
             return (
               <section key={product.id} className="card min-w-[220px] select-none">
@@ -38,7 +35,7 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
                           className="relative flex h-10 w-28 bg-contain bg-left bg-no-repeat dark:hidden"
                           style={{
                             backgroundImage: `url(${
-                              svgImage?.value?.url?.replace(/^(http:)?\/\//, "https://") ??
+                              svgImage?.url?.replace(/^(http:)?\/\//, "https://") ??
                               product.featured_image.replace(/^(http:)?\/\//, "https://")
                             })`,
                           }}
@@ -57,7 +54,7 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
                         className="relative flex h-10 w-28 bg-contain bg-left bg-no-repeat"
                         style={{
                           backgroundImage: `url(${
-                            svgImage?.value?.url?.replace(/^(http:)?\/\//, "https://") ??
+                            svgImage?.url?.replace(/^(http:)?\/\//, "https://") ??
                             product.featured_image.replace(/^(http:)?\/\//, "https://")
                           })`,
                         }}
