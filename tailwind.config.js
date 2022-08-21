@@ -155,7 +155,6 @@ module.exports = {
     require("@tailwindcss/forms"),
     require("@tailwindcss/typography"),
     require("@tailwindcss/aspect-ratio"),
-    require("tailwind-children"),
     plugin(({ addVariant, addUtilities, addComponents }) => {
       addVariant("hfa", ["&:hover", "&:focus", "&:active"]);
       addVariant("hfva", ["&:hover", "&:focus", "&:focus-visible", "&:active"]);
