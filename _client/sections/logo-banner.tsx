@@ -133,7 +133,7 @@ export const LogoBannerSlider: FC<LogoBannerSection> = ({ id, settings, blocks, 
         >
           <div
             ref={animationContainerRef}
-            className="scrollbar-none s cale-100 flex overflow-x-scroll whitespace-nowrap transition-all hfa:animation-pause md:animate-slide md:overflow-visible"
+            className="scrollbar-none flex scale-100 overflow-x-scroll whitespace-nowrap transition-all hfa:animation-pause md:animate-slide md:overflow-visible"
             style={{
               animationDuration: `${settings.animation_duration}s`,
               animationPlayState: animate ? "" : "paused",
