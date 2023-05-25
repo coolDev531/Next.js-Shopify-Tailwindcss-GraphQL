@@ -26,6 +26,7 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
             const svgImage = product.metafields.logo as _Metafield_liquid_file_reference_generic;
             const darkLogo = product.metafields.logo_dark as _Metafield_liquid_file_reference_image;
 
+
             return (
               <section key={product.id} className="card min-w-[220px] select-none">
                 <header className="flex flex-col gap-2">
