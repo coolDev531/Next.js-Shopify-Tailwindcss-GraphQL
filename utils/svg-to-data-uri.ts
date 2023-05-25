@@ -62,11 +62,11 @@ const REGEX = {
 };
 
 function collapseWhitespace(str) {
-  return str.trim().replace(REGEX.whitespace, " ");
+  return str.trim()?.replace(REGEX.whitespace, " ");
 }
 
 function dataURIPayload(string) {
-  return encodeURIComponent(string).replace(REGEX.urlHexPairs, specialHexEncode);
+  return encodeURIComponent(string)?.replace(REGEX.urlHexPairs, specialHexEncode);
 }
 
 // `#` gets converted to `%23`, so quite a few CSS named colors are shorter than
@@ -74,7 +74,7 @@ function dataURIPayload(string) {
 function colorCodeToShorterNames(string) {
   Object.keys(shorterNames).forEach((key) => {
     if (shorterNames[key].test(string)) {
-      string = string.replace(shorterNames[key], key);
+      string = string?.replace(shorterNames[key], key);
     }
   });
 
@@ -107,10 +107,10 @@ export function svgToTinyDataUri(svgString) {
     svgString = svgString.slice(1);
   }
 
-  const body = colorCodeToShorterNames(collapseWhitespace(svgString)).replace(REGEX.quotes, "'");
+  const body = colorCodeToShorterNames(collapseWhitespace(svgString))?.replace(REGEX.quotes, "'");
   return `data:image/svg+xml,${dataURIPayload(body)}`;
 }
 
 svgToTinyDataUri.toSrcset = function toSrcset(svgString) {
-  return svgToTinyDataUri(svgString).replace(/ /g, "%20");
+  return svgToTinyDataUri(svgString)?.replace(/ /g, "%20");
 };

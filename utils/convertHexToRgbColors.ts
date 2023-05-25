@@ -7,10 +7,10 @@ function convertString(name, str) {
   const arr = [];
 
   str
-    .replace(/#(......)/gi, "$#$1|")
-    .replace(/(\s|\n)/gi, "")
-    .split("|")
-    .forEach((color) => {
+    ?.replace(/#(......)/gi, "$#$1|")
+    ?.replace(/(\s|\n)/gi, "")
+    ?.split("|")
+    ?.forEach((color) => {
       const [val, col] = color.split("$");
       if (!col) return;
       arr.push(`--color-${name}-${val}: ${hexToRgb(col)};`);

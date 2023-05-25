@@ -201,7 +201,7 @@ module.exports = {
         {
           "bg-grid": (value) => {
             if (/var\(--/gi.test(value)) {
-              const color = value.replace(/var\(--color-([\w-]+\d+)\)/gi, (_, match) => {
+              const color = value?.replace(/var\(--color-([\w-]+\d+)\)/gi, (_, match) => {
                 return hexToRgb(
                   colors[match.split("-")[0].replace(/^gray$/gi, "trueGray")][+match.split("-")[1]]
                 );

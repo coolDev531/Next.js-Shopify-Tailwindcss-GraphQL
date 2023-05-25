@@ -66,7 +66,7 @@ const App: FC<AppProps> = ({ pageProps, Component }) => {
   const emitEmailEvents = useCallback((e) => {
     event("contact", {
       category: "Email",
-      label: e.target.href.replace("mailto:", ""),
+      label: e.target.href?.replace("mailto:", ""),
     });
   }, []);
 

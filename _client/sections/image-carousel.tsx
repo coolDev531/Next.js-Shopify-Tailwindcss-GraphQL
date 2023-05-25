@@ -56,11 +56,11 @@ export const ImageCarouselSlider: FC<
       )}
     >
       {settings?.blog?.articles
-        ?.filter((article) => article.url.replace(/\/blogs/gi, "") !== router.asPath.split("?")[0])
+        ?.filter((article) => article.url?.replace(/\/blogs/gi, "") !== router.asPath.split("?")[0])
         .map((article) => (
           <ImageCarouselItem
             key={`image-${article.id}`}
-            href={article.url.replace(/\/blogs/gi, "")}
+            href={article.url?.replace(/\/blogs/gi, "")}
             image={article.featured_media}
             title={article.title}
           />
@@ -84,7 +84,7 @@ export const ImageCarouselSlider: FC<
       {blocks.map((block) => (
         <ImageCarouselItem
           key={`image-${block.id}`}
-          href={"#" ?? block.settings.link.replace(/\/blogs/gi, "")}
+          href={"#" ?? block.settings.link?.replace(/\/blogs/gi, "")}
           image={block.settings.image}
           title={block.settings.title}
         />

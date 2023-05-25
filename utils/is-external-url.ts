@@ -19,7 +19,7 @@ export const isExternalUrl = (url: string): boolean => {
 
   const linkHost = (function (url) {
     if (/^(https?:)?\/\//.test(url)) {
-      return url.replace(/^(https?:)?\/\//gi, "").split(/(\/|\\|\?)/gi)[0];
+      return url?.replace(/^(https?:)?\/\//gi, "").split(/(\/|\\|\?)/gi)[0];
     } else {
       return process.env.NEXT_PUBLIC_HOSTNAME;
     }

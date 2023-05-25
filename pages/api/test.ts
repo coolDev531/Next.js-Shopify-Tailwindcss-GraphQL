@@ -44,7 +44,7 @@ export const Test: TestFunction = async (req, res) => {
   res.status(200).json({
     files: files.map((file) => {
       const replacer = /(.|\n)*\{%-?\s?schema\s?-?%\}((.|\n)*)\{%-?\s?endschema\s?-?%\}(.|\n)*/i;
-      return JSONParse(file.body.asset.value.replace(replacer, "$2"));
+      return JSONParse(file.body.asset.value?.replace(replacer, "$2"));
     }),
     body,
   });

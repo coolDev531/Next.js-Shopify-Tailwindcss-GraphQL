@@ -48,11 +48,11 @@ export const Image: FC<
       blurDataURL={
         typeof src === "string" && !preload
           ? `/_next/image?url=${encodeURIComponent(
-              src.replace(/^(http:)?\/\//, "https://")
+              src?.replace(/^(http:)?\/\//, "https://")
             )}&w=32&q=1`
           : undefined
       }
-      src={typeof src === "string" ? src.replace(/^(http:)?\/\//, "https://") : src}
+      src={typeof src === "string" ? src?.replace(/^(http:)?\/\//, "https://") : src}
       width={Math.round(
         +(maxWidth ? maxWidth : maxHeight ? maxHeight * aspectRatio : width) * pixelDensity
       )}

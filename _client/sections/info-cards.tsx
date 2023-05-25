@@ -36,7 +36,7 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
                           style={{
                             backgroundImage: `url(${
                               svgImage?.url?.replace(/^(http:)?\/\//, "https://") ??
-                              product.featured_image.replace(/^(http:)?\/\//, "https://")
+                              product.featured_image?.replace(/^(http:)?\/\//, "https://")
                             })`,
                           }}
                         ></figure>
@@ -44,8 +44,8 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
                           className="relative flex hidden h-10 w-28 bg-contain bg-left bg-no-repeat dark:block"
                           style={{
                             backgroundImage: `url(${
-                              darkLogo?.src.replace(/^(http:)?\/\//, "https://") ??
-                              product.featured_image.replace(/^(http:)?\/\//, "https://")
+                              darkLogo?.src?.replace(/^(http:)?\/\//, "https://") ??
+                              product.featured_image?.replace(/^(http:)?\/\//, "https://")
                             })`,
                           }}
                         ></figure>
@@ -55,7 +55,7 @@ export const InfoCards: FC<InfoCardsSection> = ({ id, settings, blocks, type }) 
                         style={{
                           backgroundImage: `url(${
                             svgImage?.url?.replace(/^(http:)?\/\//, "https://") ??
-                            product.featured_image.replace(/^(http:)?\/\//, "https://")
+                            product.featured_image?.replace(/^(http:)?\/\//, "https://")
                           })`,
                         }}
                       ></figure>}
